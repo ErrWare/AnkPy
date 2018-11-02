@@ -1,0 +1,2777 @@
+[
+  {
+    "tags": [
+      "exception",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::bdb}}.{{c3::BdbQuit}}",
+      "Body": "Exception raised by the Bdb class for quitting the debugger.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.BdbQuit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::bdb}}.{{c3::Breakpoint}}({{c4::self}}, {{c5::file}}, {{c6::line}}, {{c7::temporary}}=0, {{c8::cond}}={{c9::None}}, {{c10::funcname}}={{c11::None}})",
+      "Body": "This class implements temporary breakpoints, ignore counts, disabling and (re-)enabling, and conditionals.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Breakpoint"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Breakpoint}}.{{c3::deleteMe}}()",
+      "Body": "Delete the breakpoint from the list associated to a file/line.  If it is the last breakpoint in that position, it also deletes the entry for the file/line.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.deleteMe"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Breakpoint}}.{{c3::enable}}()",
+      "Body": "Mark the breakpoint as enabled.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.enable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Breakpoint}}.{{c3::disable}}()",
+      "Body": "Mark the breakpoint as disabled.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.disable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Breakpoint}}.{{c3::bpformat}}()",
+      "Body": "Return a string with all the information about the breakpoint, nicely formatted:",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.bpformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Breakpoint}}.{{c3::bpprint}}({{c4::out}}={{c5::None}})",
+      "Body": "Print the output of bpformat() to the file out, or if it is None, to standard output.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Breakpoint.bpprint"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::bdb}}.{{c3::Bdb}}({{c4::skip}}={{c5::None}})",
+      "Body": "The Bdb class acts as a generic debugger base class.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::canonic}}({{c4::filename}})",
+      "Body": "Auxiliary method for getting a filename in a canonical form, that is, as a case-normalized (on case-insensitive filesystems) absolute path, stripped of surrounding angle brackets.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.canonic"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::reset}}()",
+      "Body": "Set the botframe, stopframe, returnframe and quitting attributes with values ready to start debugging.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::trace_dispatch}}({{c4::frame}}, {{c5::event}}, {{c6::arg}})",
+      "Body": "This function is installed as the trace function of debugged frames.  Its return value is the new trace function (in most cases, that is, itself).",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.trace_dispatch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::dispatch_line}}({{c4::frame}})",
+      "Body": "If the debugger should stop on the current line, invoke the user_line() method (which should be overridden in subclasses). Raise a BdbQuit exception if the Bdb.quitting flag is set (which can be set from user_line()).  Return a reference to the trace_dispatch() method for further tracing in that scope.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.dispatch_line"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::dispatch_call}}({{c4::frame}}, {{c5::arg}})",
+      "Body": "If the debugger should stop on this function call, invoke the user_call() method (which should be overridden in subclasses). Raise a BdbQuit exception if the Bdb.quitting flag is set (which can be set from user_call()).  Return a reference to the trace_dispatch() method for further tracing in that scope.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.dispatch_call"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::dispatch_return}}({{c4::frame}}, {{c5::arg}})",
+      "Body": "If the debugger should stop on this function return, invoke the user_return() method (which should be overridden in subclasses). Raise a BdbQuit exception if the Bdb.quitting flag is set (which can be set from user_return()).  Return a reference to the trace_dispatch() method for further tracing in that scope.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.dispatch_return"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::dispatch_exception}}({{c4::frame}}, {{c5::arg}})",
+      "Body": "If the debugger should stop at this exception, invokes the user_exception() method (which should be overridden in subclasses). Raise a BdbQuit exception if the Bdb.quitting flag is set (which can be set from user_exception()).  Return a reference to the trace_dispatch() method for further tracing in that scope.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.dispatch_exception"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::stop_here}}({{c4::frame}})",
+      "Body": "This method checks if the frame is somewhere below botframe in the call stack.  botframe is the frame in which debugging started.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.stop_here"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::break_here}}({{c4::frame}})",
+      "Body": "This method checks if there is a breakpoint in the filename and line belonging to frame or, at least, in the current function.  If the breakpoint is a temporary one, this method deletes it.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.break_here"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::break_anywhere}}({{c4::frame}})",
+      "Body": "This method checks if there is a breakpoint in the filename of the current frame.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.break_anywhere"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::user_call}}({{c4::frame}}, {{c5::argument_list}})",
+      "Body": "This method is called from dispatch_call() when there is the possibility that a break might be necessary anywhere inside the called function.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.user_call"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::user_line}}({{c4::frame}})",
+      "Body": "This method is called from dispatch_line() when either stop_here() or break_here() yields True.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.user_line"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::user_return}}({{c4::frame}}, {{c5::return_value}})",
+      "Body": "This method is called from dispatch_return() when stop_here() yields True.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.user_return"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::user_exception}}({{c4::frame}}, {{c5::exc_info}})",
+      "Body": "This method is called from dispatch_exception() when stop_here() yields True.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.user_exception"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::do_clear}}({{c4::arg}})",
+      "Body": "Handle how a breakpoint must be removed when it is a temporary one.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.do_clear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::set_step}}()",
+      "Body": "Stop after one line of code.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.set_step"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::set_next}}({{c4::frame}})",
+      "Body": "Stop on the next line in or below the given frame.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.set_next"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::set_return}}({{c4::frame}})",
+      "Body": "Stop when returning from the given frame.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.set_return"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::set_until}}({{c4::frame}})",
+      "Body": "Stop when the line with the line no greater than the current one is reached or when returning from current frame.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.set_until"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::set_trace}}([{{c4::frame}}])",
+      "Body": "Start debugging from frame.  If frame is not specified, debugging starts from caller's frame.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.set_trace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::set_continue}}()",
+      "Body": "Stop only at breakpoints or when finished.  If there are no breakpoints, set the system trace function to None.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.set_continue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::set_quit}}()",
+      "Body": "Set the quitting attribute to True.  This raises BdbQuit in the next call to one of the dispatch_*() methods.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.set_quit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::set_break}}({{c4::filename}}, {{c5::lineno}}, {{c6::temporary}}=0, {{c7::cond}}, {{c8::funcname}})",
+      "Body": "Set a new breakpoint.  If the lineno line doesn't exist for the filename passed as argument, return an error message.  The filename should be in canonical form, as described in the canonic() method.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.set_break"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::clear_break}}({{c4::filename}}, {{c5::lineno}})",
+      "Body": "Delete the breakpoints in filename and lineno.  If none were set, an error message is returned.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.clear_break"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::clear_bpbynumber}}({{c4::arg}})",
+      "Body": "Delete the breakpoint which has the index arg in the Breakpoint.bpbynumber.  If arg is not numeric or out of range, return an error message.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.clear_bpbynumber"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::clear_all_file_breaks}}({{c4::filename}})",
+      "Body": "Delete all breakpoints in filename.  If none were set, an error message is returned.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.clear_all_file_breaks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::clear_all_breaks}}()",
+      "Body": "Delete all existing breakpoints.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.clear_all_breaks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::get_bpbynumber}}({{c4::arg}})",
+      "Body": "Return a breakpoint specified by the given number.  If arg is a string, it will be converted to a number.  If arg is a non-numeric string, if the given breakpoint never existed or has been deleted, a ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.get_bpbynumber"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::get_break}}({{c4::filename}}, {{c5::lineno}})",
+      "Body": "Check if there is a breakpoint for lineno of filename.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.get_break"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::get_breaks}}({{c4::filename}}, {{c5::lineno}})",
+      "Body": "Return all breakpoints for lineno in filename, or an empty list if none are set.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.get_breaks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::get_file_breaks}}({{c4::filename}})",
+      "Body": "Return all breakpoints in filename, or an empty list if none are set.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.get_file_breaks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::get_all_breaks}}()",
+      "Body": "Return all breakpoints that are set.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.get_all_breaks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::get_stack}}({{c4::f}}, {{c5::t}})",
+      "Body": "Get a list of records for a frame and all higher (calling) and lower frames, and the size of the higher part.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.get_stack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::format_stack_entry}}({{c4::frame_lineno}}, {{c5::lprefix}}=': ')",
+      "Body": "Return a string with information about a stack entry, identified by a (frame, lineno) tuple:",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.format_stack_entry"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::run}}({{c4::cmd}}, {{c5::globals}}={{c6::None}}, {{c7::locals}}={{c8::None}})",
+      "Body": "Debug a statement executed via the exec() function.  globals defaults to __main__.__dict__, locals defaults to globals.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::runeval}}({{c4::expr}}, {{c5::globals}}={{c6::None}}, {{c7::locals}}={{c8::None}})",
+      "Body": "Debug an expression executed via the eval() function.  globals and locals have the same meaning as in run().",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.runeval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::runctx}}({{c4::cmd}}, {{c5::globals}}, {{c6::locals}})",
+      "Body": "For backwards compatibility.  Calls the run() method.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.runctx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::Bdb}}.{{c3::runcall}}({{c4::func}}, *args, **kwds)",
+      "Body": "Debug a single function call, and return its result.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.Bdb.runcall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::checkfuncname}}({{c3::b}}, {{c4::frame}})",
+      "Body": "Check whether we should break here, depending on the way the breakpoint b was set.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.checkfuncname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::effective}}({{c3::file}}, {{c4::line}}, {{c5::frame}})",
+      "Body": "Determine if there is an effective (active) breakpoint at this line of code. Return a tuple of the breakpoint and a boolean that indicates if it is ok to delete a temporary breakpoint.  Return (None, None) if there is no matching breakpoint.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.effective"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bdb}}.{{c2::set_trace}}()",
+      "Body": "Start debugging with a Bdb instance from caller's frame.",
+      "Link": "https://docs.python.org/3/library/bdb.html#bdb.set_trace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::faulthandler}}.{{c2::dump_traceback}}({{c3::file}}={{c4::sys}}.{{c5::stderr}}, {{c6::all_threads}}={{c7::True}})",
+      "Body": "Dump the tracebacks of all threads into file. If all_threads is False, dump only the current thread.",
+      "Link": "https://docs.python.org/3/library/faulthandler.html#faulthandler.dump_traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::faulthandler}}.{{c2::enable}}({{c3::file}}={{c4::sys}}.{{c5::stderr}}, {{c6::all_threads}}={{c7::True}})",
+      "Body": "Enable the fault handler: install handlers for the SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL signals to dump the traceback. If all_threads is True, produce tracebacks for every running thread. Otherwise, dump only the current thread.",
+      "Link": "https://docs.python.org/3/library/faulthandler.html#faulthandler.enable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::faulthandler}}.{{c2::disable}}()",
+      "Body": "Disable the fault handler: uninstall the signal handlers installed by enable().",
+      "Link": "https://docs.python.org/3/library/faulthandler.html#faulthandler.disable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::faulthandler}}.{{c2::is_enabled}}()",
+      "Body": "Check if the fault handler is enabled.",
+      "Link": "https://docs.python.org/3/library/faulthandler.html#faulthandler.is_enabled"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::faulthandler}}.{{c2::dump_traceback_later}}({{c3::timeout}}, {{c4::repeat}}={{c5::False}}, {{c6::file}}={{c7::sys}}.{{c8::stderr}}, {{c9::exit}}={{c10::False}})",
+      "Body": "Dump the tracebacks of all threads, after a timeout of timeout seconds, or every timeout seconds if repeat is True.  If exit is True, call _exit() with status=1 after dumping the tracebacks.  (Note _exit() exits the process immediately, which means it doesn't do any cleanup like flushing file buffers.) If the function is called twice, the new call replaces previous parameters and resets the timeout. The timer has a sub-second resolution.",
+      "Link": "https://docs.python.org/3/library/faulthandler.html#faulthandler.dump_traceback_later"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::faulthandler}}.{{c2::cancel_dump_traceback_later}}()",
+      "Body": "Cancel the last call to dump_traceback_later().",
+      "Link": "https://docs.python.org/3/library/faulthandler.html#faulthandler.cancel_dump_traceback_later"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::faulthandler}}.{{c2::register}}({{c3::signum}}, {{c4::file}}={{c5::sys}}.{{c6::stderr}}, {{c7::all_threads}}={{c8::True}}, {{c9::chain}}={{c10::False}})",
+      "Body": "Register a user signal: install a handler for the signum signal to dump the traceback of all threads, or of the current thread if all_threads is False, into file. Call the previous handler if chain is True.",
+      "Link": "https://docs.python.org/3/library/faulthandler.html#faulthandler.register"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::faulthandler}}.{{c2::unregister}}({{c3::signum}})",
+      "Body": "Unregister a user signal: uninstall the handler of the signum signal installed by register(). Return True if the signal was registered, False otherwise.",
+      "Link": "https://docs.python.org/3/library/faulthandler.html#faulthandler.unregister"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::run}}({{c3::statement}}, {{c4::globals}}={{c5::None}}, {{c6::locals}}={{c7::None}})",
+      "Body": "Execute the statement (given as a string or a code object) under debugger control.  The debugger prompt appears before any code is executed; you can set breakpoints and type continue, or you can step through the statement using step or next (all these commands are explained below).  The optional globals and locals arguments specify the environment in which the code is executed; by default the dictionary of the module __main__ is used.  (See the explanation of the built-in exec() or eval() functions.)",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::runeval}}({{c3::expression}}, {{c4::globals}}={{c5::None}}, {{c6::locals}}={{c7::None}})",
+      "Body": "Evaluate the expression (given as a string or a code object) under debugger control.  When runeval() returns, it returns the value of the expression.  Otherwise this function is similar to run().",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.runeval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::runcall}}({{c3::function}}, *args, **kwds)",
+      "Body": "Call the function (a function or method object, not a string) with the given arguments.  When runcall() returns, it returns whatever the function call returned.  The debugger prompt appears as soon as the function is entered.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.runcall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::set_trace}}(*, {{c3::header}}={{c4::None}})",
+      "Body": "Enter the debugger at the calling stack frame.  This is useful to hard-code a breakpoint at a given point in a program, even if the code is not otherwise being debugged (e.g. when an assertion fails).  If given, header is printed to the console just before debugging begins.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.set_trace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::post_mortem}}({{c3::traceback}}={{c4::None}})",
+      "Body": "Enter post-mortem debugging of the given traceback object.  If no traceback is given, it uses the one of the exception that is currently being handled (an exception must be being handled if the default is to be used).",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.post_mortem"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::pm}}()",
+      "Body": "Enter post-mortem debugging of the traceback found in sys.last_traceback.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.pm"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pdb}}.{{c3::Pdb}}({{c4::completekey}}='{{c5::tab}}', {{c6::stdin}}={{c7::None}}, {{c8::stdout}}={{c9::None}}, {{c10::skip}}={{c11::None}}, {{c12::nosigint}}={{c13::False}}, {{c14::readrc}}={{c15::True}})",
+      "Body": "Pdb is the debugger class.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.Pdb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::Pdb}}.{{c3::run}}({{c4::statement}}, {{c5::globals}}={{c6::None}}, {{c7::locals}}={{c8::None}})",
+      "Body": "See the documentation for the functions explained above.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.Pdb.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::Pdb}}.{{c3::runeval}}({{c4::expression}}, {{c5::globals}}={{c6::None}}, {{c7::locals}}={{c8::None}})",
+      "Body": "See the documentation for the functions explained above.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.Pdb.runeval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::Pdb}}.{{c3::runcall}}({{c4::function}}, *args, **kwds)",
+      "Body": "See the documentation for the functions explained above.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.Pdb.runcall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pdb}}.{{c2::Pdb}}.{{c3::set_trace}}()",
+      "Body": "See the documentation for the functions explained above.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdb.Pdb.set_trace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::h}}({{c2::elp}}) [{{c3::command}}]",
+      "Body": "Without argument, print the list of available commands.  With a command as argument, print help about that command.  help pdb displays the full documentation (the docstring of the pdb module).  Since the command argument must be an identifier, help exec must be entered to get help on the ! command.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-help"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::w}}({{c2::here}})",
+      "Body": "Print a stack trace, with the most recent frame at the bottom.  An arrow indicates the current frame, which determines the context of most commands.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-where"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::d}}({{c2::own}}) [{{c3::count}}]",
+      "Body": "Move the current frame count (default one) levels down in the stack trace (to a newer frame).",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-down"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::u}}({{c2::p}}) [{{c3::count}}]",
+      "Body": "Move the current frame count (default one) levels up in the stack trace (to an older frame).",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-up"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::b}}({{c2::reak}}) [([{{c3::filename}}:]lineno | {{c4::function}}) [, {{c5::condition}}]]",
+      "Body": "With a lineno argument, set a break there in the current file.  With a function argument, set a break at the first executable statement within that function.  The line number may be prefixed with a filename and a colon, to specify a breakpoint in another file (probably one that hasn't been loaded yet).  The file is searched on sys.path.  Note that each breakpoint is assigned a number to which all the other breakpoint commands refer.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-break"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tbreak}} [([{{c2::filename}}:]lineno | {{c3::function}}) [, {{c4::condition}}]]",
+      "Body": "Temporary breakpoint, which is removed automatically when it is first hit. The arguments are the same as for break.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-tbreak"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cl}}({{c2::ear}}) [{{c3::filename}}:{{c4::lineno}} | {{c5::bpnumber}} [{{c6::bpnumber}} ...]]",
+      "Body": "With a filename:lineno argument, clear all the breakpoints at this line. With a space separated list of breakpoint numbers, clear those breakpoints. Without argument, clear all breaks (but first ask confirmation).",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-clear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::disable}} [{{c2::bpnumber}} [{{c3::bpnumber}} ...]]",
+      "Body": "Disable the breakpoints given as a space separated list of breakpoint numbers.  Disabling a breakpoint means it cannot cause the program to stop execution, but unlike clearing a breakpoint, it remains in the list of breakpoints and can be (re-)enabled.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-disable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::enable}} [{{c2::bpnumber}} [{{c3::bpnumber}} ...]]",
+      "Body": "Enable the breakpoints specified.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-enable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ignore}} {{c2::bpnumber}} [{{c3::count}}]",
+      "Body": "Set the ignore count for the given breakpoint number.  If count is omitted, the ignore count is set to 0.  A breakpoint becomes active when the ignore count is zero.  When non-zero, the count is decremented each time the breakpoint is reached and the breakpoint is not disabled and any associated condition evaluates to true.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-ignore"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::condition}} {{c2::bpnumber}} [{{c3::condition}}]",
+      "Body": "Set a new condition for the breakpoint, an expression which must evaluate to true before the breakpoint is honored.  If condition is absent, any existing condition is removed; i.e., the breakpoint is made unconditional.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-condition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::commands}} [{{c2::bpnumber}}]",
+      "Body": "Specify a list of commands for breakpoint number bpnumber.  The commands themselves appear on the following lines.  Type a line containing just end to terminate the commands. An example:",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-commands"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::s}}({{c2::tep}})",
+      "Body": "Execute the current line, stop at the first possible occasion (either in a function that is called or on the next line in the current function).",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-step"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::n}}({{c2::ext}})",
+      "Body": "Continue execution until the next line in the current function is reached or it returns.  (The difference between next and step is that step stops inside a called function, while next executes called functions at (nearly) full speed, only stopping at the next line in the current function.)",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-next"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unt}}({{c2::il}}) [{{c3::lineno}}]",
+      "Body": "Without argument, continue execution until the line with a number greater than the current one is reached.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-until"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::r}}({{c2::eturn}})",
+      "Body": "Continue execution until the current function returns.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-return"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::c}}({{c2::ont}}({{c3::inue}}))",
+      "Body": "Continue execution, only stop when a breakpoint is encountered.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-continue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::j}}({{c2::ump}}) {{c3::lineno}}",
+      "Body": "Set the next line that will be executed.  Only available in the bottom-most frame.  This lets you jump back and execute code again, or jump forward to skip code that you don't want to run.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-jump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::l}}({{c2::ist}}) [{{c3::first}}[, {{c4::last}}]]",
+      "Body": "List source code for the current file.  Without arguments, list 11 lines around the current line or continue the previous listing.  With . as argument, list 11 lines around the current line.  With one argument, list 11 lines around at that line.  With two arguments, list the given range; if the second argument is less than the first, it is interpreted as a count.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ll}} | {{c2::longlist}}",
+      "Body": "List all source code for the current function or frame.  Interesting lines are marked as for list.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-ll"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::a}}({{c2::rgs}})",
+      "Body": "Print the argument list of the current function.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-args"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::p}} {{c2::expression}}",
+      "Body": "Evaluate the expression in the current context and print its value.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-p"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pp}} {{c2::expression}}",
+      "Body": "Like the p command, except the value of the expression is pretty-printed using the pprint module.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-pp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::whatis}} {{c2::expression}}",
+      "Body": "Print the type of the expression.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-whatis"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::source}} {{c2::expression}}",
+      "Body": "Try to get source code for the given object and display it.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::display}} [{{c2::expression}}]",
+      "Body": "Display the value of the expression if it changed, each time execution stops in the current frame.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-display"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::undisplay}} [{{c2::expression}}]",
+      "Body": "Do not display the expression any more in the current frame.  Without expression, clear all display expressions for the current frame.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-undisplay"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::interact}}",
+      "Body": "Start an interactive interpreter (using the code module) whose global namespace contains all the (global and local) names found in the current scope.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-interact"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::alias}} [{{c2::name}} [{{c3::command}}]]",
+      "Body": "Create an alias called name that executes command.  The command must not be enclosed in quotes.  Replaceable parameters can be indicated by %1, %2, and so on, while %* is replaced by all the parameters. If no command is given, the current alias for name is shown. If no arguments are given, all aliases are listed.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-alias"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unalias}} {{c2::name}}",
+      "Body": "Delete the specified alias.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-unalias"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "! {{c1::statement}}",
+      "Body": "Execute the (one-line) statement in the context of the current stack frame. The exclamation point can be omitted unless the first word of the statement resembles a debugger command.  To set a global variable, you can prefix the assignment command with a global statement on the same line, e.g.:",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-!"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::run}} [{{c2::args}} ...]",
+      "Body": "Restart the debugged program.  If an argument is supplied, it is split with shlex and the result is used as the new sys.argv. History, breakpoints, actions and debugger options are preserved. restart is an alias for run.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::restart}} [{{c2::args}} ...]",
+      "Body": "Restart the debugged program.  If an argument is supplied, it is split with shlex and the result is used as the new sys.argv. History, breakpoints, actions and debugger options are preserved. restart is an alias for run.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-restart"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "pdbcommand",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::q}}({{c2::uit}})",
+      "Body": "Quit from the debugger.  The program being executed is aborted.",
+      "Link": "https://docs.python.org/3/library/pdb.html#pdbcommand-quit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::timeit}}.{{c2::timeit}}({{c3::stmt}}='{{c4::pass}}', {{c5::setup}}='{{c6::pass}}', {{c7::timer}}=<{{c8::default}} {{c9::timer}}>, {{c10::number}}=1000000, {{c11::globals}}={{c12::None}})",
+      "Body": "Create a Timer instance with the given statement, setup code and timer function and run its timeit() method with number executions. The optional globals argument specifies a namespace in which to execute the code.",
+      "Link": "https://docs.python.org/3/library/timeit.html#timeit.timeit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::timeit}}.{{c2::repeat}}({{c3::stmt}}='{{c4::pass}}', {{c5::setup}}='{{c6::pass}}', {{c7::timer}}=<{{c8::default}} {{c9::timer}}>, {{c10::repeat}}=5, {{c11::number}}=1000000, {{c12::globals}}={{c13::None}})",
+      "Body": "Create a Timer instance with the given statement, setup code and timer function and run its repeat() method with the given repeat count and number executions.  The optional globals argument specifies a namespace in which to execute the code.",
+      "Link": "https://docs.python.org/3/library/timeit.html#timeit.repeat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::timeit}}.{{c2::default_timer}}()",
+      "Body": "The default timer, which is always time.perf_counter().",
+      "Link": "https://docs.python.org/3/library/timeit.html#timeit.default_timer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::timeit}}.{{c3::Timer}}({{c4::stmt}}='{{c5::pass}}', {{c6::setup}}='{{c7::pass}}', {{c8::timer}}=<{{c9::timer}} {{c10::function}}>, {{c11::globals}}={{c12::None}})",
+      "Body": "Class for timing execution speed of small code snippets.",
+      "Link": "https://docs.python.org/3/library/timeit.html#timeit.Timer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::timeit}}.{{c2::Timer}}.{{c3::timeit}}({{c4::number}}=1000000)",
+      "Body": "Time number executions of the main statement.  This executes the setup statement once, and then returns the time it takes to execute the main statement a number of times, measured in seconds as a float. The argument is the number of times through the loop, defaulting to one million.  The main statement, the setup statement and the timer function to be used are passed to the constructor.",
+      "Link": "https://docs.python.org/3/library/timeit.html#timeit.Timer.timeit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::timeit}}.{{c2::Timer}}.{{c3::autorange}}({{c4::callback}}={{c5::None}})",
+      "Body": "Automatically determine how many times to call timeit().",
+      "Link": "https://docs.python.org/3/library/timeit.html#timeit.Timer.autorange"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::timeit}}.{{c2::Timer}}.{{c3::repeat}}({{c4::repeat}}=5, {{c5::number}}=1000000)",
+      "Body": "Call timeit() a few times.",
+      "Link": "https://docs.python.org/3/library/timeit.html#timeit.Timer.repeat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::timeit}}.{{c2::Timer}}.{{c3::print_exc}}({{c4::file}}={{c5::None}})",
+      "Body": "Helper to print a traceback from the timed code.",
+      "Link": "https://docs.python.org/3/library/timeit.html#timeit.Timer.print_exc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::n}} {{c2::N}}, --{{c3::number}}={{c4::N}}",
+      "Body": "how many times to execute 'statement'",
+      "Link": "https://docs.python.org/3/library/timeit.html#cmdoption-timeit-n"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::r}} {{c2::N}}, --{{c3::repeat}}={{c4::N}}",
+      "Body": "how many times to repeat the timer (default 5)",
+      "Link": "https://docs.python.org/3/library/timeit.html#cmdoption-timeit-r"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::s}} {{c2::S}}, --{{c3::setup}}={{c4::S}}",
+      "Body": "statement to be executed once initially (default pass)",
+      "Link": "https://docs.python.org/3/library/timeit.html#cmdoption-timeit-s"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::p}}, --{{c2::process}}",
+      "Body": "measure process time, not wallclock time, using time.process_time() instead of time.perf_counter(), which is the default",
+      "Link": "https://docs.python.org/3/library/timeit.html#cmdoption-timeit-p"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::u}}, --{{c2::unit}}={{c3::U}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/timeit.html#cmdoption-timeit-u"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::v}}, --{{c2::verbose}}",
+      "Body": "print raw timing results; repeat for more digits precision",
+      "Link": "https://docs.python.org/3/library/timeit.html#cmdoption-timeit-v"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::h}}, --{{c2::help}}",
+      "Body": "print a short usage message and exit",
+      "Link": "https://docs.python.org/3/library/timeit.html#cmdoption-timeit-h"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::help}}",
+      "Body": "Display usage and exit.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-help"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::version}}",
+      "Body": "Display the version of the module and exit.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::c}}, --{{c2::count}}",
+      "Body": "Produce a set of annotated listing files upon program completion that shows how many times each statement was executed.  See also --coverdir, --file and --no-report below.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-c"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::t}}, --{{c2::trace}}",
+      "Body": "Display lines as they are executed.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-t"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::l}}, --{{c2::listfuncs}}",
+      "Body": "Display the functions executed by running the program.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-l"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::r}}, --{{c2::report}}",
+      "Body": "Produce an annotated list from an earlier program run that used the --count and --file option.  This does not execute any code.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-r"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::T}}, --{{c2::trackcalls}}",
+      "Body": "Display the calling relationships exposed by running the program.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-trackcalls"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::f}}, --{{c2::file}}=<{{c3::file}}>",
+      "Body": "Name of a file to accumulate counts over several tracing runs.  Should be used with the --count option.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-f"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::C}}, --{{c2::coverdir}}=<{{c3::dir}}>",
+      "Body": "Directory where the report files go.  The coverage report for package.module is written to file dir/package/module.cover.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-coverdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::m}}, --{{c2::missing}}",
+      "Body": "When generating annotated listings, mark lines which were not executed with >>>>>>.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-m"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::s}}, --{{c2::summary}}",
+      "Body": "When using --count or --report, write a brief summary to stdout for each file processed.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-s"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::R}}, --{{c2::no}}-{{c3::report}}",
+      "Body": "Do not generate annotated listings.  This is useful if you intend to make several runs with --count, and then produce a single set of annotated listings at the end.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-no-report"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::g}}, --{{c2::timing}}",
+      "Body": "Prefix each line with the time since the program started.  Only used while tracing.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-g"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::ignore}}-{{c2::module}}=<{{c3::mod}}>",
+      "Body": "Ignore each of the given module names and its submodules (if it is a package).  The argument can be a list of names separated by a comma.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-ignore-module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::ignore}}-{{c2::dir}}=<{{c3::dir}}>",
+      "Body": "Ignore all modules and packages in the named directory and subdirectories. The argument can be a list of directories separated by os.pathsep.",
+      "Link": "https://docs.python.org/3/library/trace.html#cmdoption-trace-ignore-dir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::trace}}.{{c3::Trace}}({{c4::count}}=1, {{c5::trace}}=1, {{c6::countfuncs}}=0, {{c7::countcallers}}=0, {{c8::ignoremods}}=(), {{c9::ignoredirs}}=(), {{c10::infile}}={{c11::None}}, {{c12::outfile}}={{c13::None}}, {{c14::timing}}={{c15::False}})",
+      "Body": "Create an object to trace execution of a single statement or expression.  All parameters are optional.  count enables counting of line numbers.  trace enables line execution tracing.  countfuncs enables listing of the functions called during the run.  countcallers enables call relationship tracking.  ignoremods is a list of modules or packages to ignore. ignoredirs is a list of directories whose modules or packages should be ignored.  infile is the name of the file from which to read stored count information.  outfile is the name of the file in which to write updated count information.  timing enables a timestamp relative to when tracing was started to be displayed.",
+      "Link": "https://docs.python.org/3/library/trace.html#trace.Trace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::trace}}.{{c2::Trace}}.{{c3::run}}({{c4::cmd}})",
+      "Body": "Execute the command and gather statistics from the execution with the current tracing parameters.  cmd must be a string or code object, suitable for passing into exec().",
+      "Link": "https://docs.python.org/3/library/trace.html#trace.Trace.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::trace}}.{{c2::Trace}}.{{c3::runctx}}({{c4::cmd}}, {{c5::globals}}={{c6::None}}, {{c7::locals}}={{c8::None}})",
+      "Body": "Execute the command and gather statistics from the execution with the current tracing parameters, in the defined global and local environments.  If not defined, globals and locals default to empty dictionaries.",
+      "Link": "https://docs.python.org/3/library/trace.html#trace.Trace.runctx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::trace}}.{{c2::Trace}}.{{c3::runfunc}}({{c4::func}}, *args, **kwds)",
+      "Body": "Call func with the given arguments under control of the Trace object with the current tracing parameters.",
+      "Link": "https://docs.python.org/3/library/trace.html#trace.Trace.runfunc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::trace}}.{{c2::Trace}}.{{c3::results}}()",
+      "Body": "Return a CoverageResults object that contains the cumulative results of all previous calls to run, runctx and runfunc for the given Trace instance.  Does not reset the accumulated trace results.",
+      "Link": "https://docs.python.org/3/library/trace.html#trace.Trace.results"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::trace}}.{{c3::CoverageResults}}",
+      "Body": "A container for coverage results, created by Trace.results().  Should not be created directly by the user.",
+      "Link": "https://docs.python.org/3/library/trace.html#trace.CoverageResults"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::trace}}.{{c2::CoverageResults}}.{{c3::update}}({{c4::other}})",
+      "Body": "Merge in data from another CoverageResults object.",
+      "Link": "https://docs.python.org/3/library/trace.html#trace.CoverageResults.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::trace}}.{{c2::CoverageResults}}.{{c3::write_results}}({{c4::show_missing}}={{c5::True}}, {{c6::summary}}={{c7::False}}, {{c8::coverdir}}={{c9::None}})",
+      "Body": "Write coverage results.  Set show_missing to show lines that had no hits.  Set summary to include in the output the coverage summary per module.  coverdir specifies the directory into which the coverage result files will be output.  If None, the results for each source file are placed in its directory.",
+      "Link": "https://docs.python.org/3/library/trace.html#trace.CoverageResults.write_results"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::clear_traces}}()",
+      "Body": "Clear traces of memory blocks allocated by Python.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.clear_traces"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::get_object_traceback}}({{c3::obj}})",
+      "Body": "Get the traceback where the object obj was allocated. Return a Traceback instance, or None if the tracemalloc module is not tracing memory allocations or did not trace the allocation of the object.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.get_object_traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::get_traceback_limit}}()",
+      "Body": "Get the maximum number of frames stored in the traceback of a trace.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.get_traceback_limit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::get_traced_memory}}()",
+      "Body": "Get the current size and peak size of memory blocks traced by the tracemalloc module as a tuple: (current: int, peak: int).",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.get_traced_memory"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::get_tracemalloc_memory}}()",
+      "Body": "Get the memory usage in bytes of the tracemalloc module used to store traces of memory blocks. Return an int.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.get_tracemalloc_memory"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::is_tracing}}()",
+      "Body": "True if the tracemalloc module is tracing memory allocations, False otherwise.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.is_tracing"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::start}}({{c3::nframe}}: {{c4::int}}=1)",
+      "Body": "Start tracing memory allocations: install hooks on memory allocators. Collected tracebacks of traces will be limited to nframe frames. By default, a trace of a memory block only stores the most recent frame: the limit is 1. nframe must be greater or equal to 1.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.start"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::stop}}()",
+      "Body": "Stop tracing memory allocations: uninstall hooks on memory allocators. Also clears all previously collected traces of memory blocks allocated by Python.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.stop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::take_snapshot}}()",
+      "Body": "Take a snapshot of traces of memory blocks allocated by Python. Return a new Snapshot instance.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.take_snapshot"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tracemalloc}}.{{c3::DomainFilter}}({{c4::inclusive}}: {{c5::bool}}, {{c6::domain}}: {{c7::int}})",
+      "Body": "Filter traces of memory blocks by their address space (domain).",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.DomainFilter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::DomainFilter}}.{{c3::inclusive}}",
+      "Body": "If inclusive is True (include), match memory blocks allocated in the address space domain.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.DomainFilter.inclusive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::DomainFilter}}.{{c3::domain}}",
+      "Body": "Address space of a memory block (int). Read-only property.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.DomainFilter.domain"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tracemalloc}}.{{c3::Filter}}({{c4::inclusive}}: {{c5::bool}}, {{c6::filename_pattern}}: {{c7::str}}, {{c8::lineno}}: {{c9::int}}={{c10::None}}, {{c11::all_frames}}: {{c12::bool}}={{c13::False}}, {{c14::domain}}: {{c15::int}}={{c16::None}})",
+      "Body": "Filter on traces of memory blocks.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Filter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Filter}}.{{c3::domain}}",
+      "Body": "Address space of a memory block (int or None).",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Filter.domain"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Filter}}.{{c3::inclusive}}",
+      "Body": "If inclusive is True (include), only match memory blocks allocated in a file with a name matching filename_pattern at line number lineno.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Filter.inclusive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Filter}}.{{c3::lineno}}",
+      "Body": "Line number (int) of the filter. If lineno is None, the filter matches any line number.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Filter.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Filter}}.{{c3::filename_pattern}}",
+      "Body": "Filename pattern of the filter (str). Read-only property.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Filter.filename_pattern"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Filter}}.{{c3::all_frames}}",
+      "Body": "If all_frames is True, all frames of the traceback are checked. If all_frames is False, only the most recent frame is checked.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Filter.all_frames"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tracemalloc}}.{{c3::Frame}}",
+      "Body": "Frame of a traceback.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Frame"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Frame}}.{{c3::filename}}",
+      "Body": "Filename (str).",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Frame.filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Frame}}.{{c3::lineno}}",
+      "Body": "Line number (int).",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Frame.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tracemalloc}}.{{c3::Snapshot}}",
+      "Body": "Snapshot of traces of memory blocks allocated by Python.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Snapshot"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Snapshot}}.{{c3::compare_to}}({{c4::old_snapshot}}: {{c5::Snapshot}}, {{c6::key_type}}: {{c7::str}}, {{c8::cumulative}}: {{c9::bool}}={{c10::False}})",
+      "Body": "Compute the differences with an old snapshot. Get statistics as a sorted list of StatisticDiff instances grouped by key_type.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Snapshot.compare_to"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Snapshot}}.{{c3::dump}}({{c4::filename}})",
+      "Body": "Write the snapshot into a file.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Snapshot.dump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Snapshot}}.{{c3::filter_traces}}({{c4::filters}})",
+      "Body": "Create a new Snapshot instance with a filtered traces sequence, filters is a list of DomainFilter and Filter instances.  If filters is an empty list, return a new Snapshot instance with a copy of the traces.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Snapshot.filter_traces"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Snapshot}}.{{c3::classmethod}} {{c4::load}}({{c5::filename}})",
+      "Body": "Load a snapshot from a file.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Snapshot.load"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Snapshot}}.{{c3::statistics}}({{c4::key_type}}: {{c5::str}}, {{c6::cumulative}}: {{c7::bool}}={{c8::False}})",
+      "Body": "Get statistics as a sorted list of Statistic instances grouped by key_type:",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Snapshot.statistics"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Snapshot}}.{{c3::traceback_limit}}",
+      "Body": "Maximum number of frames stored in the traceback of traces: result of the get_traceback_limit() when the snapshot was taken.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Snapshot.traceback_limit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Snapshot}}.{{c3::traces}}",
+      "Body": "Traces of all memory blocks allocated by Python: sequence of Trace instances.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Snapshot.traces"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tracemalloc}}.{{c3::Statistic}}",
+      "Body": "Statistic on memory allocations.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Statistic"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Statistic}}.{{c3::count}}",
+      "Body": "Number of memory blocks (int).",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Statistic.count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Statistic}}.{{c3::size}}",
+      "Body": "Total size of memory blocks in bytes (int).",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Statistic.size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Statistic}}.{{c3::traceback}}",
+      "Body": "Traceback where the memory block was allocated, Traceback instance.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Statistic.traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tracemalloc}}.{{c3::StatisticDiff}}",
+      "Body": "Statistic difference on memory allocations between an old and a new Snapshot instance.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.StatisticDiff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::StatisticDiff}}.{{c3::count}}",
+      "Body": "Number of memory blocks in the new snapshot (int): 0 if the memory blocks have been released in the new snapshot.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.StatisticDiff.count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::StatisticDiff}}.{{c3::count_diff}}",
+      "Body": "Difference of number of memory blocks between the old and the new snapshots (int): 0 if the memory blocks have been allocated in the new snapshot.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.StatisticDiff.count_diff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::StatisticDiff}}.{{c3::size}}",
+      "Body": "Total size of memory blocks in bytes in the new snapshot (int): 0 if the memory blocks have been released in the new snapshot.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.StatisticDiff.size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::StatisticDiff}}.{{c3::size_diff}}",
+      "Body": "Difference of total size of memory blocks in bytes between the old and the new snapshots (int): 0 if the memory blocks have been allocated in the new snapshot.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.StatisticDiff.size_diff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::StatisticDiff}}.{{c3::traceback}}",
+      "Body": "Traceback where the memory blocks were allocated, Traceback instance.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.StatisticDiff.traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tracemalloc}}.{{c3::Trace}}",
+      "Body": "Trace of a memory block.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Trace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Trace}}.{{c3::domain}}",
+      "Body": "Address space of a memory block (int). Read-only property.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Trace.domain"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Trace}}.{{c3::size}}",
+      "Body": "Size of the memory block in bytes (int).",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Trace.size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Trace}}.{{c3::traceback}}",
+      "Body": "Traceback where the memory block was allocated, Traceback instance.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Trace.traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tracemalloc}}.{{c3::Traceback}}",
+      "Body": "Sequence of Frame instances sorted from the oldest frame to the most recent frame.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Debugging and Profiling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tracemalloc}}.{{c2::Traceback}}.{{c3::format}}({{c4::limit}}={{c5::None}}, {{c6::most_recent_first}}={{c7::False}})",
+      "Body": "Format the traceback as a list of lines with newlines. Use the linecache module to retrieve lines from the source code. If limit is set, format the limit most recent frames if limit is positive. Otherwise, format the abs(limit) oldest frames. If most_recent_first is True, the order of the formatted frames is reversed, returning the most recent frame first instead of last.",
+      "Link": "https://docs.python.org/3/library/tracemalloc.html#tracemalloc.Traceback.format"
+    },
+    "modelName": "ClozePy"
+  }
+]

@@ -1,0 +1,1772 @@
+[
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::forward}}({{c3::distance}})",
+      "Body": "Move the turtle forward by the specified distance, in the direction the turtle is headed.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.forward"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::fd}}({{c3::distance}})",
+      "Body": "Move the turtle forward by the specified distance, in the direction the turtle is headed.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.fd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::back}}({{c3::distance}})",
+      "Body": "Move the turtle backward by distance, opposite to the direction the turtle is headed.  Do not change the turtle's heading.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.back"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::bk}}({{c3::distance}})",
+      "Body": "Move the turtle backward by distance, opposite to the direction the turtle is headed.  Do not change the turtle's heading.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.bk"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::backward}}({{c3::distance}})",
+      "Body": "Move the turtle backward by distance, opposite to the direction the turtle is headed.  Do not change the turtle's heading.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.backward"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::right}}({{c3::angle}})",
+      "Body": "Turn turtle right by angle units.  (Units are by default degrees, but can be set via the degrees() and radians() functions.)  Angle orientation depends on the turtle mode, see mode().",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.right"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::rt}}({{c3::angle}})",
+      "Body": "Turn turtle right by angle units.  (Units are by default degrees, but can be set via the degrees() and radians() functions.)  Angle orientation depends on the turtle mode, see mode().",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.rt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::left}}({{c3::angle}})",
+      "Body": "Turn turtle left by angle units.  (Units are by default degrees, but can be set via the degrees() and radians() functions.)  Angle orientation depends on the turtle mode, see mode().",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.left"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::lt}}({{c3::angle}})",
+      "Body": "Turn turtle left by angle units.  (Units are by default degrees, but can be set via the degrees() and radians() functions.)  Angle orientation depends on the turtle mode, see mode().",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.lt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::goto}}({{c3::x}}, {{c4::y}}={{c5::None}})",
+      "Body": "If y is None, x must be a pair of coordinates or a Vec2D (e.g. as returned by pos()).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.goto"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::setpos}}({{c3::x}}, {{c4::y}}={{c5::None}})",
+      "Body": "If y is None, x must be a pair of coordinates or a Vec2D (e.g. as returned by pos()).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.setpos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::setposition}}({{c3::x}}, {{c4::y}}={{c5::None}})",
+      "Body": "If y is None, x must be a pair of coordinates or a Vec2D (e.g. as returned by pos()).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.setposition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::setx}}({{c3::x}})",
+      "Body": "Set the turtle's first coordinate to x, leave second coordinate unchanged.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.setx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::sety}}({{c3::y}})",
+      "Body": "Set the turtle's second coordinate to y, leave first coordinate unchanged.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.sety"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::setheading}}({{c3::to_angle}})",
+      "Body": "Set the orientation of the turtle to to_angle.  Here are some common directions in degrees:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.setheading"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::seth}}({{c3::to_angle}})",
+      "Body": "Set the orientation of the turtle to to_angle.  Here are some common directions in degrees:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.seth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::home}}()",
+      "Body": "Move turtle to the origin  coordinates (0,0)  and set its heading to its start-orientation (which depends on the mode, see mode()).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.home"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::circle}}({{c3::radius}}, {{c4::extent}}={{c5::None}}, {{c6::steps}}={{c7::None}})",
+      "Body": "Draw a circle with given radius.  The center is radius units left of the turtle; extent  an angle  determines which part of the circle is drawn.  If extent is not given, draw the entire circle.  If extent is not a full circle, one endpoint of the arc is the current pen position.  Draw the arc in counterclockwise direction if radius is positive, otherwise in clockwise direction.  Finally the direction of the turtle is changed by the amount of extent.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.circle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::dot}}({{c3::size}}={{c4::None}}, *color)",
+      "Body": "Draw a circular dot with diameter size, using color.  If size is not given, the maximum of pensize+4 and 2*pensize is used.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.dot"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::stamp}}()",
+      "Body": "Stamp a copy of the turtle shape onto the canvas at the current turtle position.  Return a stamp_id for that stamp, which can be used to delete it by calling clearstamp(stamp_id).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.stamp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::clearstamp}}({{c3::stampid}})",
+      "Body": "Delete stamp with given stampid.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.clearstamp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::clearstamps}}({{c3::n}}={{c4::None}})",
+      "Body": "Delete all or first/last n of turtle's stamps.  If n is None, delete all stamps, if n > 0 delete first n stamps, else if n < 0 delete last n stamps.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.clearstamps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::undo}}()",
+      "Body": "Undo (repeatedly) the last turtle action(s).  Number of available undo actions is determined by the size of the undobuffer.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.undo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::speed}}({{c3::speed}}={{c4::None}})",
+      "Body": "Set the turtle's speed to an integer value in the range 0..10.  If no argument is given, return current speed.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.speed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::position}}()",
+      "Body": "Return the turtle's current location (x,y) (as a Vec2D vector).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.position"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::pos}}()",
+      "Body": "Return the turtle's current location (x,y) (as a Vec2D vector).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.pos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::towards}}({{c3::x}}, {{c4::y}}={{c5::None}})",
+      "Body": "Return the angle between the line from turtle position to position specified by (x,y), the vector or the other turtle.  This depends on the turtle's start orientation which depends on the mode - standard/world or logo).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.towards"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::xcor}}()",
+      "Body": "Return the turtle's x coordinate.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.xcor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::ycor}}()",
+      "Body": "Return the turtle's y coordinate.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.ycor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::heading}}()",
+      "Body": "Return the turtle's current heading (value depends on the turtle mode, see mode()).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.heading"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::distance}}({{c3::x}}, {{c4::y}}={{c5::None}})",
+      "Body": "Return the distance from the turtle to (x,y), the given vector, or the given other turtle, in turtle step units.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.distance"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::degrees}}({{c3::fullcircle}}=360.0)",
+      "Body": "Set angle measurement units, i.e. set number of degrees for a full circle. Default value is 360 degrees.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.degrees"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::radians}}()",
+      "Body": "Set the angle measurement units to radians.  Equivalent to degrees(2*math.pi).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.radians"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::pendown}}()",
+      "Body": "Pull the pen down  drawing when moving.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.pendown"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::pd}}()",
+      "Body": "Pull the pen down  drawing when moving.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.pd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::down}}()",
+      "Body": "Pull the pen down  drawing when moving.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.down"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::penup}}()",
+      "Body": "Pull the pen up  no drawing when moving.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.penup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::pu}}()",
+      "Body": "Pull the pen up  no drawing when moving.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.pu"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::up}}()",
+      "Body": "Pull the pen up  no drawing when moving.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.up"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::pensize}}({{c3::width}}={{c4::None}})",
+      "Body": "Set the line thickness to width or return it.  If resizemode is set to auto and turtleshape is a polygon, that polygon is drawn with the same line thickness.  If no argument is given, the current pensize is returned.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.pensize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::width}}({{c3::width}}={{c4::None}})",
+      "Body": "Set the line thickness to width or return it.  If resizemode is set to auto and turtleshape is a polygon, that polygon is drawn with the same line thickness.  If no argument is given, the current pensize is returned.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.width"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::pen}}({{c3::pen}}={{c4::None}}, **pendict)",
+      "Body": "Return or set the pen's attributes in a pen-dictionary with the following key/value pairs:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.pen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::isdown}}()",
+      "Body": "Return True if pen is down, False if it's up.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.isdown"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::pencolor}}(*args)",
+      "Body": "Return or set the pencolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.pencolor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pencolor}}()",
+      "Body": "If turtleshape is a polygon, the outline of that polygon is drawn with the newly set pencolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pencolor}}({{c2::colorstring}})",
+      "Body": "If turtleshape is a polygon, the outline of that polygon is drawn with the newly set pencolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pencolor}}(({{c2::r}}, {{c3::g}}, {{c4::b}}))",
+      "Body": "If turtleshape is a polygon, the outline of that polygon is drawn with the newly set pencolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pencolor}}({{c2::r}}, {{c3::g}}, {{c4::b}})",
+      "Body": "If turtleshape is a polygon, the outline of that polygon is drawn with the newly set pencolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::fillcolor}}(*args)",
+      "Body": "Return or set the fillcolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.fillcolor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::fillcolor}}()",
+      "Body": "If turtleshape is a polygon, the interior of that polygon is drawn with the newly set fillcolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::fillcolor}}({{c2::colorstring}})",
+      "Body": "If turtleshape is a polygon, the interior of that polygon is drawn with the newly set fillcolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::fillcolor}}(({{c2::r}}, {{c3::g}}, {{c4::b}}))",
+      "Body": "If turtleshape is a polygon, the interior of that polygon is drawn with the newly set fillcolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::fillcolor}}({{c2::r}}, {{c3::g}}, {{c4::b}})",
+      "Body": "If turtleshape is a polygon, the interior of that polygon is drawn with the newly set fillcolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::color}}(*args)",
+      "Body": "Return or set pencolor and fillcolor.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.color"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::color}}()",
+      "Body": "If turtleshape is a polygon, outline and interior of that polygon is drawn with the newly set colors.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::color}}({{c2::colorstring}}), {{c3::color}}(({{c4::r}},{{c5::g}},{{c6::b}})), {{c7::color}}({{c8::r}},{{c9::g}},{{c10::b}})",
+      "Body": "If turtleshape is a polygon, outline and interior of that polygon is drawn with the newly set colors.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::color}}({{c2::colorstring}}1, {{c3::colorstring}}2), {{c4::color}}(({{c5::r}}1,{{c6::g}}1,{{c7::b}}1), ({{c8::r}}2,{{c9::g}}2,{{c10::b}}2))",
+      "Body": "If turtleshape is a polygon, outline and interior of that polygon is drawn with the newly set colors.",
+      "Link": "https://docs.python.org/3/library/turtle.html#color-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::filling}}()",
+      "Body": "Return fillstate (True if filling, False else).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.filling"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::begin_fill}}()",
+      "Body": "To be called just before drawing a shape to be filled.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.begin_fill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::end_fill}}()",
+      "Body": "Fill the shape drawn after the last call to begin_fill().",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.end_fill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::reset}}()",
+      "Body": "Delete the turtle's drawings from the screen, re-center the turtle and set variables to the default values.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::clear}}()",
+      "Body": "Delete the turtle's drawings from the screen.  Do not move turtle.  State and position of the turtle as well as drawings of other turtles are not affected.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.clear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::write}}({{c3::arg}}, {{c4::move}}={{c5::False}}, {{c6::align}}=\"{{c7::left}}\", {{c8::font}}=(\"{{c9::Arial}}\", 8, \"{{c10::normal}}\"))",
+      "Body": "Write text - the string representation of arg - at the current turtle position according to align (left, center or right) and with the given font.  If move is true, the pen is moved to the bottom-right corner of the text.  By default, move is False.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.write"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::hideturtle}}()",
+      "Body": "Make the turtle invisible.  It's a good idea to do this while you're in the middle of doing some complex drawing, because hiding the turtle speeds up the drawing observably.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.hideturtle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::ht}}()",
+      "Body": "Make the turtle invisible.  It's a good idea to do this while you're in the middle of doing some complex drawing, because hiding the turtle speeds up the drawing observably.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.ht"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::showturtle}}()",
+      "Body": "Make the turtle visible.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.showturtle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::st}}()",
+      "Body": "Make the turtle visible.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.st"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::isvisible}}()",
+      "Body": "Return True if the Turtle is shown, False if it's hidden.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.isvisible"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::shape}}({{c3::name}}={{c4::None}})",
+      "Body": "Set turtle shape to shape with given name or, if name is not given, return name of current shape.  Shape with name must exist in the TurtleScreen's shape dictionary.  Initially there are the following polygon shapes: arrow, turtle, circle, square, triangle, classic.  To learn about how to deal with shapes see Screen method register_shape().",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.shape"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::resizemode}}({{c3::rmode}}={{c4::None}})",
+      "Body": "Set resizemode to one of the values: auto, user, noresize.  If rmode is not given, return current resizemode.  Different resizemodes have the following effects:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.resizemode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::shapesize}}({{c3::stretch_wid}}={{c4::None}}, {{c5::stretch_len}}={{c6::None}}, {{c7::outline}}={{c8::None}})",
+      "Body": "Return or set the pen's attributes x/y-stretchfactors and/or outline.  Set resizemode to user.  If and only if resizemode is set to user, the turtle will be displayed stretched according to its stretchfactors: stretch_wid is stretchfactor perpendicular to its orientation, stretch_len is stretchfactor in direction of its orientation, outline determines the width of the shapes's outline.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.shapesize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::turtlesize}}({{c3::stretch_wid}}={{c4::None}}, {{c5::stretch_len}}={{c6::None}}, {{c7::outline}}={{c8::None}})",
+      "Body": "Return or set the pen's attributes x/y-stretchfactors and/or outline.  Set resizemode to user.  If and only if resizemode is set to user, the turtle will be displayed stretched according to its stretchfactors: stretch_wid is stretchfactor perpendicular to its orientation, stretch_len is stretchfactor in direction of its orientation, outline determines the width of the shapes's outline.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.turtlesize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::shearfactor}}({{c3::shear}}={{c4::None}})",
+      "Body": "Set or return the current shearfactor. Shear the turtleshape according to the given shearfactor shear, which is the tangent of the shear angle. Do not change the turtle's heading (direction of movement). If shear is not given: return the current shearfactor, i. e. the tangent of the shear angle, by which lines parallel to the heading of the turtle are sheared.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.shearfactor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::tilt}}({{c3::angle}})",
+      "Body": "Rotate the turtleshape by angle from its current tilt-angle, but do not change the turtle's heading (direction of movement).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.tilt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::settiltangle}}({{c3::angle}})",
+      "Body": "Rotate the turtleshape to point in the direction specified by angle, regardless of its current tilt-angle.  Do not change the turtle's heading (direction of movement).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.settiltangle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::tiltangle}}({{c3::angle}}={{c4::None}})",
+      "Body": "Set or return the current tilt-angle. If angle is given, rotate the turtleshape to point in the direction specified by angle, regardless of its current tilt-angle. Do not change the turtle's heading (direction of movement). If angle is not given: return the current tilt-angle, i. e. the angle between the orientation of the turtleshape and the heading of the turtle (its direction of movement).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.tiltangle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::shapetransform}}({{c3::t}}11={{c4::None}}, {{c5::t}}12={{c6::None}}, {{c7::t}}21={{c8::None}}, {{c9::t}}22={{c10::None}})",
+      "Body": "Set or return the current transformation matrix of the turtle shape.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.shapetransform"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::get_shapepoly}}()",
+      "Body": "Return the current shape polygon as tuple of coordinate pairs. This can be used to define a new shape or components of a compound shape.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.get_shapepoly"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::onclick}}({{c3::fun}}, {{c4::btn}}=1, {{c5::add}}={{c6::None}})",
+      "Body": "Bind fun to mouse-click events on this turtle.  If fun is None, existing bindings are removed.  Example for the anonymous turtle, i.e. the procedural way:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.onclick"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::onrelease}}({{c3::fun}}, {{c4::btn}}=1, {{c5::add}}={{c6::None}})",
+      "Body": "Bind fun to mouse-button-release events on this turtle.  If fun is None, existing bindings are removed.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.onrelease"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::ondrag}}({{c3::fun}}, {{c4::btn}}=1, {{c5::add}}={{c6::None}})",
+      "Body": "Bind fun to mouse-move events on this turtle.  If fun is None, existing bindings are removed.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.ondrag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::begin_poly}}()",
+      "Body": "Start recording the vertices of a polygon.  Current turtle position is first vertex of polygon.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.begin_poly"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::end_poly}}()",
+      "Body": "Stop recording the vertices of a polygon.  Current turtle position is last vertex of polygon.  This will be connected with the first vertex.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.end_poly"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::get_poly}}()",
+      "Body": "Return the last recorded polygon.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.get_poly"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::clone}}()",
+      "Body": "Create and return a clone of the turtle with same position, heading and turtle properties.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.clone"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::getturtle}}()",
+      "Body": "Return the Turtle object itself.  Only reasonable use: as a function to return the anonymous turtle:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.getturtle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::getpen}}()",
+      "Body": "Return the Turtle object itself.  Only reasonable use: as a function to return the anonymous turtle:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.getpen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::getscreen}}()",
+      "Body": "Return the TurtleScreen object the turtle is drawing on. TurtleScreen methods can then be called for that object.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.getscreen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::setundobuffer}}({{c3::size}})",
+      "Body": "Set or disable undobuffer.  If size is an integer an empty undobuffer of given size is installed.  size gives the maximum number of turtle actions that can be undone by the undo() method/function.  If size is None, the undobuffer is disabled.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.setundobuffer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::undobufferentries}}()",
+      "Body": "Return number of entries in the undobuffer.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.undobufferentries"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::bgcolor}}(*args)",
+      "Body": "Set or return background color of the TurtleScreen.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.bgcolor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::bgpic}}({{c3::picname}}={{c4::None}})",
+      "Body": "Set background image or return name of current backgroundimage.  If picname is a filename, set the corresponding image as background.  If picname is \"nopic\", delete background image, if present.  If picname is None, return the filename of the current backgroundimage.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.bgpic"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::clear}}()",
+      "Body": "Delete all drawings and all turtles from the TurtleScreen.  Reset the now empty TurtleScreen to its initial state: white background, no background image, no event bindings and tracing on.",
+      "Link": "https://docs.python.org/3/library/turtle.html#window-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::clearscreen}}()",
+      "Body": "Delete all drawings and all turtles from the TurtleScreen.  Reset the now empty TurtleScreen to its initial state: white background, no background image, no event bindings and tracing on.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.clearscreen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::reset}}()",
+      "Body": "Reset all Turtles on the Screen to their initial state.",
+      "Link": "https://docs.python.org/3/library/turtle.html#window-control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::resetscreen}}()",
+      "Body": "Reset all Turtles on the Screen to their initial state.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.resetscreen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::screensize}}({{c3::canvwidth}}={{c4::None}}, {{c5::canvheight}}={{c6::None}}, {{c7::bg}}={{c8::None}})",
+      "Body": "If no arguments are given, return current (canvaswidth, canvasheight).  Else resize the canvas the turtles are drawing on.  Do not alter the drawing window.  To observe hidden parts of the canvas, use the scrollbars. With this method, one can make visible those parts of a drawing which were outside the canvas before.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.screensize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::setworldcoordinates}}({{c3::llx}}, {{c4::lly}}, {{c5::urx}}, {{c6::ury}})",
+      "Body": "Set up user-defined coordinate system and switch to mode world if necessary.  This performs a screen.reset().  If mode world is already active, all drawings are redrawn according to the new coordinates.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.setworldcoordinates"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::delay}}({{c3::delay}}={{c4::None}})",
+      "Body": "Set or return the drawing delay in milliseconds.  (This is approximately the time interval between two consecutive canvas updates.)  The longer the drawing delay, the slower the animation.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.delay"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::tracer}}({{c3::n}}={{c4::None}}, {{c5::delay}}={{c6::None}})",
+      "Body": "Turn turtle animation on/off and set delay for update drawings.  If n is given, only each n-th regular screen update is really performed.  (Can be used to accelerate the drawing of complex graphics.)  When called without arguments, returns the currently stored value of n. Second argument sets delay value (see delay()).",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.tracer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::update}}()",
+      "Body": "Perform a TurtleScreen update. To be used when tracer is turned off.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::listen}}({{c3::xdummy}}={{c4::None}}, {{c5::ydummy}}={{c6::None}})",
+      "Body": "Set focus on TurtleScreen (in order to collect key-events).  Dummy arguments are provided in order to be able to pass listen() to the onclick method.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.listen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::onkey}}({{c3::fun}}, {{c4::key}})",
+      "Body": "Bind fun to key-release event of key.  If fun is None, event bindings are removed. Remark: in order to be able to register key-events, TurtleScreen must have the focus. (See method listen().)",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.onkey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::onkeyrelease}}({{c3::fun}}, {{c4::key}})",
+      "Body": "Bind fun to key-release event of key.  If fun is None, event bindings are removed. Remark: in order to be able to register key-events, TurtleScreen must have the focus. (See method listen().)",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.onkeyrelease"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::onkeypress}}({{c3::fun}}, {{c4::key}}={{c5::None}})",
+      "Body": "Bind fun to key-press event of key if key is given, or to any key-press-event if no key is given. Remark: in order to be able to register key-events, TurtleScreen must have focus. (See method listen().)",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.onkeypress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::onclick}}({{c3::fun}}, {{c4::btn}}=1, {{c5::add}}={{c6::None}})",
+      "Body": "Bind fun to mouse-click events on this screen.  If fun is None, existing bindings are removed.",
+      "Link": "https://docs.python.org/3/library/turtle.html#using-screen-events"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::onscreenclick}}({{c3::fun}}, {{c4::btn}}=1, {{c5::add}}={{c6::None}})",
+      "Body": "Bind fun to mouse-click events on this screen.  If fun is None, existing bindings are removed.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.onscreenclick"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::ontimer}}({{c3::fun}}, {{c4::t}}=0)",
+      "Body": "Install a timer that calls fun after t milliseconds.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.ontimer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::mainloop}}()",
+      "Body": "Starts event loop - calling Tkinter's mainloop function. Must be the last statement in a turtle graphics program. Must not be used if a script is run from within IDLE in -n mode (No subprocess) - for interactive use of turtle graphics.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.mainloop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::done}}()",
+      "Body": "Starts event loop - calling Tkinter's mainloop function. Must be the last statement in a turtle graphics program. Must not be used if a script is run from within IDLE in -n mode (No subprocess) - for interactive use of turtle graphics.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.done"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::textinput}}({{c3::title}}, {{c4::prompt}})",
+      "Body": "Pop up a dialog window for input of a string. Parameter title is the title of the dialog window, prompt is a text mostly describing what information to input. Return the string input. If the dialog is canceled, return None.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.textinput"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::numinput}}({{c3::title}}, {{c4::prompt}}, {{c5::default}}={{c6::None}}, {{c7::minval}}={{c8::None}}, {{c9::maxval}}={{c10::None}})",
+      "Body": "Pop up a dialog window for input of a number. title is the title of the dialog window, prompt is a text mostly describing what numerical information to input. default: default value, minval: minimum value for input, maxval: maximum value for input The number input must be in the range minval .. maxval if these are given. If not, a hint is issued and the dialog remains open for correction. Return the number input. If the dialog is canceled,  return None.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.numinput"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::mode}}({{c3::mode}}={{c4::None}})",
+      "Body": "Set turtle mode (standard, logo or world) and perform reset.  If mode is not given, current mode is returned.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.mode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::colormode}}({{c3::cmode}}={{c4::None}})",
+      "Body": "Return the colormode or set it to 1.0 or 255.  Subsequently r, g, b values of color triples have to be in the range 0..cmode.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.colormode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::getcanvas}}()",
+      "Body": "Return the Canvas of this TurtleScreen.  Useful for insiders who know what to do with a Tkinter Canvas.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.getcanvas"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::getshapes}}()",
+      "Body": "Return a list of names of all currently available turtle shapes.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.getshapes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::register_shape}}({{c3::name}}, {{c4::shape}}={{c5::None}})",
+      "Body": "There are three different ways to call this function:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.register_shape"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::addshape}}({{c3::name}}, {{c4::shape}}={{c5::None}})",
+      "Body": "There are three different ways to call this function:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.addshape"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::turtles}}()",
+      "Body": "Return the list of turtles on the screen.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.turtles"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::window_height}}()",
+      "Body": "Return the height of the turtle window.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.window_height"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::window_width}}()",
+      "Body": "Return the width of the turtle window.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.window_width"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::bye}}()",
+      "Body": "Shut the turtlegraphics window.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.bye"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::exitonclick}}()",
+      "Body": "Bind bye() method to mouse clicks on the Screen.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.exitonclick"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::setup}}({{c3::width}}={{c4::_CFG}}[\"{{c5::width}}\"], {{c6::height}}={{c7::_CFG}}[\"{{c8::height}}\"], {{c9::startx}}={{c10::_CFG}}[\"{{c11::leftright}}\"], {{c12::starty}}={{c13::_CFG}}[\"{{c14::topbottom}}\"])",
+      "Body": "Set the size and position of the main window.  Default values of arguments are stored in the configuration dictionary and can be changed via a turtle.cfg file.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.setup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::title}}({{c3::titlestring}})",
+      "Body": "Set title of turtle window to titlestring.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.title"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::turtle}}.{{c3::RawTurtle}}({{c4::canvas}})",
+      "Body": "Create a turtle.  The turtle has all methods described above as methods of Turtle/RawTurtle.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.RawTurtle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::turtle}}.{{c3::RawPen}}({{c4::canvas}})",
+      "Body": "Create a turtle.  The turtle has all methods described above as methods of Turtle/RawTurtle.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.RawPen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::turtle}}.{{c3::Turtle}}",
+      "Body": "Subclass of RawTurtle, has the same interface but draws on a default Screen object created automatically when needed for the first time.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.Turtle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::turtle}}.{{c3::TurtleScreen}}({{c4::cv}})",
+      "Body": "Provides screen oriented methods like setbg() etc. that are described above.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.TurtleScreen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::turtle}}.{{c3::Screen}}",
+      "Body": "Subclass of TurtleScreen, with four methods added.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.Screen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::turtle}}.{{c3::ScrolledCanvas}}({{c4::master}})",
+      "Body": "Used by class Screen, which thus automatically provides a ScrolledCanvas as playground for the turtles.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.ScrolledCanvas"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::turtle}}.{{c3::Shape}}({{c4::type_}}, {{c5::data}})",
+      "Body": "Data structure modeling shapes.  The pair (type_, data) must follow this specification:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.Shape"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::Shape}}.{{c3::addcomponent}}({{c4::poly}}, {{c5::fill}}, {{c6::outline}}={{c7::None}})",
+      "Body": "Example:",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.Shape.addcomponent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::turtle}}.{{c3::Vec}}2{{c4::D}}({{c5::x}}, {{c6::y}})",
+      "Body": "A two-dimensional vector class, used as a helper class for implementing turtle graphics.  May be useful for turtle graphics programs too.  Derived from tuple, so a vector is a tuple!",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.Vec2D"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::turtle}}.{{c2::write_docstringdict}}({{c3::filename}}=\"{{c4::turtle_docstringdict}}\")",
+      "Body": "Create and write docstring-dictionary to a Python script with the given filename.  This function has to be called explicitly (it is not used by the turtle graphics classes).  The docstring dictionary will be written to the Python script filename.py.  It is intended to serve as a template for translation of the docstrings into different languages.",
+      "Link": "https://docs.python.org/3/library/turtle.html#turtle.write_docstringdict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::cmd}}.{{c3::Cmd}}({{c4::completekey}}='{{c5::tab}}', {{c6::stdin}}={{c7::None}}, {{c8::stdout}}={{c9::None}})",
+      "Body": "A Cmd instance or subclass instance is a line-oriented interpreter framework.  There is no good reason to instantiate Cmd itself; rather, it's useful as a superclass of an interpreter class you define yourself in order to inherit Cmd's methods and encapsulate action methods.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::cmdloop}}({{c3::intro}}={{c4::None}})",
+      "Body": "Repeatedly issue a prompt, accept input, parse an initial prefix off the received input, and dispatch to action methods, passing them the remainder of the line as argument.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.cmdloop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::onecmd}}({{c3::str}})",
+      "Body": "Interpret the argument as though it had been typed in response to the prompt. This may be overridden, but should not normally need to be; see the precmd() and postcmd() methods for useful execution hooks.  The return value is a flag indicating whether interpretation of commands by the interpreter should stop.  If there is a do_*() method for the command str, the return value of that method is returned, otherwise the return value from the default() method is returned.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.onecmd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::emptyline}}()",
+      "Body": "Method called when an empty line is entered in response to the prompt. If this method is not overridden, it repeats the last nonempty command entered.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.emptyline"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::default}}({{c3::line}})",
+      "Body": "Method called on an input line when the command prefix is not recognized. If this method is not overridden, it prints an error message and returns.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.default"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::completedefault}}({{c3::text}}, {{c4::line}}, {{c5::begidx}}, {{c6::endidx}})",
+      "Body": "Method called to complete an input line when no command-specific complete_*() method is available.  By default, it returns an empty list.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.completedefault"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::precmd}}({{c3::line}})",
+      "Body": "Hook method executed just before the command line line is interpreted, but after the input prompt is generated and issued.  This method is a stub in Cmd; it exists to be overridden by subclasses.  The return value is used as the command which will be executed by the onecmd() method; the precmd() implementation may re-write the command or simply return line unchanged.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.precmd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::postcmd}}({{c3::stop}}, {{c4::line}})",
+      "Body": "Hook method executed just after a command dispatch is finished.  This method is a stub in Cmd; it exists to be overridden by subclasses.  line is the command line which was executed, and stop is a flag which indicates whether execution will be terminated after the call to postcmd(); this will be the return value of the onecmd() method.  The return value of this method will be used as the new value for the internal flag which corresponds to stop; returning false will cause interpretation to continue.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.postcmd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::preloop}}()",
+      "Body": "Hook method executed once when cmdloop() is called.  This method is a stub in Cmd; it exists to be overridden by subclasses.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.preloop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::postloop}}()",
+      "Body": "Hook method executed once when cmdloop() is about to return. This method is a stub in Cmd; it exists to be overridden by subclasses.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.postloop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::prompt}}",
+      "Body": "The prompt issued to solicit input.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.prompt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::identchars}}",
+      "Body": "The string of characters accepted for the command prefix.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.identchars"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::lastcmd}}",
+      "Body": "The last nonempty command prefix seen.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.lastcmd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::cmdqueue}}",
+      "Body": "A list of queued input lines.  The cmdqueue list is checked in cmdloop() when new input is needed; if it is nonempty, its elements will be processed in order, as if entered at the prompt.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.cmdqueue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::intro}}",
+      "Body": "A string to issue as an intro or banner.  May be overridden by giving the cmdloop() method an argument.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.intro"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::doc_header}}",
+      "Body": "The header to issue if the help output has a section for documented commands.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.doc_header"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::misc_header}}",
+      "Body": "The header to issue if the help output has a section for miscellaneous  help topics (that is, there are help_*() methods without corresponding do_*() methods).",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.misc_header"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::undoc_header}}",
+      "Body": "The header to issue if the help output has a section for undocumented  commands (that is, there are do_*() methods without corresponding help_*() methods).",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.undoc_header"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::ruler}}",
+      "Body": "The character used to draw separator lines under the help-message headers.  If empty, no ruler line is drawn.  It defaults to '='.",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.ruler"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Cmd}}.{{c2::use_rawinput}}",
+      "Body": "A flag, defaulting to true.  If true, cmdloop() uses input() to display a prompt and read the next command; if false, sys.stdout.write() and sys.stdin.readline() are used. (This means that by importing readline, on systems that support it, the interpreter will automatically support Emacs-like line editing  and command-history keystrokes.)",
+      "Link": "https://docs.python.org/3/library/cmd.html#cmd.Cmd.use_rawinput"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::split}}({{c3::s}}, {{c4::comments}}={{c5::False}}, {{c6::posix}}={{c7::True}})",
+      "Body": "Split the string s using shell-like syntax. If comments is False (the default), the parsing of comments in the given string will be disabled (setting the commenters attribute of the shlex instance to the empty string).  This function operates in POSIX mode by default, but uses non-POSIX mode if the posix argument is false.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.split"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::quote}}({{c3::s}})",
+      "Body": "Return a shell-escaped version of the string s.  The returned value is a string that can safely be used as one token in a shell command line, for cases where you cannot use a list.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.quote"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::shlex}}.{{c3::shlex}}({{c4::instream}}={{c5::None}}, {{c6::infile}}={{c7::None}}, {{c8::posix}}={{c9::False}}, {{c10::punctuation_chars}}={{c11::False}})",
+      "Body": "A shlex instance or subclass instance is a lexical analyzer object.  The initialization argument, if present, specifies where to read characters from.  It must be a file-/stream-like object with read() and readline() methods, or a string.  If no argument is given, input will be taken from sys.stdin. The second optional argument is a filename string, which sets the initial value of the infile attribute.  If the instream argument is omitted or equal to sys.stdin, this second argument defaults to stdin.  The posix argument defines the operational mode: when posix is not true (default), the shlex instance will operate in compatibility mode.  When operating in POSIX mode, shlex will try to be as close as possible to the POSIX shell parsing rules.  The punctuation_chars argument provides a way to make the behaviour even closer to how real shells parse.  This can take a number of values: the default value, False, preserves the behaviour seen under Python 3.5 and earlier.  If set to True, then parsing of the characters ();<>|& is changed: any run of these characters (considered punctuation characters) is returned as a single token.  If set to a non-empty string of characters, those characters will be used as the punctuation characters.  Any characters in the wordchars attribute that appear in punctuation_chars will be removed from wordchars.  See Improved Compatibility with Shells for more information.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::get_token}}()",
+      "Body": "Return a token.  If tokens have been stacked using push_token(), pop a token off the stack.  Otherwise, read one from the input stream.  If reading encounters an immediate end-of-file, eof is returned (the empty string ('') in non-POSIX mode, and None in POSIX mode).",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.get_token"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::push_token}}({{c3::str}})",
+      "Body": "Push the argument onto the token stack.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.push_token"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::read_token}}()",
+      "Body": "Read a raw token.  Ignore the pushback stack, and do not interpret source requests.  (This is not ordinarily a useful entry point, and is documented here only for the sake of completeness.)",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.read_token"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::sourcehook}}({{c3::filename}})",
+      "Body": "When shlex detects a source request (see source below) this method is given the following token as argument, and expected to return a tuple consisting of a filename and an open file-like object.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.sourcehook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::push_source}}({{c3::newstream}}, {{c4::newfile}}={{c5::None}})",
+      "Body": "Push an input source stream onto the input stack.  If the filename argument is specified it will later be available for use in error messages.  This is the same method used internally by the sourcehook() method.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.push_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::pop_source}}()",
+      "Body": "Pop the last-pushed input source from the input stack. This is the same method used internally when the lexer reaches EOF on a stacked input stream.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.pop_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Program Frameworks", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::error_leader}}({{c3::infile}}={{c4::None}}, {{c5::lineno}}={{c6::None}})",
+      "Body": "This method generates an error message leader in the format of a Unix C compiler error label; the format is '\"%s\", line %d: ', where the %s is replaced with the name of the current source file and the %d with the current input line number (the optional arguments can be used to override these).",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.error_leader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::commenters}}",
+      "Body": "The string of characters that are recognized as comment beginners. All characters from the comment beginner to end of line are ignored. Includes just '#' by default.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.commenters"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::wordchars}}",
+      "Body": "The string of characters that will accumulate into multi-character tokens.  By default, includes all ASCII alphanumerics and underscore.  In POSIX mode, the accented characters in the Latin-1 set are also included.  If punctuation_chars is not empty, the characters ~-./*?=, which can appear in filename specifications and command line parameters, will also be included in this attribute, and any characters which appear in punctuation_chars will be removed from wordchars if they are present there.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.wordchars"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::whitespace}}",
+      "Body": "Characters that will be considered whitespace and skipped.  Whitespace bounds tokens.  By default, includes space, tab, linefeed and carriage-return.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.whitespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::escape}}",
+      "Body": "Characters that will be considered as escape. This will be only used in POSIX mode, and includes just '\\' by default.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.escape"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::quotes}}",
+      "Body": "Characters that will be considered string quotes.  The token accumulates until the same quote is encountered again (thus, different quote types protect each other as in the shell.)  By default, includes ASCII single and double quotes.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.quotes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::escapedquotes}}",
+      "Body": "Characters in quotes that will interpret escape characters defined in escape.  This is only used in POSIX mode, and includes just '\"' by default.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.escapedquotes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::whitespace_split}}",
+      "Body": "If True, tokens will only be split in whitespaces.  This is useful, for example, for parsing command lines with shlex, getting tokens in a similar way to shell arguments.  If this attribute is True, punctuation_chars will have no effect, and splitting will happen only on whitespaces.  When using punctuation_chars, which is intended to provide parsing closer to that implemented by shells, it is advisable to leave whitespace_split as False (the default value).",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.whitespace_split"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::infile}}",
+      "Body": "The name of the current input file, as initially set at class instantiation time or stacked by later source requests.  It may be useful to examine this when constructing error messages.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.infile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::instream}}",
+      "Body": "The input stream from which this shlex instance is reading characters.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.instream"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::source}}",
+      "Body": "This attribute is None by default.  If you assign a string to it, that string will be recognized as a lexical-level inclusion request similar to the source keyword in various shells.  That is, the immediately following token will be opened as a filename and input will be taken from that stream until EOF, at which point the close() method of that stream will be called and the input source will again become the original input stream.  Source requests may be stacked any number of levels deep.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::debug}}",
+      "Body": "If this attribute is numeric and 1 or more, a shlex instance will print verbose progress output on its behavior.  If you need to use this, you can read the module source code to learn the details.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.debug"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::lineno}}",
+      "Body": "Source line number (count of newlines seen so far plus one).",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::token}}",
+      "Body": "The token buffer.  It may be useful to examine this when catching exceptions.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.token"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::eof}}",
+      "Body": "Token used to determine end of file. This will be set to the empty string (''), in non-POSIX mode, and to None in POSIX mode.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.eof"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Program Frameworks",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shlex}}.{{c2::punctuation_chars}}",
+      "Body": "Characters that will be considered punctuation. Runs of punctuation characters will be returned as a single token. However, note that no semantic validity checking will be performed: for example, '>>>' could be returned as a token, even though it may not be recognised as such by shells.",
+      "Link": "https://docs.python.org/3/library/shlex.html#shlex.shlex.punctuation_chars"
+    },
+    "modelName": "ClozePy"
+  }
+]

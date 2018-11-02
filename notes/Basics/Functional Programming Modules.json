@@ -1,0 +1,1997 @@
+[
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::accumulate}}({{c3::iterable}}[, {{c4::func}}])",
+      "Body": "Make an iterator that returns accumulated sums, or accumulated results of other binary functions (specified via the optional func argument).  If func is supplied, it should be a function of two arguments. Elements of the input iterable may be any type that can be accepted as arguments to func. (For example, with the default operation of addition, elements may be any addable type including Decimal or Fraction.) If the input iterable is empty, the output iterable will also be empty.",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.accumulate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::chain}}(*iterables)",
+      "Body": "Make an iterator that returns elements from the first iterable until it is exhausted, then proceeds to the next iterable, until all of the iterables are exhausted.  Used for treating consecutive sequences as a single sequence. Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.chain"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::chain}}.{{c3::from_iterable}}({{c4::iterable}})",
+      "Body": "Alternate constructor for chain().  Gets chained inputs from a single iterable argument that is evaluated lazily.  Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.chain.from_iterable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::combinations}}({{c3::iterable}}, {{c4::r}})",
+      "Body": "Return r length subsequences of elements from the input iterable.",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.combinations"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::combinations_with_replacement}}({{c3::iterable}}, {{c4::r}})",
+      "Body": "Return r length subsequences of elements from the input iterable allowing individual elements to be repeated more than once.",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.combinations_with_replacement"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::compress}}({{c3::data}}, {{c4::selectors}})",
+      "Body": "Make an iterator that filters elements from data returning only those that have a corresponding element in selectors that evaluates to True. Stops when either the data or selectors iterables has been exhausted. Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.compress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::count}}({{c3::start}}=0, {{c4::step}}=1)",
+      "Body": "Make an iterator that returns evenly spaced values starting with number start. Often used as an argument to map() to generate consecutive data points. Also, used with zip() to add sequence numbers.  Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::cycle}}({{c3::iterable}})",
+      "Body": "Make an iterator returning elements from the iterable and saving a copy of each. When the iterable is exhausted, return elements from the saved copy.  Repeats indefinitely.  Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.cycle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::dropwhile}}({{c3::predicate}}, {{c4::iterable}})",
+      "Body": "Make an iterator that drops elements from the iterable as long as the predicate is true; afterwards, returns every element.  Note, the iterator does not produce any output until the predicate first becomes false, so it may have a lengthy start-up time.  Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.dropwhile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::filterfalse}}({{c3::predicate}}, {{c4::iterable}})",
+      "Body": "Make an iterator that filters elements from iterable returning only those for which the predicate is False. If predicate is None, return the items that are false. Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.filterfalse"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::groupby}}({{c3::iterable}}, {{c4::key}}={{c5::None}})",
+      "Body": "Make an iterator that returns consecutive keys and groups from the iterable. The key is a function computing a key value for each element.  If not specified or is None, key defaults to an identity function and returns the element unchanged.  Generally, the iterable needs to already be sorted on the same key function.",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.groupby"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::islice}}({{c3::iterable}}, {{c4::stop}})",
+      "Body": "Make an iterator that returns selected elements from the iterable. If start is non-zero, then elements from the iterable are skipped until start is reached. Afterward, elements are returned consecutively unless step is set higher than one which results in items being skipped.  If stop is None, then iteration continues until the iterator is exhausted, if at all; otherwise, it stops at the specified position.  Unlike regular slicing, islice() does not support negative values for start, stop, or step.  Can be used to extract related fields from data where the internal structure has been flattened (for example, a multi-line report may list a name field on every third line).  Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.islice"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::islice}}({{c3::iterable}}, {{c4::start}}, {{c5::stop}}[, {{c6::step}}])",
+      "Body": "Make an iterator that returns selected elements from the iterable. If start is non-zero, then elements from the iterable are skipped until start is reached. Afterward, elements are returned consecutively unless step is set higher than one which results in items being skipped.  If stop is None, then iteration continues until the iterator is exhausted, if at all; otherwise, it stops at the specified position.  Unlike regular slicing, islice() does not support negative values for start, stop, or step.  Can be used to extract related fields from data where the internal structure has been flattened (for example, a multi-line report may list a name field on every third line).  Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertool-functions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::permutations}}({{c3::iterable}}, {{c4::r}}={{c5::None}})",
+      "Body": "Return successive r length permutations of elements in the iterable.",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.permutations"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::product}}(*iterables, {{c3::repeat}}=1)",
+      "Body": "Cartesian product of input iterables.",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.product"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::repeat}}({{c3::object}}[, {{c4::times}}])",
+      "Body": "Make an iterator that returns object over and over again. Runs indefinitely unless the times argument is specified. Used as argument to map() for invariant parameters to the called function.  Also used with zip() to create an invariant part of a tuple record.",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.repeat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::starmap}}({{c3::function}}, {{c4::iterable}})",
+      "Body": "Make an iterator that computes the function using arguments obtained from the iterable.  Used instead of map() when argument parameters are already grouped in tuples from a single iterable (the data has been pre-zipped).  The difference between map() and starmap() parallels the distinction between function(a,b) and function(*c). Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.starmap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::takewhile}}({{c3::predicate}}, {{c4::iterable}})",
+      "Body": "Make an iterator that returns elements from the iterable as long as the predicate is true.  Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.takewhile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::tee}}({{c3::iterable}}, {{c4::n}}=2)",
+      "Body": "Return n independent iterators from a single iterable.",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.tee"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::itertools}}.{{c2::zip_longest}}(*iterables, {{c3::fillvalue}}={{c4::None}})",
+      "Body": "Make an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.  Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/itertools.html#itertools.zip_longest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::functools}}.{{c2::cmp_to_key}}({{c3::func}})",
+      "Body": "Transform an old-style comparison function to a key function.  Used with tools that accept key functions (such as sorted(), min(), max(), heapq.nlargest(), heapq.nsmallest(), itertools.groupby()).  This function is primarily used as a transition tool for programs being converted from 2 which supported the use of comparison functions.",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.cmp_to_key"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "@{{c1::functools}}.{{c2::lru_cache}}({{c3::maxsize}}=128, {{c4::typed}}={{c5::False}})",
+      "Body": "Decorator to wrap a function with a memoizing callable that saves up to the maxsize most recent calls.  It can save time when an expensive or I/O bound function is periodically called with the same arguments.",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.lru_cache"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "@{{c1::functools}}.{{c2::total_ordering}}",
+      "Body": "Given a class defining one or more rich comparison ordering methods, this class decorator supplies the rest.  This simplifies the effort involved in specifying all of the possible rich comparison operations:",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.total_ordering"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::functools}}.{{c2::partial}}({{c3::func}}, *args, **keywords)",
+      "Body": "Return a new partial object which when called will behave like func called with the positional arguments args and keyword arguments keywords. If more arguments are supplied to the call, they are appended to args. If additional keyword arguments are supplied, they extend and override keywords. Roughly equivalent to:",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.partial"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::functools}}.{{c3::partialmethod}}({{c4::func}}, *args, **keywords)",
+      "Body": "Return a new partialmethod descriptor which behaves like partial except that it is designed to be used as a method definition rather than being directly callable.",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.partialmethod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::functools}}.{{c2::reduce}}({{c3::function}}, {{c4::iterable}}[, {{c5::initializer}}])",
+      "Body": "Apply function of two arguments cumulatively to the items of sequence, from left to right, so as to reduce the sequence to a single value.  For example, reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) calculates ((((1+2)+3)+4)+5). The left argument, x, is the accumulated value and the right argument, y, is the update value from the sequence.  If the optional initializer is present, it is placed before the items of the sequence in the calculation, and serves as a default when the sequence is empty.  If initializer is not given and sequence contains only one item, the first item is returned.",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.reduce"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "@{{c1::functools}}.{{c2::singledispatch}}",
+      "Body": "Transform a function into a single-dispatch generic function.",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.singledispatch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::functools}}.{{c2::update_wrapper}}({{c3::wrapper}}, {{c4::wrapped}}, {{c5::assigned}}={{c6::WRAPPER_ASSIGNMENTS}}, {{c7::updated}}={{c8::WRAPPER_UPDATES}})",
+      "Body": "Update a wrapper function to look like the wrapped function. The optional arguments are tuples to specify which attributes of the original function are assigned directly to the matching attributes on the wrapper function and which attributes of the wrapper function are updated with the corresponding attributes from the original function. The default values for these arguments are the module level constants WRAPPER_ASSIGNMENTS (which assigns to the wrapper function's __module__, __name__, __qualname__, __annotations__ and __doc__, the documentation string) and WRAPPER_UPDATES (which updates the wrapper function's __dict__, i.e. the instance dictionary).",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.update_wrapper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "@{{c1::functools}}.{{c2::wraps}}({{c3::wrapped}}, {{c4::assigned}}={{c5::WRAPPER_ASSIGNMENTS}}, {{c6::updated}}={{c7::WRAPPER_UPDATES}})",
+      "Body": "This is a convenience function for invoking update_wrapper() as a function decorator when defining a wrapper function.  It is equivalent to partial(update_wrapper, wrapped=wrapped, assigned=assigned, updated=updated). For example:",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.wraps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::partial}}.{{c2::func}}",
+      "Body": "A callable object or function.  Calls to the partial object will be forwarded to func with new arguments and keywords.",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.partial.func"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::partial}}.{{c2::args}}",
+      "Body": "The leftmost positional arguments that will be prepended to the positional arguments provided to a partial object call.",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.partial.args"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::partial}}.{{c2::keywords}}",
+      "Body": "The keyword arguments that will be supplied when the partial object is called.",
+      "Link": "https://docs.python.org/3/library/functools.html#functools.partial.keywords"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::lt}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.lt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::le}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.le"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::eq}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.eq"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::ne}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.ne"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::ge}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.ge"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::gt}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.gt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__lt__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__lt__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__le__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__le__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__eq__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__eq__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__ne__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__ne__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__ge__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__ge__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__gt__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Perform rich comparisons between a and b. Specifically, lt(a, b) is equivalent to a < b, le(a, b) is equivalent to a <= b, eq(a, b) is equivalent to a == b, ne(a, b) is equivalent to a != b, gt(a, b) is equivalent to a > b and ge(a, b) is equivalent to a >= b.  Note that these functions can return any value, which may or may not be interpretable as a Boolean value.  See Comparisons for more information about rich comparisons.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__gt__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::not_}}({{c3::obj}})",
+      "Body": "Return the outcome of not obj.  (Note that there is no __not__() method for object instances; only the interpreter core defines this operation.  The result is affected by the __bool__() and __len__() methods.)",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.not_"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__not__}}({{c3::obj}})",
+      "Body": "Return the outcome of not obj.  (Note that there is no __not__() method for object instances; only the interpreter core defines this operation.  The result is affected by the __bool__() and __len__() methods.)",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__not__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::truth}}({{c3::obj}})",
+      "Body": "Return True if obj is true, and False otherwise.  This is equivalent to using the bool constructor.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.truth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::is_}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a is b.  Tests object identity.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.is_"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::is_not}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a is not b.  Tests object identity.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.is_not"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::abs}}({{c3::obj}})",
+      "Body": "Return the absolute value of obj.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.abs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__abs__}}({{c3::obj}})",
+      "Body": "Return the absolute value of obj.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__abs__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::add}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a + b, for a and b numbers.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__add__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a + b, for a and b numbers.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__add__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::and_}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the bitwise and of a and b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.and_"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__and__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the bitwise and of a and b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__and__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::floordiv}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a // b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.floordiv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__floordiv__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a // b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__floordiv__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::index}}({{c3::a}})",
+      "Body": "Return a converted to an integer.  Equivalent to a.__index__().",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.index"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__index__}}({{c3::a}})",
+      "Body": "Return a converted to an integer.  Equivalent to a.__index__().",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__index__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::inv}}({{c3::obj}})",
+      "Body": "Return the bitwise inverse of the number obj.  This is equivalent to ~obj.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.inv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::invert}}({{c3::obj}})",
+      "Body": "Return the bitwise inverse of the number obj.  This is equivalent to ~obj.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.invert"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__inv__}}({{c3::obj}})",
+      "Body": "Return the bitwise inverse of the number obj.  This is equivalent to ~obj.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__inv__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__invert__}}({{c3::obj}})",
+      "Body": "Return the bitwise inverse of the number obj.  This is equivalent to ~obj.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__invert__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::lshift}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a shifted left by b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.lshift"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__lshift__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a shifted left by b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__lshift__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::mod}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a % b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.mod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__mod__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a % b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__mod__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::mul}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a * b, for a and b numbers.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.mul"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__mul__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a * b, for a and b numbers.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__mul__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::matmul}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a @ b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.matmul"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__matmul__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a @ b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__matmul__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::neg}}({{c3::obj}})",
+      "Body": "Return obj negated (-obj).",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.neg"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__neg__}}({{c3::obj}})",
+      "Body": "Return obj negated (-obj).",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__neg__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::or_}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the bitwise or of a and b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.or_"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__or__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the bitwise or of a and b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__or__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::pos}}({{c3::obj}})",
+      "Body": "Return obj positive (+obj).",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.pos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__pos__}}({{c3::obj}})",
+      "Body": "Return obj positive (+obj).",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__pos__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::pow}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a ** b, for a and b numbers.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.pow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__pow__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a ** b, for a and b numbers.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__pow__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::rshift}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a shifted right by b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.rshift"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__rshift__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a shifted right by b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__rshift__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::sub}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a - b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.sub"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__sub__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a - b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__sub__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::truediv}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a / b where 2/3 is .66 rather than 0.  This is also known as true division.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.truediv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__truediv__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a / b where 2/3 is .66 rather than 0.  This is also known as true division.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__truediv__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::xor}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the bitwise exclusive or of a and b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.xor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__xor__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the bitwise exclusive or of a and b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__xor__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::concat}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a + b for a and b sequences.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.concat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__concat__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a + b for a and b sequences.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__concat__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::contains}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the outcome of the test b in a. Note the reversed operands.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.contains"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__contains__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the outcome of the test b in a. Note the reversed operands.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__contains__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::countOf}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the number of occurrences of b in a.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.countOf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::delitem}}({{c3::a}}, {{c4::b}})",
+      "Body": "Remove the value of a at index b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.delitem"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__delitem__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Remove the value of a at index b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__delitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::getitem}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the value of a at index b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.getitem"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__getitem__}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the value of a at index b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__getitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::indexOf}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the index of the first of occurrence of b in a.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.indexOf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::setitem}}({{c3::a}}, {{c4::b}}, {{c5::c}})",
+      "Body": "Set the value of a at index b to c.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.setitem"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__setitem__}}({{c3::a}}, {{c4::b}}, {{c5::c}})",
+      "Body": "Set the value of a at index b to c.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__setitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::length_hint}}({{c3::obj}}, {{c4::default}}=0)",
+      "Body": "Return an estimated length for the object o. First try to return its actual length, then an estimate using object.__length_hint__(), and finally return the default value.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.length_hint"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::attrgetter}}({{c3::attr}})",
+      "Body": "Return a callable object that fetches attr from its operand. If more than one attribute is requested, returns a tuple of attributes. The attribute names can also contain dots. For example:",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.attrgetter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::attrgetter}}(*attrs)",
+      "Body": "Return a callable object that fetches attr from its operand. If more than one attribute is requested, returns a tuple of attributes. The attribute names can also contain dots. For example:",
+      "Link": "https://docs.python.org/3/library/operator.html#module-operator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::itemgetter}}({{c3::item}})",
+      "Body": "Return a callable object that fetches item from its operand using the operand's __getitem__() method.  If multiple items are specified, returns a tuple of lookup values.  For example:",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.itemgetter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::itemgetter}}(*items)",
+      "Body": "Return a callable object that fetches item from its operand using the operand's __getitem__() method.  If multiple items are specified, returns a tuple of lookup values.  For example:",
+      "Link": "https://docs.python.org/3/library/operator.html#module-operator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::methodcaller}}({{c3::name}}[, {{c4::args}}...])",
+      "Body": "Return a callable object that calls the method name on its operand.  If additional arguments and/or keyword arguments are given, they will be given to the method as well.  For example:",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.methodcaller"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::iadd}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = iadd(a, b) is equivalent to a += b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.iadd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__iadd__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = iadd(a, b) is equivalent to a += b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__iadd__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::iand}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = iand(a, b) is equivalent to a &= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.iand"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__iand__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = iand(a, b) is equivalent to a &= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__iand__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::iconcat}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = iconcat(a, b) is equivalent to a += b for a and b sequences.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.iconcat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__iconcat__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = iconcat(a, b) is equivalent to a += b for a and b sequences.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__iconcat__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::ifloordiv}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ifloordiv(a, b) is equivalent to a //= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.ifloordiv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__ifloordiv__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ifloordiv(a, b) is equivalent to a //= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__ifloordiv__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::ilshift}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ilshift(a, b) is equivalent to a <<= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.ilshift"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__ilshift__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ilshift(a, b) is equivalent to a <<= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__ilshift__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::imod}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = imod(a, b) is equivalent to a %= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.imod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__imod__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = imod(a, b) is equivalent to a %= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__imod__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::imul}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = imul(a, b) is equivalent to a *= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.imul"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__imul__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = imul(a, b) is equivalent to a *= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__imul__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::imatmul}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = imatmul(a, b) is equivalent to a @= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.imatmul"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__imatmul__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = imatmul(a, b) is equivalent to a @= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__imatmul__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::ior}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ior(a, b) is equivalent to a |= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.ior"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__ior__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ior(a, b) is equivalent to a |= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__ior__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::ipow}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ipow(a, b) is equivalent to a **= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.ipow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__ipow__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ipow(a, b) is equivalent to a **= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__ipow__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::irshift}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = irshift(a, b) is equivalent to a >>= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.irshift"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__irshift__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = irshift(a, b) is equivalent to a >>= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__irshift__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::isub}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = isub(a, b) is equivalent to a -= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.isub"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__isub__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = isub(a, b) is equivalent to a -= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__isub__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::itruediv}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = itruediv(a, b) is equivalent to a /= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.itruediv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__itruediv__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = itruediv(a, b) is equivalent to a /= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__itruediv__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::ixor}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ixor(a, b) is equivalent to a ^= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.ixor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Functional Programming Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::operator}}.{{c2::__ixor__}}({{c3::a}}, {{c4::b}})",
+      "Body": "a = ixor(a, b) is equivalent to a ^= b.",
+      "Link": "https://docs.python.org/3/library/operator.html#operator.__ixor__"
+    },
+    "modelName": "ClozePy"
+  }
+]

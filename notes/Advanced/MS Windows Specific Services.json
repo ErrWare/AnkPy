@@ -1,0 +1,2297 @@
+[
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::FCICreate}}({{c3::cabname}}, {{c4::files}})",
+      "Body": "Create a new CAB file named cabname. files must be a list of tuples, each containing the name of the file on disk, and the name of the file inside the CAB file.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.FCICreate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::UuidCreate}}()",
+      "Body": "Return the string representation of a new unique identifier. This wraps the Windows API functions UuidCreate() and UuidToString().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.UuidCreate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::OpenDatabase}}({{c3::path}}, {{c4::persist}})",
+      "Body": "Return a new database object by calling MsiOpenDatabase.   path is the file name of the MSI file; persist can be one of the constants MSIDBOPEN_CREATEDIRECT, MSIDBOPEN_CREATE, MSIDBOPEN_DIRECT, MSIDBOPEN_READONLY, or MSIDBOPEN_TRANSACT, and may include the flag MSIDBOPEN_PATCHFILE. See the Microsoft documentation for the meaning of these flags; depending on the flags, an existing database is opened, or a new one created.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.OpenDatabase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::CreateRecord}}({{c3::count}})",
+      "Body": "Return a new record object by calling MSICreateRecord(). count is the number of fields of the record.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.CreateRecord"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::init_database}}({{c3::name}}, {{c4::schema}}, {{c5::ProductName}}, {{c6::ProductCode}}, {{c7::ProductVersion}}, {{c8::Manufacturer}})",
+      "Body": "Create and return a new database name, initialize it with schema, and set the properties ProductName, ProductCode, ProductVersion, and Manufacturer.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.init_database"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::add_data}}({{c3::database}}, {{c4::table}}, {{c5::records}})",
+      "Body": "Add all records to the table named table in database.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.add_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::msilib}}.{{c3::Binary}}({{c4::filename}})",
+      "Body": "Represents entries in the Binary table; inserting such an object using add_data() reads the file named filename into the table.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Binary"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::add_tables}}({{c3::database}}, {{c4::module}})",
+      "Body": "Add all table content from module to database. module must contain an attribute tables listing all tables for which content should be added, and one attribute per table that has the actual content.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.add_tables"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::add_stream}}({{c3::database}}, {{c4::name}}, {{c5::path}})",
+      "Body": "Add the file path into the _Stream table of database, with the stream name name.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.add_stream"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::gen_uuid}}()",
+      "Body": "Return a new UUID, in the format that MSI typically requires (i.e. in curly braces, and with all hexdigits in upper-case).",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.gen_uuid"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Database}}.{{c2::OpenView}}({{c3::sql}})",
+      "Body": "Return a view object, by calling MSIDatabaseOpenView(). sql is the SQL statement to execute.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Database.OpenView"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Database}}.{{c2::Commit}}()",
+      "Body": "Commit the changes pending in the current transaction, by calling MSIDatabaseCommit().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Database.Commit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Database}}.{{c2::GetSummaryInformation}}({{c3::count}})",
+      "Body": "Return a new summary information object, by calling MsiGetSummaryInformation().  count is the maximum number of updated values.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Database.GetSummaryInformation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Database}}.{{c2::Close}}()",
+      "Body": "Close the database object, through MsiCloseHandle().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Database.Close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::View}}.{{c2::Execute}}({{c3::params}})",
+      "Body": "Execute the SQL query of the view, through MSIViewExecute(). If params is not None, it is a record describing actual values of the parameter tokens in the query.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.View.Execute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::View}}.{{c2::GetColumnInfo}}({{c3::kind}})",
+      "Body": "Return a record describing the columns of the view, through calling MsiViewGetColumnInfo(). kind can be either MSICOLINFO_NAMES or MSICOLINFO_TYPES.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.View.GetColumnInfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::View}}.{{c2::Fetch}}()",
+      "Body": "Return a result record of the query, through calling MsiViewFetch().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.View.Fetch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::View}}.{{c2::Modify}}({{c3::kind}}, {{c4::data}})",
+      "Body": "Modify the view, by calling MsiViewModify(). kind can be one of MSIMODIFY_SEEK, MSIMODIFY_REFRESH, MSIMODIFY_INSERT, MSIMODIFY_UPDATE, MSIMODIFY_ASSIGN, MSIMODIFY_REPLACE, MSIMODIFY_MERGE, MSIMODIFY_DELETE, MSIMODIFY_INSERT_TEMPORARY, MSIMODIFY_VALIDATE, MSIMODIFY_VALIDATE_NEW, MSIMODIFY_VALIDATE_FIELD, or MSIMODIFY_VALIDATE_DELETE.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.View.Modify"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::View}}.{{c2::Close}}()",
+      "Body": "Close the view, through MsiViewClose().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.View.Close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::SummaryInformation}}.{{c2::GetProperty}}({{c3::field}})",
+      "Body": "Return a property of the summary, through MsiSummaryInfoGetProperty(). field is the name of the property, and can be one of the constants PID_CODEPAGE, PID_TITLE, PID_SUBJECT, PID_AUTHOR, PID_KEYWORDS, PID_COMMENTS, PID_TEMPLATE, PID_LASTAUTHOR, PID_REVNUMBER, PID_LASTPRINTED, PID_CREATE_DTM, PID_LASTSAVE_DTM, PID_PAGECOUNT, PID_WORDCOUNT, PID_CHARCOUNT, PID_APPNAME, or PID_SECURITY.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.SummaryInformation.GetProperty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::SummaryInformation}}.{{c2::GetPropertyCount}}()",
+      "Body": "Return the number of summary properties, through MsiSummaryInfoGetPropertyCount().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.SummaryInformation.GetPropertyCount"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::SummaryInformation}}.{{c2::SetProperty}}({{c3::field}}, {{c4::value}})",
+      "Body": "Set a property through MsiSummaryInfoSetProperty(). field can have the same values as in GetProperty(), value is the new value of the property. Possible value types are integer and string.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.SummaryInformation.SetProperty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::SummaryInformation}}.{{c2::Persist}}()",
+      "Body": "Write the modified properties to the summary information stream, using MsiSummaryInfoPersist().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.SummaryInformation.Persist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Record}}.{{c2::GetFieldCount}}()",
+      "Body": "Return the number of fields of the record, through MsiRecordGetFieldCount().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Record.GetFieldCount"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Record}}.{{c2::GetInteger}}({{c3::field}})",
+      "Body": "Return the value of field as an integer where possible.  field must be an integer.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Record.GetInteger"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Record}}.{{c2::GetString}}({{c3::field}})",
+      "Body": "Return the value of field as a string where possible.  field must be an integer.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Record.GetString"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Record}}.{{c2::SetString}}({{c3::field}}, {{c4::value}})",
+      "Body": "Set field to value through MsiRecordSetString(). field must be an integer; value a string.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Record.SetString"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Record}}.{{c2::SetStream}}({{c3::field}}, {{c4::value}})",
+      "Body": "Set field to the contents of the file named value, through MsiRecordSetStream(). field must be an integer; value a string.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Record.SetStream"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Record}}.{{c2::SetInteger}}({{c3::field}}, {{c4::value}})",
+      "Body": "Set field to value through MsiRecordSetInteger(). Both field and value must be an integer.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Record.SetInteger"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Record}}.{{c2::ClearData}}()",
+      "Body": "Set all fields of the record to 0, through MsiRecordClearData().",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Record.ClearData"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::msilib}}.{{c3::CAB}}({{c4::name}})",
+      "Body": "The class CAB represents a CAB file. During MSI construction, files will be added simultaneously to the Files table, and to a CAB file. Then, when all files have been added, the CAB file can be written, then added to the MSI file.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.CAB"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::CAB}}.{{c3::append}}({{c4::full}}, {{c5::file}}, {{c6::logical}})",
+      "Body": "Add the file with the pathname full to the CAB file, under the name logical.  If there is already a file named logical, a new file name is created.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.CAB.append"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::CAB}}.{{c3::commit}}({{c4::database}})",
+      "Body": "Generate a CAB file, add it as a stream to the MSI file, put it into the Media table, and remove the generated file from the disk.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.CAB.commit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::msilib}}.{{c3::Directory}}({{c4::database}}, {{c5::cab}}, {{c6::basedir}}, {{c7::physical}}, {{c8::logical}}, {{c9::default}}[, {{c10::componentflags}}])",
+      "Body": "Create a new directory in the Directory table. There is a current component at each point in time for the directory, which is either explicitly created through start_component(), or implicitly when files are added for the first time. Files are added into the current component, and into the cab file.  To create a directory, a base directory object needs to be specified (can be None), the path to the physical directory, and a logical directory name.  default specifies the DefaultDir slot in the directory table. componentflags specifies the default flags that new components get.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Directory"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Directory}}.{{c3::start_component}}({{c4::component}}={{c5::None}}, {{c6::feature}}={{c7::None}}, {{c8::flags}}={{c9::None}}, {{c10::keyfile}}={{c11::None}}, {{c12::uuid}}={{c13::None}})",
+      "Body": "Add an entry to the Component table, and make this component the current component for this directory. If no component name is given, the directory name is used. If no feature is given, the current feature is used. If no flags are given, the directory's default flags are used. If no keyfile is given, the KeyPath is left null in the Component table.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Directory.start_component"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Directory}}.{{c3::add_file}}({{c4::file}}, {{c5::src}}={{c6::None}}, {{c7::version}}={{c8::None}}, {{c9::language}}={{c10::None}})",
+      "Body": "Add a file to the current component of the directory, starting a new one if there is no current component. By default, the file name in the source and the file table will be identical. If the src file is specified, it is interpreted relative to the current directory. Optionally, a version and a language can be specified for the entry in the File table.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Directory.add_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Directory}}.{{c3::glob}}({{c4::pattern}}, {{c5::exclude}}={{c6::None}})",
+      "Body": "Add a list of files to the current component as specified in the glob pattern.  Individual files can be excluded in the exclude list.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Directory.glob"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Directory}}.{{c3::remove_pyc}}()",
+      "Body": "Remove .pyc files on uninstall.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Directory.remove_pyc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::msilib}}.{{c3::Feature}}({{c4::db}}, {{c5::id}}, {{c6::title}}, {{c7::desc}}, {{c8::display}}, {{c9::level}}=1, {{c10::parent}}={{c11::None}}, {{c12::directory}}={{c13::None}}, {{c14::attributes}}=0)",
+      "Body": "Add a new record to the Feature table, using the values id, parent.id, title, desc, display, level, directory, and attributes. The resulting feature object can be passed to the start_component() method of Directory.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Feature"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Feature}}.{{c3::set_current}}()",
+      "Body": "Make this feature the current feature of msilib. New components are automatically added to the default feature, unless a feature is explicitly specified.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Feature.set_current"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::msilib}}.{{c3::Control}}({{c4::dlg}}, {{c5::name}})",
+      "Body": "Base class of the dialog controls. dlg is the dialog object the control belongs to, and name is the control's name.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Control}}.{{c3::event}}({{c4::event}}, {{c5::argument}}, {{c6::condition}}=1, {{c7::ordering}}={{c8::None}})",
+      "Body": "Make an entry into the ControlEvent table for this control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Control.event"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Control}}.{{c3::mapping}}({{c4::event}}, {{c5::attribute}})",
+      "Body": "Make an entry into the EventMapping table for this control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Control.mapping"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Control}}.{{c3::condition}}({{c4::action}}, {{c5::condition}})",
+      "Body": "Make an entry into the ControlCondition table for this control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Control.condition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::msilib}}.{{c3::RadioButtonGroup}}({{c4::dlg}}, {{c5::name}}, {{c6::property}})",
+      "Body": "Create a radio button control named name. property is the installer property that gets set when a radio button is selected.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.RadioButtonGroup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::RadioButtonGroup}}.{{c3::add}}({{c4::name}}, {{c5::x}}, {{c6::y}}, {{c7::width}}, {{c8::height}}, {{c9::text}}, {{c10::value}}={{c11::None}})",
+      "Body": "Add a radio button named name to the group, at the coordinates x, y, width, height, and with the label text. If value is None, it defaults to name.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.RadioButtonGroup.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::msilib}}.{{c3::Dialog}}({{c4::db}}, {{c5::name}}, {{c6::x}}, {{c7::y}}, {{c8::w}}, {{c9::h}}, {{c10::attr}}, {{c11::title}}, {{c12::first}}, {{c13::default}}, {{c14::cancel}})",
+      "Body": "Return a new Dialog object. An entry in the Dialog table is made, with the specified coordinates, dialog attributes, title, name of the first, default, and cancel controls.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Dialog"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Dialog}}.{{c3::control}}({{c4::name}}, {{c5::type}}, {{c6::x}}, {{c7::y}}, {{c8::width}}, {{c9::height}}, {{c10::attributes}}, {{c11::property}}, {{c12::text}}, {{c13::control_next}}, {{c14::help}})",
+      "Body": "Return a new Control object. An entry in the Control table is made with the specified parameters.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Dialog.control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Dialog}}.{{c3::text}}({{c4::name}}, {{c5::x}}, {{c6::y}}, {{c7::width}}, {{c8::height}}, {{c9::attributes}}, {{c10::text}})",
+      "Body": "Add and return a Text control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Dialog.text"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Dialog}}.{{c3::bitmap}}({{c4::name}}, {{c5::x}}, {{c6::y}}, {{c7::width}}, {{c8::height}}, {{c9::text}})",
+      "Body": "Add and return a Bitmap control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Dialog.bitmap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Dialog}}.{{c3::line}}({{c4::name}}, {{c5::x}}, {{c6::y}}, {{c7::width}}, {{c8::height}})",
+      "Body": "Add and return a Line control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Dialog.line"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Dialog}}.{{c3::pushbutton}}({{c4::name}}, {{c5::x}}, {{c6::y}}, {{c7::width}}, {{c8::height}}, {{c9::attributes}}, {{c10::text}}, {{c11::next_control}})",
+      "Body": "Add and return a PushButton control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Dialog.pushbutton"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Dialog}}.{{c3::radiogroup}}({{c4::name}}, {{c5::x}}, {{c6::y}}, {{c7::width}}, {{c8::height}}, {{c9::attributes}}, {{c10::property}}, {{c11::text}}, {{c12::next_control}})",
+      "Body": "Add and return a RadioButtonGroup control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Dialog.radiogroup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::Dialog}}.{{c3::checkbox}}({{c4::name}}, {{c5::x}}, {{c6::y}}, {{c7::width}}, {{c8::height}}, {{c9::attributes}}, {{c10::property}}, {{c11::text}}, {{c12::next_control}})",
+      "Body": "Add and return a CheckBox control.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.Dialog.checkbox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::schema}}",
+      "Body": "This is the standard MSI schema for MSI 2.0, with the tables variable providing a list of table definitions, and _Validation_records providing the data for MSI validation.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.schema"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::sequence}}",
+      "Body": "This module contains table contents for the standard sequence tables: AdminExecuteSequence, AdminUISequence, AdvtExecuteSequence, InstallExecuteSequence, and InstallUISequence.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.sequence"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msilib}}.{{c2::text}}",
+      "Body": "This module contains definitions for the UIText and ActionText tables, for the standard installer actions.",
+      "Link": "https://docs.python.org/3/library/msilib.html#msilib.text"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::locking}}({{c3::fd}}, {{c4::mode}}, {{c5::nbytes}})",
+      "Body": "Lock part of a file based on file descriptor fd from the C runtime.  Raises OSError on failure.  The locked region of the file extends from the current file position for nbytes bytes, and may continue beyond the end of the file.  mode must be one of the LK_* constants listed below. Multiple regions in a file may be locked at the same time, but may not overlap.  Adjacent regions are not merged; they must be unlocked individually.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.locking"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::LK_LOCK}}",
+      "Body": "Locks the specified bytes. If the bytes cannot be locked, the program immediately tries again after 1 second.  If, after 10 attempts, the bytes cannot be locked, OSError is raised.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.LK_LOCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::LK_RLCK}}",
+      "Body": "Locks the specified bytes. If the bytes cannot be locked, the program immediately tries again after 1 second.  If, after 10 attempts, the bytes cannot be locked, OSError is raised.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.LK_RLCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::LK_NBLCK}}",
+      "Body": "Locks the specified bytes. If the bytes cannot be locked, OSError is raised.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.LK_NBLCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::LK_NBRLCK}}",
+      "Body": "Locks the specified bytes. If the bytes cannot be locked, OSError is raised.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.LK_NBRLCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::LK_UNLCK}}",
+      "Body": "Unlocks the specified bytes, which must have been previously locked.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.LK_UNLCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::setmode}}({{c3::fd}}, {{c4::flags}})",
+      "Body": "Set the line-end translation mode for the file descriptor fd. To set it to text mode, flags should be os.O_TEXT; for binary, it should be os.O_BINARY.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.setmode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::open_osfhandle}}({{c3::handle}}, {{c4::flags}})",
+      "Body": "Create a C runtime file descriptor from the file handle handle.  The flags parameter should be a bitwise OR of os.O_APPEND, os.O_RDONLY, and os.O_TEXT.  The returned file descriptor may be used as a parameter to os.fdopen() to create a file object.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.open_osfhandle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::get_osfhandle}}({{c3::fd}})",
+      "Body": "Return the file handle for the file descriptor fd.  Raises OSError if fd is not recognized.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.get_osfhandle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::kbhit}}()",
+      "Body": "Return true if a keypress is waiting to be read.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.kbhit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::getch}}()",
+      "Body": "Read a keypress and return the resulting character as a byte string. Nothing is echoed to the console.  This call will block if a keypress is not already available, but will not wait for Enter to be pressed. If the pressed key was a special function key, this will return '\\000' or '\\xe0'; the next call will return the keycode. The Control-C keypress cannot be read with this function.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.getch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::getwch}}()",
+      "Body": "Wide char variant of getch(), returning a Unicode value.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.getwch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::getche}}()",
+      "Body": "Similar to getch(), but the keypress will be echoed if it  represents a printable character.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.getche"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::getwche}}()",
+      "Body": "Wide char variant of getche(), returning a Unicode value.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.getwche"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::putch}}({{c3::char}})",
+      "Body": "Print the byte string char to the console without buffering.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.putch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::putwch}}({{c3::unicode_char}})",
+      "Body": "Wide char variant of putch(), accepting a Unicode value.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.putwch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::ungetch}}({{c3::char}})",
+      "Body": "Cause the byte string char to be pushed back into the console buffer; it will be the next character read by getch() or getche().",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.ungetch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::ungetwch}}({{c3::unicode_char}})",
+      "Body": "Wide char variant of ungetch(), accepting a Unicode value.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.ungetwch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::msvcrt}}.{{c2::heapmin}}()",
+      "Body": "Force the malloc() heap to clean itself up and return unused blocks to the operating system.  On failure, this raises OSError.",
+      "Link": "https://docs.python.org/3/library/msvcrt.html#msvcrt.heapmin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::CloseKey}}({{c3::hkey}})",
+      "Body": "Closes a previously opened registry key.  The hkey argument specifies a previously opened key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.CloseKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::ConnectRegistry}}({{c3::computer_name}}, {{c4::key}})",
+      "Body": "Establishes a connection to a predefined registry handle on another computer, and returns a handle object.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.ConnectRegistry"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::CreateKey}}({{c3::key}}, {{c4::sub_key}})",
+      "Body": "Creates or opens the specified key, returning a handle object.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.CreateKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::CreateKeyEx}}({{c3::key}}, {{c4::sub_key}}, {{c5::reserved}}=0, {{c6::access}}={{c7::KEY_WRITE}})",
+      "Body": "Creates or opens the specified key, returning a handle object.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.CreateKeyEx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::DeleteKey}}({{c3::key}}, {{c4::sub_key}})",
+      "Body": "Deletes the specified key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.DeleteKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::DeleteKeyEx}}({{c3::key}}, {{c4::sub_key}}, {{c5::access}}={{c6::KEY_WOW}}64{{c7::_}}64{{c8::KEY}}, {{c9::reserved}}=0)",
+      "Body": "Deletes the specified key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.DeleteKeyEx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::DeleteValue}}({{c3::key}}, {{c4::value}})",
+      "Body": "Removes a named value from a registry key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.DeleteValue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::EnumKey}}({{c3::key}}, {{c4::index}})",
+      "Body": "Enumerates subkeys of an open registry key, returning a string.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.EnumKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::EnumValue}}({{c3::key}}, {{c4::index}})",
+      "Body": "Enumerates values of an open registry key, returning a tuple.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.EnumValue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::ExpandEnvironmentStrings}}({{c3::str}})",
+      "Body": "Expands environment variable placeholders %NAME% in strings like REG_EXPAND_SZ:",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.ExpandEnvironmentStrings"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::FlushKey}}({{c3::key}})",
+      "Body": "Writes all the attributes of a key to the registry.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.FlushKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::LoadKey}}({{c3::key}}, {{c4::sub_key}}, {{c5::file_name}})",
+      "Body": "Creates a subkey under the specified key and stores registration information from a specified file into that subkey.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.LoadKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::OpenKey}}({{c3::key}}, {{c4::sub_key}}, {{c5::reserved}}=0, {{c6::access}}={{c7::KEY_READ}})",
+      "Body": "Opens the specified key, returning a handle object.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.OpenKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::OpenKeyEx}}({{c3::key}}, {{c4::sub_key}}, {{c5::reserved}}=0, {{c6::access}}={{c7::KEY_READ}})",
+      "Body": "Opens the specified key, returning a handle object.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.OpenKeyEx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::QueryInfoKey}}({{c3::key}})",
+      "Body": "Returns information about a key, as a tuple.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.QueryInfoKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::QueryValue}}({{c3::key}}, {{c4::sub_key}})",
+      "Body": "Retrieves the unnamed value for a key, as a string.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.QueryValue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::QueryValueEx}}({{c3::key}}, {{c4::value_name}})",
+      "Body": "Retrieves the type and data for a specified value name associated with an open registry key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.QueryValueEx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::SaveKey}}({{c3::key}}, {{c4::file_name}})",
+      "Body": "Saves the specified key, and all its subkeys to the specified file.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.SaveKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::SetValue}}({{c3::key}}, {{c4::sub_key}}, {{c5::type}}, {{c6::value}})",
+      "Body": "Associates a value with a specified key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.SetValue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::SetValueEx}}({{c3::key}}, {{c4::value_name}}, {{c5::reserved}}, {{c6::type}}, {{c7::value}})",
+      "Body": "Stores data in the value field of an open registry key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.SetValueEx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::DisableReflectionKey}}({{c3::key}})",
+      "Body": "Disables registry reflection for 32-bit processes running on a 64-bit operating system.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.DisableReflectionKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::EnableReflectionKey}}({{c3::key}})",
+      "Body": "Restores registry reflection for the specified disabled key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.EnableReflectionKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::QueryReflectionKey}}({{c3::key}})",
+      "Body": "Determines the reflection state for the specified key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.QueryReflectionKey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::HKEY_CLASSES_ROOT}}",
+      "Body": "Registry entries subordinate to this key define types (or classes) of documents and the properties associated with those types. Shell and COM applications use the information stored under this key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.HKEY_CLASSES_ROOT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::HKEY_CURRENT_USER}}",
+      "Body": "Registry entries subordinate to this key define the preferences of the current user. These preferences include the settings of environment variables, data about program groups, colors, printers, network connections, and application preferences.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.HKEY_CURRENT_USER"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::HKEY_LOCAL_MACHINE}}",
+      "Body": "Registry entries subordinate to this key define the physical state of the computer, including data about the bus type, system memory, and installed hardware and software.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.HKEY_LOCAL_MACHINE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::HKEY_USERS}}",
+      "Body": "Registry entries subordinate to this key define the default user configuration for new users on the local computer and the user configuration for the current user.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.HKEY_USERS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::HKEY_PERFORMANCE_DATA}}",
+      "Body": "Registry entries subordinate to this key allow you to access performance data. The data is not actually stored in the registry; the registry functions cause the system to collect the data from its source.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.HKEY_PERFORMANCE_DATA"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::HKEY_CURRENT_CONFIG}}",
+      "Body": "Contains information about the current hardware profile of the local computer system.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.HKEY_CURRENT_CONFIG"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::HKEY_DYN_DATA}}",
+      "Body": "This key is not used in versions of Windows after 98.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.HKEY_DYN_DATA"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_ALL_ACCESS}}",
+      "Body": "Combines the STANDARD_RIGHTS_REQUIRED, KEY_QUERY_VALUE, KEY_SET_VALUE, KEY_CREATE_SUB_KEY, KEY_ENUMERATE_SUB_KEYS, KEY_NOTIFY, and KEY_CREATE_LINK access rights.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_ALL_ACCESS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_WRITE}}",
+      "Body": "Combines the STANDARD_RIGHTS_WRITE, KEY_SET_VALUE, and KEY_CREATE_SUB_KEY access rights.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_WRITE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_READ}}",
+      "Body": "Combines the STANDARD_RIGHTS_READ, KEY_QUERY_VALUE, KEY_ENUMERATE_SUB_KEYS, and KEY_NOTIFY values.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_READ"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_EXECUTE}}",
+      "Body": "Equivalent to KEY_READ.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_EXECUTE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_QUERY_VALUE}}",
+      "Body": "Required to query the values of a registry key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_QUERY_VALUE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_SET_VALUE}}",
+      "Body": "Required to create, delete, or set a registry value.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_SET_VALUE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_CREATE_SUB_KEY}}",
+      "Body": "Required to create a subkey of a registry key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_CREATE_SUB_KEY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_ENUMERATE_SUB_KEYS}}",
+      "Body": "Required to enumerate the subkeys of a registry key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_ENUMERATE_SUB_KEYS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_NOTIFY}}",
+      "Body": "Required to request change notifications for a registry key or for subkeys of a registry key.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_NOTIFY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_CREATE_LINK}}",
+      "Body": "Reserved for system use.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_CREATE_LINK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_WOW}}64{{c3::_}}64{{c4::KEY}}",
+      "Body": "Indicates that an application on 64-bit Windows should operate on the 64-bit registry view.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_WOW64_64KEY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::KEY_WOW}}64{{c3::_}}32{{c4::KEY}}",
+      "Body": "Indicates that an application on 64-bit Windows should operate on the 32-bit registry view.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.KEY_WOW64_32KEY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_BINARY}}",
+      "Body": "Binary data in any form.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_BINARY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_DWORD}}",
+      "Body": "32-bit number.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_DWORD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_DWORD_LITTLE_ENDIAN}}",
+      "Body": "A 32-bit number in little-endian format. Equivalent to REG_DWORD.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_DWORD_LITTLE_ENDIAN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_DWORD_BIG_ENDIAN}}",
+      "Body": "A 32-bit number in big-endian format.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_DWORD_BIG_ENDIAN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_EXPAND_SZ}}",
+      "Body": "Null-terminated string containing references to environment variables (%PATH%).",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_EXPAND_SZ"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_LINK}}",
+      "Body": "A Unicode symbolic link.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_LINK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_MULTI_SZ}}",
+      "Body": "A sequence of null-terminated strings, terminated by two null characters. (Python handles this termination automatically.)",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_MULTI_SZ"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_NONE}}",
+      "Body": "No defined value type.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_NONE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_QWORD}}",
+      "Body": "A 64-bit number.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_QWORD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_QWORD_LITTLE_ENDIAN}}",
+      "Body": "A 64-bit number in little-endian format. Equivalent to REG_QWORD.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_QWORD_LITTLE_ENDIAN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_RESOURCE_LIST}}",
+      "Body": "A device-driver resource list.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_RESOURCE_LIST"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_FULL_RESOURCE_DESCRIPTOR}}",
+      "Body": "A hardware setting.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_FULL_RESOURCE_DESCRIPTOR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_RESOURCE_REQUIREMENTS_LIST}}",
+      "Body": "A hardware resource list.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_RESOURCE_REQUIREMENTS_LIST"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winreg}}.{{c2::REG_SZ}}",
+      "Body": "A null-terminated string.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.REG_SZ"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PyHKEY}}.{{c2::Close}}()",
+      "Body": "Closes the underlying Windows handle.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.PyHKEY.Close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PyHKEY}}.{{c2::Detach}}()",
+      "Body": "Detaches the Windows handle from the handle object.",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.PyHKEY.Detach"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PyHKEY}}.{{c2::__enter__}}()",
+      "Body": "The HKEY object implements __enter__() and __exit__() and thus supports the context protocol for the with statement:",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.PyHKEY.__enter__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PyHKEY}}.{{c2::__exit__}}(*exc_info)",
+      "Body": "The HKEY object implements __enter__() and __exit__() and thus supports the context protocol for the with statement:",
+      "Link": "https://docs.python.org/3/library/winreg.html#winreg.PyHKEY.__exit__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::Beep}}({{c3::frequency}}, {{c4::duration}})",
+      "Body": "Beep the PC's speaker. The frequency parameter specifies frequency, in hertz, of the sound, and must be in the range 37 through 32,767. The duration parameter specifies the number of milliseconds the sound should last.  If the system is not able to beep the speaker, RuntimeError is raised.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.Beep"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::PlaySound}}({{c3::sound}}, {{c4::flags}})",
+      "Body": "Call the underlying PlaySound() function from the Platform API.  The sound parameter may be a filename, a system sound alias, audio data as a bytes-like object, or None.  Its interpretation depends on the value of flags, which can be a bitwise ORed combination of the constants described below. If the sound parameter is None, any currently playing waveform sound is stopped. If the system indicates an error, RuntimeError is raised.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.PlaySound"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::MessageBeep}}({{c3::type}}={{c4::MB_OK}})",
+      "Body": "Call the underlying MessageBeep() function from the Platform API.  This plays a sound as specified in the registry.  The type argument specifies which sound to play; possible values are -1, MB_ICONASTERISK, MB_ICONEXCLAMATION, MB_ICONHAND, MB_ICONQUESTION, and MB_OK, all described below.  The value -1 produces a simple beep; this is the final fallback if a sound cannot be played otherwise.  If the system indicates an error, RuntimeError is raised.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.MessageBeep"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_FILENAME}}",
+      "Body": "The sound parameter is the name of a WAV file. Do not use with SND_ALIAS.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_FILENAME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_ALIAS}}",
+      "Body": "The sound parameter is a sound association name from the registry.  If the registry contains no such name, play the system default sound unless SND_NODEFAULT is also specified. If no default sound is registered, raise RuntimeError. Do not use with SND_FILENAME.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_ALIAS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_LOOP}}",
+      "Body": "Play the sound repeatedly.  The SND_ASYNC flag must also be used to avoid blocking.  Cannot be used with SND_MEMORY.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_LOOP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_MEMORY}}",
+      "Body": "The sound parameter to PlaySound() is a memory image of a WAV file, as a bytes-like object.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_MEMORY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_PURGE}}",
+      "Body": "Stop playing all instances of the specified sound.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_PURGE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_ASYNC}}",
+      "Body": "Return immediately, allowing sounds to play asynchronously.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_ASYNC"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_NODEFAULT}}",
+      "Body": "If the specified sound cannot be found, do not play the system default sound.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_NODEFAULT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_NOSTOP}}",
+      "Body": "Do not interrupt sounds currently playing.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_NOSTOP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::SND_NOWAIT}}",
+      "Body": "Return immediately if the sound driver is busy.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.SND_NOWAIT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::MB_ICONASTERISK}}",
+      "Body": "Play the SystemDefault sound.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.MB_ICONASTERISK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::MB_ICONEXCLAMATION}}",
+      "Body": "Play the SystemExclamation sound.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.MB_ICONEXCLAMATION"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::MB_ICONHAND}}",
+      "Body": "Play the SystemHand sound.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.MB_ICONHAND"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::MB_ICONQUESTION}}",
+      "Body": "Play the SystemQuestion sound.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.MB_ICONQUESTION"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "MS Windows Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::winsound}}.{{c2::MB_OK}}",
+      "Body": "Play the SystemDefault sound.",
+      "Link": "https://docs.python.org/3/library/winsound.html#winsound.MB_OK"
+    },
+    "modelName": "ClozePy"
+  }
+]

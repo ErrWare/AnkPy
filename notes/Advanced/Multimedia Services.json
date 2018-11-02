@@ -1,0 +1,1868 @@
+[
+  {
+    "tags": [
+      "exception",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::audioop}}.{{c3::error}}",
+      "Body": "This exception is raised on all errors, such as unknown number of bytes per sample, etc.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::add}}({{c3::fragment}}1, {{c4::fragment}}2, {{c5::width}})",
+      "Body": "Return a fragment which is the addition of the two samples passed as parameters. width is the sample width in bytes, either 1, 2, 3 or 4.  Both fragments should have the same length.  Samples are truncated in case of overflow.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::adpcm}}2{{c3::lin}}({{c4::adpcmfragment}}, {{c5::width}}, {{c6::state}})",
+      "Body": "Decode an Intel/DVI ADPCM coded fragment to a linear fragment.  See the description of lin2adpcm() for details on ADPCM coding. Return a tuple (sample, newstate) where the sample has the width specified in width.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.adpcm2lin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::alaw}}2{{c3::lin}}({{c4::fragment}}, {{c5::width}})",
+      "Body": "Convert sound fragments in a-LAW encoding to linearly encoded sound fragments. a-LAW encoding always uses 8 bits samples, so width refers only to the sample width of the output fragment here.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.alaw2lin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::avg}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Return the average over all samples in the fragment.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.avg"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::avgpp}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Return the average peak-peak value over all samples in the fragment. No filtering is done, so the usefulness of this routine is questionable.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.avgpp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::bias}}({{c3::fragment}}, {{c4::width}}, {{c5::bias}})",
+      "Body": "Return a fragment that is the original fragment with a bias added to each sample.  Samples wrap around in case of overflow.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.bias"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::byteswap}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Byteswap all samples in a fragment and returns the modified fragment. Converts big-endian samples to little-endian and vice versa.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.byteswap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::cross}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Return the number of zero crossings in the fragment passed as an argument.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.cross"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::findfactor}}({{c3::fragment}}, {{c4::reference}})",
+      "Body": "Return a factor F such that rms(add(fragment, mul(reference, -F))) is minimal, i.e., return the factor with which you should multiply reference to make it match as well as possible to fragment.  The fragments should both contain 2-byte samples.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.findfactor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::findfit}}({{c3::fragment}}, {{c4::reference}})",
+      "Body": "Try to match reference as well as possible to a portion of fragment (which should be the longer fragment).  This is (conceptually) done by taking slices out of fragment, using findfactor() to compute the best match, and minimizing the result.  The fragments should both contain 2-byte samples. Return a tuple (offset, factor) where offset is the (integer) offset into fragment where the optimal match started and factor is the (floating-point) factor as per findfactor().",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.findfit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::findmax}}({{c3::fragment}}, {{c4::length}})",
+      "Body": "Search fragment for a slice of length length samples (not bytes!) with maximum energy, i.e., return i for which rms(fragment[i*2:(i+length)*2]) is maximal.  The fragments should both contain 2-byte samples.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.findmax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::getsample}}({{c3::fragment}}, {{c4::width}}, {{c5::index}})",
+      "Body": "Return the value of sample index from the fragment.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.getsample"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::lin}}2{{c3::adpcm}}({{c4::fragment}}, {{c5::width}}, {{c6::state}})",
+      "Body": "Convert samples to 4 bit Intel/DVI ADPCM encoding.  ADPCM coding is an adaptive coding scheme, whereby each 4 bit number is the difference between one sample and the next, divided by a (varying) step.  The Intel/DVI ADPCM algorithm has been selected for use by the IMA, so it may well become a standard.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.lin2adpcm"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::lin}}2{{c3::alaw}}({{c4::fragment}}, {{c5::width}})",
+      "Body": "Convert samples in the audio fragment to a-LAW encoding and return this as a bytes object.  a-LAW is an audio encoding format whereby you get a dynamic range of about 13 bits using only 8 bit samples.  It is used by the Sun audio hardware, among others.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.lin2alaw"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::lin}}2{{c3::lin}}({{c4::fragment}}, {{c5::width}}, {{c6::newwidth}})",
+      "Body": "Convert samples between 1-, 2-, 3- and 4-byte formats.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.lin2lin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::lin}}2{{c3::ulaw}}({{c4::fragment}}, {{c5::width}})",
+      "Body": "Convert samples in the audio fragment to u-LAW encoding and return this as a bytes object.  u-LAW is an audio encoding format whereby you get a dynamic range of about 14 bits using only 8 bit samples.  It is used by the Sun audio hardware, among others.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.lin2ulaw"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::max}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Return the maximum of the absolute value of all samples in a fragment.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.max"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::maxpp}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Return the maximum peak-peak value in the sound fragment.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.maxpp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::minmax}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Return a tuple consisting of the minimum and maximum values of all samples in the sound fragment.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.minmax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::mul}}({{c3::fragment}}, {{c4::width}}, {{c5::factor}})",
+      "Body": "Return a fragment that has all samples in the original fragment multiplied by the floating-point value factor.  Samples are truncated in case of overflow.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.mul"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::ratecv}}({{c3::fragment}}, {{c4::width}}, {{c5::nchannels}}, {{c6::inrate}}, {{c7::outrate}}, {{c8::state}}[, {{c9::weightA}}[, {{c10::weightB}}]])",
+      "Body": "Convert the frame rate of the input fragment.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.ratecv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::reverse}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Reverse the samples in a fragment and returns the modified fragment.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.reverse"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::rms}}({{c3::fragment}}, {{c4::width}})",
+      "Body": "Return the root-mean-square of the fragment, i.e. sqrt(sum(S_i^2)/n).",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.rms"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::tomono}}({{c3::fragment}}, {{c4::width}}, {{c5::lfactor}}, {{c6::rfactor}})",
+      "Body": "Convert a stereo fragment to a mono fragment.  The left channel is multiplied by lfactor and the right channel by rfactor before adding the two channels to give a mono signal.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.tomono"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::tostereo}}({{c3::fragment}}, {{c4::width}}, {{c5::lfactor}}, {{c6::rfactor}})",
+      "Body": "Generate a stereo fragment from a mono fragment.  Each pair of samples in the stereo fragment are computed from the mono sample, whereby left channel samples are multiplied by lfactor and right channel samples by rfactor.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.tostereo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::audioop}}.{{c2::ulaw}}2{{c3::lin}}({{c4::fragment}}, {{c5::width}})",
+      "Body": "Convert sound fragments in u-LAW encoding to linearly encoded sound fragments. u-LAW encoding always uses 8 bits samples, so width refers only to the sample width of the output fragment here.",
+      "Link": "https://docs.python.org/3/library/audioop.html#audioop.ulaw2lin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::open}}({{c3::file}}, {{c4::mode}}={{c5::None}})",
+      "Body": "Open an AIFF or AIFF-C file and return an object instance with methods that are described below.  The argument file is either a string naming a file or a file object.  mode must be 'r' or 'rb' when the file must be opened for reading, or 'w'  or 'wb' when the file must be opened for writing. If omitted, file.mode is used if it exists, otherwise 'rb' is used.  When used for writing, the file object should be seekable, unless you know ahead of time how many samples you are going to write in total and use writeframesraw() and setnframes(). The open() function may be used in a with statement.  When the with block completes, the close() method is called.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getnchannels}}()",
+      "Body": "Return the number of audio channels (1 for mono, 2 for stereo).",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getnchannels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getsampwidth}}()",
+      "Body": "Return the size in bytes of individual samples.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getsampwidth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getframerate}}()",
+      "Body": "Return the sampling rate (number of audio frames per second).",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getframerate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getnframes}}()",
+      "Body": "Return the number of audio frames in the file.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getnframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getcomptype}}()",
+      "Body": "Return a bytes array of length 4 describing the type of compression used in the audio file.  For AIFF files, the returned value is b'NONE'.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getcomptype"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getcompname}}()",
+      "Body": "Return a bytes array convertible to a human-readable description of the type of compression used in the audio file.  For AIFF files, the returned value is b'not compressed'.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getcompname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getparams}}()",
+      "Body": "Returns a namedtuple() (nchannels, sampwidth, framerate, nframes, comptype, compname), equivalent to output of the get*() methods.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getparams"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getmarkers}}()",
+      "Body": "Return a list of markers in the audio file.  A marker consists of a tuple of three elements.  The first is the mark ID (an integer), the second is the mark position in frames from the beginning of the data (an integer), the third is the name of the mark (a string).",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getmarkers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::getmark}}({{c3::id}})",
+      "Body": "Return the tuple as described in getmarkers() for the mark with the given id.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.getmark"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::readframes}}({{c3::nframes}})",
+      "Body": "Read and return the next nframes frames from the audio file.  The returned data is a string containing for each frame the uncompressed samples of all channels.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.readframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::rewind}}()",
+      "Body": "Rewind the read pointer.  The next readframes() will start from the beginning.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.rewind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::setpos}}({{c3::pos}})",
+      "Body": "Seek to the specified frame number.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.setpos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::tell}}()",
+      "Body": "Return the current frame number.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.tell"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::close}}()",
+      "Body": "Close the AIFF file.  After calling this method, the object can no longer be used.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::aiff}}()",
+      "Body": "Create an AIFF file.  The default is that an AIFF-C file is created, unless the name of the file ends in '.aiff' in which case the default is an AIFF file.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.aiff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::aifc}}()",
+      "Body": "Create an AIFF-C file.  The default is that an AIFF-C file is created, unless the name of the file ends in '.aiff' in which case the default is an AIFF file.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.aifc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::setnchannels}}({{c3::nchannels}})",
+      "Body": "Specify the number of channels in the audio file.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.setnchannels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::setsampwidth}}({{c3::width}})",
+      "Body": "Specify the size in bytes of audio samples.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.setsampwidth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::setframerate}}({{c3::rate}})",
+      "Body": "Specify the sampling frequency in frames per second.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.setframerate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::setnframes}}({{c3::nframes}})",
+      "Body": "Specify the number of frames that are to be written to the audio file. If this parameter is not set, or not set correctly, the file needs to support seeking.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.setnframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::setcomptype}}({{c3::type}}, {{c4::name}})",
+      "Body": "Specify the compression type.  If not specified, the audio data will not be compressed.  In AIFF files, compression is not possible. The name parameter should be a human-readable description of the compression type as a bytes array, the type parameter should be a bytes array of length 4.  Currently the following compression types are supported: b'NONE', b'ULAW', b'ALAW', b'G722'.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.setcomptype"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::setparams}}({{c3::nchannels}}, {{c4::sampwidth}}, {{c5::framerate}}, {{c6::comptype}}, {{c7::compname}})",
+      "Body": "Set all the above parameters at once.  The argument is a tuple consisting of the various parameters.  This means that it is possible to use the result of a getparams() call as argument to setparams().",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.setparams"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::setmark}}({{c3::id}}, {{c4::pos}}, {{c5::name}})",
+      "Body": "Add a mark with the given id (larger than 0), and the given name at the given position.  This method can be called at any time before close().",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.setmark"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::tell}}()",
+      "Body": "Return the current write position in the output file.  Useful in combination with setmark().",
+      "Link": "https://docs.python.org/3/library/aifc.html#module-aifc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::writeframes}}({{c3::data}})",
+      "Body": "Write data to the output file.  This method can only be called after the audio file parameters have been set.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.writeframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::writeframesraw}}({{c3::data}})",
+      "Body": "Like writeframes(), except that the header of the audio file is not updated.",
+      "Link": "https://docs.python.org/3/library/aifc.html#aifc.aifc.writeframesraw"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::aifc}}.{{c2::close}}()",
+      "Body": "Close the AIFF file.  The header of the file is updated to reflect the actual size of the audio data. After calling this method, the object can no longer be used.",
+      "Link": "https://docs.python.org/3/library/aifc.html#module-aifc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::open}}({{c3::file}}, {{c4::mode}})",
+      "Body": "If file is a string, open the file by that name, otherwise treat it as a seekable file-like object. mode can be any of",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::openfp}}({{c3::file}}, {{c4::mode}})",
+      "Body": "A synonym for open(), maintained for backwards compatibility.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.openfp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::sunau}}.{{c3::Error}}",
+      "Body": "An error raised when something is impossible because of Sun AU specs or implementation deficiency.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_MAGIC}}",
+      "Body": "An integer every valid Sun AU file begins with, stored in big-endian form.  This is the string .snd interpreted as an integer.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_MAGIC"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_MULAW_}}8",
+      "Body": "Values of the encoding field from the AU header which are supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_MULAW_8"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_LINEAR_}}8",
+      "Body": "Values of the encoding field from the AU header which are supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_LINEAR_8"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_LINEAR_}}16",
+      "Body": "Values of the encoding field from the AU header which are supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_LINEAR_16"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_LINEAR_}}24",
+      "Body": "Values of the encoding field from the AU header which are supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_LINEAR_24"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_LINEAR_}}32",
+      "Body": "Values of the encoding field from the AU header which are supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_LINEAR_32"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_ALAW_}}8",
+      "Body": "Values of the encoding field from the AU header which are supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_ALAW_8"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_FLOAT}}",
+      "Body": "Additional known values of the encoding field from the AU header, but which are not supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_FLOAT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_DOUBLE}}",
+      "Body": "Additional known values of the encoding field from the AU header, but which are not supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_DOUBLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_ADPCM_G}}721",
+      "Body": "Additional known values of the encoding field from the AU header, but which are not supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_ADPCM_G721"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_ADPCM_G}}722",
+      "Body": "Additional known values of the encoding field from the AU header, but which are not supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_ADPCM_G722"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_ADPCM_G}}723{{c3::_}}3",
+      "Body": "Additional known values of the encoding field from the AU header, but which are not supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_ADPCM_G723_3"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sunau}}.{{c2::AUDIO_FILE_ENCODING_ADPCM_G}}723{{c3::_}}5",
+      "Body": "Additional known values of the encoding field from the AU header, but which are not supported by this module.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AUDIO_FILE_ENCODING_ADPCM_G723_5"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::close}}()",
+      "Body": "Close the stream, and make the instance unusable. (This is  called automatically on deletion.)",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getnchannels}}()",
+      "Body": "Returns number of audio channels (1 for mono, 2 for stereo).",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getnchannels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getsampwidth}}()",
+      "Body": "Returns sample width in bytes.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getsampwidth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getframerate}}()",
+      "Body": "Returns sampling frequency.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getframerate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getnframes}}()",
+      "Body": "Returns number of audio frames.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getnframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getcomptype}}()",
+      "Body": "Returns compression type. Supported compression types are 'ULAW', 'ALAW' and 'NONE'.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getcomptype"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getcompname}}()",
+      "Body": "Human-readable version of getcomptype().  The supported types have the respective names 'CCITT G.711 u-law', 'CCITT G.711 A-law' and 'not compressed'.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getcompname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getparams}}()",
+      "Body": "Returns a namedtuple() (nchannels, sampwidth, framerate, nframes, comptype, compname), equivalent to output of the get*() methods.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getparams"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::readframes}}({{c3::n}})",
+      "Body": "Reads and returns at most n frames of audio, as a bytes object.  The data will be returned in linear format.  If the original data is in u-LAW format, it will be converted.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.readframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::rewind}}()",
+      "Body": "Rewind the file pointer to the beginning of the audio stream.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.rewind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::setpos}}({{c3::pos}})",
+      "Body": "Set the file pointer to the specified position.  Only values returned from tell() should be used for pos.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.setpos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::tell}}()",
+      "Body": "Return current file pointer position.  Note that the returned value has nothing to do with the actual position in the file.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.tell"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getmarkers}}()",
+      "Body": "Returns None.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getmarkers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_read}}.{{c2::getmark}}({{c3::id}})",
+      "Body": "Raise an error.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_read.getmark"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::setnchannels}}({{c3::n}})",
+      "Body": "Set the number of channels.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.setnchannels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::setsampwidth}}({{c3::n}})",
+      "Body": "Set the sample width (in bytes.)",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.setsampwidth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::setframerate}}({{c3::n}})",
+      "Body": "Set the frame rate.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.setframerate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::setnframes}}({{c3::n}})",
+      "Body": "Set the number of frames. This can be later changed, when and if more  frames are written.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.setnframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::setcomptype}}({{c3::type}}, {{c4::name}})",
+      "Body": "Set the compression type and description. Only 'NONE' and 'ULAW' are supported on output.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.setcomptype"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::setparams}}({{c3::tuple}})",
+      "Body": "The tuple should be (nchannels, sampwidth, framerate, nframes, comptype, compname), with values valid for the set*() methods.  Set all parameters.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.setparams"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::tell}}()",
+      "Body": "Return current position in the file, with the same disclaimer for the AU_read.tell() and AU_read.setpos() methods.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.tell"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::writeframesraw}}({{c3::data}})",
+      "Body": "Write audio frames, without correcting nframes.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.writeframesraw"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::writeframes}}({{c3::data}})",
+      "Body": "Write audio frames and make sure nframes is correct.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.writeframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::AU_write}}.{{c2::close}}()",
+      "Body": "Make sure nframes is correct, and close the file.",
+      "Link": "https://docs.python.org/3/library/sunau.html#sunau.AU_write.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::wave}}.{{c2::open}}({{c3::file}}, {{c4::mode}}={{c5::None}})",
+      "Body": "If file is a string, open the file by that name, otherwise treat it as a file-like object.  mode can be:",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::wave}}.{{c2::openfp}}({{c3::file}}, {{c4::mode}})",
+      "Body": "A synonym for open(), maintained for backwards compatibility.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.openfp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::wave}}.{{c3::Error}}",
+      "Body": "An error raised when something is impossible because it violates the WAV specification or hits an implementation deficiency.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::close}}()",
+      "Body": "Close the stream if it was opened by wave, and make the instance unusable.  This is called automatically on object collection.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getnchannels}}()",
+      "Body": "Returns number of audio channels (1 for mono, 2 for stereo).",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getnchannels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getsampwidth}}()",
+      "Body": "Returns sample width in bytes.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getsampwidth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getframerate}}()",
+      "Body": "Returns sampling frequency.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getframerate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getnframes}}()",
+      "Body": "Returns number of audio frames.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getnframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getcomptype}}()",
+      "Body": "Returns compression type ('NONE' is the only supported type).",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getcomptype"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getcompname}}()",
+      "Body": "Human-readable version of getcomptype(). Usually 'not compressed' parallels 'NONE'.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getcompname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getparams}}()",
+      "Body": "Returns a namedtuple() (nchannels, sampwidth, framerate, nframes, comptype, compname), equivalent to output of the get*() methods.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getparams"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::readframes}}({{c3::n}})",
+      "Body": "Reads and returns at most n frames of audio, as a bytes object.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.readframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::rewind}}()",
+      "Body": "Rewind the file pointer to the beginning of the audio stream.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.rewind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getmarkers}}()",
+      "Body": "Returns None.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getmarkers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::getmark}}({{c3::id}})",
+      "Body": "Raise an error.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.getmark"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::setpos}}({{c3::pos}})",
+      "Body": "Set the file pointer to the specified position.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.setpos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_read}}.{{c2::tell}}()",
+      "Body": "Return current file pointer position.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_read.tell"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::close}}()",
+      "Body": "Make sure nframes is correct, and close the file if it was opened by wave.  This method is called upon object collection.  It will raise an exception if the output stream is not seekable and nframes does not match the number of frames actually written.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::setnchannels}}({{c3::n}})",
+      "Body": "Set the number of channels.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.setnchannels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::setsampwidth}}({{c3::n}})",
+      "Body": "Set the sample width to n bytes.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.setsampwidth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::setframerate}}({{c3::n}})",
+      "Body": "Set the frame rate to n.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.setframerate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::setnframes}}({{c3::n}})",
+      "Body": "Set the number of frames to n.  This will be changed later if the number of frames actually written is different (this update attempt will raise an error if the output stream is not seekable).",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.setnframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::setcomptype}}({{c3::type}}, {{c4::name}})",
+      "Body": "Set the compression type and description. At the moment, only compression type NONE is supported, meaning no compression.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.setcomptype"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::setparams}}({{c3::tuple}})",
+      "Body": "The tuple should be (nchannels, sampwidth, framerate, nframes, comptype, compname), with values valid for the set*() methods.  Sets all parameters.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.setparams"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::tell}}()",
+      "Body": "Return current position in the file, with the same disclaimer for the Wave_read.tell() and Wave_read.setpos() methods.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.tell"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::writeframesraw}}({{c3::data}})",
+      "Body": "Write audio frames, without correcting nframes.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.writeframesraw"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Wave_write}}.{{c2::writeframes}}({{c3::data}})",
+      "Body": "Write audio frames and make sure nframes is correct.  It will raise an error if the output stream is not seekable and the total number of frames that have been written after data has been written does not match the previously set value for nframes.",
+      "Link": "https://docs.python.org/3/library/wave.html#wave.Wave_write.writeframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::chunk}}.{{c3::Chunk}}({{c4::file}}, {{c5::align}}={{c6::True}}, {{c7::bigendian}}={{c8::True}}, {{c9::inclheader}}={{c10::False}})",
+      "Body": "Class which represents a chunk.  The file argument is expected to be a file-like object.  An instance of this class is specifically allowed.  The only method that is needed is read().  If the methods seek() and tell() are present and don't raise an exception, they are also used. If these methods are present and raise an exception, they are expected to not have altered the object.  If the optional argument align is true, chunks are assumed to be aligned on 2-byte boundaries.  If align is false, no alignment is assumed.  The default value is true.  If the optional argument bigendian is false, the chunk size is assumed to be in little-endian order. This is needed for WAVE audio files. The default value is true.  If the optional argument inclheader is true, the size given in the chunk header includes the size of the header.  The default value is false.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::chunk}}.{{c2::Chunk}}.{{c3::getname}}()",
+      "Body": "Returns the name (ID) of the chunk.  This is the first 4 bytes of the chunk.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk.getname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::chunk}}.{{c2::Chunk}}.{{c3::getsize}}()",
+      "Body": "Returns the size of the chunk.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk.getsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::chunk}}.{{c2::Chunk}}.{{c3::close}}()",
+      "Body": "Close and skip to the end of the chunk.  This does not close the underlying file.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::chunk}}.{{c2::Chunk}}.{{c3::isatty}}()",
+      "Body": "Returns False.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk.isatty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::chunk}}.{{c2::Chunk}}.{{c3::seek}}({{c4::pos}}, {{c5::whence}}=0)",
+      "Body": "Set the chunk's current position.  The whence argument is optional and defaults to 0 (absolute file positioning); other values are 1 (seek relative to the current position) and 2 (seek relative to the file's end).  There is no return value. If the underlying file does not allow seek, only forward seeks are allowed.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk.seek"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::chunk}}.{{c2::Chunk}}.{{c3::tell}}()",
+      "Body": "Return the current position into the chunk.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk.tell"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::chunk}}.{{c2::Chunk}}.{{c3::read}}({{c4::size}}=-1)",
+      "Body": "Read at most size bytes from the chunk (less if the read hits the end of the chunk before obtaining size bytes).  If the size argument is negative or omitted, read all data until the end of the chunk.  An empty bytes object is returned when the end of the chunk is encountered immediately.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk.read"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::chunk}}.{{c2::Chunk}}.{{c3::skip}}()",
+      "Body": "Skip to the end of the chunk.  All further calls to read() for the chunk will return b''.  If you are not interested in the contents of the chunk, this method should be called so that the file points to the start of the next chunk.",
+      "Link": "https://docs.python.org/3/library/chunk.html#chunk.Chunk.skip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::colorsys}}.{{c2::rgb_to_yiq}}({{c3::r}}, {{c4::g}}, {{c5::b}})",
+      "Body": "Convert the color from RGB coordinates to YIQ coordinates.",
+      "Link": "https://docs.python.org/3/library/colorsys.html#colorsys.rgb_to_yiq"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::colorsys}}.{{c2::yiq_to_rgb}}({{c3::y}}, {{c4::i}}, {{c5::q}})",
+      "Body": "Convert the color from YIQ coordinates to RGB coordinates.",
+      "Link": "https://docs.python.org/3/library/colorsys.html#colorsys.yiq_to_rgb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::colorsys}}.{{c2::rgb_to_hls}}({{c3::r}}, {{c4::g}}, {{c5::b}})",
+      "Body": "Convert the color from RGB coordinates to HLS coordinates.",
+      "Link": "https://docs.python.org/3/library/colorsys.html#colorsys.rgb_to_hls"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::colorsys}}.{{c2::hls_to_rgb}}({{c3::h}}, {{c4::l}}, {{c5::s}})",
+      "Body": "Convert the color from HLS coordinates to RGB coordinates.",
+      "Link": "https://docs.python.org/3/library/colorsys.html#colorsys.hls_to_rgb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::colorsys}}.{{c2::rgb_to_hsv}}({{c3::r}}, {{c4::g}}, {{c5::b}})",
+      "Body": "Convert the color from RGB coordinates to HSV coordinates.",
+      "Link": "https://docs.python.org/3/library/colorsys.html#colorsys.rgb_to_hsv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::colorsys}}.{{c2::hsv_to_rgb}}({{c3::h}}, {{c4::s}}, {{c5::v}})",
+      "Body": "Convert the color from HSV coordinates to RGB coordinates.",
+      "Link": "https://docs.python.org/3/library/colorsys.html#colorsys.hsv_to_rgb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::imghdr}}.{{c2::what}}({{c3::filename}}, {{c4::h}}={{c5::None}})",
+      "Body": "Tests the image data contained in the file named by filename, and returns a string describing the image type.  If optional h is provided, the filename is ignored and h is assumed to contain the byte stream to test.",
+      "Link": "https://docs.python.org/3/library/imghdr.html#imghdr.what"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::imghdr}}.{{c2::tests}}",
+      "Body": "A list of functions performing the individual tests.  Each function takes two arguments: the byte-stream and an open file-like object. When what() is called with a byte-stream, the file-like object will be None.",
+      "Link": "https://docs.python.org/3/library/imghdr.html#imghdr.tests"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::sndhdr}}.{{c2::what}}({{c3::filename}})",
+      "Body": "Determines the type of sound data stored in the file filename using whathdr().  If it succeeds, returns a namedtuple as described above, otherwise None is returned.",
+      "Link": "https://docs.python.org/3/library/sndhdr.html#sndhdr.what"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::sndhdr}}.{{c2::whathdr}}({{c3::filename}})",
+      "Body": "Determines the type of sound data stored in a file based on the file  header. The name of the file is given by filename.  This function returns a namedtuple as described above on success, or None.",
+      "Link": "https://docs.python.org/3/library/sndhdr.html#sndhdr.whathdr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ossaudiodev}}.{{c3::OSSAudioError}}",
+      "Body": "This exception is raised on certain errors.  The argument is a string describing what went wrong.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.OSSAudioError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ossaudiodev}}.{{c2::open}}({{c3::mode}})",
+      "Body": "Open an audio device and return an OSS audio device object.  This object supports many file-like methods, such as read(), write(), and fileno() (although there are subtle differences between conventional Unix read/write semantics and those of OSS audio devices).  It also supports a number of audio-specific methods; see below for the complete list of methods.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ossaudiodev}}.{{c2::open}}({{c3::device}}, {{c4::mode}})",
+      "Body": "Open an audio device and return an OSS audio device object.  This object supports many file-like methods, such as read(), write(), and fileno() (although there are subtle differences between conventional Unix read/write semantics and those of OSS audio devices).  It also supports a number of audio-specific methods; see below for the complete list of methods.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#module-ossaudiodev"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ossaudiodev}}.{{c2::openmixer}}([{{c3::device}}])",
+      "Body": "Open a mixer device and return an OSS mixer device object.   device is the mixer device filename to use.  If it is not specified, this module first looks in the environment variable MIXERDEV for a device to use.  If not found, it falls back to /dev/mixer.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.openmixer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::close}}()",
+      "Body": "Explicitly close the audio device.  When you are done writing to or reading from an audio device, you should explicitly close it.  A closed device cannot be used again.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::fileno}}()",
+      "Body": "Return the file descriptor associated with the device.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.fileno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::read}}({{c3::size}})",
+      "Body": "Read size bytes from the audio input and return them as a Python string. Unlike most Unix device drivers, OSS audio devices in blocking mode (the default) will block read() until the entire requested amount of data is available.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.read"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::write}}({{c3::data}})",
+      "Body": "Write a bytes-like object data to the audio device and return the number of bytes written.  If the audio device is in blocking mode (the default), the entire data is always written (again, this is different from usual Unix device semantics).  If the device is in non-blocking mode, some data may not be written see writeall().",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.write"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::writeall}}({{c3::data}})",
+      "Body": "Write a bytes-like object data to the audio device: waits until the audio device is able to accept data, writes as much data as it will accept, and repeats until data has been completely written. If the device is in blocking mode (the default), this has the same effect as write(); writeall() is only useful in non-blocking mode.  Has no return value, since the amount of data written is always equal to the amount of data supplied.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.writeall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::nonblock}}()",
+      "Body": "Put the device into non-blocking mode.  Once in non-blocking mode, there is no way to return it to blocking mode.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.nonblock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::getfmts}}()",
+      "Body": "Return a bitmask of the audio output formats supported by the soundcard.  Some of the formats supported by OSS are:",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.getfmts"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::setfmt}}({{c3::format}})",
+      "Body": "Try to set the current audio format to formatsee getfmts() for a list.  Returns the audio format that the device was set to, which may not be the requested format.  May also be used to return the current audio formatdo this by passing an audio format of AFMT_QUERY.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.setfmt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::channels}}({{c3::nchannels}})",
+      "Body": "Set the number of output channels to nchannels.  A value of 1 indicates monophonic sound, 2 stereophonic.  Some devices may have more than 2 channels, and some high-end devices may not support mono. Returns the number of channels the device was set to.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.channels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::speed}}({{c3::samplerate}})",
+      "Body": "Try to set the audio sampling rate to samplerate samples per second.  Returns the rate actually set.  Most sound devices don't support arbitrary sampling rates.  Common rates are:",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.speed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::sync}}()",
+      "Body": "Wait until the sound device has played every byte in its buffer.  (This happens implicitly when the device is closed.)  The OSS documentation recommends closing and re-opening the device rather than using sync().",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.sync"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::reset}}()",
+      "Body": "Immediately stop playing or recording and return the device to a state where it can accept commands.  The OSS documentation recommends closing and re-opening the device after calling reset().",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::post}}()",
+      "Body": "Tell the driver that there is likely to be a pause in the output, making it possible for the device to handle the pause more intelligently.  You might use this after playing a spot sound effect, before waiting for user input, or before doing disk I/O.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.post"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::setparameters}}({{c3::format}}, {{c4::nchannels}}, {{c5::samplerate}}[, {{c6::strict}}={{c7::False}}])",
+      "Body": "Set the key audio sampling parameterssample format, number of channels, and sampling ratein one method call.  format,  nchannels, and samplerate should be as specified in the setfmt(), channels(), and speed()  methods.  If strict is true, setparameters() checks to see if each parameter was actually set to the requested value, and raises OSSAudioError if not.  Returns a tuple (format, nchannels, samplerate) indicating the parameter values that were actually set by the device driver (i.e., the same as the return values of setfmt(), channels(), and speed()).",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.setparameters"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::bufsize}}()",
+      "Body": "Returns the size of the hardware buffer, in samples.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.bufsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::obufcount}}()",
+      "Body": "Returns the number of samples that are in the hardware buffer yet to be played.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.obufcount"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::obuffree}}()",
+      "Body": "Returns the number of samples that could be queued into the hardware buffer to be played without blocking.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.obuffree"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::closed}}",
+      "Body": "Boolean indicating whether the device has been closed.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.closed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::name}}",
+      "Body": "String containing the name of the device file.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Multimedia Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::oss_audio_device}}.{{c2::mode}}",
+      "Body": "The I/O mode for the file, either \"r\", \"rw\", or \"w\".",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_audio_device.mode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::close}}()",
+      "Body": "This method closes the open mixer device file.  Any further attempts to use the mixer after this file is closed will raise an OSError.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::fileno}}()",
+      "Body": "Returns the file handle number of the open mixer device file.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.fileno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::controls}}()",
+      "Body": "This method returns a bitmask specifying the available mixer controls (Control being a specific mixable channel, such as SOUND_MIXER_PCM or SOUND_MIXER_SYNTH).  This bitmask indicates a subset of all available mixer controlsthe SOUND_MIXER_* constants defined at module level. To determine if, for example, the current mixer object supports a PCM mixer, use the following Python code:",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.controls"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::stereocontrols}}()",
+      "Body": "Returns a bitmask indicating stereo mixer controls.  If a bit is set, the corresponding control is stereo; if it is unset, the control is either monophonic or not supported by the mixer (use in combination with controls() to determine which).",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.stereocontrols"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::reccontrols}}()",
+      "Body": "Returns a bitmask specifying the mixer controls that may be used to record.  See the code example for controls() for an example of reading from a bitmask.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.reccontrols"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::get}}({{c3::control}})",
+      "Body": "Returns the volume of a given mixer control.  The returned volume is a 2-tuple (left_volume,right_volume).  Volumes are specified as numbers from 0 (silent) to 100 (full volume).  If the control is monophonic, a 2-tuple is still returned, but both volumes are the same.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::set}}({{c3::control}}, ({{c4::left}}, {{c5::right}}))",
+      "Body": "Sets the volume for a given mixer control to (left,right). left and right must be ints and between 0 (silent) and 100 (full volume).  On success, the new volume is returned as a 2-tuple. Note that this may not be exactly the same as the volume specified, because of the limited resolution of some soundcard's mixers.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::get_recsrc}}()",
+      "Body": "This method returns a bitmask indicating which control(s) are currently being used as a recording source.",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.get_recsrc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Multimedia Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::oss_mixer_device}}.{{c2::set_recsrc}}({{c3::bitmask}})",
+      "Body": "Call this function to specify a recording source.  Returns a bitmask indicating the new recording source (or sources) if successful; raises OSError if an invalid source was specified.  To set the current recording source to the microphone input:",
+      "Link": "https://docs.python.org/3/library/ossaudiodev.html#ossaudiodev.oss_mixer_device.set_recsrc"
+    },
+    "modelName": "ClozePy"
+  }
+]

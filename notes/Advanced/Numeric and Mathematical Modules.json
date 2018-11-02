@@ -1,0 +1,4307 @@
+[
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::numbers}}.{{c3::Number}}",
+      "Body": "The root of the numeric hierarchy. If you just want to check if an argument x is a number, without caring what kind, use isinstance(x, Number).",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Number"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::numbers}}.{{c3::Complex}}",
+      "Body": "Subclasses of this type describe complex numbers and include the operations that work on the built-in complex type. These are: conversions to complex and bool, real, imag, +, -, *, /, abs(), conjugate(), ==, and !=. All except - and != are abstract.",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Complex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::numbers}}.{{c2::Complex}}.{{c3::real}}",
+      "Body": "Abstract. Retrieves the real component of this number.",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Complex.real"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::numbers}}.{{c2::Complex}}.{{c3::imag}}",
+      "Body": "Abstract. Retrieves the imaginary component of this number.",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Complex.imag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::numbers}}.{{c2::Complex}}.{{c3::abstractmethod}} {{c4::conjugate}}()",
+      "Body": "Abstract. Returns the complex conjugate. For example, (1+3j).conjugate() == (1-3j).",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Complex.conjugate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::numbers}}.{{c3::Real}}",
+      "Body": "To Complex, Real adds the operations that work on real numbers.",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Real"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::numbers}}.{{c3::Rational}}",
+      "Body": "Subtypes Real and adds numerator and denominator properties, which should be in lowest terms. With these, it provides a default for float().",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Rational"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::numbers}}.{{c2::Rational}}.{{c3::numerator}}",
+      "Body": "Abstract.",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Rational.numerator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::numbers}}.{{c2::Rational}}.{{c3::denominator}}",
+      "Body": "Abstract.",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Rational.denominator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::numbers}}.{{c3::Integral}}",
+      "Body": "Subtypes Rational and adds a conversion to int.  Provides defaults for float(), numerator, and denominator.  Adds abstract methods for ** and bit-string operations: <<, >>, &, ^, |, ~.",
+      "Link": "https://docs.python.org/3/library/numbers.html#numbers.Integral"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::ceil}}({{c3::x}})",
+      "Body": "Return the ceiling of x, the smallest integer greater than or equal to x. If x is not a float, delegates to x.__ceil__(), which should return an Integral value.",
+      "Link": "https://docs.python.org/3/library/math.html#math.ceil"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::copysign}}({{c3::x}}, {{c4::y}})",
+      "Body": "Return a float with the magnitude (absolute value) of x but the sign of y.  On platforms that support signed zeros, copysign(1.0, -0.0) returns -1.0.",
+      "Link": "https://docs.python.org/3/library/math.html#math.copysign"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::fabs}}({{c3::x}})",
+      "Body": "Return the absolute value of x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.fabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::factorial}}({{c3::x}})",
+      "Body": "Return x factorial.  Raises ValueError if x is not integral or is negative.",
+      "Link": "https://docs.python.org/3/library/math.html#math.factorial"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::floor}}({{c3::x}})",
+      "Body": "Return the floor of x, the largest integer less than or equal to x. If x is not a float, delegates to x.__floor__(), which should return an Integral value.",
+      "Link": "https://docs.python.org/3/library/math.html#math.floor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::fmod}}({{c3::x}}, {{c4::y}})",
+      "Body": "Return fmod(x, y), as defined by the platform C library. Note that the Python expression x % y may not return the same result.  The intent of the C standard is that fmod(x, y) be exactly (mathematically; to infinite precision) equal to x - n*y for some integer n such that the result has the same sign as x and magnitude less than abs(y).  Python's x % y returns a result with the sign of y instead, and may not be exactly computable for float arguments. For example, fmod(-1e-100, 1e100) is -1e-100, but the result of Python's -1e-100 % 1e100 is 1e100-1e-100, which cannot be represented exactly as a float, and rounds to the surprising 1e100.  For this reason, function fmod() is generally preferred when working with floats, while Python's x % y is preferred when working with integers.",
+      "Link": "https://docs.python.org/3/library/math.html#math.fmod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::frexp}}({{c3::x}})",
+      "Body": "Return the mantissa and exponent of x as the pair (m, e).  m is a float and e is an integer such that x == m * 2**e exactly. If x is zero, returns (0.0, 0), otherwise 0.5 <= abs(m) < 1.  This is used to pick apart the internal representation of a float in a portable way.",
+      "Link": "https://docs.python.org/3/library/math.html#math.frexp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::fsum}}({{c3::iterable}})",
+      "Body": "Return an accurate floating point sum of values in the iterable.  Avoids loss of precision by tracking multiple intermediate partial sums:",
+      "Link": "https://docs.python.org/3/library/math.html#math.fsum"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::gcd}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the greatest common divisor of the integers a and b.  If either a or b is nonzero, then the value of gcd(a, b) is the largest positive integer that divides both a and b.  gcd(0, 0) returns 0.",
+      "Link": "https://docs.python.org/3/library/math.html#math.gcd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::isclose}}({{c3::a}}, {{c4::b}}, *, {{c5::rel_tol}}=1{{c6::e}}-09, {{c7::abs_tol}}=0.0)",
+      "Body": "Return True if the values a and b are close to each other and False otherwise.",
+      "Link": "https://docs.python.org/3/library/math.html#math.isclose"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::isfinite}}({{c3::x}})",
+      "Body": "Return True if x is neither an infinity nor a NaN, and False otherwise.  (Note that 0.0 is considered finite.)",
+      "Link": "https://docs.python.org/3/library/math.html#math.isfinite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::isinf}}({{c3::x}})",
+      "Body": "Return True if x is a positive or negative infinity, and False otherwise.",
+      "Link": "https://docs.python.org/3/library/math.html#math.isinf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::isnan}}({{c3::x}})",
+      "Body": "Return True if x is a NaN (not a number), and False otherwise.",
+      "Link": "https://docs.python.org/3/library/math.html#math.isnan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::ldexp}}({{c3::x}}, {{c4::i}})",
+      "Body": "Return x * (2**i).  This is essentially the inverse of function frexp().",
+      "Link": "https://docs.python.org/3/library/math.html#math.ldexp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::modf}}({{c3::x}})",
+      "Body": "Return the fractional and integer parts of x.  Both results carry the sign of x and are floats.",
+      "Link": "https://docs.python.org/3/library/math.html#math.modf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::remainder}}({{c3::x}}, {{c4::y}})",
+      "Body": "Return the IEEE 754-style remainder of x with respect to y.  For finite x and finite nonzero y, this is the difference x - n*y, where n is the closest integer to the exact value of the quotient x / y.  If x / y is exactly halfway between two consecutive integers, the nearest even integer is used for n.  The remainder r = remainder(x, y) thus always satisfies abs(r) <= 0.5 * abs(y).",
+      "Link": "https://docs.python.org/3/library/math.html#math.remainder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::trunc}}({{c3::x}})",
+      "Body": "Return the Real value x truncated to an Integral (usually an integer). Delegates to x.__trunc__().",
+      "Link": "https://docs.python.org/3/library/math.html#math.trunc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::exp}}({{c3::x}})",
+      "Body": "Return e raised to the power x, where e = 2.718281 is the base of natural logarithms.  This is usually more accurate than math.e ** x or pow(math.e, x).",
+      "Link": "https://docs.python.org/3/library/math.html#math.exp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::expm}}1({{c3::x}})",
+      "Body": "Return e raised to the power x, minus 1.  Here e is the base of natural logarithms.  For small floats x, the subtraction in exp(x) - 1 can result in a significant loss of precision; the expm1() function provides a way to compute this quantity to full precision:",
+      "Link": "https://docs.python.org/3/library/math.html#math.expm1"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::log}}({{c3::x}}[, {{c4::base}}])",
+      "Body": "With one argument, return the natural logarithm of x (to base e).",
+      "Link": "https://docs.python.org/3/library/math.html#math.log"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::log}}1{{c3::p}}({{c4::x}})",
+      "Body": "Return the natural logarithm of 1+x (base e). The result is calculated in a way which is accurate for x near zero.",
+      "Link": "https://docs.python.org/3/library/math.html#math.log1p"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::log}}2({{c3::x}})",
+      "Body": "Return the base-2 logarithm of x. This is usually more accurate than log(x, 2).",
+      "Link": "https://docs.python.org/3/library/math.html#math.log2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::log}}10({{c3::x}})",
+      "Body": "Return the base-10 logarithm of x.  This is usually more accurate than log(x, 10).",
+      "Link": "https://docs.python.org/3/library/math.html#math.log10"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::pow}}({{c3::x}}, {{c4::y}})",
+      "Body": "Return x raised to the power y.  Exceptional cases follow Annex 'F' of the C99 standard as far as possible.  In particular, pow(1.0, x) and pow(x, 0.0) always return 1.0, even when x is a zero or a NaN.  If both x and y are finite, x is negative, and y is not an integer then pow(x, y) is undefined, and raises ValueError.",
+      "Link": "https://docs.python.org/3/library/math.html#math.pow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::sqrt}}({{c3::x}})",
+      "Body": "Return the square root of x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.sqrt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::acos}}({{c3::x}})",
+      "Body": "Return the arc cosine of x, in radians.",
+      "Link": "https://docs.python.org/3/library/math.html#math.acos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::asin}}({{c3::x}})",
+      "Body": "Return the arc sine of x, in radians.",
+      "Link": "https://docs.python.org/3/library/math.html#math.asin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::atan}}({{c3::x}})",
+      "Body": "Return the arc tangent of x, in radians.",
+      "Link": "https://docs.python.org/3/library/math.html#math.atan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::atan}}2({{c3::y}}, {{c4::x}})",
+      "Body": "Return atan(y / x), in radians. The result is between -pi and pi. The vector in the plane from the origin to point (x, y) makes this angle with the positive X axis. The point of atan2() is that the signs of both inputs are known to it, so it can compute the correct quadrant for the angle. For example, atan(1) and atan2(1, 1) are both pi/4, but atan2(-1, -1) is -3*pi/4.",
+      "Link": "https://docs.python.org/3/library/math.html#math.atan2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::cos}}({{c3::x}})",
+      "Body": "Return the cosine of x radians.",
+      "Link": "https://docs.python.org/3/library/math.html#math.cos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::hypot}}({{c3::x}}, {{c4::y}})",
+      "Body": "Return the Euclidean norm, sqrt(x*x + y*y). This is the length of the vector from the origin to point (x, y).",
+      "Link": "https://docs.python.org/3/library/math.html#math.hypot"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::sin}}({{c3::x}})",
+      "Body": "Return the sine of x radians.",
+      "Link": "https://docs.python.org/3/library/math.html#math.sin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::tan}}({{c3::x}})",
+      "Body": "Return the tangent of x radians.",
+      "Link": "https://docs.python.org/3/library/math.html#math.tan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::degrees}}({{c3::x}})",
+      "Body": "Convert angle x from radians to degrees.",
+      "Link": "https://docs.python.org/3/library/math.html#math.degrees"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::radians}}({{c3::x}})",
+      "Body": "Convert angle x from degrees to radians.",
+      "Link": "https://docs.python.org/3/library/math.html#math.radians"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::acosh}}({{c3::x}})",
+      "Body": "Return the inverse hyperbolic cosine of x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.acosh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::asinh}}({{c3::x}})",
+      "Body": "Return the inverse hyperbolic sine of x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.asinh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::atanh}}({{c3::x}})",
+      "Body": "Return the inverse hyperbolic tangent of x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.atanh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::cosh}}({{c3::x}})",
+      "Body": "Return the hyperbolic cosine of x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.cosh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::sinh}}({{c3::x}})",
+      "Body": "Return the hyperbolic sine of x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.sinh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::tanh}}({{c3::x}})",
+      "Body": "Return the hyperbolic tangent of x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.tanh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::erf}}({{c3::x}})",
+      "Body": "Return the error function at x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.erf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::erfc}}({{c3::x}})",
+      "Body": "Return the complementary error function at x.  The complementary error function is defined as 1.0 - erf(x).  It is used for large values of x where a subtraction from one would cause a loss of significance.",
+      "Link": "https://docs.python.org/3/library/math.html#math.erfc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::gamma}}({{c3::x}})",
+      "Body": "Return the Gamma function at x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.gamma"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::lgamma}}({{c3::x}})",
+      "Body": "Return the natural logarithm of the absolute value of the Gamma function at x.",
+      "Link": "https://docs.python.org/3/library/math.html#math.lgamma"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::pi}}",
+      "Body": "The mathematical constant  = 3.141592, to available precision.",
+      "Link": "https://docs.python.org/3/library/math.html#math.pi"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::e}}",
+      "Body": "The mathematical constant e = 2.718281, to available precision.",
+      "Link": "https://docs.python.org/3/library/math.html#math.e"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::tau}}",
+      "Body": "The mathematical constant  = 6.283185, to available precision. Tau is a circle constant equal to 2, the ratio of a circle's circumference to its radius. To learn more about Tau, check out Vi Hart's video Pi is (still) Wrong, and start celebrating Tau day by eating twice as much pie!",
+      "Link": "https://docs.python.org/3/library/math.html#math.tau"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::inf}}",
+      "Body": "A floating-point positive infinity.  (For negative infinity, use -math.inf.)  Equivalent to the output of float('inf').",
+      "Link": "https://docs.python.org/3/library/math.html#math.inf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::math}}.{{c2::nan}}",
+      "Body": "A floating-point not a number (NaN) value.  Equivalent to the output of float('nan').",
+      "Link": "https://docs.python.org/3/library/math.html#math.nan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::phase}}({{c3::x}})",
+      "Body": "Return the phase of x (also known as the argument of x), as a float.  phase(x) is equivalent to math.atan2(x.imag, x.real).  The result lies in the range [-, ], and the branch cut for this operation lies along the negative real axis, continuous from above.  On systems with support for signed zeros (which includes most systems in current use), this means that the sign of the result is the same as the sign of x.imag, even when x.imag is zero:",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.phase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::polar}}({{c3::x}})",
+      "Body": "Return the representation of x in polar coordinates.  Returns a pair (r, phi) where r is the modulus of x and phi is the phase of x.  polar(x) is equivalent to (abs(x), phase(x)).",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.polar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::rect}}({{c3::r}}, {{c4::phi}})",
+      "Body": "Return the complex number x with polar coordinates r and phi. Equivalent to r * (math.cos(phi) + math.sin(phi)*1j).",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.rect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::exp}}({{c3::x}})",
+      "Body": "Return e raised to the power x, where e is the base of natural logarithms.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.exp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::log}}({{c3::x}}[, {{c4::base}}])",
+      "Body": "Returns the logarithm of x to the given base. If the base is not specified, returns the natural logarithm of x. There is one branch cut, from 0 along the negative real axis to -, continuous from above.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.log"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::log}}10({{c3::x}})",
+      "Body": "Return the base-10 logarithm of x. This has the same branch cut as log().",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.log10"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::sqrt}}({{c3::x}})",
+      "Body": "Return the square root of x. This has the same branch cut as log().",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.sqrt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::acos}}({{c3::x}})",
+      "Body": "Return the arc cosine of x. There are two branch cuts: One extends right from 1 along the real axis to , continuous from below. The other extends left from -1 along the real axis to -, continuous from above.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.acos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::asin}}({{c3::x}})",
+      "Body": "Return the arc sine of x. This has the same branch cuts as acos().",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.asin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::atan}}({{c3::x}})",
+      "Body": "Return the arc tangent of x. There are two branch cuts: One extends from 1j along the imaginary axis to j, continuous from the right. The other extends from -1j along the imaginary axis to -j, continuous from the left.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.atan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::cos}}({{c3::x}})",
+      "Body": "Return the cosine of x.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.cos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::sin}}({{c3::x}})",
+      "Body": "Return the sine of x.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.sin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::tan}}({{c3::x}})",
+      "Body": "Return the tangent of x.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.tan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::acosh}}({{c3::x}})",
+      "Body": "Return the inverse hyperbolic cosine of x. There is one branch cut, extending left from 1 along the real axis to -, continuous from above.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.acosh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::asinh}}({{c3::x}})",
+      "Body": "Return the inverse hyperbolic sine of x. There are two branch cuts: One extends from 1j along the imaginary axis to j, continuous from the right.  The other extends from -1j along the imaginary axis to -j, continuous from the left.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.asinh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::atanh}}({{c3::x}})",
+      "Body": "Return the inverse hyperbolic tangent of x. There are two branch cuts: One extends from 1 along the real axis to , continuous from below. The other extends from -1 along the real axis to -, continuous from above.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.atanh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::cosh}}({{c3::x}})",
+      "Body": "Return the hyperbolic cosine of x.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.cosh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::sinh}}({{c3::x}})",
+      "Body": "Return the hyperbolic sine of x.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.sinh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::tanh}}({{c3::x}})",
+      "Body": "Return the hyperbolic tangent of x.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.tanh"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::isfinite}}({{c3::x}})",
+      "Body": "Return True if both the real and imaginary parts of x are finite, and False otherwise.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.isfinite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::isinf}}({{c3::x}})",
+      "Body": "Return True if either the real or the imaginary part of x is an infinity, and False otherwise.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.isinf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::isnan}}({{c3::x}})",
+      "Body": "Return True if either the real or the imaginary part of x is a NaN, and False otherwise.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.isnan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::isclose}}({{c3::a}}, {{c4::b}}, *, {{c5::rel_tol}}=1{{c6::e}}-09, {{c7::abs_tol}}=0.0)",
+      "Body": "Return True if the values a and b are close to each other and False otherwise.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.isclose"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::pi}}",
+      "Body": "The mathematical constant , as a float.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.pi"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::e}}",
+      "Body": "The mathematical constant e, as a float.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.e"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::tau}}",
+      "Body": "The mathematical constant , as a float.",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.tau"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::inf}}",
+      "Body": "Floating-point positive infinity. Equivalent to float('inf').",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.inf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::infj}}",
+      "Body": "Complex number with zero real part and positive infinity imaginary part. Equivalent to complex(0.0, float('inf')).",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.infj"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::nan}}",
+      "Body": "A floating-point not a number (NaN) value.  Equivalent to float('nan').",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.nan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cmath}}.{{c2::nanj}}",
+      "Body": "Complex number with zero real part and NaN imaginary part. Equivalent to complex(0.0, float('nan')).",
+      "Link": "https://docs.python.org/3/library/cmath.html#cmath.nanj"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::Decimal}}({{c4::value}}=\"0\", {{c5::context}}={{c6::None}})",
+      "Body": "Construct a new Decimal object based from value.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::adjusted}}()",
+      "Body": "Return the adjusted exponent after shifting out the coefficient's rightmost digits until only the lead digit remains: Decimal('321e+5').adjusted() returns seven.  Used for determining the position of the most significant digit with respect to the decimal point.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.adjusted"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::as_integer_ratio}}()",
+      "Body": "Return a pair (n, d) of integers that represent the given Decimal instance as a fraction, in lowest terms and with a positive denominator:",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.as_integer_ratio"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::as_tuple}}()",
+      "Body": "Return a named tuple representation of the number: DecimalTuple(sign, digits, exponent).",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.as_tuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::canonical}}()",
+      "Body": "Return the canonical encoding of the argument.  Currently, the encoding of a Decimal instance is always canonical, so this operation returns its argument unchanged.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.canonical"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::compare}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Compare the values of two Decimal instances.  compare() returns a Decimal instance, and if either operand is a NaN then the result is a NaN:",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.compare"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::compare_signal}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "This operation is identical to the compare() method, except that all NaNs signal.  That is, if neither operand is a signaling NaN then any quiet NaN operand is treated as though it were a signaling NaN.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.compare_signal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::compare_total}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Compare two operands using their abstract representation rather than their numerical value.  Similar to the compare() method, but the result gives a total ordering on Decimal instances.  Two Decimal instances with the same numeric value but different representations compare unequal in this ordering:",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.compare_total"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::compare_total_mag}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Compare two operands using their abstract representation rather than their value as in compare_total(), but ignoring the sign of each operand. x.compare_total_mag(y) is equivalent to x.copy_abs().compare_total(y.copy_abs()).",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.compare_total_mag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::conjugate}}()",
+      "Body": "Just returns self, this method is only to comply with the Decimal Specification.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.conjugate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::copy_abs}}()",
+      "Body": "Return the absolute value of the argument.  This operation is unaffected by the context and is quiet: no flags are changed and no rounding is performed.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.copy_abs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::copy_negate}}()",
+      "Body": "Return the negation of the argument.  This operation is unaffected by the context and is quiet: no flags are changed and no rounding is performed.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.copy_negate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::copy_sign}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Return a copy of the first operand with the sign set to be the same as the sign of the second operand.  For example:",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.copy_sign"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::exp}}({{c4::context}}={{c5::None}})",
+      "Body": "Return the value of the (natural) exponential function e**x at the given number.  The result is correctly rounded using the ROUND_HALF_EVEN rounding mode.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.exp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::from_float}}({{c4::f}})",
+      "Body": "Classmethod that converts a float to a decimal number, exactly.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.from_float"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::fma}}({{c4::other}}, {{c5::third}}, {{c6::context}}={{c7::None}})",
+      "Body": "Fused multiply-add.  Return self*other+third with no rounding of the intermediate product self*other.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.fma"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_canonical}}()",
+      "Body": "Return True if the argument is canonical and False otherwise.  Currently, a Decimal instance is always canonical, so this operation always returns True.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_canonical"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_finite}}()",
+      "Body": "Return True if the argument is a finite number, and False if the argument is an infinity or a NaN.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_finite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_infinite}}()",
+      "Body": "Return True if the argument is either positive or negative infinity and False otherwise.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_infinite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_nan}}()",
+      "Body": "Return True if the argument is a (quiet or signaling) NaN and False otherwise.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_nan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_normal}}({{c4::context}}={{c5::None}})",
+      "Body": "Return True if the argument is a normal finite number.  Return False if the argument is zero, subnormal, infinite or a NaN.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_normal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_qnan}}()",
+      "Body": "Return True if the argument is a quiet NaN, and False otherwise.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_qnan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_signed}}()",
+      "Body": "Return True if the argument has a negative sign and False otherwise.  Note that zeros and NaNs can both carry signs.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_signed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_snan}}()",
+      "Body": "Return True if the argument is a signaling NaN and False otherwise.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_snan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_subnormal}}({{c4::context}}={{c5::None}})",
+      "Body": "Return True if the argument is subnormal, and False otherwise.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_subnormal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::is_zero}}()",
+      "Body": "Return True if the argument is a (positive or negative) zero and False otherwise.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.is_zero"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::ln}}({{c4::context}}={{c5::None}})",
+      "Body": "Return the natural (base e) logarithm of the operand.  The result is correctly rounded using the ROUND_HALF_EVEN rounding mode.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.ln"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::log}}10({{c4::context}}={{c5::None}})",
+      "Body": "Return the base ten logarithm of the operand.  The result is correctly rounded using the ROUND_HALF_EVEN rounding mode.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.log10"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::logb}}({{c4::context}}={{c5::None}})",
+      "Body": "For a nonzero number, return the adjusted exponent of its operand as a Decimal instance.  If the operand is a zero then Decimal('-Infinity') is returned and the DivisionByZero flag is raised.  If the operand is an infinity then Decimal('Infinity') is returned.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.logb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::logical_and}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "logical_and() is a logical operation which takes two logical operands (see Logical operands).  The result is the digit-wise and of the two operands.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.logical_and"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::logical_invert}}({{c4::context}}={{c5::None}})",
+      "Body": "logical_invert() is a logical operation.  The result is the digit-wise inversion of the operand.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.logical_invert"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::logical_or}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "logical_or() is a logical operation which takes two logical operands (see Logical operands).  The result is the digit-wise or of the two operands.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.logical_or"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::logical_xor}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "logical_xor() is a logical operation which takes two logical operands (see Logical operands).  The result is the digit-wise exclusive or of the two operands.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.logical_xor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::max}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Like max(self, other) except that the context rounding rule is applied before returning and that NaN values are either signaled or ignored (depending on the context and whether they are signaling or quiet).",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.max"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::max_mag}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Similar to the max() method, but the comparison is done using the absolute values of the operands.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.max_mag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::min}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Like min(self, other) except that the context rounding rule is applied before returning and that NaN values are either signaled or ignored (depending on the context and whether they are signaling or quiet).",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.min"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::min_mag}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Similar to the min() method, but the comparison is done using the absolute values of the operands.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.min_mag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::next_minus}}({{c4::context}}={{c5::None}})",
+      "Body": "Return the largest number representable in the given context (or in the current thread's context if no context is given) that is smaller than the given operand.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.next_minus"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::next_plus}}({{c4::context}}={{c5::None}})",
+      "Body": "Return the smallest number representable in the given context (or in the current thread's context if no context is given) that is larger than the given operand.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.next_plus"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::next_toward}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "If the two operands are unequal, return the number closest to the first operand in the direction of the second operand.  If both operands are numerically equal, return a copy of the first operand with the sign set to be the same as the sign of the second operand.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.next_toward"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::normalize}}({{c4::context}}={{c5::None}})",
+      "Body": "Normalize the number by stripping the rightmost trailing zeros and converting any result equal to Decimal('0') to Decimal('0e0'). Used for producing canonical values for attributes of an equivalence class. For example, Decimal('32.100') and Decimal('0.321000e+2') both normalize to the equivalent value Decimal('32.1').",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.normalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::number_class}}({{c4::context}}={{c5::None}})",
+      "Body": "Return a string describing the class of the operand.  The returned value is one of the following ten strings.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.number_class"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::quantize}}({{c4::exp}}, {{c5::rounding}}={{c6::None}}, {{c7::context}}={{c8::None}})",
+      "Body": "Return a value equal to the first operand after rounding and having the exponent of the second operand.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.quantize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::radix}}()",
+      "Body": "Return Decimal(10), the radix (base) in which the Decimal class does all its arithmetic.  Included for compatibility with the specification.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.radix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::remainder_near}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Return the remainder from dividing self by other.  This differs from self % other in that the sign of the remainder is chosen so as to minimize its absolute value.  More precisely, the return value is self - n * other where n is the integer nearest to the exact value of self / other, and if two integers are equally near then the even one is chosen.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.remainder_near"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::rotate}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Return the result of rotating the digits of the first operand by an amount specified by the second operand.  The second operand must be an integer in the range -precision through precision.  The absolute value of the second operand gives the number of places to rotate.  If the second operand is positive then rotation is to the left; otherwise rotation is to the right. The coefficient of the first operand is padded on the left with zeros to length precision if necessary.  The sign and exponent of the first operand are unchanged.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.rotate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::same_quantum}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Test whether self and other have the same exponent or whether both are NaN.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.same_quantum"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::scaleb}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Return the first operand with exponent adjusted by the second. Equivalently, return the first operand multiplied by 10**other.  The second operand must be an integer.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.scaleb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::shift}}({{c4::other}}, {{c5::context}}={{c6::None}})",
+      "Body": "Return the result of shifting the digits of the first operand by an amount specified by the second operand.  The second operand must be an integer in the range -precision through precision.  The absolute value of the second operand gives the number of places to shift.  If the second operand is positive then the shift is to the left; otherwise the shift is to the right.  Digits shifted into the coefficient are zeros.  The sign and exponent of the first operand are unchanged.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.shift"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::sqrt}}({{c4::context}}={{c5::None}})",
+      "Body": "Return the square root of the argument to full precision.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.sqrt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::to_eng_string}}({{c4::context}}={{c5::None}})",
+      "Body": "Convert to a string, using engineering notation if an exponent is needed.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.to_eng_string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::to_integral}}({{c4::rounding}}={{c5::None}}, {{c6::context}}={{c7::None}})",
+      "Body": "Identical to the to_integral_value() method.  The to_integral name has been kept for compatibility with older versions.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.to_integral"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::to_integral_exact}}({{c4::rounding}}={{c5::None}}, {{c6::context}}={{c7::None}})",
+      "Body": "Round to the nearest integer, signaling Inexact or Rounded as appropriate if rounding occurs.  The rounding mode is determined by the rounding parameter if given, else by the given context.  If neither parameter is given then the rounding mode of the current context is used.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.to_integral_exact"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Decimal}}.{{c3::to_integral_value}}({{c4::rounding}}={{c5::None}}, {{c6::context}}={{c7::None}})",
+      "Body": "Round to the nearest integer without signaling Inexact or Rounded.  If given, applies rounding; otherwise, uses the rounding method in either the supplied context or the current context.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Decimal.to_integral_value"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::getcontext}}()",
+      "Body": "Return the current context for the active thread.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.getcontext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::setcontext}}({{c3::c}})",
+      "Body": "Set the current context for the active thread to c.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.setcontext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::localcontext}}({{c3::ctx}}={{c4::None}})",
+      "Body": "Return a context manager that will set the current context for the active thread to a copy of ctx on entry to the with-statement and restore the previous context when exiting the with-statement. If no context is specified, a copy of the current context is used.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.localcontext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::BasicContext}}",
+      "Body": "This is a standard context defined by the General Decimal Arithmetic Specification.  Precision is set to nine.  Rounding is set to ROUND_HALF_UP.  All flags are cleared.  All traps are enabled (treated as exceptions) except Inexact, Rounded, and Subnormal.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.BasicContext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::ExtendedContext}}",
+      "Body": "This is a standard context defined by the General Decimal Arithmetic Specification.  Precision is set to nine.  Rounding is set to ROUND_HALF_EVEN.  All flags are cleared.  No traps are enabled (so that exceptions are not raised during computations).",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ExtendedContext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::DefaultContext}}",
+      "Body": "This context is used by the Context constructor as a prototype for new contexts.  Changing a field (such a precision) has the effect of changing the default for new contexts created by the Context constructor.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.DefaultContext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::Context}}({{c4::prec}}={{c5::None}}, {{c6::rounding}}={{c7::None}}, {{c8::Emin}}={{c9::None}}, {{c10::Emax}}={{c11::None}}, {{c12::capitals}}={{c13::None}}, {{c14::clamp}}={{c15::None}}, {{c16::flags}}={{c17::None}}, {{c18::traps}}={{c19::None}})",
+      "Body": "Creates a new context.  If a field is not specified or is None, the default values are copied from the DefaultContext.  If the flags field is not specified or is None, all flags are cleared.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::clear_flags}}()",
+      "Body": "Resets all of the flags to 0.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.clear_flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::clear_traps}}()",
+      "Body": "Resets all of the traps to 0.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.clear_traps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::copy}}()",
+      "Body": "Return a duplicate of the context.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::copy_decimal}}({{c4::num}})",
+      "Body": "Return a copy of the Decimal instance num.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.copy_decimal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::create_decimal}}({{c4::num}})",
+      "Body": "Creates a new Decimal instance from num but using self as context. Unlike the Decimal constructor, the context precision, rounding method, flags, and traps are applied to the conversion.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.create_decimal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::create_decimal_from_float}}({{c4::f}})",
+      "Body": "Creates a new Decimal instance from a float f but rounding using self as the context.  Unlike the Decimal.from_float() class method, the context precision, rounding method, flags, and traps are applied to the conversion.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.create_decimal_from_float"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::Etiny}}()",
+      "Body": "Returns a value equal to Emin - prec + 1 which is the minimum exponent value for subnormal results.  When underflow occurs, the exponent is set to Etiny.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.Etiny"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::Etop}}()",
+      "Body": "Returns a value equal to Emax - prec + 1.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.Etop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::abs}}({{c4::x}})",
+      "Body": "Returns the absolute value of x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.abs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::add}}({{c4::x}}, {{c5::y}})",
+      "Body": "Return the sum of x and y.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::canonical}}({{c4::x}})",
+      "Body": "Returns the same Decimal object x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.canonical"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::compare}}({{c4::x}}, {{c5::y}})",
+      "Body": "Compares x and y numerically.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.compare"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::compare_signal}}({{c4::x}}, {{c5::y}})",
+      "Body": "Compares the values of the two operands numerically.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.compare_signal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::compare_total}}({{c4::x}}, {{c5::y}})",
+      "Body": "Compares two operands using their abstract representation.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.compare_total"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::compare_total_mag}}({{c4::x}}, {{c5::y}})",
+      "Body": "Compares two operands using their abstract representation, ignoring sign.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.compare_total_mag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::copy_abs}}({{c4::x}})",
+      "Body": "Returns a copy of x with the sign set to 0.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.copy_abs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::copy_negate}}({{c4::x}})",
+      "Body": "Returns a copy of x with the sign inverted.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.copy_negate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::copy_sign}}({{c4::x}}, {{c5::y}})",
+      "Body": "Copies the sign from y to x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.copy_sign"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::divide}}({{c4::x}}, {{c5::y}})",
+      "Body": "Return x divided by y.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.divide"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::divide_int}}({{c4::x}}, {{c5::y}})",
+      "Body": "Return x divided by y, truncated to an integer.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.divide_int"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::divmod}}({{c4::x}}, {{c5::y}})",
+      "Body": "Divides two numbers and returns the integer part of the result.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.divmod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::exp}}({{c4::x}})",
+      "Body": "Returns e ** x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.exp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::fma}}({{c4::x}}, {{c5::y}}, {{c6::z}})",
+      "Body": "Returns x multiplied by y, plus z.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.fma"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_canonical}}({{c4::x}})",
+      "Body": "Returns True if x is canonical; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_canonical"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_finite}}({{c4::x}})",
+      "Body": "Returns True if x is finite; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_finite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_infinite}}({{c4::x}})",
+      "Body": "Returns True if x is infinite; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_infinite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_nan}}({{c4::x}})",
+      "Body": "Returns True if x is a qNaN or sNaN; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_nan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_normal}}({{c4::x}})",
+      "Body": "Returns True if x is a normal number; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_normal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_qnan}}({{c4::x}})",
+      "Body": "Returns True if x is a quiet NaN; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_qnan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_signed}}({{c4::x}})",
+      "Body": "Returns True if x is negative; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_signed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_snan}}({{c4::x}})",
+      "Body": "Returns True if x is a signaling NaN; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_snan"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_subnormal}}({{c4::x}})",
+      "Body": "Returns True if x is subnormal; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_subnormal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::is_zero}}({{c4::x}})",
+      "Body": "Returns True if x is a zero; otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.is_zero"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::ln}}({{c4::x}})",
+      "Body": "Returns the natural (base e) logarithm of x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.ln"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::log}}10({{c4::x}})",
+      "Body": "Returns the base 10 logarithm of x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.log10"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::logb}}({{c4::x}})",
+      "Body": "Returns the exponent of the magnitude of the operand's MSD.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.logb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::logical_and}}({{c4::x}}, {{c5::y}})",
+      "Body": "Applies the logical operation and between each operand's digits.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.logical_and"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::logical_invert}}({{c4::x}})",
+      "Body": "Invert all the digits in x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.logical_invert"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::logical_or}}({{c4::x}}, {{c5::y}})",
+      "Body": "Applies the logical operation or between each operand's digits.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.logical_or"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::logical_xor}}({{c4::x}}, {{c5::y}})",
+      "Body": "Applies the logical operation xor between each operand's digits.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.logical_xor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::max}}({{c4::x}}, {{c5::y}})",
+      "Body": "Compares two values numerically and returns the maximum.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.max"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::max_mag}}({{c4::x}}, {{c5::y}})",
+      "Body": "Compares the values numerically with their sign ignored.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.max_mag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::min}}({{c4::x}}, {{c5::y}})",
+      "Body": "Compares two values numerically and returns the minimum.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.min"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::min_mag}}({{c4::x}}, {{c5::y}})",
+      "Body": "Compares the values numerically with their sign ignored.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.min_mag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::minus}}({{c4::x}})",
+      "Body": "Minus corresponds to the unary prefix minus operator in Python.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.minus"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::multiply}}({{c4::x}}, {{c5::y}})",
+      "Body": "Return the product of x and y.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.multiply"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::next_minus}}({{c4::x}})",
+      "Body": "Returns the largest representable number smaller than x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.next_minus"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::next_plus}}({{c4::x}})",
+      "Body": "Returns the smallest representable number larger than x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.next_plus"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::next_toward}}({{c4::x}}, {{c5::y}})",
+      "Body": "Returns the number closest to x, in direction towards y.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.next_toward"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::normalize}}({{c4::x}})",
+      "Body": "Reduces x to its simplest form.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.normalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::number_class}}({{c4::x}})",
+      "Body": "Returns an indication of the class of x.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.number_class"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::plus}}({{c4::x}})",
+      "Body": "Plus corresponds to the unary prefix plus operator in Python.  This operation applies the context precision and rounding, so it is not an identity operation.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.plus"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::power}}({{c4::x}}, {{c5::y}}, {{c6::modulo}}={{c7::None}})",
+      "Body": "Return x to the power of y, reduced modulo modulo if given.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.power"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::quantize}}({{c4::x}}, {{c5::y}})",
+      "Body": "Returns a value equal to x (rounded), having the exponent of y.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.quantize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::radix}}()",
+      "Body": "Just returns 10, as this is Decimal, :)",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.radix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::remainder}}({{c4::x}}, {{c5::y}})",
+      "Body": "Returns the remainder from integer division.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.remainder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::remainder_near}}({{c4::x}}, {{c5::y}})",
+      "Body": "Returns x - y * n, where n is the integer nearest the exact value of x / y (if the result is 0 then its sign will be the sign of x).",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.remainder_near"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::rotate}}({{c4::x}}, {{c5::y}})",
+      "Body": "Returns a rotated copy of x, y times.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.rotate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::same_quantum}}({{c4::x}}, {{c5::y}})",
+      "Body": "Returns True if the two operands have the same exponent.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.same_quantum"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::scaleb}}({{c4::x}}, {{c5::y}})",
+      "Body": "Returns the first operand after adding the second value its exp.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.scaleb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::shift}}({{c4::x}}, {{c5::y}})",
+      "Body": "Returns a shifted copy of x, y times.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.shift"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::sqrt}}({{c4::x}})",
+      "Body": "Square root of a non-negative number to context precision.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.sqrt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::subtract}}({{c4::x}}, {{c5::y}})",
+      "Body": "Return the difference between x and y.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.subtract"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::to_eng_string}}({{c4::x}})",
+      "Body": "Convert to a string, using engineering notation if an exponent is needed.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.to_eng_string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::to_integral_exact}}({{c4::x}})",
+      "Body": "Rounds to an integer.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.to_integral_exact"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::Context}}.{{c3::to_sci_string}}({{c4::x}})",
+      "Body": "Converts a number to a string using scientific notation.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Context.to_sci_string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::HAVE_THREADS}}",
+      "Body": "The default value is True. If Python is compiled without threads, the C version automatically disables the expensive thread local context machinery. In this case, the value is False.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.HAVE_THREADS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::ROUND_CEILING}}",
+      "Body": "Round towards Infinity.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ROUND_CEILING"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::ROUND_DOWN}}",
+      "Body": "Round towards zero.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ROUND_DOWN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::ROUND_FLOOR}}",
+      "Body": "Round towards -Infinity.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ROUND_FLOOR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::ROUND_HALF_DOWN}}",
+      "Body": "Round to nearest with ties going towards zero.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ROUND_HALF_DOWN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::ROUND_HALF_EVEN}}",
+      "Body": "Round to nearest with ties going to nearest even integer.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ROUND_HALF_EVEN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::ROUND_HALF_UP}}",
+      "Body": "Round to nearest with ties going away from zero.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ROUND_HALF_UP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::ROUND_UP}}",
+      "Body": "Round away from zero.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ROUND_UP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::decimal}}.{{c2::ROUND_}}05{{c3::UP}}",
+      "Body": "Round away from zero if last digit after rounding towards zero would have been 0 or 5; otherwise round towards zero.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.ROUND_05UP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::Clamped}}",
+      "Body": "Altered an exponent to fit representation constraints.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Clamped"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::DecimalException}}",
+      "Body": "Base class for other signals and a subclass of ArithmeticError.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.DecimalException"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::DivisionByZero}}",
+      "Body": "Signals the division of a non-infinite number by zero.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.DivisionByZero"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::Inexact}}",
+      "Body": "Indicates that rounding occurred and the result is not exact.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Inexact"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::InvalidOperation}}",
+      "Body": "An invalid operation was performed.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.InvalidOperation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::Overflow}}",
+      "Body": "Numerical overflow.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Overflow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::Rounded}}",
+      "Body": "Rounding occurred though possibly no information was lost.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Rounded"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::Subnormal}}",
+      "Body": "Exponent was lower than Emin prior to rounding.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Subnormal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::Underflow}}",
+      "Body": "Numerical underflow with result rounded to zero.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.Underflow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::decimal}}.{{c3::FloatOperation}}",
+      "Body": "Enable stricter semantics for mixing floats and Decimals.",
+      "Link": "https://docs.python.org/3/library/decimal.html#decimal.FloatOperation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::fractions}}.{{c3::Fraction}}({{c4::numerator}}=0, {{c5::denominator}}=1)",
+      "Body": "The first version requires that numerator and denominator are instances of numbers.Rational and returns a new Fraction instance with value numerator/denominator. If denominator is 0, it raises a ZeroDivisionError. The second version requires that other_fraction is an instance of numbers.Rational and returns a Fraction instance with the same value.  The next two versions accept either a float or a decimal.Decimal instance, and return a Fraction instance with exactly the same value.  Note that due to the usual issues with binary floating-point (see Floating Point Arithmetic:  Issues and Limitations), the argument to Fraction(1.1) is not exactly equal to 11/10, and so Fraction(1.1) does not return Fraction(11, 10) as one might expect. (But see the documentation for the limit_denominator() method below.) The last version of the constructor expects a string or unicode instance. The usual form for this instance is:",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::fractions}}.{{c3::Fraction}}({{c4::other_fraction}})",
+      "Body": "The first version requires that numerator and denominator are instances of numbers.Rational and returns a new Fraction instance with value numerator/denominator. If denominator is 0, it raises a ZeroDivisionError. The second version requires that other_fraction is an instance of numbers.Rational and returns a Fraction instance with the same value.  The next two versions accept either a float or a decimal.Decimal instance, and return a Fraction instance with exactly the same value.  Note that due to the usual issues with binary floating-point (see Floating Point Arithmetic:  Issues and Limitations), the argument to Fraction(1.1) is not exactly equal to 11/10, and so Fraction(1.1) does not return Fraction(11, 10) as one might expect. (But see the documentation for the limit_denominator() method below.) The last version of the constructor expects a string or unicode instance. The usual form for this instance is:",
+      "Link": "https://docs.python.org/3/library/fractions.html#module-fractions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::fractions}}.{{c3::Fraction}}({{c4::float}})",
+      "Body": "The first version requires that numerator and denominator are instances of numbers.Rational and returns a new Fraction instance with value numerator/denominator. If denominator is 0, it raises a ZeroDivisionError. The second version requires that other_fraction is an instance of numbers.Rational and returns a Fraction instance with the same value.  The next two versions accept either a float or a decimal.Decimal instance, and return a Fraction instance with exactly the same value.  Note that due to the usual issues with binary floating-point (see Floating Point Arithmetic:  Issues and Limitations), the argument to Fraction(1.1) is not exactly equal to 11/10, and so Fraction(1.1) does not return Fraction(11, 10) as one might expect. (But see the documentation for the limit_denominator() method below.) The last version of the constructor expects a string or unicode instance. The usual form for this instance is:",
+      "Link": "https://docs.python.org/3/library/fractions.html#module-fractions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::fractions}}.{{c3::Fraction}}({{c4::decimal}})",
+      "Body": "The first version requires that numerator and denominator are instances of numbers.Rational and returns a new Fraction instance with value numerator/denominator. If denominator is 0, it raises a ZeroDivisionError. The second version requires that other_fraction is an instance of numbers.Rational and returns a Fraction instance with the same value.  The next two versions accept either a float or a decimal.Decimal instance, and return a Fraction instance with exactly the same value.  Note that due to the usual issues with binary floating-point (see Floating Point Arithmetic:  Issues and Limitations), the argument to Fraction(1.1) is not exactly equal to 11/10, and so Fraction(1.1) does not return Fraction(11, 10) as one might expect. (But see the documentation for the limit_denominator() method below.) The last version of the constructor expects a string or unicode instance. The usual form for this instance is:",
+      "Link": "https://docs.python.org/3/library/fractions.html#module-fractions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::fractions}}.{{c3::Fraction}}({{c4::string}})",
+      "Body": "The first version requires that numerator and denominator are instances of numbers.Rational and returns a new Fraction instance with value numerator/denominator. If denominator is 0, it raises a ZeroDivisionError. The second version requires that other_fraction is an instance of numbers.Rational and returns a Fraction instance with the same value.  The next two versions accept either a float or a decimal.Decimal instance, and return a Fraction instance with exactly the same value.  Note that due to the usual issues with binary floating-point (see Floating Point Arithmetic:  Issues and Limitations), the argument to Fraction(1.1) is not exactly equal to 11/10, and so Fraction(1.1) does not return Fraction(11, 10) as one might expect. (But see the documentation for the limit_denominator() method below.) The last version of the constructor expects a string or unicode instance. The usual form for this instance is:",
+      "Link": "https://docs.python.org/3/library/fractions.html#module-fractions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::Fraction}}.{{c3::numerator}}",
+      "Body": "Numerator of the Fraction in lowest term.",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction.numerator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::Fraction}}.{{c3::denominator}}",
+      "Body": "Denominator of the Fraction in lowest term.",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction.denominator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::Fraction}}.{{c3::from_float}}({{c4::flt}})",
+      "Body": "This class method constructs a Fraction representing the exact value of flt, which must be a float. Beware that Fraction.from_float(0.3) is not the same value as Fraction(3, 10).",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction.from_float"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::Fraction}}.{{c3::from_decimal}}({{c4::dec}})",
+      "Body": "This class method constructs a Fraction representing the exact value of dec, which must be a decimal.Decimal instance.",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction.from_decimal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::Fraction}}.{{c3::limit_denominator}}({{c4::max_denominator}}=1000000)",
+      "Body": "Finds and returns the closest Fraction to self that has denominator at most max_denominator.  This method is useful for finding rational approximations to a given floating-point number:",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction.limit_denominator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::Fraction}}.{{c3::__floor__}}()",
+      "Body": "Returns the greatest int <= self.  This method can also be accessed through the math.floor() function:",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction.__floor__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::Fraction}}.{{c3::__ceil__}}()",
+      "Body": "Returns the least int >= self.  This method can also be accessed through the math.ceil() function.",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction.__ceil__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::Fraction}}.{{c3::__round__}}()",
+      "Body": "The first version returns the nearest int to self, rounding half to even. The second version rounds self to the nearest multiple of Fraction(1, 10**ndigits) (logically, if ndigits is negative), again rounding half toward even.  This method can also be accessed through the round() function.",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.Fraction.__round__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::__round__}}({{c2::ndigits}})",
+      "Body": "The first version returns the nearest int to self, rounding half to even. The second version rounds self to the nearest multiple of Fraction(1, 10**ndigits) (logically, if ndigits is negative), again rounding half toward even.  This method can also be accessed through the round() function.",
+      "Link": "https://docs.python.org/3/library/fractions.html#module-fractions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fractions}}.{{c2::gcd}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return the greatest common divisor of the integers a and b.  If either a or b is nonzero, then the absolute value of gcd(a, b) is the largest integer that divides both a and b.  gcd(a,b) has the same sign as b if b is nonzero; otherwise it takes the sign of a.  gcd(0, 0) returns 0.",
+      "Link": "https://docs.python.org/3/library/fractions.html#fractions.gcd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::seed}}({{c3::a}}={{c4::None}}, {{c5::version}}=2)",
+      "Body": "Initialize the random number generator.",
+      "Link": "https://docs.python.org/3/library/random.html#random.seed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::getstate}}()",
+      "Body": "Return an object capturing the current internal state of the generator.  This object can be passed to setstate() to restore the state.",
+      "Link": "https://docs.python.org/3/library/random.html#random.getstate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::setstate}}({{c3::state}})",
+      "Body": "state should have been obtained from a previous call to getstate(), and setstate() restores the internal state of the generator to what it was at the time getstate() was called.",
+      "Link": "https://docs.python.org/3/library/random.html#random.setstate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::getrandbits}}({{c3::k}})",
+      "Body": "Returns a Python integer with k random bits. This method is supplied with the MersenneTwister generator and some other generators may also provide it as an optional part of the API. When available, getrandbits() enables randrange() to handle arbitrarily large ranges.",
+      "Link": "https://docs.python.org/3/library/random.html#random.getrandbits"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::randrange}}({{c3::stop}})",
+      "Body": "Return a randomly selected element from range(start, stop, step).  This is equivalent to choice(range(start, stop, step)), but doesn't actually build a range object.",
+      "Link": "https://docs.python.org/3/library/random.html#random.randrange"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::randrange}}({{c3::start}}, {{c4::stop}}[, {{c5::step}}])",
+      "Body": "Return a randomly selected element from range(start, stop, step).  This is equivalent to choice(range(start, stop, step)), but doesn't actually build a range object.",
+      "Link": "https://docs.python.org/3/library/random.html#functions-for-integers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::randint}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a random integer N such that a <= N <= b.  Alias for randrange(a, b+1).",
+      "Link": "https://docs.python.org/3/library/random.html#random.randint"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::choice}}({{c3::seq}})",
+      "Body": "Return a random element from the non-empty sequence seq. If seq is empty, raises IndexError.",
+      "Link": "https://docs.python.org/3/library/random.html#random.choice"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::choices}}({{c3::population}}, {{c4::weights}}={{c5::None}}, *, {{c6::cum_weights}}={{c7::None}}, {{c8::k}}=1)",
+      "Body": "Return a k sized list of elements chosen from the population with replacement. If the population is empty, raises IndexError.",
+      "Link": "https://docs.python.org/3/library/random.html#random.choices"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::shuffle}}({{c3::x}}[, {{c4::random}}])",
+      "Body": "Shuffle the sequence x in place.",
+      "Link": "https://docs.python.org/3/library/random.html#random.shuffle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::sample}}({{c3::population}}, {{c4::k}})",
+      "Body": "Return a k length list of unique elements chosen from the population sequence or set. Used for random sampling without replacement.",
+      "Link": "https://docs.python.org/3/library/random.html#random.sample"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::random}}()",
+      "Body": "Return the next random floating point number in the range [0.0, 1.0).",
+      "Link": "https://docs.python.org/3/library/random.html#random.random"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::uniform}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a random floating point number N such that a <= N <= b for a <= b and b <= N <= a for b < a.",
+      "Link": "https://docs.python.org/3/library/random.html#random.uniform"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::triangular}}({{c3::low}}, {{c4::high}}, {{c5::mode}})",
+      "Body": "Return a random floating point number N such that low <= N <= high and with the specified mode between those bounds.  The low and high bounds default to zero and one.  The mode argument defaults to the midpoint between the bounds, giving a symmetric distribution.",
+      "Link": "https://docs.python.org/3/library/random.html#random.triangular"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::betavariate}}({{c3::alpha}}, {{c4::beta}})",
+      "Body": "Beta distribution.  Conditions on the parameters are alpha > 0 and beta > 0. Returned values range between 0 and 1.",
+      "Link": "https://docs.python.org/3/library/random.html#random.betavariate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::expovariate}}({{c3::lambd}})",
+      "Body": "Exponential distribution.  lambd is 1.0 divided by the desired mean.  It should be nonzero.  (The parameter would be called lambda, but that is a reserved word in Python.)  Returned values range from 0 to positive infinity if lambd is positive, and from negative infinity to 0 if lambd is negative.",
+      "Link": "https://docs.python.org/3/library/random.html#random.expovariate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::gammavariate}}({{c3::alpha}}, {{c4::beta}})",
+      "Body": "Gamma distribution.  (Not the gamma function!)  Conditions on the parameters are alpha > 0 and beta > 0.",
+      "Link": "https://docs.python.org/3/library/random.html#random.gammavariate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::gauss}}({{c3::mu}}, {{c4::sigma}})",
+      "Body": "Gaussian distribution.  mu is the mean, and sigma is the standard deviation.  This is slightly faster than the normalvariate() function defined below.",
+      "Link": "https://docs.python.org/3/library/random.html#random.gauss"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::lognormvariate}}({{c3::mu}}, {{c4::sigma}})",
+      "Body": "Log normal distribution.  If you take the natural logarithm of this distribution, you'll get a normal distribution with mean mu and standard deviation sigma.  mu can have any value, and sigma must be greater than zero.",
+      "Link": "https://docs.python.org/3/library/random.html#random.lognormvariate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::normalvariate}}({{c3::mu}}, {{c4::sigma}})",
+      "Body": "Normal distribution.  mu is the mean, and sigma is the standard deviation.",
+      "Link": "https://docs.python.org/3/library/random.html#random.normalvariate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::vonmisesvariate}}({{c3::mu}}, {{c4::kappa}})",
+      "Body": "mu is the mean angle, expressed in radians between 0 and 2*pi, and kappa is the concentration parameter, which must be greater than or equal to zero.  If kappa is equal to zero, this distribution reduces to a uniform random angle over the range 0 to 2*pi.",
+      "Link": "https://docs.python.org/3/library/random.html#random.vonmisesvariate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::paretovariate}}({{c3::alpha}})",
+      "Body": "Pareto distribution.  alpha is the shape parameter.",
+      "Link": "https://docs.python.org/3/library/random.html#random.paretovariate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::random}}.{{c2::weibullvariate}}({{c3::alpha}}, {{c4::beta}})",
+      "Body": "Weibull distribution.  alpha is the scale parameter and beta is the shape parameter.",
+      "Link": "https://docs.python.org/3/library/random.html#random.weibullvariate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::random}}.{{c3::SystemRandom}}([{{c4::seed}}])",
+      "Body": "Class that uses the os.urandom() function for generating random numbers from sources provided by the operating system. Not available on all systems. Does not rely on software state, and sequences are not reproducible. Accordingly, the seed() method has no effect and is ignored. The getstate() and setstate() methods raise NotImplementedError if called.",
+      "Link": "https://docs.python.org/3/library/random.html#random.SystemRandom"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::mean}}({{c3::data}})",
+      "Body": "Return the sample arithmetic mean of data which can be a sequence or iterator.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.mean"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::harmonic_mean}}({{c3::data}})",
+      "Body": "Return the harmonic mean of data, a sequence or iterator of real-valued numbers.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.harmonic_mean"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::median}}({{c3::data}})",
+      "Body": "Return the median (middle value) of numeric data, using the common mean of middle two method.  If data is empty, StatisticsError is raised. data can be a sequence or iterator.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.median"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::median_low}}({{c3::data}})",
+      "Body": "Return the low median of numeric data.  If data is empty, StatisticsError is raised.  data can be a sequence or iterator.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.median_low"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::median_high}}({{c3::data}})",
+      "Body": "Return the high median of data.  If data is empty, StatisticsError is raised.  data can be a sequence or iterator.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.median_high"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::median_grouped}}({{c3::data}}, {{c4::interval}}=1)",
+      "Body": "Return the median of grouped continuous data, calculated as the 50th percentile, using interpolation.  If data is empty, StatisticsError is raised.  data can be a sequence or iterator.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.median_grouped"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::mode}}({{c3::data}})",
+      "Body": "Return the most common data point from discrete or nominal data.  The mode (when it exists) is the most typical value, and is a robust measure of central location.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.mode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::pstdev}}({{c3::data}}, {{c4::mu}}={{c5::None}})",
+      "Body": "Return the population standard deviation (the square root of the population variance).  See pvariance() for arguments and other details.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.pstdev"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::pvariance}}({{c3::data}}, {{c4::mu}}={{c5::None}})",
+      "Body": "Return the population variance of data, a non-empty iterable of real-valued numbers.  Variance, or second moment about the mean, is a measure of the variability (spread or dispersion) of data.  A large variance indicates that the data is spread out; a small variance indicates it is clustered closely around the mean.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.pvariance"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::stdev}}({{c3::data}}, {{c4::xbar}}={{c5::None}})",
+      "Body": "Return the sample standard deviation (the square root of the sample variance).  See variance() for arguments and other details.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.stdev"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::statistics}}.{{c2::variance}}({{c3::data}}, {{c4::xbar}}={{c5::None}})",
+      "Body": "Return the sample variance of data, an iterable of at least two real-valued numbers.  Variance, or second moment about the mean, is a measure of the variability (spread or dispersion) of data.  A large variance indicates that the data is spread out; a small variance indicates it is clustered closely around the mean.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.variance"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Numeric and Mathematical Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::statistics}}.{{c3::StatisticsError}}",
+      "Body": "Subclass of ValueError for statistics-related exceptions.",
+      "Link": "https://docs.python.org/3/library/statistics.html#statistics.StatisticsError"
+    },
+    "modelName": "ClozePy"
+  }
+]

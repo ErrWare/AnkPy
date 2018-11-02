@@ -1,0 +1,101 @@
+[
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::False}}",
+      "Body": "The false value of the bool type. Assignments to False are illegal and raise a SyntaxError.",
+      "Link": "https://docs.python.org/3/library/constants.html#False"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::True}}",
+      "Body": "The true value of the bool type. Assignments to True are illegal and raise a SyntaxError.",
+      "Link": "https://docs.python.org/3/library/constants.html#True"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::None}}",
+      "Body": "The sole value of the type NoneType.  None is frequently used to represent the absence of a value, as when default arguments are not passed to a function. Assignments to None are illegal and raise a SyntaxError.",
+      "Link": "https://docs.python.org/3/library/constants.html#None"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::NotImplemented}}",
+      "Body": "Special value which should be returned by the binary special methods (e.g. __eq__(), __lt__(), __add__(), __rsub__(), etc.) to indicate that the operation is not implemented with respect to the other type; may be returned by the in-place binary special methods (e.g. __imul__(), __iand__(), etc.) for the same purpose. Its truth value is true.",
+      "Link": "https://docs.python.org/3/library/constants.html#NotImplemented"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Ellipsis}}",
+      "Body": "The same as ....  Special value used mostly in conjunction with extended slicing syntax for user-defined container data types.",
+      "Link": "https://docs.python.org/3/library/constants.html#Ellipsis"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::__debug__}}",
+      "Body": "This constant is true if was not started with an -O option. See also the assert statement.",
+      "Link": "https://docs.python.org/3/library/constants.html#__debug__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::quit}}({{c2::code}}={{c3::None}})",
+      "Body": "Objects that when printed, print a message like Use quit() or Ctrl-D (i.e. EOF) to exit, and when called, raise SystemExit with the specified exit code.",
+      "Link": "https://docs.python.org/3/library/constants.html#quit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exit}}({{c2::code}}={{c3::None}})",
+      "Body": "Objects that when printed, print a message like Use quit() or Ctrl-D (i.e. EOF) to exit, and when called, raise SystemExit with the specified exit code.",
+      "Link": "https://docs.python.org/3/library/constants.html#exit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::copyright}}",
+      "Body": "Objects that when printed or called, print the text of copyright or credits, respectively.",
+      "Link": "https://docs.python.org/3/library/constants.html#copyright"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::credits}}",
+      "Body": "Objects that when printed or called, print the text of copyright or credits, respectively.",
+      "Link": "https://docs.python.org/3/library/constants.html#credits"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Built-in Constants", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::license}}",
+      "Body": "Object that when printed, prints the message Type license() to see the full license text, and when called, displays the full license text in a pager-like fashion (one screen at a time).",
+      "Link": "https://docs.python.org/3/library/constants.html#license"
+    },
+    "modelName": "ClozePy"
+  }
+]

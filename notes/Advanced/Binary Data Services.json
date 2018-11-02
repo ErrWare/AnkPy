@@ -1,0 +1,977 @@
+[
+  {
+    "tags": [
+      "exception",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::struct}}.{{c3::error}}",
+      "Body": "Exception raised on various occasions; argument is a string describing what is wrong.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::pack}}({{c3::format}}, {{c4::v}}1, {{c5::v}}2, ...)",
+      "Body": "Return a bytes object containing the values v1, v2,  packed according to the format string format.  The arguments must match the values required by the format exactly.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.pack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::pack_into}}({{c3::format}}, {{c4::buffer}}, {{c5::offset}}, {{c6::v}}1, {{c7::v}}2, ...)",
+      "Body": "Pack the values v1, v2,  according to the format string format and write the packed bytes into the writable buffer buffer starting at position offset.  Note that offset is a required argument.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.pack_into"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::unpack}}({{c3::format}}, {{c4::buffer}})",
+      "Body": "Unpack from the buffer buffer (presumably packed by pack(format, ...)) according to the format string format.  The result is a tuple even if it contains exactly one item.  The buffer's size in bytes must match the size required by the format, as reflected by calcsize().",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.unpack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::unpack_from}}({{c3::format}}, {{c4::buffer}}, {{c5::offset}}=0)",
+      "Body": "Unpack from buffer starting at position offset, according to the format string format.  The result is a tuple even if it contains exactly one item.  The buffer's size in bytes, minus offset, must be at least the size required by the format, as reflected by calcsize().",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.unpack_from"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::iter_unpack}}({{c3::format}}, {{c4::buffer}})",
+      "Body": "Iteratively unpack from the buffer buffer according to the format string format.  This function returns an iterator which will read equally-sized chunks from the buffer until all its contents have been consumed.  The buffer's size in bytes must be a multiple of the size required by the format, as reflected by calcsize().",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.iter_unpack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::calcsize}}({{c3::format}})",
+      "Body": "Return the size of the struct (and hence of the bytes object produced by pack(format, ...)) corresponding to the format string format.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.calcsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::struct}}.{{c3::Struct}}({{c4::format}})",
+      "Body": "Return a new Struct object which writes and reads binary data according to the format string format.  Creating a Struct object once and calling its methods is more efficient than calling the struct functions with the same format since the format string only needs to be compiled once.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.Struct"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::Struct}}.{{c3::pack}}({{c4::v}}1, {{c5::v}}2, ...)",
+      "Body": "Identical to the pack() function, using the compiled format. (len(result) will equal size.)",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.Struct.pack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::Struct}}.{{c3::pack_into}}({{c4::buffer}}, {{c5::offset}}, {{c6::v}}1, {{c7::v}}2, ...)",
+      "Body": "Identical to the pack_into() function, using the compiled format.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.Struct.pack_into"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::Struct}}.{{c3::unpack}}({{c4::buffer}})",
+      "Body": "Identical to the unpack() function, using the compiled format. The buffer's size in bytes must equal size.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.Struct.unpack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::Struct}}.{{c3::unpack_from}}({{c4::buffer}}, {{c5::offset}}=0)",
+      "Body": "Identical to the unpack_from() function, using the compiled format. The buffer's size in bytes, minus offset, must be at least size.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.Struct.unpack_from"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::Struct}}.{{c3::iter_unpack}}({{c4::buffer}})",
+      "Body": "Identical to the iter_unpack() function, using the compiled format. The buffer's size in bytes must be a multiple of size.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.Struct.iter_unpack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::Struct}}.{{c3::format}}",
+      "Body": "The format string used to construct this Struct object.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.Struct.format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::struct}}.{{c2::Struct}}.{{c3::size}}",
+      "Body": "The calculated size of the struct (and hence of the bytes object produced by the pack() method) corresponding to format.",
+      "Link": "https://docs.python.org/3/library/struct.html#struct.Struct.size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::encode}}({{c3::obj}}, {{c4::encoding}}='{{c5::utf}}-8', {{c6::errors}}='{{c7::strict}}')",
+      "Body": "Encodes obj using the codec registered for encoding.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::decode}}({{c3::obj}}, {{c4::encoding}}='{{c5::utf}}-8', {{c6::errors}}='{{c7::strict}}')",
+      "Body": "Decodes obj using the codec registered for encoding.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::lookup}}({{c3::encoding}})",
+      "Body": "Looks up the codec info in the codec registry and returns a CodecInfo object as defined below.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.lookup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::codecs}}.{{c3::CodecInfo}}({{c4::encode}}, {{c5::decode}}, {{c6::streamreader}}={{c7::None}}, {{c8::streamwriter}}={{c9::None}}, {{c10::incrementalencoder}}={{c11::None}}, {{c12::incrementaldecoder}}={{c13::None}}, {{c14::name}}={{c15::None}})",
+      "Body": "Codec details when looking up the codec registry. The constructor arguments are stored in attributes of the same name:",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.CodecInfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::CodecInfo}}.{{c3::name}}",
+      "Body": "The name of the encoding.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.CodecInfo.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::CodecInfo}}.{{c3::encode}}",
+      "Body": "The stateless encoding and decoding functions. These must be functions or methods which have the same interface as the encode() and decode() methods of Codec instances (see Codec Interface). The functions or methods are expected to work in a stateless mode.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.CodecInfo.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::CodecInfo}}.{{c3::decode}}",
+      "Body": "The stateless encoding and decoding functions. These must be functions or methods which have the same interface as the encode() and decode() methods of Codec instances (see Codec Interface). The functions or methods are expected to work in a stateless mode.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.CodecInfo.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::CodecInfo}}.{{c3::incrementalencoder}}",
+      "Body": "Incremental encoder and decoder classes or factory functions. These have to provide the interface defined by the base classes IncrementalEncoder and IncrementalDecoder, respectively. Incremental codecs can maintain state.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.CodecInfo.incrementalencoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::CodecInfo}}.{{c3::incrementaldecoder}}",
+      "Body": "Incremental encoder and decoder classes or factory functions. These have to provide the interface defined by the base classes IncrementalEncoder and IncrementalDecoder, respectively. Incremental codecs can maintain state.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.CodecInfo.incrementaldecoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::CodecInfo}}.{{c3::streamwriter}}",
+      "Body": "Stream writer and reader classes or factory functions. These have to provide the interface defined by the base classes StreamWriter and StreamReader, respectively. Stream codecs can maintain state.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.CodecInfo.streamwriter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::CodecInfo}}.{{c3::streamreader}}",
+      "Body": "Stream writer and reader classes or factory functions. These have to provide the interface defined by the base classes StreamWriter and StreamReader, respectively. Stream codecs can maintain state.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.CodecInfo.streamreader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::getencoder}}({{c3::encoding}})",
+      "Body": "Look up the codec for the given encoding and return its encoder function.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.getencoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::getdecoder}}({{c3::encoding}})",
+      "Body": "Look up the codec for the given encoding and return its decoder function.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.getdecoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::getincrementalencoder}}({{c3::encoding}})",
+      "Body": "Look up the codec for the given encoding and return its incremental encoder class or factory function.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.getincrementalencoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::getincrementaldecoder}}({{c3::encoding}})",
+      "Body": "Look up the codec for the given encoding and return its incremental decoder class or factory function.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.getincrementaldecoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::getreader}}({{c3::encoding}})",
+      "Body": "Look up the codec for the given encoding and return its StreamReader class or factory function.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.getreader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::getwriter}}({{c3::encoding}})",
+      "Body": "Look up the codec for the given encoding and return its StreamWriter class or factory function.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.getwriter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::register}}({{c3::search_function}})",
+      "Body": "Register a codec search function. Search functions are expected to take one argument, being the encoding name in all lower case letters, and return a CodecInfo object. In case a search function cannot find a given encoding, it should return None.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.register"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::open}}({{c3::filename}}, {{c4::mode}}='{{c5::r}}', {{c6::encoding}}={{c7::None}}, {{c8::errors}}='{{c9::strict}}', {{c10::buffering}}=1)",
+      "Body": "Open an encoded file using the given mode and return an instance of StreamReaderWriter, providing transparent encoding/decoding. The default file mode is 'r', meaning to open the file in read mode.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::EncodedFile}}({{c3::file}}, {{c4::data_encoding}}, {{c5::file_encoding}}={{c6::None}}, {{c7::errors}}='{{c8::strict}}')",
+      "Body": "Return a StreamRecoder instance, a wrapped version of file which provides transparent transcoding. The original file is closed when the wrapped version is closed.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.EncodedFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::iterencode}}({{c3::iterator}}, {{c4::encoding}}, {{c5::errors}}='{{c6::strict}}', **kwargs)",
+      "Body": "Uses an incremental encoder to iteratively encode the input provided by iterator. This function is a generator. The errors argument (as well as any other keyword argument) is passed through to the incremental encoder.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.iterencode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::iterdecode}}({{c3::iterator}}, {{c4::encoding}}, {{c5::errors}}='{{c6::strict}}', **kwargs)",
+      "Body": "Uses an incremental decoder to iteratively decode the input provided by iterator. This function is a generator. The errors argument (as well as any other keyword argument) is passed through to the incremental decoder.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.iterdecode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM}}",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_BE}}",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_BE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_LE}}",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_LE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_UTF}}8",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_UTF8"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_UTF}}16",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_UTF16"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_UTF}}16{{c3::_BE}}",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_UTF16_BE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_UTF}}16{{c3::_LE}}",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_UTF16_LE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_UTF}}32",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_UTF32"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_UTF}}32{{c3::_BE}}",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_UTF32_BE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::BOM_UTF}}32{{c3::_LE}}",
+      "Body": "These constants define various byte sequences, being Unicode byte order marks (BOMs) for several encodings. They are used in UTF-16 and UTF-32 data streams to indicate the byte order used, and in UTF-8 as a Unicode signature. BOM_UTF16 is either BOM_UTF16_BE or BOM_UTF16_LE depending on the platform's native byte order, BOM is an alias for BOM_UTF16, BOM_LE for BOM_UTF16_LE and BOM_BE for BOM_UTF16_BE. The others represent the BOM in UTF-8 and UTF-32 encodings.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.BOM_UTF32_LE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::register_error}}({{c3::name}}, {{c4::error_handler}})",
+      "Body": "Register the error handling function error_handler under the name name. The error_handler argument will be called during encoding and decoding in case of an error, when name is specified as the errors parameter.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.register_error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::lookup_error}}({{c3::name}})",
+      "Body": "Return the error handler previously registered under the name name.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.lookup_error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::strict_errors}}({{c3::exception}})",
+      "Body": "Implements the 'strict' error handling: each encoding or decoding error raises a UnicodeError.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.strict_errors"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::replace_errors}}({{c3::exception}})",
+      "Body": "Implements the 'replace' error handling (for text encodings only): substitutes '?' for encoding errors (to be encoded by the codec), and '' (the Unicode replacement character) for decoding errors.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.replace_errors"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::ignore_errors}}({{c3::exception}})",
+      "Body": "Implements the 'ignore' error handling: malformed data is ignored and encoding or decoding is continued without further notice.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.ignore_errors"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::xmlcharrefreplace_errors}}({{c3::exception}})",
+      "Body": "Implements the 'xmlcharrefreplace' error handling (for encoding with text encodings only): the unencodable character is replaced by an appropriate XML character reference.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.xmlcharrefreplace_errors"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::backslashreplace_errors}}({{c3::exception}})",
+      "Body": "Implements the 'backslashreplace' error handling (for text encodings only): malformed data is replaced by a backslashed escape sequence.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.backslashreplace_errors"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::namereplace_errors}}({{c3::exception}})",
+      "Body": "Implements the 'namereplace' error handling (for encoding with text encodings only): the unencodable character is replaced by a \\N{...} escape sequence.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.namereplace_errors"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Codec}}.{{c2::encode}}({{c3::input}}[, {{c4::errors}}])",
+      "Body": "Encodes the object input and returns a tuple (output object, length consumed). For instance, text encoding converts a string object to a bytes object using a particular character set encoding (e.g., cp1252 or iso-8859-1).",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.Codec.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Codec}}.{{c2::decode}}({{c3::input}}[, {{c4::errors}}])",
+      "Body": "Decodes the object input and returns a tuple (output object, length consumed).  For instance, for a text encoding, decoding converts a bytes object encoded using a particular character set encoding to a string object.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.Codec.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::codecs}}.{{c3::IncrementalEncoder}}({{c4::errors}}='{{c5::strict}}')",
+      "Body": "Constructor for an IncrementalEncoder instance.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalEncoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::IncrementalEncoder}}.{{c3::encode}}({{c4::object}}[, {{c5::final}}])",
+      "Body": "Encodes object (taking the current state of the encoder into account) and returns the resulting encoded object. If this is the last call to encode() final must be true (the default is false).",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalEncoder.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::IncrementalEncoder}}.{{c3::reset}}()",
+      "Body": "Reset the encoder to the initial state. The output is discarded: call .encode(object, final=True), passing an empty byte or text string if necessary, to reset the encoder and to get the output.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalEncoder.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::IncrementalEncoder}}.{{c3::getstate}}()",
+      "Body": "Return the current state of the encoder which must be an integer. The implementation should make sure that 0 is the most common state. (States that are more complicated than integers can be converted into an integer by marshaling/pickling the state and encoding the bytes of the resulting string into an integer).",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalEncoder.getstate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::IncrementalEncoder}}.{{c3::setstate}}({{c4::state}})",
+      "Body": "Set the state of the encoder to state. state must be an encoder state returned by getstate().",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalEncoder.setstate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::codecs}}.{{c3::IncrementalDecoder}}({{c4::errors}}='{{c5::strict}}')",
+      "Body": "Constructor for an IncrementalDecoder instance.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalDecoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::IncrementalDecoder}}.{{c3::decode}}({{c4::object}}[, {{c5::final}}])",
+      "Body": "Decodes object (taking the current state of the decoder into account) and returns the resulting decoded object. If this is the last call to decode() final must be true (the default is false). If final is true the decoder must decode the input completely and must flush all buffers. If this isn't possible (e.g. because of incomplete byte sequences at the end of the input) it must initiate error handling just like in the stateless case (which might raise an exception).",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalDecoder.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::IncrementalDecoder}}.{{c3::reset}}()",
+      "Body": "Reset the decoder to the initial state.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalDecoder.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::IncrementalDecoder}}.{{c3::getstate}}()",
+      "Body": "Return the current state of the decoder. This must be a tuple with two items, the first must be the buffer containing the still undecoded input. The second must be an integer and can be additional state info. (The implementation should make sure that 0 is the most common additional state info.) If this additional state info is 0 it must be possible to set the decoder to the state which has no input buffered and 0 as the additional state info, so that feeding the previously buffered input to the decoder returns it to the previous state without producing any output. (Additional state info that is more complicated than integers can be converted into an integer by marshaling/pickling the info and encoding the bytes of the resulting string into an integer.)",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalDecoder.getstate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::IncrementalDecoder}}.{{c3::setstate}}({{c4::state}})",
+      "Body": "Set the state of the encoder to state. state must be a decoder state returned by getstate().",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.IncrementalDecoder.setstate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::codecs}}.{{c3::StreamWriter}}({{c4::stream}}, {{c5::errors}}='{{c6::strict}}')",
+      "Body": "Constructor for a StreamWriter instance.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamWriter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::StreamWriter}}.{{c3::write}}({{c4::object}})",
+      "Body": "Writes the object's contents encoded to the stream.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamWriter.write"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::StreamWriter}}.{{c3::writelines}}({{c4::list}})",
+      "Body": "Writes the concatenated list of strings to the stream (possibly by reusing the write() method). The standard bytes-to-bytes codecs do not support this method.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamWriter.writelines"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::StreamWriter}}.{{c3::reset}}()",
+      "Body": "Flushes and resets the codec buffers used for keeping state.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamWriter.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::codecs}}.{{c3::StreamReader}}({{c4::stream}}, {{c5::errors}}='{{c6::strict}}')",
+      "Body": "Constructor for a StreamReader instance.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamReader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::StreamReader}}.{{c3::read}}([{{c4::size}}[, {{c5::chars}}[, {{c6::firstline}}]]])",
+      "Body": "Decodes data from the stream and returns the resulting object.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamReader.read"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::StreamReader}}.{{c3::readline}}([{{c4::size}}[, {{c5::keepends}}]])",
+      "Body": "Read one line from the input stream and return the decoded data.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamReader.readline"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::StreamReader}}.{{c3::readlines}}([{{c4::sizehint}}[, {{c5::keepends}}]])",
+      "Body": "Read all lines available on the input stream and return them as a list of lines.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamReader.readlines"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::codecs}}.{{c2::StreamReader}}.{{c3::reset}}()",
+      "Body": "Resets the codec buffers used for keeping state.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamReader.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::codecs}}.{{c3::StreamReaderWriter}}({{c4::stream}}, {{c5::Reader}}, {{c6::Writer}}, {{c7::errors}}='{{c8::strict}}')",
+      "Body": "Creates a StreamReaderWriter instance. stream must be a file-like object. Reader and Writer must be factory functions or classes providing the StreamReader and StreamWriter interface resp. Error handling is done in the same way as defined for the stream readers and writers.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamReaderWriter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Binary Data Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::codecs}}.{{c3::StreamRecoder}}({{c4::stream}}, {{c5::encode}}, {{c6::decode}}, {{c7::Reader}}, {{c8::Writer}}, {{c9::errors}}='{{c10::strict}}')",
+      "Body": "Creates a StreamRecoder instance which implements a two-way conversion: encode and decode work on the frontend the data visible to code calling read() and write(), while Reader and Writer work on the backend the data in stream.",
+      "Link": "https://docs.python.org/3/library/codecs.html#codecs.StreamRecoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::encodings}}.{{c2::idna}}.{{c3::nameprep}}({{c4::label}})",
+      "Body": "Return the nameprepped version of label. The implementation currently assumes query strings, so AllowUnassigned is true.",
+      "Link": "https://docs.python.org/3/library/codecs.html#encodings.idna.nameprep"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::encodings}}.{{c2::idna}}.{{c3::ToASCII}}({{c4::label}})",
+      "Body": "Convert a label to ASCII, as specified in RFC 3490. UseSTD3ASCIIRules is assumed to be false.",
+      "Link": "https://docs.python.org/3/library/codecs.html#encodings.idna.ToASCII"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Binary Data Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::encodings}}.{{c2::idna}}.{{c3::ToUnicode}}({{c4::label}})",
+      "Body": "Convert a label to Unicode, as specified in RFC 3490.",
+      "Link": "https://docs.python.org/3/library/codecs.html#encodings.idna.ToUnicode"
+    },
+    "modelName": "ClozePy"
+  }
+]

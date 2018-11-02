@@ -1,0 +1,815 @@
+[
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::bindtextdomain}}({{c3::domain}}, {{c4::localedir}}={{c5::None}})",
+      "Body": "Bind the domain to the locale directory localedir.  More concretely, gettext will look for binary .mo files for the given domain using the path (on Unix): localedir/language/LC_MESSAGES/domain.mo, where languages is searched for in the environment variables LANGUAGE, LC_ALL, LC_MESSAGES, and LANG respectively.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.bindtextdomain"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::bind_textdomain_codeset}}({{c3::domain}}, {{c4::codeset}}={{c5::None}})",
+      "Body": "Bind the domain to codeset, changing the encoding of byte strings returned by the lgettext(), ldgettext(), lngettext() and ldngettext() functions. If codeset is omitted, then the current binding is returned.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.bind_textdomain_codeset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::textdomain}}({{c3::domain}}={{c4::None}})",
+      "Body": "Change or query the current global domain.  If domain is None, then the current global domain is returned, otherwise the global domain is set to domain, which is returned.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.textdomain"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::gettext}}({{c3::message}})",
+      "Body": "Return the localized translation of message, based on the current global domain, language, and locale directory.  This function is usually aliased as _() in the local namespace (see examples below).",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.gettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::dgettext}}({{c3::domain}}, {{c4::message}})",
+      "Body": "Like gettext(), but look the message up in the specified domain.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.dgettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::ngettext}}({{c3::singular}}, {{c4::plural}}, {{c5::n}})",
+      "Body": "Like gettext(), but consider plural forms. If a translation is found, apply the plural formula to n, and return the resulting message (some languages have more than two plural forms). If no translation is found, return singular if n is 1; return plural otherwise.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.ngettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::dngettext}}({{c3::domain}}, {{c4::singular}}, {{c5::plural}}, {{c6::n}})",
+      "Body": "Like ngettext(), but look the message up in the specified domain.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.dngettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::ldngettext}}({{c3::domain}}, {{c4::singular}}, {{c5::plural}}, {{c6::n}})",
+      "Body": "Equivalent to the corresponding functions without the l prefix (gettext(), dgettext(), ngettext() and dngettext()), but the translation is returned as a byte string encoded in the preferred system encoding if no other encoding was explicitly set with bind_textdomain_codeset().",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.ldngettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::find}}({{c3::domain}}, {{c4::localedir}}={{c5::None}}, {{c6::languages}}={{c7::None}}, {{c8::all}}={{c9::False}})",
+      "Body": "This function implements the standard .mo file search algorithm.  It takes a domain, identical to what textdomain() takes.  Optional localedir is as in bindtextdomain()  Optional languages is a list of strings, where each string is a language code.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.find"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::translation}}({{c3::domain}}, {{c4::localedir}}={{c5::None}}, {{c6::languages}}={{c7::None}}, {{c8::class_}}={{c9::None}}, {{c10::fallback}}={{c11::False}}, {{c12::codeset}}={{c13::None}})",
+      "Body": "Return a Translations instance based on the domain, localedir, and languages, which are first passed to find() to get a list of the associated .mo file paths.  Instances with identical .mo file names are cached.  The actual class instantiated is either class_ if provided, otherwise GNUTranslations.  The class's constructor must take a single file object argument.  If provided, codeset will change the charset used to encode translated strings in the lgettext() and lngettext() methods.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.translation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::install}}({{c3::domain}}, {{c4::localedir}}={{c5::None}}, {{c6::codeset}}={{c7::None}}, {{c8::names}}={{c9::None}})",
+      "Body": "This installs the function _() in Python's builtins namespace, based on domain, localedir, and codeset which are passed to the function translation().",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.install"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::gettext}}.{{c3::NullTranslations}}({{c4::fp}}={{c5::None}})",
+      "Body": "Takes an optional file object fp, which is ignored by the base class. Initializes protected instance variables _info and _charset which are set by derived classes, as well as _fallback, which is set through add_fallback().  It then calls self._parse(fp) if fp is not None.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::_parse}}({{c4::fp}})",
+      "Body": "No-op'd in the base class, this method takes file object fp, and reads the data from the file, initializing its message catalog.  If you have an unsupported message catalog file format, you should override this method to parse your format.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations._parse"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::add_fallback}}({{c4::fallback}})",
+      "Body": "Add fallback as the fallback object for the current translation object. A translation object should consult the fallback if it cannot provide a translation for a given message.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.add_fallback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::gettext}}({{c4::message}})",
+      "Body": "If a fallback has been set, forward gettext() to the fallback. Otherwise, return message.  Overridden in derived classes.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.gettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::ngettext}}({{c4::singular}}, {{c5::plural}}, {{c6::n}})",
+      "Body": "If a fallback has been set, forward ngettext() to the fallback. Otherwise, return singular if n is 1; return plural otherwise. Overridden in derived classes.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.ngettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::lngettext}}({{c4::singular}}, {{c5::plural}}, {{c6::n}})",
+      "Body": "Equivalent to gettext() and ngettext(), but the translation is returned as a byte string encoded in the preferred system encoding if no encoding was explicitly set with set_output_charset(). Overridden in derived classes.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.lngettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::info}}()",
+      "Body": "Return the protected _info variable.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::charset}}()",
+      "Body": "Return the encoding of the message catalog file.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.charset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::output_charset}}()",
+      "Body": "Return the encoding used to return translated messages in lgettext() and lngettext().",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.output_charset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::set_output_charset}}({{c4::charset}})",
+      "Body": "Change the encoding used to return translated messages.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.set_output_charset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::NullTranslations}}.{{c3::install}}({{c4::names}}={{c5::None}})",
+      "Body": "This method installs gettext() into the built-in namespace, binding it to _.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.NullTranslations.install"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::gettext}}.{{c3::GNUTranslations}}",
+      "Body": "The following methods are overridden from the base class implementation:",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.GNUTranslations"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::GNUTranslations}}.{{c3::gettext}}({{c4::message}})",
+      "Body": "Look up the message id in the catalog and return the corresponding message string, as a Unicode string.  If there is no entry in the catalog for the message id, and a fallback has been set, the look up is forwarded to the fallback's gettext() method.  Otherwise, the message id is returned.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.GNUTranslations.gettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::GNUTranslations}}.{{c3::ngettext}}({{c4::singular}}, {{c5::plural}}, {{c6::n}})",
+      "Body": "Do a plural-forms lookup of a message id.  singular is used as the message id for purposes of lookup in the catalog, while n is used to determine which plural form to use.  The returned message string is a Unicode string.",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.GNUTranslations.ngettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gettext}}.{{c2::GNUTranslations}}.{{c3::lngettext}}({{c4::singular}}, {{c5::plural}}, {{c6::n}})",
+      "Body": "Equivalent to gettext() and ngettext(), but the translation is returned as a byte string encoded in the preferred system encoding if no encoding  was explicitly set with set_output_charset().",
+      "Link": "https://docs.python.org/3/library/gettext.html#gettext.GNUTranslations.lngettext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::locale}}.{{c3::Error}}",
+      "Body": "Exception raised when the locale passed to setlocale() is not recognized.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::setlocale}}({{c3::category}}, {{c4::locale}}={{c5::None}})",
+      "Body": "If locale is given and not None, setlocale() modifies the locale setting for the category. The available categories are listed in the data description below. locale may be a string, or an iterable of two strings (language code and encoding). If it's an iterable, it's converted to a locale name using the locale aliasing engine. An empty string specifies the user's default settings. If the modification of the locale fails, the exception Error is raised. If successful, the new locale setting is returned.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.setlocale"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::localeconv}}()",
+      "Body": "Returns the database of the local conventions as a dictionary. This dictionary has the following strings as keys:",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.localeconv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::nl_langinfo}}({{c3::option}})",
+      "Body": "Return some locale-specific information as a string.  This function is not available on all systems, and the set of possible options might also vary across platforms.  The possible argument values are numbers, for which symbolic constants are available in the locale module.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.nl_langinfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::CODESET}}",
+      "Body": "Get a string with the name of the character encoding used in the selected locale.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.CODESET"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::D_T_FMT}}",
+      "Body": "Get a string that can be used as a format string for time.strftime() to represent date and time in a locale-specific way.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.D_T_FMT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::D_FMT}}",
+      "Body": "Get a string that can be used as a format string for time.strftime() to represent a date in a locale-specific way.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.D_FMT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::T_FMT}}",
+      "Body": "Get a string that can be used as a format string for time.strftime() to represent a time in a locale-specific way.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.T_FMT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::T_FMT_AMPM}}",
+      "Body": "Get a format string for time.strftime() to represent time in the am/pm format.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.T_FMT_AMPM"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DAY_}}1 ... {{c2::DAY_}}7",
+      "Body": "Get the name of the n-th day of the week.",
+      "Link": "https://docs.python.org/3/library/locale.html#module-locale"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ABDAY_}}1 ... {{c2::ABDAY_}}7",
+      "Body": "Get the abbreviated name of the n-th day of the week.",
+      "Link": "https://docs.python.org/3/library/locale.html#module-locale"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::MON_}}1 ... {{c2::MON_}}12",
+      "Body": "Get the name of the n-th month.",
+      "Link": "https://docs.python.org/3/library/locale.html#module-locale"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ABMON_}}1 ... {{c2::ABMON_}}12",
+      "Body": "Get the abbreviated name of the n-th month.",
+      "Link": "https://docs.python.org/3/library/locale.html#module-locale"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::RADIXCHAR}}",
+      "Body": "Get the radix character (decimal dot, decimal comma, etc.).",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.RADIXCHAR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::THOUSEP}}",
+      "Body": "Get the separator character for thousands (groups of three digits).",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.THOUSEP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::YESEXPR}}",
+      "Body": "Get a regular expression that can be used with the regex function to recognize a positive response to a yes/no question.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.YESEXPR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::NOEXPR}}",
+      "Body": "Get a regular expression that can be used with the regex(3) function to recognize a negative response to a yes/no question.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.NOEXPR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::CRNCYSTR}}",
+      "Body": "Get the currency symbol, preceded by - if the symbol should appear before the value, + if the symbol should appear after the value, or . if the symbol should replace the radix character.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.CRNCYSTR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::ERA}}",
+      "Body": "Get a string that represents the era used in the current locale.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.ERA"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::ERA_D_T_FMT}}",
+      "Body": "Get a format string for time.strftime() to represent date and time in a locale-specific era-based way.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.ERA_D_T_FMT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::ERA_D_FMT}}",
+      "Body": "Get a format string for time.strftime() to represent a date in a locale-specific era-based way.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.ERA_D_FMT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::ERA_T_FMT}}",
+      "Body": "Get a format string for time.strftime() to represent a time in a locale-specific era-based way.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.ERA_T_FMT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::ALT_DIGITS}}",
+      "Body": "Get a representation of up to 100 values used to represent the values 0 to 99.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.ALT_DIGITS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::getdefaultlocale}}([{{c3::envvars}}])",
+      "Body": "Tries to determine the default locale settings and returns them as a tuple of the form (language code, encoding).",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.getdefaultlocale"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::getlocale}}({{c3::category}}={{c4::LC_CTYPE}})",
+      "Body": "Returns the current setting for the given locale category as sequence containing language code, encoding. category may be one of the LC_* values except LC_ALL.  It defaults to LC_CTYPE.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.getlocale"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::getpreferredencoding}}({{c3::do_setlocale}}={{c4::True}})",
+      "Body": "Return the encoding used for text data, according to user preferences.  User preferences are expressed differently on different systems, and might not be available programmatically on some systems, so this function only returns a guess.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.getpreferredencoding"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::normalize}}({{c3::localename}})",
+      "Body": "Returns a normalized locale code for the given locale name.  The returned locale code is formatted for use with setlocale().  If normalization fails, the original name is returned unchanged.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.normalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::resetlocale}}({{c3::category}}={{c4::LC_ALL}})",
+      "Body": "Sets the locale for category to the default setting.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.resetlocale"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::strcoll}}({{c3::string}}1, {{c4::string}}2)",
+      "Body": "Compares two strings according to the current LC_COLLATE setting. As any other compare function, returns a negative, or a positive value, or 0, depending on whether string1 collates before or after string2 or is equal to it.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.strcoll"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::strxfrm}}({{c3::string}})",
+      "Body": "Transforms a string to one that can be used in locale-aware comparisons.  For example, strxfrm(s1) < strxfrm(s2) is equivalent to strcoll(s1, s2) < 0.  This function can be used when the same string is compared repeatedly, e.g. when collating a sequence of strings.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.strxfrm"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::format_string}}({{c3::format}}, {{c4::val}}, {{c5::grouping}}={{c6::False}}, {{c7::monetary}}={{c8::False}})",
+      "Body": "Formats a number val according to the current LC_NUMERIC setting. The format follows the conventions of the % operator.  For floating point values, the decimal point is modified if appropriate.  If grouping is true, also takes the grouping into account.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.format_string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::format}}({{c3::format}}, {{c4::val}}, {{c5::grouping}}={{c6::False}}, {{c7::monetary}}={{c8::False}})",
+      "Body": "Please note that this function works like format_string() but will only work for exactly one %char specifier.  For example, '%f' and '%.0f' are both valid specifiers, but '%f KiB' is not.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::currency}}({{c3::val}}, {{c4::symbol}}={{c5::True}}, {{c6::grouping}}={{c7::False}}, {{c8::international}}={{c9::False}})",
+      "Body": "Formats a number val according to the current LC_MONETARY settings.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.currency"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::str}}({{c3::float}})",
+      "Body": "Formats a floating point number using the same format as the built-in function str(float), but takes the decimal point into account.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.str"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::delocalize}}({{c3::string}})",
+      "Body": "Converts a string into a normalized number string, following the LC_NUMERIC settings.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.delocalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::atof}}({{c3::string}})",
+      "Body": "Converts a string to a floating point number, following the LC_NUMERIC settings.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.atof"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internationalization",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::atoi}}({{c3::string}})",
+      "Body": "Converts a string to an integer, following the LC_NUMERIC conventions.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.atoi"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::LC_CTYPE}}",
+      "Body": "Locale category for the character type functions.  Depending on the settings of this category, the functions of module string dealing with case change their behaviour.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.LC_CTYPE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::LC_COLLATE}}",
+      "Body": "Locale category for sorting strings.  The functions strcoll() and strxfrm() of the locale module are affected.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.LC_COLLATE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::LC_TIME}}",
+      "Body": "Locale category for the formatting of time.  The function time.strftime() follows these conventions.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.LC_TIME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::LC_MONETARY}}",
+      "Body": "Locale category for formatting of monetary values.  The available options are available from the localeconv() function.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.LC_MONETARY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::LC_MESSAGES}}",
+      "Body": "Locale category for message display. currently does not support application specific locale-aware messages.  Messages displayed by the operating system, like those returned by os.strerror() might be affected by this category.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.LC_MESSAGES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::LC_NUMERIC}}",
+      "Body": "Locale category for formatting numbers.  The functions format(), atoi(), atof() and str() of the locale module are affected by that category.  All other numeric formatting operations are not affected.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.LC_NUMERIC"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::LC_ALL}}",
+      "Body": "Combination of all locale settings.  If this flag is used when the locale is changed, setting the locale for all categories is attempted. If that fails for any category, no category is changed at all.  When the locale is retrieved using this flag, a string indicating the setting for all categories is returned. This string can be later used to restore the settings.",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.LC_ALL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internationalization", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::locale}}.{{c2::CHAR_MAX}}",
+      "Body": "This is a symbolic constant used for different values returned by localeconv().",
+      "Link": "https://docs.python.org/3/library/locale.html#locale.CHAR_MAX"
+    },
+    "modelName": "ClozePy"
+  }
+]

@@ -1,0 +1,1154 @@
+[
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::reader}}({{c3::csvfile}}, {{c4::dialect}}='{{c5::excel}}', **fmtparams)",
+      "Body": "Return a reader object which will iterate over lines in the given csvfile. csvfile can be any object which supports the iterator protocol and returns a string each time its __next__() method is called  file objects and list objects are both suitable.   If csvfile is a file object, it should be opened with newline=''. [1]  An optional dialect parameter can be given which is used to define a set of parameters specific to a particular CSV dialect.  It may be an instance of a subclass of the Dialect class or one of the strings returned by the list_dialects() function.  The other optional fmtparams keyword arguments can be given to override individual formatting parameters in the current dialect.  For full details about the dialect and formatting parameters, see section Dialects and Formatting Parameters.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.reader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::writer}}({{c3::csvfile}}, {{c4::dialect}}='{{c5::excel}}', **fmtparams)",
+      "Body": "Return a writer object responsible for converting the user's data into delimited strings on the given file-like object.  csvfile can be any object with a write() method.  If csvfile is a file object, it should be opened with newline='' [1].  An optional dialect parameter can be given which is used to define a set of parameters specific to a particular CSV dialect.  It may be an instance of a subclass of the Dialect class or one of the strings returned by the list_dialects() function.  The other optional fmtparams keyword arguments can be given to override individual formatting parameters in the current dialect.  For full details about the dialect and formatting parameters, see section Dialects and Formatting Parameters. To make it as easy as possible to interface with modules which implement the DB API, the value None is written as the empty string.  While this isn't a reversible transformation, it makes it easier to dump SQL NULL data values to CSV files without preprocessing the data returned from a cursor.fetch* call. All other non-string data are stringified with str() before being written.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.writer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::register_dialect}}({{c3::name}}[, {{c4::dialect}}[, **fmtparams]])",
+      "Body": "Associate dialect with name.  name must be a string. The dialect can be specified either by passing a sub-class of Dialect, or by fmtparams keyword arguments, or both, with keyword arguments overriding parameters of the dialect. For full details about the dialect and formatting parameters, see section Dialects and Formatting Parameters.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.register_dialect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::unregister_dialect}}({{c3::name}})",
+      "Body": "Delete the dialect associated with name from the dialect registry.  An Error is raised if name is not a registered dialect name.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.unregister_dialect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::get_dialect}}({{c3::name}})",
+      "Body": "Return the dialect associated with name.  An Error is raised if name is not a registered dialect name.  This function returns an immutable Dialect.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.get_dialect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::list_dialects}}()",
+      "Body": "Return the names of all registered dialects.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.list_dialects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::field_size_limit}}([{{c3::new_limit}}])",
+      "Body": "Returns the current maximum field size allowed by the parser. If new_limit is given, this becomes the new limit.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.field_size_limit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::csv}}.{{c3::DictReader}}({{c4::f}}, {{c5::fieldnames}}={{c6::None}}, {{c7::restkey}}={{c8::None}}, {{c9::restval}}={{c10::None}}, {{c11::dialect}}='{{c12::excel}}', *args, **kwds)",
+      "Body": "Create an object that operates like a regular reader but maps the information in each row to an OrderedDict whose keys are given by the optional fieldnames parameter.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.DictReader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::csv}}.{{c3::DictWriter}}({{c4::f}}, {{c5::fieldnames}}, {{c6::restval}}='', {{c7::extrasaction}}='{{c8::raise}}', {{c9::dialect}}='{{c10::excel}}', *args, **kwds)",
+      "Body": "Create an object which operates like a regular writer but maps dictionaries onto output rows.  The fieldnames parameter is a sequence of keys that identify the order in which values in the dictionary passed to the writerow() method are written to file f.  The optional restval parameter specifies the value to be written if the dictionary is missing a key in fieldnames.  If the dictionary passed to the writerow() method contains a key not found in fieldnames, the optional extrasaction parameter indicates what action to take. If it is set to 'raise', the default value, a ValueError is raised. If it is set to 'ignore', extra values in the dictionary are ignored. Any other optional or keyword arguments are passed to the underlying writer instance.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.DictWriter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::csv}}.{{c3::Dialect}}",
+      "Body": "The Dialect class is a container class relied on primarily for its attributes, which are used to define the parameters for a specific reader or writer instance.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::csv}}.{{c3::excel}}",
+      "Body": "The excel class defines the usual properties of an Excel-generated CSV file.  It is registered with the dialect name 'excel'.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.excel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::csv}}.{{c3::excel_tab}}",
+      "Body": "The excel_tab class defines the usual properties of an Excel-generated TAB-delimited file.  It is registered with the dialect name 'excel-tab'.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.excel_tab"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::csv}}.{{c3::unix_dialect}}",
+      "Body": "The unix_dialect class defines the usual properties of a CSV file generated on UNIX systems, i.e. using '\\n' as line terminator and quoting all fields.  It is registered with the dialect name 'unix'.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.unix_dialect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::csv}}.{{c3::Sniffer}}",
+      "Body": "The Sniffer class is used to deduce the format of a CSV file.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Sniffer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::Sniffer}}.{{c3::sniff}}({{c4::sample}}, {{c5::delimiters}}={{c6::None}})",
+      "Body": "Analyze the given sample and return a Dialect subclass reflecting the parameters found.  If the optional delimiters parameter is given, it is interpreted as a string containing possible valid delimiter characters.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Sniffer.sniff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::Sniffer}}.{{c3::has_header}}({{c4::sample}})",
+      "Body": "Analyze the sample text (presumed to be in CSV format) and return True if the first row appears to be a series of column headers.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Sniffer.has_header"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::QUOTE_ALL}}",
+      "Body": "Instructs writer objects to quote all fields.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.QUOTE_ALL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::QUOTE_MINIMAL}}",
+      "Body": "Instructs writer objects to only quote those fields which contain special characters such as delimiter, quotechar or any of the characters in lineterminator.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.QUOTE_MINIMAL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::QUOTE_NONNUMERIC}}",
+      "Body": "Instructs writer objects to quote all non-numeric fields.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.QUOTE_NONNUMERIC"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csv}}.{{c2::QUOTE_NONE}}",
+      "Body": "Instructs writer objects to never quote fields.  When the current delimiter occurs in output data it is preceded by the current escapechar character.  If escapechar is not set, the writer will raise Error if any characters that require escaping are encountered.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.QUOTE_NONE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::csv}}.{{c3::Error}}",
+      "Body": "Raised by any of the functions when an error is detected.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Dialect}}.{{c2::delimiter}}",
+      "Body": "A one-character string used to separate fields.  It defaults to ','.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect.delimiter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Dialect}}.{{c2::doublequote}}",
+      "Body": "Controls how instances of quotechar appearing inside a field should themselves be quoted.  When True, the character is doubled. When False, the escapechar is used as a prefix to the quotechar.  It defaults to True.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect.doublequote"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Dialect}}.{{c2::escapechar}}",
+      "Body": "A one-character string used by the writer to escape the delimiter if quoting is set to QUOTE_NONE and the quotechar if doublequote is False. On reading, the escapechar removes any special meaning from the following character. It defaults to None, which disables escaping.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect.escapechar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Dialect}}.{{c2::lineterminator}}",
+      "Body": "The string used to terminate lines produced by the writer. It defaults to '\\r\\n'.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect.lineterminator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Dialect}}.{{c2::quotechar}}",
+      "Body": "A one-character string used to quote fields containing special characters, such as the delimiter or quotechar, or which contain new-line characters.  It defaults to '\"'.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect.quotechar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Dialect}}.{{c2::quoting}}",
+      "Body": "Controls when quotes should be generated by the writer and recognised by the reader.  It can take on any of the QUOTE_* constants (see section Module Contents) and defaults to QUOTE_MINIMAL.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect.quoting"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Dialect}}.{{c2::skipinitialspace}}",
+      "Body": "When True, whitespace immediately following the delimiter is ignored. The default is False.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect.skipinitialspace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Dialect}}.{{c2::strict}}",
+      "Body": "When True, raise exception Error on bad CSV input. The default is False.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.Dialect.strict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csvreader}}.{{c2::__next__}}()",
+      "Body": "Return the next row of the reader's iterable object as a list (if the object was returned from reader()) or a dict (if it is a DictReader instance), parsed according to the current dialect.  Usually you should call this as next(reader).",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.csvreader.__next__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csvreader}}.{{c2::dialect}}",
+      "Body": "A read-only description of the dialect in use by the parser.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.csvreader.dialect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csvreader}}.{{c2::line_num}}",
+      "Body": "The number of lines read from the source iterator. This is not the same as the number of records returned, as records can span multiple lines.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.csvreader.line_num"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csvreader}}.{{c2::fieldnames}}",
+      "Body": "If not passed as a parameter when creating the object, this attribute is initialized upon first access or when the first record is read from the file.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.csvreader.fieldnames"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csvwriter}}.{{c2::writerow}}({{c3::row}})",
+      "Body": "Write the row parameter to the writer's file object, formatted according to the current dialect.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.csvwriter.writerow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csvwriter}}.{{c2::writerows}}({{c3::rows}})",
+      "Body": "Write all elements in rows (an iterable of row objects as described above) to the writer's file object, formatted according to the current dialect.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.csvwriter.writerows"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::csvwriter}}.{{c2::dialect}}",
+      "Body": "A read-only description of the dialect in use by the writer.",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.csvwriter.dialect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DictWriter}}.{{c2::writeheader}}()",
+      "Body": "Write a row with the field names (as specified in the constructor).",
+      "Link": "https://docs.python.org/3/library/csv.html#csv.DictWriter.writeheader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::configparser}}.{{c3::BasicInterpolation}}",
+      "Body": "The default implementation used by ConfigParser.  It enables values to contain format strings which refer to other values in the same section, or values in the special default section [1].  Additional default values can be provided on initialization.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.BasicInterpolation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::configparser}}.{{c3::ExtendedInterpolation}}",
+      "Body": "An alternative handler for interpolation which implements a more advanced syntax, used for instance in zc.buildout.  Extended interpolation is using ${section:option} to denote a value from a foreign section. Interpolation can span multiple levels.  For convenience, if the section: part is omitted, interpolation defaults to the current section (and possibly the default values from the special section).",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ExtendedInterpolation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ConfigParser}}.{{c2::BOOLEAN_STATES}}",
+      "Body": "By default when using getboolean(), config parsers consider the following values True: '1', 'yes', 'true', 'on' and the following values False: '0', 'no', 'false', 'off'.  You can override this by specifying a custom dictionary of strings and their Boolean outcomes. For example:",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.BOOLEAN_STATES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ConfigParser}}.{{c2::optionxform}}({{c3::option}})",
+      "Body": "This method transforms option names on every read, get, or set operation.  The default converts the name to lowercase.  This also means that when a configuration file gets written, all keys will be lowercase.  Override this method if that's unsuitable. For example:",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.optionxform"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ConfigParser}}.{{c2::SECTCRE}}",
+      "Body": "A compiled regular expression used to parse section headers.  The default matches [section] to the name \"section\".  Whitespace is considered part of the section name, thus [ larch ] will be read as a section of name \" larch \".  Override this attribute if that's unsuitable.  For example:",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.SECTCRE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::configparser}}.{{c3::ConfigParser}}({{c4::defaults}}={{c5::None}}, {{c6::dict_type}}={{c7::dict}}, {{c8::allow_no_value}}={{c9::False}}, {{c10::delimiters}}=('=', ':'), {{c11::comment_prefixes}}=('#', ';'), {{c12::inline_comment_prefixes}}={{c13::None}}, {{c14::strict}}={{c15::True}}, {{c16::empty_lines_in_values}}={{c17::True}}, {{c18::default_section}}={{c19::configparser}}.{{c20::DEFAULTSECT}}, {{c21::interpolation}}={{c22::BasicInterpolation}}(), {{c23::converters}}={})",
+      "Body": "The main configuration parser.  When defaults is given, it is initialized into the dictionary of intrinsic defaults.  When dict_type is given, it will be used to create the dictionary objects for the list of sections, for the options within a section, and for the default values.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::defaults}}()",
+      "Body": "Return a dictionary containing the instance-wide defaults.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.defaults"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::sections}}()",
+      "Body": "Return a list of the sections available; the default section is not included in the list.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.sections"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::add_section}}({{c4::section}})",
+      "Body": "Add a section named section to the instance.  If a section by the given name already exists, DuplicateSectionError is raised.  If the default section name is passed, ValueError is raised.  The name of the section must be a string; if not, TypeError is raised.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.add_section"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::has_section}}({{c4::section}})",
+      "Body": "Indicates whether the named section is present in the configuration. The default section is not acknowledged.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.has_section"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::options}}({{c4::section}})",
+      "Body": "Return a list of options available in the specified section.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.options"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::has_option}}({{c4::section}}, {{c5::option}})",
+      "Body": "If the given section exists, and contains the given option, return True; otherwise return False.  If the specified section is None or an empty string, DEFAULT is assumed.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.has_option"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::read}}({{c4::filenames}}, {{c5::encoding}}={{c6::None}})",
+      "Body": "Attempt to read and parse an iterable of filenames, returning a list of filenames which were successfully parsed.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.read"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::read_file}}({{c4::f}}, {{c5::source}}={{c6::None}})",
+      "Body": "Read and parse configuration data from f which must be an iterable yielding Unicode strings (for example files opened in text mode).",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.read_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::read_string}}({{c4::string}}, {{c5::source}}='<{{c6::string}}>')",
+      "Body": "Parse configuration data from a string.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.read_string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::read_dict}}({{c4::dictionary}}, {{c5::source}}='<{{c6::dict}}>')",
+      "Body": "Load configuration from any object that provides a dict-like items() method.  Keys are section names, values are dictionaries with keys and values that should be present in the section.  If the used dictionary type preserves order, sections and their keys will be added in order. Values are automatically converted to strings.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.read_dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::get}}({{c4::section}}, {{c5::option}}, *, {{c6::raw}}={{c7::False}}, {{c8::vars}}={{c9::None}}[, {{c10::fallback}}])",
+      "Body": "Get an option value for the named section.  If vars is provided, it must be a dictionary.  The option is looked up in vars (if provided), section, and in DEFAULTSECT in that order.  If the key is not found and fallback is provided, it is used as a fallback value.  None can be provided as a fallback value.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::getint}}({{c4::section}}, {{c5::option}}, *, {{c6::raw}}={{c7::False}}, {{c8::vars}}={{c9::None}}[, {{c10::fallback}}])",
+      "Body": "A convenience method which coerces the option in the specified section to an integer.  See get() for explanation of raw, vars and fallback.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.getint"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::getfloat}}({{c4::section}}, {{c5::option}}, *, {{c6::raw}}={{c7::False}}, {{c8::vars}}={{c9::None}}[, {{c10::fallback}}])",
+      "Body": "A convenience method which coerces the option in the specified section to a floating point number.  See get() for explanation of raw, vars and fallback.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.getfloat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::getboolean}}({{c4::section}}, {{c5::option}}, *, {{c6::raw}}={{c7::False}}, {{c8::vars}}={{c9::None}}[, {{c10::fallback}}])",
+      "Body": "A convenience method which coerces the option in the specified section to a Boolean value.  Note that the accepted values for the option are '1', 'yes', 'true', and 'on', which cause this method to return True, and '0', 'no', 'false', and 'off', which cause it to return False.  These string values are checked in a case-insensitive manner.  Any other value will cause it to raise ValueError.  See get() for explanation of raw, vars and fallback.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.getboolean"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::items}}({{c4::raw}}={{c5::False}}, {{c6::vars}}={{c7::None}})",
+      "Body": "When section is not given, return a list of section_name, section_proxy pairs, including DEFAULTSECT.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.items"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::items}}({{c2::section}}, {{c3::raw}}={{c4::False}}, {{c5::vars}}={{c6::None}})",
+      "Body": "When section is not given, return a list of section_name, section_proxy pairs, including DEFAULTSECT.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::set}}({{c4::section}}, {{c5::option}}, {{c6::value}})",
+      "Body": "If the given section exists, set the given option to the specified value; otherwise raise NoSectionError.  option and value must be strings; if not, TypeError is raised.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::write}}({{c4::fileobject}}, {{c5::space_around_delimiters}}={{c6::True}})",
+      "Body": "Write a representation of the configuration to the specified file object, which must be opened in text mode (accepting strings).  This representation can be parsed by a future read() call.  If space_around_delimiters is true, delimiters between keys and values are surrounded by spaces.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.write"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::remove_option}}({{c4::section}}, {{c5::option}})",
+      "Body": "Remove the specified option from the specified section.  If the section does not exist, raise NoSectionError.  If the option existed to be removed, return True; otherwise return False.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.remove_option"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::remove_section}}({{c4::section}})",
+      "Body": "Remove the specified section from the configuration.  If the section in fact existed, return True.  Otherwise return False.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.remove_section"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::optionxform}}({{c2::option}})",
+      "Body": "Transforms the option name option as found in an input file or as passed in by client code to the form that should be used in the internal structures.  The default implementation returns a lower-case version of option; subclasses may override this or client code can set an attribute of this name on instances to affect this behavior.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::ConfigParser}}.{{c3::readfp}}({{c4::fp}}, {{c5::filename}}={{c6::None}})",
+      "Body": "Deprecated since version 3.2: Use read_file() instead.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ConfigParser.readfp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::MAX_INTERPOLATION_DEPTH}}",
+      "Body": "The maximum depth for recursive interpolation for get() when the raw parameter is false.  This is relevant only when the default interpolation is used.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.MAX_INTERPOLATION_DEPTH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::configparser}}.{{c3::RawConfigParser}}({{c4::defaults}}={{c5::None}}, {{c6::dict_type}}={{c7::dict}}, {{c8::allow_no_value}}={{c9::False}}, *, {{c10::delimiters}}=('=', ':'), {{c11::comment_prefixes}}=('#', ';'), {{c12::inline_comment_prefixes}}={{c13::None}}, {{c14::strict}}={{c15::True}}, {{c16::empty_lines_in_values}}={{c17::True}}, {{c18::default_section}}={{c19::configparser}}.{{c20::DEFAULTSECT}}[, {{c21::interpolation}}])",
+      "Body": "Legacy variant of the ConfigParser.  It has interpolation disabled by default and allows for non-string section names, option names, and values via its unsafe add_section and set methods, as well as the legacy defaults= keyword argument handling.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.RawConfigParser"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::RawConfigParser}}.{{c3::add_section}}({{c4::section}})",
+      "Body": "Add a section named section to the instance.  If a section by the given name already exists, DuplicateSectionError is raised.  If the default section name is passed, ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.RawConfigParser.add_section"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::configparser}}.{{c2::RawConfigParser}}.{{c3::set}}({{c4::section}}, {{c5::option}}, {{c6::value}})",
+      "Body": "If the given section exists, set the given option to the specified value; otherwise raise NoSectionError.  While it is possible to use RawConfigParser (or ConfigParser with raw parameters set to true) for internal storage of non-string values, full functionality (including interpolation and output to files) can only be achieved using string values.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.RawConfigParser.set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::Error}}",
+      "Body": "Base class for all other configparser exceptions.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::NoSectionError}}",
+      "Body": "Exception raised when a specified section is not found.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.NoSectionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::DuplicateSectionError}}",
+      "Body": "Exception raised if add_section() is called with the name of a section that is already present or in strict parsers when a section if found more than once in a single input file, string or dictionary.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.DuplicateSectionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::DuplicateOptionError}}",
+      "Body": "Exception raised by strict parsers if a single option appears twice during reading from a single file, string or dictionary. This catches misspellings and case sensitivity-related errors, e.g. a dictionary may have two keys representing the same case-insensitive configuration key.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.DuplicateOptionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::NoOptionError}}",
+      "Body": "Exception raised when a specified option is not found in the specified section.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.NoOptionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::InterpolationError}}",
+      "Body": "Base class for exceptions raised when problems occur performing string interpolation.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.InterpolationError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::InterpolationDepthError}}",
+      "Body": "Exception raised when string interpolation cannot be completed because the number of iterations exceeds MAX_INTERPOLATION_DEPTH.  Subclass of InterpolationError.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.InterpolationDepthError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::InterpolationMissingOptionError}}",
+      "Body": "Exception raised when an option referenced from a value does not exist. Subclass of InterpolationError.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.InterpolationMissingOptionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::InterpolationSyntaxError}}",
+      "Body": "Exception raised when the source text into which substitutions are made does not conform to the required syntax.  Subclass of InterpolationError.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.InterpolationSyntaxError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::MissingSectionHeaderError}}",
+      "Body": "Exception raised when attempting to parse a file which has no section headers.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.MissingSectionHeaderError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::configparser}}.{{c3::ParsingError}}",
+      "Body": "Exception raised when errors occur attempting to parse a file.",
+      "Link": "https://docs.python.org/3/library/configparser.html#configparser.ParsingError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::netrc}}.{{c3::netrc}}([{{c4::file}}])",
+      "Body": "A netrc instance or subclass instance encapsulates data from  a netrc file.  The initialization argument, if present, specifies the file to parse.  If no argument is given, the file .netrc in the user's home directory  as determined by os.path.expanduser()  will be read.  Otherwise, a FileNotFoundError exception will be raised. Parse errors will raise NetrcParseError with diagnostic information including the file name, line number, and terminating token. If no argument is specified on a POSIX system, the presence of passwords in the .netrc file will raise a NetrcParseError if the file ownership or permissions are insecure (owned by a user other than the user running the process, or accessible for read or write by any other user). This implements security behavior equivalent to that of ftp and other programs that use .netrc.",
+      "Link": "https://docs.python.org/3/library/netrc.html#netrc.netrc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::netrc}}.{{c3::NetrcParseError}}",
+      "Body": "Exception raised by the netrc class when syntactical errors are encountered in source text.  Instances of this exception provide three interesting attributes:  msg is a textual explanation of the error, filename is the name of the source file, and lineno gives the line number on which the error was found.",
+      "Link": "https://docs.python.org/3/library/netrc.html#netrc.NetrcParseError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::netrc}}.{{c2::authenticators}}({{c3::host}})",
+      "Body": "Return a 3-tuple (login, account, password) of authenticators for host. If the netrc file did not contain an entry for the given host, return the tuple associated with the 'default' entry.  If neither matching host nor default entry is available, return None.",
+      "Link": "https://docs.python.org/3/library/netrc.html#netrc.netrc.authenticators"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::netrc}}.{{c2::__repr__}}()",
+      "Body": "Dump the class data as a string in the format of a netrc file. (This discards comments and may reorder the entries.)",
+      "Link": "https://docs.python.org/3/library/netrc.html#netrc.netrc.__repr__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::netrc}}.{{c2::hosts}}",
+      "Body": "Dictionary mapping host names to (login, account, password) tuples.  The 'default' entry, if any, is represented as a pseudo-host by that name.",
+      "Link": "https://docs.python.org/3/library/netrc.html#netrc.netrc.hosts"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::netrc}}.{{c2::macros}}",
+      "Body": "Dictionary mapping macro names to string lists.",
+      "Link": "https://docs.python.org/3/library/netrc.html#netrc.netrc.macros"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::xdrlib}}.{{c3::Packer}}",
+      "Body": "Packer is the class for packing data into XDR representation. The Packer class is instantiated with no arguments.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::xdrlib}}.{{c3::Unpacker}}({{c4::data}})",
+      "Body": "Unpacker is the complementary class which unpacks XDR data values from a string buffer.  The input buffer is given as data.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::get_buffer}}()",
+      "Body": "Returns the current pack buffer as a string.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.get_buffer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::reset}}()",
+      "Body": "Resets the pack buffer to the empty string.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_float}}({{c3::value}})",
+      "Body": "Packs the single-precision floating point number value.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_float"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_double}}({{c3::value}})",
+      "Body": "Packs the double-precision floating point number value.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_double"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_fstring}}({{c3::n}}, {{c4::s}})",
+      "Body": "Packs a fixed length string, s.  n is the length of the string but it is not packed into the data buffer.  The string is padded with null bytes if necessary to guaranteed 4 byte alignment.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_fstring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_fopaque}}({{c3::n}}, {{c4::data}})",
+      "Body": "Packs a fixed length opaque data stream, similarly to pack_fstring().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_fopaque"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_string}}({{c3::s}})",
+      "Body": "Packs a variable length string, s.  The length of the string is first packed as an unsigned integer, then the string data is packed with pack_fstring().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_opaque}}({{c3::data}})",
+      "Body": "Packs a variable length opaque data string, similarly to pack_string().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_opaque"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_bytes}}({{c3::bytes}})",
+      "Body": "Packs a variable length byte stream, similarly to pack_string().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_list}}({{c3::list}}, {{c4::pack_item}})",
+      "Body": "Packs a list of homogeneous items.  This method is useful for lists with an indeterminate size; i.e. the size is not available until the entire list has been walked.  For each item in the list, an unsigned integer 1 is packed first, followed by the data value from the list.  pack_item is the function that is called to pack the individual item.  At the end of the list, an unsigned integer 0 is packed.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_farray}}({{c3::n}}, {{c4::array}}, {{c5::pack_item}})",
+      "Body": "Packs a fixed length list (array) of homogeneous items.  n is the length of the list; it is not packed into the buffer, but a ValueError exception is raised if len(array) is not equal to n.  As above, pack_item is the function used to pack each element.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_farray"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Packer}}.{{c2::pack_array}}({{c3::list}}, {{c4::pack_item}})",
+      "Body": "Packs a variable length list of homogeneous items.  First, the length of the list is packed as an unsigned integer, then each element is packed as in pack_farray() above.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Packer.pack_array"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::reset}}({{c3::data}})",
+      "Body": "Resets the string buffer with the given data.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::get_position}}()",
+      "Body": "Returns the current unpack position in the data buffer.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.get_position"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::set_position}}({{c3::position}})",
+      "Body": "Sets the data buffer unpack position to position.  You should be careful about using get_position() and set_position().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.set_position"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::get_buffer}}()",
+      "Body": "Returns the current unpack data buffer as a string.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.get_buffer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::done}}()",
+      "Body": "Indicates unpack completion.  Raises an Error exception if all of the data has not been unpacked.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.done"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_float}}()",
+      "Body": "Unpacks a single-precision floating point number.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_float"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_double}}()",
+      "Body": "Unpacks a double-precision floating point number, similarly to unpack_float().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_double"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_fstring}}({{c3::n}})",
+      "Body": "Unpacks and returns a fixed length string.  n is the number of characters expected.  Padding with null bytes to guaranteed 4 byte alignment is assumed.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_fstring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_fopaque}}({{c3::n}})",
+      "Body": "Unpacks and returns a fixed length opaque data stream, similarly to unpack_fstring().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_fopaque"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_string}}()",
+      "Body": "Unpacks and returns a variable length string.  The length of the string is first unpacked as an unsigned integer, then the string data is unpacked with unpack_fstring().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_opaque}}()",
+      "Body": "Unpacks and returns a variable length opaque data string, similarly to unpack_string().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_opaque"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_bytes}}()",
+      "Body": "Unpacks and returns a variable length byte stream, similarly to unpack_string().",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_list}}({{c3::unpack_item}})",
+      "Body": "Unpacks and returns a list of homogeneous items.  The list is unpacked one element at a time by first unpacking an unsigned integer flag.  If the flag is 1, then the item is unpacked and appended to the list.  A flag of 0 indicates the end of the list.  unpack_item is the function that is called to unpack the items.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_farray}}({{c3::n}}, {{c4::unpack_item}})",
+      "Body": "Unpacks and returns (as a list) a fixed length array of homogeneous items.  n is number of list elements to expect in the buffer. As above, unpack_item is the function used to unpack each element.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_farray"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Unpacker}}.{{c2::unpack_array}}({{c3::unpack_item}})",
+      "Body": "Unpacks and returns a variable length list of homogeneous items. First, the length of the list is unpacked as an unsigned integer, then each element is unpacked as in unpack_farray() above.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Unpacker.unpack_array"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::xdrlib}}.{{c3::Error}}",
+      "Body": "The base exception class.  Error has a single public attribute msg containing the description of the error.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::xdrlib}}.{{c3::ConversionError}}",
+      "Body": "Class derived from Error.  Contains no additional instance variables.",
+      "Link": "https://docs.python.org/3/library/xdrlib.html#xdrlib.ConversionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::load}}({{c3::fp}}, *, {{c4::fmt}}={{c5::None}}, {{c6::use_builtin_types}}={{c7::True}}, {{c8::dict_type}}={{c9::dict}})",
+      "Body": "Read a plist file. fp should be a readable and binary file object. Return the unpacked root object (which usually is a dictionary).",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.load"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::loads}}({{c3::data}}, *, {{c4::fmt}}={{c5::None}}, {{c6::use_builtin_types}}={{c7::True}}, {{c8::dict_type}}={{c9::dict}})",
+      "Body": "Load a plist from a bytes object. See load() for an explanation of the keyword arguments.",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.loads"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::dump}}({{c3::value}}, {{c4::fp}}, *, {{c5::fmt}}={{c6::FMT_XML}}, {{c7::sort_keys}}={{c8::True}}, {{c9::skipkeys}}={{c10::False}})",
+      "Body": "Write value to a plist file. Fp should be a writable, binary file object.",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.dump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::dumps}}({{c3::value}}, *, {{c4::fmt}}={{c5::FMT_XML}}, {{c6::sort_keys}}={{c7::True}}, {{c8::skipkeys}}={{c9::False}})",
+      "Body": "Return value as a plist-formatted bytes object. See the documentation for dump() for an explanation of the keyword arguments of this function.",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.dumps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::readPlist}}({{c3::pathOrFile}})",
+      "Body": "Read a plist file. pathOrFile may be either a file name or a (readable and binary) file object. Returns the unpacked root object (which usually is a dictionary).",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.readPlist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::writePlist}}({{c3::rootObject}}, {{c4::pathOrFile}})",
+      "Body": "Write rootObject to an XML plist file. pathOrFile may be either a file name or a (writable and binary) file object",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.writePlist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::readPlistFromBytes}}({{c3::data}})",
+      "Body": "Read a plist data from a bytes object.  Return the root object.",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.readPlistFromBytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::writePlistToBytes}}({{c3::rootObject}})",
+      "Body": "Return rootObject as an XML plist-formatted bytes object.",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.writePlistToBytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::plistlib}}.{{c3::Data}}({{c4::data}})",
+      "Body": "Return a data wrapper object around the bytes object data.  This is used in functions converting from/to plists to represent the <data> type available in plists.",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.Data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::FMT_XML}}",
+      "Body": "The XML format for plist files.",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.FMT_XML"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "File Formats", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::plistlib}}.{{c2::FMT_BINARY}}",
+      "Body": "The binary format for plist files",
+      "Link": "https://docs.python.org/3/library/plistlib.html#plistlib.FMT_BINARY"
+    },
+    "modelName": "ClozePy"
+  }
+]

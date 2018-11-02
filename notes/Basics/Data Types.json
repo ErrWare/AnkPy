@@ -1,0 +1,3278 @@
+[
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::MINYEAR}}",
+      "Body": "The smallest year number allowed in a date or datetime object. MINYEAR is 1.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.MINYEAR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::MAXYEAR}}",
+      "Body": "The largest year number allowed in a date or datetime object. MAXYEAR is 9999.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.MAXYEAR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::date}}",
+      "Body": "An idealized naive date, assuming the current Gregorian calendar always was, and always will be, in effect. Attributes: year, month, and day.",
+      "Link": "https://docs.python.org/3/library/datetime.html#available-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::time}}",
+      "Body": "An idealized time, independent of any particular day, assuming that every day has exactly 24*60*60 seconds (there is no notion of leap seconds here). Attributes: hour, minute, second, microsecond, and tzinfo.",
+      "Link": "https://docs.python.org/3/library/datetime.html#available-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::datetime}}",
+      "Body": "A combination of a date and a time. Attributes: year, month, day, hour, minute, second, microsecond, and tzinfo.",
+      "Link": "https://docs.python.org/3/library/datetime.html#available-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::timedelta}}",
+      "Body": "A duration expressing the difference between two date, time, or datetime instances to microsecond resolution.",
+      "Link": "https://docs.python.org/3/library/datetime.html#available-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::tzinfo}}",
+      "Body": "An abstract base class for time zone information objects.  These are used by the datetime and time classes to provide a customizable notion of time adjustment (for example, to account for time zone and/or daylight saving time).",
+      "Link": "https://docs.python.org/3/library/datetime.html#available-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::timezone}}",
+      "Body": "A class that implements the tzinfo abstract base class as a fixed offset from the UTC.",
+      "Link": "https://docs.python.org/3/library/datetime.html#available-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::timedelta}}({{c4::days}}=0, {{c5::seconds}}=0, {{c6::microseconds}}=0, {{c7::milliseconds}}=0, {{c8::minutes}}=0, {{c9::hours}}=0, {{c10::weeks}}=0)",
+      "Body": "All arguments are optional and default to 0.  Arguments may be integers or floats, and may be positive or negative.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timedelta"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timedelta}}.{{c2::min}}",
+      "Body": "The most negative timedelta object, timedelta(-999999999).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timedelta.min"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timedelta}}.{{c2::max}}",
+      "Body": "The most positive timedelta object, timedelta(days=999999999, hours=23, minutes=59, seconds=59, microseconds=999999).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timedelta.max"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timedelta}}.{{c2::resolution}}",
+      "Body": "The smallest possible difference between non-equal timedelta objects, timedelta(microseconds=1).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timedelta.resolution"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timedelta}}.{{c2::total_seconds}}()",
+      "Body": "Return the total number of seconds contained in the duration. Equivalent to td / timedelta(seconds=1).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timedelta.total_seconds"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::date}}({{c4::year}}, {{c5::month}}, {{c6::day}})",
+      "Body": "All arguments are required.  Arguments may be integers, in the following ranges:",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::date}}.{{c3::today}}()",
+      "Body": "Return the current local date.  This is equivalent to date.fromtimestamp(time.time()).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.today"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::date}}.{{c3::fromtimestamp}}({{c4::timestamp}})",
+      "Body": "Return the local date corresponding to the POSIX timestamp, such as is returned by time.time().  This may raise OverflowError, if the timestamp is out of the range of values supported by the platform C localtime() function, and OSError on localtime() failure. It's common for this to be restricted to years from 1970 through 2038.  Note that on non-POSIX systems that include leap seconds in their notion of a timestamp, leap seconds are ignored by fromtimestamp().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.fromtimestamp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::date}}.{{c3::fromordinal}}({{c4::ordinal}})",
+      "Body": "Return the date corresponding to the proleptic Gregorian ordinal, where January 1 of year 1 has ordinal 1.  ValueError is raised unless 1 <= ordinal <= date.max.toordinal(). For any date d, date.fromordinal(d.toordinal()) == d.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.fromordinal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::date}}.{{c3::fromisoformat}}({{c4::date_string}})",
+      "Body": "Return a date corresponding to a date_string in the format emitted by date.isoformat(). Specifically, this function supports strings in the format(s) YYYY-MM-DD.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.fromisoformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::min}}",
+      "Body": "The earliest representable date, date(MINYEAR, 1, 1).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.min"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::max}}",
+      "Body": "The latest representable date, date(MAXYEAR, 12, 31).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.max"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::resolution}}",
+      "Body": "The smallest possible difference between non-equal date objects, timedelta(days=1).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.resolution"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::year}}",
+      "Body": "Between MINYEAR and MAXYEAR inclusive.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.year"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::month}}",
+      "Body": "Between 1 and 12 inclusive.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.month"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::day}}",
+      "Body": "Between 1 and the number of days in the given month of the given year.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.day"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::replace}}({{c3::year}}={{c4::self}}.{{c5::year}}, {{c6::month}}={{c7::self}}.{{c8::month}}, {{c9::day}}={{c10::self}}.{{c11::day}})",
+      "Body": "Return a date with the same value, except for those parameters given new values by whichever keyword arguments are specified.  For example, if d == date(2002, 12, 31), then d.replace(day=26) == date(2002, 12, 26).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::timetuple}}()",
+      "Body": "Return a time.struct_time such as returned by time.localtime(). The hours, minutes and seconds are 0, and the DST flag is -1. d.timetuple() is equivalent to time.struct_time((d.year, d.month, d.day, 0, 0, 0, d.weekday(), yday, -1)), where yday = d.toordinal() - date(d.year, 1, 1).toordinal() + 1 is the day number within the current year starting with 1 for January 1st.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.timetuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::toordinal}}()",
+      "Body": "Return the proleptic Gregorian ordinal of the date, where January 1 of year 1 has ordinal 1.  For any date object d, date.fromordinal(d.toordinal()) == d.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.toordinal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::weekday}}()",
+      "Body": "Return the day of the week as an integer, where Monday is 0 and Sunday is 6. For example, date(2002, 12, 4).weekday() == 2, a Wednesday. See also isoweekday().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.weekday"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::isoweekday}}()",
+      "Body": "Return the day of the week as an integer, where Monday is 1 and Sunday is 7. For example, date(2002, 12, 4).isoweekday() == 3, a Wednesday. See also weekday(), isocalendar().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.isoweekday"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::isocalendar}}()",
+      "Body": "Return a 3-tuple, (ISO year, ISO week number, ISO weekday).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.isocalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::isoformat}}()",
+      "Body": "Return a string representing the date in ISO 8601 format, 'YYYY-MM-DD'.  For example, date(2002, 12, 4).isoformat() == '2002-12-04'.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.isoformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::__str__}}()",
+      "Body": "For a date d, str(d) is equivalent to d.isoformat().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.__str__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::ctime}}()",
+      "Body": "Return a string representing the date, for example date(2002, 12, 4).ctime() == 'Wed Dec 4 00:00:00 2002'. d.ctime() is equivalent to time.ctime(time.mktime(d.timetuple())) on platforms where the native C ctime() function (which time.ctime() invokes, but which date.ctime() does not invoke) conforms to the C standard.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.ctime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::strftime}}({{c3::format}})",
+      "Body": "Return a string representing the date, controlled by an explicit format string. Format codes referring to hours, minutes or seconds will see 0 values. For a complete list of formatting directives, see strftime() and strptime() Behavior.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.strftime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::date}}.{{c2::__format__}}({{c3::format}})",
+      "Body": "Same as date.strftime(). This makes it possible to specify a format string for a date object in formatted string literals and when using str.format(). For a complete list of formatting directives, see strftime() and strptime() Behavior.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.date.__format__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::datetime}}({{c4::year}}, {{c5::month}}, {{c6::day}}, {{c7::hour}}=0, {{c8::minute}}=0, {{c9::second}}=0, {{c10::microsecond}}=0, {{c11::tzinfo}}={{c12::None}}, *, {{c13::fold}}=0)",
+      "Body": "The year, month and day arguments are required.  tzinfo may be None, or an instance of a tzinfo subclass.  The remaining arguments may be integers, in the following ranges:",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::today}}()",
+      "Body": "Return the current local datetime, with tzinfo None. This is equivalent to datetime.fromtimestamp(time.time()). See also now(), fromtimestamp().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.today"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::now}}({{c4::tz}}={{c5::None}})",
+      "Body": "Return the current local date and time.  If optional argument tz is None or not specified, this is like today(), but, if possible, supplies more precision than can be gotten from going through a time.time() timestamp (for example, this may be possible on platforms supplying the C gettimeofday() function).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.now"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::utcnow}}()",
+      "Body": "Return the current UTC date and time, with tzinfo None. This is like now(), but returns the current UTC date and time, as a naive datetime object.  An aware current UTC datetime can be obtained by calling datetime.now(timezone.utc).  See also now().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.utcnow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::fromtimestamp}}({{c4::timestamp}}, {{c5::tz}}={{c6::None}})",
+      "Body": "Return the local date and time corresponding to the POSIX timestamp, such as is returned by time.time(). If optional argument tz is None or not specified, the timestamp is converted to the platform's local date and time, and the returned datetime object is naive.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.fromtimestamp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::utcfromtimestamp}}({{c4::timestamp}})",
+      "Body": "Return the UTC datetime corresponding to the POSIX timestamp, with tzinfo None. This may raise OverflowError, if the timestamp is out of the range of values supported by the platform C gmtime() function, and OSError on gmtime() failure. It's common for this to be restricted to years in 1970 through 2038.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.utcfromtimestamp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::fromordinal}}({{c4::ordinal}})",
+      "Body": "Return the datetime corresponding to the proleptic Gregorian ordinal, where January 1 of year 1 has ordinal 1. ValueError is raised unless 1 <= ordinal <= datetime.max.toordinal().  The hour, minute, second and microsecond of the result are all 0, and tzinfo is None.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.fromordinal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::combine}}({{c4::date}}, {{c5::time}}, {{c6::tzinfo}}={{c7::self}}.{{c8::tzinfo}})",
+      "Body": "Return a new datetime object whose date components are equal to the given date object's, and whose time components are equal to the given time object's.  If the tzinfo argument is provided, its value is used to set the tzinfo attribute of the result, otherwise the tzinfo attribute of the time argument is used.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.combine"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::fromisoformat}}({{c4::date_string}})",
+      "Body": "Return a datetime corresponding to a date_string in one of the formats emitted by date.isoformat() and datetime.isoformat(). Specifically, this function supports strings in the format(s) YYYY-MM-DD[*HH[:MM[:SS[.fff[fff]]]][+HH:MM[:SS[.ffffff]]]], where * can match any single character.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.fromisoformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::datetime}}.{{c3::strptime}}({{c4::date_string}}, {{c5::format}})",
+      "Body": "Return a datetime corresponding to date_string, parsed according to format.  This is equivalent to datetime(*(time.strptime(date_string, format)[0:6])). ValueError is raised if the date_string and format can't be parsed by time.strptime() or if it returns a value which isn't a time tuple. For a complete list of formatting directives, see strftime() and strptime() Behavior.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.strptime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::min}}",
+      "Body": "The earliest representable datetime, datetime(MINYEAR, 1, 1, tzinfo=None).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.min"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::max}}",
+      "Body": "The latest representable datetime, datetime(MAXYEAR, 12, 31, 23, 59, 59, 999999, tzinfo=None).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.max"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::resolution}}",
+      "Body": "The smallest possible difference between non-equal datetime objects, timedelta(microseconds=1).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.resolution"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::year}}",
+      "Body": "Between MINYEAR and MAXYEAR inclusive.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.year"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::month}}",
+      "Body": "Between 1 and 12 inclusive.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.month"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::day}}",
+      "Body": "Between 1 and the number of days in the given month of the given year.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.day"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::hour}}",
+      "Body": "In range(24).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.hour"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::minute}}",
+      "Body": "In range(60).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.minute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::second}}",
+      "Body": "In range(60).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.second"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::microsecond}}",
+      "Body": "In range(1000000).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.microsecond"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::tzinfo}}",
+      "Body": "The object passed as the tzinfo argument to the datetime constructor, or None if none was passed.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.tzinfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::fold}}",
+      "Body": "In [0, 1].  Used to disambiguate wall times during a repeated interval.  (A repeated interval occurs when clocks are rolled back at the end of daylight saving time or when the UTC offset for the current zone is decreased for political reasons.) The value 0 (1) represents the earlier (later) of the two moments with the same wall time representation.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.fold"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::date}}()",
+      "Body": "Return date object with same year, month and day.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.date"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::time}}()",
+      "Body": "Return time object with same hour, minute, second, microsecond and fold. tzinfo is None.  See also method timetz().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.time"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::timetz}}()",
+      "Body": "Return time object with same hour, minute, second, microsecond, fold, and tzinfo attributes.  See also method time().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.timetz"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::replace}}({{c3::year}}={{c4::self}}.{{c5::year}}, {{c6::month}}={{c7::self}}.{{c8::month}}, {{c9::day}}={{c10::self}}.{{c11::day}}, {{c12::hour}}={{c13::self}}.{{c14::hour}}, {{c15::minute}}={{c16::self}}.{{c17::minute}}, {{c18::second}}={{c19::self}}.{{c20::second}}, {{c21::microsecond}}={{c22::self}}.{{c23::microsecond}}, {{c24::tzinfo}}={{c25::self}}.{{c26::tzinfo}}, * {{c27::fold}}=0)",
+      "Body": "Return a datetime with the same attributes, except for those attributes given new values by whichever keyword arguments are specified.  Note that tzinfo=None can be specified to create a naive datetime from an aware datetime with no conversion of date and time data.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::astimezone}}({{c3::tz}}={{c4::None}})",
+      "Body": "Return a datetime object with new tzinfo attribute tz, adjusting the date and time data so the result is the same UTC time as self, but in tz's local time.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.astimezone"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::utcoffset}}()",
+      "Body": "If tzinfo is None, returns None, else returns self.tzinfo.utcoffset(self), and raises an exception if the latter doesn't return None or a timedelta object with magnitude less than one day.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.utcoffset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::dst}}()",
+      "Body": "If tzinfo is None, returns None, else returns self.tzinfo.dst(self), and raises an exception if the latter doesn't return None or a timedelta object with magnitude less than one day.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.dst"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::tzname}}()",
+      "Body": "If tzinfo is None, returns None, else returns self.tzinfo.tzname(self), raises an exception if the latter doesn't return None or a string object,",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.tzname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::timetuple}}()",
+      "Body": "Return a time.struct_time such as returned by time.localtime(). d.timetuple() is equivalent to time.struct_time((d.year, d.month, d.day, d.hour, d.minute, d.second, d.weekday(), yday, dst)), where yday = d.toordinal() - date(d.year, 1, 1).toordinal() + 1 is the day number within the current year starting with 1 for January 1st. The tm_isdst flag of the result is set according to the dst() method: tzinfo is None or dst() returns None, tm_isdst is set to -1; else if dst() returns a non-zero value, tm_isdst is set to 1; else tm_isdst is set to 0.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.timetuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::utctimetuple}}()",
+      "Body": "If datetime instance d is naive, this is the same as d.timetuple() except that tm_isdst is forced to 0 regardless of what d.dst() returns.  DST is never in effect for a UTC time.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.utctimetuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::toordinal}}()",
+      "Body": "Return the proleptic Gregorian ordinal of the date.  The same as self.date().toordinal().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.toordinal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::timestamp}}()",
+      "Body": "Return POSIX timestamp corresponding to the datetime instance.  The return value is a float similar to that returned by time.time().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.timestamp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::weekday}}()",
+      "Body": "Return the day of the week as an integer, where Monday is 0 and Sunday is 6. The same as self.date().weekday(). See also isoweekday().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.weekday"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::isoweekday}}()",
+      "Body": "Return the day of the week as an integer, where Monday is 1 and Sunday is 7. The same as self.date().isoweekday(). See also weekday(), isocalendar().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.isoweekday"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::isocalendar}}()",
+      "Body": "Return a 3-tuple, (ISO year, ISO week number, ISO weekday).  The same as self.date().isocalendar().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.isocalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::isoformat}}({{c3::sep}}='{{c4::T}}', {{c5::timespec}}='{{c6::auto}}')",
+      "Body": "Return a string representing the date and time in ISO 8601 format, YYYY-MM-DDTHH:MM:SS.ffffff or, if microsecond is 0, YYYY-MM-DDTHH:MM:SS",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.isoformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::__str__}}()",
+      "Body": "For a datetime instance d, str(d) is equivalent to d.isoformat(' ').",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.__str__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::ctime}}()",
+      "Body": "Return a string representing the date and time, for example datetime(2002, 12, 4, 20, 30, 40).ctime() == 'Wed Dec 4 20:30:40 2002'. d.ctime() is equivalent to time.ctime(time.mktime(d.timetuple())) on platforms where the native C ctime() function (which time.ctime() invokes, but which datetime.ctime() does not invoke) conforms to the C standard.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.ctime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::strftime}}({{c3::format}})",
+      "Body": "Return a string representing the date and time, controlled by an explicit format string.  For a complete list of formatting directives, see strftime() and strptime() Behavior.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.strftime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::datetime}}.{{c2::__format__}}({{c3::format}})",
+      "Body": "Same as datetime.strftime().  This makes it possible to specify a format string for a datetime object in formatted string literals and when using str.format().  For a complete list of formatting directives, see strftime() and strptime() Behavior.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.datetime.__format__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::time}}({{c4::hour}}=0, {{c5::minute}}=0, {{c6::second}}=0, {{c7::microsecond}}=0, {{c8::tzinfo}}={{c9::None}}, *, {{c10::fold}}=0)",
+      "Body": "All arguments are optional.  tzinfo may be None, or an instance of a tzinfo subclass.  The remaining arguments may be integers, in the following ranges:",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::min}}",
+      "Body": "The earliest representable time, time(0, 0, 0, 0).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.min"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::max}}",
+      "Body": "The latest representable time, time(23, 59, 59, 999999).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.max"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::resolution}}",
+      "Body": "The smallest possible difference between non-equal time objects, timedelta(microseconds=1), although note that arithmetic on time objects is not supported.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.resolution"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::hour}}",
+      "Body": "In range(24).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.hour"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::minute}}",
+      "Body": "In range(60).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.minute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::second}}",
+      "Body": "In range(60).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.second"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::microsecond}}",
+      "Body": "In range(1000000).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.microsecond"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::tzinfo}}",
+      "Body": "The object passed as the tzinfo argument to the time constructor, or None if none was passed.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.tzinfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::fold}}",
+      "Body": "In [0, 1].  Used to disambiguate wall times during a repeated interval.  (A repeated interval occurs when clocks are rolled back at the end of daylight saving time or when the UTC offset for the current zone is decreased for political reasons.) The value 0 (1) represents the earlier (later) of the two moments with the same wall time representation.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.fold"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::time}}.{{c3::fromisoformat}}({{c4::time_string}})",
+      "Body": "Return a time corresponding to a time_string in one of the formats emitted by time.isoformat(). Specifically, this function supports strings in the format(s) HH[:MM[:SS[.fff[fff]]]][+HH:MM[:SS[.ffffff]]].",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.fromisoformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::replace}}({{c3::hour}}={{c4::self}}.{{c5::hour}}, {{c6::minute}}={{c7::self}}.{{c8::minute}}, {{c9::second}}={{c10::self}}.{{c11::second}}, {{c12::microsecond}}={{c13::self}}.{{c14::microsecond}}, {{c15::tzinfo}}={{c16::self}}.{{c17::tzinfo}}, * {{c18::fold}}=0)",
+      "Body": "Return a time with the same value, except for those attributes given new values by whichever keyword arguments are specified.  Note that tzinfo=None can be specified to create a naive time from an aware time, without conversion of the time data.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::isoformat}}({{c3::timespec}}='{{c4::auto}}')",
+      "Body": "Return a string representing the time in ISO 8601 format, HH:MM:SS.ffffff or, if microsecond is 0, HH:MM:SS If utcoffset() does not return None, a string is appended, giving the UTC offset: HH:MM:SS.ffffff+HH:MM[:SS[.ffffff]] or, if self.microsecond is 0, HH:MM:SS+HH:MM[:SS[.ffffff]].",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.isoformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::__str__}}()",
+      "Body": "For a time t, str(t) is equivalent to t.isoformat().",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.__str__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::strftime}}({{c3::format}})",
+      "Body": "Return a string representing the time, controlled by an explicit format string.  For a complete list of formatting directives, see strftime() and strptime() Behavior.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.strftime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::__format__}}({{c3::format}})",
+      "Body": "Same as time.strftime(). This makes it possible to specify a format string for a time object in formatted string literals and when using str.format().  For a complete list of formatting directives, see strftime() and strptime() Behavior.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.__format__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::utcoffset}}()",
+      "Body": "If tzinfo is None, returns None, else returns self.tzinfo.utcoffset(None), and raises an exception if the latter doesn't return None or a timedelta object with magnitude less than one day.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.utcoffset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::dst}}()",
+      "Body": "If tzinfo is None, returns None, else returns self.tzinfo.dst(None), and raises an exception if the latter doesn't return None, or a timedelta object with magnitude less than one day.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.dst"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::time}}.{{c2::tzname}}()",
+      "Body": "If tzinfo is None, returns None, else returns self.tzinfo.tzname(None), or raises an exception if the latter doesn't return None or a string object.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.time.tzname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::tzinfo}}",
+      "Body": "This is an abstract base class, meaning that this class should not be instantiated directly.  You need to derive a concrete subclass, and (at least) supply implementations of the standard tzinfo methods needed by the datetime methods you use.  The datetime module supplies a simple concrete subclass of tzinfo, timezone, which can represent timezones with fixed offset from UTC such as UTC itself or North American EST and EDT.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.tzinfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tzinfo}}.{{c2::utcoffset}}({{c3::dt}})",
+      "Body": "Return offset of local time from UTC, as a timedelta object that is positive east of UTC.  If local time is west of UTC, this should be negative.  Note that this is intended to be the total offset from UTC; for example, if a tzinfo object represents both time zone and DST adjustments, utcoffset() should return their sum.  If the UTC offset isn't known, return None.  Else the value returned must be a timedelta object strictly between -timedelta(hours=24) and timedelta(hours=24) (the magnitude of the offset must be less than one day).  Most implementations of utcoffset() will probably look like one of these two:",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.tzinfo.utcoffset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tzinfo}}.{{c2::dst}}({{c3::dt}})",
+      "Body": "Return the daylight saving time (DST) adjustment, as a timedelta object or None if DST information isn't known.  Return timedelta(0) if DST is not in effect. If DST is in effect, return the offset as a timedelta object (see utcoffset() for details). Note that DST offset, if applicable, has already been added to the UTC offset returned by utcoffset(), so there's no need to consult dst() unless you're interested in obtaining DST info separately.  For example, datetime.timetuple() calls its tzinfo attribute's dst() method to determine how the tm_isdst flag should be set, and tzinfo.fromutc() calls dst() to account for DST changes when crossing time zones.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.tzinfo.dst"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tzinfo}}.{{c2::tzname}}({{c3::dt}})",
+      "Body": "Return the time zone name corresponding to the datetime object dt, as a string. Nothing about string names is defined by the datetime module, and there's no requirement that it mean anything in particular.  For example, GMT, UTC, -500, -5:00, EDT, US/Eastern, America/New York are all valid replies.  Return None if a string name isn't known.  Note that this is a method rather than a fixed string primarily because some tzinfo subclasses will wish to return different names depending on the specific value of dt passed, especially if the tzinfo class is accounting for daylight time.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.tzinfo.tzname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tzinfo}}.{{c2::fromutc}}({{c3::dt}})",
+      "Body": "This is called from the default datetime.astimezone() implementation.  When called from that, dt.tzinfo is self, and dt's date and time data are to be viewed as expressing a UTC time.  The purpose of fromutc() is to adjust the date and time data, returning an equivalent datetime in self's local time.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.tzinfo.fromutc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["last", "docutils", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dateutil}}.{{c2::tz}}",
+      "Body": "The standard library has timezone class for handling arbitrary fixed offsets from UTC and timezone.utc as UTC timezone instance.",
+      "Link": "https://docs.python.org/3/library/datetime.html#tzinfo-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["last", "docutils", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::IANA}} {{c2::timezone}} {{c3::database}}",
+      "Body": "The standard library has timezone class for handling arbitrary fixed offsets from UTC and timezone.utc as UTC timezone instance.",
+      "Link": "https://docs.python.org/3/library/datetime.html#tzinfo-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::datetime}}.{{c3::timezone}}({{c4::offset}}, {{c5::name}}={{c6::None}})",
+      "Body": "The offset argument must be specified as a timedelta object representing the difference between the local time and UTC.  It must be strictly between -timedelta(hours=24) and timedelta(hours=24), otherwise ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timezone"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timezone}}.{{c2::utcoffset}}({{c3::dt}})",
+      "Body": "Return the fixed value specified when the timezone instance is constructed.  The dt argument is ignored.  The return value is a timedelta instance equal to the difference between the local time and UTC.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timezone.utcoffset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timezone}}.{{c2::tzname}}({{c3::dt}})",
+      "Body": "Return the fixed value specified when the timezone instance is constructed.  If name is not provided in the constructor, the name returned by tzname(dt) is generated from the value of the offset as follows.  If offset is timedelta(0), the name is UTC, otherwise it is a string 'UTCHH:MM', where  is the sign of offset, HH and MM are two digits of offset.hours and offset.minutes respectively.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timezone.tzname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timezone}}.{{c2::dst}}({{c3::dt}})",
+      "Body": "Always returns None.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timezone.dst"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timezone}}.{{c2::fromutc}}({{c3::dt}})",
+      "Body": "Return dt + offset.  The dt argument must be an aware datetime instance, with tzinfo set to self.",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timezone.fromutc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::timezone}}.{{c2::utc}}",
+      "Body": "The UTC timezone, timezone(timedelta(0)).",
+      "Link": "https://docs.python.org/3/library/datetime.html#datetime.timezone.utc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "%{{c1::z}}",
+      "Body": "utcoffset() is transformed into a string of the form HHMM[SS[.ffffff]], where HH is a 2-digit string giving the number of UTC offset hours, MM is a 2-digit string giving the number of UTC offset minutes, SS is a 2-digit string giving the number of UTC offset seconds and ffffff is a 6-digit string giving the number of UTC offset microseconds.  The ffffff part is omitted when the offset is a whole number of seconds and both the ffffff and the SS part is omitted when the offset is a whole number of minutes.  For example, if utcoffset() returns timedelta(hours=-3, minutes=-30), %z is replaced with the string '-0330'.",
+      "Link": "https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["docutils", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "%{{c1::Z}}",
+      "Body": "If tzname() returns None, %Z is replaced by an empty string.  Otherwise %Z is replaced by the returned value, which must be a string.",
+      "Link": "https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::calendar}}.{{c3::Calendar}}({{c4::firstweekday}}=0)",
+      "Body": "Creates a Calendar object. firstweekday is an integer specifying the first day of the week. 0 is Monday (the default), 6 is Sunday.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::iterweekdays}}()",
+      "Body": "Return an iterator for the week day numbers that will be used for one week.  The first value from the iterator will be the same as the value of the firstweekday property.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.iterweekdays"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::itermonthdates}}({{c4::year}}, {{c5::month}})",
+      "Body": "Return an iterator for the month month (112) in the year year. This iterator will return all days (as datetime.date objects) for the month and all days before the start of the month or after the end of the month that are required to get a complete week.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.itermonthdates"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::itermonthdays}}({{c4::year}}, {{c5::month}})",
+      "Body": "Return an iterator for the month month in the year year similar to itermonthdates(), but not restricted by the datetime.date range. Days returned will simply be day of the month numbers.  For the days outside of the specified month, the day number is 0.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.itermonthdays"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::itermonthdays}}2({{c4::year}}, {{c5::month}})",
+      "Body": "Return an iterator for the month month in the year year similar to itermonthdates(), but not restricted by the datetime.date range. Days returned will be tuples consisting of a day of the month number and a week day number.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.itermonthdays2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::itermonthdays}}3({{c4::year}}, {{c5::month}})",
+      "Body": "Return an iterator for the month month in the year year similar to itermonthdates(), but not restricted by the datetime.date range. Days returned will be tuples consisting of a year, a month and a day of the month numbers.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.itermonthdays3"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::itermonthdays}}4({{c4::year}}, {{c5::month}})",
+      "Body": "Return an iterator for the month month in the year year similar to itermonthdates(), but not restricted by the datetime.date range. Days returned will be tuples consisting of a year, a month, a day of the month, and a day of the week numbers.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.itermonthdays4"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::monthdatescalendar}}({{c4::year}}, {{c5::month}})",
+      "Body": "Return a list of the weeks in the month month of the year as full weeks.  Weeks are lists of seven datetime.date objects.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.monthdatescalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::monthdays}}2{{c4::calendar}}({{c5::year}}, {{c6::month}})",
+      "Body": "Return a list of the weeks in the month month of the year as full weeks.  Weeks are lists of seven tuples of day numbers and weekday numbers.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.monthdays2calendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::monthdayscalendar}}({{c4::year}}, {{c5::month}})",
+      "Body": "Return a list of the weeks in the month month of the year as full weeks.  Weeks are lists of seven day numbers.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.monthdayscalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::yeardatescalendar}}({{c4::year}}, {{c5::width}}=3)",
+      "Body": "Return the data for the specified year ready for formatting. The return value is a list of month rows. Each month row contains up to width months (defaulting to 3). Each month contains between 4 and 6 weeks and each week contains 17 days. Days are datetime.date objects.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.yeardatescalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::yeardays}}2{{c4::calendar}}({{c5::year}}, {{c6::width}}=3)",
+      "Body": "Return the data for the specified year ready for formatting (similar to yeardatescalendar()). Entries in the week lists are tuples of day numbers and weekday numbers. Day numbers outside this month are zero.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.yeardays2calendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::Calendar}}.{{c3::yeardayscalendar}}({{c4::year}}, {{c5::width}}=3)",
+      "Body": "Return the data for the specified year ready for formatting (similar to yeardatescalendar()). Entries in the week lists are day numbers. Day numbers outside this month are zero.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.Calendar.yeardayscalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::calendar}}.{{c3::TextCalendar}}({{c4::firstweekday}}=0)",
+      "Body": "This class can be used to generate plain text calendars.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.TextCalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::TextCalendar}}.{{c3::formatmonth}}({{c4::theyear}}, {{c5::themonth}}, {{c6::w}}=0, {{c7::l}}=0)",
+      "Body": "Return a month's calendar in a multi-line string. If w is provided, it specifies the width of the date columns, which are centered. If l is given, it specifies the number of lines that each week will use. Depends on the first weekday as specified in the constructor or set by the setfirstweekday() method.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.TextCalendar.formatmonth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::TextCalendar}}.{{c3::prmonth}}({{c4::theyear}}, {{c5::themonth}}, {{c6::w}}=0, {{c7::l}}=0)",
+      "Body": "Print a month's calendar as returned by formatmonth().",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.TextCalendar.prmonth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::TextCalendar}}.{{c3::formatyear}}({{c4::theyear}}, {{c5::w}}=2, {{c6::l}}=1, {{c7::c}}=6, {{c8::m}}=3)",
+      "Body": "Return a m-column calendar for an entire year as a multi-line string. Optional parameters w, l, and c are for date column width, lines per week, and number of spaces between month columns, respectively. Depends on the first weekday as specified in the constructor or set by the setfirstweekday() method.  The earliest year for which a calendar can be generated is platform-dependent.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.TextCalendar.formatyear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::TextCalendar}}.{{c3::pryear}}({{c4::theyear}}, {{c5::w}}=2, {{c6::l}}=1, {{c7::c}}=6, {{c8::m}}=3)",
+      "Body": "Print the calendar for an entire year as returned by formatyear().",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.TextCalendar.pryear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::calendar}}.{{c3::HTMLCalendar}}({{c4::firstweekday}}=0)",
+      "Body": "This class can be used to generate HTML calendars.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::formatmonth}}({{c4::theyear}}, {{c5::themonth}}, {{c6::withyear}}={{c7::True}})",
+      "Body": "Return a month's calendar as an HTML table. If withyear is true the year will be included in the header, otherwise just the month name will be used.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.formatmonth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::formatyear}}({{c4::theyear}}, {{c5::width}}=3)",
+      "Body": "Return a year's calendar as an HTML table. width (defaulting to 3) specifies the number of months per row.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.formatyear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::formatyearpage}}({{c4::theyear}}, {{c5::width}}=3, {{c6::css}}='{{c7::calendar}}.{{c8::css}}', {{c9::encoding}}={{c10::None}})",
+      "Body": "Return a year's calendar as a complete HTML page. width (defaulting to 3) specifies the number of months per row. css is the name for the cascading style sheet to be used. None can be passed if no style sheet should be used. encoding specifies the encoding to be used for the output (defaulting to the system default encoding).",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.formatyearpage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::cssclasses}}",
+      "Body": "A list of CSS classes used for each weekday. The default class list is:",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.cssclasses"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::cssclass_noday}}",
+      "Body": "The CSS class for a weekday occurring in the previous or coming month.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.cssclass_noday"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::cssclasses_weekday_head}}",
+      "Body": "A list of CSS classes used for weekday names in the header row. The default is the same as cssclasses.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.cssclasses_weekday_head"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::cssclass_month_head}}",
+      "Body": "The month's head CSS class (used by formatmonthname()). The default value is \"month\".",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.cssclass_month_head"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::cssclass_month}}",
+      "Body": "The CSS class for the whole month's table (used by formatmonth()). The default value is \"month\".",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.cssclass_month"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::cssclass_year}}",
+      "Body": "The CSS class for the whole year's table of tables (used by formatyear()). The default value is \"year\".",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.cssclass_year"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::HTMLCalendar}}.{{c3::cssclass_year_head}}",
+      "Body": "The CSS class for the table head for the whole year (used by formatyear()). The default value is \"year\".",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.cssclass_year_head"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::calendar}}.{{c3::LocaleTextCalendar}}({{c4::firstweekday}}=0, {{c5::locale}}={{c6::None}})",
+      "Body": "This subclass of TextCalendar can be passed a locale name in the constructor and will return month and weekday names in the specified locale. If this locale includes an encoding all strings containing month and weekday names will be returned as unicode.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.LocaleTextCalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::calendar}}.{{c3::LocaleHTMLCalendar}}({{c4::firstweekday}}=0, {{c5::locale}}={{c6::None}})",
+      "Body": "This subclass of HTMLCalendar can be passed a locale name in the constructor and will return month and weekday names in the specified locale. If this locale includes an encoding all strings containing month and weekday names will be returned as unicode.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.LocaleHTMLCalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::setfirstweekday}}({{c3::weekday}})",
+      "Body": "Sets the weekday (0 is Monday, 6 is Sunday) to start each week. The values MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, and SUNDAY are provided for convenience. For example, to set the first weekday to Sunday:",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.setfirstweekday"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::firstweekday}}()",
+      "Body": "Returns the current setting for the weekday to start each week.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.firstweekday"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::isleap}}({{c3::year}})",
+      "Body": "Returns True if year is a leap year, otherwise False.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.isleap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::leapdays}}({{c3::y}}1, {{c4::y}}2)",
+      "Body": "Returns the number of leap years in the range from y1 to y2 (exclusive), where y1 and y2 are years.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.leapdays"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::weekday}}({{c3::year}}, {{c4::month}}, {{c5::day}})",
+      "Body": "Returns the day of the week (0 is Monday) for year (1970), month (112), day (131).",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.weekday"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::weekheader}}({{c3::n}})",
+      "Body": "Return a header containing abbreviated weekday names. n specifies the width in characters for one weekday.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.weekheader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::monthrange}}({{c3::year}}, {{c4::month}})",
+      "Body": "Returns weekday of first day of the month and number of days in month,  for the specified year and month.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.monthrange"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::monthcalendar}}({{c3::year}}, {{c4::month}})",
+      "Body": "Returns a matrix representing a month's calendar.  Each row represents a week; days outside of the month a represented by zeros. Each week begins with Monday unless set by setfirstweekday().",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.monthcalendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::prmonth}}({{c3::theyear}}, {{c4::themonth}}, {{c5::w}}=0, {{c6::l}}=0)",
+      "Body": "Prints a month's calendar as returned by month().",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.prmonth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::month}}({{c3::theyear}}, {{c4::themonth}}, {{c5::w}}=0, {{c6::l}}=0)",
+      "Body": "Returns a month's calendar in a multi-line string using the formatmonth() of the TextCalendar class.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.month"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::prcal}}({{c3::year}}, {{c4::w}}=0, {{c5::l}}=0, {{c6::c}}=6, {{c7::m}}=3)",
+      "Body": "Prints the calendar for an entire year as returned by  calendar().",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.prcal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::calendar}}({{c3::year}}, {{c4::w}}=2, {{c5::l}}=1, {{c6::c}}=6, {{c7::m}}=3)",
+      "Body": "Returns a 3-column calendar for an entire year as a multi-line string using the formatyear() of the TextCalendar class.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.calendar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::timegm}}({{c3::tuple}})",
+      "Body": "An unrelated but handy function that takes a time tuple such as returned by the gmtime() function in the time module, and returns the corresponding Unix timestamp value, assuming an epoch of 1970, and the POSIX encoding.  In fact, time.gmtime() and timegm() are each others' inverse.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.timegm"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::day_name}}",
+      "Body": "An array that represents the days of the week in the current locale.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.day_name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::day_abbr}}",
+      "Body": "An array that represents the abbreviated days of the week in the current locale.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.day_abbr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::month_name}}",
+      "Body": "An array that represents the months of the year in the current locale.  This follows normal convention of January being month number 1, so it has a length of 13 and  month_name[0] is the empty string.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.month_name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::calendar}}.{{c2::month_abbr}}",
+      "Body": "An array that represents the abbreviated months of the year in the current locale.  This follows normal convention of January being month number 1, so it has a length of 13 and  month_abbr[0] is the empty string.",
+      "Link": "https://docs.python.org/3/library/calendar.html#calendar.month_abbr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::ChainMap}}(*maps)",
+      "Body": "A ChainMap groups multiple dicts or other mappings together to create a single, updateable view.  If no maps are specified, a single empty dictionary is provided so that a new chain always has at least one mapping.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.ChainMap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::ChainMap}}.{{c3::maps}}",
+      "Body": "A user updateable list of mappings.  The list is ordered from first-searched to last-searched.  It is the only stored state and can be modified to change which mappings are searched.  The list should always contain at least one mapping.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.ChainMap.maps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::ChainMap}}.{{c3::new_child}}({{c4::m}}={{c5::None}})",
+      "Body": "Returns a new ChainMap containing a new map followed by all of the maps in the current instance.  If m is specified, it becomes the new map at the front of the list of mappings; if not specified, an empty dict is used, so that a call to d.new_child() is equivalent to: ChainMap({}, *d.maps).  This method is used for creating subcontexts that can be updated without altering values in any of the parent mappings.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.ChainMap.new_child"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::ChainMap}}.{{c3::parents}}",
+      "Body": "Property returning a new ChainMap containing all of the maps in the current instance except the first one.  This is useful for skipping the first map in the search.  Use cases are similar to those for the nonlocal keyword used in nested scopes.  The use cases also parallel those for the built-in super() function.  A reference to d.parents is equivalent to: ChainMap(*d.maps[1:]).",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.ChainMap.parents"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::Counter}}([{{c4::iterable}}-{{c5::or}}-{{c6::mapping}}])",
+      "Body": "A Counter is a dict subclass for counting hashable objects. It is an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values.  Counts are allowed to be any integer value including zero or negative counts.  The Counter class is similar to bags or multisets in other languages.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.Counter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::Counter}}.{{c3::elements}}()",
+      "Body": "Return an iterator over elements repeating each as many times as its count.  Elements are returned in arbitrary order.  If an element's count is less than one, elements() will ignore it.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.Counter.elements"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::Counter}}.{{c3::most_common}}([{{c4::n}}])",
+      "Body": "Return a list of the n most common elements and their counts from the most common to the least.  If n is omitted or None, most_common() returns all elements in the counter. Elements with equal counts are ordered arbitrarily:",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.Counter.most_common"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::Counter}}.{{c3::subtract}}([{{c4::iterable}}-{{c5::or}}-{{c6::mapping}}])",
+      "Body": "Elements are subtracted from an iterable or from another mapping (or counter).  Like dict.update() but subtracts counts instead of replacing them.  Both inputs and outputs may be zero or negative.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.Counter.subtract"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::Counter}}.{{c3::fromkeys}}({{c4::iterable}})",
+      "Body": "This class method is not implemented for Counter objects.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.Counter.fromkeys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::Counter}}.{{c3::update}}([{{c4::iterable}}-{{c5::or}}-{{c6::mapping}}])",
+      "Body": "Elements are counted from an iterable or added-in from another mapping (or counter).  Like dict.update() but adds counts instead of replacing them.  Also, the iterable is expected to be a sequence of elements, not a sequence of (key, value) pairs.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.Counter.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::deque}}([{{c4::iterable}}[, {{c5::maxlen}}]])",
+      "Body": "Returns a new deque object initialized left-to-right (using append()) with data from iterable.  If iterable is not specified, the new deque is empty.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::append}}({{c4::x}})",
+      "Body": "Add x to the right side of the deque.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.append"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::appendleft}}({{c4::x}})",
+      "Body": "Add x to the left side of the deque.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.appendleft"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::clear}}()",
+      "Body": "Remove all elements from the deque leaving it with length 0.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.clear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::copy}}()",
+      "Body": "Create a shallow copy of the deque.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::count}}({{c4::x}})",
+      "Body": "Count the number of deque elements equal to x.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::extend}}({{c4::iterable}})",
+      "Body": "Extend the right side of the deque by appending elements from the iterable argument.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.extend"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::extendleft}}({{c4::iterable}})",
+      "Body": "Extend the left side of the deque by appending elements from iterable. Note, the series of left appends results in reversing the order of elements in the iterable argument.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.extendleft"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::index}}({{c4::x}}[, {{c5::start}}[, {{c6::stop}}]])",
+      "Body": "Return the position of x in the deque (at or after index start and before index stop).  Returns the first match or raises ValueError if not found.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.index"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::insert}}({{c4::i}}, {{c5::x}})",
+      "Body": "Insert x into the deque at position i.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.insert"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::pop}}()",
+      "Body": "Remove and return an element from the right side of the deque. If no elements are present, raises an IndexError.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.pop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::popleft}}()",
+      "Body": "Remove and return an element from the left side of the deque. If no elements are present, raises an IndexError.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.popleft"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::remove}}({{c4::value}})",
+      "Body": "Remove the first occurrence of value.  If not found, raises a ValueError.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.remove"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::reverse}}()",
+      "Body": "Reverse the elements of the deque in-place and then return None.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.reverse"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::rotate}}({{c4::n}}=1)",
+      "Body": "Rotate the deque n steps to the right.  If n is negative, rotate to the left.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.rotate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::deque}}.{{c3::maxlen}}",
+      "Body": "Maximum size of a deque or None if unbounded.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.deque.maxlen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::defaultdict}}([{{c4::default_factory}}[, ...]])",
+      "Body": "Returns a new dictionary-like object.  defaultdict is a subclass of the built-in dict class.  It overrides one method and adds one writable instance variable.  The remaining functionality is the same as for the dict class and is not documented here.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.defaultdict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::defaultdict}}.{{c3::__missing__}}({{c4::key}})",
+      "Body": "If the default_factory attribute is None, this raises a KeyError exception with the key as argument.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.defaultdict.__missing__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::defaultdict}}.{{c3::default_factory}}",
+      "Body": "This attribute is used by the __missing__() method; it is initialized from the first argument to the constructor, if present, or to None, if absent.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.defaultdict.default_factory"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::namedtuple}}({{c3::typename}}, {{c4::field_names}}, *, {{c5::rename}}={{c6::False}}, {{c7::defaults}}={{c8::None}}, {{c9::module}}={{c10::None}})",
+      "Body": "Returns a new tuple subclass named typename.  The new subclass is used to create tuple-like objects that have fields accessible by attribute lookup as well as being indexable and iterable.  Instances of the subclass also have a helpful docstring (with typename and field_names) and a helpful __repr__() method which lists the tuple contents in a name=value format.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.namedtuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::somenamedtuple}}.{{c3::_make}}({{c4::iterable}})",
+      "Body": "Class method that makes a new instance from an existing sequence or iterable.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.somenamedtuple._make"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::somenamedtuple}}.{{c2::_asdict}}()",
+      "Body": "Return a new OrderedDict which maps field names to their corresponding values:",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.somenamedtuple._asdict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::somenamedtuple}}.{{c2::_replace}}(**kwargs)",
+      "Body": "Return a new instance of the named tuple replacing specified fields with new values:",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.somenamedtuple._replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::somenamedtuple}}.{{c2::_fields}}",
+      "Body": "Tuple of strings listing the field names.  Useful for introspection and for creating new named tuple types from existing named tuples.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.somenamedtuple._fields"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::somenamedtuple}}.{{c2::_fields_defaults}}",
+      "Body": "Dictionary mapping field names to default values.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.somenamedtuple._fields_defaults"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::OrderedDict}}([{{c4::items}}])",
+      "Body": "Return an instance of a dict subclass, supporting the usual dict methods.  An OrderedDict is a dict that remembers the order that keys were first inserted. If a new entry overwrites an existing entry, the original insertion position is left unchanged.  Deleting an entry and reinserting it will move it to the end.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.OrderedDict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::OrderedDict}}.{{c3::popitem}}({{c4::last}}={{c5::True}})",
+      "Body": "The popitem() method for ordered dictionaries returns and removes a (key, value) pair.  The pairs are returned in LIFO order if last is true or FIFO order if false.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.OrderedDict.popitem"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::OrderedDict}}.{{c3::move_to_end}}({{c4::key}}, {{c5::last}}={{c6::True}})",
+      "Body": "Move an existing key to either end of an ordered dictionary.  The item is moved to the right end if last is true (the default) or to the beginning if last is false.  Raises KeyError if the key does not exist:",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.OrderedDict.move_to_end"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::UserDict}}([{{c4::initialdata}}])",
+      "Body": "Class that simulates a dictionary.  The instance's contents are kept in a regular dictionary, which is accessible via the data attribute of UserDict instances.  If initialdata is provided, data is initialized with its contents; note that a reference to initialdata will not be kept, allowing it be used for other purposes.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.UserDict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::UserDict}}.{{c3::data}}",
+      "Body": "A real dictionary used to store the contents of the UserDict class.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.UserDict.data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::UserList}}([{{c4::list}}])",
+      "Body": "Class that simulates a list.  The instance's contents are kept in a regular list, which is accessible via the data attribute of UserList instances.  The instance's contents are initially set to a copy of list, defaulting to the empty list [].  list can be any iterable, for example a real list or a UserList object.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.UserList"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::UserList}}.{{c3::data}}",
+      "Body": "A real list object used to store the contents of the UserList class.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.UserList.data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::UserString}}({{c4::seq}})",
+      "Body": "Class that simulates a string object.  The instance's content is kept in a regular string object, which is accessible via the data attribute of UserString instances.  The instance's contents are initially set to a copy of seq.  The seq argument can be any object which can be converted into a string using the built-in str() function.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.UserString"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::collections}}.{{c2::UserString}}.{{c3::data}}",
+      "Body": "A real str object used to store the contents of the UserString class.",
+      "Link": "https://docs.python.org/3/library/collections.html#collections.UserString.data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Container}}",
+      "Body": "ABCs for classes that provide respectively the methods __contains__(), __hash__(), __len__(), and __call__().",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Container"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Hashable}}",
+      "Body": "ABCs for classes that provide respectively the methods __contains__(), __hash__(), __len__(), and __call__().",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Hashable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Sized}}",
+      "Body": "ABCs for classes that provide respectively the methods __contains__(), __hash__(), __len__(), and __call__().",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Sized"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Callable}}",
+      "Body": "ABCs for classes that provide respectively the methods __contains__(), __hash__(), __len__(), and __call__().",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Iterable}}",
+      "Body": "ABC for classes that provide the __iter__() method.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Collection}}",
+      "Body": "ABC for sized iterable container classes.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Collection"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Iterator}}",
+      "Body": "ABC for classes that provide the __iter__() and __next__() methods.  See also the definition of iterator.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Reversible}}",
+      "Body": "ABC for iterable classes that also provide the __reversed__() method.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Reversible"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Generator}}",
+      "Body": "ABC for generator classes that implement the protocol defined in PEP 342 that extends iterators with the send(), throw() and close() methods. See also the definition of generator.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Generator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Sequence}}",
+      "Body": "ABCs for read-only and mutable sequences.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::MutableSequence}}",
+      "Body": "ABCs for read-only and mutable sequences.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::ByteString}}",
+      "Body": "ABCs for read-only and mutable sequences.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.ByteString"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Set}}",
+      "Body": "ABCs for read-only and mutable sets.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::MutableSet}}",
+      "Body": "ABCs for read-only and mutable sets.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Mapping}}",
+      "Body": "ABCs for read-only and mutable mappings.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Mapping"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::MutableMapping}}",
+      "Body": "ABCs for read-only and mutable mappings.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableMapping"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::MappingView}}",
+      "Body": "ABCs for mapping, items, keys, and values views.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.MappingView"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::ItemsView}}",
+      "Body": "ABCs for mapping, items, keys, and values views.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.ItemsView"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::KeysView}}",
+      "Body": "ABCs for mapping, items, keys, and values views.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.KeysView"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::ValuesView}}",
+      "Body": "ABCs for mapping, items, keys, and values views.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.ValuesView"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Awaitable}}",
+      "Body": "ABC for awaitable objects, which can be used in await expressions.  Custom implementations must provide the __await__() method.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::Coroutine}}",
+      "Body": "ABC for coroutine compatible classes.  These implement the following methods, defined in Coroutine Objects: send(), throw(), and close().  Custom implementations must also implement __await__().  All Coroutine instances are also instances of Awaitable.  See also the definition of coroutine.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.Coroutine"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::AsyncIterable}}",
+      "Body": "ABC for classes that provide __aiter__ method.  See also the definition of asynchronous iterable.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::AsyncIterator}}",
+      "Body": "ABC for classes that provide __aiter__ and __anext__ methods.  See also the definition of asynchronous iterator.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::collections}}.{{c3::abc}}.{{c4::AsyncGenerator}}",
+      "Body": "ABC for asynchronous generator classes that implement the protocol defined in PEP 525 and PEP 492.",
+      "Link": "https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncGenerator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::heapq}}.{{c2::heappush}}({{c3::heap}}, {{c4::item}})",
+      "Body": "Push the value item onto the heap, maintaining the heap invariant.",
+      "Link": "https://docs.python.org/3/library/heapq.html#heapq.heappush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::heapq}}.{{c2::heappop}}({{c3::heap}})",
+      "Body": "Pop and return the smallest item from the heap, maintaining the heap invariant.  If the heap is empty, IndexError is raised.  To access the smallest item without popping it, use heap[0].",
+      "Link": "https://docs.python.org/3/library/heapq.html#heapq.heappop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::heapq}}.{{c2::heappushpop}}({{c3::heap}}, {{c4::item}})",
+      "Body": "Push item on the heap, then pop and return the smallest item from the heap.  The combined action runs more efficiently than heappush() followed by a separate call to heappop().",
+      "Link": "https://docs.python.org/3/library/heapq.html#heapq.heappushpop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::heapq}}.{{c2::heapify}}({{c3::x}})",
+      "Body": "Transform list x into a heap, in-place, in linear time.",
+      "Link": "https://docs.python.org/3/library/heapq.html#heapq.heapify"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::heapq}}.{{c2::heapreplace}}({{c3::heap}}, {{c4::item}})",
+      "Body": "Pop and return the smallest item from the heap, and also push the new item. The heap size doesn't change. If the heap is empty, IndexError is raised.",
+      "Link": "https://docs.python.org/3/library/heapq.html#heapq.heapreplace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::heapq}}.{{c2::merge}}(*iterables, {{c3::key}}={{c4::None}}, {{c5::reverse}}={{c6::False}})",
+      "Body": "Merge multiple sorted inputs into a single sorted output (for example, merge timestamped entries from multiple log files).  Returns an iterator over the sorted values.",
+      "Link": "https://docs.python.org/3/library/heapq.html#heapq.merge"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::heapq}}.{{c2::nlargest}}({{c3::n}}, {{c4::iterable}}, {{c5::key}}={{c6::None}})",
+      "Body": "Return a list with the n largest elements from the dataset defined by iterable.  key, if provided, specifies a function of one argument that is used to extract a comparison key from each element in iterable (for example, key=str.lower).  Equivalent to:  sorted(iterable, key=key, reverse=True)[:n].",
+      "Link": "https://docs.python.org/3/library/heapq.html#heapq.nlargest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::heapq}}.{{c2::nsmallest}}({{c3::n}}, {{c4::iterable}}, {{c5::key}}={{c6::None}})",
+      "Body": "Return a list with the n smallest elements from the dataset defined by iterable.  key, if provided, specifies a function of one argument that is used to extract a comparison key from each element in iterable (for example, key=str.lower).  Equivalent to:  sorted(iterable, key=key)[:n].",
+      "Link": "https://docs.python.org/3/library/heapq.html#heapq.nsmallest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bisect}}.{{c2::bisect_left}}({{c3::a}}, {{c4::x}}, {{c5::lo}}=0, {{c6::hi}}={{c7::len}}({{c8::a}}))",
+      "Body": "Locate the insertion point for x in a to maintain sorted order. The parameters lo and hi may be used to specify a subset of the list which should be considered; by default the entire list is used.  If x is already present in a, the insertion point will be before (to the left of) any existing entries.  The return value is suitable for use as the first parameter to list.insert() assuming that a is already sorted.",
+      "Link": "https://docs.python.org/3/library/bisect.html#bisect.bisect_left"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bisect}}.{{c2::bisect_right}}({{c3::a}}, {{c4::x}}, {{c5::lo}}=0, {{c6::hi}}={{c7::len}}({{c8::a}}))",
+      "Body": "Similar to bisect_left(), but returns an insertion point which comes after (to the right of) any existing entries of x in a.",
+      "Link": "https://docs.python.org/3/library/bisect.html#bisect.bisect_right"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bisect}}.{{c2::bisect}}({{c3::a}}, {{c4::x}}, {{c5::lo}}=0, {{c6::hi}}={{c7::len}}({{c8::a}}))",
+      "Body": "Similar to bisect_left(), but returns an insertion point which comes after (to the right of) any existing entries of x in a.",
+      "Link": "https://docs.python.org/3/library/bisect.html#bisect.bisect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bisect}}.{{c2::insort_left}}({{c3::a}}, {{c4::x}}, {{c5::lo}}=0, {{c6::hi}}={{c7::len}}({{c8::a}}))",
+      "Body": "Insert x in a in sorted order.  This is equivalent to a.insert(bisect.bisect_left(a, x, lo, hi), x) assuming that a is already sorted.  Keep in mind that the O(log n) search is dominated by the slow O(n) insertion step.",
+      "Link": "https://docs.python.org/3/library/bisect.html#bisect.insort_left"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bisect}}.{{c2::insort_right}}({{c3::a}}, {{c4::x}}, {{c5::lo}}=0, {{c6::hi}}={{c7::len}}({{c8::a}}))",
+      "Body": "Similar to insort_left(), but inserting x in a after any existing entries of x.",
+      "Link": "https://docs.python.org/3/library/bisect.html#bisect.insort_right"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bisect}}.{{c2::insort}}({{c3::a}}, {{c4::x}}, {{c5::lo}}=0, {{c6::hi}}={{c7::len}}({{c8::a}}))",
+      "Body": "Similar to insort_left(), but inserting x in a after any existing entries of x.",
+      "Link": "https://docs.python.org/3/library/bisect.html#bisect.insort"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::array}}.{{c3::array}}({{c4::typecode}}[, {{c5::initializer}}])",
+      "Body": "A new array whose items are restricted by typecode, and initialized from the optional initializer value, which must be a list, a bytes-like object, or iterable over elements of the appropriate type.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::typecodes}}",
+      "Body": "A string with all available type codes.",
+      "Link": "https://docs.python.org/3/library/array.html#array.typecodes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::typecode}}",
+      "Body": "The typecode character used to create the array.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.typecode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::itemsize}}",
+      "Body": "The length in bytes of one array item in the internal representation.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.itemsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::append}}({{c3::x}})",
+      "Body": "Append a new item with value x to the end of the array.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.append"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::buffer_info}}()",
+      "Body": "Return a tuple (address, length) giving the current memory address and the length in elements of the buffer used to hold array's contents.  The size of the memory buffer in bytes can be computed as array.buffer_info()[1] * array.itemsize.  This is occasionally useful when working with low-level (and inherently unsafe) I/O interfaces that require memory addresses, such as certain ioctl() operations.  The returned numbers are valid as long as the array exists and no length-changing operations are applied to it.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.buffer_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::byteswap}}()",
+      "Body": "Byteswap all items of the array.  This is only supported for values which are 1, 2, 4, or 8 bytes in size; for other types of values, RuntimeError is raised.  It is useful when reading data from a file written on a machine with a different byte order.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.byteswap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::count}}({{c3::x}})",
+      "Body": "Return the number of occurrences of x in the array.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::extend}}({{c3::iterable}})",
+      "Body": "Append items from iterable to the end of the array.  If iterable is another array, it must have exactly the same type code; if not, TypeError will be raised.  If iterable is not an array, it must be iterable and its elements must be the right type to be appended to the array.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.extend"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::frombytes}}({{c3::s}})",
+      "Body": "Appends items from the string, interpreting the string as an array of machine values (as if it had been read from a file using the fromfile() method).",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.frombytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::fromfile}}({{c3::f}}, {{c4::n}})",
+      "Body": "Read n items (as machine values) from the file object f and append them to the end of the array.  If less than n items are available, EOFError is raised, but the items that were available are still inserted into the array. f must be a real built-in file object; something else with a read() method won't do.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.fromfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::fromlist}}({{c3::list}})",
+      "Body": "Append items from the list.  This is equivalent to for x in list: a.append(x) except that if there is a type error, the array is unchanged.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.fromlist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::fromstring}}()",
+      "Body": "Deprecated alias for frombytes().",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.fromstring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::fromunicode}}({{c3::s}})",
+      "Body": "Extends this array with data from the given unicode string.  The array must be a type 'u' array; otherwise a ValueError is raised.  Use array.frombytes(unicodestring.encode(enc)) to append Unicode data to an array of some other type.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.fromunicode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::index}}({{c3::x}})",
+      "Body": "Return the smallest i such that i is the index of the first occurrence of x in the array.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.index"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::insert}}({{c3::i}}, {{c4::x}})",
+      "Body": "Insert a new item with value x in the array before position i. Negative values are treated as being relative to the end of the array.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.insert"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::pop}}([{{c3::i}}])",
+      "Body": "Removes the item with the index i from the array and returns it. The optional argument defaults to -1, so that by default the last item is removed and returned.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.pop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::remove}}({{c3::x}})",
+      "Body": "Remove the first occurrence of x from the array.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.remove"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::reverse}}()",
+      "Body": "Reverse the order of the items in the array.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.reverse"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::tobytes}}()",
+      "Body": "Convert the array to an array of machine values and return the bytes representation (the same sequence of bytes that would be written to a file by the tofile() method.)",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.tobytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::tofile}}({{c3::f}})",
+      "Body": "Write all items (as machine values) to the file object f.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.tofile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::tolist}}()",
+      "Body": "Convert the array to an ordinary list with the same items.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.tolist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::tostring}}()",
+      "Body": "Deprecated alias for tobytes().",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.tostring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::array}}.{{c2::tounicode}}()",
+      "Body": "Convert the array to a unicode string.  The array must be a type 'u' array; otherwise a ValueError is raised. Use array.tobytes().decode(enc) to obtain a unicode string from an array of some other type.",
+      "Link": "https://docs.python.org/3/library/array.html#array.array.tounicode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::weakref}}.{{c3::ref}}({{c4::object}}[, {{c5::callback}}])",
+      "Body": "Return a weak reference to object.  The original object can be retrieved by calling the reference object if the referent is still alive; if the referent is no longer alive, calling the reference object will cause None to be returned.  If callback is provided and not None, and the returned weakref object is still alive, the callback will be called when the object is about to be finalized; the weak reference object will be passed as the only parameter to the callback; the referent will no longer be available.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.ref"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::ref}}.{{c3::__callback__}}",
+      "Body": "This read-only attribute returns the callback currently associated to the weakref.  If there is no callback or if the referent of the weakref is no longer alive then this attribute will have value None.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.ref.__callback__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::proxy}}({{c3::object}}[, {{c4::callback}}])",
+      "Body": "Return a proxy to object which uses a weak reference.  This supports use of the proxy in most contexts instead of requiring the explicit dereferencing used with weak reference objects.  The returned object will have a type of either ProxyType or CallableProxyType, depending on whether object is callable.  Proxy objects are not hashable regardless of the referent; this avoids a number of problems related to their fundamentally mutable nature, and prevent their use as dictionary keys.  callback is the same as the parameter of the same name to the ref() function.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.proxy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::getweakrefcount}}({{c3::object}})",
+      "Body": "Return the number of weak references and proxies which refer to object.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.getweakrefcount"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::getweakrefs}}({{c3::object}})",
+      "Body": "Return a list of all weak reference and proxy objects which refer to object.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.getweakrefs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::weakref}}.{{c3::WeakKeyDictionary}}([{{c4::dict}}])",
+      "Body": "Mapping class that references keys weakly.  Entries in the dictionary will be discarded when there is no longer a strong reference to the key.  This can be used to associate additional data with an object owned by other parts of an application without adding attributes to those objects.  This can be especially useful with objects that override attribute accesses.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.WeakKeyDictionary"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::WeakKeyDictionary}}.{{c2::keyrefs}}()",
+      "Body": "Return an iterable of the weak references to the keys.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.WeakKeyDictionary.keyrefs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::weakref}}.{{c3::WeakValueDictionary}}([{{c4::dict}}])",
+      "Body": "Mapping class that references values weakly.  Entries in the dictionary will be discarded when no strong reference to the value exists any more.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.WeakValueDictionary"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::WeakValueDictionary}}.{{c2::valuerefs}}()",
+      "Body": "Return an iterable of the weak references to the values.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.WeakValueDictionary.valuerefs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::weakref}}.{{c3::WeakSet}}([{{c4::elements}}])",
+      "Body": "Set class that keeps weak references to its elements.  An element will be discarded when no strong reference to it exists any more.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.WeakSet"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::weakref}}.{{c3::WeakMethod}}({{c4::method}})",
+      "Body": "A custom ref subclass which simulates a weak reference to a bound method (i.e., a method defined on a class and looked up on an instance). Since a bound method is ephemeral, a standard weak reference cannot keep hold of it.  WeakMethod has special code to recreate the bound method until either the object or the original function dies:",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.WeakMethod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::weakref}}.{{c3::finalize}}({{c4::obj}}, {{c5::func}}, *args, **kwargs)",
+      "Body": "Return a callable finalizer object which will be called when obj is garbage collected. Unlike an ordinary weak reference, a finalizer will always survive until the reference object is collected, greatly simplifying lifecycle management.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.finalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::finalize}}.{{c3::__call__}}()",
+      "Body": "If self is alive then mark it as dead and return the result of calling func(*args, **kwargs).  If self is dead then return None.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.finalize.__call__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::finalize}}.{{c3::detach}}()",
+      "Body": "If self is alive then mark it as dead and return the tuple (obj, func, args, kwargs).  If self is dead then return None.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.finalize.detach"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::finalize}}.{{c3::peek}}()",
+      "Body": "If self is alive then return the tuple (obj, func, args, kwargs).  If self is dead then return None.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.finalize.peek"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::finalize}}.{{c3::alive}}",
+      "Body": "Property which is true if the finalizer is alive, false otherwise.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.finalize.alive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::finalize}}.{{c3::atexit}}",
+      "Body": "A writable boolean property which by default is true.  When the program exits, it calls all remaining live finalizers for which atexit is true.  They are called in reverse order of creation.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.finalize.atexit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::ReferenceType}}",
+      "Body": "The type object for weak references objects.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.ReferenceType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::ProxyType}}",
+      "Body": "The type object for proxies of objects which are not callable.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.ProxyType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::CallableProxyType}}",
+      "Body": "The type object for proxies of callable objects.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.CallableProxyType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::weakref}}.{{c2::ProxyTypes}}",
+      "Body": "Sequence containing all the type objects for proxies.  This can make it simpler to test if an object is a proxy without being dependent on naming both proxy types.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.ProxyTypes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::weakref}}.{{c3::ReferenceError}}",
+      "Body": "Exception raised when a proxy object is used but the underlying object has been collected.  This is the same as the standard ReferenceError exception.",
+      "Link": "https://docs.python.org/3/library/weakref.html#weakref.ReferenceError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::new_class}}({{c3::name}}, {{c4::bases}}=(), {{c5::kwds}}={{c6::None}}, {{c7::exec_body}}={{c8::None}})",
+      "Body": "Creates a class object dynamically using the appropriate metaclass.",
+      "Link": "https://docs.python.org/3/library/types.html#types.new_class"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::prepare_class}}({{c3::name}}, {{c4::bases}}=(), {{c5::kwds}}={{c6::None}})",
+      "Body": "Calculates the appropriate metaclass and creates the class namespace.",
+      "Link": "https://docs.python.org/3/library/types.html#types.prepare_class"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::resolve_bases}}({{c3::bases}})",
+      "Body": "Resolve MRO entries dynamically as specified by PEP 560.",
+      "Link": "https://docs.python.org/3/library/types.html#types.resolve_bases"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::FunctionType}}",
+      "Body": "The type of user-defined functions and functions created by lambda  expressions.",
+      "Link": "https://docs.python.org/3/library/types.html#types.FunctionType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::LambdaType}}",
+      "Body": "The type of user-defined functions and functions created by lambda  expressions.",
+      "Link": "https://docs.python.org/3/library/types.html#types.LambdaType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::GeneratorType}}",
+      "Body": "The type of generator-iterator objects, created by generator functions.",
+      "Link": "https://docs.python.org/3/library/types.html#types.GeneratorType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::CoroutineType}}",
+      "Body": "The type of coroutine objects, created by async def functions.",
+      "Link": "https://docs.python.org/3/library/types.html#types.CoroutineType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::AsyncGeneratorType}}",
+      "Body": "The type of asynchronous generator-iterator objects, created by asynchronous generator functions.",
+      "Link": "https://docs.python.org/3/library/types.html#types.AsyncGeneratorType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::CodeType}}",
+      "Body": "The type for code objects such as returned by compile().",
+      "Link": "https://docs.python.org/3/library/types.html#types.CodeType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MethodType}}",
+      "Body": "The type of methods of user-defined class instances.",
+      "Link": "https://docs.python.org/3/library/types.html#types.MethodType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::BuiltinFunctionType}}",
+      "Body": "The type of built-in functions like len() or sys.exit(), and methods of built-in classes.  (Here, the term built-in means written in C.)",
+      "Link": "https://docs.python.org/3/library/types.html#types.BuiltinFunctionType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::BuiltinMethodType}}",
+      "Body": "The type of built-in functions like len() or sys.exit(), and methods of built-in classes.  (Here, the term built-in means written in C.)",
+      "Link": "https://docs.python.org/3/library/types.html#types.BuiltinMethodType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::WrapperDescriptorType}}",
+      "Body": "The type of methods of some built-in data types and base classes such as object.__init__() or object.__lt__().",
+      "Link": "https://docs.python.org/3/library/types.html#types.WrapperDescriptorType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MethodWrapperType}}",
+      "Body": "The type of bound methods of some built-in data types and base classes. For example it is the type of object().__str__.",
+      "Link": "https://docs.python.org/3/library/types.html#types.MethodWrapperType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MethodDescriptorType}}",
+      "Body": "The type of methods of some built-in data types such as str.join().",
+      "Link": "https://docs.python.org/3/library/types.html#types.MethodDescriptorType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::ClassMethodDescriptorType}}",
+      "Body": "The type of unbound class methods of some built-in data types such as dict.__dict__['fromkeys'].",
+      "Link": "https://docs.python.org/3/library/types.html#types.ClassMethodDescriptorType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::types}}.{{c3::ModuleType}}({{c4::name}}, {{c5::doc}}={{c6::None}})",
+      "Body": "The type of modules. Constructor takes the name of the module to be created and optionally its docstring.",
+      "Link": "https://docs.python.org/3/library/types.html#types.ModuleType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::ModuleType}}.{{c3::__doc__}}",
+      "Body": "The docstring of the module. Defaults to None.",
+      "Link": "https://docs.python.org/3/library/types.html#types.ModuleType.__doc__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::ModuleType}}.{{c3::__loader__}}",
+      "Body": "The loader which loaded the module. Defaults to None.",
+      "Link": "https://docs.python.org/3/library/types.html#types.ModuleType.__loader__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::ModuleType}}.{{c3::__name__}}",
+      "Body": "The name of the module.",
+      "Link": "https://docs.python.org/3/library/types.html#types.ModuleType.__name__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::ModuleType}}.{{c3::__package__}}",
+      "Body": "Which package a module belongs to. If the module is top-level (i.e. not a part of any specific package) then the attribute should be set to '', else it should be set to the name of the package (which can be __name__ if the module is a package itself). Defaults to None.",
+      "Link": "https://docs.python.org/3/library/types.html#types.ModuleType.__package__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::types}}.{{c3::TracebackType}}({{c4::tb_next}}, {{c5::tb_frame}}, {{c6::tb_lasti}}, {{c7::tb_lineno}})",
+      "Body": "The type of traceback objects such as found in sys.exc_info()[2].",
+      "Link": "https://docs.python.org/3/library/types.html#types.TracebackType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::FrameType}}",
+      "Body": "The type of frame objects such as found in tb.tb_frame if tb is a traceback object.",
+      "Link": "https://docs.python.org/3/library/types.html#types.FrameType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::GetSetDescriptorType}}",
+      "Body": "The type of objects defined in extension modules with PyGetSetDef, such as FrameType.f_locals or array.array.typecode.  This type is used as descriptor for object attributes; it has the same purpose as the property type, but for classes defined in extension modules.",
+      "Link": "https://docs.python.org/3/library/types.html#types.GetSetDescriptorType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MemberDescriptorType}}",
+      "Body": "The type of objects defined in extension modules with PyMemberDef, such as datetime.timedelta.days.  This type is used as descriptor for simple C data members which use standard conversion functions; it has the same purpose as the property type, but for classes defined in extension modules.",
+      "Link": "https://docs.python.org/3/library/types.html#types.MemberDescriptorType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::types}}.{{c3::MappingProxyType}}({{c4::mapping}})",
+      "Body": "Read-only proxy of a mapping. It provides a dynamic view on the mapping's entries, which means that when the mapping changes, the view reflects these changes.",
+      "Link": "https://docs.python.org/3/library/types.html#types.MappingProxyType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::key}} {{c2::in}} {{c3::proxy}}",
+      "Body": "Return True if the underlying mapping has a key key, else False.",
+      "Link": "https://docs.python.org/3/library/types.html#standard-interpreter-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::proxy}}[{{c2::key}}]",
+      "Body": "Return the item of the underlying mapping with key key.  Raises a KeyError if key is not in the underlying mapping.",
+      "Link": "https://docs.python.org/3/library/types.html#standard-interpreter-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::iter}}({{c2::proxy}})",
+      "Body": "Return an iterator over the keys of the underlying mapping.  This is a shortcut for iter(proxy.keys()).",
+      "Link": "https://docs.python.org/3/library/types.html#standard-interpreter-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::len}}({{c2::proxy}})",
+      "Body": "Return the number of items in the underlying mapping.",
+      "Link": "https://docs.python.org/3/library/types.html#standard-interpreter-types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MappingProxyType}}.{{c3::copy}}()",
+      "Body": "Return a shallow copy of the underlying mapping.",
+      "Link": "https://docs.python.org/3/library/types.html#types.MappingProxyType.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MappingProxyType}}.{{c3::get}}({{c4::key}}[, {{c5::default}}])",
+      "Body": "Return the value for key if key is in the underlying mapping, else default.  If default is not given, it defaults to None, so that this method never raises a KeyError.",
+      "Link": "https://docs.python.org/3/library/types.html#types.MappingProxyType.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MappingProxyType}}.{{c3::items}}()",
+      "Body": "Return a new view of the underlying mapping's items ((key, value) pairs).",
+      "Link": "https://docs.python.org/3/library/types.html#types.MappingProxyType.items"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MappingProxyType}}.{{c3::keys}}()",
+      "Body": "Return a new view of the underlying mapping's keys.",
+      "Link": "https://docs.python.org/3/library/types.html#types.MappingProxyType.keys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::MappingProxyType}}.{{c3::values}}()",
+      "Body": "Return a new view of the underlying mapping's values.",
+      "Link": "https://docs.python.org/3/library/types.html#types.MappingProxyType.values"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::types}}.{{c3::SimpleNamespace}}",
+      "Body": "A simple object subclass that provides attribute access to its namespace, as well as a meaningful repr.",
+      "Link": "https://docs.python.org/3/library/types.html#types.SimpleNamespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::DynamicClassAttribute}}({{c3::fget}}={{c4::None}}, {{c5::fset}}={{c6::None}}, {{c7::fdel}}={{c8::None}}, {{c9::doc}}={{c10::None}})",
+      "Body": "Route attribute access on a class to __getattr__.",
+      "Link": "https://docs.python.org/3/library/types.html#types.DynamicClassAttribute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::types}}.{{c2::coroutine}}({{c3::gen_func}})",
+      "Body": "This function transforms a generator function into a coroutine function which returns a generator-based coroutine. The generator-based coroutine is still a generator iterator, but is also considered to be a coroutine object and is awaitable.  However, it may not necessarily implement the __await__() method.",
+      "Link": "https://docs.python.org/3/library/types.html#types.coroutine"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::copy}}.{{c2::copy}}({{c3::x}})",
+      "Body": "Return a shallow copy of x.",
+      "Link": "https://docs.python.org/3/library/copy.html#copy.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::copy}}.{{c2::deepcopy}}({{c3::x}})",
+      "Body": "Return a deep copy of x.",
+      "Link": "https://docs.python.org/3/library/copy.html#copy.deepcopy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::copy}}.{{c3::error}}",
+      "Body": "Raised for module specific errors.",
+      "Link": "https://docs.python.org/3/library/copy.html#copy.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pprint}}.{{c3::PrettyPrinter}}({{c4::indent}}=1, {{c5::width}}=80, {{c6::depth}}={{c7::None}}, {{c8::stream}}={{c9::None}}, *, {{c10::compact}}={{c11::False}})",
+      "Body": "Construct a PrettyPrinter instance.  This constructor understands several keyword parameters.  An output stream may be set using the stream keyword; the only method used on the stream object is the file protocol's write() method.  If not specified, the PrettyPrinter adopts sys.stdout.  The amount of indentation added for each recursive level is specified by indent; the default is one.  Other values can cause output to look a little odd, but can make nesting easier to spot.  The number of levels which may be printed is controlled by depth; if the data structure being printed is too deep, the next contained level is replaced by ....  By default, there is no constraint on the depth of the objects being formatted.  The desired output width is constrained using the width parameter; the default is 80 characters.  If a structure cannot be formatted within the constrained width, a best effort will be made.  If compact is false (the default) each item of a long sequence will be formatted on a separate line.  If compact is true, as many items as will fit within the width will be formatted on each output line.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.PrettyPrinter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pprint}}.{{c2::pformat}}({{c3::object}}, {{c4::indent}}=1, {{c5::width}}=80, {{c6::depth}}={{c7::None}}, *, {{c8::compact}}={{c9::False}})",
+      "Body": "Return the formatted representation of object as a string.  indent, width, depth and compact will be passed to the PrettyPrinter constructor as formatting parameters.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.pformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pprint}}.{{c2::pprint}}({{c3::object}}, {{c4::stream}}={{c5::None}}, {{c6::indent}}=1, {{c7::width}}=80, {{c8::depth}}={{c9::None}}, *, {{c10::compact}}={{c11::False}})",
+      "Body": "Prints the formatted representation of object on stream, followed by a newline.  If stream is None, sys.stdout is used.  This may be used in the interactive interpreter instead of the print() function for inspecting values (you can even reassign print = pprint.pprint for use within a scope).  indent, width, depth and compact will be passed to the PrettyPrinter constructor as formatting parameters.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.pprint"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pprint}}.{{c2::isreadable}}({{c3::object}})",
+      "Body": "Determine if the formatted representation of object is readable, or can be used to reconstruct the value using eval().  This always returns False for recursive objects.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.isreadable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pprint}}.{{c2::isrecursive}}({{c3::object}})",
+      "Body": "Determine if object requires a recursive representation.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.isrecursive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pprint}}.{{c2::saferepr}}({{c3::object}})",
+      "Body": "Return a string representation of object, protected against recursive data structures.  If the representation of object exposes a recursive entry, the recursive reference will be represented as <Recursion on typename with id=number>.  The representation is not otherwise formatted.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.saferepr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::PrettyPrinter}}.{{c2::pformat}}({{c3::object}})",
+      "Body": "Return the formatted representation of object.  This takes into account the options passed to the PrettyPrinter constructor.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.PrettyPrinter.pformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::PrettyPrinter}}.{{c2::pprint}}({{c3::object}})",
+      "Body": "Print the formatted representation of object on the configured stream, followed by a newline.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.PrettyPrinter.pprint"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::PrettyPrinter}}.{{c2::isreadable}}({{c3::object}})",
+      "Body": "Determine if the formatted representation of the object is readable, or can be used to reconstruct the value using eval().  Note that this returns False for recursive objects.  If the depth parameter of the PrettyPrinter is set and the object is deeper than allowed, this returns False.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.PrettyPrinter.isreadable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::PrettyPrinter}}.{{c2::isrecursive}}({{c3::object}})",
+      "Body": "Determine if the object requires a recursive representation.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.PrettyPrinter.isrecursive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::PrettyPrinter}}.{{c2::format}}({{c3::object}}, {{c4::context}}, {{c5::maxlevels}}, {{c6::level}})",
+      "Body": "Returns three values: the formatted version of object as a string, a flag indicating whether the result is readable, and a flag indicating whether recursion was detected.  The first argument is the object to be presented.  The second is a dictionary which contains the id() of objects that are part of the current presentation context (direct and indirect containers for object that are affecting the presentation) as the keys; if an object needs to be presented which is already represented in context, the third return value should be True.  Recursive calls to the format() method should add additional entries for containers to this dictionary.  The third argument, maxlevels, gives the requested limit to recursion; this will be 0 if there is no requested limit.  This argument should be passed unmodified to recursive calls. The fourth argument, level, gives the current level; recursive calls should be passed a value less than that of the current call.",
+      "Link": "https://docs.python.org/3/library/pprint.html#pprint.PrettyPrinter.format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::reprlib}}.{{c3::Repr}}",
+      "Body": "Class which provides formatting services useful in implementing functions similar to the built-in repr(); size limits for  different object types are added to avoid the generation of representations which are excessively long.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::reprlib}}.{{c2::aRepr}}",
+      "Body": "This is an instance of Repr which is used to provide the repr() function described below.  Changing the attributes of this object will affect the size limits used by repr() and the debugger.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.aRepr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::reprlib}}.{{c2::repr}}({{c3::obj}})",
+      "Body": "This is the repr() method of aRepr.  It returns a string similar to that returned by the built-in function of the same name, but with limits on most sizes.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.repr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::reprlib}}.{{c2::recursive_repr}}({{c3::fillvalue}}=\"...\")",
+      "Body": "Decorator for __repr__() methods to detect recursive calls within the same thread.  If a recursive call is made, the fillvalue is returned, otherwise, the usual __repr__() call is made.  For example:",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.recursive_repr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxlevel}}",
+      "Body": "Depth limit on the creation of recursive representations.  The default is 6.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxlevel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxdict}}",
+      "Body": "Limits on the number of entries represented for the named object type.  The default is 4 for maxdict, 5 for maxarray, and  6 for the others.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxdict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxlist}}",
+      "Body": "Limits on the number of entries represented for the named object type.  The default is 4 for maxdict, 5 for maxarray, and  6 for the others.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxlist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxtuple}}",
+      "Body": "Limits on the number of entries represented for the named object type.  The default is 4 for maxdict, 5 for maxarray, and  6 for the others.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxtuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxset}}",
+      "Body": "Limits on the number of entries represented for the named object type.  The default is 4 for maxdict, 5 for maxarray, and  6 for the others.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxfrozenset}}",
+      "Body": "Limits on the number of entries represented for the named object type.  The default is 4 for maxdict, 5 for maxarray, and  6 for the others.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxfrozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxdeque}}",
+      "Body": "Limits on the number of entries represented for the named object type.  The default is 4 for maxdict, 5 for maxarray, and  6 for the others.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxdeque"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxarray}}",
+      "Body": "Limits on the number of entries represented for the named object type.  The default is 4 for maxdict, 5 for maxarray, and  6 for the others.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxarray"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxlong}}",
+      "Body": "Maximum number of characters in the representation for an integer.  Digits are dropped from the middle.  The default is 40.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxlong"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxstring}}",
+      "Body": "Limit on the number of characters in the representation of the string.  Note that the normal representation of the string is used as the character source: if escape sequences are needed in the representation, these may be mangled when the representation is shortened.  The default is 30.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxstring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::maxother}}",
+      "Body": "This limit is used to control the size of object types for which no specific formatting method is available on the Repr object. It is applied in a similar manner as maxstring.  The default is 20.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.maxother"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::repr}}({{c3::obj}})",
+      "Body": "The equivalent to the built-in repr() that uses the formatting imposed by the instance.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.repr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::repr}}1({{c3::obj}}, {{c4::level}})",
+      "Body": "Recursive implementation used by repr().  This uses the type of obj to determine which formatting method to call, passing it obj and level.  The type-specific methods should call repr1() to perform recursive formatting, with level - 1 for the value of level in the recursive  call.",
+      "Link": "https://docs.python.org/3/library/reprlib.html#reprlib.Repr.repr1"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Repr}}.{{c2::repr_TYPE}}({{c3::obj}}, {{c4::level}})",
+      "Body": "Formatting methods for specific types are implemented as methods with a name based on the type name.  In the method name, TYPE is replaced by '_'.join(type(obj).__name__.split()). Dispatch to these methods is handled by repr1(). Type-specific methods which need to recursively format a value should call self.repr1(subobj, level - 1).",
+      "Link": "https://docs.python.org/3/library/reprlib.html#repr-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::enum}}.{{c3::Enum}}",
+      "Body": "Base class for creating enumerated constants.  See section Functional API for an alternate construction syntax.",
+      "Link": "https://docs.python.org/3/library/enum.html#enum.Enum"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::enum}}.{{c3::IntEnum}}",
+      "Body": "Base class for creating enumerated constants that are also subclasses of int.",
+      "Link": "https://docs.python.org/3/library/enum.html#enum.IntEnum"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::enum}}.{{c3::IntFlag}}",
+      "Body": "Base class for creating enumerated constants that can be combined using the bitwise operators without losing their IntFlag membership. IntFlag members are also subclasses of int.",
+      "Link": "https://docs.python.org/3/library/enum.html#enum.IntFlag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::enum}}.{{c3::Flag}}",
+      "Body": "Base class for creating enumerated constants that can be combined using the bitwise operations without losing their Flag membership.",
+      "Link": "https://docs.python.org/3/library/enum.html#enum.Flag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::enum}}.{{c2::unique}}()",
+      "Body": "Enum class decorator that ensures only one name is bound to any one value.",
+      "Link": "https://docs.python.org/3/library/enum.html#enum.unique"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::enum}}.{{c3::auto}}",
+      "Body": "Instances are replaced with an appropriate value for Enum members.",
+      "Link": "https://docs.python.org/3/library/enum.html#enum.auto"
+    },
+    "modelName": "ClozePy"
+  }
+]

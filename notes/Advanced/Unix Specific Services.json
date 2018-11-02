@@ -1,0 +1,1031 @@
+[
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::posix}}.{{c2::environ}}",
+      "Body": "A dictionary representing the string environment at the time the interpreter was started. Keys and values are bytes on Unix and str on Windows. For example, environ[b'HOME'] (environ['HOME'] on Windows) is the pathname of your home directory, equivalent to getenv(\"HOME\") in C.",
+      "Link": "https://docs.python.org/3/library/posix.html#posix.environ"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pwd}}.{{c2::getpwuid}}({{c3::uid}})",
+      "Body": "Return the password database entry for the given numeric user ID.",
+      "Link": "https://docs.python.org/3/library/pwd.html#pwd.getpwuid"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pwd}}.{{c2::getpwnam}}({{c3::name}})",
+      "Body": "Return the password database entry for the given user name.",
+      "Link": "https://docs.python.org/3/library/pwd.html#pwd.getpwnam"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pwd}}.{{c2::getpwall}}()",
+      "Body": "Return a list of all available password database entries, in arbitrary order.",
+      "Link": "https://docs.python.org/3/library/pwd.html#pwd.getpwall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::spwd}}.{{c2::getspnam}}({{c3::name}})",
+      "Body": "Return the shadow password database entry for the given user name.",
+      "Link": "https://docs.python.org/3/library/spwd.html#spwd.getspnam"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::spwd}}.{{c2::getspall}}()",
+      "Body": "Return a list of all available shadow password database entries, in arbitrary order.",
+      "Link": "https://docs.python.org/3/library/spwd.html#spwd.getspall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::grp}}.{{c2::getgrgid}}({{c3::gid}})",
+      "Body": "Return the group database entry for the given numeric group ID. KeyError is raised if the entry asked for cannot be found.",
+      "Link": "https://docs.python.org/3/library/grp.html#grp.getgrgid"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::grp}}.{{c2::getgrnam}}({{c3::name}})",
+      "Body": "Return the group database entry for the given group name. KeyError is raised if the entry asked for cannot be found.",
+      "Link": "https://docs.python.org/3/library/grp.html#grp.getgrnam"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::grp}}.{{c2::getgrall}}()",
+      "Body": "Return a list of all available group entries, in arbitrary order.",
+      "Link": "https://docs.python.org/3/library/grp.html#grp.getgrall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::crypt}}.{{c2::METHOD_SHA}}512",
+      "Body": "A Modular Crypt Format method with 16 character salt and 86 character hash based on the SHA-512 hash function.  This is the strongest method.",
+      "Link": "https://docs.python.org/3/library/crypt.html#crypt.METHOD_SHA512"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::crypt}}.{{c2::METHOD_SHA}}256",
+      "Body": "Another Modular Crypt Format method with 16 character salt and 43 character hash based on the SHA-256 hash function.",
+      "Link": "https://docs.python.org/3/library/crypt.html#crypt.METHOD_SHA256"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::crypt}}.{{c2::METHOD_BLOWFISH}}",
+      "Body": "Another Modular Crypt Format method with 22 character salt and 31 character hash based on the Blowfish cipher.",
+      "Link": "https://docs.python.org/3/library/crypt.html#crypt.METHOD_BLOWFISH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::crypt}}.{{c2::METHOD_MD}}5",
+      "Body": "Another Modular Crypt Format method with 8 character salt and 22 character hash based on the MD5 hash function.",
+      "Link": "https://docs.python.org/3/library/crypt.html#crypt.METHOD_MD5"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::crypt}}.{{c2::METHOD_CRYPT}}",
+      "Body": "The traditional method with a 2 character salt and 13 characters of hash.  This is the weakest method.",
+      "Link": "https://docs.python.org/3/library/crypt.html#crypt.METHOD_CRYPT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::crypt}}.{{c2::methods}}",
+      "Body": "A list of available password hashing algorithms, as crypt.METHOD_* objects.  This list is sorted from strongest to weakest.",
+      "Link": "https://docs.python.org/3/library/crypt.html#crypt.methods"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::crypt}}.{{c2::crypt}}({{c3::word}}, {{c4::salt}}={{c5::None}})",
+      "Body": "word will usually be a user's password as typed at a prompt or  in a graphical interface.  The optional salt is either a string as returned from mksalt(), one of the crypt.METHOD_* values (though not all may be available on all platforms), or a full encrypted password including salt, as returned by this function.  If salt is not provided, the strongest method will be used (as returned by methods().",
+      "Link": "https://docs.python.org/3/library/crypt.html#crypt.crypt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::crypt}}.{{c2::mksalt}}({{c3::method}}={{c4::None}}, *, {{c5::rounds}}={{c6::None}})",
+      "Body": "Return a randomly generated salt of the specified method.  If no method is given, the strongest method available as returned by methods() is used.",
+      "Link": "https://docs.python.org/3/library/crypt.html#crypt.mksalt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::termios}}.{{c2::tcgetattr}}({{c3::fd}})",
+      "Body": "Return a list containing the tty attributes for file descriptor fd, as follows: [iflag, oflag, cflag, lflag, ispeed, ospeed, cc] where cc is a list of the tty special characters (each a string of length 1, except the items with indices VMIN and VTIME, which are integers when these fields are defined).  The interpretation of the flags and the speeds as well as the indexing in the cc array must be done using the symbolic constants defined in the termios module.",
+      "Link": "https://docs.python.org/3/library/termios.html#termios.tcgetattr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::termios}}.{{c2::tcsetattr}}({{c3::fd}}, {{c4::when}}, {{c5::attributes}})",
+      "Body": "Set the tty attributes for file descriptor fd from the attributes, which is a list like the one returned by tcgetattr().  The when argument determines when the attributes are changed: TCSANOW to change immediately, TCSADRAIN to change after transmitting all queued output, or TCSAFLUSH to change after transmitting all queued output and discarding all queued input.",
+      "Link": "https://docs.python.org/3/library/termios.html#termios.tcsetattr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::termios}}.{{c2::tcsendbreak}}({{c3::fd}}, {{c4::duration}})",
+      "Body": "Send a break on file descriptor fd.  A zero duration sends a break for 0.25 0.5 seconds; a nonzero duration has a system dependent meaning.",
+      "Link": "https://docs.python.org/3/library/termios.html#termios.tcsendbreak"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::termios}}.{{c2::tcdrain}}({{c3::fd}})",
+      "Body": "Wait until all output written to file descriptor fd has been transmitted.",
+      "Link": "https://docs.python.org/3/library/termios.html#termios.tcdrain"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::termios}}.{{c2::tcflush}}({{c3::fd}}, {{c4::queue}})",
+      "Body": "Discard queued data on file descriptor fd.  The queue selector specifies which queue: TCIFLUSH for the input queue, TCOFLUSH for the output queue, or TCIOFLUSH for both queues.",
+      "Link": "https://docs.python.org/3/library/termios.html#termios.tcflush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::termios}}.{{c2::tcflow}}({{c3::fd}}, {{c4::action}})",
+      "Body": "Suspend or resume input or output on file descriptor fd.  The action argument can be TCOOFF to suspend output, TCOON to restart output, TCIOFF to suspend input, or TCION to restart input.",
+      "Link": "https://docs.python.org/3/library/termios.html#termios.tcflow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tty}}.{{c2::setraw}}({{c3::fd}}, {{c4::when}}={{c5::termios}}.{{c6::TCSAFLUSH}})",
+      "Body": "Change the mode of the file descriptor fd to raw. If when is omitted, it defaults to termios.TCSAFLUSH, and is passed to termios.tcsetattr().",
+      "Link": "https://docs.python.org/3/library/tty.html#tty.setraw"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tty}}.{{c2::setcbreak}}({{c3::fd}}, {{c4::when}}={{c5::termios}}.{{c6::TCSAFLUSH}})",
+      "Body": "Change the mode of file descriptor fd to cbreak. If when is omitted, it defaults to termios.TCSAFLUSH, and is passed to termios.tcsetattr().",
+      "Link": "https://docs.python.org/3/library/tty.html#tty.setcbreak"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pty}}.{{c2::fork}}()",
+      "Body": "Fork. Connect the child's controlling terminal to a pseudo-terminal. Return value is (pid, fd). Note that the child  gets pid 0, and the fd is invalid. The parent's return value is the pid of the child, and fd is a file descriptor connected to the child's controlling terminal (and also to the child's standard input and output).",
+      "Link": "https://docs.python.org/3/library/pty.html#pty.fork"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pty}}.{{c2::openpty}}()",
+      "Body": "Open a new pseudo-terminal pair, using os.openpty() if possible, or emulation code for generic Unix systems. Return a pair of file descriptors (master, slave), for the master and the slave end, respectively.",
+      "Link": "https://docs.python.org/3/library/pty.html#pty.openpty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::pty}}.{{c2::spawn}}({{c3::argv}}[, {{c4::master_read}}[, {{c5::stdin_read}}]])",
+      "Body": "Spawn a process, and connect its controlling terminal with the current process's standard io. This is often used to baffle programs which insist on reading from the controlling terminal.",
+      "Link": "https://docs.python.org/3/library/pty.html#pty.spawn"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fcntl}}.{{c2::fcntl}}({{c3::fd}}, {{c4::cmd}}, {{c5::arg}}=0)",
+      "Body": "Perform the operation cmd on file descriptor fd (file objects providing a fileno() method are accepted as well).  The values used for cmd are operating system dependent, and are available as constants in the fcntl module, using the same names as used in the relevant C header files. The argument arg can either be an integer value, or a bytes object. With an integer value, the return value of this function is the integer return value of the C fcntl() call.  When the argument is bytes it represents a binary structure, e.g. created by struct.pack(). The binary data is copied to a buffer whose address is passed to the C fcntl() call.  The return value after a successful call is the contents of the buffer, converted to a bytes object. The length of the returned object will be the same as the length of the arg argument. This is limited to 1024 bytes. If the information returned in the buffer by the operating system is larger than 1024 bytes, this is most likely to result in a segmentation violation or a more subtle data corruption.",
+      "Link": "https://docs.python.org/3/library/fcntl.html#fcntl.fcntl"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fcntl}}.{{c2::ioctl}}({{c3::fd}}, {{c4::request}}, {{c5::arg}}=0, {{c6::mutate_flag}}={{c7::True}})",
+      "Body": "This function is identical to the fcntl() function, except that the argument handling is even more complicated.",
+      "Link": "https://docs.python.org/3/library/fcntl.html#fcntl.ioctl"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fcntl}}.{{c2::flock}}({{c3::fd}}, {{c4::operation}})",
+      "Body": "Perform the lock operation operation on file descriptor fd (file objects providing a fileno() method are accepted as well). See the Unix manual flock(2) for details.  (On some systems, this function is emulated using fcntl().)",
+      "Link": "https://docs.python.org/3/library/fcntl.html#fcntl.flock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fcntl}}.{{c2::lockf}}({{c3::fd}}, {{c4::cmd}}, {{c5::len}}=0, {{c6::start}}=0, {{c7::whence}}=0)",
+      "Body": "This is essentially a wrapper around the fcntl() locking calls. fd is the file descriptor of the file to lock or unlock, and cmd is one of the following values:",
+      "Link": "https://docs.python.org/3/library/fcntl.html#fcntl.lockf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pipes}}.{{c3::Template}}",
+      "Body": "An abstraction of a pipeline.",
+      "Link": "https://docs.python.org/3/library/pipes.html#pipes.Template"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Template}}.{{c2::reset}}()",
+      "Body": "Restore a pipeline template to its initial state.",
+      "Link": "https://docs.python.org/3/library/pipes.html#pipes.Template.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Template}}.{{c2::clone}}()",
+      "Body": "Return a new, equivalent, pipeline template.",
+      "Link": "https://docs.python.org/3/library/pipes.html#pipes.Template.clone"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Template}}.{{c2::debug}}({{c3::flag}})",
+      "Body": "If flag is true, turn debugging on. Otherwise, turn debugging off. When debugging is on, commands to be executed are printed, and the shell is given set -x command to be more verbose.",
+      "Link": "https://docs.python.org/3/library/pipes.html#pipes.Template.debug"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Template}}.{{c2::append}}({{c3::cmd}}, {{c4::kind}})",
+      "Body": "Append a new action at the end. The cmd variable must be a valid bourne shell command. The kind variable consists of two letters.",
+      "Link": "https://docs.python.org/3/library/pipes.html#pipes.Template.append"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Template}}.{{c2::prepend}}({{c3::cmd}}, {{c4::kind}})",
+      "Body": "Add a new action at the beginning. See append() for explanations of the arguments.",
+      "Link": "https://docs.python.org/3/library/pipes.html#pipes.Template.prepend"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Template}}.{{c2::open}}({{c3::file}}, {{c4::mode}})",
+      "Body": "Return a file-like object, open to file, but read from or written to by the pipeline.  Note that only one of 'r', 'w' may be given.",
+      "Link": "https://docs.python.org/3/library/pipes.html#pipes.Template.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Template}}.{{c2::copy}}({{c3::infile}}, {{c4::outfile}})",
+      "Body": "Copy infile to outfile through the pipe.",
+      "Link": "https://docs.python.org/3/library/pipes.html#pipes.Template.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::resource}}.{{c3::error}}",
+      "Body": "A deprecated alias of OSError.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIM_INFINITY}}",
+      "Body": "Constant used to represent the limit for an unlimited resource.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIM_INFINITY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::getrlimit}}({{c3::resource}})",
+      "Body": "Returns a tuple (soft, hard) with the current soft and hard limits of resource. Raises ValueError if an invalid resource is specified, or error if the underlying system call fails unexpectedly.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.getrlimit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::setrlimit}}({{c3::resource}}, {{c4::limits}})",
+      "Body": "Sets new limits of consumption of resource. The limits argument must be a tuple (soft, hard) of two integers describing the new limits. A value of RLIM_INFINITY can be used to request a limit that is unlimited.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.setrlimit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::prlimit}}({{c3::pid}}, {{c4::resource}}[, {{c5::limits}}])",
+      "Body": "Combines setrlimit() and getrlimit() in one function and supports to get and set the resources limits of an arbitrary process. If pid is 0, then the call applies to the current process. resource and limits have the same meaning as in setrlimit(), except that limits is optional.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.prlimit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_CORE}}",
+      "Body": "The maximum size (in bytes) of a core file that the current process can create. This may result in the creation of a partial core file if a larger core would be required to contain the entire process image.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_CORE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_CPU}}",
+      "Body": "The maximum amount of processor time (in seconds) that a process can use. If this limit is exceeded, a SIGXCPU signal is sent to the process. (See the signal module documentation for information about how to catch this signal and do something useful, e.g. flush open files to disk.)",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_CPU"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_FSIZE}}",
+      "Body": "The maximum size of a file which the process may create.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_FSIZE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_DATA}}",
+      "Body": "The maximum size (in bytes) of the process's heap.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_DATA"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_STACK}}",
+      "Body": "The maximum size (in bytes) of the call stack for the current process.  This only affects the stack of the main thread in a multi-threaded process.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_STACK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_RSS}}",
+      "Body": "The maximum resident set size that should be made available to the process.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_RSS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_NPROC}}",
+      "Body": "The maximum number of processes the current process may create.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_NPROC"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_NOFILE}}",
+      "Body": "The maximum number of open file descriptors for the current process.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_NOFILE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_OFILE}}",
+      "Body": "The BSD name for RLIMIT_NOFILE.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_OFILE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_MEMLOCK}}",
+      "Body": "The maximum address space which may be locked in memory.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_MEMLOCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_VMEM}}",
+      "Body": "The largest area of mapped memory which the process may occupy.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_VMEM"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_AS}}",
+      "Body": "The maximum area (in bytes) of address space which may be taken by the process.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_AS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_MSGQUEUE}}",
+      "Body": "The number of bytes that can be allocated for POSIX message queues.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_MSGQUEUE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_NICE}}",
+      "Body": "The ceiling for the process's nice level (calculated as 20 - rlim_cur).",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_NICE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_RTPRIO}}",
+      "Body": "The ceiling of the real-time priority.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_RTPRIO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_RTTIME}}",
+      "Body": "The time limit (in microseconds) on CPU time that a process can spend under real-time scheduling without making a blocking syscall.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_RTTIME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_SIGPENDING}}",
+      "Body": "The number of signals which the process may queue.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_SIGPENDING"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_SBSIZE}}",
+      "Body": "The maximum size (in bytes) of socket buffer usage for this user. This limits the amount of network memory, and hence the amount of mbufs, that this user may hold at any time.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_SBSIZE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_SWAP}}",
+      "Body": "The maximum size (in bytes) of the swap space that may be reserved or used by all of this user id's processes. This limit is enforced only if bit 1 of the vm.overcommit sysctl is set. Please see tuning(7) for a complete description of this sysctl.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_SWAP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RLIMIT_NPTS}}",
+      "Body": "The maximum number of pseudo-terminals created by this user id.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RLIMIT_NPTS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::getrusage}}({{c3::who}})",
+      "Body": "This function returns an object that describes the resources consumed by either the current process or its children, as specified by the who parameter.  The who parameter should be specified using one of the RUSAGE_* constants described below.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.getrusage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::getpagesize}}()",
+      "Body": "Returns the number of bytes in a system page. (This need not be the same as the hardware page size.)",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.getpagesize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RUSAGE_SELF}}",
+      "Body": "Pass to getrusage() to request resources consumed by the calling process, which is the sum of resources used by all threads in the process.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RUSAGE_SELF"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RUSAGE_CHILDREN}}",
+      "Body": "Pass to getrusage() to request resources consumed by child processes of the calling process which have been terminated and waited for.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RUSAGE_CHILDREN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RUSAGE_BOTH}}",
+      "Body": "Pass to getrusage() to request resources consumed by both the current process and child processes.  May not be available on all systems.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RUSAGE_BOTH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Unix Specific Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::resource}}.{{c2::RUSAGE_THREAD}}",
+      "Body": "Pass to getrusage() to request resources consumed by the current thread.  May not be available on all systems.",
+      "Link": "https://docs.python.org/3/library/resource.html#resource.RUSAGE_THREAD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::nis}}.{{c2::match}}({{c3::key}}, {{c4::mapname}}, {{c5::domain}}={{c6::default_domain}})",
+      "Body": "Return the match for key in map mapname, or raise an error (nis.error) if there is none. Both should be strings, key is 8-bit clean. Return value is an arbitrary array of bytes (may contain NULL and other joys).",
+      "Link": "https://docs.python.org/3/library/nis.html#nis.match"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::nis}}.{{c2::cat}}({{c3::mapname}}, {{c4::domain}}={{c5::default_domain}})",
+      "Body": "Return a dictionary mapping key to value such that match(key, mapname)==value. Note that both keys and values of the dictionary are arbitrary arrays of bytes.",
+      "Link": "https://docs.python.org/3/library/nis.html#nis.cat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::nis}}.{{c2::maps}}({{c3::domain}}={{c4::default_domain}})",
+      "Body": "Return a list of all valid maps.",
+      "Link": "https://docs.python.org/3/library/nis.html#nis.maps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::nis}}.{{c2::get_default_domain}}()",
+      "Body": "Return the system default NIS domain.",
+      "Link": "https://docs.python.org/3/library/nis.html#nis.get_default_domain"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::nis}}.{{c3::error}}",
+      "Body": "An error raised when a NIS function returns an error code.",
+      "Link": "https://docs.python.org/3/library/nis.html#nis.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::syslog}}.{{c2::syslog}}({{c3::message}})",
+      "Body": "Send the string message to the system logger.  A trailing newline is added if necessary.  Each message is tagged with a priority composed of a facility and a level.  The optional priority argument, which defaults to LOG_INFO, determines the message priority.  If the facility is not encoded in priority using logical-or (LOG_INFO | LOG_USER), the value given in the openlog() call is used.",
+      "Link": "https://docs.python.org/3/library/syslog.html#syslog.syslog"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::syslog}}.{{c2::syslog}}({{c3::priority}}, {{c4::message}})",
+      "Body": "Send the string message to the system logger.  A trailing newline is added if necessary.  Each message is tagged with a priority composed of a facility and a level.  The optional priority argument, which defaults to LOG_INFO, determines the message priority.  If the facility is not encoded in priority using logical-or (LOG_INFO | LOG_USER), the value given in the openlog() call is used.",
+      "Link": "https://docs.python.org/3/library/syslog.html#module-syslog"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::syslog}}.{{c2::openlog}}([{{c3::ident}}[, {{c4::logoption}}[, {{c5::facility}}]]])",
+      "Body": "Logging options of subsequent syslog() calls can be set by calling openlog().  syslog() will call openlog() with no arguments if the log is not currently open.",
+      "Link": "https://docs.python.org/3/library/syslog.html#syslog.openlog"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::syslog}}.{{c2::closelog}}()",
+      "Body": "Reset the syslog module values and call the system library closelog().",
+      "Link": "https://docs.python.org/3/library/syslog.html#syslog.closelog"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Unix Specific Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::syslog}}.{{c2::setlogmask}}({{c3::maskpri}})",
+      "Body": "Set the priority mask to maskpri and return the previous mask value.  Calls to syslog() with a priority level not set in maskpri are ignored. The default is to log all priorities.  The function LOG_MASK(pri) calculates the mask for the individual priority pri.  The function LOG_UPTO(pri) calculates the mask for all priorities up to and including pri.",
+      "Link": "https://docs.python.org/3/library/syslog.html#syslog.setlogmask"
+    },
+    "modelName": "ClozePy"
+  }
+]

@@ -1,0 +1,1196 @@
+[
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::BaseException}}",
+      "Body": "The base class for all built-in exceptions.  It is not meant to be directly inherited by user-defined classes (for that, use Exception).  If str() is called on an instance of this class, the representation of the argument(s) to the instance are returned, or the empty string when there were no arguments.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#BaseException"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::BaseException}}.{{c2::args}}",
+      "Body": "The tuple of arguments given to the exception constructor.  Some built-in exceptions (like OSError) expect a certain number of arguments and assign a special meaning to the elements of this tuple, while others are usually called only with a single string giving an error message.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#BaseException.args"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Exceptions", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BaseException}}.{{c2::with_traceback}}({{c3::tb}})",
+      "Body": "This method sets tb as the new traceback for the exception and returns the exception object.  It is usually used in exception handling code like this:",
+      "Link": "https://docs.python.org/3/library/exceptions.html#BaseException.with_traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::Exception}}",
+      "Body": "All built-in, non-system-exiting exceptions are derived from this class.  All user-defined exceptions should also be derived from this class.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#Exception"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ArithmeticError}}",
+      "Body": "The base class for those built-in exceptions that are raised for various arithmetic errors: OverflowError, ZeroDivisionError, FloatingPointError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ArithmeticError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::BufferError}}",
+      "Body": "Raised when a buffer related operation cannot be performed.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#BufferError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::LookupError}}",
+      "Body": "The base class for the exceptions that are raised when a key or index used on a mapping or sequence is invalid: IndexError, KeyError.  This can be raised directly by codecs.lookup().",
+      "Link": "https://docs.python.org/3/library/exceptions.html#LookupError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::AssertionError}}",
+      "Body": "Raised when an assert statement fails.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#AssertionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::AttributeError}}",
+      "Body": "Raised when an attribute reference (see Attribute references) or assignment fails.  (When an object does not support attribute references or attribute assignments at all, TypeError is raised.)",
+      "Link": "https://docs.python.org/3/library/exceptions.html#AttributeError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::EOFError}}",
+      "Body": "Raised when the input() function hits an end-of-file condition (EOF) without reading any data. (N.B.: the io.IOBase.read() and io.IOBase.readline() methods return an empty string when they hit EOF.)",
+      "Link": "https://docs.python.org/3/library/exceptions.html#EOFError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::FloatingPointError}}",
+      "Body": "Not currently used.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#FloatingPointError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::GeneratorExit}}",
+      "Body": "Raised when a generator or coroutine is closed; see generator.close() and coroutine.close().  It directly inherits from BaseException instead of Exception since it is technically not an error.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#GeneratorExit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ImportError}}",
+      "Body": "Raised when the import statement has troubles trying to load a module.  Also raised when the from list in from ... import has a name that cannot be found.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ImportError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ModuleNotFoundError}}",
+      "Body": "A subclass of ImportError which is raised by import when a module could not be located.  It is also raised when None is found in sys.modules.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ModuleNotFoundError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::IndexError}}",
+      "Body": "Raised when a sequence subscript is out of range.  (Slice indices are silently truncated to fall in the allowed range; if an index is not an integer, TypeError is raised.)",
+      "Link": "https://docs.python.org/3/library/exceptions.html#IndexError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::KeyError}}",
+      "Body": "Raised when a mapping (dictionary) key is not found in the set of existing keys.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#KeyError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::KeyboardInterrupt}}",
+      "Body": "Raised when the user hits the interrupt key (normally Control-C or Delete).  During execution, a check for interrupts is made regularly. The exception inherits from BaseException so as to not be accidentally caught by code that catches Exception and thus prevent the interpreter from exiting.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#KeyboardInterrupt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::MemoryError}}",
+      "Body": "Raised when an operation runs out of memory but the situation may still be rescued (by deleting some objects).  The associated value is a string indicating what kind of (internal) operation ran out of memory. Note that because of the underlying memory management architecture (C's malloc() function), the interpreter may not always be able to completely recover from this situation; it nevertheless raises an exception so that a stack traceback can be printed, in case a run-away program was the cause.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#MemoryError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::NameError}}",
+      "Body": "Raised when a local or global name is not found.  This applies only to unqualified names.  The associated value is an error message that includes the name that could not be found.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#NameError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::NotImplementedError}}",
+      "Body": "This exception is derived from RuntimeError.  In user defined base classes, abstract methods should raise this exception when they require derived classes to override the method, or while the class is being developed to indicate that the real implementation still needs to be added.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#NotImplementedError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::OSError}}([{{c3::arg}}])",
+      "Body": "This exception is raised when a system function returns a system-related error, including I/O failures such as file not found or disk full (not for illegal argument types or other incidental errors).",
+      "Link": "https://docs.python.org/3/library/exceptions.html#OSError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::OSError}}({{c3::errno}}, {{c4::strerror}}[, {{c5::filename}}[, {{c6::winerror}}[, {{c7::filename}}2]]])",
+      "Body": "This exception is raised when a system function returns a system-related error, including I/O failures such as file not found or disk full (not for illegal argument types or other incidental errors).",
+      "Link": "https://docs.python.org/3/library/exceptions.html#concrete-exceptions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::OSError}}.{{c2::errno}}",
+      "Body": "A numeric error code from the C variable errno.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#OSError.errno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::OSError}}.{{c2::winerror}}",
+      "Body": "Under Windows, this gives you the native Windows error code.  The errno attribute is then an approximate translation, in POSIX terms, of that native error code.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#OSError.winerror"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::OSError}}.{{c2::strerror}}",
+      "Body": "The corresponding error message, as provided by the operating system.  It is formatted by the C functions perror() under POSIX, and FormatMessage() under Windows.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#OSError.strerror"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::OSError}}.{{c2::filename}}",
+      "Body": "For exceptions that involve a file system path (such as open() or os.unlink()), filename is the file name passed to the function. For functions that involve two file system paths (such as os.rename()), filename2 corresponds to the second file name passed to the function.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#OSError.filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::OSError}}.{{c2::filename}}2",
+      "Body": "For exceptions that involve a file system path (such as open() or os.unlink()), filename is the file name passed to the function. For functions that involve two file system paths (such as os.rename()), filename2 corresponds to the second file name passed to the function.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#OSError.filename2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::OverflowError}}",
+      "Body": "Raised when the result of an arithmetic operation is too large to be represented.  This cannot occur for integers (which would rather raise MemoryError than give up).  However, for historical reasons, OverflowError is sometimes raised for integers that are outside a required range.   Because of the lack of standardization of floating point exception handling in C, most floating point operations are not checked.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#OverflowError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::RecursionError}}",
+      "Body": "This exception is derived from RuntimeError.  It is raised when the interpreter detects that the maximum recursion depth (see sys.getrecursionlimit()) is exceeded.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#RecursionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ReferenceError}}",
+      "Body": "This exception is raised when a weak reference proxy, created by the weakref.proxy() function, is used to access an attribute of the referent after it has been garbage collected. For more information on weak references, see the weakref module.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ReferenceError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::RuntimeError}}",
+      "Body": "Raised when an error is detected that doesn't fall in any of the other categories.  The associated value is a string indicating what precisely went wrong.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#RuntimeError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::StopIteration}}",
+      "Body": "Raised by built-in function next() and an iterator's __next__() method to signal that there are no further items produced by the iterator.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#StopIteration"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::StopAsyncIteration}}",
+      "Body": "Must be raised by __anext__() method of an asynchronous iterator object to stop the iteration.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#StopAsyncIteration"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::SyntaxError}}",
+      "Body": "Raised when the parser encounters a syntax error.  This may occur in an import statement, in a call to the built-in functions exec() or eval(), or when reading the initial script or standard input (also interactively).",
+      "Link": "https://docs.python.org/3/library/exceptions.html#SyntaxError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::IndentationError}}",
+      "Body": "Base class for syntax errors related to incorrect indentation.  This is a subclass of SyntaxError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#IndentationError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::TabError}}",
+      "Body": "Raised when indentation contains an inconsistent use of tabs and spaces. This is a subclass of IndentationError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#TabError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::SystemError}}",
+      "Body": "Raised when the interpreter finds an internal error, but the situation does not look so serious to cause it to abandon all hope. The associated value is a string indicating what went wrong (in low-level terms).",
+      "Link": "https://docs.python.org/3/library/exceptions.html#SystemError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::SystemExit}}",
+      "Body": "This exception is raised by the sys.exit() function.  It inherits from BaseException instead of Exception so that it is not accidentally caught by code that catches Exception.  This allows the exception to properly propagate up and cause the interpreter to exit.  When it is not handled, the interpreter exits; no stack traceback is printed.  The constructor accepts the same optional argument passed to sys.exit(). If the value is an integer, it specifies the system exit status (passed to C's exit() function); if it is None, the exit status is zero; if it has another type (such as a string), the object's value is printed and the exit status is one.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#SystemExit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::SystemExit}}.{{c2::code}}",
+      "Body": "The exit status or error message that is passed to the constructor. (Defaults to None.)",
+      "Link": "https://docs.python.org/3/library/exceptions.html#SystemExit.code"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::TypeError}}",
+      "Body": "Raised when an operation or function is applied to an object of inappropriate type.  The associated value is a string giving details about the type mismatch.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#TypeError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::UnboundLocalError}}",
+      "Body": "Raised when a reference is made to a local variable in a function or method, but no value has been bound to that variable.  This is a subclass of NameError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnboundLocalError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::UnicodeError}}",
+      "Body": "Raised when a Unicode-related encoding or decoding error occurs.  It is a subclass of ValueError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::UnicodeError}}.{{c2::encoding}}",
+      "Body": "The name of the encoding that raised the error.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeError.encoding"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::UnicodeError}}.{{c2::reason}}",
+      "Body": "A string describing the specific codec error.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeError.reason"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::UnicodeError}}.{{c2::object}}",
+      "Body": "The object the codec was attempting to encode or decode.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeError.object"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::UnicodeError}}.{{c2::start}}",
+      "Body": "The first index of invalid data in object.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeError.start"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::UnicodeError}}.{{c2::end}}",
+      "Body": "The index after the last invalid data in object.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeError.end"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::UnicodeEncodeError}}",
+      "Body": "Raised when a Unicode-related error occurs during encoding.  It is a subclass of UnicodeError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeEncodeError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::UnicodeDecodeError}}",
+      "Body": "Raised when a Unicode-related error occurs during decoding.  It is a subclass of UnicodeError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeDecodeError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::UnicodeTranslateError}}",
+      "Body": "Raised when a Unicode-related error occurs during translating.  It is a subclass of UnicodeError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeTranslateError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ValueError}}",
+      "Body": "Raised when an operation or function receives an argument that has the right type but an inappropriate value, and the situation is not described by a more precise exception such as IndexError.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ValueError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ZeroDivisionError}}",
+      "Body": "Raised when the second argument of a division or modulo operation is zero.  The associated value is a string indicating the type of the operands and the operation.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ZeroDivisionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::WindowsError}}",
+      "Body": "Only available on Windows.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#WindowsError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::BlockingIOError}}",
+      "Body": "Raised when an operation would block on an object (e.g. socket) set for non-blocking operation. Corresponds to errno EAGAIN, EALREADY, EWOULDBLOCK and EINPROGRESS.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#BlockingIOError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::BlockingIOError}}.{{c2::characters_written}}",
+      "Body": "An integer containing the number of characters written to the stream before it blocked.  This attribute is available when using the buffered I/O classes from the io module.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#BlockingIOError.characters_written"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ChildProcessError}}",
+      "Body": "Raised when an operation on a child process failed. Corresponds to errno ECHILD.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ChildProcessError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ConnectionError}}",
+      "Body": "A base class for connection-related issues.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ConnectionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::BrokenPipeError}}",
+      "Body": "A subclass of ConnectionError, raised when trying to write on a pipe while the other end has been closed, or trying to write on a socket which has been shutdown for writing. Corresponds to errno EPIPE and ESHUTDOWN.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#BrokenPipeError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ConnectionAbortedError}}",
+      "Body": "A subclass of ConnectionError, raised when a connection attempt is aborted by the peer. Corresponds to errno ECONNABORTED.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ConnectionAbortedError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ConnectionRefusedError}}",
+      "Body": "A subclass of ConnectionError, raised when a connection attempt is refused by the peer. Corresponds to errno ECONNREFUSED.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ConnectionRefusedError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ConnectionResetError}}",
+      "Body": "A subclass of ConnectionError, raised when a connection is reset by the peer. Corresponds to errno ECONNRESET.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ConnectionResetError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::FileExistsError}}",
+      "Body": "Raised when trying to create a file or directory which already exists. Corresponds to errno EEXIST.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#FileExistsError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::FileNotFoundError}}",
+      "Body": "Raised when a file or directory is requested but doesn't exist. Corresponds to errno ENOENT.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#FileNotFoundError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::InterruptedError}}",
+      "Body": "Raised when a system call is interrupted by an incoming signal. Corresponds to errno EINTR.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#InterruptedError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::IsADirectoryError}}",
+      "Body": "Raised when a file operation (such as os.remove()) is requested on a directory. Corresponds to errno EISDIR.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#IsADirectoryError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::NotADirectoryError}}",
+      "Body": "Raised when a directory operation (such as os.listdir()) is requested on something which is not a directory. Corresponds to errno ENOTDIR.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#NotADirectoryError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::PermissionError}}",
+      "Body": "Raised when trying to run an operation without the adequate access rights - for example filesystem permissions. Corresponds to errno EACCES and EPERM.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#PermissionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ProcessLookupError}}",
+      "Body": "Raised when a given process doesn't exist. Corresponds to errno ESRCH.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ProcessLookupError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::TimeoutError}}",
+      "Body": "Raised when a system function timed out at the system level. Corresponds to errno ETIMEDOUT.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#TimeoutError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::Warning}}",
+      "Body": "Base class for warning categories.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#Warning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::UserWarning}}",
+      "Body": "Base class for warnings generated by user code.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UserWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::DeprecationWarning}}",
+      "Body": "Base class for warnings about deprecated features when those warnings are intended for other developers.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#DeprecationWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::PendingDeprecationWarning}}",
+      "Body": "Base class for warnings about features which will be deprecated in the future.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#PendingDeprecationWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::SyntaxWarning}}",
+      "Body": "Base class for warnings about dubious syntax.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#SyntaxWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::RuntimeWarning}}",
+      "Body": "Base class for warnings about dubious runtime behavior.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#RuntimeWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::FutureWarning}}",
+      "Body": "Base class for warnings about deprecated features when those warnings are intended for end users of applications that are written in Python.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#FutureWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ImportWarning}}",
+      "Body": "Base class for warnings about probable mistakes in module imports.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ImportWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::UnicodeWarning}}",
+      "Body": "Base class for warnings related to Unicode.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#UnicodeWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::BytesWarning}}",
+      "Body": "Base class for warnings related to bytes and bytearray.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#BytesWarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Built-in Exceptions",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::ResourceWarning}}",
+      "Body": "Base class for warnings related to resource usage. Ignored by the default warning filters.",
+      "Link": "https://docs.python.org/3/library/exceptions.html#ResourceWarning"
+    },
+    "modelName": "ClozePy"
+  }
+]

@@ -1,0 +1,1010 @@
+[
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::HIGHEST_PROTOCOL}}",
+      "Body": "An integer, the highest protocol version available.  This value can be passed as a protocol value to functions dump() and dumps() as well as the Pickler constructor.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.HIGHEST_PROTOCOL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::DEFAULT_PROTOCOL}}",
+      "Body": "An integer, the default protocol version used for pickling.  May be less than HIGHEST_PROTOCOL.  Currently the default protocol is 3, a new protocol designed for Python 3.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.DEFAULT_PROTOCOL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::dump}}({{c3::obj}}, {{c4::file}}, {{c5::protocol}}={{c6::None}}, *, {{c7::fix_imports}}={{c8::True}})",
+      "Body": "Write a pickled representation of obj to the open file object file. This is equivalent to Pickler(file, protocol).dump(obj).",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.dump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::dumps}}({{c3::obj}}, {{c4::protocol}}={{c5::None}}, *, {{c6::fix_imports}}={{c7::True}})",
+      "Body": "Return the pickled representation of the object as a bytes object, instead of writing it to a file.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.dumps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::load}}({{c3::file}}, *, {{c4::fix_imports}}={{c5::True}}, {{c6::encoding}}=\"{{c7::ASCII}}\", {{c8::errors}}=\"{{c9::strict}}\")",
+      "Body": "Read a pickled object representation from the open file object file and return the reconstituted object hierarchy specified therein. This is equivalent to Unpickler(file).load().",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.load"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::loads}}({{c3::bytes_object}}, *, {{c4::fix_imports}}={{c5::True}}, {{c6::encoding}}=\"{{c7::ASCII}}\", {{c8::errors}}=\"{{c9::strict}}\")",
+      "Body": "Read a pickled object hierarchy from a bytes object and return the reconstituted object hierarchy specified therein.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.loads"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::pickle}}.{{c3::PickleError}}",
+      "Body": "Common base class for the other pickling exceptions.  It inherits Exception.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.PickleError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::pickle}}.{{c3::PicklingError}}",
+      "Body": "Error raised when an unpicklable object is encountered by Pickler. It inherits PickleError.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.PicklingError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::pickle}}.{{c3::UnpicklingError}}",
+      "Body": "Error raised when there is a problem unpickling an object, such as a data corruption or a security violation.  It inherits PickleError.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.UnpicklingError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pickle}}.{{c3::Pickler}}({{c4::file}}, {{c5::protocol}}={{c6::None}}, *, {{c7::fix_imports}}={{c8::True}})",
+      "Body": "This takes a binary file for writing a pickle data stream.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Pickler"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::Pickler}}.{{c3::dump}}({{c4::obj}})",
+      "Body": "Write a pickled representation of obj to the open file object given in the constructor.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Pickler.dump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::Pickler}}.{{c3::persistent_id}}({{c4::obj}})",
+      "Body": "Do nothing by default.  This exists so a subclass can override it.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Pickler.persistent_id"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::Pickler}}.{{c3::dispatch_table}}",
+      "Body": "A pickler object's dispatch table is a registry of reduction functions of the kind which can be declared using copyreg.pickle().  It is a mapping whose keys are classes and whose values are reduction functions.  A reduction function takes a single argument of the associated class and should conform to the same interface as a __reduce__() method.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Pickler.dispatch_table"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::Pickler}}.{{c3::fast}}",
+      "Body": "Deprecated. Enable fast mode if set to a true value.  The fast mode disables the usage of memo, therefore speeding the pickling process by not generating superfluous PUT opcodes.  It should not be used with self-referential objects, doing otherwise will cause Pickler to recurse infinitely.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Pickler.fast"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pickle}}.{{c3::Unpickler}}({{c4::file}}, *, {{c5::fix_imports}}={{c6::True}}, {{c7::encoding}}=\"{{c8::ASCII}}\", {{c9::errors}}=\"{{c10::strict}}\")",
+      "Body": "This takes a binary file for reading a pickle data stream.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Unpickler"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::Unpickler}}.{{c3::load}}()",
+      "Body": "Read a pickled object representation from the open file object given in the constructor, and return the reconstituted object hierarchy specified therein.  Bytes past the pickled object's representation are ignored.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Unpickler.load"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::Unpickler}}.{{c3::persistent_load}}({{c4::pid}})",
+      "Body": "Raise an UnpicklingError by default.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Unpickler.persistent_load"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickle}}.{{c2::Unpickler}}.{{c3::find_class}}({{c4::module}}, {{c5::name}})",
+      "Body": "Import module if necessary and return the object called name from it, where the module and name arguments are str objects.  Note, unlike its name suggests, find_class() is also used for finding functions.",
+      "Link": "https://docs.python.org/3/library/pickle.html#pickle.Unpickler.find_class"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::object}}.{{c2::__getnewargs_ex__}}()",
+      "Body": "In protocols 2 and newer, classes that implements the __getnewargs_ex__() method can dictate the values passed to the __new__() method upon unpickling.  The method must return a pair (args, kwargs) where args is a tuple of positional arguments and kwargs a dictionary of named arguments for constructing the object.  Those will be passed to the __new__() method upon unpickling.",
+      "Link": "https://docs.python.org/3/library/pickle.html#object.__getnewargs_ex__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::object}}.{{c2::__getnewargs__}}()",
+      "Body": "This method serves a similar purpose as __getnewargs_ex__(), but supports only positional arguments.  It must return a tuple of arguments args which will be passed to the __new__() method upon unpickling.",
+      "Link": "https://docs.python.org/3/library/pickle.html#object.__getnewargs__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::object}}.{{c2::__getstate__}}()",
+      "Body": "Classes can further influence how their instances are pickled; if the class defines the method __getstate__(), it is called and the returned object is pickled as the contents for the instance, instead of the contents of the instance's dictionary.  If the __getstate__() method is absent, the instance's __dict__ is pickled as usual.",
+      "Link": "https://docs.python.org/3/library/pickle.html#object.__getstate__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::object}}.{{c2::__setstate__}}({{c3::state}})",
+      "Body": "Upon unpickling, if the class defines __setstate__(), it is called with the unpickled state.  In that case, there is no requirement for the state object to be a dictionary.  Otherwise, the pickled state must be a dictionary and its items are assigned to the new instance's dictionary.",
+      "Link": "https://docs.python.org/3/library/pickle.html#object.__setstate__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::object}}.{{c2::__reduce__}}()",
+      "Body": "The interface is currently defined as follows.  The __reduce__() method takes no argument and shall return either a string or preferably a tuple (the returned object is often referred to as the reduce value).",
+      "Link": "https://docs.python.org/3/library/pickle.html#object.__reduce__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::object}}.{{c2::__reduce_ex__}}({{c3::protocol}})",
+      "Body": "Alternatively, a __reduce_ex__() method may be defined.  The only difference is this method should take a single integer argument, the protocol version.  When defined, pickle will prefer it over the __reduce__() method.  In addition, __reduce__() automatically becomes a synonym for the extended version.  The main use for this method is to provide backwards-compatible reduce values for older Python releases.",
+      "Link": "https://docs.python.org/3/library/pickle.html#object.__reduce_ex__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::copyreg}}.{{c2::constructor}}({{c3::object}})",
+      "Body": "Declares object to be a valid constructor.  If object is not callable (and hence not valid as a constructor), raises TypeError.",
+      "Link": "https://docs.python.org/3/library/copyreg.html#copyreg.constructor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::copyreg}}.{{c2::pickle}}({{c3::type}}, {{c4::function}}, {{c5::constructor}}={{c6::None}})",
+      "Body": "Declares that function should be used as a reduction function for objects of type type.  function should return either a string or a tuple containing two or three elements.",
+      "Link": "https://docs.python.org/3/library/copyreg.html#copyreg.pickle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::shelve}}.{{c2::open}}({{c3::filename}}, {{c4::flag}}='{{c5::c}}', {{c6::protocol}}={{c7::None}}, {{c8::writeback}}={{c9::False}})",
+      "Body": "Open a persistent dictionary.  The filename specified is the base filename for the underlying database.  As a side-effect, an extension may be added to the filename and more than one file may be created.  By default, the underlying database file is opened for reading and writing.  The optional flag parameter has the same interpretation as the flag parameter of dbm.open().",
+      "Link": "https://docs.python.org/3/library/shelve.html#shelve.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Shelf}}.{{c2::sync}}()",
+      "Body": "Write back all entries in the cache if the shelf was opened with writeback set to True.  Also empty the cache and synchronize the persistent dictionary on disk, if feasible.  This is called automatically when the shelf is closed with close().",
+      "Link": "https://docs.python.org/3/library/shelve.html#shelve.Shelf.sync"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Shelf}}.{{c2::close}}()",
+      "Body": "Synchronize and close the persistent dict object.  Operations on a closed shelf will fail with a ValueError.",
+      "Link": "https://docs.python.org/3/library/shelve.html#shelve.Shelf.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::shelve}}.{{c3::Shelf}}({{c4::dict}}, {{c5::protocol}}={{c6::None}}, {{c7::writeback}}={{c8::False}}, {{c9::keyencoding}}='{{c10::utf}}-8')",
+      "Body": "A subclass of collections.abc.MutableMapping which stores pickled values in the dict object.",
+      "Link": "https://docs.python.org/3/library/shelve.html#shelve.Shelf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::shelve}}.{{c3::BsdDbShelf}}({{c4::dict}}, {{c5::protocol}}={{c6::None}}, {{c7::writeback}}={{c8::False}}, {{c9::keyencoding}}='{{c10::utf}}-8')",
+      "Body": "A subclass of Shelf which exposes first(), next(), previous(), last() and set_location() which are available in the third-party bsddb module from pybsddb but not in other database modules.  The dict object passed to the constructor must support those methods.  This is generally accomplished by calling one of bsddb.hashopen(), bsddb.btopen() or bsddb.rnopen().  The optional protocol, writeback, and keyencoding parameters have the same interpretation as for the Shelf class.",
+      "Link": "https://docs.python.org/3/library/shelve.html#shelve.BsdDbShelf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::shelve}}.{{c3::DbfilenameShelf}}({{c4::filename}}, {{c5::flag}}='{{c6::c}}', {{c7::protocol}}={{c8::None}}, {{c9::writeback}}={{c10::False}})",
+      "Body": "A subclass of Shelf which accepts a filename instead of a dict-like object.  The underlying file will be opened using dbm.open().  By default, the file will be created and opened for both read and write.  The optional flag parameter has the same interpretation as for the open() function.  The optional protocol and writeback parameters have the same interpretation as for the Shelf class.",
+      "Link": "https://docs.python.org/3/library/shelve.html#shelve.DbfilenameShelf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::marshal}}.{{c2::dump}}({{c3::value}}, {{c4::file}}[, {{c5::version}}])",
+      "Body": "Write the value on the open file.  The value must be a supported type.  The file must be a writeable binary file.",
+      "Link": "https://docs.python.org/3/library/marshal.html#marshal.dump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::marshal}}.{{c2::load}}({{c3::file}})",
+      "Body": "Read one value from the open file and return it.  If no valid value is read (e.g. because the data has a different Python version's incompatible marshal format), raise EOFError, ValueError or TypeError.  The file must be a readable binary file.",
+      "Link": "https://docs.python.org/3/library/marshal.html#marshal.load"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::marshal}}.{{c2::dumps}}({{c3::value}}[, {{c4::version}}])",
+      "Body": "Return the bytes object that would be written to a file by dump(value, file).  The value must be a supported type.  Raise a ValueError exception if value has (or contains an object that has) an unsupported type.",
+      "Link": "https://docs.python.org/3/library/marshal.html#marshal.dumps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::marshal}}.{{c2::loads}}({{c3::bytes}})",
+      "Body": "Convert the bytes-like object to a value.  If no valid value is found, raise EOFError, ValueError or TypeError.  Extra bytes in the input are ignored.",
+      "Link": "https://docs.python.org/3/library/marshal.html#marshal.loads"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::marshal}}.{{c2::version}}",
+      "Body": "Indicates the format that the module uses. Version 0 is the historical format, version 1 shares interned strings and version 2 uses a binary format for floating point numbers. Version 3 adds support for object instancing and recursion. The current version is 4.",
+      "Link": "https://docs.python.org/3/library/marshal.html#marshal.version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::dbm}}.{{c3::error}}",
+      "Body": "A tuple containing the exceptions that can be raised by each of the supported modules, with a unique exception also named dbm.error as the first item  the latter is used when dbm.error is raised.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dbm}}.{{c2::whichdb}}({{c3::filename}})",
+      "Body": "This function attempts to guess which of the several simple database modules available  dbm.gnu, dbm.ndbm or dbm.dumb  should be used to open a given file.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.whichdb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dbm}}.{{c2::open}}({{c3::file}}, {{c4::flag}}='{{c5::r}}', {{c6::mode}}=0{{c7::o}}666)",
+      "Body": "Open the database file file and return a corresponding object.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::dbm}}.{{c3::gnu}}.{{c4::error}}",
+      "Body": "Raised on dbm.gnu-specific errors, such as I/O errors. KeyError is raised for general mapping errors like specifying an incorrect key.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.gnu.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dbm}}.{{c2::gnu}}.{{c3::open}}({{c4::filename}}[, {{c5::flag}}[, {{c6::mode}}]])",
+      "Body": "Open a gdbm database and return a gdbm object.  The filename argument is the name of the database file.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.gnu.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gdbm}}.{{c2::firstkey}}()",
+      "Body": "It's possible to loop over every key in the database using this method  and the nextkey() method.  The traversal is ordered by gdbm's internal hash values, and won't be sorted by the key values.  This method returns the starting key.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.gnu.gdbm.firstkey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gdbm}}.{{c2::nextkey}}({{c3::key}})",
+      "Body": "Returns the key that follows key in the traversal.  The following code prints every key in the database db, without having to create a list in memory that contains them all:",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.gnu.gdbm.nextkey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gdbm}}.{{c2::reorganize}}()",
+      "Body": "If you have carried out a lot of deletions and would like to shrink the space used by the gdbm file, this routine will reorganize the database.  gdbm objects will not shorten the length of a database file except by using this reorganization; otherwise, deleted file space will be kept and reused as new (key, value) pairs are added.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.gnu.gdbm.reorganize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gdbm}}.{{c2::sync}}()",
+      "Body": "When the database has been opened in fast mode, this method forces any unwritten data to be written to the disk.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.gnu.gdbm.sync"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gdbm}}.{{c2::close}}()",
+      "Body": "Close the gdbm database.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.gnu.gdbm.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::dbm}}.{{c3::ndbm}}.{{c4::error}}",
+      "Body": "Raised on dbm.ndbm-specific errors, such as I/O errors. KeyError is raised for general mapping errors like specifying an incorrect key.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.ndbm.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dbm}}.{{c2::ndbm}}.{{c3::library}}",
+      "Body": "Name of the ndbm implementation library used.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.ndbm.library"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dbm}}.{{c2::ndbm}}.{{c3::open}}({{c4::filename}}[, {{c5::flag}}[, {{c6::mode}}]])",
+      "Body": "Open a dbm database and return a ndbm object.  The filename argument is the name of the database file (without the .dir or .pag extensions).",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.ndbm.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ndbm}}.{{c2::close}}()",
+      "Body": "Close the ndbm database.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.ndbm.ndbm.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::dbm}}.{{c3::dumb}}.{{c4::error}}",
+      "Body": "Raised on dbm.dumb-specific errors, such as I/O errors.  KeyError is raised for general mapping errors like specifying an incorrect key.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.dumb.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dbm}}.{{c2::dumb}}.{{c3::open}}({{c4::filename}}[, {{c5::flag}}[, {{c6::mode}}]])",
+      "Body": "Open a dumbdbm database and return a dumbdbm object.  The filename argument is the basename of the database file (without any specific extensions).  When a dumbdbm database is created, files with .dat and .dir extensions are created.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.dumb.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dumbdbm}}.{{c2::sync}}()",
+      "Body": "Synchronize the on-disk directory and data files.  This method is called by the Shelve.sync() method.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.dumb.dumbdbm.sync"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dumbdbm}}.{{c2::close}}()",
+      "Body": "Close the dumbdbm database.",
+      "Link": "https://docs.python.org/3/library/dbm.html#dbm.dumb.dumbdbm.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::version}}",
+      "Body": "The version number of this module, as a string. This is not the version of the SQLite library.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::version_info}}",
+      "Body": "The version number of this module, as a tuple of integers. This is not the version of the SQLite library.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.version_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::sqlite_version}}",
+      "Body": "The version number of the run-time SQLite library, as a string.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.sqlite_version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::sqlite_version_info}}",
+      "Body": "The version number of the run-time SQLite library, as a tuple of integers.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.sqlite_version_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::PARSE_DECLTYPES}}",
+      "Body": "This constant is meant to be used with the detect_types parameter of the connect() function.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.PARSE_DECLTYPES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::PARSE_COLNAMES}}",
+      "Body": "This constant is meant to be used with the detect_types parameter of the connect() function.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.PARSE_COLNAMES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::connect}}({{c3::database}}[, {{c4::timeout}}, {{c5::detect_types}}, {{c6::isolation_level}}, {{c7::check_same_thread}}, {{c8::factory}}, {{c9::cached_statements}}, {{c10::uri}}])",
+      "Body": "Opens a connection to the SQLite database file database. By default returns a Connection object, unless a custom factory is given.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.connect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::register_converter}}({{c3::typename}}, {{c4::callable}})",
+      "Body": "Registers a callable to convert a bytestring from the database into a custom Python type. The callable will be invoked for all database values that are of the type typename. Confer the parameter detect_types of the connect() function for how the type detection works. Note that typename and the name of the type in your query are matched in case-insensitive manner.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.register_converter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::register_adapter}}({{c3::type}}, {{c4::callable}})",
+      "Body": "Registers a callable to convert the custom Python type type into one of SQLite's supported types. The callable callable accepts as single parameter the Python value, and must return a value of the following types: int, float, str or bytes.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.register_adapter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::complete_statement}}({{c3::sql}})",
+      "Body": "Returns True if the string sql contains one or more complete SQL statements terminated by semicolons. It does not verify that the SQL is syntactically correct, only that there are no unclosed string literals and the statement is terminated by a semicolon.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.complete_statement"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::enable_callback_tracebacks}}({{c3::flag}})",
+      "Body": "By default you will not get any tracebacks in user-defined functions, aggregates, converters, authorizer callbacks etc. If you want to debug them, you can call this function with flag set to True. Afterwards, you will get tracebacks from callbacks on sys.stderr. Use False to disable the feature again.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.enable_callback_tracebacks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::sqlite}}3.{{c3::Connection}}",
+      "Body": "A SQLite database connection has the following attributes and methods:",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::isolation_level}}",
+      "Body": "Get or set the current default isolation level. None for autocommit mode or one of DEFERRED, IMMEDIATE or EXCLUSIVE. See section Controlling Transactions for a more detailed explanation.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.isolation_level"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::in_transaction}}",
+      "Body": "True if a transaction is active (there are uncommitted changes), False otherwise.  Read-only attribute.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.in_transaction"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::cursor}}({{c4::factory}}={{c5::Cursor}})",
+      "Body": "The cursor method accepts a single optional parameter factory. If supplied, this must be a callable returning an instance of Cursor or its subclasses.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.cursor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::commit}}()",
+      "Body": "This method commits the current transaction. If you don't call this method, anything you did since the last call to commit() is not visible from other database connections. If you wonder why you don't see the data you've written to the database, please check you didn't forget to call this method.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.commit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::rollback}}()",
+      "Body": "This method rolls back any changes to the database since the last call to commit().",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.rollback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::close}}()",
+      "Body": "This closes the database connection. Note that this does not automatically call commit(). If you just close your database connection without calling commit() first, your changes will be lost!",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::execute}}({{c4::sql}}[, {{c5::parameters}}])",
+      "Body": "This is a nonstandard shortcut that creates a cursor object by calling the cursor() method, calls the cursor's execute() method with the parameters given, and returns the cursor.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.execute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::executemany}}({{c4::sql}}[, {{c5::parameters}}])",
+      "Body": "This is a nonstandard shortcut that creates a cursor object by calling the cursor() method, calls the cursor's executemany() method with the parameters given, and returns the cursor.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.executemany"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::executescript}}({{c4::sql_script}})",
+      "Body": "This is a nonstandard shortcut that creates a cursor object by calling the cursor() method, calls the cursor's executescript() method with the given sql_script, and returns the cursor.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.executescript"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::create_function}}({{c4::name}}, {{c5::num_params}}, {{c6::func}})",
+      "Body": "Creates a user-defined function that you can later use from within SQL statements under the function name name. num_params is the number of parameters the function accepts (if num_params is -1, the function may take any number of arguments), and func is a Python callable that is called as the SQL function.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.create_function"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::create_aggregate}}({{c4::name}}, {{c5::num_params}}, {{c6::aggregate_class}})",
+      "Body": "Creates a user-defined aggregate function.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.create_aggregate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::create_collation}}({{c4::name}}, {{c5::callable}})",
+      "Body": "Creates a collation with the specified name and callable. The callable will be passed two string arguments. It should return -1 if the first is ordered lower than the second, 0 if they are ordered equal and 1 if the first is ordered higher than the second.  Note that this controls sorting (ORDER BY in SQL) so your comparisons don't affect other SQL operations.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.create_collation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::interrupt}}()",
+      "Body": "You can call this method from a different thread to abort any queries that might be executing on the connection. The query will then abort and the caller will get an exception.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.interrupt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::set_authorizer}}({{c4::authorizer_callback}})",
+      "Body": "This routine registers a callback. The callback is invoked for each attempt to access a column of a table in the database. The callback should return SQLITE_OK if access is allowed, SQLITE_DENY if the entire SQL statement should be aborted with an error and SQLITE_IGNORE if the column should be treated as a NULL value. These constants are available in the sqlite3 module.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.set_authorizer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::set_progress_handler}}({{c4::handler}}, {{c5::n}})",
+      "Body": "This routine registers a callback. The callback is invoked for every n instructions of the SQLite virtual machine. This is useful if you want to get called from SQLite during long-running operations, for example to update a GUI.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.set_progress_handler"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::set_trace_callback}}({{c4::trace_callback}})",
+      "Body": "Registers trace_callback to be called for each SQL statement that is actually executed by the SQLite backend.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.set_trace_callback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::enable_load_extension}}({{c4::enabled}})",
+      "Body": "This routine allows/disallows the SQLite engine to load SQLite extensions from shared libraries.  SQLite extensions can define new functions, aggregates or whole new virtual table implementations.  One well-known extension is the fulltext-search extension distributed with SQLite.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.enable_load_extension"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::load_extension}}({{c4::path}})",
+      "Body": "This routine loads a SQLite extension from a shared library.  You have to enable extension loading with enable_load_extension() before you can use this routine.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.load_extension"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::row_factory}}",
+      "Body": "You can change this attribute to a callable that accepts the cursor and the original row as a tuple and will return the real result row.  This way, you can implement more advanced ways of returning results, such  as returning an object that can also access columns by name.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.row_factory"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::text_factory}}",
+      "Body": "Using this attribute you can control what objects are returned for the TEXT data type. By default, this attribute is set to str and the sqlite3 module will return Unicode objects for TEXT. If you want to return bytestrings instead, you can set it to bytes.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.text_factory"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::total_changes}}",
+      "Body": "Returns the total number of database rows that have been modified, inserted, or deleted since the database connection was opened.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.total_changes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::iterdump}}()",
+      "Body": "Returns an iterator to dump the database in an SQL text format.  Useful when saving an in-memory database for later restoration.  This function provides the same capabilities as the .dump command in the sqlite3 shell.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.iterdump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Connection}}.{{c3::backup}}({{c4::target}}, *, {{c5::pages}}=0, {{c6::progress}}={{c7::None}}, {{c8::name}}=\"{{c9::main}}\", {{c10::sleep}}=0.250)",
+      "Body": "This method makes a backup of a SQLite database even while it's being accessed by other clients, or concurrently by the same connection.  The copy will be written into the mandatory argument target, that must be another Connection instance.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection.backup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::sqlite}}3.{{c3::Cursor}}",
+      "Body": "A Cursor instance has the following attributes and methods.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::execute}}({{c4::sql}}[, {{c5::parameters}}])",
+      "Body": "Executes an SQL statement. The SQL statement may be parameterized (i. e. placeholders instead of SQL literals). The sqlite3 module supports two kinds of placeholders: question marks (qmark style) and named placeholders (named style).",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.execute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::executemany}}({{c4::sql}}, {{c5::seq_of_parameters}})",
+      "Body": "Executes an SQL command against all parameter sequences or mappings found in the sequence seq_of_parameters.  The sqlite3 module also allows using an iterator yielding parameters instead of a sequence.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.executemany"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::executescript}}({{c4::sql_script}})",
+      "Body": "This is a nonstandard convenience method for executing multiple SQL statements at once. It issues a COMMIT statement first, then executes the SQL script it gets as a parameter.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.executescript"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::fetchone}}()",
+      "Body": "Fetches the next row of a query result set, returning a single sequence, or None when no more data is available.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.fetchone"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::fetchmany}}({{c4::size}}={{c5::cursor}}.{{c6::arraysize}})",
+      "Body": "Fetches the next set of rows of a query result, returning a list.  An empty list is returned when no more rows are available.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.fetchmany"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::fetchall}}()",
+      "Body": "Fetches all (remaining) rows of a query result, returning a list.  Note that the cursor's arraysize attribute can affect the performance of this operation. An empty list is returned when no rows are available.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.fetchall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::close}}()",
+      "Body": "Close the cursor now (rather than whenever __del__ is called).",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::rowcount}}",
+      "Body": "Although the Cursor class of the sqlite3 module implements this attribute, the database engine's own support for the determination of rows affected/rows selected is quirky.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.rowcount"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::lastrowid}}",
+      "Body": "This read-only attribute provides the rowid of the last modified row. It is only set if you issued an INSERT or a REPLACE statement using the execute() method.  For operations other than INSERT or REPLACE or when executemany() is called, lastrowid is set to None.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.lastrowid"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::arraysize}}",
+      "Body": "Read/write attribute that controls the number of rows returned by fetchmany(). The default value is 1 which means a single row would be fetched per call.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.arraysize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::description}}",
+      "Body": "This read-only attribute provides the column names of the last query. To remain compatible with the Python DB API, it returns a 7-tuple for each column where the last six items of each tuple are None.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.description"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Cursor}}.{{c3::connection}}",
+      "Body": "This read-only attribute provides the SQLite database Connection used by the Cursor object.  A Cursor object created by calling con.cursor() will have a connection attribute that refers to con:",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Cursor.connection"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::sqlite}}3.{{c3::Row}}",
+      "Body": "A Row instance serves as a highly optimized row_factory for Connection objects. It tries to mimic a tuple in most of its features.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Row"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sqlite}}3.{{c2::Row}}.{{c3::keys}}()",
+      "Body": "This method returns a list of column names. Immediately after a query, it is the first member of each tuple in Cursor.description.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Row.keys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::sqlite}}3.{{c3::Warning}}",
+      "Body": "A subclass of Exception.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Warning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::sqlite}}3.{{c3::Error}}",
+      "Body": "The base class of the other exceptions in this module.  It is a subclass of Exception.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::sqlite}}3.{{c3::DatabaseError}}",
+      "Body": "Exception raised for errors that are related to the database.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.DatabaseError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::sqlite}}3.{{c3::IntegrityError}}",
+      "Body": "Exception raised when the relational integrity of the database is affected, e.g. a foreign key check fails.  It is a subclass of DatabaseError.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.IntegrityError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::sqlite}}3.{{c3::ProgrammingError}}",
+      "Body": "Exception raised for programming errors, e.g. table not found or already exists, syntax error in the SQL statement, wrong number of parameters specified, etc.  It is a subclass of DatabaseError.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.ProgrammingError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::sqlite}}3.{{c3::OperationalError}}",
+      "Body": "Exception raised for errors that are related to the database's operation and not necessarily under the control of the programmer, e.g. an unexpected disconnect occurs, the data source name is not found, a transaction could not be processed, etc.  It is a subclass of DatabaseError.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.OperationalError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Data Persistence", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::sqlite}}3.{{c3::NotSupportedError}}",
+      "Body": "Exception raised in case a method or database API was used which is not supported by the database, e.g. calling the rollback() method on a connection that does not support transaction or has transactions turned off.  It is a subclass of DatabaseError.",
+      "Link": "https://docs.python.org/3/library/sqlite3.html#sqlite3.NotSupportedError"
+    },
+    "modelName": "ClozePy"
+  }
+]

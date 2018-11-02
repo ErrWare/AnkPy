@@ -1,0 +1,287 @@
+[
+  {
+    "tags": [
+      "function",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ensurepip}}.{{c2::version}}()",
+      "Body": "Returns a string specifying the bundled version of pip that will be installed when bootstrapping an environment.",
+      "Link": "https://docs.python.org/3/library/ensurepip.html#ensurepip.version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ensurepip}}.{{c2::bootstrap}}({{c3::root}}={{c4::None}}, {{c5::upgrade}}={{c6::False}}, {{c7::user}}={{c8::False}}, {{c9::altinstall}}={{c10::False}}, {{c11::default_pip}}={{c12::False}}, {{c13::verbosity}}=0)",
+      "Body": "Bootstraps pip into the current or designated environment.",
+      "Link": "https://docs.python.org/3/library/ensurepip.html#ensurepip.bootstrap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::venv}}.{{c3::EnvBuilder}}({{c4::system_site_packages}}={{c5::False}}, {{c6::clear}}={{c7::False}}, {{c8::symlinks}}={{c9::False}}, {{c10::upgrade}}={{c11::False}}, {{c12::with_pip}}={{c13::False}}, {{c14::prompt}}={{c15::None}})",
+      "Body": "The EnvBuilder class accepts the following keyword arguments on instantiation:",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.EnvBuilder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::venv}}.{{c2::EnvBuilder}}.{{c3::create}}({{c4::env_dir}})",
+      "Body": "This method takes as required argument the path (absolute or relative to the current directory) of the target directory which is to contain the virtual environment.  The create method will either create the environment in the specified directory, or raise an appropriate exception.",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.EnvBuilder.create"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::venv}}.{{c2::EnvBuilder}}.{{c3::ensure_directories}}({{c4::env_dir}})",
+      "Body": "Creates the environment directory and all necessary directories, and returns a context object.  This is just a holder for attributes (such as paths), for use by the other methods. The directories are allowed to exist already, as long as either clear or upgrade were specified to allow operating on an existing environment directory.",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.EnvBuilder.ensure_directories"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::venv}}.{{c2::EnvBuilder}}.{{c3::create_configuration}}({{c4::context}})",
+      "Body": "Creates the pyvenv.cfg configuration file in the environment.",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.EnvBuilder.create_configuration"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::venv}}.{{c2::EnvBuilder}}.{{c3::setup_python}}({{c4::context}})",
+      "Body": "Creates a copy of the Python executable (and, under Windows, DLLs) in the environment. On a POSIX system, if a specific executable python3.x was used, symlinks to python and python3 will be created pointing to that executable, unless files with those names already exist.",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.EnvBuilder.setup_python"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::venv}}.{{c2::EnvBuilder}}.{{c3::setup_scripts}}({{c4::context}})",
+      "Body": "Installs activation scripts appropriate to the platform into the virtual environment.",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.EnvBuilder.setup_scripts"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::venv}}.{{c2::EnvBuilder}}.{{c3::post_setup}}({{c4::context}})",
+      "Body": "A placeholder method which can be overridden in third party implementations to pre-install packages in the virtual environment or perform other post-creation steps.",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.EnvBuilder.post_setup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::venv}}.{{c2::EnvBuilder}}.{{c3::install_scripts}}({{c4::context}}, {{c5::path}})",
+      "Body": "path is the path to a directory that should contain subdirectories common, posix, nt, each containing scripts destined for the bin directory in the environment.  The contents of common and the directory corresponding to os.name are copied after some text replacement of placeholders:",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.EnvBuilder.install_scripts"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::venv}}.{{c2::create}}({{c3::env_dir}}, {{c4::system_site_packages}}={{c5::False}}, {{c6::clear}}={{c7::False}}, {{c8::symlinks}}={{c9::False}}, {{c10::with_pip}}={{c11::False}})",
+      "Body": "Create an EnvBuilder with the given keyword arguments, and call its create() method with the env_dir argument.",
+      "Link": "https://docs.python.org/3/library/venv.html#venv.create"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::o}} <{{c2::output}}>, --{{c3::output}}=<{{c4::output}}>",
+      "Body": "Write the output to a file named output.  If this option is not specified, the output filename will be the same as the input source, with the extension .pyz added.  If an explicit filename is given, it is used as is (so a .pyz extension should be included if required).",
+      "Link": "https://docs.python.org/3/library/zipapp.html#cmdoption-zipapp-o"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::p}} <{{c2::interpreter}}>, --{{c3::python}}=<{{c4::interpreter}}>",
+      "Body": "Add a #! line to the archive specifying interpreter as the command to run.  Also, on POSIX, make the archive executable.  The default is to write no #! line, and not make the file executable.",
+      "Link": "https://docs.python.org/3/library/zipapp.html#cmdoption-zipapp-p"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::m}} <{{c2::mainfn}}>, --{{c3::main}}=<{{c4::mainfn}}>",
+      "Body": "Write a __main__.py file to the archive that executes mainfn.  The mainfn argument should have the form pkg.mod:fn, where pkg.mod is a package/module in the archive, and fn is a callable in the given module. The __main__.py file will execute that callable.",
+      "Link": "https://docs.python.org/3/library/zipapp.html#cmdoption-zipapp-m"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::c}}, --{{c2::compress}}",
+      "Body": "Compress files with the deflate method, reducing the size of the output file. By default, files are stored uncompressed in the archive.",
+      "Link": "https://docs.python.org/3/library/zipapp.html#cmdoption-zipapp-c"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::info}}",
+      "Body": "Display the interpreter embedded in the archive, for diagnostic purposes.  In this case, any other options are ignored and SOURCE must be an archive, not a directory.",
+      "Link": "https://docs.python.org/3/library/zipapp.html#cmdoption-zipapp-info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::h}}, --{{c2::help}}",
+      "Body": "Print a short usage message and exit.",
+      "Link": "https://docs.python.org/3/library/zipapp.html#cmdoption-zipapp-h"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zipapp}}.{{c2::create_archive}}({{c3::source}}, {{c4::target}}={{c5::None}}, {{c6::interpreter}}={{c7::None}}, {{c8::main}}={{c9::None}}, {{c10::filter}}={{c11::None}}, {{c12::compressed}}={{c13::False}})",
+      "Body": "Create an application archive from source.  The source can be any of the following:",
+      "Link": "https://docs.python.org/3/library/zipapp.html#zipapp.create_archive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Software Packaging and Distribution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zipapp}}.{{c2::get_interpreter}}({{c3::archive}})",
+      "Body": "Return the interpreter specified in the #! line at the start of the archive.  If there is no #! line, return None. The archive argument can be a filename or a file-like object open for reading in bytes mode.  It is assumed to be at the start of the archive.",
+      "Link": "https://docs.python.org/3/library/zipapp.html#zipapp.get_interpreter"
+    },
+    "modelName": "ClozePy"
+  }
+]

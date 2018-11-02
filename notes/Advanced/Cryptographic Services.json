@@ -1,0 +1,458 @@
+[
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hashlib}}.{{c2::new}}({{c3::name}}[, {{c4::data}}])",
+      "Body": "Is a generic constructor that takes the string name of the desired algorithm as its first parameter.  It also exists to allow access to the above listed hashes as well as any other algorithms that your OpenSSL library may offer.  The named constructors are much faster than new() and should be preferred.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.new"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Cryptographic Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::hashlib}}.{{c2::algorithms_guaranteed}}",
+      "Body": "A set containing the names of the hash algorithms guaranteed to be supported by this module on all platforms.  Note that 'md5' is in this list despite some upstream vendors offering an odd FIPS compliant build that excludes it.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.algorithms_guaranteed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Cryptographic Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::hashlib}}.{{c2::algorithms_available}}",
+      "Body": "A set containing the names of the hash algorithms that are available in the running interpreter.  These names will be recognized when passed to new().  algorithms_guaranteed will always be a subset.  The same algorithm may appear multiple times in this set under different names (thanks to OpenSSL).",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.algorithms_available"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Cryptographic Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::hash}}.{{c2::digest_size}}",
+      "Body": "The size of the resulting hash in bytes.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.hash.digest_size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Cryptographic Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::hash}}.{{c2::block_size}}",
+      "Body": "The internal block size of the hash algorithm in bytes.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.hash.block_size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hash}}.{{c2::name}}",
+      "Body": "The canonical name of this hash, always lowercase and always suitable as a parameter to new() to create another hash of this type.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.hash.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hash}}.{{c2::update}}({{c3::data}})",
+      "Body": "Update the hash object with the bytes-like object. Repeated calls are equivalent to a single call with the concatenation of all the arguments: m.update(a); m.update(b) is equivalent to m.update(a+b).",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.hash.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hash}}.{{c2::digest}}()",
+      "Body": "Return the digest of the data passed to the update() method so far. This is a bytes object of size digest_size which may contain bytes in the whole range from 0 to 255.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.hash.digest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hash}}.{{c2::hexdigest}}()",
+      "Body": "Like digest() except the digest is returned as a string object of double length, containing only hexadecimal digits.  This may be used to exchange the value safely in email or other non-binary environments.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.hash.hexdigest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hash}}.{{c2::copy}}()",
+      "Body": "Return a copy (clone) of the hash object.  This can be used to efficiently compute the digests of data sharing a common initial substring.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.hash.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shake}}.{{c2::digest}}({{c3::length}})",
+      "Body": "Return the digest of the data passed to the update() method so far. This is a bytes object of size length which may contain bytes in the whole range from 0 to 255.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.shake.digest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shake}}.{{c2::hexdigest}}({{c3::length}})",
+      "Body": "Like digest() except the digest is returned as a string object of double length, containing only hexadecimal digits.  This may be used to exchange the value safely in email or other non-binary environments.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.shake.hexdigest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hashlib}}.{{c2::pbkdf}}2{{c3::_hmac}}({{c4::hash_name}}, {{c5::password}}, {{c6::salt}}, {{c7::iterations}}, {{c8::dklen}}={{c9::None}})",
+      "Body": "The function provides PKCS#5 password-based key derivation function 2. It uses HMAC as pseudorandom function.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.pbkdf2_hmac"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hashlib}}.{{c2::scrypt}}({{c3::password}}, *, {{c4::salt}}, {{c5::n}}, {{c6::r}}, {{c7::p}}, {{c8::maxmem}}=0, {{c9::dklen}}=64)",
+      "Body": "The function provides scrypt password-based key derivation function as defined in RFC 7914.",
+      "Link": "https://docs.python.org/3/library/hashlib.html#hashlib.scrypt"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hmac}}.{{c2::new}}({{c3::key}}, {{c4::msg}}={{c5::None}}, {{c6::digestmod}}={{c7::None}})",
+      "Body": "Return a new hmac object.  key is a bytes or bytearray object giving the secret key.  If msg is present, the method call update(msg) is made. digestmod is the digest name, digest constructor or module for the HMAC object to use. It supports any name suitable to hashlib.new() and defaults to the hashlib.md5 constructor.",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.new"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hmac}}.{{c2::digest}}({{c3::key}}, {{c4::msg}}, {{c5::digest}})",
+      "Body": "Return digest of msg for given secret key and digest. The function is equivalent to HMAC(key, msg, digest).digest(), but uses an optimized C or inline implementation, which is faster for messages that fit into memory. The parameters key, msg, and digest have the same meaning as in new().",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.digest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::HMAC}}.{{c2::update}}({{c3::msg}})",
+      "Body": "Update the hmac object with msg.  Repeated calls are equivalent to a single call with the concatenation of all the arguments: m.update(a); m.update(b) is equivalent to m.update(a + b).",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.HMAC.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::HMAC}}.{{c2::digest}}()",
+      "Body": "Return the digest of the bytes passed to the update() method so far. This bytes object will be the same length as the digest_size of the digest given to the constructor.  It may contain non-ASCII bytes, including NUL bytes.",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.HMAC.digest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::HMAC}}.{{c2::hexdigest}}()",
+      "Body": "Like digest() except the digest is returned as a string twice the length containing only hexadecimal digits.  This may be used to exchange the value safely in email or other non-binary environments.",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.HMAC.hexdigest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::HMAC}}.{{c2::copy}}()",
+      "Body": "Return a copy (clone) of the hmac object.  This can be used to efficiently compute the digests of strings that share a common initial substring.",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.HMAC.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::HMAC}}.{{c2::digest_size}}",
+      "Body": "The size of the resulting HMAC digest in bytes.",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.HMAC.digest_size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::HMAC}}.{{c2::block_size}}",
+      "Body": "The internal block size of the hash algorithm in bytes.",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.HMAC.block_size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::HMAC}}.{{c2::name}}",
+      "Body": "The canonical name of this HMAC, always lowercase, e.g. hmac-md5.",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.HMAC.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::hmac}}.{{c2::compare_digest}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return a == b.  This function uses an approach designed to prevent timing analysis by avoiding content-based short circuiting behaviour, making it appropriate for cryptography.  a and b must both be of the same type: either str (ASCII only, as e.g. returned by HMAC.hexdigest()), or a bytes-like object.",
+      "Link": "https://docs.python.org/3/library/hmac.html#hmac.compare_digest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::secrets}}.{{c3::SystemRandom}}",
+      "Body": "A class for generating random numbers using the highest-quality sources provided by the operating system.  See random.SystemRandom for additional details.",
+      "Link": "https://docs.python.org/3/library/secrets.html#secrets.SystemRandom"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::secrets}}.{{c2::choice}}({{c3::sequence}})",
+      "Body": "Return a randomly-chosen element from a non-empty sequence.",
+      "Link": "https://docs.python.org/3/library/secrets.html#secrets.choice"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::secrets}}.{{c2::randbelow}}({{c3::n}})",
+      "Body": "Return a random int in the range [0, n).",
+      "Link": "https://docs.python.org/3/library/secrets.html#secrets.randbelow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::secrets}}.{{c2::randbits}}({{c3::k}})",
+      "Body": "Return an int with k random bits.",
+      "Link": "https://docs.python.org/3/library/secrets.html#secrets.randbits"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::secrets}}.{{c2::token_bytes}}([{{c3::nbytes}}={{c4::None}}])",
+      "Body": "Return a random byte string containing nbytes number of bytes. If nbytes is None or not supplied, a reasonable default is used.",
+      "Link": "https://docs.python.org/3/library/secrets.html#secrets.token_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::secrets}}.{{c2::token_hex}}([{{c3::nbytes}}={{c4::None}}])",
+      "Body": "Return a random text string, in hexadecimal.  The string has nbytes random bytes, each byte converted to two hex digits.  If nbytes is None or not supplied, a reasonable default is used.",
+      "Link": "https://docs.python.org/3/library/secrets.html#secrets.token_hex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::secrets}}.{{c2::token_urlsafe}}([{{c3::nbytes}}={{c4::None}}])",
+      "Body": "Return a random URL-safe text string, containing nbytes random bytes.  The text is Base64 encoded, so on average each byte results in approximately 1.3 characters.  If nbytes is None or not supplied, a reasonable default is used.",
+      "Link": "https://docs.python.org/3/library/secrets.html#secrets.token_urlsafe"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Cryptographic Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::secrets}}.{{c2::compare_digest}}({{c3::a}}, {{c4::b}})",
+      "Body": "Return True if strings a and b are equal, otherwise False, in such a way as to reduce the risk of timing attacks. See hmac.compare_digest() for additional details.",
+      "Link": "https://docs.python.org/3/library/secrets.html#secrets.compare_digest"
+    },
+    "modelName": "ClozePy"
+  }
+]

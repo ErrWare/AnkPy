@@ -1,0 +1,1370 @@
+[
+  {
+    "tags": ["exception", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::zipimport}}.{{c3::ZipImportError}}",
+      "Body": "Exception raised by zipimporter objects. It's a subclass of ImportError, so it can be caught as ImportError, too.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.ZipImportError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::zipimport}}.{{c3::zipimporter}}({{c4::archivepath}})",
+      "Body": "Create a new zipimporter instance. archivepath must be a path to a ZIP file, or to a specific path within a ZIP file.  For example, an archivepath of foo/bar.zip/lib will look for modules in the lib directory inside the ZIP file foo/bar.zip (provided that it exists).",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::find_module}}({{c4::fullname}}[, {{c5::path}}])",
+      "Body": "Search for a module specified by fullname. fullname must be the fully qualified (dotted) module name. It returns the zipimporter instance itself if the module was found, or None if it wasn't. The optional path argument is ignoredit's there for compatibility with the importer protocol.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.find_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::get_code}}({{c4::fullname}})",
+      "Body": "Return the code object for the specified module. Raise ZipImportError if the module couldn't be found.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.get_code"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::get_data}}({{c4::pathname}})",
+      "Body": "Return the data associated with pathname. Raise OSError if the file wasn't found.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.get_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::get_filename}}({{c4::fullname}})",
+      "Body": "Return the value __file__ would be set to if the specified module was imported. Raise ZipImportError if the module couldn't be found.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.get_filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::get_source}}({{c4::fullname}})",
+      "Body": "Return the source code for the specified module. Raise ZipImportError if the module couldn't be found, return None if the archive does contain the module, but has no source for it.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.get_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::is_package}}({{c4::fullname}})",
+      "Body": "Return True if the module specified by fullname is a package. Raise ZipImportError if the module couldn't be found.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.is_package"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::load_module}}({{c4::fullname}})",
+      "Body": "Load the module specified by fullname. fullname must be the fully qualified (dotted) module name. It returns the imported module, or raises ZipImportError if it wasn't found.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.load_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::archive}}",
+      "Body": "The file name of the importer's associated ZIP file, without a possible subpath.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.archive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::zipimport}}.{{c2::zipimporter}}.{{c3::prefix}}",
+      "Body": "The subpath within the ZIP file where modules are searched.  This is the empty string for zipimporter objects which point to the root of the ZIP file.",
+      "Link": "https://docs.python.org/3/library/zipimport.html#zipimport.zipimporter.prefix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pkgutil}}.{{c3::ModuleInfo}}({{c4::module_finder}}, {{c5::name}}, {{c6::ispkg}})",
+      "Body": "A namedtuple that holds a brief summary of a module's info.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.ModuleInfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pkgutil}}.{{c2::extend_path}}({{c3::path}}, {{c4::name}})",
+      "Body": "Extend the search path for the modules which comprise a package.  Intended use is to place the following code in a package's __init__.py:",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.extend_path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pkgutil}}.{{c3::ImpImporter}}({{c4::dirname}}={{c5::None}})",
+      "Body": "PEP 302 Finder that wraps Python's classic import algorithm.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.ImpImporter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pkgutil}}.{{c3::ImpLoader}}({{c4::fullname}}, {{c5::file}}, {{c6::filename}}, {{c7::etc}})",
+      "Body": "Loader that wraps Python's classic import algorithm.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.ImpLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pkgutil}}.{{c2::find_loader}}({{c3::fullname}})",
+      "Body": "Retrieve a module loader for the given fullname.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.find_loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pkgutil}}.{{c2::get_importer}}({{c3::path_item}})",
+      "Body": "Retrieve a finder for the given path_item.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.get_importer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pkgutil}}.{{c2::get_loader}}({{c3::module_or_name}})",
+      "Body": "Get a loader object for module_or_name.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.get_loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pkgutil}}.{{c2::iter_importers}}({{c3::fullname}}='')",
+      "Body": "Yield finder objects for the given module name.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.iter_importers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pkgutil}}.{{c2::iter_modules}}({{c3::path}}={{c4::None}}, {{c5::prefix}}='')",
+      "Body": "Yields ModuleInfo for all submodules on path, or, if path is None, all top-level modules on sys.path.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.iter_modules"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pkgutil}}.{{c2::walk_packages}}({{c3::path}}={{c4::None}}, {{c5::prefix}}='', {{c6::onerror}}={{c7::None}})",
+      "Body": "Yields ModuleInfo for all modules recursively on path, or, if path is None, all accessible modules.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.walk_packages"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pkgutil}}.{{c2::get_data}}({{c3::package}}, {{c4::resource}})",
+      "Body": "Get a resource from a package.",
+      "Link": "https://docs.python.org/3/library/pkgutil.html#pkgutil.get_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::modulefinder}}.{{c2::AddPackagePath}}({{c3::pkg_name}}, {{c4::path}})",
+      "Body": "Record that the package named pkg_name can be found in the specified path.",
+      "Link": "https://docs.python.org/3/library/modulefinder.html#modulefinder.AddPackagePath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::modulefinder}}.{{c2::ReplacePackage}}({{c3::oldname}}, {{c4::newname}})",
+      "Body": "Allows specifying that the module named oldname is in fact the package named newname.",
+      "Link": "https://docs.python.org/3/library/modulefinder.html#modulefinder.ReplacePackage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::modulefinder}}.{{c3::ModuleFinder}}({{c4::path}}={{c5::None}}, {{c6::debug}}=0, {{c7::excludes}}=[], {{c8::replace_paths}}=[])",
+      "Body": "This class provides run_script() and report() methods to determine the set of modules imported by a script. path can be a list of directories to search for modules; if not specified, sys.path is used.  debug sets the debugging level; higher values make the class print debugging messages about what it's doing. excludes is a list of module names to exclude from the analysis. replace_paths is a list of (oldpath, newpath) tuples that will be replaced in module paths.",
+      "Link": "https://docs.python.org/3/library/modulefinder.html#modulefinder.ModuleFinder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::modulefinder}}.{{c2::ModuleFinder}}.{{c3::report}}()",
+      "Body": "Print a report to standard output that lists the modules imported by the script and their paths, as well as modules that are missing or seem to be missing.",
+      "Link": "https://docs.python.org/3/library/modulefinder.html#modulefinder.ModuleFinder.report"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::modulefinder}}.{{c2::ModuleFinder}}.{{c3::run_script}}({{c4::pathname}})",
+      "Body": "Analyze the contents of the pathname file, which must contain Python code.",
+      "Link": "https://docs.python.org/3/library/modulefinder.html#modulefinder.ModuleFinder.run_script"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::modulefinder}}.{{c2::ModuleFinder}}.{{c3::modules}}",
+      "Body": "A dictionary mapping module names to modules. See Example usage of ModuleFinder.",
+      "Link": "https://docs.python.org/3/library/modulefinder.html#modulefinder.ModuleFinder.modules"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::runpy}}.{{c2::run_module}}({{c3::mod_name}}, {{c4::init_globals}}={{c5::None}}, {{c6::run_name}}={{c7::None}}, {{c8::alter_sys}}={{c9::False}})",
+      "Body": "Execute the code of the specified module and return the resulting module globals dictionary. The module's code is first located using the standard import mechanism (refer to PEP 302 for details) and then executed in a fresh module namespace.",
+      "Link": "https://docs.python.org/3/library/runpy.html#runpy.run_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::runpy}}.{{c2::run_path}}({{c3::file_path}}, {{c4::init_globals}}={{c5::None}}, {{c6::run_name}}={{c7::None}})",
+      "Body": "Execute the code at the named filesystem location and return the resulting module globals dictionary. As with a script name supplied to the CPython command line, the supplied path may refer to a Python source file, a compiled bytecode file or a valid sys.path entry containing a __main__ module (e.g. a zipfile containing a top-level __main__.py file).",
+      "Link": "https://docs.python.org/3/library/runpy.html#runpy.run_path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::__import__}}({{c3::name}}, {{c4::globals}}={{c5::None}}, {{c6::locals}}={{c7::None}}, {{c8::fromlist}}=(), {{c9::level}}=0)",
+      "Body": "An implementation of the built-in __import__() function.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.__import__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::import_module}}({{c3::name}}, {{c4::package}}={{c5::None}})",
+      "Body": "Import a module. The name argument specifies what module to import in absolute or relative terms (e.g. either pkg.mod or ..mod). If the name is specified in relative terms, then the package argument must be set to the name of the package which is to act as the anchor for resolving the package name (e.g. import_module('..mod', 'pkg.subpkg') will import pkg.mod).",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.import_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::find_loader}}({{c3::name}}, {{c4::path}}={{c5::None}})",
+      "Body": "Find the loader for a module, optionally within the specified path. If the module is in sys.modules, then sys.modules[name].__loader__ is returned (unless the loader would be None or is not set, in which case ValueError is raised). Otherwise a search using sys.meta_path is done. None is returned if no loader is found.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.find_loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::invalidate_caches}}()",
+      "Body": "Invalidate the internal caches of finders stored at sys.meta_path. If a finder implements invalidate_caches() then it will be called to perform the invalidation.  This function should be called if any modules are created/installed while your program is running to guarantee all finders will notice the new module's existence.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.invalidate_caches"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::reload}}({{c3::module}})",
+      "Body": "Reload a previously imported module.  The argument must be a module object, so it must have been successfully imported before.  This is useful if you have edited the module source file using an external editor and want to try out the new version without leaving the Python interpreter.  The return value is the module object (which can be different if re-importing causes a different object to be placed in sys.modules).",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.reload"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::Finder}}",
+      "Body": "An abstract base class representing a finder.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.Finder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::Finder}}.{{c4::abstractmethod}} {{c5::find_module}}({{c6::fullname}}, {{c7::path}}={{c8::None}})",
+      "Body": "An abstract method for finding a loader for the specified module.  Originally specified in PEP 302, this method was meant for use in sys.meta_path and in the path-based import subsystem.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.Finder.find_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::MetaPathFinder}}",
+      "Body": "An abstract base class representing a meta path finder. For compatibility, this is a subclass of Finder.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.MetaPathFinder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::MetaPathFinder}}.{{c4::find_spec}}({{c5::fullname}}, {{c6::path}}, {{c7::target}}={{c8::None}})",
+      "Body": "An abstract method for finding a spec for the specified module.  If this is a top-level import, path will be None.  Otherwise, this is a search for a subpackage or module and path will be the value of __path__ from the parent package. If a spec cannot be found, None is returned. When passed in, target is a module object that the finder may use to make a more educated guess about what spec to return.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.MetaPathFinder.find_spec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::MetaPathFinder}}.{{c4::find_module}}({{c5::fullname}}, {{c6::path}})",
+      "Body": "A legacy method for finding a loader for the specified module.  If this is a top-level import, path will be None. Otherwise, this is a search for a subpackage or module and path will be the value of __path__ from the parent package. If a loader cannot be found, None is returned.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.MetaPathFinder.find_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::MetaPathFinder}}.{{c4::invalidate_caches}}()",
+      "Body": "An optional method which, when called, should invalidate any internal cache used by the finder. Used by importlib.invalidate_caches() when invalidating the caches of all finders on sys.meta_path.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.MetaPathFinder.invalidate_caches"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::PathEntryFinder}}",
+      "Body": "An abstract base class representing a path entry finder.  Though it bears some similarities to MetaPathFinder, PathEntryFinder is meant for use only within the path-based import subsystem provided by PathFinder. This ABC is a subclass of Finder for compatibility reasons only.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::PathEntryFinder}}.{{c4::find_spec}}({{c5::fullname}}, {{c6::target}}={{c7::None}})",
+      "Body": "An abstract method for finding a spec for the specified module.  The finder will search for the module only within the path entry to which it is assigned.  If a spec cannot be found, None is returned.  When passed in, target is a module object that the finder may use to make a more educated guess about what spec to return.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder.find_spec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::PathEntryFinder}}.{{c4::find_loader}}({{c5::fullname}})",
+      "Body": "A legacy method for finding a loader for the specified module.  Returns a 2-tuple of (loader, portion) where portion is a sequence of file system locations contributing to part of a namespace package. The loader may be None while specifying portion to signify the contribution of the file system locations to a namespace package. An empty list can be used for portion to signify the loader is not part of a namespace package. If loader is None and portion is the empty list then no loader or location for a namespace package were found (i.e. failure to find anything for the module).",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder.find_loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::PathEntryFinder}}.{{c4::find_module}}({{c5::fullname}})",
+      "Body": "A concrete implementation of Finder.find_module() which is equivalent to self.find_loader(fullname)[0].",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder.find_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::PathEntryFinder}}.{{c4::invalidate_caches}}()",
+      "Body": "An optional method which, when called, should invalidate any internal cache used by the finder. Used by PathFinder.invalidate_caches() when invalidating the caches of all cached finders.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder.invalidate_caches"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::Loader}}",
+      "Body": "An abstract base class for a loader. See PEP 302 for the exact definition for a loader.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.Loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::Loader}}.{{c4::create_module}}({{c5::spec}})",
+      "Body": "A method that returns the module object to use when importing a module.  This method may return None, indicating that default module creation semantics should take place.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.Loader.create_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::Loader}}.{{c4::exec_module}}({{c5::module}})",
+      "Body": "An abstract method that executes the module in its own namespace when a module is imported or reloaded.  The module should already be initialized when exec_module() is called. When this method exists, create_module() must be defined.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.Loader.exec_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::Loader}}.{{c4::load_module}}({{c5::fullname}})",
+      "Body": "A legacy method for loading a module. If the module cannot be loaded, ImportError is raised, otherwise the loaded module is returned.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.Loader.load_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::Loader}}.{{c4::module_repr}}({{c5::module}})",
+      "Body": "A legacy method which when implemented calculates and returns the given module's repr, as a string. The module type's default repr() will use the result of this method as appropriate.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.Loader.module_repr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::ResourceReader}}",
+      "Body": "An abstract base class to provide the ability to read resources.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ResourceReader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::ResourceReader}}.{{c4::abstractmethod}} {{c5::open_resource}}({{c6::resource}})",
+      "Body": "Returns an opened, file-like object for binary reading of the resource.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ResourceReader.open_resource"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::ResourceReader}}.{{c4::abstractmethod}} {{c5::resource_path}}({{c6::resource}})",
+      "Body": "Returns the file system path to the resource.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ResourceReader.resource_path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::ResourceReader}}.{{c4::abstractmethod}} {{c5::is_resource}}({{c6::name}})",
+      "Body": "Returns True if the named name is considered a resource. FileNotFoundError is raised if name does not exist.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ResourceReader.is_resource"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::ResourceReader}}.{{c4::abstractmethod}} {{c5::contents}}()",
+      "Body": "Returns an iterable of strings over the contents of the package. Do note that it is not required that all names returned by the iterator be actual resources, e.g. it is acceptable to return names for which is_resource() would be false.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ResourceReader.contents"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::ResourceLoader}}",
+      "Body": "An abstract base class for a loader which implements the optional PEP 302 protocol for loading arbitrary resources from the storage back-end.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ResourceLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::ResourceLoader}}.{{c4::abstractmethod}} {{c5::get_data}}({{c6::path}})",
+      "Body": "An abstract method to return the bytes for the data located at path. Loaders that have a file-like storage back-end that allows storing arbitrary data can implement this abstract method to give direct access to the data stored. OSError is to be raised if the path cannot be found. The path is expected to be constructed using a module's __file__ attribute or an item from a package's __path__.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ResourceLoader.get_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::InspectLoader}}",
+      "Body": "An abstract base class for a loader which implements the optional PEP 302 protocol for loaders that inspect modules.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.InspectLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::InspectLoader}}.{{c4::get_code}}({{c5::fullname}})",
+      "Body": "Return the code object for a module, or None if the module does not have a code object (as would be the case, for example, for a built-in module).  Raise an ImportError if loader cannot find the requested module.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.InspectLoader.get_code"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::InspectLoader}}.{{c4::abstractmethod}} {{c5::get_source}}({{c6::fullname}})",
+      "Body": "An abstract method to return the source of a module. It is returned as a text string using universal newlines, translating all recognized line separators into '\\n' characters.  Returns None if no source is available (e.g. a built-in module). Raises ImportError if the loader cannot find the module specified.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.InspectLoader.get_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::InspectLoader}}.{{c4::is_package}}({{c5::fullname}})",
+      "Body": "An abstract method to return a true value if the module is a package, a false value otherwise. ImportError is raised if the loader cannot find the module.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.InspectLoader.is_package"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "staticmethod",
+      "Importing Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::InspectLoader}}.{{c4::static}} {{c5::source_to_code}}({{c6::data}}, {{c7::path}}='<{{c8::string}}>')",
+      "Body": "Create a code object from Python source.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.InspectLoader.source_to_code"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::InspectLoader}}.{{c4::exec_module}}({{c5::module}})",
+      "Body": "Implementation of Loader.exec_module().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.InspectLoader.exec_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::InspectLoader}}.{{c4::load_module}}({{c5::fullname}})",
+      "Body": "Implementation of Loader.load_module().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.InspectLoader.load_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::ExecutionLoader}}",
+      "Body": "An abstract base class which inherits from InspectLoader that, when implemented, helps a module to be executed as a script. The ABC represents an optional PEP 302 protocol.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ExecutionLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::ExecutionLoader}}.{{c4::abstractmethod}} {{c5::get_filename}}({{c6::fullname}})",
+      "Body": "An abstract method that is to return the value of __file__ for the specified module. If no path is available, ImportError is raised.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.ExecutionLoader.get_filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::FileLoader}}({{c5::fullname}}, {{c6::path}})",
+      "Body": "An abstract base class which inherits from ResourceLoader and ExecutionLoader, providing concrete implementations of ResourceLoader.get_data() and ExecutionLoader.get_filename().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.FileLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::FileLoader}}.{{c4::name}}",
+      "Body": "The name of the module the loader can handle.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.FileLoader.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::FileLoader}}.{{c4::path}}",
+      "Body": "Path to the file of the module.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.FileLoader.path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::FileLoader}}.{{c4::load_module}}({{c5::fullname}})",
+      "Body": "Calls super's load_module().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.FileLoader.load_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::FileLoader}}.{{c4::abstractmethod}} {{c5::get_filename}}({{c6::fullname}})",
+      "Body": "Returns path.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.FileLoader.get_filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::FileLoader}}.{{c4::abstractmethod}} {{c5::get_data}}({{c6::path}})",
+      "Body": "Reads path as a binary file and returns the bytes from it.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.FileLoader.get_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::abc}}.{{c4::SourceLoader}}",
+      "Body": "An abstract base class for implementing source (and optionally bytecode) file loading. The class inherits from both ResourceLoader and ExecutionLoader, requiring the implementation of:",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::SourceLoader}}.{{c4::path_stats}}({{c5::path}})",
+      "Body": "Optional abstract method which returns a dict containing metadata about the specified path.  Supported dictionary keys are:",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader.path_stats"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::SourceLoader}}.{{c4::path_mtime}}({{c5::path}})",
+      "Body": "Optional abstract method which returns the modification time for the specified path.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader.path_mtime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::SourceLoader}}.{{c4::set_data}}({{c5::path}}, {{c6::data}})",
+      "Body": "Optional abstract method which writes the specified bytes to a file path. Any intermediate directories which do not exist are to be created automatically.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader.set_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::SourceLoader}}.{{c4::get_code}}({{c5::fullname}})",
+      "Body": "Concrete implementation of InspectLoader.get_code().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader.get_code"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::SourceLoader}}.{{c4::exec_module}}({{c5::module}})",
+      "Body": "Concrete implementation of Loader.exec_module().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader.exec_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::SourceLoader}}.{{c4::load_module}}({{c5::fullname}})",
+      "Body": "Concrete implementation of Loader.load_module().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader.load_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::SourceLoader}}.{{c4::get_source}}({{c5::fullname}})",
+      "Body": "Concrete implementation of InspectLoader.get_source().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader.get_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::abc}}.{{c3::SourceLoader}}.{{c4::is_package}}({{c5::fullname}})",
+      "Body": "Concrete implementation of InspectLoader.is_package(). A module is determined to be a package if its file path (as provided by ExecutionLoader.get_filename()) is a file named __init__ when the file extension is removed and the module name itself does not end in __init__.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.abc.SourceLoader.is_package"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::Package}}",
+      "Body": "The Package type is defined as Union[str, ModuleType].  This means that where the function describes accepting a Package, you can pass in either a string or a module.  Module objects must have a resolvable __spec__.submodule_search_locations that is not None.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.Package"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::Resource}}",
+      "Body": "This type describes the resource names passed into the various functions in this package.  This is defined as Union[str, os.PathLike].",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.Resource"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::open_binary}}({{c4::package}}, {{c5::resource}})",
+      "Body": "Open for binary reading the resource within package.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.open_binary"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::open_text}}({{c4::package}}, {{c5::resource}}, {{c6::encoding}}='{{c7::utf}}-8', {{c8::errors}}='{{c9::strict}}')",
+      "Body": "Open for text reading the resource within package.  By default, the resource is opened for reading as UTF-8.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.open_text"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::read_binary}}({{c4::package}}, {{c5::resource}})",
+      "Body": "Read and return the contents of the resource within package as bytes.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.read_binary"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::read_text}}({{c4::package}}, {{c5::resource}}, {{c6::encoding}}='{{c7::utf}}-8', {{c8::errors}}='{{c9::strict}}')",
+      "Body": "Read and return the contents of resource within package as a str. By default, the contents are read as strict UTF-8.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.read_text"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::path}}({{c4::package}}, {{c5::resource}})",
+      "Body": "Return the path to the resource as an actual file system path.  This function returns a context manager for use in a with statement. The context manager provides a pathlib.Path object.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::is_resource}}({{c4::package}}, {{c5::name}})",
+      "Body": "Return True if there is a resource named name in the package, otherwise False.  Remember that directories are not resources! package is either a name or a module object which conforms to the Package requirements.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.is_resource"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::resources}}.{{c3::contents}}({{c4::package}})",
+      "Body": "Return an iterable over the named items within the package.  The iterable returns str resources (e.g. files) and non-resources (e.g. directories).  The iterable does not recurse into subdirectories.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.resources.contents"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SOURCE_SUFFIXES}}",
+      "Body": "A list of strings representing the recognized file suffixes for source modules.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SOURCE_SUFFIXES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::DEBUG_BYTECODE_SUFFIXES}}",
+      "Body": "A list of strings representing the file suffixes for non-optimized bytecode modules.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.DEBUG_BYTECODE_SUFFIXES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::OPTIMIZED_BYTECODE_SUFFIXES}}",
+      "Body": "A list of strings representing the file suffixes for optimized bytecode modules.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.OPTIMIZED_BYTECODE_SUFFIXES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::BYTECODE_SUFFIXES}}",
+      "Body": "A list of strings representing the recognized file suffixes for bytecode modules (including the leading dot).",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.BYTECODE_SUFFIXES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::EXTENSION_SUFFIXES}}",
+      "Body": "A list of strings representing the recognized file suffixes for extension modules.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.EXTENSION_SUFFIXES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::all_suffixes}}()",
+      "Body": "Returns a combined list of strings representing all file suffixes for modules recognized by the standard import machinery. This is a helper for code which simply needs to know if a filesystem path potentially refers to a module without needing any details on the kind of module (for example, inspect.getmodulename()).",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.all_suffixes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::BuiltinImporter}}",
+      "Body": "An importer for built-in modules. All known built-in modules are listed in sys.builtin_module_names. This class implements the importlib.abc.MetaPathFinder and importlib.abc.InspectLoader ABCs.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.BuiltinImporter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::FrozenImporter}}",
+      "Body": "An importer for frozen modules. This class implements the importlib.abc.MetaPathFinder and importlib.abc.InspectLoader ABCs.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.FrozenImporter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::WindowsRegistryFinder}}",
+      "Body": "Finder for modules declared in the Windows registry.  This class implements the importlib.abc.MetaPathFinder ABC.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.WindowsRegistryFinder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::PathFinder}}",
+      "Body": "A Finder for sys.path and package __path__ attributes. This class implements the importlib.abc.MetaPathFinder ABC.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.PathFinder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Importing Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::PathFinder}}.{{c4::classmethod}} {{c5::find_spec}}({{c6::fullname}}, {{c7::path}}={{c8::None}}, {{c9::target}}={{c10::None}})",
+      "Body": "Class method that attempts to find a spec for the module specified by fullname on sys.path or, if defined, on path. For each path entry that is searched, sys.path_importer_cache is checked. If a non-false object is found then it is used as the path entry finder to look for the module being searched for. If no entry is found in sys.path_importer_cache, then sys.path_hooks is searched for a finder for the path entry and, if found, is stored in sys.path_importer_cache along with being queried about the module. If no finder is ever found then None is both stored in the cache and returned.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.PathFinder.find_spec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Importing Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::PathFinder}}.{{c4::classmethod}} {{c5::find_module}}({{c6::fullname}}, {{c7::path}}={{c8::None}})",
+      "Body": "A legacy wrapper around find_spec().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.PathFinder.find_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Importing Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::PathFinder}}.{{c4::classmethod}} {{c5::invalidate_caches}}()",
+      "Body": "Calls importlib.abc.PathEntryFinder.invalidate_caches() on all finders stored in sys.path_importer_cache that define the method. Otherwise entries in sys.path_importer_cache set to None are deleted.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.PathFinder.invalidate_caches"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::FileFinder}}({{c5::path}}, *loader_details)",
+      "Body": "A concrete implementation of importlib.abc.PathEntryFinder which caches results from the file system.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.FileFinder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::FileFinder}}.{{c4::path}}",
+      "Body": "The path the finder will search in.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.FileFinder.path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::FileFinder}}.{{c4::find_spec}}({{c5::fullname}}, {{c6::target}}={{c7::None}})",
+      "Body": "Attempt to find the spec to handle fullname within path.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.FileFinder.find_spec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::FileFinder}}.{{c4::find_loader}}({{c5::fullname}})",
+      "Body": "Attempt to find the loader to handle fullname within path.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.FileFinder.find_loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::FileFinder}}.{{c4::invalidate_caches}}()",
+      "Body": "Clear out the internal cache.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.FileFinder.invalidate_caches"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Importing Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::FileFinder}}.{{c4::classmethod}} {{c5::path_hook}}(*loader_details)",
+      "Body": "A class method which returns a closure for use on sys.path_hooks. An instance of FileFinder is returned by the closure using the path argument given to the closure directly and loader_details indirectly.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.FileFinder.path_hook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::SourceFileLoader}}({{c5::fullname}}, {{c6::path}})",
+      "Body": "A concrete implementation of importlib.abc.SourceLoader by subclassing importlib.abc.FileLoader and providing some concrete implementations of other methods.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourceFileLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourceFileLoader}}.{{c4::name}}",
+      "Body": "The name of the module that this loader will handle.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourceFileLoader.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourceFileLoader}}.{{c4::path}}",
+      "Body": "The path to the source file.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourceFileLoader.path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourceFileLoader}}.{{c4::is_package}}({{c5::fullname}})",
+      "Body": "Return true if path appears to be for a package.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourceFileLoader.is_package"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourceFileLoader}}.{{c4::path_stats}}({{c5::path}})",
+      "Body": "Concrete implementation of importlib.abc.SourceLoader.path_stats().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourceFileLoader.path_stats"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourceFileLoader}}.{{c4::set_data}}({{c5::path}}, {{c6::data}})",
+      "Body": "Concrete implementation of importlib.abc.SourceLoader.set_data().",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourceFileLoader.set_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourceFileLoader}}.{{c4::load_module}}({{c5::name}}={{c6::None}})",
+      "Body": "Concrete implementation of importlib.abc.Loader.load_module() where specifying the name of the module to load is optional.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourceFileLoader.load_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::SourcelessFileLoader}}({{c5::fullname}}, {{c6::path}})",
+      "Body": "A concrete implementation of importlib.abc.FileLoader which can import bytecode files (i.e. no source code files exist).",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourcelessFileLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourcelessFileLoader}}.{{c4::name}}",
+      "Body": "The name of the module the loader will handle.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourcelessFileLoader.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourcelessFileLoader}}.{{c4::path}}",
+      "Body": "The path to the bytecode file.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourcelessFileLoader.path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourcelessFileLoader}}.{{c4::is_package}}({{c5::fullname}})",
+      "Body": "Determines if the module is a package based on path.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourcelessFileLoader.is_package"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourcelessFileLoader}}.{{c4::get_code}}({{c5::fullname}})",
+      "Body": "Returns the code object for name created from path.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourcelessFileLoader.get_code"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::SourcelessFileLoader}}.{{c4::get_source}}({{c5::fullname}})",
+      "Body": "Returns None as bytecode files have no source when this loader is used.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.SourcelessFileLoader.get_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::ExtensionFileLoader}}({{c5::fullname}}, {{c6::path}})",
+      "Body": "A concrete implementation of importlib.abc.ExecutionLoader for extension modules.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::ExtensionFileLoader}}.{{c4::name}}",
+      "Body": "Name of the module the loader supports.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::ExtensionFileLoader}}.{{c4::path}}",
+      "Body": "Path to the extension module.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader.path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::ExtensionFileLoader}}.{{c4::create_module}}({{c5::spec}})",
+      "Body": "Creates the module object from the given specification in accordance with PEP 489.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader.create_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::ExtensionFileLoader}}.{{c4::exec_module}}({{c5::module}})",
+      "Body": "Initializes the given module object in accordance with PEP 489.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader.exec_module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::ExtensionFileLoader}}.{{c4::is_package}}({{c5::fullname}})",
+      "Body": "Returns True if the file path points to a package's __init__ module based on EXTENSION_SUFFIXES.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader.is_package"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::ExtensionFileLoader}}.{{c4::get_code}}({{c5::fullname}})",
+      "Body": "Returns None as extension modules lack a code object.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader.get_code"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::ExtensionFileLoader}}.{{c4::get_source}}({{c5::fullname}})",
+      "Body": "Returns None as extension modules do not have source code.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader.get_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::machinery}}.{{c3::ExtensionFileLoader}}.{{c4::get_filename}}({{c5::fullname}})",
+      "Body": "Returns path.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ExtensionFileLoader.get_filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::machinery}}.{{c4::ModuleSpec}}({{c5::name}}, {{c6::loader}}, *, {{c7::origin}}={{c8::None}}, {{c9::loader_state}}={{c10::None}}, {{c11::is_package}}={{c12::None}})",
+      "Body": "A specification for a module's import-system-related state.  This is typically exposed as the module's __spec__ attribute.  In the descriptions below, the names in parentheses give the corresponding attribute available directly on the module object. E.g. module.__spec__.origin == module.__file__.  Note however that while the values are usually equivalent, they can differ since there is no synchronization between the two objects.  Thus it is possible to update the module's __path__ at runtime, and this will not be automatically reflected in __spec__.submodule_search_locations.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.machinery.ModuleSpec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::MAGIC_NUMBER}}",
+      "Body": "The bytes which represent the bytecode version number. If you need help with loading/writing bytecode then consider importlib.abc.SourceLoader.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.MAGIC_NUMBER"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::cache_from_source}}({{c4::path}}, {{c5::debug_override}}={{c6::None}}, *, {{c7::optimization}}={{c8::None}})",
+      "Body": "Return the PEP 3147/PEP 488 path to the byte-compiled file associated with the source path.  For example, if path is /foo/bar/baz.py the return value would be /foo/bar/__pycache__/baz.cpython-32.pyc for Python 3.2. The cpython-32 string comes from the current magic tag (see get_tag(); if sys.implementation.cache_tag is not defined then NotImplementedError will be raised).",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.cache_from_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::source_from_cache}}({{c4::path}})",
+      "Body": "Given the path to a PEP 3147 file name, return the associated source code file path.  For example, if path is /foo/bar/__pycache__/baz.cpython-32.pyc the returned path would be /foo/bar/baz.py.  path need not exist, however if it does not conform to PEP 3147 or PEP 488 format, a ValueError is raised. If sys.implementation.cache_tag is not defined, NotImplementedError is raised.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.source_from_cache"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::decode_source}}({{c4::source_bytes}})",
+      "Body": "Decode the given bytes representing source code and return it as a string with universal newlines (as required by importlib.abc.InspectLoader.get_source()).",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.decode_source"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::resolve_name}}({{c4::name}}, {{c5::package}})",
+      "Body": "Resolve a relative module name to an absolute one.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.resolve_name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::find_spec}}({{c4::name}}, {{c5::package}}={{c6::None}})",
+      "Body": "Find the spec for a module, optionally relative to the specified package name. If the module is in sys.modules, then sys.modules[name].__spec__ is returned (unless the spec would be None or is not set, in which case ValueError is raised). Otherwise a search using sys.meta_path is done. None is returned if no spec is found.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.find_spec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::module_from_spec}}({{c4::spec}})",
+      "Body": "Create a new module based on spec and spec.loader.create_module.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.module_from_spec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::importlib}}.{{c2::util}}.{{c3::module_for_loader}}",
+      "Body": "A decorator for importlib.abc.Loader.load_module() to handle selecting the proper module object to load with. The decorated method is expected to have a call signature taking two positional arguments (e.g. load_module(self, module)) for which the second argument will be the module object to be used by the loader. Note that the decorator will not work on static methods because of the assumption of two arguments.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.module_for_loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::importlib}}.{{c2::util}}.{{c3::set_loader}}",
+      "Body": "A decorator for importlib.abc.Loader.load_module() to set the __loader__ attribute on the returned module. If the attribute is already set the decorator does nothing. It is assumed that the first positional argument to the wrapped method (i.e. self) is what __loader__ should be set to.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.set_loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::importlib}}.{{c2::util}}.{{c3::set_package}}",
+      "Body": "A decorator for importlib.abc.Loader.load_module() to set the __package__ attribute on the returned module. If __package__ is set and has a value other than None it will not be changed.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.set_package"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::spec_from_loader}}({{c4::name}}, {{c5::loader}}, *, {{c6::origin}}={{c7::None}}, {{c8::is_package}}={{c9::None}})",
+      "Body": "A factory function for creating a ModuleSpec instance based on a loader.  The parameters have the same meaning as they do for ModuleSpec.  The function uses available loader APIs, such as InspectLoader.is_package(), to fill in any missing information on the spec.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.spec_from_loader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::spec_from_file_location}}({{c4::name}}, {{c5::location}}, *, {{c6::loader}}={{c7::None}}, {{c8::submodule_search_locations}}={{c9::None}})",
+      "Body": "A factory function for creating a ModuleSpec instance based on the path to a file.  Missing information will be filled in on the spec by making use of loader APIs and by the implication that the module will be file-based.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.spec_from_file_location"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::source_hash}}({{c4::source_bytes}})",
+      "Body": "Return the hash of source_bytes as bytes. A hash-based .pyc file embeds the source_hash() of the corresponding source file's contents in its header.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.source_hash"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Importing Modules", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::importlib}}.{{c3::util}}.{{c4::LazyLoader}}({{c5::loader}})",
+      "Body": "A class which postpones the execution of the loader of a module until the module has an attribute accessed.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.LazyLoader"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Importing Modules",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::importlib}}.{{c2::util}}.{{c3::LazyLoader}}.{{c4::classmethod}} {{c5::factory}}({{c6::loader}})",
+      "Body": "A static method which returns a callable that creates a lazy loader. This is meant to be used in situations where the loader is passed by class instead of by instance.",
+      "Link": "https://docs.python.org/3/library/importlib.html#importlib.util.LazyLoader.factory"
+    },
+    "modelName": "ClozePy"
+  }
+]

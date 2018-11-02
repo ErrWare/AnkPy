@@ -1,0 +1,3545 @@
+[
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::active_count}}()",
+      "Body": "Return the number of Thread objects currently alive.  The returned count is equal to the length of the list returned by enumerate().",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.active_count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::current_thread}}()",
+      "Body": "Return the current Thread object, corresponding to the caller's thread of control.  If the caller's thread of control was not created through the threading module, a dummy thread object with limited functionality is returned.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.current_thread"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::get_ident}}()",
+      "Body": "Return the 'thread identifier' of the current thread.  This is a nonzero integer.  Its value has no direct meaning; it is intended as a magic cookie to be used e.g. to index a dictionary of thread-specific data.  Thread identifiers may be recycled when a thread exits and another thread is created.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.get_ident"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::enumerate}}()",
+      "Body": "Return a list of all Thread objects currently alive.  The list includes daemonic threads, dummy thread objects created by current_thread(), and the main thread.  It excludes terminated threads and threads that have not yet been started.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.enumerate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::main_thread}}()",
+      "Body": "Return the main Thread object.  In normal conditions, the main thread is the thread from which the interpreter was started.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.main_thread"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::settrace}}({{c3::func}})",
+      "Body": "Set a trace function for all threads started from the threading module. The func will be passed to  sys.settrace() for each thread, before its run() method is called.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.settrace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::setprofile}}({{c3::func}})",
+      "Body": "Set a profile function for all threads started from the threading module. The func will be passed to  sys.setprofile() for each thread, before its run() method is called.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.setprofile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::stack_size}}([{{c3::size}}])",
+      "Body": "Return the thread stack size used when creating new threads.  The optional size argument specifies the stack size to be used for subsequently created threads, and must be 0 (use platform or configured default) or a positive integer value of at least 32,768 (32 KiB). If size is not specified, 0 is used.  If changing the thread stack size is unsupported, a RuntimeError is raised.  If the specified stack size is invalid, a ValueError is raised and the stack size is unmodified.  32 KiB is currently the minimum supported stack size value to guarantee sufficient stack space for the interpreter itself.  Note that some platforms may have particular restrictions on values for the stack size, such as requiring a minimum stack size > 32 KiB or requiring allocation in multiples of the system memory page size - platform documentation should be referred to for more information (4 KiB pages are common; using multiples of 4096 for the stack size is the suggested approach in the absence of more specific information).",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.stack_size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::TIMEOUT_MAX}}",
+      "Body": "The maximum value allowed for the timeout parameter of blocking functions (Lock.acquire(), RLock.acquire(), Condition.wait(), etc.). Specifying a timeout greater than this value will raise an OverflowError.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.TIMEOUT_MAX"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::local}}",
+      "Body": "A class that represents thread-local data.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.local"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::Thread}}({{c4::group}}={{c5::None}}, {{c6::target}}={{c7::None}}, {{c8::name}}={{c9::None}}, {{c10::args}}=(), {{c11::kwargs}}={}, *, {{c12::daemon}}={{c13::None}})",
+      "Body": "This constructor should always be called with keyword arguments.  Arguments are:",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::start}}()",
+      "Body": "Start the thread's activity.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.start"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::run}}()",
+      "Body": "Method representing the thread's activity.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::join}}({{c4::timeout}}={{c5::None}})",
+      "Body": "Wait until the thread terminates. This blocks the calling thread until the thread whose join() method is called terminates  either normally or through an unhandled exception  or until the optional timeout occurs.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::name}}",
+      "Body": "A string used for identification purposes only. It has no semantics. Multiple threads may be given the same name.  The initial name is set by the constructor.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::getName}}()",
+      "Body": "Old getter/setter API for name; use it directly as a property instead.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.getName"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::setName}}()",
+      "Body": "Old getter/setter API for name; use it directly as a property instead.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.setName"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::ident}}",
+      "Body": "The 'thread identifier' of this thread or None if the thread has not been started.  This is a nonzero integer.  See the get_ident() function.  Thread identifiers may be recycled when a thread exits and another thread is created.  The identifier is available even after the thread has exited.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.ident"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::is_alive}}()",
+      "Body": "Return whether the thread is alive.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.is_alive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::daemon}}",
+      "Body": "A boolean value indicating whether this thread is a daemon thread (True) or not (False).  This must be set before start() is called, otherwise RuntimeError is raised.  Its initial value is inherited from the creating thread; the main thread is not a daemon thread and therefore all threads created in the main thread default to daemon = False.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.daemon"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::isDaemon}}()",
+      "Body": "Old getter/setter API for daemon; use it directly as a property instead.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.isDaemon"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Thread}}.{{c3::setDaemon}}()",
+      "Body": "Old getter/setter API for daemon; use it directly as a property instead.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Thread.setDaemon"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::Lock}}",
+      "Body": "The class implementing primitive lock objects.  Once a thread has acquired a lock, subsequent attempts to acquire it block, until it is released; any thread may release it.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Lock}}.{{c3::acquire}}({{c4::blocking}}={{c5::True}}, {{c6::timeout}}=-1)",
+      "Body": "Acquire a lock, blocking or non-blocking.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Lock.acquire"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Lock}}.{{c3::release}}()",
+      "Body": "Release a lock.  This can be called from any thread, not only the thread which has acquired the lock.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Lock.release"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::RLock}}",
+      "Body": "This class implements reentrant lock objects.  A reentrant lock must be released by the thread that acquired it.  Once a thread has acquired a reentrant lock, the same thread may acquire it again without blocking; the thread must release it once for each time it has acquired it.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.RLock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::RLock}}.{{c3::acquire}}({{c4::blocking}}={{c5::True}}, {{c6::timeout}}=-1)",
+      "Body": "Acquire a lock, blocking or non-blocking.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.RLock.acquire"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::RLock}}.{{c3::release}}()",
+      "Body": "Release a lock, decrementing the recursion level.  If after the decrement it is zero, reset the lock to unlocked (not owned by any thread), and if any other threads are blocked waiting for the lock to become unlocked, allow exactly one of them to proceed.  If after the decrement the recursion level is still nonzero, the lock remains locked and owned by the calling thread.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.RLock.release"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::Condition}}({{c4::lock}}={{c5::None}})",
+      "Body": "This class implements condition variable objects.  A condition variable allows one or more threads to wait until they are notified by another thread.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Condition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Condition}}.{{c3::acquire}}(*args)",
+      "Body": "Acquire the underlying lock. This method calls the corresponding method on the underlying lock; the return value is whatever that method returns.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Condition.acquire"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Condition}}.{{c3::release}}()",
+      "Body": "Release the underlying lock. This method calls the corresponding method on the underlying lock; there is no return value.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Condition.release"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Condition}}.{{c3::wait}}({{c4::timeout}}={{c5::None}})",
+      "Body": "Wait until notified or until a timeout occurs. If the calling thread has not acquired the lock when this method is called, a RuntimeError is raised.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Condition.wait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Condition}}.{{c3::wait_for}}({{c4::predicate}}, {{c5::timeout}}={{c6::None}})",
+      "Body": "Wait until a condition evaluates to true.  predicate should be a callable which result will be interpreted as a boolean value. A timeout may be provided giving the maximum time to wait.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Condition.wait_for"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Condition}}.{{c3::notify}}({{c4::n}}=1)",
+      "Body": "By default, wake up one thread waiting on this condition, if any.  If the calling thread has not acquired the lock when this method is called, a RuntimeError is raised.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Condition.notify"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Condition}}.{{c3::notify_all}}()",
+      "Body": "Wake up all threads waiting on this condition.  This method acts like notify(), but wakes up all waiting threads instead of one. If the calling thread has not acquired the lock when this method is called, a RuntimeError is raised.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Condition.notify_all"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::Semaphore}}({{c4::value}}=1)",
+      "Body": "This class implements semaphore objects.  A semaphore manages an atomic counter representing the number of release() calls minus the number of acquire() calls, plus an initial value.  The acquire() method blocks if necessary until it can return without making the counter negative. If not given, value defaults to 1.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Semaphore"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Semaphore}}.{{c3::acquire}}({{c4::blocking}}={{c5::True}}, {{c6::timeout}}={{c7::None}})",
+      "Body": "Acquire a semaphore.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Semaphore.acquire"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Semaphore}}.{{c3::release}}()",
+      "Body": "Release a semaphore, incrementing the internal counter by one.  When it was zero on entry and another thread is waiting for it to become larger than zero again, wake up that thread.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Semaphore.release"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::BoundedSemaphore}}({{c4::value}}=1)",
+      "Body": "Class implementing bounded semaphore objects.  A bounded semaphore checks to make sure its current value doesn't exceed its initial value.  If it does, ValueError is raised. In most situations semaphores are used to guard resources with limited capacity.  If the semaphore is released too many times it's a sign of a bug.  If not given, value defaults to 1.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.BoundedSemaphore"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::Event}}",
+      "Body": "Class implementing event objects.  An event manages a flag that can be set to true with the set() method and reset to false with the clear() method.  The wait() method blocks until the flag is true. The flag is initially false.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Event"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Event}}.{{c3::is_set}}()",
+      "Body": "Return true if and only if the internal flag is true.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Event.is_set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Event}}.{{c3::set}}()",
+      "Body": "Set the internal flag to true. All threads waiting for it to become true are awakened. Threads that call wait() once the flag is true will not block at all.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Event.set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Event}}.{{c3::clear}}()",
+      "Body": "Reset the internal flag to false. Subsequently, threads calling wait() will block until set() is called to set the internal flag to true again.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Event.clear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Event}}.{{c3::wait}}({{c4::timeout}}={{c5::None}})",
+      "Body": "Block until the internal flag is true.  If the internal flag is true on entry, return immediately.  Otherwise, block until another thread calls set() to set the flag to true, or until the optional timeout occurs.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Event.wait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::Timer}}({{c4::interval}}, {{c5::function}}, {{c6::args}}={{c7::None}}, {{c8::kwargs}}={{c9::None}})",
+      "Body": "Create a timer that will run function with arguments args and  keyword arguments kwargs, after interval seconds have passed. If args is None (the default) then an empty list will be used. If kwargs is None (the default) then an empty dict will be used.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Timer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Timer}}.{{c3::cancel}}()",
+      "Body": "Stop the timer, and cancel the execution of the timer's action.  This will only work if the timer is still in its waiting stage.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Timer.cancel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::threading}}.{{c3::Barrier}}({{c4::parties}}, {{c5::action}}={{c6::None}}, {{c7::timeout}}={{c8::None}})",
+      "Body": "Create a barrier object for parties number of threads.  An action, when provided, is a callable to be called by one of the threads when they are released.  timeout is the default timeout value if none is specified for the wait() method.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Barrier"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Barrier}}.{{c3::wait}}({{c4::timeout}}={{c5::None}})",
+      "Body": "Pass the barrier.  When all the threads party to the barrier have called this function, they are all released simultaneously.  If a timeout is provided, it is used in preference to any that was supplied to the class constructor.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Barrier.wait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Barrier}}.{{c3::reset}}()",
+      "Body": "Return the barrier to the default, empty state.  Any threads waiting on it will receive the BrokenBarrierError exception.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Barrier.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Barrier}}.{{c3::abort}}()",
+      "Body": "Put the barrier into a broken state.  This causes any active or future calls to wait() to fail with the BrokenBarrierError.  Use this for example if one of the needs to abort, to avoid deadlocking the application.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Barrier.abort"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Barrier}}.{{c3::parties}}",
+      "Body": "The number of threads required to pass the barrier.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Barrier.parties"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Barrier}}.{{c3::n_waiting}}",
+      "Body": "The number of threads currently waiting in the barrier.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Barrier.n_waiting"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::threading}}.{{c2::Barrier}}.{{c3::broken}}",
+      "Body": "A boolean that is True if the barrier is in the broken state.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.Barrier.broken"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::threading}}.{{c3::BrokenBarrierError}}",
+      "Body": "This exception, a subclass of RuntimeError, is raised when the Barrier object is reset or broken.",
+      "Link": "https://docs.python.org/3/library/threading.html#threading.BrokenBarrierError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::spawn}}",
+      "Body": "The parent process starts a fresh interpreter process.  The child process will only inherit those resources necessary to run the process objects run() method.  In particular, unnecessary file descriptors and handles from the parent process will not be inherited.  Starting a process using this method is rather slow compared to using fork or forkserver.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fork}}",
+      "Body": "The parent process starts a fresh interpreter process.  The child process will only inherit those resources necessary to run the process objects run() method.  In particular, unnecessary file descriptors and handles from the parent process will not be inherited.  Starting a process using this method is rather slow compared to using fork or forkserver.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::forkserver}}",
+      "Body": "The parent process starts a fresh interpreter process.  The child process will only inherit those resources necessary to run the process objects run() method.  In particular, unnecessary file descriptors and handles from the parent process will not be inherited.  Starting a process using this method is rather slow compared to using fork or forkserver.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::Process}}({{c4::group}}={{c5::None}}, {{c6::target}}={{c7::None}}, {{c8::name}}={{c9::None}}, {{c10::args}}=(), {{c11::kwargs}}={}, *, {{c12::daemon}}={{c13::None}})",
+      "Body": "Process objects represent activity that is run in a separate process. The Process class has equivalents of all the methods of threading.Thread.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::run}}()",
+      "Body": "Method representing the process's activity.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::start}}()",
+      "Body": "Start the process's activity.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.start"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::join}}([{{c4::timeout}}])",
+      "Body": "If the optional argument timeout is None (the default), the method blocks until the process whose join() method is called terminates. If timeout is a positive number, it blocks at most timeout seconds. Note that the method returns None if its process terminates or if the method times out.  Check the process's exitcode to determine if it terminated.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::name}}",
+      "Body": "The process's name.  The name is a string used for identification purposes only.  It has no semantics.  Multiple processes may be given the same name.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::is_alive}}()",
+      "Body": "Return whether the process is alive.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.is_alive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::daemon}}",
+      "Body": "The process's daemon flag, a Boolean value.  This must be set before start() is called.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.daemon"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::pid}}",
+      "Body": "Return the process ID.  Before the process is spawned, this will be None.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.pid"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::exitcode}}",
+      "Body": "The child's exit code.  This will be None if the process has not yet terminated.  A negative value -N indicates that the child was terminated by signal N.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.exitcode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::authkey}}",
+      "Body": "The process's authentication key (a byte string).",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.authkey"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::sentinel}}",
+      "Body": "A numeric handle of a system object which will become ready when the process ends.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.sentinel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::terminate}}()",
+      "Body": "Terminate the process.  On Unix this is done using the SIGTERM signal; on Windows TerminateProcess() is used.  Note that exit handlers and finally clauses, etc., will not be executed.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.terminate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::kill}}()",
+      "Body": "Same as terminate() but using the SIGKILL signal on Unix.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.kill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Process}}.{{c3::close}}()",
+      "Body": "Close the Process object, releasing all resources associated with it.  ValueError is raised if the underlying process is still running.  Once close() returns successfully, most other methods and attributes of the Process object will raise ValueError.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Process.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::multiprocessing}}.{{c3::ProcessError}}",
+      "Body": "The base class of all multiprocessing exceptions.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.ProcessError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::multiprocessing}}.{{c3::BufferTooShort}}",
+      "Body": "Exception raised by Connection.recv_bytes_into() when the supplied buffer object is too small for the message read.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.BufferTooShort"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::multiprocessing}}.{{c3::AuthenticationError}}",
+      "Body": "Raised when there is an authentication error.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.AuthenticationError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::multiprocessing}}.{{c3::TimeoutError}}",
+      "Body": "Raised by methods with a timeout when the timeout expires.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.TimeoutError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Pipe}}([{{c3::duplex}}])",
+      "Body": "Returns a pair (conn1, conn2) of Connection objects representing the ends of a pipe.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Pipe"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::Queue}}([{{c4::maxsize}}])",
+      "Body": "Returns a process shared queue implemented using a pipe and a few locks/semaphores.  When a process first puts an item on the queue a feeder thread is started which transfers objects from a buffer into the pipe.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::qsize}}()",
+      "Body": "Return the approximate size of the queue.  Because of multithreading/multiprocessing semantics, this number is not reliable.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.qsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::empty}}()",
+      "Body": "Return True if the queue is empty, False otherwise.  Because of multithreading/multiprocessing semantics, this is not reliable.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.empty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::full}}()",
+      "Body": "Return True if the queue is full, False otherwise.  Because of multithreading/multiprocessing semantics, this is not reliable.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.full"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::put}}({{c4::obj}}[, {{c5::block}}[, {{c6::timeout}}]])",
+      "Body": "Put obj into the queue.  If the optional argument block is True (the default) and timeout is None (the default), block if necessary until a free slot is available.  If timeout is a positive number, it blocks at most timeout seconds and raises the queue.Full exception if no free slot was available within that time.  Otherwise (block is False), put an item on the queue if a free slot is immediately available, else raise the queue.Full exception (timeout is ignored in that case).",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.put"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::put_nowait}}({{c4::obj}})",
+      "Body": "Equivalent to put(obj, False).",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.put_nowait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::get}}([{{c4::block}}[, {{c5::timeout}}]])",
+      "Body": "Remove and return an item from the queue.  If optional args block is True (the default) and timeout is None (the default), block if necessary until an item is available.  If timeout is a positive number, it blocks at most timeout seconds and raises the queue.Empty exception if no item was available within that time.  Otherwise (block is False), return an item if one is immediately available, else raise the queue.Empty exception (timeout is ignored in that case).",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::get_nowait}}()",
+      "Body": "Equivalent to get(False).",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.get_nowait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::close}}()",
+      "Body": "Indicate that no more data will be put on this queue by the current process.  The background thread will quit once it has flushed all buffered data to the pipe.  This is called automatically when the queue is garbage collected.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::join_thread}}()",
+      "Body": "Join the background thread.  This can only be used after close() has been called.  It blocks until the background thread exits, ensuring that all data in the buffer has been flushed to the pipe.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.join_thread"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Queue}}.{{c3::cancel_join_thread}}()",
+      "Body": "Prevent join_thread() from blocking.  In particular, this prevents the background thread from being joined automatically when the process exits  see join_thread().",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue.cancel_join_thread"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::SimpleQueue}}",
+      "Body": "It is a simplified Queue type, very close to a locked Pipe.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.SimpleQueue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::SimpleQueue}}.{{c3::empty}}()",
+      "Body": "Return True if the queue is empty, False otherwise.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.SimpleQueue.empty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::SimpleQueue}}.{{c3::get}}()",
+      "Body": "Remove and return an item from the queue.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.SimpleQueue.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::SimpleQueue}}.{{c3::put}}({{c4::item}})",
+      "Body": "Put item into the queue.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.SimpleQueue.put"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::JoinableQueue}}([{{c4::maxsize}}])",
+      "Body": "JoinableQueue, a Queue subclass, is a queue which additionally has task_done() and join() methods.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.JoinableQueue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::JoinableQueue}}.{{c3::task_done}}()",
+      "Body": "Indicate that a formerly enqueued task is complete. Used by queue consumers.  For each get() used to fetch a task, a subsequent call to task_done() tells the queue that the processing on the task is complete.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.JoinableQueue.task_done"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::JoinableQueue}}.{{c3::join}}()",
+      "Body": "Block until all items in the queue have been gotten and processed.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.JoinableQueue.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::active_children}}()",
+      "Body": "Return list of all live children of the current process.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.active_children"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::cpu_count}}()",
+      "Body": "Return the number of CPUs in the system.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.cpu_count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::current_process}}()",
+      "Body": "Return the Process object corresponding to the current process.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.current_process"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::freeze_support}}()",
+      "Body": "Add support for when a program which uses multiprocessing has been frozen to produce a Windows executable.  (Has been tested with py2exe, PyInstaller and cx_Freeze.)",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.freeze_support"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::get_all_start_methods}}()",
+      "Body": "Returns a list of the supported start methods, the first of which is the default.  The possible start methods are 'fork', 'spawn' and 'forkserver'.  On Windows only 'spawn' is available.  On Unix 'fork' and 'spawn' are always supported, with 'fork' being the default.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.get_all_start_methods"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::get_context}}({{c3::method}}={{c4::None}})",
+      "Body": "Return a context object which has the same attributes as the multiprocessing module.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.get_context"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::get_start_method}}({{c3::allow_none}}={{c4::False}})",
+      "Body": "Return the name of start method used for starting processes.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.get_start_method"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::set_executable}}()",
+      "Body": "Sets the path of the interpreter to use when starting a child process. (By default sys.executable is used).  Embedders will probably need to do some thing like",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.set_executable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::set_start_method}}({{c3::method}})",
+      "Body": "Set the method which should be used to start child processes. method can be 'fork', 'spawn' or 'forkserver'.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.set_start_method"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::connection}}.{{c4::Connection}}",
+      "Body": "Send an object to the other end of the connection which should be read using recv().",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Connection}}.{{c4::send}}({{c5::obj}})",
+      "Body": "Send an object to the other end of the connection which should be read using recv().",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection.send"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Connection}}.{{c4::recv}}()",
+      "Body": "Return an object sent from the other end of the connection using send().  Blocks until there is something to receive.  Raises EOFError if there is nothing left to receive and the other end was closed.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection.recv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Connection}}.{{c4::fileno}}()",
+      "Body": "Return the file descriptor or handle used by the connection.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection.fileno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Connection}}.{{c4::close}}()",
+      "Body": "Close the connection.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Connection}}.{{c4::poll}}([{{c5::timeout}}])",
+      "Body": "Return whether there is any data available to be read.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection.poll"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Connection}}.{{c4::send_bytes}}({{c5::buffer}}[, {{c6::offset}}[, {{c7::size}}]])",
+      "Body": "Send byte data from a bytes-like object as a complete message.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection.send_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Connection}}.{{c4::recv_bytes}}([{{c5::maxlength}}])",
+      "Body": "Return a complete message of byte data sent from the other end of the connection as a string.  Blocks until there is something to receive. Raises EOFError if there is nothing left to receive and the other end has closed.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection.recv_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Connection}}.{{c4::recv_bytes_into}}({{c5::buffer}}[, {{c6::offset}}])",
+      "Body": "Read into buffer a complete message of byte data sent from the other end of the connection and return the number of bytes in the message.  Blocks until there is something to receive.  Raises EOFError if there is nothing left to receive and the other end was closed.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Connection.recv_bytes_into"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::Barrier}}({{c4::parties}}[, {{c5::action}}[, {{c6::timeout}}]])",
+      "Body": "A barrier object: a clone of threading.Barrier.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Barrier"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::BoundedSemaphore}}([{{c4::value}}])",
+      "Body": "A bounded semaphore object: a close analog of threading.BoundedSemaphore.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.BoundedSemaphore"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::Condition}}([{{c4::lock}}])",
+      "Body": "A condition variable: an alias for threading.Condition.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Condition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::Event}}",
+      "Body": "A clone of threading.Event.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Event"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::Lock}}",
+      "Body": "A non-recursive lock object: a close analog of threading.Lock. Once a process or thread has acquired a lock, subsequent attempts to acquire it from any process or thread will block until it is released; any process or thread may release it.  The concepts and behaviors of threading.Lock as it applies to threads are replicated here in multiprocessing.Lock as it applies to either processes or threads, except as noted.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Lock}}.{{c3::acquire}}({{c4::block}}={{c5::True}}, {{c6::timeout}}={{c7::None}})",
+      "Body": "Acquire a lock, blocking or non-blocking.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Lock.acquire"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Lock}}.{{c3::release}}()",
+      "Body": "Release a lock.  This can be called from any process or thread, not only the process or thread which originally acquired the lock.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Lock.release"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::RLock}}",
+      "Body": "A recursive lock object: a close analog of threading.RLock.  A recursive lock must be released by the process or thread that acquired it. Once a process or thread has acquired a recursive lock, the same process or thread may acquire it again without blocking; that process or thread must release it once for each time it has been acquired.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.RLock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::RLock}}.{{c3::acquire}}({{c4::block}}={{c5::True}}, {{c6::timeout}}={{c7::None}})",
+      "Body": "Acquire a lock, blocking or non-blocking.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.RLock.acquire"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::RLock}}.{{c3::release}}()",
+      "Body": "Release a lock, decrementing the recursion level.  If after the decrement the recursion level is zero, reset the lock to unlocked (not owned by any process or thread) and if any other processes or threads are blocked waiting for the lock to become unlocked, allow exactly one of them to proceed.  If after the decrement the recursion level is still nonzero, the lock remains locked and owned by the calling process or thread.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.RLock.release"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::Semaphore}}([{{c4::value}}])",
+      "Body": "A semaphore object: a close analog of threading.Semaphore.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Semaphore"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Value}}({{c3::typecode_or_type}}, *args, {{c4::lock}}={{c5::True}})",
+      "Body": "Return a ctypes object allocated from shared memory.  By default the return value is actually a synchronized wrapper for the object.  The object itself can be accessed via the value attribute of a Value.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Value"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Array}}({{c3::typecode_or_type}}, {{c4::size_or_initializer}}, *, {{c5::lock}}={{c6::True}})",
+      "Body": "Return a ctypes array allocated from shared memory.  By default the return value is actually a synchronized wrapper for the array.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Array"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::sharedctypes}}.{{c3::RawArray}}({{c4::typecode_or_type}}, {{c5::size_or_initializer}})",
+      "Body": "Return a ctypes array allocated from shared memory.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.RawArray"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::sharedctypes}}.{{c3::RawValue}}({{c4::typecode_or_type}}, *args)",
+      "Body": "Return a ctypes object allocated from shared memory.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.RawValue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::sharedctypes}}.{{c3::Array}}({{c4::typecode_or_type}}, {{c5::size_or_initializer}}, *, {{c6::lock}}={{c7::True}})",
+      "Body": "The same as RawArray() except that depending on the value of lock a process-safe synchronization wrapper may be returned instead of a raw ctypes array.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.Array"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::sharedctypes}}.{{c3::Value}}({{c4::typecode_or_type}}, *args, {{c5::lock}}={{c6::True}})",
+      "Body": "The same as RawValue() except that depending on the value of lock a process-safe synchronization wrapper may be returned instead of a raw ctypes object.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.Value"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::sharedctypes}}.{{c3::copy}}({{c4::obj}})",
+      "Body": "Return a ctypes object allocated from shared memory which is a copy of the ctypes object obj.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::sharedctypes}}.{{c3::synchronized}}({{c4::obj}}[, {{c5::lock}}])",
+      "Body": "Return a process-safe wrapper object for a ctypes object which uses lock to synchronize access.  If lock is None (the default) then a multiprocessing.RLock object is created automatically.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.synchronized"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::Manager}}()",
+      "Body": "Returns a started SyncManager object which can be used for sharing objects between processes.  The returned manager object corresponds to a spawned child process and has methods which will create shared objects and return corresponding proxies.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.sharedctypes.multiprocessing.Manager"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::managers}}.{{c4::BaseManager}}([{{c5::address}}[, {{c6::authkey}}]])",
+      "Body": "Create a BaseManager object.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseManager"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseManager}}.{{c4::start}}([{{c5::initializer}}[, {{c6::initargs}}]])",
+      "Body": "Start a subprocess to start the manager.  If initializer is not None then the subprocess will call initializer(*initargs) when it starts.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseManager.start"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseManager}}.{{c4::get_server}}()",
+      "Body": "Returns a Server object which represents the actual server under the control of the Manager. The Server object supports the serve_forever() method:",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseManager.get_server"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseManager}}.{{c4::connect}}()",
+      "Body": "Connect a local manager object to a remote manager process:",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseManager.connect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseManager}}.{{c4::shutdown}}()",
+      "Body": "Stop the process used by the manager.  This is only available if start() has been used to start the server process.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseManager.shutdown"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseManager}}.{{c4::register}}({{c5::typeid}}[, {{c6::callable}}[, {{c7::proxytype}}[, {{c8::exposed}}[, {{c9::method_to_typeid}}[, {{c10::create_method}}]]]]])",
+      "Body": "A classmethod which can be used for registering a type or callable with the manager class.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseManager.register"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseManager}}.{{c4::address}}",
+      "Body": "The address used by the manager.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseManager.address"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::managers}}.{{c4::SyncManager}}",
+      "Body": "A subclass of BaseManager which can be used for the synchronization of processes.  Objects of this type are returned by multiprocessing.Manager().",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Barrier}}({{c5::parties}}[, {{c6::action}}[, {{c7::timeout}}]])",
+      "Body": "Create a shared threading.Barrier object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Barrier"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::BoundedSemaphore}}([{{c5::value}}])",
+      "Body": "Create a shared threading.BoundedSemaphore object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.BoundedSemaphore"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Condition}}([{{c5::lock}}])",
+      "Body": "Create a shared threading.Condition object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Condition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Event}}()",
+      "Body": "Create a shared threading.Event object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Event"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Lock}}()",
+      "Body": "Create a shared threading.Lock object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Namespace}}()",
+      "Body": "Create a shared Namespace object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Namespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Queue}}([{{c5::maxsize}}])",
+      "Body": "Create a shared queue.Queue object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Queue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::RLock}}()",
+      "Body": "Create a shared threading.RLock object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.RLock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Semaphore}}([{{c5::value}}])",
+      "Body": "Create a shared threading.Semaphore object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Semaphore"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Array}}({{c5::typecode}}, {{c6::sequence}})",
+      "Body": "Create an array and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Array"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::Value}}({{c5::typecode}}, {{c6::value}})",
+      "Body": "Create an object with a writable value attribute and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.Value"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::dict}}()",
+      "Body": "Create a shared dict object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}({{c2::mapping}})",
+      "Body": "Create a shared dict object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#managers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}({{c2::sequence}})",
+      "Body": "Create a shared dict object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#managers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::SyncManager}}.{{c4::list}}()",
+      "Body": "Create a shared list object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.SyncManager.list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::list}}({{c2::sequence}})",
+      "Body": "Create a shared list object and return a proxy for it.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#managers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::managers}}.{{c4::Namespace}}",
+      "Body": "A type that can register with SyncManager.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.Namespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::managers}}.{{c4::BaseProxy}}",
+      "Body": "Proxy objects are instances of subclasses of BaseProxy.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseProxy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseProxy}}.{{c4::_callmethod}}({{c5::methodname}}[, {{c6::args}}[, {{c7::kwds}}]])",
+      "Body": "Call and return the result of a method of the proxy's referent.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseProxy._callmethod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseProxy}}.{{c4::_getvalue}}()",
+      "Body": "Return a copy of the referent.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseProxy._getvalue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseProxy}}.{{c4::__repr__}}()",
+      "Body": "Return a representation of the proxy object.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseProxy.__repr__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::managers}}.{{c3::BaseProxy}}.{{c4::__str__}}()",
+      "Body": "Return the representation of the referent.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.managers.BaseProxy.__str__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::pool}}.{{c4::Pool}}([{{c5::processes}}[, {{c6::initializer}}[, {{c7::initargs}}[, {{c8::maxtasksperchild}}[, {{c9::context}}]]]]])",
+      "Body": "A process pool object which controls a pool of worker processes to which jobs can be submitted.  It supports asynchronous results with timeouts and callbacks and has a parallel map implementation.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::apply}}({{c5::func}}[, {{c6::args}}[, {{c7::kwds}}]])",
+      "Body": "Call func with arguments args and keyword arguments kwds.  It blocks until the result is ready. Given this blocks, apply_async() is better suited for performing work in parallel. Additionally, func is only executed in one of the workers of the pool.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.apply"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::apply_async}}({{c5::func}}[, {{c6::args}}[, {{c7::kwds}}[, {{c8::callback}}[, {{c9::error_callback}}]]]])",
+      "Body": "A variant of the apply() method which returns a result object.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.apply_async"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::map}}({{c5::func}}, {{c6::iterable}}[, {{c7::chunksize}}])",
+      "Body": "A parallel equivalent of the map() built-in function (it supports only one iterable argument though).  It blocks until the result is ready.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::map_async}}({{c5::func}}, {{c6::iterable}}[, {{c7::chunksize}}[, {{c8::callback}}[, {{c9::error_callback}}]]])",
+      "Body": "A variant of the map() method which returns a result object.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.map_async"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::imap}}({{c5::func}}, {{c6::iterable}}[, {{c7::chunksize}}])",
+      "Body": "A lazier version of map().",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.imap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::imap_unordered}}({{c5::func}}, {{c6::iterable}}[, {{c7::chunksize}}])",
+      "Body": "The same as imap() except that the ordering of the results from the returned iterator should be considered arbitrary.  (Only when there is only one worker process is the order guaranteed to be correct.)",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.imap_unordered"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::starmap}}({{c5::func}}, {{c6::iterable}}[, {{c7::chunksize}}])",
+      "Body": "Like map() except that the elements of the iterable are expected to be iterables that are unpacked as arguments.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.starmap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::starmap_async}}({{c5::func}}, {{c6::iterable}}[, {{c7::chunksize}}[, {{c8::callback}}[, {{c9::error_callback}}]]])",
+      "Body": "A combination of starmap() and map_async() that iterates over iterable of iterables and calls func with the iterables unpacked. Returns a result object.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.starmap_async"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::close}}()",
+      "Body": "Prevents any more tasks from being submitted to the pool.  Once all the tasks have been completed the worker processes will exit.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::terminate}}()",
+      "Body": "Stops the worker processes immediately without completing outstanding work.  When the pool object is garbage collected terminate() will be called immediately.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.terminate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::Pool}}.{{c4::join}}()",
+      "Body": "Wait for the worker processes to exit.  One must call close() or terminate() before using join().",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::pool}}.{{c4::AsyncResult}}",
+      "Body": "The class of the result returned by Pool.apply_async() and Pool.map_async().",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.AsyncResult"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::AsyncResult}}.{{c4::get}}([{{c5::timeout}}])",
+      "Body": "Return the result when it arrives.  If timeout is not None and the result does not arrive within timeout seconds then multiprocessing.TimeoutError is raised.  If the remote call raised an exception then that exception will be reraised by get().",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.AsyncResult.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::AsyncResult}}.{{c4::wait}}([{{c5::timeout}}])",
+      "Body": "Wait until the result is available or until timeout seconds pass.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.AsyncResult.wait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::AsyncResult}}.{{c4::ready}}()",
+      "Body": "Return whether the call has completed.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.AsyncResult.ready"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::pool}}.{{c3::AsyncResult}}.{{c4::successful}}()",
+      "Body": "Return whether the call completed without raising an exception.  Will raise AssertionError if the result is not ready.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.AsyncResult.successful"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::deliver_challenge}}({{c4::connection}}, {{c5::authkey}})",
+      "Body": "Send a randomly generated message to the other end of the connection and wait for a reply.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.deliver_challenge"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::answer_challenge}}({{c4::connection}}, {{c5::authkey}})",
+      "Body": "Receive a message, calculate the digest of the message using authkey as the key, and then send the digest back.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.answer_challenge"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Client}}({{c4::address}}[, {{c5::family}}[, {{c6::authkey}}]])",
+      "Body": "Attempt to set up a connection to the listener which is using address address, returning a Connection.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Client"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::multiprocessing}}.{{c3::connection}}.{{c4::Listener}}([{{c5::address}}[, {{c6::family}}[, {{c7::backlog}}[, {{c8::authkey}}]]]])",
+      "Body": "A wrapper for a bound socket or Windows named pipe which is 'listening' for connections.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Listener"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Listener}}.{{c4::accept}}()",
+      "Body": "Accept a connection on the bound socket or named pipe of the listener object and return a Connection object. If authentication is attempted and fails, then AuthenticationError is raised.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Listener.accept"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Listener}}.{{c4::close}}()",
+      "Body": "Close the bound socket or named pipe of the listener object.  This is called automatically when the listener is garbage collected.  However it is advisable to call it explicitly.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Listener.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Listener}}.{{c4::address}}",
+      "Body": "The address which is being used by the Listener object.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Listener.address"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::Listener}}.{{c4::last_accepted}}",
+      "Body": "The address from which the last accepted connection came.  If this is unavailable then it is None.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.Listener.last_accepted"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::connection}}.{{c3::wait}}({{c4::object_list}}, {{c5::timeout}}={{c6::None}})",
+      "Body": "Wait till an object in object_list is ready.  Returns the list of those objects in object_list which are ready.  If timeout is a float then the call blocks for at most that many seconds.  If timeout is None then it will block for an unlimited period. A negative timeout is equivalent to a zero timeout.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.connection.wait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::get_logger}}()",
+      "Body": "Returns the logger used by multiprocessing.  If necessary, a new one will be created.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.get_logger"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::multiprocessing}}.{{c2::log_to_stderr}}()",
+      "Body": "This function performs a call to get_logger() but in addition to returning the logger created by get_logger, it adds a handler which sends output to sys.stderr using format '[%(levelname)s/%(processName)s] %(message)s'.",
+      "Link": "https://docs.python.org/3/library/multiprocessing.html#multiprocessing.log_to_stderr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::concurrent}}.{{c3::futures}}.{{c4::Executor}}",
+      "Body": "An abstract class that provides methods to execute calls asynchronously.  It should not be used directly, but through its concrete subclasses.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Executor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Executor}}.{{c4::submit}}({{c5::fn}}, *args, **kwargs)",
+      "Body": "Schedules the callable, fn, to be executed as fn(*args **kwargs) and returns a Future object representing the execution of the callable.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Executor.submit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Executor}}.{{c4::map}}({{c5::func}}, *iterables, {{c6::timeout}}={{c7::None}}, {{c8::chunksize}}=1)",
+      "Body": "Similar to map(func, *iterables) except:",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Executor.map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Executor}}.{{c4::shutdown}}({{c5::wait}}={{c6::True}})",
+      "Body": "Signal the executor that it should free any resources that it is using when the currently pending futures are done executing.  Calls to Executor.submit() and Executor.map() made after shutdown will raise RuntimeError.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Executor.shutdown"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::concurrent}}.{{c3::futures}}.{{c4::ThreadPoolExecutor}}({{c5::max_workers}}={{c6::None}}, {{c7::thread_name_prefix}}='', {{c8::initializer}}={{c9::None}}, {{c10::initargs}}=())",
+      "Body": "An Executor subclass that uses a pool of at most max_workers threads to execute calls asynchronously.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.ThreadPoolExecutor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::concurrent}}.{{c3::futures}}.{{c4::ProcessPoolExecutor}}({{c5::max_workers}}={{c6::None}}, {{c7::mp_context}}={{c8::None}}, {{c9::initializer}}={{c10::None}}, {{c11::initargs}}=())",
+      "Body": "An Executor subclass that executes calls asynchronously using a pool of at most max_workers processes.  If max_workers is None or not given, it will default to the number of processors on the machine. If max_workers is lower or equal to 0, then a ValueError will be raised. mp_context can be a multiprocessing context or None. It will be used to launch the workers. If mp_context is None or not given, the default multiprocessing context is used.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.ProcessPoolExecutor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::concurrent}}.{{c3::futures}}.{{c4::Future}}",
+      "Body": "Encapsulates the asynchronous execution of a callable.  Future instances are created by Executor.submit() and should not be created directly except for testing.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::cancel}}()",
+      "Body": "Attempt to cancel the call.  If the call is currently being executed and cannot be cancelled then the method will return False, otherwise the call will be cancelled and the method will return True.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.cancel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::cancelled}}()",
+      "Body": "Return True if the call was successfully cancelled.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.cancelled"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::running}}()",
+      "Body": "Return True if the call is currently being executed and cannot be cancelled.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.running"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::done}}()",
+      "Body": "Return True if the call was successfully cancelled or finished running.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.done"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::result}}({{c5::timeout}}={{c6::None}})",
+      "Body": "Return the value returned by the call. If the call hasn't yet completed then this method will wait up to timeout seconds.  If the call hasn't completed in timeout seconds, then a concurrent.futures.TimeoutError will be raised. timeout can be an int or float.  If timeout is not specified or None, there is no limit to the wait time.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.result"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::exception}}({{c5::timeout}}={{c6::None}})",
+      "Body": "Return the exception raised by the call.  If the call hasn't yet completed then this method will wait up to timeout seconds.  If the call hasn't completed in timeout seconds, then a concurrent.futures.TimeoutError will be raised.  timeout can be an int or float.  If timeout is not specified or None, there is no limit to the wait time.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.exception"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::add_done_callback}}({{c5::fn}})",
+      "Body": "Attaches the callable fn to the future.  fn will be called, with the future as its only argument, when the future is cancelled or finishes running.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.add_done_callback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::set_running_or_notify_cancel}}()",
+      "Body": "This method should only be called by Executor implementations before executing the work associated with the Future and by unit tests.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.set_running_or_notify_cancel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::set_result}}({{c5::result}})",
+      "Body": "Sets the result of the work associated with the Future to result.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.set_result"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::Future}}.{{c4::set_exception}}({{c5::exception}})",
+      "Body": "Sets the result of the work associated with the Future to the Exception exception.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.Future.set_exception"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::wait}}({{c4::fs}}, {{c5::timeout}}={{c6::None}}, {{c7::return_when}}={{c8::ALL_COMPLETED}})",
+      "Body": "Wait for the Future instances (possibly created by different Executor instances) given by fs to complete.  Returns a named 2-tuple of sets.  The first set, named done, contains the futures that completed (finished or were cancelled) before the wait completed.  The second set, named not_done, contains uncompleted futures.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.wait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::concurrent}}.{{c2::futures}}.{{c3::as_completed}}({{c4::fs}}, {{c5::timeout}}={{c6::None}})",
+      "Body": "Returns an iterator over the Future instances (possibly created by different Executor instances) given by fs that yields futures as they complete (finished or were cancelled). Any futures given by fs that are duplicated will be returned once. Any futures that completed before as_completed() is called will be yielded first.  The returned iterator raises a concurrent.futures.TimeoutError if __next__() is called and the result isn't available after timeout seconds from the original call to as_completed().  timeout can be an int or float. If timeout is not specified or None, there is no limit to the wait time.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.as_completed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::concurrent}}.{{c3::futures}}.{{c4::CancelledError}}",
+      "Body": "Raised when a future is cancelled.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.CancelledError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::concurrent}}.{{c3::futures}}.{{c4::TimeoutError}}",
+      "Body": "Raised when a future operation exceeds the given timeout.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.TimeoutError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::concurrent}}.{{c3::futures}}.{{c4::BrokenExecutor}}",
+      "Body": "Derived from RuntimeError, this exception class is raised when an executor is broken for some reason, and cannot be used to submit or execute new tasks.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.BrokenExecutor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::concurrent}}.{{c3::futures}}.{{c4::thread}}.{{c5::BrokenThreadPool}}",
+      "Body": "Derived from BrokenExecutor, this exception class is raised when one of the workers of a ThreadPoolExecutor has failed initializing.",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.thread.BrokenThreadPool"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::concurrent}}.{{c3::futures}}.{{c4::process}}.{{c5::BrokenProcessPool}}",
+      "Body": "Derived from BrokenExecutor (formerly RuntimeError), this exception class is raised when one of the workers of a ProcessPoolExecutor has terminated in a non-clean fashion (for example, if it was killed from the outside).",
+      "Link": "https://docs.python.org/3/library/concurrent.futures.html#concurrent.futures.process.BrokenProcessPool"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::run}}({{c3::args}}, *, {{c4::stdin}}={{c5::None}}, {{c6::input}}={{c7::None}}, {{c8::stdout}}={{c9::None}}, {{c10::stderr}}={{c11::None}}, {{c12::capture_output}}={{c13::False}}, {{c14::shell}}={{c15::False}}, {{c16::cwd}}={{c17::None}}, {{c18::timeout}}={{c19::None}}, {{c20::check}}={{c21::False}}, {{c22::encoding}}={{c23::None}}, {{c24::errors}}={{c25::None}}, {{c26::text}}={{c27::None}}, {{c28::env}}={{c29::None}})",
+      "Body": "Run the command described by args.  Wait for command to complete, then return a CompletedProcess instance.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::subprocess}}.{{c3::CompletedProcess}}",
+      "Body": "The return value from run(), representing a process that has finished.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CompletedProcess}}.{{c3::args}}",
+      "Body": "The arguments used to launch the process. This may be a list or a string.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess.args"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CompletedProcess}}.{{c3::returncode}}",
+      "Body": "Exit status of the child process. Typically, an exit status of 0 indicates that it ran successfully.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess.returncode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CompletedProcess}}.{{c3::stdout}}",
+      "Body": "Captured stdout from the child process. A bytes sequence, or a string if run() was called with an encoding, errors, or text=True. None if stdout was not captured.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess.stdout"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CompletedProcess}}.{{c3::stderr}}",
+      "Body": "Captured stderr from the child process. A bytes sequence, or a string if run() was called with an encoding, errors, or text=True. None if stderr was not captured.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess.stderr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CompletedProcess}}.{{c3::check_returncode}}()",
+      "Body": "If returncode is non-zero, raise a CalledProcessError.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess.check_returncode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::DEVNULL}}",
+      "Body": "Special value that can be used as the stdin, stdout or stderr argument to Popen and indicates that the special file os.devnull will be used.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.DEVNULL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::PIPE}}",
+      "Body": "Special value that can be used as the stdin, stdout or stderr argument to Popen and indicates that a pipe to the standard stream should be opened.  Most useful with Popen.communicate().",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.PIPE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STDOUT}}",
+      "Body": "Special value that can be used as the stderr argument to Popen and indicates that standard error should go into the same handle as standard output.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STDOUT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::subprocess}}.{{c3::SubprocessError}}",
+      "Body": "Base class for all other exceptions from this module.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.SubprocessError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::subprocess}}.{{c3::TimeoutExpired}}",
+      "Body": "Subclass of SubprocessError, raised when a timeout expires while waiting for a child process.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.TimeoutExpired"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::TimeoutExpired}}.{{c3::cmd}}",
+      "Body": "Command that was used to spawn the child process.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.TimeoutExpired.cmd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::TimeoutExpired}}.{{c3::timeout}}",
+      "Body": "Timeout in seconds.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.TimeoutExpired.timeout"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::TimeoutExpired}}.{{c3::output}}",
+      "Body": "Output of the child process if it was captured by run() or check_output().  Otherwise, None.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.TimeoutExpired.output"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::TimeoutExpired}}.{{c3::stdout}}",
+      "Body": "Alias for output, for symmetry with stderr.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.TimeoutExpired.stdout"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::TimeoutExpired}}.{{c3::stderr}}",
+      "Body": "Stderr output of the child process if it was captured by run(). Otherwise, None.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.TimeoutExpired.stderr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::subprocess}}.{{c3::CalledProcessError}}",
+      "Body": "Subclass of SubprocessError, raised when a process run by check_call() or check_output() returns a non-zero exit status.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CalledProcessError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CalledProcessError}}.{{c3::returncode}}",
+      "Body": "Exit status of the child process.  If the process exited due to a signal, this will be the negative signal number.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CalledProcessError.returncode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CalledProcessError}}.{{c3::cmd}}",
+      "Body": "Command that was used to spawn the child process.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CalledProcessError.cmd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CalledProcessError}}.{{c3::output}}",
+      "Body": "Output of the child process if it was captured by run() or check_output().  Otherwise, None.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CalledProcessError.output"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CalledProcessError}}.{{c3::stdout}}",
+      "Body": "Alias for output, for symmetry with stderr.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CalledProcessError.stdout"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CalledProcessError}}.{{c3::stderr}}",
+      "Body": "Stderr output of the child process if it was captured by run(). Otherwise, None.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CalledProcessError.stderr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::subprocess}}.{{c3::Popen}}({{c4::args}}, {{c5::bufsize}}=-1, {{c6::executable}}={{c7::None}}, {{c8::stdin}}={{c9::None}}, {{c10::stdout}}={{c11::None}}, {{c12::stderr}}={{c13::None}}, {{c14::preexec_fn}}={{c15::None}}, {{c16::close_fds}}={{c17::True}}, {{c18::shell}}={{c19::False}}, {{c20::cwd}}={{c21::None}}, {{c22::env}}={{c23::None}}, {{c24::universal_newlines}}={{c25::False}}, {{c26::startupinfo}}={{c27::None}}, {{c28::creationflags}}=0, {{c29::restore_signals}}={{c30::True}}, {{c31::start_new_session}}={{c32::False}}, {{c33::pass_fds}}=(), *, {{c34::encoding}}={{c35::None}}, {{c36::errors}}={{c37::None}}, {{c38::text}}={{c39::None}})",
+      "Body": "Execute a child program in a new process.  On POSIX, the class uses os.execvp()-like behavior to execute the child program.  On Windows, the class uses the Windows CreateProcess() function.  The arguments to Popen are as follows.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::poll}}()",
+      "Body": "Check if child process has terminated.  Set and return returncode attribute. Otherwise, returns None.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.poll"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::wait}}({{c3::timeout}}={{c4::None}})",
+      "Body": "Wait for child process to terminate.  Set and return returncode attribute.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.wait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::communicate}}({{c3::input}}={{c4::None}}, {{c5::timeout}}={{c6::None}})",
+      "Body": "Interact with process: Send data to stdin.  Read data from stdout and stderr, until end-of-file is reached.  Wait for process to terminate.  The optional input argument should be data to be sent to the child process, or None, if no data should be sent to the child.  If streams were opened in text mode, input must be a string.  Otherwise, it must be bytes.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.communicate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::send_signal}}({{c3::signal}})",
+      "Body": "Sends the signal signal to the child.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.send_signal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::terminate}}()",
+      "Body": "Stop the child. On Posix OSs the method sends SIGTERM to the child. On Windows the Win32 API function TerminateProcess() is called to stop the child.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.terminate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::kill}}()",
+      "Body": "Kills the child. On Posix OSs the function sends SIGKILL to the child. On Windows kill() is an alias for terminate().",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.kill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::args}}",
+      "Body": "The args argument as it was passed to Popen  a sequence of program arguments or else a single string.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.args"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::stdin}}",
+      "Body": "If the stdin argument was PIPE, this attribute is a writeable stream object as returned by open(). If the encoding or errors arguments were specified or the universal_newlines argument was True, the stream is a text stream, otherwise it is a byte stream. If the stdin argument was not PIPE, this attribute is None.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.stdin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::stdout}}",
+      "Body": "If the stdout argument was PIPE, this attribute is a readable stream object as returned by open(). Reading from the stream provides output from the child process. If the encoding or errors arguments were specified or the universal_newlines argument was True, the stream is a text stream, otherwise it is a byte stream. If the stdout argument was not PIPE, this attribute is None.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.stdout"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::stderr}}",
+      "Body": "If the stderr argument was PIPE, this attribute is a readable stream object as returned by open(). Reading from the stream provides error output from the child process. If the encoding or errors arguments were specified or the universal_newlines argument was True, the stream is a text stream, otherwise it is a byte stream. If the stderr argument was not PIPE, this attribute is None.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.stderr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::pid}}",
+      "Body": "The process ID of the child process.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.pid"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Popen}}.{{c2::returncode}}",
+      "Body": "The child return code, set by poll() and wait() (and indirectly by communicate()).  A None value indicates that the process hasn't terminated yet.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.Popen.returncode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::subprocess}}.{{c3::STARTUPINFO}}(*, {{c4::dwFlags}}=0, {{c5::hStdInput}}={{c6::None}}, {{c7::hStdOutput}}={{c8::None}}, {{c9::hStdError}}={{c10::None}}, {{c11::wShowWindow}}=0, {{c12::lpAttributeList}}={{c13::None}})",
+      "Body": "Partial support of the Windows STARTUPINFO structure is used for Popen creation.  The following attributes can be set by passing them as keyword-only arguments.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTUPINFO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STARTUPINFO}}.{{c3::dwFlags}}",
+      "Body": "A bit field that determines whether certain STARTUPINFO attributes are used when the process creates a window.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTUPINFO.dwFlags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STARTUPINFO}}.{{c3::hStdInput}}",
+      "Body": "If dwFlags specifies STARTF_USESTDHANDLES, this attribute is the standard input handle for the process. If STARTF_USESTDHANDLES is not specified, the default for standard input is the keyboard buffer.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTUPINFO.hStdInput"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STARTUPINFO}}.{{c3::hStdOutput}}",
+      "Body": "If dwFlags specifies STARTF_USESTDHANDLES, this attribute is the standard output handle for the process. Otherwise, this attribute is ignored and the default for standard output is the console window's buffer.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTUPINFO.hStdOutput"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STARTUPINFO}}.{{c3::hStdError}}",
+      "Body": "If dwFlags specifies STARTF_USESTDHANDLES, this attribute is the standard error handle for the process. Otherwise, this attribute is ignored and the default for standard error is the console window's buffer.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTUPINFO.hStdError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STARTUPINFO}}.{{c3::wShowWindow}}",
+      "Body": "If dwFlags specifies STARTF_USESHOWWINDOW, this attribute can be any of the values that can be specified in the nCmdShow parameter for the ShowWindow function, except for SW_SHOWDEFAULT. Otherwise, this attribute is ignored.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTUPINFO.wShowWindow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STARTUPINFO}}.{{c3::lpAttributeList}}",
+      "Body": "A dictionary of additional attributes for process creation as given in STARTUPINFOEX, see UpdateProcThreadAttribute.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTUPINFO.lpAttributeList"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::handle_list}}",
+      "Body": "Sequence of handles that will be inherited. close_fds must be true if non-empty.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#windows-popen-helpers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STD_INPUT_HANDLE}}",
+      "Body": "The standard input device. Initially, this is the console input buffer, CONIN$.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STD_INPUT_HANDLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STD_OUTPUT_HANDLE}}",
+      "Body": "The standard output device. Initially, this is the active console screen buffer, CONOUT$.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STD_OUTPUT_HANDLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STD_ERROR_HANDLE}}",
+      "Body": "The standard error device. Initially, this is the active console screen buffer, CONOUT$.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STD_ERROR_HANDLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::SW_HIDE}}",
+      "Body": "Hides the window. Another window will be activated.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.SW_HIDE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STARTF_USESTDHANDLES}}",
+      "Body": "Specifies that the STARTUPINFO.hStdInput, STARTUPINFO.hStdOutput, and STARTUPINFO.hStdError attributes contain additional information.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTF_USESTDHANDLES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::STARTF_USESHOWWINDOW}}",
+      "Body": "Specifies that the STARTUPINFO.wShowWindow attribute contains additional information.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.STARTF_USESHOWWINDOW"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CREATE_NEW_CONSOLE}}",
+      "Body": "The new process has a new console, instead of inheriting its parent's console (the default).",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CREATE_NEW_CONSOLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CREATE_NEW_PROCESS_GROUP}}",
+      "Body": "A Popen creationflags parameter to specify that a new process group will be created. This flag is necessary for using os.kill() on the subprocess.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CREATE_NEW_PROCESS_GROUP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::ABOVE_NORMAL_PRIORITY_CLASS}}",
+      "Body": "A Popen creationflags parameter to specify that a new process will have an above average priority.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.ABOVE_NORMAL_PRIORITY_CLASS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::BELOW_NORMAL_PRIORITY_CLASS}}",
+      "Body": "A Popen creationflags parameter to specify that a new process will have a below average priority.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.BELOW_NORMAL_PRIORITY_CLASS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::HIGH_PRIORITY_CLASS}}",
+      "Body": "A Popen creationflags parameter to specify that a new process will have a high priority.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.HIGH_PRIORITY_CLASS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::IDLE_PRIORITY_CLASS}}",
+      "Body": "A Popen creationflags parameter to specify that a new process will have an idle (lowest) priority.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.IDLE_PRIORITY_CLASS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::NORMAL_PRIORITY_CLASS}}",
+      "Body": "A Popen creationflags parameter to specify that a new process will have an normal priority. (default)",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.NORMAL_PRIORITY_CLASS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::REALTIME_PRIORITY_CLASS}}",
+      "Body": "A Popen creationflags parameter to specify that a new process will have realtime priority. You should almost never use REALTIME_PRIORITY_CLASS, because this interrupts system threads that manage mouse input, keyboard input, and background disk flushing. This class can be appropriate for applications that talk directly to hardware or that perform brief tasks that should have limited interruptions.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.REALTIME_PRIORITY_CLASS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CREATE_NO_WINDOW}}",
+      "Body": "A Popen creationflags parameter to specify that a new process will not create a window",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CREATE_NO_WINDOW"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::DETACHED_PROCESS}}",
+      "Body": "A Popen creationflags parameter to specify that a new process will not inherit its parent's console. This value cannot be used with CREATE_NEW_CONSOLE.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.DETACHED_PROCESS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CREATE_DEFAULT_ERROR_MODE}}",
+      "Body": "A Popen creationflags parameter to specify that a new process does not inherit the error mode of the calling process. Instead, the new process gets the default error mode. This feature is particularly useful for multithreaded shell applications that run with hard errors disabled.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CREATE_DEFAULT_ERROR_MODE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::CREATE_BREAKAWAY_FROM_JOB}}",
+      "Body": "A Popen creationflags parameter to specify that a new process is not associated with the job.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.CREATE_BREAKAWAY_FROM_JOB"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::call}}({{c3::args}}, *, {{c4::stdin}}={{c5::None}}, {{c6::stdout}}={{c7::None}}, {{c8::stderr}}={{c9::None}}, {{c10::shell}}={{c11::False}}, {{c12::cwd}}={{c13::None}}, {{c14::timeout}}={{c15::None}})",
+      "Body": "Run the command described by args.  Wait for command to complete, then return the returncode attribute.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.call"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::check_call}}({{c3::args}}, *, {{c4::stdin}}={{c5::None}}, {{c6::stdout}}={{c7::None}}, {{c8::stderr}}={{c9::None}}, {{c10::shell}}={{c11::False}}, {{c12::cwd}}={{c13::None}}, {{c14::timeout}}={{c15::None}})",
+      "Body": "Run command with arguments.  Wait for command to complete. If the return code was zero then return, otherwise raise CalledProcessError. The CalledProcessError object will have the return code in the returncode attribute.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.check_call"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::check_output}}({{c3::args}}, *, {{c4::stdin}}={{c5::None}}, {{c6::stderr}}={{c7::None}}, {{c8::shell}}={{c9::False}}, {{c10::cwd}}={{c11::None}}, {{c12::encoding}}={{c13::None}}, {{c14::errors}}={{c15::None}}, {{c16::universal_newlines}}={{c17::False}}, {{c18::timeout}}={{c19::None}})",
+      "Body": "Run command with arguments and return its output.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.check_output"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::getstatusoutput}}({{c3::cmd}})",
+      "Body": "Return (exitcode, output) of executing cmd in a shell.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.getstatusoutput"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::subprocess}}.{{c2::getoutput}}({{c3::cmd}})",
+      "Body": "Return output (stdout and stderr) of executing cmd in a shell.",
+      "Link": "https://docs.python.org/3/library/subprocess.html#subprocess.getoutput"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::sched}}.{{c3::scheduler}}({{c4::timefunc}}={{c5::time}}.{{c6::monotonic}}, {{c7::delayfunc}}={{c8::time}}.{{c9::sleep}})",
+      "Body": "The scheduler class defines a generic interface to scheduling events. It needs two functions to actually deal with the outside world  timefunc should be callable without arguments, and return  a number (the time, in any units whatsoever). If time.monotonic is not available, the timefunc default is time.time instead. The delayfunc function should be callable with one argument, compatible with the output of timefunc, and should delay that many time units. delayfunc will also be called with the argument 0 after each event is run to allow other threads an opportunity to run in multi-threaded applications.",
+      "Link": "https://docs.python.org/3/library/sched.html#sched.scheduler"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::scheduler}}.{{c2::enterabs}}({{c3::time}}, {{c4::priority}}, {{c5::action}}, {{c6::argument}}=(), {{c7::kwargs}}={})",
+      "Body": "Schedule a new event. The time argument should be a numeric type compatible with the return value of the timefunc function passed  to the constructor. Events scheduled for the same time will be executed in the order of their priority. A lower number represents a higher priority.",
+      "Link": "https://docs.python.org/3/library/sched.html#sched.scheduler.enterabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::scheduler}}.{{c2::enter}}({{c3::delay}}, {{c4::priority}}, {{c5::action}}, {{c6::argument}}=(), {{c7::kwargs}}={})",
+      "Body": "Schedule an event for delay more time units. Other than the relative time, the other arguments, the effect and the return value are the same as those for enterabs().",
+      "Link": "https://docs.python.org/3/library/sched.html#sched.scheduler.enter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::scheduler}}.{{c2::cancel}}({{c3::event}})",
+      "Body": "Remove the event from the queue. If event is not an event currently in the queue, this method will raise a ValueError.",
+      "Link": "https://docs.python.org/3/library/sched.html#sched.scheduler.cancel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::scheduler}}.{{c2::empty}}()",
+      "Body": "Return true if the event queue is empty.",
+      "Link": "https://docs.python.org/3/library/sched.html#sched.scheduler.empty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::scheduler}}.{{c2::run}}({{c3::blocking}}={{c4::True}})",
+      "Body": "Run all scheduled events. This method will wait  (using the delayfunc() function passed to the constructor) for the next event, then execute it and so on until there are no more scheduled events.",
+      "Link": "https://docs.python.org/3/library/sched.html#sched.scheduler.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::scheduler}}.{{c2::queue}}",
+      "Body": "Read-only attribute returning a list of upcoming events in the order they will be run.  Each event is shown as a named tuple with the following fields:  time, priority, action, argument, kwargs.",
+      "Link": "https://docs.python.org/3/library/sched.html#sched.scheduler.queue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::queue}}.{{c3::Queue}}({{c4::maxsize}}=0)",
+      "Body": "Constructor for a FIFO queue.  maxsize is an integer that sets the upperbound limit on the number of items that can be placed in the queue.  Insertion will block once this size has been reached, until queue items are consumed.  If maxsize is less than or equal to zero, the queue size is infinite.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::queue}}.{{c3::LifoQueue}}({{c4::maxsize}}=0)",
+      "Body": "Constructor for a LIFO queue.  maxsize is an integer that sets the upperbound limit on the number of items that can be placed in the queue.  Insertion will block once this size has been reached, until queue items are consumed.  If maxsize is less than or equal to zero, the queue size is infinite.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.LifoQueue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::queue}}.{{c3::PriorityQueue}}({{c4::maxsize}}=0)",
+      "Body": "Constructor for a priority queue.  maxsize is an integer that sets the upperbound limit on the number of items that can be placed in the queue.  Insertion will block once this size has been reached, until queue items are consumed.  If maxsize is less than or equal to zero, the queue size is infinite.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.PriorityQueue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::queue}}.{{c3::SimpleQueue}}",
+      "Body": "Constructor for an unbounded FIFO queue. Simple queues lack advanced functionality such as task tracking.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.SimpleQueue"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::queue}}.{{c3::Empty}}",
+      "Body": "Exception raised when non-blocking get() (or get_nowait()) is called on a Queue object which is empty.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Empty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::queue}}.{{c3::Full}}",
+      "Body": "Exception raised when non-blocking put() (or put_nowait()) is called on a Queue object which is full.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Full"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::qsize}}()",
+      "Body": "Return the approximate size of the queue.  Note, qsize() > 0 doesn't guarantee that a subsequent get() will not block, nor will qsize() < maxsize guarantee that put() will not block.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.qsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::empty}}()",
+      "Body": "Return True if the queue is empty, False otherwise.  If empty() returns True it doesn't guarantee that a subsequent call to put() will not block.  Similarly, if empty() returns False it doesn't guarantee that a subsequent call to get() will not block.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.empty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::full}}()",
+      "Body": "Return True if the queue is full, False otherwise.  If full() returns True it doesn't guarantee that a subsequent call to get() will not block.  Similarly, if full() returns False it doesn't guarantee that a subsequent call to put() will not block.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.full"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::put}}({{c3::item}}, {{c4::block}}={{c5::True}}, {{c6::timeout}}={{c7::None}})",
+      "Body": "Put item into the queue. If optional args block is true and timeout is None (the default), block if necessary until a free slot is available. If timeout is a positive number, it blocks at most timeout seconds and raises the Full exception if no free slot was available within that time. Otherwise (block is false), put an item on the queue if a free slot is immediately available, else raise the Full exception (timeout is ignored in that case).",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.put"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::put_nowait}}({{c3::item}})",
+      "Body": "Equivalent to put(item, False).",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.put_nowait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::get}}({{c3::block}}={{c4::True}}, {{c5::timeout}}={{c6::None}})",
+      "Body": "Remove and return an item from the queue. If optional args block is true and timeout is None (the default), block if necessary until an item is available. If timeout is a positive number, it blocks at most timeout seconds and raises the Empty exception if no item was available within that time. Otherwise (block is false), return an item if one is immediately available, else raise the Empty exception (timeout is ignored in that case).",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::get_nowait}}()",
+      "Body": "Equivalent to get(False).",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.get_nowait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::task_done}}()",
+      "Body": "Indicate that a formerly enqueued task is complete.  Used by queue consumer threads.  For each get() used to fetch a task, a subsequent call to task_done() tells the queue that the processing on the task is complete.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.task_done"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Queue}}.{{c2::join}}()",
+      "Body": "Blocks until all items in the queue have been gotten and processed.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.Queue.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SimpleQueue}}.{{c2::qsize}}()",
+      "Body": "Return the approximate size of the queue.  Note, qsize() > 0 doesn't guarantee that a subsequent get() will not block.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.SimpleQueue.qsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SimpleQueue}}.{{c2::empty}}()",
+      "Body": "Return True if the queue is empty, False otherwise. If empty() returns False it doesn't guarantee that a subsequent call to get() will not block.",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.SimpleQueue.empty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SimpleQueue}}.{{c2::put}}({{c3::item}}, {{c4::block}}={{c5::True}}, {{c6::timeout}}={{c7::None}})",
+      "Body": "Put item into the queue.  The method never blocks and always succeeds (except for potential low-level errors such as failure to allocate memory). The optional args block and timeout are ignored and only provided for compatibility with Queue.put().",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.SimpleQueue.put"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SimpleQueue}}.{{c2::put_nowait}}({{c3::item}})",
+      "Body": "Equivalent to put(item), provided for compatibility with Queue.put_nowait().",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.SimpleQueue.put_nowait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SimpleQueue}}.{{c2::get}}({{c3::block}}={{c4::True}}, {{c5::timeout}}={{c6::None}})",
+      "Body": "Remove and return an item from the queue.  If optional args block is true and timeout is None (the default), block if necessary until an item is available. If timeout is a positive number, it blocks at most timeout seconds and raises the Empty exception if no item was available within that time. Otherwise (block is false), return an item if one is immediately available, else raise the Empty exception (timeout is ignored in that case).",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.SimpleQueue.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SimpleQueue}}.{{c2::get_nowait}}()",
+      "Body": "Equivalent to get(False).",
+      "Link": "https://docs.python.org/3/library/queue.html#queue.SimpleQueue.get_nowait"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::_thread}}.{{c3::error}}",
+      "Body": "Raised on thread-specific errors.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::_thread}}.{{c2::LockType}}",
+      "Body": "This is the type of lock objects.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.LockType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::_thread}}.{{c2::start_new_thread}}({{c3::function}}, {{c4::args}}[, {{c5::kwargs}}])",
+      "Body": "Start a new thread and return its identifier.  The thread executes the function function with the argument list args (which must be a tuple).  The optional kwargs argument specifies a dictionary of keyword arguments. When the function returns, the thread silently exits.  When the function terminates with an unhandled exception, a stack trace is printed and then the thread exits (but other threads continue to run).",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.start_new_thread"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::_thread}}.{{c2::interrupt_main}}()",
+      "Body": "Raise a KeyboardInterrupt exception in the main thread.  A subthread can use this function to interrupt the main thread.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.interrupt_main"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::_thread}}.{{c2::exit}}()",
+      "Body": "Raise the SystemExit exception.  When not caught, this will cause the thread to exit silently.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.exit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::_thread}}.{{c2::allocate_lock}}()",
+      "Body": "Return a new lock object.  Methods of locks are described below.  The lock is initially unlocked.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.allocate_lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::_thread}}.{{c2::get_ident}}()",
+      "Body": "Return the 'thread identifier' of the current thread.  This is a nonzero integer.  Its value has no direct meaning; it is intended as a magic cookie to be used e.g. to index a dictionary of thread-specific data.  Thread identifiers may be recycled when a thread exits and another thread is created.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.get_ident"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Concurrent Execution",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::_thread}}.{{c2::stack_size}}([{{c3::size}}])",
+      "Body": "Return the thread stack size used when creating new threads.  The optional size argument specifies the stack size to be used for subsequently created threads, and must be 0 (use platform or configured default) or a positive integer value of at least 32,768 (32 KiB). If size is not specified, 0 is used.  If changing the thread stack size is unsupported, a RuntimeError is raised.  If the specified stack size is invalid, a ValueError is raised and the stack size is unmodified.  32 KiB is currently the minimum supported stack size value to guarantee sufficient stack space for the interpreter itself.  Note that some platforms may have particular restrictions on values for the stack size, such as requiring a minimum stack size > 32 KiB or requiring allocation in multiples of the system memory page size - platform documentation should be referred to for more information (4 KiB pages are common; using multiples of 4096 for the stack size is the suggested approach in the absence of more specific information).",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.stack_size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::_thread}}.{{c2::TIMEOUT_MAX}}",
+      "Body": "The maximum value allowed for the timeout parameter of Lock.acquire(). Specifying a timeout greater than this value will raise an OverflowError.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.TIMEOUT_MAX"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::lock}}.{{c2::acquire}}({{c3::waitflag}}=1, {{c4::timeout}}=-1)",
+      "Body": "Without any optional argument, this method acquires the lock unconditionally, if necessary waiting until it is released by another thread (only one thread at a time can acquire a lock  that's their reason for existence).",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.lock.acquire"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::lock}}.{{c2::release}}()",
+      "Body": "Releases the lock.  The lock must have been acquired earlier, but not necessarily by the same thread.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.lock.release"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Concurrent Execution", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::lock}}.{{c2::locked}}()",
+      "Body": "Return the status of the lock: True if it has been acquired by some thread, False if not.",
+      "Link": "https://docs.python.org/3/library/_thread.html#_thread.lock.locked"
+    },
+    "modelName": "ClozePy"
+  }
+]

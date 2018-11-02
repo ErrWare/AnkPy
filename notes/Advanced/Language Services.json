@@ -1,0 +1,2627 @@
+[
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::expr}}({{c3::source}})",
+      "Body": "The expr() function parses the parameter source as if it were an input to compile(source, 'file.py', 'eval').  If the parse succeeds, an ST object is created to hold the internal parse tree representation, otherwise an appropriate exception is raised.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.expr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::suite}}({{c3::source}})",
+      "Body": "The suite() function parses the parameter source as if it were an input to compile(source, 'file.py', 'exec').  If the parse succeeds, an ST object is created to hold the internal parse tree representation, otherwise an appropriate exception is raised.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.suite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::sequence}}2{{c3::st}}({{c4::sequence}})",
+      "Body": "This function accepts a parse tree represented as a sequence and builds an internal representation if possible.  If it can validate that the tree conforms to the Python grammar and all nodes are valid node types in the host version of Python, an ST object is created from the internal representation and returned to the called.  If there is a problem creating the internal representation, or if the tree cannot be validated, a ParserError exception is raised.  An ST object created this way should not be assumed to compile correctly; normal exceptions raised by compilation may still be initiated when the ST object is passed to compilest().  This may indicate problems not related to syntax (such as a MemoryError exception), but may also be due to constructs such as the result of parsing del f(0), which escapes the Python parser but is checked by the bytecode compiler.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.sequence2st"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::tuple}}2{{c3::st}}({{c4::sequence}})",
+      "Body": "This is the same function as sequence2st().  This entry point is maintained for backward compatibility.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.tuple2st"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::st}}2{{c3::list}}({{c4::st}}, {{c5::line_info}}={{c6::False}}, {{c7::col_info}}={{c8::False}})",
+      "Body": "This function accepts an ST object from the caller in st and returns a Python list representing the equivalent parse tree.  The resulting list representation can be used for inspection or the creation of a new parse tree in list form.  This function does not fail so long as memory is available to build the list representation.  If the parse tree will only be used for inspection, st2tuple() should be used instead to reduce memory consumption and fragmentation.  When the list representation is required, this function is significantly faster than retrieving a tuple representation and converting that to nested lists.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.st2list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::st}}2{{c3::tuple}}({{c4::st}}, {{c5::line_info}}={{c6::False}}, {{c7::col_info}}={{c8::False}})",
+      "Body": "This function accepts an ST object from the caller in st and returns a Python tuple representing the equivalent parse tree.  Other than returning a tuple instead of a list, this function is identical to st2list().",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.st2tuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::compilest}}({{c3::st}}, {{c4::filename}}='<{{c5::syntax}}-{{c6::tree}}>')",
+      "Body": "The Python byte compiler can be invoked on an ST object to produce code objects which can be used as part of a call to the built-in exec() or eval() functions. This function provides the interface to the compiler, passing the internal parse tree from st to the parser, using the source file name specified by the filename parameter. The default value supplied for filename indicates that the source was an ST object.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.compilest"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::isexpr}}({{c3::st}})",
+      "Body": "When st represents an 'eval' form, this function returns true, otherwise it returns false.  This is useful, since code objects normally cannot be queried for this information using existing built-in functions.  Note that the code objects created by compilest() cannot be queried like this either, and are identical to those created by the built-in compile() function.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.isexpr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::issuite}}({{c3::st}})",
+      "Body": "This function mirrors isexpr() in that it reports whether an ST object represents an 'exec' form, commonly known as a suite.  It is not safe to assume that this function is equivalent to not isexpr(st), as additional syntactic fragments may be supported in the future.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.issuite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::parser}}.{{c3::ParserError}}",
+      "Body": "Exception raised when a failure occurs within the parser module.  This is generally produced for validation failures rather than the built-in SyntaxError raised during normal parsing. The exception argument is either a string describing the reason of the failure or a tuple containing a sequence causing the failure from a parse tree passed to sequence2st() and an explanatory string.  Calls to sequence2st() need to be able to handle either type of exception, while calls to other functions in the module will only need to be aware of the simple string values.",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.ParserError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::parser}}.{{c2::STType}}",
+      "Body": "The type of the objects returned by expr(), suite() and sequence2st().",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.STType"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ST}}.{{c2::compile}}({{c3::filename}}='<{{c4::syntax}}-{{c5::tree}}>')",
+      "Body": "Same as compilest(st, filename).",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.ST.compile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ST}}.{{c2::isexpr}}()",
+      "Body": "Same as isexpr(st).",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.ST.isexpr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ST}}.{{c2::issuite}}()",
+      "Body": "Same as issuite(st).",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.ST.issuite"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ST}}.{{c2::tolist}}({{c3::line_info}}={{c4::False}}, {{c5::col_info}}={{c6::False}})",
+      "Body": "Same as st2list(st, line_info, col_info).",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.ST.tolist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ST}}.{{c2::totuple}}({{c3::line_info}}={{c4::False}}, {{c5::col_info}}={{c6::False}})",
+      "Body": "Same as st2tuple(st, line_info, col_info).",
+      "Link": "https://docs.python.org/3/library/parser.html#parser.ST.totuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::ast}}.{{c3::AST}}",
+      "Body": "This is the base of all AST node classes.  The actual node classes are derived from the Parser/Python.asdl file, which is reproduced below.  They are defined in the _ast C module and re-exported in ast.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.AST"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::AST}}.{{c3::_fields}}",
+      "Body": "Each concrete class has an attribute _fields which gives the names of all child nodes.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.AST._fields"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::AST}}.{{c3::lineno}}",
+      "Body": "Instances of ast.expr and ast.stmt subclasses have lineno and col_offset attributes.  The lineno is the line number of source text (1-indexed so the first line is line 1) and the col_offset is the UTF-8 byte offset of the first token that generated the node.  The UTF-8 offset is recorded because the parser uses UTF-8 internally.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.AST.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::AST}}.{{c3::col_offset}}",
+      "Body": "Instances of ast.expr and ast.stmt subclasses have lineno and col_offset attributes.  The lineno is the line number of source text (1-indexed so the first line is line 1) and the col_offset is the UTF-8 byte offset of the first token that generated the node.  The UTF-8 offset is recorded because the parser uses UTF-8 internally.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.AST.col_offset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::parse}}({{c3::source}}, {{c4::filename}}='<{{c5::unknown}}>', {{c6::mode}}='{{c7::exec}}')",
+      "Body": "Parse the source into an AST node.  Equivalent to compile(source, filename, mode, ast.PyCF_ONLY_AST).",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.parse"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::literal_eval}}({{c3::node_or_string}})",
+      "Body": "Safely evaluate an expression node or a string containing a Python literal or container display.  The string or node provided may only consist of the following Python literal structures: strings, bytes, numbers, tuples, lists, dicts, sets, booleans, and None.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.literal_eval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::get_docstring}}({{c3::node}}, {{c4::clean}}={{c5::True}})",
+      "Body": "Return the docstring of the given node (which must be a FunctionDef, AsyncFunctionDef, ClassDef, or Module node), or None if it has no docstring. If clean is true, clean up the docstring's indentation with inspect.cleandoc().",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.get_docstring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::fix_missing_locations}}({{c3::node}})",
+      "Body": "When you compile a node tree with compile(), the compiler expects lineno and col_offset attributes for every node that supports them.  This is rather tedious to fill in for generated nodes, so this helper adds these attributes recursively where not already set, by setting them to the values of the parent node.  It works recursively starting at node.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.fix_missing_locations"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::increment_lineno}}({{c3::node}}, {{c4::n}}=1)",
+      "Body": "Increment the line number of each node in the tree starting at node by n. This is useful to move code to a different location in a file.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.increment_lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::copy_location}}({{c3::new_node}}, {{c4::old_node}})",
+      "Body": "Copy source location (lineno and col_offset) from old_node to new_node if possible, and return new_node.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.copy_location"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::iter_fields}}({{c3::node}})",
+      "Body": "Yield a tuple of (fieldname, value) for each field in node._fields that is present on node.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.iter_fields"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::iter_child_nodes}}({{c3::node}})",
+      "Body": "Yield all direct child nodes of node, that is, all fields that are nodes and all items of fields that are lists of nodes.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.iter_child_nodes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::walk}}({{c3::node}})",
+      "Body": "Recursively yield all descendant nodes in the tree starting at node (including node itself), in no specified order.  This is useful if you only want to modify nodes in place and don't care about the context.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.walk"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::ast}}.{{c3::NodeVisitor}}",
+      "Body": "A node visitor base class that walks the abstract syntax tree and calls a visitor function for every node found.  This function may return a value which is forwarded by the visit() method.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.NodeVisitor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::NodeVisitor}}.{{c3::visit}}({{c4::node}})",
+      "Body": "Visit a node.  The default implementation calls the method called self.visit_classname where classname is the name of the node class, or generic_visit() if that method doesn't exist.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.NodeVisitor.visit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::NodeVisitor}}.{{c3::generic_visit}}({{c4::node}})",
+      "Body": "This visitor calls visit() on all children of the node.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.NodeVisitor.generic_visit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::ast}}.{{c3::NodeTransformer}}",
+      "Body": "A NodeVisitor subclass that walks the abstract syntax tree and allows modification of nodes.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.NodeTransformer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ast}}.{{c2::dump}}({{c3::node}}, {{c4::annotate_fields}}={{c5::True}}, {{c6::include_attributes}}={{c7::False}})",
+      "Body": "Return a formatted dump of the tree in node.  This is mainly useful for debugging purposes.  The returned string will show the names and the values for fields.  This makes the code impossible to evaluate, so if evaluation is wanted annotate_fields must be set to False.  Attributes such as line numbers and column offsets are not dumped by default.  If this is wanted, include_attributes can be set to True.",
+      "Link": "https://docs.python.org/3/library/ast.html#ast.dump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::symtable}}({{c3::code}}, {{c4::filename}}, {{c5::compile_type}})",
+      "Body": "Return the toplevel SymbolTable for the Python source code. filename is the name of the file containing the code.  compile_type is like the mode argument to compile().",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.symtable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::symtable}}.{{c3::SymbolTable}}",
+      "Body": "A namespace table for a block.  The constructor is not public.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::get_type}}()",
+      "Body": "Return the type of the symbol table.  Possible values are 'class', 'module', and 'function'.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.get_type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::get_id}}()",
+      "Body": "Return the table's identifier.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.get_id"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::get_name}}()",
+      "Body": "Return the table's name.  This is the name of the class if the table is for a class, the name of the function if the table is for a function, or 'top' if the table is global (get_type() returns 'module').",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.get_name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::get_lineno}}()",
+      "Body": "Return the number of the first line in the block this table represents.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.get_lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::is_optimized}}()",
+      "Body": "Return True if the locals in this table can be optimized.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.is_optimized"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::is_nested}}()",
+      "Body": "Return True if the block is a nested class or function.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.is_nested"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::has_children}}()",
+      "Body": "Return True if the block has nested namespaces within it.  These can be obtained with get_children().",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.has_children"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::has_exec}}()",
+      "Body": "Return True if the block uses exec.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.has_exec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::get_identifiers}}()",
+      "Body": "Return a list of names of symbols in this table.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.get_identifiers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::lookup}}({{c4::name}})",
+      "Body": "Lookup name in the table and return a Symbol instance.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.lookup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::get_symbols}}()",
+      "Body": "Return a list of Symbol instances for names in the table.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.get_symbols"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::SymbolTable}}.{{c3::get_children}}()",
+      "Body": "Return a list of the nested symbol tables.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.SymbolTable.get_children"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::symtable}}.{{c3::Function}}",
+      "Body": "A namespace for a function or method.  This class inherits SymbolTable.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Function"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Function}}.{{c3::get_parameters}}()",
+      "Body": "Return a tuple containing names of parameters to this function.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Function.get_parameters"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Function}}.{{c3::get_locals}}()",
+      "Body": "Return a tuple containing names of locals in this function.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Function.get_locals"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Function}}.{{c3::get_globals}}()",
+      "Body": "Return a tuple containing names of globals in this function.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Function.get_globals"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Function}}.{{c3::get_frees}}()",
+      "Body": "Return a tuple containing names of free variables in this function.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Function.get_frees"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::symtable}}.{{c3::Class}}",
+      "Body": "A namespace of a class.  This class inherits SymbolTable.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Class"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Class}}.{{c3::get_methods}}()",
+      "Body": "Return a tuple containing the names of methods declared in the class.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Class.get_methods"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::symtable}}.{{c3::Symbol}}",
+      "Body": "An entry in a SymbolTable corresponding to an identifier in the source.  The constructor is not public.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::get_name}}()",
+      "Body": "Return the symbol's name.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.get_name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_referenced}}()",
+      "Body": "Return True if the symbol is used in its block.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_referenced"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_imported}}()",
+      "Body": "Return True if the symbol is created from an import statement.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_imported"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_parameter}}()",
+      "Body": "Return True if the symbol is a parameter.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_parameter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_global}}()",
+      "Body": "Return True if the symbol is global.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_global"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_declared_global}}()",
+      "Body": "Return True if the symbol is declared global with a global statement.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_declared_global"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_local}}()",
+      "Body": "Return True if the symbol is local to its block.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_local"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_free}}()",
+      "Body": "Return True if the symbol is referenced in its block, but not assigned to.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_free"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_assigned}}()",
+      "Body": "Return True if the symbol is assigned to in its block.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_assigned"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::is_namespace}}()",
+      "Body": "Return True if name binding introduces new namespace.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.is_namespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::get_namespaces}}()",
+      "Body": "Return a list of namespaces bound to this name.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.get_namespaces"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symtable}}.{{c2::Symbol}}.{{c3::get_namespace}}()",
+      "Body": "Return the namespace bound to this name.  If more than one namespace is bound, ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/symtable.html#symtable.Symbol.get_namespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::symbol}}.{{c2::sym_name}}",
+      "Body": "Dictionary mapping the numeric values of the constants defined in this module back to name strings, allowing more human-readable representation of parse trees to be generated.",
+      "Link": "https://docs.python.org/3/library/symbol.html#symbol.sym_name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::token}}.{{c2::tok_name}}",
+      "Body": "Dictionary mapping the numeric values of the constants defined in this module back to name strings, allowing more human-readable representation of parse trees to be generated.",
+      "Link": "https://docs.python.org/3/library/token.html#token.tok_name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::token}}.{{c2::ISTERMINAL}}({{c3::x}})",
+      "Body": "Return true for terminal token values.",
+      "Link": "https://docs.python.org/3/library/token.html#token.ISTERMINAL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::token}}.{{c2::ISNONTERMINAL}}({{c3::x}})",
+      "Body": "Return true for non-terminal token values.",
+      "Link": "https://docs.python.org/3/library/token.html#token.ISNONTERMINAL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::token}}.{{c2::ISEOF}}({{c3::x}})",
+      "Body": "Return true if x is the marker indicating the end of input.",
+      "Link": "https://docs.python.org/3/library/token.html#token.ISEOF"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::token}}.{{c2::COMMENT}}",
+      "Body": "Token value used to indicate a comment.",
+      "Link": "https://docs.python.org/3/library/token.html#token.COMMENT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::token}}.{{c2::NL}}",
+      "Body": "Token value used to indicate a non-terminating newline.  The NEWLINE token indicates the end of a logical line of Python code; NL tokens are generated when a logical line of code is continued over multiple physical lines.",
+      "Link": "https://docs.python.org/3/library/token.html#token.NL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::token}}.{{c2::ENCODING}}",
+      "Body": "Token value that indicates the encoding used to decode the source bytes into text. The first token returned by tokenize.tokenize() will always be an ENCODING token.",
+      "Link": "https://docs.python.org/3/library/token.html#token.ENCODING"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::keyword}}.{{c2::iskeyword}}({{c3::s}})",
+      "Body": "Return true if s is a Python keyword.",
+      "Link": "https://docs.python.org/3/library/keyword.html#keyword.iskeyword"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::keyword}}.{{c2::kwlist}}",
+      "Body": "Sequence containing all the keywords defined for the interpreter.  If any keywords are defined to only be active when particular __future__ statements are in effect, these will be included as well.",
+      "Link": "https://docs.python.org/3/library/keyword.html#keyword.kwlist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tokenize}}.{{c2::tokenize}}({{c3::readline}})",
+      "Body": "The tokenize() generator requires one argument, readline, which must be a callable object which provides the same interface as the io.IOBase.readline() method of file objects.  Each call to the function should return one line of input as bytes.",
+      "Link": "https://docs.python.org/3/library/tokenize.html#tokenize.tokenize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tokenize}}.{{c2::untokenize}}({{c3::iterable}})",
+      "Body": "Converts tokens back into Python source code.  The iterable must return sequences with at least two elements, the token type and the token string. Any additional sequence elements are ignored.",
+      "Link": "https://docs.python.org/3/library/tokenize.html#tokenize.untokenize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tokenize}}.{{c2::detect_encoding}}({{c3::readline}})",
+      "Body": "The detect_encoding() function is used to detect the encoding that should be used to decode a Python source file. It requires one argument, readline, in the same way as the tokenize() generator.",
+      "Link": "https://docs.python.org/3/library/tokenize.html#tokenize.detect_encoding"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tokenize}}.{{c2::open}}({{c3::filename}})",
+      "Body": "Open a file in read only mode using the encoding detected by detect_encoding().",
+      "Link": "https://docs.python.org/3/library/tokenize.html#tokenize.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::tokenize}}.{{c3::TokenError}}",
+      "Body": "Raised when either a docstring or expression that may be split over several lines is not completed anywhere in the file, for example:",
+      "Link": "https://docs.python.org/3/library/tokenize.html#tokenize.TokenError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::h}}, --{{c2::help}}",
+      "Body": "show this help message and exit",
+      "Link": "https://docs.python.org/3/library/tokenize.html#cmdoption-tokenize-h"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::e}}, --{{c2::exact}}",
+      "Body": "display token names using the exact type",
+      "Link": "https://docs.python.org/3/library/tokenize.html#cmdoption-tokenize-e"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tabnanny}}.{{c2::check}}({{c3::file_or_dir}})",
+      "Body": "If file_or_dir is a directory and not a symbolic link, then recursively descend the directory tree named by file_or_dir, checking all .py files along the way.  If file_or_dir is an ordinary Python source file, it is checked for whitespace related problems.  The diagnostic messages are written to standard output using the print() function.",
+      "Link": "https://docs.python.org/3/library/tabnanny.html#tabnanny.check"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tabnanny}}.{{c2::verbose}}",
+      "Body": "Flag indicating whether to print verbose messages. This is incremented by the -v option if called as a script.",
+      "Link": "https://docs.python.org/3/library/tabnanny.html#tabnanny.verbose"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tabnanny}}.{{c2::filename_only}}",
+      "Body": "Flag indicating whether to print only the filenames of files containing whitespace related problems.  This is set to true by the -q option if called as a script.",
+      "Link": "https://docs.python.org/3/library/tabnanny.html#tabnanny.filename_only"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::tabnanny}}.{{c3::NannyNag}}",
+      "Body": "Raised by process_tokens() if detecting an ambiguous indent. Captured and handled in check().",
+      "Link": "https://docs.python.org/3/library/tabnanny.html#tabnanny.NannyNag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::tabnanny}}.{{c2::process_tokens}}({{c3::tokens}})",
+      "Body": "This function is used by check() to process tokens generated by the tokenize module.",
+      "Link": "https://docs.python.org/3/library/tabnanny.html#tabnanny.process_tokens"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pyclbr}}.{{c2::readmodule}}({{c3::module}}, {{c4::path}}={{c5::None}})",
+      "Body": "Return a dictionary mapping module-level class names to class descriptors.  If possible, descriptors for imported base classes are included.  Parameter module is a string with the name of the module to read; it may be the name of a module within a package.  If given, path is a sequence of directory paths prepended to sys.path, which is used to locate the module source code.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.readmodule"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pyclbr}}.{{c2::readmodule_ex}}({{c3::module}}, {{c4::path}}={{c5::None}})",
+      "Body": "Return a dictionary-based tree containing a function or class descriptors for each function and class defined in the module with a def or class statement.  The returned dictionary maps module-level function and class names to their descriptors.  Nested objects are entered into the children dictionary of their parent.  As with readmodule, module names the module to be read and path is prepended to sys.path.  If the module being read is a package, the returned dictionary has a key '__path__' whose value is a list containing the package search path.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.readmodule_ex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Function}}.{{c2::file}}",
+      "Body": "Name of the file in which the function is defined.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Function.file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Function}}.{{c2::module}}",
+      "Body": "The name of the module defining the function described.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Function.module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Function}}.{{c2::name}}",
+      "Body": "The name of the function.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Function.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Function}}.{{c2::lineno}}",
+      "Body": "The line number in the file where the definition starts.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Function.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Function}}.{{c2::parent}}",
+      "Body": "For top-level functions, None.  For nested functions, the parent.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Function.parent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Function}}.{{c2::children}}",
+      "Body": "A dictionary mapping names to descriptors for nested functions and classes.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Function.children"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Class}}.{{c2::file}}",
+      "Body": "Name of the file in which the class is defined.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Class.file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Class}}.{{c2::module}}",
+      "Body": "The name of the module defining the class described.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Class.module"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Class}}.{{c2::name}}",
+      "Body": "The name of the class.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Class.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Class}}.{{c2::lineno}}",
+      "Body": "The line number in the file where the definition starts.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Class.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Class}}.{{c2::parent}}",
+      "Body": "For top-level classes, None.  For nested classes, the parent.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Class.parent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Class}}.{{c2::children}}",
+      "Body": "A dictionary mapping names to descriptors for nested functions and classes.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Class.children"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Class}}.{{c2::super}}",
+      "Body": "A list of Class objects which describe the immediate base classes of the class being described.  Classes which are named as superclasses but which are not discoverable by readmodule_ex() are listed as a string with the class name instead of as Class objects.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Class.super"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Class}}.{{c2::methods}}",
+      "Body": "A dictionary mapping method names to line numbers.  This can be derived from the newer children dictionary, but remains for back-compatibility.",
+      "Link": "https://docs.python.org/3/library/pyclbr.html#pyclbr.Class.methods"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::py_compile}}.{{c3::PyCompileError}}",
+      "Body": "Exception raised when an error occurs while attempting to compile the file.",
+      "Link": "https://docs.python.org/3/library/py_compile.html#py_compile.PyCompileError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::py_compile}}.{{c2::compile}}({{c3::file}}, {{c4::cfile}}={{c5::None}}, {{c6::dfile}}={{c7::None}}, {{c8::doraise}}={{c9::False}}, {{c10::optimize}}=-1, {{c11::invalidation_mode}}={{c12::PycInvalidationMode}}.{{c13::TIMESTAMP}})",
+      "Body": "Compile a source file to byte-code and write out the byte-code cache file. The source code is loaded from the file named file.  The byte-code is written to cfile, which defaults to the PEP 3147/PEP 488 path, ending in .pyc. For example, if file is /foo/bar/baz.py cfile will default to /foo/bar/__pycache__/baz.cpython-32.pyc for Python 3.2.  If dfile is specified, it is used as the name of the source file in error messages when instead of file.  If doraise is true, a PyCompileError is raised when an error is encountered while compiling file. If doraise is false (the default), an error string is written to sys.stderr, but no exception is raised.  This function returns the path to byte-compiled file, i.e. whatever cfile value was used.",
+      "Link": "https://docs.python.org/3/library/py_compile.html#py_compile.compile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::py_compile}}.{{c3::PycInvalidationMode}}",
+      "Body": "A enumeration of possible methods the interpreter can use to determine whether a bytecode file is up to date with a source file. The .pyc file indicates the desired invalidation mode in its header. See Cached bytecode invalidation for more information on how Python invalidates .pyc files at runtime.",
+      "Link": "https://docs.python.org/3/library/py_compile.html#py_compile.PycInvalidationMode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::py_compile}}.{{c2::PycInvalidationMode}}.{{c3::TIMESTAMP}}",
+      "Body": "The .pyc file includes the timestamp and size of the source file, which Python will compare against the metadata of the source file at runtime to determine if the .pyc file needs to be regenerated.",
+      "Link": "https://docs.python.org/3/library/py_compile.html#py_compile.PycInvalidationMode.TIMESTAMP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::py_compile}}.{{c2::PycInvalidationMode}}.{{c3::CHECKED_HASH}}",
+      "Body": "The .pyc file includes a hash of the source file content, which Python will compare against the source at runtime to determine if the .pyc file needs to be regenerated.",
+      "Link": "https://docs.python.org/3/library/py_compile.html#py_compile.PycInvalidationMode.CHECKED_HASH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::py_compile}}.{{c2::PycInvalidationMode}}.{{c3::UNCHECKED_HASH}}",
+      "Body": "Like CHECKED_HASH, the .pyc file includes a hash of the source file content. However, Python will at runtime assume the .pyc file is up to date and not validate the .pyc against the source file at all.",
+      "Link": "https://docs.python.org/3/library/py_compile.html#py_compile.PycInvalidationMode.UNCHECKED_HASH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::py_compile}}.{{c2::main}}({{c3::args}}={{c4::None}})",
+      "Body": "Compile several source files.  The files named in args (or on the command line, if args is None) are compiled and the resulting byte-code is cached in the normal manner.  This function does not search a directory structure to locate source files; it only compiles files named explicitly. If '-' is the only parameter in args, the list of files is taken from standard input.",
+      "Link": "https://docs.python.org/3/library/py_compile.html#py_compile.main"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::directory}} ...",
+      "Body": "Positional arguments are files to compile or directories that contain source files, traversed recursively.  If no argument is given, behave as if the command line was -l <directories from sys.path>.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-arg-directory"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::file}} ...",
+      "Body": "Positional arguments are files to compile or directories that contain source files, traversed recursively.  If no argument is given, behave as if the command line was -l <directories from sys.path>.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-arg-file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::l}}",
+      "Body": "Do not recurse into subdirectories, only compile source code files directly contained in the named or implied directories.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-l"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::f}}",
+      "Body": "Force rebuild even if timestamps are up-to-date.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-f"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::q}}",
+      "Body": "Do not print the list of files compiled. If passed once, error messages will still be printed. If passed twice (-qq), all output is suppressed.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-q"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::d}} {{c2::destdir}}",
+      "Body": "Directory prepended to the path to each file being compiled.  This will appear in compilation time tracebacks, and is also compiled in to the byte-code file, where it will be used in tracebacks and other messages in cases where the source file does not exist at the time the byte-code file is executed.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-d"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::x}} {{c2::regex}}",
+      "Body": "regex is used to search the full path to each file considered for compilation, and if the regex produces a match, the file is skipped.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-x"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::i}} {{c2::list}}",
+      "Body": "Read the file list and add each line that it contains to the list of files and directories to compile.  If list is -, read lines from stdin.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-i"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::b}}",
+      "Body": "Write the byte-code files to their legacy locations and names, which may overwrite byte-code files created by another version of Python.  The default is to write files to their PEP 3147 locations and names, which allows byte-code files from multiple versions of Python to coexist.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-b"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::r}}",
+      "Body": "Control the maximum recursion level for subdirectories. If this is given, then -l option will not be taken into account. python -m compileall <directory> -r 0 is equivalent to python -m compileall <directory> -l.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-r"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::j}} {{c2::N}}",
+      "Body": "Use N workers to compile the files within the given directory. If 0 is used, then the result of os.cpu_count() will be used.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-j"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "--{{c1::invalidation}}-{{c2::mode}} [{{c3::timestamp}}|{{c4::checked}}-{{c5::hash}}|{{c6::unchecked}}-{{c7::hash}}]",
+      "Body": "Control how the generated pycs will be invalidated at runtime. The default setting, timestamp, means that .pyc files with the source timestamp and size embedded will be generated. The checked-hash and unchecked-hash values cause hash-based pycs to be generated. Hash-based pycs embed a hash of the source file contents rather than a timestamp. See Cached bytecode invalidation for more information on how Python validates bytecode cache files at runtime.",
+      "Link": "https://docs.python.org/3/library/compileall.html#cmdoption-compileall-invalidation-mode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::compileall}}.{{c2::compile_dir}}({{c3::dir}}, {{c4::maxlevels}}=10, {{c5::ddir}}={{c6::None}}, {{c7::force}}={{c8::False}}, {{c9::rx}}={{c10::None}}, {{c11::quiet}}=0, {{c12::legacy}}={{c13::False}}, {{c14::optimize}}=-1, {{c15::workers}}=1, {{c16::invalidation_mode}}={{c17::py_compile}}.{{c18::PycInvalidationMode}}.{{c19::TIMESTAMP}})",
+      "Body": "Recursively descend the directory tree named by dir, compiling all .py files along the way. Return a true value if all the files compiled successfully, and a false value otherwise.",
+      "Link": "https://docs.python.org/3/library/compileall.html#compileall.compile_dir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::compileall}}.{{c2::compile_file}}({{c3::fullname}}, {{c4::ddir}}={{c5::None}}, {{c6::force}}={{c7::False}}, {{c8::rx}}={{c9::None}}, {{c10::quiet}}=0, {{c11::legacy}}={{c12::False}}, {{c13::optimize}}=-1, {{c14::invalidation_mode}}={{c15::py_compile}}.{{c16::PycInvalidationMode}}.{{c17::TIMESTAMP}})",
+      "Body": "Compile the file with path fullname. Return a true value if the file compiled successfully, and a false value otherwise.",
+      "Link": "https://docs.python.org/3/library/compileall.html#compileall.compile_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::compileall}}.{{c2::compile_path}}({{c3::skip_curdir}}={{c4::True}}, {{c5::maxlevels}}=0, {{c6::force}}={{c7::False}}, {{c8::quiet}}=0, {{c9::legacy}}={{c10::False}}, {{c11::optimize}}=-1, {{c12::invalidation_mode}}={{c13::py_compile}}.{{c14::PycInvalidationMode}}.{{c15::TIMESTAMP}})",
+      "Body": "Byte-compile all the .py files found along sys.path. Return a true value if all the files compiled successfully, and a false value otherwise.",
+      "Link": "https://docs.python.org/3/library/compileall.html#compileall.compile_path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::dis}}.{{c3::Bytecode}}({{c4::x}}, *, {{c5::first_line}}={{c6::None}}, {{c7::current_offset}}={{c8::None}})",
+      "Body": "Analyse the bytecode corresponding to a function, generator, asynchronous generator, coroutine, method, string of source code, or a code object (as returned by compile()).",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Bytecode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Language Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Bytecode}}.{{c3::classmethod}} {{c4::from_traceback}}({{c5::tb}})",
+      "Body": "Construct a Bytecode instance from the given traceback, setting current_offset to the instruction responsible for the exception.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Bytecode.from_traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Bytecode}}.{{c3::codeobj}}",
+      "Body": "The compiled code object.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Bytecode.codeobj"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Bytecode}}.{{c3::first_line}}",
+      "Body": "The first source line of the code object (if available)",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Bytecode.first_line"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Bytecode}}.{{c3::dis}}()",
+      "Body": "Return a formatted view of the bytecode operations (the same as printed by dis.dis(), but returned as a multi-line string).",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Bytecode.dis"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Bytecode}}.{{c3::info}}()",
+      "Body": "Return a formatted multi-line string with detailed information about the code object, like code_info().",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Bytecode.info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::code_info}}({{c3::x}})",
+      "Body": "Return a formatted multi-line string with detailed code object information for the supplied function, generator, asynchronous generator, coroutine, method, source code string or code object.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.code_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::show_code}}({{c3::x}}, *, {{c4::file}}={{c5::None}})",
+      "Body": "Print detailed code object information for the supplied function, method, source code string or code object to file (or sys.stdout if file is not specified).",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.show_code"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::dis}}({{c3::x}}={{c4::None}}, *, {{c5::file}}={{c6::None}}, {{c7::depth}}={{c8::None}})",
+      "Body": "Disassemble the x object.  x can denote either a module, a class, a method, a function, a generator, an asynchronous generator, a coroutine, a code object, a string of source code or a byte sequence of raw bytecode. For a module, it disassembles all functions. For a class, it disassembles all methods (including class and static methods). For a code object or sequence of raw bytecode, it prints one line per bytecode instruction. It also recursively disassembles nested code objects (the code of comprehensions, generator expressions and nested functions, and the code used for building nested classes). Strings are first compiled to code objects with the compile() built-in function before being disassembled.  If no object is provided, this function disassembles the last traceback.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.dis"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::distb}}({{c3::tb}}={{c4::None}}, *, {{c5::file}}={{c6::None}})",
+      "Body": "Disassemble the top-of-stack function of a traceback, using the last traceback if none was passed.  The instruction causing the exception is indicated.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.distb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::disassemble}}({{c3::code}}, {{c4::lasti}}=-1, *, {{c5::file}}={{c6::None}})",
+      "Body": "Disassemble a code object, indicating the last instruction if lasti was provided.  The output is divided in the following columns:",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.disassemble"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::disco}}({{c3::code}}, {{c4::lasti}}=-1, *, {{c5::file}}={{c6::None}})",
+      "Body": "Disassemble a code object, indicating the last instruction if lasti was provided.  The output is divided in the following columns:",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.disco"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::get_instructions}}({{c3::x}}, *, {{c4::first_line}}={{c5::None}})",
+      "Body": "Return an iterator over the instructions in the supplied function, method, source code string or code object.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.get_instructions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::findlinestarts}}({{c3::code}})",
+      "Body": "This generator function uses the co_firstlineno and co_lnotab attributes of the code object code to find the offsets which are starts of lines in the source code.  They are generated as (offset, lineno) pairs. See Objects/lnotab_notes.txt for the co_lnotab format and how to decode it.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.findlinestarts"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::findlabels}}({{c3::code}})",
+      "Body": "Detect all offsets in the code object code which are jump targets, and return a list of these offsets.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.findlabels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::stack_effect}}({{c3::opcode}}[, {{c4::oparg}}])",
+      "Body": "Compute the stack effect of opcode with argument oparg.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.stack_effect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::dis}}.{{c3::Instruction}}",
+      "Body": "Details for a bytecode operation",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Instruction}}.{{c3::opcode}}",
+      "Body": "numeric code for operation, corresponding to the opcode values listed below and the bytecode values in the Opcode collections.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction.opcode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Instruction}}.{{c3::opname}}",
+      "Body": "human readable name for operation",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction.opname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Instruction}}.{{c3::arg}}",
+      "Body": "numeric argument to operation (if any), otherwise None",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction.arg"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Instruction}}.{{c3::argval}}",
+      "Body": "resolved arg value (if known), otherwise same as arg",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction.argval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Instruction}}.{{c3::argrepr}}",
+      "Body": "human readable description of operation argument",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction.argrepr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Instruction}}.{{c3::offset}}",
+      "Body": "start index of operation within bytecode sequence",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction.offset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Instruction}}.{{c3::starts_line}}",
+      "Body": "line started by this opcode (if any), otherwise None",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction.starts_line"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::Instruction}}.{{c3::is_jump_target}}",
+      "Body": "True if other code jumps to here, otherwise False",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.Instruction.is_jump_target"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::NOP}}",
+      "Body": "Do nothing code.  Used as a placeholder by the bytecode optimizer.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-NOP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::POP_TOP}}",
+      "Body": "Removes the top-of-stack (TOS) item.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-POP_TOP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ROT_TWO}}",
+      "Body": "Swaps the two top-most stack items.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-ROT_TWO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::ROT_THREE}}",
+      "Body": "Lifts second and third stack item one position up, moves top down to position three.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-ROT_THREE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DUP_TOP}}",
+      "Body": "Duplicates the reference on top of the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-DUP_TOP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DUP_TOP_TWO}}",
+      "Body": "Duplicates the two references on top of the stack, leaving them in the same order.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-DUP_TOP_TWO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::UNARY_POSITIVE}}",
+      "Body": "Implements TOS = +TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-UNARY_POSITIVE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::UNARY_NEGATIVE}}",
+      "Body": "Implements TOS = -TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-UNARY_NEGATIVE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::UNARY_NOT}}",
+      "Body": "Implements TOS = not TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-UNARY_NOT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::UNARY_INVERT}}",
+      "Body": "Implements TOS = ~TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-UNARY_INVERT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::GET_ITER}}",
+      "Body": "Implements TOS = iter(TOS).",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-GET_ITER"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::GET_YIELD_FROM_ITER}}",
+      "Body": "If TOS is a generator iterator or coroutine object it is left as is.  Otherwise, implements TOS = iter(TOS).",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-GET_YIELD_FROM_ITER"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_POWER}}",
+      "Body": "Implements TOS = TOS1 ** TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_POWER"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_MULTIPLY}}",
+      "Body": "Implements TOS = TOS1 * TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_MULTIPLY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_MATRIX_MULTIPLY}}",
+      "Body": "Implements TOS = TOS1 @ TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_MATRIX_MULTIPLY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_FLOOR_DIVIDE}}",
+      "Body": "Implements TOS = TOS1 // TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_FLOOR_DIVIDE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_TRUE_DIVIDE}}",
+      "Body": "Implements TOS = TOS1 / TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_TRUE_DIVIDE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_MODULO}}",
+      "Body": "Implements TOS = TOS1 % TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_MODULO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_ADD}}",
+      "Body": "Implements TOS = TOS1 + TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_ADD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_SUBTRACT}}",
+      "Body": "Implements TOS = TOS1 - TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_SUBTRACT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_SUBSCR}}",
+      "Body": "Implements TOS = TOS1[TOS].",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_SUBSCR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_LSHIFT}}",
+      "Body": "Implements TOS = TOS1 << TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_LSHIFT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_RSHIFT}}",
+      "Body": "Implements TOS = TOS1 >> TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_RSHIFT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_AND}}",
+      "Body": "Implements TOS = TOS1 & TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_AND"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_XOR}}",
+      "Body": "Implements TOS = TOS1 ^ TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_XOR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BINARY_OR}}",
+      "Body": "Implements TOS = TOS1 | TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BINARY_OR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_POWER}}",
+      "Body": "Implements in-place TOS = TOS1 ** TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_POWER"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_MULTIPLY}}",
+      "Body": "Implements in-place TOS = TOS1 * TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_MULTIPLY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_MATRIX_MULTIPLY}}",
+      "Body": "Implements in-place TOS = TOS1 @ TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_MATRIX_MULTIPLY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_FLOOR_DIVIDE}}",
+      "Body": "Implements in-place TOS = TOS1 // TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_FLOOR_DIVIDE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_TRUE_DIVIDE}}",
+      "Body": "Implements in-place TOS = TOS1 / TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_TRUE_DIVIDE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_MODULO}}",
+      "Body": "Implements in-place TOS = TOS1 % TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_MODULO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_ADD}}",
+      "Body": "Implements in-place TOS = TOS1 + TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_ADD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_SUBTRACT}}",
+      "Body": "Implements in-place TOS = TOS1 - TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_SUBTRACT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_LSHIFT}}",
+      "Body": "Implements in-place TOS = TOS1 << TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_LSHIFT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_RSHIFT}}",
+      "Body": "Implements in-place TOS = TOS1 >> TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_RSHIFT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_AND}}",
+      "Body": "Implements in-place TOS = TOS1 & TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_AND"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_XOR}}",
+      "Body": "Implements in-place TOS = TOS1 ^ TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_XOR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::INPLACE_OR}}",
+      "Body": "Implements in-place TOS = TOS1 | TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-INPLACE_OR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::STORE_SUBSCR}}",
+      "Body": "Implements TOS1[TOS] = TOS2.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-STORE_SUBSCR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DELETE_SUBSCR}}",
+      "Body": "Implements del TOS1[TOS].",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-DELETE_SUBSCR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::GET_AWAITABLE}}",
+      "Body": "Implements TOS = get_awaitable(TOS), where get_awaitable(o) returns o if o is a coroutine object or a generator object with the CO_ITERABLE_COROUTINE flag, or resolves o.__await__.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-GET_AWAITABLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::GET_AITER}}",
+      "Body": "Implements TOS = TOS.__aiter__().",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-GET_AITER"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::GET_ANEXT}}",
+      "Body": "Implements PUSH(get_awaitable(TOS.__anext__())).  See GET_AWAITABLE for details about get_awaitable",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-GET_ANEXT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BEFORE_ASYNC_WITH}}",
+      "Body": "Resolves __aenter__ and __aexit__ from the object on top of the stack.  Pushes __aexit__ and result of __aenter__() to the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BEFORE_ASYNC_WITH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SETUP_ASYNC_WITH}}",
+      "Body": "Creates a new frame object.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-SETUP_ASYNC_WITH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::PRINT_EXPR}}",
+      "Body": "Implements the expression statement for the interactive mode.  TOS is removed from the stack and printed.  In non-interactive mode, an expression statement is terminated with POP_TOP.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-PRINT_EXPR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BREAK_LOOP}}",
+      "Body": "Terminates a loop due to a break statement.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BREAK_LOOP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::CONTINUE_LOOP}}({{c2::target}})",
+      "Body": "Continues a loop due to a continue statement.  target is the address to jump to (which should be a FOR_ITER instruction).",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-CONTINUE_LOOP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SET_ADD}}({{c2::i}})",
+      "Body": "Calls set.add(TOS1[-i], TOS).  Used to implement set comprehensions.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-SET_ADD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LIST_APPEND}}({{c2::i}})",
+      "Body": "Calls list.append(TOS[-i], TOS).  Used to implement list comprehensions.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LIST_APPEND"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::MAP_ADD}}({{c2::i}})",
+      "Body": "Calls dict.setitem(TOS1[-i], TOS, TOS1).  Used to implement dict comprehensions.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-MAP_ADD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::RETURN_VALUE}}",
+      "Body": "Returns with TOS to the caller of the function.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-RETURN_VALUE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::YIELD_VALUE}}",
+      "Body": "Pops TOS and yields it from a generator.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-YIELD_VALUE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::YIELD_FROM}}",
+      "Body": "Pops TOS and delegates to it as a subiterator from a generator.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-YIELD_FROM"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SETUP_ANNOTATIONS}}",
+      "Body": "Checks whether __annotations__ is defined in locals(), if not it is set up to an empty dict. This opcode is only emitted if a class or module body contains variable annotations statically.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-SETUP_ANNOTATIONS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::IMPORT_STAR}}",
+      "Body": "Loads all symbols not starting with '_' directly from the module TOS to the local namespace. The module is popped after loading all names. This opcode implements from module import *.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-IMPORT_STAR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::POP_BLOCK}}",
+      "Body": "Removes one block from the block stack.  Per frame, there is a stack of blocks, denoting nested loops, try statements, and such.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-POP_BLOCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::POP_EXCEPT}}",
+      "Body": "Removes one block from the block stack. The popped block must be an exception handler block, as implicitly created when entering an except handler.  In addition to popping extraneous values from the frame stack, the last three popped values are used to restore the exception state.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-POP_EXCEPT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::END_FINALLY}}",
+      "Body": "Terminates a finally clause.  The interpreter recalls whether the exception has to be re-raised, or whether the function returns, and continues with the outer-next block.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-END_FINALLY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_BUILD_CLASS}}",
+      "Body": "Pushes builtins.__build_class__() onto the stack.  It is later called by CALL_FUNCTION to construct a class.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_BUILD_CLASS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SETUP_WITH}}({{c2::delta}})",
+      "Body": "This opcode performs several operations before a with block starts.  First, it loads __exit__() from the context manager and pushes it onto the stack for later use by WITH_CLEANUP.  Then, __enter__() is called, and a finally block pointing to delta is pushed.  Finally, the result of calling the enter method is pushed onto the stack.  The next opcode will either ignore it (POP_TOP), or store it in (a) variable(s) (STORE_FAST, STORE_NAME, or UNPACK_SEQUENCE).",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-SETUP_WITH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::WITH_CLEANUP_START}}",
+      "Body": "Cleans up the stack when a with statement block exits.  TOS is the context manager's __exit__() bound method. Below TOS are 13 values indicating how/why the finally clause was entered:",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-WITH_CLEANUP_START"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::WITH_CLEANUP_FINISH}}",
+      "Body": "Pops exception type and result of 'exit' function call from the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-WITH_CLEANUP_FINISH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::STORE_NAME}}({{c2::namei}})",
+      "Body": "Implements name = TOS. namei is the index of name in the attribute co_names of the code object. The compiler tries to use STORE_FAST or STORE_GLOBAL if possible.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-STORE_NAME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DELETE_NAME}}({{c2::namei}})",
+      "Body": "Implements del name, where namei is the index into co_names attribute of the code object.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-DELETE_NAME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::UNPACK_SEQUENCE}}({{c2::count}})",
+      "Body": "Unpacks TOS into count individual values, which are put onto the stack right-to-left.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-UNPACK_SEQUENCE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::UNPACK_EX}}({{c2::counts}})",
+      "Body": "Implements assignment with a starred target: Unpacks an iterable in TOS into individual values, where the total number of values can be smaller than the number of items in the iterable: one of the new values will be a list of all leftover items.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-UNPACK_EX"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::STORE_ATTR}}({{c2::namei}})",
+      "Body": "Implements TOS.name = TOS1, where namei is the index of name in co_names.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-STORE_ATTR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DELETE_ATTR}}({{c2::namei}})",
+      "Body": "Implements del TOS.name, using namei as index into co_names.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-DELETE_ATTR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::STORE_GLOBAL}}({{c2::namei}})",
+      "Body": "Works as STORE_NAME, but stores the name as a global.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-STORE_GLOBAL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DELETE_GLOBAL}}({{c2::namei}})",
+      "Body": "Works as DELETE_NAME, but deletes a global name.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-DELETE_GLOBAL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_CONST}}({{c2::consti}})",
+      "Body": "Pushes co_consts[consti] onto the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_CONST"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_NAME}}({{c2::namei}})",
+      "Body": "Pushes the value associated with co_names[namei] onto the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_NAME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_TUPLE}}({{c2::count}})",
+      "Body": "Creates a tuple consuming count items from the stack, and pushes the resulting tuple onto the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_TUPLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_LIST}}({{c2::count}})",
+      "Body": "Works as BUILD_TUPLE, but creates a list.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_LIST"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_SET}}({{c2::count}})",
+      "Body": "Works as BUILD_TUPLE, but creates a set.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_SET"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_MAP}}({{c2::count}})",
+      "Body": "Pushes a new dictionary object onto the stack.  Pops 2 * count items so that the dictionary holds count entries: {..., TOS3: TOS2, TOS1: TOS}.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_MAP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_CONST_KEY_MAP}}({{c2::count}})",
+      "Body": "The version of BUILD_MAP specialized for constant keys.  count values are consumed from the stack.  The top element on the stack contains a tuple of keys.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_CONST_KEY_MAP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_STRING}}({{c2::count}})",
+      "Body": "Concatenates count strings from the stack and pushes the resulting string onto the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_STRING"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_TUPLE_UNPACK}}({{c2::count}})",
+      "Body": "Pops count iterables from the stack, joins them in a single tuple, and pushes the result.  Implements iterable unpacking in tuple displays (*x, *y, *z).",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_TUPLE_UNPACK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_TUPLE_UNPACK_WITH_CALL}}({{c2::count}})",
+      "Body": "This is similar to BUILD_TUPLE_UNPACK, but is used for f(*x, *y, *z) call syntax. The stack item at position count + 1 should be the corresponding callable f.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_TUPLE_UNPACK_WITH_CALL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_LIST_UNPACK}}({{c2::count}})",
+      "Body": "This is similar to BUILD_TUPLE_UNPACK, but pushes a list instead of tuple.  Implements iterable unpacking in list displays [*x, *y, *z].",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_LIST_UNPACK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_SET_UNPACK}}({{c2::count}})",
+      "Body": "This is similar to BUILD_TUPLE_UNPACK, but pushes a set instead of tuple.  Implements iterable unpacking in set displays {*x, *y, *z}.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_SET_UNPACK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_MAP_UNPACK}}({{c2::count}})",
+      "Body": "Pops count mappings from the stack, merges them into a single dictionary, and pushes the result.  Implements dictionary unpacking in dictionary displays {**x, **y, **z}.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_MAP_UNPACK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_MAP_UNPACK_WITH_CALL}}({{c2::count}})",
+      "Body": "This is similar to BUILD_MAP_UNPACK, but is used for f(**x, **y, **z) call syntax.  The stack item at position count + 2 should be the corresponding callable f.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_MAP_UNPACK_WITH_CALL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_ATTR}}({{c2::namei}})",
+      "Body": "Replaces TOS with getattr(TOS, co_names[namei]).",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_ATTR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::COMPARE_OP}}({{c2::opname}})",
+      "Body": "Performs a Boolean operation.  The operation name can be found in cmp_op[opname].",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-COMPARE_OP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::IMPORT_NAME}}({{c2::namei}})",
+      "Body": "Imports the module co_names[namei].  TOS and TOS1 are popped and provide the fromlist and level arguments of __import__().  The module object is pushed onto the stack.  The current namespace is not affected: for a proper import statement, a subsequent STORE_FAST instruction modifies the namespace.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-IMPORT_NAME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::IMPORT_FROM}}({{c2::namei}})",
+      "Body": "Loads the attribute co_names[namei] from the module found in TOS. The resulting object is pushed onto the stack, to be subsequently stored by a STORE_FAST instruction.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-IMPORT_FROM"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::JUMP_FORWARD}}({{c2::delta}})",
+      "Body": "Increments bytecode counter by delta.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-JUMP_FORWARD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::POP_JUMP_IF_TRUE}}({{c2::target}})",
+      "Body": "If TOS is true, sets the bytecode counter to target.  TOS is popped.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-POP_JUMP_IF_TRUE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::POP_JUMP_IF_FALSE}}({{c2::target}})",
+      "Body": "If TOS is false, sets the bytecode counter to target.  TOS is popped.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-POP_JUMP_IF_FALSE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::JUMP_IF_TRUE_OR_POP}}({{c2::target}})",
+      "Body": "If TOS is true, sets the bytecode counter to target and leaves TOS on the stack.  Otherwise (TOS is false), TOS is popped.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-JUMP_IF_TRUE_OR_POP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::JUMP_IF_FALSE_OR_POP}}({{c2::target}})",
+      "Body": "If TOS is false, sets the bytecode counter to target and leaves TOS on the stack.  Otherwise (TOS is true), TOS is popped.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-JUMP_IF_FALSE_OR_POP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::JUMP_ABSOLUTE}}({{c2::target}})",
+      "Body": "Set bytecode counter to target.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-JUMP_ABSOLUTE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::FOR_ITER}}({{c2::delta}})",
+      "Body": "TOS is an iterator.  Call its __next__() method.  If this yields a new value, push it on the stack (leaving the iterator below it).  If the iterator indicates it is exhausted TOS is popped, and the byte code counter is incremented by delta.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-FOR_ITER"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_GLOBAL}}({{c2::namei}})",
+      "Body": "Loads the global named co_names[namei] onto the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_GLOBAL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SETUP_LOOP}}({{c2::delta}})",
+      "Body": "Pushes a block for a loop onto the block stack.  The block spans from the current instruction with a size of delta bytes.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-SETUP_LOOP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SETUP_EXCEPT}}({{c2::delta}})",
+      "Body": "Pushes a try block from a try-except clause onto the block stack. delta points to the first except block.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-SETUP_EXCEPT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::SETUP_FINALLY}}({{c2::delta}})",
+      "Body": "Pushes a try block from a try-except clause onto the block stack. delta points to the finally block.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-SETUP_FINALLY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_FAST}}({{c2::var_num}})",
+      "Body": "Pushes a reference to the local co_varnames[var_num] onto the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_FAST"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::STORE_FAST}}({{c2::var_num}})",
+      "Body": "Stores TOS into the local co_varnames[var_num].",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-STORE_FAST"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DELETE_FAST}}({{c2::var_num}})",
+      "Body": "Deletes local co_varnames[var_num].",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-DELETE_FAST"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_CLOSURE}}({{c2::i}})",
+      "Body": "Pushes a reference to the cell contained in slot i of the cell and free variable storage.  The name of the variable is co_cellvars[i] if i is less than the length of co_cellvars.  Otherwise it is co_freevars[i - len(co_cellvars)].",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_CLOSURE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_DEREF}}({{c2::i}})",
+      "Body": "Loads the cell contained in slot i of the cell and free variable storage. Pushes a reference to the object the cell contains on the stack.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_DEREF"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_CLASSDEREF}}({{c2::i}})",
+      "Body": "Much like LOAD_DEREF but first checks the locals dictionary before consulting the cell.  This is used for loading free variables in class bodies.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_CLASSDEREF"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::STORE_DEREF}}({{c2::i}})",
+      "Body": "Stores TOS into the cell contained in slot i of the cell and free variable storage.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-STORE_DEREF"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::DELETE_DEREF}}({{c2::i}})",
+      "Body": "Empties the cell contained in slot i of the cell and free variable storage. Used by the del statement.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-DELETE_DEREF"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::RAISE_VARARGS}}({{c2::argc}})",
+      "Body": "Raises an exception. argc indicates the number of arguments to the raise statement, ranging from 0 to 3.  The handler will find the traceback as TOS2, the parameter as TOS1, and the exception as TOS.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-RAISE_VARARGS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::CALL_FUNCTION}}({{c2::argc}})",
+      "Body": "Calls a callable object with positional arguments. argc indicates the number of positional arguments. The top of the stack contains positional arguments, with the right-most argument on top.  Below the arguments is a callable object to call. CALL_FUNCTION pops all arguments and the callable object off the stack, calls the callable object with those arguments, and pushes the return value returned by the callable object.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-CALL_FUNCTION"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::CALL_FUNCTION_KW}}({{c2::argc}})",
+      "Body": "Calls a callable object with positional (if any) and keyword arguments. argc indicates the total number of positional and keyword arguments. The top element on the stack contains a tuple of keyword argument names. Below that are keyword arguments in the order corresponding to the tuple. Below that are positional arguments, with the right-most parameter on top.  Below the arguments is a callable object to call. CALL_FUNCTION_KW pops all arguments and the callable object off the stack, calls the callable object with those arguments, and pushes the return value returned by the callable object.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-CALL_FUNCTION_KW"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::CALL_FUNCTION_EX}}({{c2::flags}})",
+      "Body": "Calls a callable object with variable set of positional and keyword arguments.  If the lowest bit of flags is set, the top of the stack contains a mapping object containing additional keyword arguments. Below that is an iterable object containing positional arguments and a callable object to call.  BUILD_MAP_UNPACK_WITH_CALL and BUILD_TUPLE_UNPACK_WITH_CALL can be used for merging multiple mapping objects and iterables containing arguments. Before the callable is called, the mapping object and iterable object are each unpacked and their contents passed in as keyword and positional arguments respectively. CALL_FUNCTION_EX pops all arguments and the callable object off the stack, calls the callable object with those arguments, and pushes the return value returned by the callable object.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-CALL_FUNCTION_EX"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::LOAD_METHOD}}({{c2::namei}})",
+      "Body": "Loads a method named co_names[namei] from TOS object. TOS is popped and method and TOS are pushed when interpreter can call unbound method directly. TOS will be used as the first argument (self) by CALL_METHOD. Otherwise, NULL and  method is pushed (method is bound method or something else).",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-LOAD_METHOD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::CALL_METHOD}}({{c2::argc}})",
+      "Body": "Calls a method.  argc is number of positional arguments. Keyword arguments are not supported.  This opcode is designed to be used with LOAD_METHOD.  Positional arguments are on top of the stack. Below them, two items described in LOAD_METHOD on the stack. All of them are popped and return value is pushed.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-CALL_METHOD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::MAKE_FUNCTION}}({{c2::argc}})",
+      "Body": "Pushes a new function object on the stack.  From bottom to top, the consumed stack must consist of values if the argument carries a specified flag value",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-MAKE_FUNCTION"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::BUILD_SLICE}}({{c2::argc}})",
+      "Body": "Pushes a slice object on the stack.  argc must be 2 or 3.  If it is 2, slice(TOS1, TOS) is pushed; if it is 3, slice(TOS2, TOS1, TOS) is pushed. See the slice() built-in function for more information.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-BUILD_SLICE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::EXTENDED_ARG}}({{c2::ext}})",
+      "Body": "Prefixes any opcode which has an argument too big to fit into the default two bytes.  ext holds two additional bytes which, taken together with the subsequent opcode's argument, comprise a four-byte argument, ext being the two most-significant bytes.",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-EXTENDED_ARG"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::FORMAT_VALUE}}({{c2::flags}})",
+      "Body": "Used for implementing formatted literal strings (f-strings).  Pops an optional fmt_spec from the stack, then a required value. flags is interpreted as follows:",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-FORMAT_VALUE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["opcode", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::HAVE_ARGUMENT}}",
+      "Body": "This is not really an opcode.  It identifies the dividing line between opcodes which don't use their argument and those that do (< HAVE_ARGUMENT and >= HAVE_ARGUMENT, respectively).",
+      "Link": "https://docs.python.org/3/library/dis.html#opcode-HAVE_ARGUMENT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::opname}}",
+      "Body": "Sequence of operation names, indexable using the bytecode.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.opname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::opmap}}",
+      "Body": "Dictionary mapping operation names to bytecodes.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.opmap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::cmp_op}}",
+      "Body": "Sequence of all compare operation names.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.cmp_op"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::hasconst}}",
+      "Body": "Sequence of bytecodes that access a constant.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.hasconst"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::hasfree}}",
+      "Body": "Sequence of bytecodes that access a free variable (note that 'free' in this context refers to names in the current scope that are referenced by inner scopes or names in outer scopes that are referenced from this scope.  It does not include references to global or builtin scopes).",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.hasfree"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::hasname}}",
+      "Body": "Sequence of bytecodes that access an attribute by name.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.hasname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::hasjrel}}",
+      "Body": "Sequence of bytecodes that have a relative jump target.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.hasjrel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::hasjabs}}",
+      "Body": "Sequence of bytecodes that have an absolute jump target.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.hasjabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::haslocal}}",
+      "Body": "Sequence of bytecodes that access a local variable.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.haslocal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dis}}.{{c2::hascompare}}",
+      "Body": "Sequence of bytecodes of Boolean operations.",
+      "Link": "https://docs.python.org/3/library/dis.html#dis.hascompare"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::a}}, --{{c2::annotate}}",
+      "Body": "Annotate each line with a short opcode description.",
+      "Link": "https://docs.python.org/3/library/pickletools.html#cmdoption-pickletools-a"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::o}}, --{{c2::output}}=<{{c3::file}}>",
+      "Body": "Name of a file where the output should be written.",
+      "Link": "https://docs.python.org/3/library/pickletools.html#cmdoption-pickletools-o"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::l}}, --{{c2::indentlevel}}=<{{c3::num}}>",
+      "Body": "The number of blanks by which to indent a new MARK level.",
+      "Link": "https://docs.python.org/3/library/pickletools.html#cmdoption-pickletools-l"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::m}}, --{{c2::memo}}",
+      "Body": "When multiple objects are disassembled, preserve memo between disassemblies.",
+      "Link": "https://docs.python.org/3/library/pickletools.html#cmdoption-pickletools-m"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "-{{c1::p}}, --{{c2::preamble}}=<{{c3::preamble}}>",
+      "Body": "When more than one pickle file are specified, print given preamble before each disassembly.",
+      "Link": "https://docs.python.org/3/library/pickletools.html#cmdoption-pickletools-p"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickletools}}.{{c2::dis}}({{c3::pickle}}, {{c4::out}}={{c5::None}}, {{c6::memo}}={{c7::None}}, {{c8::indentlevel}}=4, {{c9::annotate}}=0)",
+      "Body": "Outputs a symbolic disassembly of the pickle to the file-like object out, defaulting to sys.stdout.  pickle can be a string or a file-like object.  memo can be a Python dictionary that will be used as the pickle's memo; it can be used to perform disassemblies across multiple pickles created by the same pickler. Successive levels, indicated by MARK opcodes in the stream, are indented by indentlevel spaces.  If a nonzero value is given to annotate, each opcode in the output is annotated with a short description.  The value of annotate is used as a hint for the column where annotation should start.",
+      "Link": "https://docs.python.org/3/library/pickletools.html#pickletools.dis"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickletools}}.{{c2::genops}}({{c3::pickle}})",
+      "Body": "Provides an iterator over all of the opcodes in a pickle, returning a sequence of (opcode, arg, pos) triples.  opcode is an instance of an OpcodeInfo class; arg is the decoded value, as a Python object, of the opcode's argument; pos is the position at which this opcode is located. pickle can be a string or a file-like object.",
+      "Link": "https://docs.python.org/3/library/pickletools.html#pickletools.genops"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Language Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::pickletools}}.{{c2::optimize}}({{c3::picklestring}})",
+      "Body": "Returns a new equivalent pickle string after eliminating unused PUT opcodes. The optimized pickle is shorter, takes less transmission time, requires less storage space, and unpickles more efficiently.",
+      "Link": "https://docs.python.org/3/library/pickletools.html#pickletools.optimize"
+    },
+    "modelName": "ClozePy"
+  }
+]

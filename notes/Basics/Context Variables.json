@@ -1,0 +1,191 @@
+[
+  {
+    "tags": ["class", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::contextvars}}.{{c3::ContextVar}}({{c4::name}}[, *, {{c5::default}}])",
+      "Body": "This class is used to declare a new Context Variable, e.g.:",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.ContextVar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::ContextVar}}.{{c3::name}}",
+      "Body": "The name of the variable.  This is a read-only property.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.ContextVar.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::ContextVar}}.{{c3::get}}([{{c4::default}}])",
+      "Body": "Return a value for the context variable for the current context.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.ContextVar.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::ContextVar}}.{{c3::set}}({{c4::value}})",
+      "Body": "Call to set a new value for the context variable in the current context.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.ContextVar.set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::ContextVar}}.{{c3::reset}}({{c4::token}})",
+      "Body": "Reset the context variable to the value it had before the ContextVar.set() that created the token was used.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.ContextVar.reset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::contextvars}}.{{c3::Token}}",
+      "Body": "Token objects are returned by the ContextVar.set() method. They can be passed to the ContextVar.reset() method to revert the value of the variable to what it was before the corresponding set.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.contextvars.Token"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Token}}.{{c2::var}}",
+      "Body": "A read-only property.  Points to the ContextVar object that created the token.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.contextvars.Token.Token.var"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Token}}.{{c2::old_value}}",
+      "Body": "A read-only property.  Set to the value the variable had before the ContextVar.set() method call that created the token. It points to Token.MISSING is the variable was not set before the call.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.contextvars.Token.Token.old_value"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::Token}}.{{c2::MISSING}}",
+      "Body": "A marker object used by Token.old_value.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.contextvars.Token.Token.MISSING"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::copy_context}}()",
+      "Body": "Returns a copy of the current Context object.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.copy_context"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::contextvars}}.{{c3::Context}}",
+      "Body": "A mapping of ContextVars to their values.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.Context"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::Context}}.{{c3::run}}({{c4::callable}}, *args, **kwargs)",
+      "Body": "Execute callable(*args, **kwargs) code in the context object the run method is called on.  Return the result of the execution or propagate an exception if one occurred.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.Context.run"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::Context}}.{{c3::copy}}()",
+      "Body": "Return a shallow copy of the context object.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.Context.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::var}} {{c2::in}} {{c3::context}}",
+      "Body": "Return True if the context has a value for var set; return False otherwise.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#manual-context-management"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::context}}[{{c2::var}}]",
+      "Body": "Return the value of the var ContextVar variable. If the variable is not set in the context object, a KeyError is raised.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#manual-context-management"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::Context}}.{{c3::get}}({{c4::var}}[, {{c5::default}}])",
+      "Body": "Return the value for var if var has the value in the context object.  Return default otherwise.  If default is not given, return None.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.Context.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::iter}}({{c2::context}})",
+      "Body": "Return an iterator over the variables stored in the context object.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#manual-context-management"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::len}}({{c2::proxy}})",
+      "Body": "Return the number of variables set in the context object.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#manual-context-management"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::Context}}.{{c3::keys}}()",
+      "Body": "Return a list of all variables in the context object.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.Context.keys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::Context}}.{{c3::values}}()",
+      "Body": "Return a list of all variables' values in the context object.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.Context.values"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Context Variables", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextvars}}.{{c2::Context}}.{{c3::items}}()",
+      "Body": "Return a list of 2-tuples containing all variables and their values in the context object.",
+      "Link": "https://docs.python.org/3/library/contextvars.html#contextvars.Context.items"
+    },
+    "modelName": "ClozePy"
+  }
+]

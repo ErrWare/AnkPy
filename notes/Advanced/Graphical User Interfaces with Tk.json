@@ -1,0 +1,2042 @@
+[
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::Tk}}({{c4::screenName}}={{c5::None}}, {{c6::baseName}}={{c7::None}}, {{c8::className}}='{{c9::Tk}}', {{c10::useTk}}=1)",
+      "Body": "The Tk class is instantiated without arguments. This creates a toplevel widget of Tk which usually is the main window of an application. Each instance has its own associated Tcl interpreter.",
+      "Link": "https://docs.python.org/3/library/tkinter.html#tkinter.Tk"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::Tcl}}({{c3::screenName}}={{c4::None}}, {{c5::baseName}}={{c6::None}}, {{c7::className}}='{{c8::Tk}}', {{c9::useTk}}=0)",
+      "Body": "The Tcl() function is a factory function which creates an object much like that created by the Tk class, except that it does not initialize the Tk subsystem.  This is most often useful when driving the Tcl interpreter in an environment where one doesn't want to create extraneous toplevel windows, or where one cannot (such as Unix/Linux systems without an X server).  An object created by the Tcl() object can have a Toplevel window created (and the Tk subsystem initialized) by calling its loadtk() method.",
+      "Link": "https://docs.python.org/3/library/tkinter.html#tkinter.Tcl"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::anchor}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bitmap}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::boolean}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::callback}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::color}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::cursor}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::distance}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::font}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::geometry}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::justify}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::region}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::relief}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::scrollcommand}}",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::wrap}}:",
+      "Body": "This is any Python function that takes no arguments.  For example:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#index-2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Entry}} {{c2::widget}} {{c3::indexes}} ({{c4::index}}, {{c5::view}} {{c6::index}}, {{c7::etc}}.)",
+      "Body": "Some options and methods for menus manipulate specific menu entries. Anytime a menu index is needed for an option or a parameter, you may pass in:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#the-index-parameter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Text}} {{c2::widget}} {{c3::indexes}}",
+      "Body": "Some options and methods for menus manipulate specific menu entries. Anytime a menu index is needed for an option or a parameter, you may pass in:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#the-index-parameter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Menu}} {{c2::indexes}} ({{c3::menu}}.{{c4::invoke}}(), {{c5::menu}}.{{c6::entryconfig}}(), {{c7::etc}}.)",
+      "Body": "Some options and methods for menus manipulate specific menu entries. Anytime a menu index is needed for an option or a parameter, you may pass in:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#the-index-parameter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Widget}}.{{c2::tk}}.{{c3::createfilehandler}}({{c4::file}}, {{c5::mask}}, {{c6::func}})",
+      "Body": "Registers the file handler callback function func. The file argument may either be an object with a fileno() method (such as a file or socket object), or an integer file descriptor. The mask argument is an ORed combination of any of the three constants below. The callback is called as follows:",
+      "Link": "https://docs.python.org/3/library/tkinter.html#tkinter.Widget.tk.createfilehandler"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Widget}}.{{c2::tk}}.{{c3::deletefilehandler}}({{c4::file}})",
+      "Body": "Unregisters a file handler.",
+      "Link": "https://docs.python.org/3/library/tkinter.html#tkinter.Widget.tk.deletefilehandler"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::READABLE}}",
+      "Body": "Constants used in the mask arguments.",
+      "Link": "https://docs.python.org/3/library/tkinter.html#tkinter.READABLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::WRITABLE}}",
+      "Body": "Constants used in the mask arguments.",
+      "Link": "https://docs.python.org/3/library/tkinter.html#tkinter.WRITABLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::EXCEPTION}}",
+      "Body": "Constants used in the mask arguments.",
+      "Link": "https://docs.python.org/3/library/tkinter.html#tkinter.EXCEPTION"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::ttk}}.{{c4::Widget}}",
+      "Body": "Returns the name of the element at position x y, or the empty string if the point does not lie within any element.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Widget"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Widget}}.{{c4::identify}}({{c5::x}}, {{c6::y}})",
+      "Body": "Returns the name of the element at position x y, or the empty string if the point does not lie within any element.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Widget.identify"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Widget}}.{{c4::instate}}({{c5::statespec}}, {{c6::callback}}={{c7::None}}, *args, **kw)",
+      "Body": "Test the widget's state. If a callback is not specified, returns True if the widget state matches statespec and False otherwise. If callback is specified then it is called with args if widget state matches statespec.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Widget.instate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Widget}}.{{c4::state}}({{c5::statespec}}={{c6::None}})",
+      "Body": "Modify or inquire widget state. If statespec is specified, sets the widget state according to it and return a new statespec indicating which flags were changed. If statespec is not specified, returns the currently-enabled state flags.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Widget.state"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::ttk}}.{{c4::Combobox}}",
+      "Body": "If newindex is specified, sets the combobox value to the element position newindex. Otherwise, returns the index of the current value or -1 if the current value is not in the values list.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Combobox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Combobox}}.{{c4::current}}({{c5::newindex}}={{c6::None}})",
+      "Body": "If newindex is specified, sets the combobox value to the element position newindex. Otherwise, returns the index of the current value or -1 if the current value is not in the values list.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Combobox.current"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Combobox}}.{{c4::get}}()",
+      "Body": "Returns the current value of the combobox.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Combobox.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Combobox}}.{{c4::set}}({{c5::value}})",
+      "Body": "Sets the value of the combobox to value.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Combobox.set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::ttk}}.{{c4::Spinbox}}",
+      "Body": "Returns the current value of the spinbox.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Spinbox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Spinbox}}.{{c4::get}}()",
+      "Body": "Returns the current value of the spinbox.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Spinbox.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Spinbox}}.{{c4::set}}({{c5::value}})",
+      "Body": "Sets the value of the spinbox to value.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Spinbox.set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::ttk}}.{{c4::Notebook}}",
+      "Body": "Adds a new tab to the notebook.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::add}}({{c5::child}}, **kw)",
+      "Body": "Adds a new tab to the notebook.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::forget}}({{c5::tab_id}})",
+      "Body": "Removes the tab specified by tab_id, unmaps and unmanages the associated window.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.forget"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::hide}}({{c5::tab_id}})",
+      "Body": "Hides the tab specified by tab_id.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.hide"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::identify}}({{c5::x}}, {{c6::y}})",
+      "Body": "Returns the name of the tab element at position x, y, or the empty string if none.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.identify"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::index}}({{c5::tab_id}})",
+      "Body": "Returns the numeric index of the tab specified by tab_id, or the total number of tabs if tab_id is the string end.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.index"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::insert}}({{c5::pos}}, {{c6::child}}, **kw)",
+      "Body": "Inserts a pane at the specified position.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.insert"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::select}}({{c5::tab_id}}={{c6::None}})",
+      "Body": "Selects the specified tab_id.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.select"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::tab}}({{c5::tab_id}}, {{c6::option}}={{c7::None}}, **kw)",
+      "Body": "Query or modify the options of the specific tab_id.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.tab"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::tabs}}()",
+      "Body": "Returns a list of windows managed by the notebook.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.tabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Notebook}}.{{c4::enable_traversal}}()",
+      "Body": "Enable keyboard traversal for a toplevel window containing this notebook.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Notebook.enable_traversal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::ttk}}.{{c4::Progressbar}}",
+      "Body": "Begin autoincrement mode: schedules a recurring timer event that calls Progressbar.step() every interval milliseconds. If omitted, interval defaults to 50 milliseconds.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Progressbar"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Progressbar}}.{{c4::start}}({{c5::interval}}={{c6::None}})",
+      "Body": "Begin autoincrement mode: schedules a recurring timer event that calls Progressbar.step() every interval milliseconds. If omitted, interval defaults to 50 milliseconds.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Progressbar.start"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Progressbar}}.{{c4::step}}({{c5::amount}}={{c6::None}})",
+      "Body": "Increments the progress bar's value by amount.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Progressbar.step"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Progressbar}}.{{c4::stop}}()",
+      "Body": "Stop autoincrement mode: cancels any recurring timer event initiated by Progressbar.start() for this progress bar.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Progressbar.stop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::ttk}}.{{c4::Treeview}}",
+      "Body": "Returns the bounding box (relative to the treeview widget's window) of the specified item in the form (x, y, width, height).",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::bbox}}({{c5::item}}, {{c6::column}}={{c7::None}})",
+      "Body": "Returns the bounding box (relative to the treeview widget's window) of the specified item in the form (x, y, width, height).",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.bbox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::get_children}}({{c5::item}}={{c6::None}})",
+      "Body": "Returns the list of children belonging to item.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.get_children"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::set_children}}({{c5::item}}, *newchildren)",
+      "Body": "Replaces item's child with newchildren.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.set_children"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::column}}({{c5::column}}, {{c6::option}}={{c7::None}}, **kw)",
+      "Body": "Query or modify the options for the specified column.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.column"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::delete}}(*items)",
+      "Body": "Delete all specified items and all their descendants.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.delete"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::detach}}(*items)",
+      "Body": "Unlinks all of the specified items from the tree.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.detach"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::exists}}({{c5::item}})",
+      "Body": "Returns True if the specified item is present in the tree.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.exists"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::focus}}({{c5::item}}={{c6::None}})",
+      "Body": "If item is specified, sets the focus item to item. Otherwise, returns the current focus item, or '' if there is none.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.focus"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::heading}}({{c5::column}}, {{c6::option}}={{c7::None}}, **kw)",
+      "Body": "Query or modify the heading options for the specified column.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.heading"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::identify}}({{c5::component}}, {{c6::x}}, {{c7::y}})",
+      "Body": "Returns a description of the specified component under the point given by x and y, or the empty string if no such component is present at that position.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.identify"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::identify_row}}({{c5::y}})",
+      "Body": "Returns the item ID of the item at position y.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.identify_row"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::identify_column}}({{c5::x}})",
+      "Body": "Returns the data column identifier of the cell at position x.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.identify_column"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::identify_region}}({{c5::x}}, {{c6::y}})",
+      "Body": "Returns one of:",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.identify_region"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::identify_element}}({{c5::x}}, {{c6::y}})",
+      "Body": "Returns the element at position x, y.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.identify_element"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::index}}({{c5::item}})",
+      "Body": "Returns the integer index of item within its parent's list of children.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.index"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::insert}}({{c5::parent}}, {{c6::index}}, {{c7::iid}}={{c8::None}}, **kw)",
+      "Body": "Creates a new item and returns the item identifier of the newly created item.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.insert"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::item}}({{c5::item}}, {{c6::option}}={{c7::None}}, **kw)",
+      "Body": "Query or modify the options for the specified item.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.item"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::move}}({{c5::item}}, {{c6::parent}}, {{c7::index}})",
+      "Body": "Moves item to position index in parent's list of children.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.move"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::next}}({{c5::item}})",
+      "Body": "Returns the identifier of item's next sibling, or '' if item is the last child of its parent.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.next"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::parent}}({{c5::item}})",
+      "Body": "Returns the ID of the parent of item, or '' if item is at the top level of the hierarchy.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.parent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::prev}}({{c5::item}})",
+      "Body": "Returns the identifier of item's previous sibling, or '' if item is the first child of its parent.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.prev"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::reattach}}({{c5::item}}, {{c6::parent}}, {{c7::index}})",
+      "Body": "An alias for Treeview.move().",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.reattach"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::see}}({{c5::item}})",
+      "Body": "Ensure that item is visible.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.see"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::selection}}({{c5::selop}}={{c6::None}}, {{c7::items}}={{c8::None}})",
+      "Body": "If selop is not specified, returns selected items. Otherwise, it will act according to the following selection methods.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.selection"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::selection_set}}(*items)",
+      "Body": "items becomes the new selection.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.selection_set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::selection_add}}(*items)",
+      "Body": "Add items to the selection.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.selection_add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::selection_remove}}(*items)",
+      "Body": "Remove items from the selection.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.selection_remove"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::selection_toggle}}(*items)",
+      "Body": "Toggle the selection state of each item in items.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.selection_toggle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::set}}({{c5::item}}, {{c6::column}}={{c7::None}}, {{c8::value}}={{c9::None}})",
+      "Body": "With one argument, returns a dictionary of column/value pairs for the specified item. With two arguments, returns the current value of the specified column. With three arguments, sets the value of given column in given item to the specified value.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::tag_bind}}({{c5::tagname}}, {{c6::sequence}}={{c7::None}}, {{c8::callback}}={{c9::None}})",
+      "Body": "Bind a callback for the given event sequence to the tag tagname. When an event is delivered to an item, the callbacks for each of the item's tags option are called.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.tag_bind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::tag_configure}}({{c5::tagname}}, {{c6::option}}={{c7::None}}, **kw)",
+      "Body": "Query or modify the options for the specified tagname.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.tag_configure"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::tag_has}}({{c5::tagname}}, {{c6::item}}={{c7::None}})",
+      "Body": "If item is specified, returns 1 or 0 depending on whether the specified item has the given tagname. Otherwise, returns a list of all items that have the specified tag.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.tag_has"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::xview}}(*args)",
+      "Body": "Query or modify horizontal position of the treeview.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.xview"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Treeview}}.{{c4::yview}}(*args)",
+      "Body": "Query or modify vertical position of the treeview.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Treeview.yview"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::ttk}}.{{c4::Style}}",
+      "Body": "This class is used to manipulate the style database.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::configure}}({{c5::style}}, {{c6::query_opt}}={{c7::None}}, **kw)",
+      "Body": "Query or set the default value of the specified option(s) in style.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.configure"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::map}}({{c5::style}}, {{c6::query_opt}}={{c7::None}}, **kw)",
+      "Body": "Query or sets dynamic values of the specified option(s) in style.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::lookup}}({{c5::style}}, {{c6::option}}, {{c7::state}}={{c8::None}}, {{c9::default}}={{c10::None}})",
+      "Body": "Returns the value specified for option in style.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.lookup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::layout}}({{c5::style}}, {{c6::layoutspec}}={{c7::None}})",
+      "Body": "Define the widget layout for given style. If layoutspec is omitted, return the layout specification for given style.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.layout"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::element_create}}({{c5::elementname}}, {{c6::etype}}, *args, **kw)",
+      "Body": "Create a new element in the current theme, of the given etype which is expected to be either image, from or vsapi. The latter is only available in Tk 8.6a for Windows XP and Vista and is not described here.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.element_create"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::element_names}}()",
+      "Body": "Returns the list of elements defined in the current theme.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.element_names"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::element_options}}({{c5::elementname}})",
+      "Body": "Returns the list of elementname's options.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.element_options"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::theme_create}}({{c5::themename}}, {{c6::parent}}={{c7::None}}, {{c8::settings}}={{c9::None}})",
+      "Body": "Create a new theme.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.theme_create"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::theme_settings}}({{c5::themename}}, {{c6::settings}})",
+      "Body": "Temporarily sets the current theme to themename, apply specified settings and then restore the previous theme.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.theme_settings"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::theme_names}}()",
+      "Body": "Returns a list of all known themes.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.theme_names"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tkinter}}.{{c2::ttk}}.{{c3::Style}}.{{c4::theme_use}}({{c5::themename}}={{c6::None}})",
+      "Body": "If themename is not given, returns the theme in use.  Otherwise, sets the current theme to themename, refreshes all widgets and emits a <<ThemeChanged>> event.",
+      "Link": "https://docs.python.org/3/library/tkinter.ttk.html#tkinter.ttk.Style.theme_use"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::Tk}}({{c5::screenName}}={{c6::None}}, {{c7::baseName}}={{c8::None}}, {{c9::className}}='{{c10::Tix}}')",
+      "Body": "Toplevel widget of Tix which represents mostly the main window of an application. It has an associated Tcl interpreter.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.Tk"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::Balloon}}",
+      "Body": "A Balloon that pops up over a widget to provide help.  When the user moves the cursor inside a widget to which a Balloon widget has been bound, a small pop-up window with a descriptive message will be shown on the screen.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.Balloon"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::ButtonBox}}",
+      "Body": "The ButtonBox widget creates a box of buttons, such as is commonly used for Ok Cancel.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.ButtonBox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::ComboBox}}",
+      "Body": "The ComboBox widget is similar to the combo box control in MS Windows. The user can select a choice by either typing in the entry subwidget or selecting from the listbox subwidget.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.ComboBox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::Control}}",
+      "Body": "The Control widget is also known as the SpinBox widget. The user can adjust the value by pressing the two arrow buttons or by entering the value directly into the entry. The new value will be checked against the user-defined upper and lower limits.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.Control"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::LabelEntry}}",
+      "Body": "The LabelEntry widget packages an entry widget and a label into one mega widget. It can be used to simplify the creation of entry-form type of interface.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.LabelEntry"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::LabelFrame}}",
+      "Body": "The LabelFrame widget packages a frame widget and a label into one mega widget.  To create widgets inside a LabelFrame widget, one creates the new widgets relative to the frame subwidget and manage them inside the frame subwidget.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.LabelFrame"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::Meter}}",
+      "Body": "The Meter widget can be used to show the progress of a background job which may take a long time to execute.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.Meter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::OptionMenu}}",
+      "Body": "The OptionMenu creates a menu button of options.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.OptionMenu"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::PopupMenu}}",
+      "Body": "The PopupMenu widget can be used as a replacement of the tk_popup command. The advantage of the Tix PopupMenu widget is it requires less application code to manipulate.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.PopupMenu"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::Select}}",
+      "Body": "The Select widget is a container of button subwidgets. It can be used to provide radio-box or check-box style of selection options for the user.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.Select"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::StdButtonBox}}",
+      "Body": "The StdButtonBox widget is a group of standard buttons for Motif-like dialog boxes.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.StdButtonBox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::DirList}}",
+      "Body": "The DirList widget displays a list view of a directory, its previous directories and its sub-directories. The user can choose one of the directories displayed in the list or change to another directory.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.DirList"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::DirTree}}",
+      "Body": "The DirTree widget displays a tree view of a directory, its previous directories and its sub-directories. The user can choose one of the directories displayed in the list or change to another directory.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.DirTree"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::DirSelectDialog}}",
+      "Body": "The DirSelectDialog widget presents the directories in the file system in a dialog window.  The user can use this dialog window to navigate through the file system to select the desired directory.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.DirSelectDialog"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::DirSelectBox}}",
+      "Body": "The DirSelectBox is similar to the standard Motif(TM) directory-selection box. It is generally used for the user to choose a directory.  DirSelectBox stores the directories mostly recently selected into a ComboBox widget so that they can be quickly selected again.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.DirSelectBox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::ExFileSelectBox}}",
+      "Body": "The ExFileSelectBox widget is usually embedded in a tixExFileSelectDialog widget. It provides a convenient method for the user to select files. The style of the ExFileSelectBox widget is very similar to the standard file dialog on MS Windows 3.1.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.ExFileSelectBox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::FileSelectBox}}",
+      "Body": "The FileSelectBox is similar to the standard Motif(TM) file-selection box. It is generally used for the user to choose a file. FileSelectBox stores the files mostly recently selected into a ComboBox widget so that they can be quickly selected again.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.FileSelectBox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::FileEntry}}",
+      "Body": "The FileEntry widget can be used to input a filename. The user can type in the filename manually. Alternatively, the user can press the button widget that sits next to the entry, which will bring up a file selection dialog.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.FileEntry"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::HList}}",
+      "Body": "The HList widget can be used to display any data that have a hierarchical structure, for example, file system directory trees. The list entries are indented and connected by branch lines according to their places in the hierarchy.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.HList"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::CheckList}}",
+      "Body": "The CheckList widget displays a list of items to be selected by the user. CheckList acts similarly to the Tk checkbutton or radiobutton widgets, except it is capable of handling many more items than checkbuttons or radiobuttons.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.CheckList"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::Tree}}",
+      "Body": "The Tree widget can be used to display hierarchical data in a tree form. The user can adjust the view of the tree by opening or closing parts of the tree.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.Tree"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::TList}}",
+      "Body": "The TList widget can be used to display data in a tabular format. The list entries of a TList widget are similar to the entries in the Tk listbox widget.  The main differences are (1) the TList widget can display the list entries in a two dimensional format and (2) you can use graphical images as well as multiple colors and fonts for the list entries.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.TList"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::PanedWindow}}",
+      "Body": "The PanedWindow widget allows the user to interactively manipulate the sizes of several panes. The panes can be arranged either vertically or horizontally.  The user changes the sizes of the panes by dragging the resize handle between two panes.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.PanedWindow"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::ListNoteBook}}",
+      "Body": "The ListNoteBook widget is very similar to the TixNoteBook widget: it can be used to display many windows in a limited space using a notebook metaphor. The notebook is divided into a stack of pages (windows). At one time only one of these pages can be shown. The user can navigate through these pages by choosing the name of the desired page in the hlist subwidget.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.ListNoteBook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::NoteBook}}",
+      "Body": "The NoteBook widget can be used to display many windows in a limited space using a notebook metaphor. The notebook is divided into a stack of pages. At one time only one of these pages can be shown. The user can navigate through these pages by choosing the visual tabs at the top of the NoteBook widget.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.NoteBook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::InputOnly}}",
+      "Body": "The InputOnly widgets are to accept inputs from the user, which can be done with the bind command (Unix only).",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.InputOnly"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::Form}}",
+      "Body": "The Form geometry manager based on attachment rules for all Tk widgets.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.Form"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tkinter}}.{{c3::tix}}.{{c4::tixCommand}}",
+      "Body": "The tix commands provide access to miscellaneous elements of Tix's internal state and the Tix application context.  Most of the information manipulated by these methods pertains to the application as a whole, or to a screen or display, rather than to a particular window.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tixCommand}}.{{c2::tix_configure}}({{c3::cnf}}={{c4::None}}, **kw)",
+      "Body": "Query or modify the configuration options of the Tix application context. If no option is specified, returns a dictionary all of the available options.  If option is specified with no value, then the method returns a list describing the one named option (this list will be identical to the corresponding sublist of the value returned if no option is specified).  If one or more option-value pairs are specified, then the method modifies the given option(s) to have the given value(s); in this case the method returns an empty string. Option may be any of the configuration options.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand.tix_configure"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tixCommand}}.{{c2::tix_cget}}({{c3::option}})",
+      "Body": "Returns the current value of the configuration option given by option. Option may be any of the configuration options.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand.tix_cget"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tixCommand}}.{{c2::tix_getbitmap}}({{c3::name}})",
+      "Body": "Locates a bitmap file of the name name.xpm or name in one of the bitmap directories (see the tix_addbitmapdir() method).  By using tix_getbitmap(), you can avoid hard coding the pathnames of the bitmap files in your application. When successful, it returns the complete pathname of the bitmap file, prefixed with the character @.  The returned value can be used to configure the bitmap option of the Tk and Tix widgets.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand.tix_getbitmap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tixCommand}}.{{c2::tix_addbitmapdir}}({{c3::directory}})",
+      "Body": "Tix maintains a list of directories under which the tix_getimage() and tix_getbitmap() methods will search for image files.  The standard bitmap directory is $TIX_LIBRARY/bitmaps. The tix_addbitmapdir() method adds directory into this list. By using this method, the image files of an applications can also be located using the tix_getimage() or tix_getbitmap() method.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand.tix_addbitmapdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tixCommand}}.{{c2::tix_filedialog}}([{{c3::dlgclass}}])",
+      "Body": "Returns the file selection dialog that may be shared among different calls from this application.  This method will create a file selection dialog widget when it is called the first time. This dialog will be returned by all subsequent calls to tix_filedialog().  An optional dlgclass parameter can be passed as a string to specified what type of file selection dialog widget is desired. Possible options are tix, FileSelectDialog or tixExFileSelectDialog.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand.tix_filedialog"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tixCommand}}.{{c2::tix_getimage}}({{c3::self}}, {{c4::name}})",
+      "Body": "Locates an image file of the name name.xpm, name.xbm or name.ppm in one of the bitmap directories (see the tix_addbitmapdir() method above). If more than one file with the same name (but different extensions) exist, then the image type is chosen according to the depth of the X display: xbm images are chosen on monochrome displays and color images are chosen on color displays. By using tix_getimage(), you can avoid hard coding the pathnames of the image files in your application. When successful, this method returns the name of the newly created image, which can be used to configure the image option of the Tk and Tix widgets.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand.tix_getimage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tixCommand}}.{{c2::tix_option_get}}({{c3::name}})",
+      "Body": "Gets the options maintained by the Tix scheme mechanism.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand.tix_option_get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tixCommand}}.{{c2::tix_resetoptions}}({{c3::newScheme}}, {{c4::newFontSet}}[, {{c5::newScmPrio}}])",
+      "Body": "Resets the scheme and fontset of the Tix application to newScheme and newFontSet, respectively.  This affects only those widgets created after this call.  Therefore, it is best to call the resetoptions method before the creation of any widgets in a Tix application.",
+      "Link": "https://docs.python.org/3/library/tkinter.tix.html#tkinter.tix.tixCommand.tix_resetoptions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ScrolledText}}.{{c2::frame}}",
+      "Body": "The frame which surrounds the text and scroll bar widgets.",
+      "Link": "https://docs.python.org/3/library/tkinter.scrolledtext.html#tkinter.scrolledtext.ScrolledText.frame"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Graphical User Interfaces with Tk",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ScrolledText}}.{{c2::vbar}}",
+      "Body": "The scroll bar widget.",
+      "Link": "https://docs.python.org/3/library/tkinter.scrolledtext.html#tkinter.scrolledtext.ScrolledText.vbar"
+    },
+    "modelName": "ClozePy"
+  }
+]

@@ -1,0 +1,2582 @@
+[
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::zlib}}.{{c3::error}}",
+      "Body": "Exception raised on compression and decompression errors.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zlib}}.{{c2::adler}}32({{c3::data}}[, {{c4::value}}])",
+      "Body": "Computes an Adler-32 checksum of data.  (An Adler-32 checksum is almost as reliable as a CRC32 but can be computed much more quickly.)  The result is an unsigned 32-bit integer.  If value is present, it is used as the starting value of the checksum; otherwise, a default value of 1 is used.  Passing in value allows computing a running checksum over the concatenation of several inputs.  The algorithm is not cryptographically strong, and should not be used for authentication or digital signatures.  Since the algorithm is designed for use as a checksum algorithm, it is not suitable for use as a general hash algorithm.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.adler32"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zlib}}.{{c2::compress}}({{c3::data}}, {{c4::level}}=-1)",
+      "Body": "Compresses the bytes in data, returning a bytes object containing compressed data. level is an integer from 0 to 9 or -1 controlling the level of compression; 1 (Z_BEST_SPEED) is fastest and produces the least compression, 9 (Z_BEST_COMPRESSION) is slowest and produces the most.  0 (Z_NO_COMPRESSION) is no compression. The default value is -1 (Z_DEFAULT_COMPRESSION).  Z_DEFAULT_COMPRESSION represents a default compromise between speed and compression (currently equivalent to level 6). Raises the error exception if any error occurs.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.compress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zlib}}.{{c2::compressobj}}({{c3::level}}=-1, {{c4::method}}={{c5::DEFLATED}}, {{c6::wbits}}={{c7::MAX_WBITS}}, {{c8::memLevel}}={{c9::DEF_MEM_LEVEL}}, {{c10::strategy}}={{c11::Z_DEFAULT_STRATEGY}}[, {{c12::zdict}}])",
+      "Body": "Returns a compression object, to be used for compressing data streams that won't fit into memory at once.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.compressobj"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zlib}}.{{c2::crc}}32({{c3::data}}[, {{c4::value}}])",
+      "Body": "Computes a CRC (Cyclic Redundancy Check) checksum of data. The result is an unsigned 32-bit integer. If value is present, it is used as the starting value of the checksum; otherwise, a default value of 0 is used.  Passing in value allows computing a running checksum over the concatenation of several inputs.  The algorithm is not cryptographically strong, and should not be used for authentication or digital signatures.  Since the algorithm is designed for use as a checksum algorithm, it is not suitable for use as a general hash algorithm.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.crc32"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zlib}}.{{c2::decompress}}({{c3::data}}, {{c4::wbits}}={{c5::MAX_WBITS}}, {{c6::bufsize}}={{c7::DEF_BUF_SIZE}})",
+      "Body": "Decompresses the bytes in data, returning a bytes object containing the uncompressed data.  The wbits parameter depends on the format of data, and is discussed further below. If bufsize is given, it is used as the initial size of the output buffer.  Raises the error exception if any error occurs.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.decompress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zlib}}.{{c2::decompressobj}}({{c3::wbits}}={{c4::MAX_WBITS}}[, {{c5::zdict}}])",
+      "Body": "Returns a decompression object, to be used for decompressing data streams that won't fit into memory at once.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.decompressobj"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Compress}}.{{c2::compress}}({{c3::data}})",
+      "Body": "Compress data, returning a bytes object containing compressed data for at least part of the data in data.  This data should be concatenated to the output produced by any preceding calls to the compress() method.  Some input may be kept in internal buffers for later processing.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Compress.compress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Compress}}.{{c2::flush}}([{{c3::mode}}])",
+      "Body": "All pending input is processed, and a bytes object containing the remaining compressed output is returned.  mode can be selected from the constants Z_NO_FLUSH, Z_PARTIAL_FLUSH, Z_SYNC_FLUSH, Z_FULL_FLUSH, Z_BLOCK (zlib 1.2.3.4), or Z_FINISH, defaulting to Z_FINISH.  Except Z_FINISH, all constants allow compressing further bytestrings of data, while Z_FINISH finishes the compressed stream and prevents compressing any more data.  After calling flush() with mode set to Z_FINISH, the compress() method cannot be called again; the only realistic action is to delete the object.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Compress.flush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Compress}}.{{c2::copy}}()",
+      "Body": "Returns a copy of the compression object.  This can be used to efficiently compress a set of data that share a common initial prefix.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Compress.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Decompress}}.{{c2::unused_data}}",
+      "Body": "A bytes object which contains any bytes past the end of the compressed data. That is, this remains b\"\" until the last byte that contains compression data is available.  If the whole bytestring turned out to contain compressed data, this is b\"\", an empty bytes object.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Decompress.unused_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Decompress}}.{{c2::unconsumed_tail}}",
+      "Body": "A bytes object that contains any data that was not consumed by the last decompress() call because it exceeded the limit for the uncompressed data buffer.  This data has not yet been seen by the zlib machinery, so you must feed it (possibly with further data concatenated to it) back to a subsequent decompress() method call in order to get correct output.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Decompress.unconsumed_tail"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Decompress}}.{{c2::eof}}",
+      "Body": "A boolean indicating whether the end of the compressed data stream has been reached.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Decompress.eof"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Decompress}}.{{c2::decompress}}({{c3::data}}, {{c4::max_length}}=0)",
+      "Body": "Decompress data, returning a bytes object containing the uncompressed data corresponding to at least part of the data in string.  This data should be concatenated to the output produced by any preceding calls to the decompress() method.  Some of the input data may be preserved in internal buffers for later processing.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Decompress.decompress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Decompress}}.{{c2::flush}}([{{c3::length}}])",
+      "Body": "All pending input is processed, and a bytes object containing the remaining uncompressed output is returned.  After calling flush(), the decompress() method cannot be called again; the only realistic action is to delete the object.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Decompress.flush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Decompress}}.{{c2::copy}}()",
+      "Body": "Returns a copy of the decompression object.  This can be used to save the state of the decompressor midway through the data stream in order to speed up random seeks into the stream at a future point.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.Decompress.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zlib}}.{{c2::ZLIB_VERSION}}",
+      "Body": "The version string of the zlib library that was used for building the module. This may be different from the zlib library actually used at runtime, which is available as ZLIB_RUNTIME_VERSION.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.ZLIB_VERSION"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zlib}}.{{c2::ZLIB_RUNTIME_VERSION}}",
+      "Body": "The version string of the zlib library actually loaded by the interpreter.",
+      "Link": "https://docs.python.org/3/library/zlib.html#zlib.ZLIB_RUNTIME_VERSION"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gzip}}.{{c2::open}}({{c3::filename}}, {{c4::mode}}='{{c5::rb}}', {{c6::compresslevel}}=9, {{c7::encoding}}={{c8::None}}, {{c9::errors}}={{c10::None}}, {{c11::newline}}={{c12::None}})",
+      "Body": "Open a gzip-compressed file in binary or text mode, returning a file object.",
+      "Link": "https://docs.python.org/3/library/gzip.html#gzip.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::gzip}}.{{c3::GzipFile}}({{c4::filename}}={{c5::None}}, {{c6::mode}}={{c7::None}}, {{c8::compresslevel}}=9, {{c9::fileobj}}={{c10::None}}, {{c11::mtime}}={{c12::None}})",
+      "Body": "Constructor for the GzipFile class, which simulates most of the methods of a file object, with the exception of the truncate() method.  At least one of fileobj and filename must be given a non-trivial value.",
+      "Link": "https://docs.python.org/3/library/gzip.html#gzip.GzipFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gzip}}.{{c2::GzipFile}}.{{c3::peek}}({{c4::n}})",
+      "Body": "Read n uncompressed bytes without advancing the file position. At most one single read on the compressed stream is done to satisfy the call.  The number of bytes returned may be more or less than requested.",
+      "Link": "https://docs.python.org/3/library/gzip.html#gzip.GzipFile.peek"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gzip}}.{{c2::GzipFile}}.{{c3::mtime}}",
+      "Body": "When decompressing, the value of the last modification time field in the most recently read header may be read from this attribute, as an integer.  The initial value before reading any headers is None.",
+      "Link": "https://docs.python.org/3/library/gzip.html#gzip.GzipFile.mtime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gzip}}.{{c2::compress}}({{c3::data}}, {{c4::compresslevel}}=9)",
+      "Body": "Compress the data, returning a bytes object containing the compressed data.  compresslevel has the same meaning as in the GzipFile constructor above.",
+      "Link": "https://docs.python.org/3/library/gzip.html#gzip.compress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::gzip}}.{{c2::decompress}}({{c3::data}})",
+      "Body": "Decompress the data, returning a bytes object containing the uncompressed data.",
+      "Link": "https://docs.python.org/3/library/gzip.html#gzip.decompress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::open}}({{c3::filename}}, {{c4::mode}}='{{c5::r}}', {{c6::compresslevel}}=9, {{c7::encoding}}={{c8::None}}, {{c9::errors}}={{c10::None}}, {{c11::newline}}={{c12::None}})",
+      "Body": "Open a bzip2-compressed file in binary or text mode, returning a file object.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::bz}}2.{{c3::BZ}}2{{c4::File}}({{c5::filename}}, {{c6::mode}}='{{c7::r}}', {{c8::buffering}}={{c9::None}}, {{c10::compresslevel}}=9)",
+      "Body": "Open a bzip2-compressed file in binary mode.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2File"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::BZ}}2{{c3::File}}.{{c4::peek}}([{{c5::n}}])",
+      "Body": "Return buffered data without advancing the file position. At least one byte of data will be returned (unless at EOF). The exact number of bytes returned is unspecified.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2File.peek"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::bz}}2.{{c3::BZ}}2{{c4::Compressor}}({{c5::compresslevel}}=9)",
+      "Body": "Create a new compressor object. This object may be used to compress data incrementally. For one-shot compression, use the compress() function instead.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2Compressor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::BZ}}2{{c3::Compressor}}.{{c4::compress}}({{c5::data}})",
+      "Body": "Provide data to the compressor object. Returns a chunk of compressed data if possible, or an empty byte string otherwise.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2Compressor.compress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::BZ}}2{{c3::Compressor}}.{{c4::flush}}()",
+      "Body": "Finish the compression process. Returns the compressed data left in internal buffers.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2Compressor.flush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::bz}}2.{{c3::BZ}}2{{c4::Decompressor}}",
+      "Body": "Create a new decompressor object. This object may be used to decompress data incrementally. For one-shot compression, use the decompress() function instead.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2Decompressor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::BZ}}2{{c3::Decompressor}}.{{c4::decompress}}({{c5::data}}, {{c6::max_length}}=-1)",
+      "Body": "Decompress data (a bytes-like object), returning uncompressed data as bytes. Some of data may be buffered internally, for use in later calls to decompress(). The returned data should be concatenated with the output of any previous calls to decompress().",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2Decompressor.decompress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::BZ}}2{{c3::Decompressor}}.{{c4::eof}}",
+      "Body": "True if the end-of-stream marker has been reached.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2Decompressor.eof"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::BZ}}2{{c3::Decompressor}}.{{c4::unused_data}}",
+      "Body": "Data found after the end of the compressed stream.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2Decompressor.unused_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::BZ}}2{{c3::Decompressor}}.{{c4::needs_input}}",
+      "Body": "False if the decompress() method can provide more decompressed data before requiring new uncompressed input.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.BZ2Decompressor.needs_input"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::compress}}({{c3::data}}, {{c4::compresslevel}}=9)",
+      "Body": "Compress data.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.compress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::bz}}2.{{c2::decompress}}({{c3::data}})",
+      "Body": "Decompress data.",
+      "Link": "https://docs.python.org/3/library/bz2.html#bz2.decompress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::lzma}}.{{c3::LZMAError}}",
+      "Body": "This exception is raised when an error occurs during compression or decompression, or while initializing the compressor/decompressor state.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMAError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::open}}({{c3::filename}}, {{c4::mode}}=\"{{c5::rb}}\", *, {{c6::format}}={{c7::None}}, {{c8::check}}=-1, {{c9::preset}}={{c10::None}}, {{c11::filters}}={{c12::None}}, {{c13::encoding}}={{c14::None}}, {{c15::errors}}={{c16::None}}, {{c17::newline}}={{c18::None}})",
+      "Body": "Open an LZMA-compressed file in binary or text mode, returning a file object.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::lzma}}.{{c3::LZMAFile}}({{c4::filename}}={{c5::None}}, {{c6::mode}}=\"{{c7::r}}\", *, {{c8::format}}={{c9::None}}, {{c10::check}}=-1, {{c11::preset}}={{c12::None}}, {{c13::filters}}={{c14::None}})",
+      "Body": "Open an LZMA-compressed file in binary mode.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMAFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::LZMAFile}}.{{c3::peek}}({{c4::size}}=-1)",
+      "Body": "Return buffered data without advancing the file position. At least one byte of data will be returned, unless EOF has been reached. The exact number of bytes returned is unspecified (the size argument is ignored).",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMAFile.peek"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::lzma}}.{{c3::LZMACompressor}}({{c4::format}}={{c5::FORMAT_XZ}}, {{c6::check}}=-1, {{c7::preset}}={{c8::None}}, {{c9::filters}}={{c10::None}})",
+      "Body": "Create a compressor object, which can be used to compress data incrementally.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMACompressor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::LZMACompressor}}.{{c3::compress}}({{c4::data}})",
+      "Body": "Compress data (a bytes object), returning a bytes object containing compressed data for at least part of the input. Some of data may be buffered internally, for use in later calls to compress() and flush(). The returned data should be concatenated with the output of any previous calls to compress().",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMACompressor.compress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::LZMACompressor}}.{{c3::flush}}()",
+      "Body": "Finish the compression process, returning a bytes object containing any data stored in the compressor's internal buffers.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMACompressor.flush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::lzma}}.{{c3::LZMADecompressor}}({{c4::format}}={{c5::FORMAT_AUTO}}, {{c6::memlimit}}={{c7::None}}, {{c8::filters}}={{c9::None}})",
+      "Body": "Create a decompressor object, which can be used to decompress data incrementally.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMADecompressor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::LZMADecompressor}}.{{c3::decompress}}({{c4::data}}, {{c5::max_length}}=-1)",
+      "Body": "Decompress data (a bytes-like object), returning uncompressed data as bytes. Some of data may be buffered internally, for use in later calls to decompress(). The returned data should be concatenated with the output of any previous calls to decompress().",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMADecompressor.decompress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::LZMADecompressor}}.{{c3::check}}",
+      "Body": "The ID of the integrity check used by the input stream. This may be CHECK_UNKNOWN until enough of the input has been decoded to determine what integrity check it uses.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMADecompressor.check"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::LZMADecompressor}}.{{c3::eof}}",
+      "Body": "True if the end-of-stream marker has been reached.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMADecompressor.eof"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::LZMADecompressor}}.{{c3::unused_data}}",
+      "Body": "Data found after the end of the compressed stream.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMADecompressor.unused_data"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::LZMADecompressor}}.{{c3::needs_input}}",
+      "Body": "False if the decompress() method can provide more decompressed data before requiring new uncompressed input.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.LZMADecompressor.needs_input"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::compress}}({{c3::data}}, {{c4::format}}={{c5::FORMAT_XZ}}, {{c6::check}}=-1, {{c7::preset}}={{c8::None}}, {{c9::filters}}={{c10::None}})",
+      "Body": "Compress data (a bytes object), returning the compressed data as a bytes object.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.compress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::decompress}}({{c3::data}}, {{c4::format}}={{c5::FORMAT_AUTO}}, {{c6::memlimit}}={{c7::None}}, {{c8::filters}}={{c9::None}})",
+      "Body": "Decompress data (a bytes object), returning the uncompressed data as a bytes object.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.decompress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::lzma}}.{{c2::is_check_supported}}({{c3::check}})",
+      "Body": "Returns true if the given integrity check is supported on this system.",
+      "Link": "https://docs.python.org/3/library/lzma.html#lzma.is_check_supported"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::zipfile}}.{{c3::BadZipFile}}",
+      "Body": "The error raised for bad ZIP files.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.BadZipFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::zipfile}}.{{c3::BadZipfile}}",
+      "Body": "Alias of BadZipFile, for compatibility with older versions.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.BadZipfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::zipfile}}.{{c3::LargeZipFile}}",
+      "Body": "The error raised when a ZIP file would require ZIP64 functionality but that has not been enabled.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.LargeZipFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::zipfile}}.{{c3::ZipFile}}",
+      "Body": "The class for reading and writing ZIP files.  See section ZipFile Objects for constructor details.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#module-zipfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::zipfile}}.{{c3::PyZipFile}}",
+      "Body": "Class for creating ZIP archives containing libraries.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#module-zipfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::zipfile}}.{{c3::ZipInfo}}({{c4::filename}}='{{c5::NoName}}', {{c6::date_time}}=(1980, 1, 1, 0, 0, 0))",
+      "Body": "Class used to represent information about a member of an archive. Instances of this class are returned by the getinfo() and infolist() methods of ZipFile objects.  Most users of the zipfile module will not need to create these, but only use those created by this module. filename should be the full name of the archive member, and date_time should be a tuple containing six fields which describe the time of the last modification to the file; the fields are described in section ZipInfo Objects.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zipfile}}.{{c2::is_zipfile}}({{c3::filename}})",
+      "Body": "Returns True if filename is a valid ZIP file based on its magic number, otherwise returns False.  filename may be a file or file-like object too.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.is_zipfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zipfile}}.{{c2::ZIP_STORED}}",
+      "Body": "The numeric constant for an uncompressed archive member.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZIP_STORED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zipfile}}.{{c2::ZIP_DEFLATED}}",
+      "Body": "The numeric constant for the usual ZIP compression method.  This requires the zlib module.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZIP_DEFLATED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zipfile}}.{{c2::ZIP_BZIP}}2",
+      "Body": "The numeric constant for the BZIP2 compression method.  This requires the bz2 module.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZIP_BZIP2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zipfile}}.{{c2::ZIP_LZMA}}",
+      "Body": "The numeric constant for the LZMA compression method.  This requires the lzma module.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZIP_LZMA"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::zipfile}}.{{c3::ZipFile}}({{c4::file}}, {{c5::mode}}='{{c6::r}}', {{c7::compression}}={{c8::ZIP_STORED}}, {{c9::allowZip}}64={{c10::True}}, {{c11::compresslevel}}={{c12::None}})",
+      "Body": "Open a ZIP file, where file can be a path to a file (a string), a file-like object or a path-like object.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::close}}()",
+      "Body": "Close the archive file.  You must call close() before exiting your program or essential records will not be written.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::getinfo}}({{c3::name}})",
+      "Body": "Return a ZipInfo object with information about the archive member name.  Calling getinfo() for a name not currently contained in the archive will raise a KeyError.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.getinfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::infolist}}()",
+      "Body": "Return a list containing a ZipInfo object for each member of the archive.  The objects are in the same order as their entries in the actual ZIP file on disk if an existing archive was opened.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.infolist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::namelist}}()",
+      "Body": "Return a list of archive members by name.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.namelist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::open}}({{c3::name}}, {{c4::mode}}='{{c5::r}}', {{c6::pwd}}={{c7::None}}, *, {{c8::force_zip}}64={{c9::False}})",
+      "Body": "Access a member of the archive as a binary file-like object.  name can be either the name of a file within the archive or a ZipInfo object.  The mode parameter, if included, must be 'r' (the default) or 'w'.  pwd is the password used to decrypt encrypted ZIP files.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::extract}}({{c3::member}}, {{c4::path}}={{c5::None}}, {{c6::pwd}}={{c7::None}})",
+      "Body": "Extract a member from the archive to the current working directory; member must be its full name or a ZipInfo object.  Its file information is extracted as accurately as possible.  path specifies a different directory to extract to.  member can be a filename or a ZipInfo object. pwd is the password used for encrypted files.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.extract"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::extractall}}({{c3::path}}={{c4::None}}, {{c5::members}}={{c6::None}}, {{c7::pwd}}={{c8::None}})",
+      "Body": "Extract all members from the archive to the current working directory.  path specifies a different directory to extract to.  members is optional and must be a subset of the list returned by namelist().  pwd is the password used for encrypted files.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.extractall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::printdir}}()",
+      "Body": "Print a table of contents for the archive to sys.stdout.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.printdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::setpassword}}({{c3::pwd}})",
+      "Body": "Set pwd as default password to extract encrypted files.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.setpassword"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::read}}({{c3::name}}, {{c4::pwd}}={{c5::None}})",
+      "Body": "Return the bytes of the file name in the archive.  name is the name of the file in the archive, or a ZipInfo object.  The archive must be open for read or append. pwd is the password used for encrypted  files and, if specified, it will override the default password set with setpassword().  Calling read() on a ZipFile that uses a compression method other than ZIP_STORED, ZIP_DEFLATED, ZIP_BZIP2 or ZIP_LZMA will raise a NotImplementedError. An error will also be raised if the corresponding compression module is not available.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.read"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::testzip}}()",
+      "Body": "Read all the files in the archive and check their CRC's and file headers. Return the name of the first bad file, or else return None.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.testzip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::write}}({{c3::filename}}, {{c4::arcname}}={{c5::None}}, {{c6::compress_type}}={{c7::None}}, {{c8::compresslevel}}={{c9::None}})",
+      "Body": "Write the file named filename to the archive, giving it the archive name arcname (by default, this will be the same as filename, but without a drive letter and with leading path separators removed).  If given, compress_type overrides the value given for the compression parameter to the constructor for the new entry. Similarly, compresslevel will override the constructor if given. The archive must be open with mode 'w', 'x' or 'a'.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.write"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::writestr}}({{c3::zinfo_or_arcname}}, {{c4::data}}, {{c5::compress_type}}={{c6::None}}, {{c7::compresslevel}}={{c8::None}})",
+      "Body": "Write the string data to the archive; zinfo_or_arcname is either the file name it will be given in the archive, or a ZipInfo instance.  If it's an instance, at least the filename, date, and time must be given.  If it's a name, the date and time is set to the current date and time. The archive must be opened with mode 'w', 'x' or 'a'.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.writestr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::filename}}",
+      "Body": "Name of the ZIP file.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::debug}}",
+      "Body": "The level of debug output to use.  This may be set from 0 (the default, no output) to 3 (the most output).  Debugging information is written to sys.stdout.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.debug"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipFile}}.{{c2::comment}}",
+      "Body": "The comment text associated with the ZIP file.  If assigning a comment to a ZipFile instance created with mode 'w', 'x' or 'a', this should be a string no longer than 65535 bytes.  Comments longer than this will be truncated in the written archive when close() is called.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile.comment"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::zipfile}}.{{c3::PyZipFile}}({{c4::file}}, {{c5::mode}}='{{c6::r}}', {{c7::compression}}={{c8::ZIP_STORED}}, {{c9::allowZip}}64={{c10::True}}, {{c11::optimize}}=-1)",
+      "Body": "New in version 3.2: The optimize parameter.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.PyZipFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::zipfile}}.{{c2::PyZipFile}}.{{c3::writepy}}({{c4::pathname}}, {{c5::basename}}='', {{c6::filterfunc}}={{c7::None}})",
+      "Body": "Search for files *.py and add the corresponding file to the archive.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.PyZipFile.writepy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::ZipInfo}}.{{c3::from_file}}({{c4::filename}}, {{c5::arcname}}={{c6::None}})",
+      "Body": "Construct a ZipInfo instance for a file on the filesystem, in preparation for adding it to a zip file.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.from_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::is_dir}}()",
+      "Body": "Return True if this archive member is a directory.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.is_dir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::filename}}",
+      "Body": "Name of the file in the archive.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::date_time}}",
+      "Body": "The time and date of the last modification to the archive member.  This is a tuple of six values:",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.date_time"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::compress_type}}",
+      "Body": "Type of compression for the archive member.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.compress_type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::comment}}",
+      "Body": "Comment for the individual archive member.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.comment"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::extra}}",
+      "Body": "Expansion field data.  The PKZIP Application Note contains some comments on the internal structure of the data contained in this string.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.extra"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::create_system}}",
+      "Body": "System which created ZIP archive.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.create_system"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::create_version}}",
+      "Body": "PKZIP version which created ZIP archive.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.create_version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::extract_version}}",
+      "Body": "PKZIP version needed to extract archive.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.extract_version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::reserved}}",
+      "Body": "Must be zero.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.reserved"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::flag_bits}}",
+      "Body": "ZIP flag bits.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.flag_bits"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::volume}}",
+      "Body": "Volume number of file header.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.volume"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::internal_attr}}",
+      "Body": "Internal attributes.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.internal_attr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::external_attr}}",
+      "Body": "External file attributes.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.external_attr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::header_offset}}",
+      "Body": "Byte offset to the file header.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.header_offset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::CRC}}",
+      "Body": "CRC-32 of the uncompressed file.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.CRC"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::compress_size}}",
+      "Body": "Size of the compressed data.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.compress_size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::ZipInfo}}.{{c2::file_size}}",
+      "Body": "Size of the uncompressed file.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#zipfile.ZipInfo.file_size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::l}} <{{c2::zipfile}}>",
+      "Body": "List files in a zipfile.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#cmdoption-zipfile-l"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::list}} <{{c2::zipfile}}>",
+      "Body": "List files in a zipfile.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#cmdoption-zipfile-list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::c}} <{{c2::zipfile}}> <{{c3::source}}1> ... <{{c4::sourceN}}>",
+      "Body": "Create zipfile from source files.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#cmdoption-zipfile-c"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::create}} <{{c2::zipfile}}> <{{c3::source}}1> ... <{{c4::sourceN}}>",
+      "Body": "Create zipfile from source files.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#cmdoption-zipfile-create"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::e}} <{{c2::zipfile}}> <{{c3::output_dir}}>",
+      "Body": "Extract zipfile into target directory.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#cmdoption-zipfile-e"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::extract}} <{{c2::zipfile}}> <{{c3::output_dir}}>",
+      "Body": "Extract zipfile into target directory.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#cmdoption-zipfile-extract"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::t}} <{{c2::zipfile}}>",
+      "Body": "Test whether the zipfile is valid or not.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#cmdoption-zipfile-t"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::test}} <{{c2::zipfile}}>",
+      "Body": "Test whether the zipfile is valid or not.",
+      "Link": "https://docs.python.org/3/library/zipfile.html#cmdoption-zipfile-test"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tarfile}}.{{c2::open}}({{c3::name}}={{c4::None}}, {{c5::mode}}='{{c6::r}}', {{c7::fileobj}}={{c8::None}}, {{c9::bufsize}}=10240, **kwargs)",
+      "Body": "Return a TarFile object for the pathname name. For detailed information on TarFile objects and the keyword arguments that are allowed, see TarFile Objects.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tarfile}}.{{c3::TarFile}}",
+      "Body": "Class for reading and writing tar archives. Do not use this class directly: use tarfile.open() instead. See TarFile Objects.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tarfile}}.{{c2::is_tarfile}}({{c3::name}})",
+      "Body": "Return True if name is a tar archive file, that the tarfile module can read.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.is_tarfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::tarfile}}.{{c3::TarError}}",
+      "Body": "Base class for all tarfile exceptions.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::tarfile}}.{{c3::ReadError}}",
+      "Body": "Is raised when a tar archive is opened, that either cannot be handled by the tarfile module or is somehow invalid.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.ReadError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::tarfile}}.{{c3::CompressionError}}",
+      "Body": "Is raised when a compression method is not supported or when the data cannot be decoded properly.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.CompressionError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::tarfile}}.{{c3::StreamError}}",
+      "Body": "Is raised for the limitations that are typical for stream-like TarFile objects.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.StreamError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::tarfile}}.{{c3::ExtractError}}",
+      "Body": "Is raised for non-fatal errors when using TarFile.extract(), but only if TarFile.errorlevel== 2.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.ExtractError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::tarfile}}.{{c3::HeaderError}}",
+      "Body": "Is raised by TarInfo.frombuf() if the buffer it gets is invalid.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.HeaderError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tarfile}}.{{c2::ENCODING}}",
+      "Body": "The default character encoding: 'utf-8' on Windows, the value returned by sys.getfilesystemencoding() otherwise.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.ENCODING"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tarfile}}.{{c2::USTAR_FORMAT}}",
+      "Body": "POSIX.1-1988 (ustar) format.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.USTAR_FORMAT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tarfile}}.{{c2::GNU_FORMAT}}",
+      "Body": "GNU tar format.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.GNU_FORMAT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tarfile}}.{{c2::PAX_FORMAT}}",
+      "Body": "POSIX.1-2001 (pax) format.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.PAX_FORMAT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tarfile}}.{{c2::DEFAULT_FORMAT}}",
+      "Body": "The default format for creating archives. This is currently GNU_FORMAT.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.DEFAULT_FORMAT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tarfile}}.{{c3::TarFile}}({{c4::name}}={{c5::None}}, {{c6::mode}}='{{c7::r}}', {{c8::fileobj}}={{c9::None}}, {{c10::format}}={{c11::DEFAULT_FORMAT}}, {{c12::tarinfo}}={{c13::TarInfo}}, {{c14::dereference}}={{c15::False}}, {{c16::ignore_zeros}}={{c17::False}}, {{c18::encoding}}={{c19::ENCODING}}, {{c20::errors}}='{{c21::surrogateescape}}', {{c22::pax_headers}}={{c23::None}}, {{c24::debug}}=0, {{c25::errorlevel}}=0)",
+      "Body": "All following arguments are optional and can be accessed as instance attributes as well.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::TarFile}}.{{c3::open}}(...)",
+      "Body": "Alternative constructor. The tarfile.open() function is actually a shortcut to this classmethod.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::getmember}}({{c3::name}})",
+      "Body": "Return a TarInfo object for member name. If name can not be found in the archive, KeyError is raised.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.getmember"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::getmembers}}()",
+      "Body": "Return the members of the archive as a list of TarInfo objects. The list has the same order as the members in the archive.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.getmembers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::getnames}}()",
+      "Body": "Return the members as a list of their names. It has the same order as the list returned by getmembers().",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.getnames"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::list}}({{c3::verbose}}={{c4::True}}, *, {{c5::members}}={{c6::None}})",
+      "Body": "Print a table of contents to sys.stdout. If verbose is False, only the names of the members are printed. If it is True, output similar to that of ls -l is produced. If optional members is given, it must be a subset of the list returned by getmembers().",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::next}}()",
+      "Body": "Return the next member of the archive as a TarInfo object, when TarFile is opened for reading. Return None if there is no more available.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.next"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::extractall}}({{c3::path}}=\".\", {{c4::members}}={{c5::None}}, *, {{c6::numeric_owner}}={{c7::False}})",
+      "Body": "Extract all members from the archive to the current working directory or directory path. If optional members is given, it must be a subset of the list returned by getmembers(). Directory information like owner, modification time and permissions are set after all members have been extracted. This is done to work around two problems: A directory's modification time is reset each time a file is created in it. And, if a directory's permissions do not allow writing, extracting files to it will fail.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.extractall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::extract}}({{c3::member}}, {{c4::path}}=\"\", {{c5::set_attrs}}={{c6::True}}, *, {{c7::numeric_owner}}={{c8::False}})",
+      "Body": "Extract a member from the archive to the current working directory, using its full name. Its file information is extracted as accurately as possible. member may be a filename or a TarInfo object. You can specify a different directory using path. path may be a path-like object. File attributes (owner, mtime, mode) are set unless set_attrs is false.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.extract"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::extractfile}}({{c3::member}})",
+      "Body": "Extract a member from the archive as a file object. member may be a filename or a TarInfo object. If member is a regular file or a link, an io.BufferedReader object is returned. Otherwise, None is returned.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.extractfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::add}}({{c3::name}}, {{c4::arcname}}={{c5::None}}, {{c6::recursive}}={{c7::True}}, *, {{c8::filter}}={{c9::None}})",
+      "Body": "Add the file name to the archive. name may be any type of file (directory, fifo, symbolic link, etc.). If given, arcname specifies an alternative name for the file in the archive. Directories are added recursively by default. This can be avoided by setting recursive to False. Recursion adds entries in sorted order. If filter is given, it should be a function that takes a TarInfo object argument and returns the changed TarInfo object. If it instead returns None the TarInfo object will be excluded from the archive. See Examples for an example.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::addfile}}({{c3::tarinfo}}, {{c4::fileobj}}={{c5::None}})",
+      "Body": "Add the TarInfo object tarinfo to the archive. If fileobj is given, it should be a binary file, and tarinfo.size bytes are read from it and added to the archive.  You can create TarInfo objects directly, or by using gettarinfo().",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.addfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::gettarinfo}}({{c3::name}}={{c4::None}}, {{c5::arcname}}={{c6::None}}, {{c7::fileobj}}={{c8::None}})",
+      "Body": "Create a TarInfo object from the result of os.stat() or equivalent on an existing file.  The file is either named by name, or specified as a file object fileobj with a file descriptor. name may be a path-like object.  If given, arcname specifies an alternative name for the file in the archive, otherwise, the name is taken from fileobj's name attribute, or the name argument.  The name should be a text string.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.gettarinfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::close}}()",
+      "Body": "Close the TarFile. In write mode, two finishing zero blocks are appended to the archive.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarFile}}.{{c2::pax_headers}}",
+      "Body": "A dictionary containing key-value pairs of pax global headers.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.pax_headers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tarfile}}.{{c3::TarInfo}}({{c4::name}}=\"\")",
+      "Body": "Create a TarInfo object.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::TarInfo}}.{{c3::frombuf}}({{c4::buf}}, {{c5::encoding}}, {{c6::errors}})",
+      "Body": "Create and return a TarInfo object from string buffer buf.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.frombuf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::TarInfo}}.{{c3::fromtarfile}}({{c4::tarfile}})",
+      "Body": "Read the next member from the TarFile object tarfile and return it as a TarInfo object.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.fromtarfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::tobuf}}({{c3::format}}={{c4::DEFAULT_FORMAT}}, {{c5::encoding}}={{c6::ENCODING}}, {{c7::errors}}='{{c8::surrogateescape}}')",
+      "Body": "Create a string buffer from a TarInfo object. For information on the arguments see the constructor of the TarFile class.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.tobuf"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::name}}",
+      "Body": "Name of the archive member.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::size}}",
+      "Body": "Size in bytes.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.size"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::mtime}}",
+      "Body": "Time of last modification.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.mtime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::mode}}",
+      "Body": "Permission bits.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.mode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::type}}",
+      "Body": "File type.  type is usually one of these constants: REGTYPE, AREGTYPE, LNKTYPE, SYMTYPE, DIRTYPE, FIFOTYPE, CONTTYPE, CHRTYPE, BLKTYPE, GNUTYPE_SPARSE.  To determine the type of a TarInfo object more conveniently, use the is*() methods below.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::linkname}}",
+      "Body": "Name of the target file name, which is only present in TarInfo objects of type LNKTYPE and SYMTYPE.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.linkname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::uid}}",
+      "Body": "User ID of the user who originally stored this member.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.uid"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::gid}}",
+      "Body": "Group ID of the user who originally stored this member.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.gid"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::uname}}",
+      "Body": "User name.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.uname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::gname}}",
+      "Body": "Group name.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.gname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::pax_headers}}",
+      "Body": "A dictionary containing key-value pairs of an associated pax extended header.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.pax_headers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::isfile}}()",
+      "Body": "Return True if the Tarinfo object is a regular file.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.isfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::isreg}}()",
+      "Body": "Same as isfile().",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.isreg"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::isdir}}()",
+      "Body": "Return True if it is a directory.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.isdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::issym}}()",
+      "Body": "Return True if it is a symbolic link.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.issym"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::islnk}}()",
+      "Body": "Return True if it is a hard link.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.islnk"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::ischr}}()",
+      "Body": "Return True if it is a character device.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.ischr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::isblk}}()",
+      "Body": "Return True if it is a block device.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.isblk"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::isfifo}}()",
+      "Body": "Return True if it is a FIFO.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.isfifo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::TarInfo}}.{{c2::isdev}}()",
+      "Body": "Return True if it is one of character device, block device or FIFO.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.isdev"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::l}} <{{c2::tarfile}}>",
+      "Body": "List files in a tarfile.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-l"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::list}} <{{c2::tarfile}}>",
+      "Body": "List files in a tarfile.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::c}} <{{c2::tarfile}}> <{{c3::source}}1> ... <{{c4::sourceN}}>",
+      "Body": "Create tarfile from source files.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-c"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::create}} <{{c2::tarfile}}> <{{c3::source}}1> ... <{{c4::sourceN}}>",
+      "Body": "Create tarfile from source files.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-create"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::e}} <{{c2::tarfile}}> [<{{c3::output_dir}}>]",
+      "Body": "Extract tarfile into the current directory if output_dir is not specified.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-e"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::extract}} <{{c2::tarfile}}> [<{{c3::output_dir}}>]",
+      "Body": "Extract tarfile into the current directory if output_dir is not specified.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-extract"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::t}} <{{c2::tarfile}}>",
+      "Body": "Test whether the tarfile is valid or not.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-t"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::test}} <{{c2::tarfile}}>",
+      "Body": "Test whether the tarfile is valid or not.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-test"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Data Compression and Archiving",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::v}}, --{{c2::verbose}}",
+      "Body": "Verbose output.",
+      "Link": "https://docs.python.org/3/library/tarfile.html#cmdoption-tarfile-v"
+    },
+    "modelName": "ClozePy"
+  }
+]

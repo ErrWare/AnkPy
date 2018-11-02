@@ -1,0 +1,2780 @@
+[
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::abiflags}}",
+      "Body": "On POSIX systems where Python was built with the standard configure script, this contains the ABI flags as specified by PEP 3149.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.abiflags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::argv}}",
+      "Body": "The list of command line arguments passed to a Python script. argv[0] is the script name (it is operating system dependent whether this is a full pathname or not).  If the command was executed using the -c command line option to the interpreter, argv[0] is set to the string '-c'.  If no script name was passed to the Python interpreter, argv[0] is the empty string.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.argv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::base_exec_prefix}}",
+      "Body": "Set during Python startup, before site.py is run, to the same value as exec_prefix. If not running in a virtual environment, the values will stay the same; if site.py finds that a virtual environment is in use, the values of prefix and exec_prefix will be changed to point to the virtual environment, whereas base_prefix and base_exec_prefix will remain pointing to the base Python installation (the one which the virtual environment was created from).",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.base_exec_prefix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::base_prefix}}",
+      "Body": "Set during Python startup, before site.py is run, to the same value as prefix. If not running in a virtual environment, the values will stay the same; if site.py finds that a virtual environment is in use, the values of prefix and exec_prefix will be changed to point to the virtual environment, whereas base_prefix and base_exec_prefix will remain pointing to the base Python installation (the one which the virtual environment was created from).",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.base_prefix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::byteorder}}",
+      "Body": "An indicator of the native byte order.  This will have the value 'big' on big-endian (most-significant byte first) platforms, and 'little' on little-endian (least-significant byte first) platforms.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.byteorder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::builtin_module_names}}",
+      "Body": "A tuple of strings giving the names of all modules that are compiled into this Python interpreter.  (This information is not available in any other way  modules.keys() only lists the imported modules.)",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.builtin_module_names"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::call_tracing}}({{c3::func}}, {{c4::args}})",
+      "Body": "Call func(*args), while tracing is enabled.  The tracing state is saved, and restored afterwards.  This is intended to be called from a debugger from a checkpoint, to recursively debug some other code.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.call_tracing"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::copyright}}",
+      "Body": "A string containing the copyright pertaining to the Python interpreter.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.copyright"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::_clear_type_cache}}()",
+      "Body": "Clear the internal type cache. The type cache is used to speed up attribute and method lookups. Use the function only to drop unnecessary references during reference leak debugging.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys._clear_type_cache"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::_current_frames}}()",
+      "Body": "Return a dictionary mapping each thread's identifier to the topmost stack frame currently active in that thread at the time the function is called. Note that functions in the traceback module can build the call stack given such a frame.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys._current_frames"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::breakpointhook}}()",
+      "Body": "This hook function is called by built-in breakpoint().  By default, it drops you into the pdb debugger, but it can be set to any other function so that you can choose which debugger gets used.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.breakpointhook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::_debugmallocstats}}()",
+      "Body": "Print low-level information to stderr about the state of CPython's memory allocator.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys._debugmallocstats"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::dllhandle}}",
+      "Body": "Integer specifying the handle of the Python DLL.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.dllhandle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::displayhook}}({{c3::value}})",
+      "Body": "If value is not None, this function prints repr(value) to sys.stdout, and saves value in builtins._. If repr(value) is not encodable to sys.stdout.encoding with sys.stdout.errors error handler (which is probably 'strict'), encode it to sys.stdout.encoding with 'backslashreplace' error handler.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.displayhook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::dont_write_bytecode}}",
+      "Body": "If this is true, Python won't try to write .pyc files on the import of source modules.  This value is initially set to True or False depending on the -B command line option and the PYTHONDONTWRITEBYTECODE environment variable, but you can set it yourself to control bytecode file generation.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.dont_write_bytecode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::excepthook}}({{c3::type}}, {{c4::value}}, {{c5::traceback}})",
+      "Body": "This function prints out a given traceback and exception to sys.stderr.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.excepthook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::__breakpointhook__}}",
+      "Body": "These objects contain the original values of breakpointhook, displayhook, and excepthook at the start of the program.  They are saved so that breakpointhook, displayhook and excepthook can be restored in case they happen to get replaced with broken or alternative objects.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.__breakpointhook__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::__displayhook__}}",
+      "Body": "These objects contain the original values of breakpointhook, displayhook, and excepthook at the start of the program.  They are saved so that breakpointhook, displayhook and excepthook can be restored in case they happen to get replaced with broken or alternative objects.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.__displayhook__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::__excepthook__}}",
+      "Body": "These objects contain the original values of breakpointhook, displayhook, and excepthook at the start of the program.  They are saved so that breakpointhook, displayhook and excepthook can be restored in case they happen to get replaced with broken or alternative objects.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.__excepthook__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::exc_info}}()",
+      "Body": "This function returns a tuple of three values that give information about the exception that is currently being handled.  The information returned is specific both to the current thread and to the current stack frame.  If the current stack frame is not handling an exception, the information is taken from the calling stack frame, or its caller, and so on until a stack frame is found that is handling an exception.  Here, handling an exception is defined as executing an except clause.  For any stack frame, only information about the exception being currently handled is accessible.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.exc_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::exec_prefix}}",
+      "Body": "A string giving the site-specific directory prefix where the platform-dependent Python files are installed; by default, this is also '/usr/local'.  This can be set at build time with the --exec-prefix argument to the configure script.  Specifically, all configuration files (e.g. the pyconfig.h header file) are installed in the directory exec_prefix/lib/pythonX.Y/config, and shared library modules are installed in exec_prefix/lib/pythonX.Y/lib-dynload, where X.Y is the version number of Python, for example 3.2.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.exec_prefix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::executable}}",
+      "Body": "A string giving the absolute path of the executable binary for the Python interpreter, on systems where this makes sense. If Python is unable to retrieve the real path to its executable, sys.executable will be an empty string or None.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.executable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::exit}}([{{c3::arg}}])",
+      "Body": "Exit from Python.  This is implemented by raising the SystemExit exception, so cleanup actions specified by finally clauses of try statements are honored, and it is possible to intercept the exit attempt at an outer level.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.exit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::flags}}",
+      "Body": "The struct sequence flags exposes the status of command line flags. The attributes are read only.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::float_info}}",
+      "Body": "A struct sequence holding information about the float type. It contains low level information about the precision and internal representation.  The values correspond to the various floating-point constants defined in the standard header file float.h for the 'C' programming language; see section 5.2.4.2.2 of the 1999 ISO/IEC C standard [C99], 'Characteristics of floating types', for details.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.float_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::float_repr_style}}",
+      "Body": "A string indicating how the repr() function behaves for floats.  If the string has value 'short' then for a finite float x, repr(x) aims to produce a short string with the property that float(repr(x)) == x.  This is the usual behaviour in Python 3.1 and later.  Otherwise, float_repr_style has value 'legacy' and repr(x) behaves in the same way as it did in versions of Python prior to 3.1.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.float_repr_style"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getallocatedblocks}}()",
+      "Body": "Return the number of memory blocks currently allocated by the interpreter, regardless of their size.  This function is mainly useful for tracking and debugging memory leaks.  Because of the interpreter's internal caches, the result can vary from call to call; you may have to call _clear_type_cache() and gc.collect() to get more predictable results.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getallocatedblocks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getandroidapilevel}}()",
+      "Body": "Return the build time API version of Android as an integer.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getandroidapilevel"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getcheckinterval}}()",
+      "Body": "Return the interpreter's check interval; see setcheckinterval().",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getcheckinterval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getdefaultencoding}}()",
+      "Body": "Return the name of the current default string encoding used by the Unicode implementation.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getdefaultencoding"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getdlopenflags}}()",
+      "Body": "Return the current value of the flags that are used for dlopen() calls.  Symbolic names for the flag values can be found in the os module (RTLD_xxx constants, e.g. os.RTLD_LAZY).",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getdlopenflags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getfilesystemencoding}}()",
+      "Body": "Return the name of the encoding used to convert between Unicode filenames and bytes filenames. For best compatibility, str should be used for filenames in all cases, although representing filenames as bytes is also supported. Functions accepting or returning filenames should support either str or bytes and internally convert to the system's preferred representation.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getfilesystemencoding"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getfilesystemencodeerrors}}()",
+      "Body": "Return the name of the error mode used to convert between Unicode filenames and bytes filenames. The encoding name is returned from getfilesystemencoding().",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getfilesystemencodeerrors"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getrefcount}}({{c3::object}})",
+      "Body": "Return the reference count of the object.  The count returned is generally one higher than you might expect, because it includes the (temporary) reference as an argument to getrefcount().",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getrefcount"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getrecursionlimit}}()",
+      "Body": "Return the current value of the recursion limit, the maximum depth of the Python interpreter stack.  This limit prevents infinite recursion from causing an overflow of the C stack and crashing Python.  It can be set by setrecursionlimit().",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getrecursionlimit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getsizeof}}({{c3::object}}[, {{c4::default}}])",
+      "Body": "Return the size of an object in bytes. The object can be any type of object. All built-in objects will return correct results, but this does not have to hold true for third-party extensions as it is implementation specific.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getsizeof"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getswitchinterval}}()",
+      "Body": "Return the interpreter's thread switch interval; see setswitchinterval().",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getswitchinterval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::_getframe}}([{{c3::depth}}])",
+      "Body": "Return a frame object from the call stack.  If optional integer depth is given, return the frame object that many calls below the top of the stack.  If that is deeper than the call stack, ValueError is raised.  The default for depth is zero, returning the frame at the top of the call stack.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys._getframe"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getprofile}}()",
+      "Body": "Get the profiler function as set by setprofile().",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getprofile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::gettrace}}()",
+      "Body": "Get the trace function as set by settrace().",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.gettrace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::getwindowsversion}}()",
+      "Body": "Return a named tuple describing the Windows version currently running.  The named elements are major, minor, build, platform, service_pack, service_pack_minor, service_pack_major, suite_mask, product_type and platform_version. service_pack contains a string, platform_version a 3-tuple and all other values are integers. The components can also be accessed by name, so sys.getwindowsversion()[0] is equivalent to sys.getwindowsversion().major. For compatibility with prior versions, only the first 5 elements are retrievable by indexing.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.getwindowsversion"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::get_asyncgen_hooks}}()",
+      "Body": "Returns an asyncgen_hooks object, which is similar to a namedtuple of the form (firstiter, finalizer), where firstiter and finalizer are expected to be either None or functions which take an asynchronous generator iterator as an argument, and are used to schedule finalization of an asynchronous generator by an event loop.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.get_asyncgen_hooks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::get_coroutine_origin_tracking_depth}}()",
+      "Body": "Get the current coroutine origin tracking depth, as set by func:set_coroutine_origin_tracking_depth.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.get_coroutine_origin_tracking_depth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::get_coroutine_wrapper}}()",
+      "Body": "Returns None, or a wrapper set by set_coroutine_wrapper().",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.get_coroutine_wrapper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::hash_info}}",
+      "Body": "A struct sequence giving parameters of the numeric hash implementation.  For more details about hashing of numeric types, see Hashing of numeric types.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.hash_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::hexversion}}",
+      "Body": "The version number encoded as a single integer.  This is guaranteed to increase with each version, including proper support for non-production releases.  For example, to test that the Python interpreter is at least version 1.5.2, use:",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.hexversion"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::implementation}}",
+      "Body": "An object containing information about the implementation of the currently running Python interpreter.  The following attributes are required to exist in all Python implementations.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.implementation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::int_info}}",
+      "Body": "A struct sequence that holds information about Python's internal representation of integers.  The attributes are read only.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.int_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::__interactivehook__}}",
+      "Body": "When this attribute exists, its value is automatically called (with no arguments) when the interpreter is launched in interactive mode.  This is done after the PYTHONSTARTUP file is read, so that you can set this hook there.  The site module sets this.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.__interactivehook__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::intern}}({{c3::string}})",
+      "Body": "Enter string in the table of interned strings and return the interned string  which is string itself or a copy. Interning strings is useful to gain a little performance on dictionary lookup  if the keys in a dictionary are interned, and the lookup key is interned, the key comparisons (after hashing) can be done by a pointer compare instead of a string compare.  Normally, the names used in Python programs are automatically interned, and the dictionaries used to hold module, class or instance attributes have interned keys.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.intern"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::is_finalizing}}()",
+      "Body": "Return True if the Python interpreter is shutting down, False otherwise.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.is_finalizing"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::last_type}}",
+      "Body": "These three variables are not always defined; they are set when an exception is not handled and the interpreter prints an error message and a stack traceback. Their intended use is to allow an interactive user to import a debugger module and engage in post-mortem debugging without having to re-execute the command that caused the error.  (Typical use is import pdb; pdb.pm() to enter the post-mortem debugger; see pdb module for more information.)",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.last_type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::last_value}}",
+      "Body": "These three variables are not always defined; they are set when an exception is not handled and the interpreter prints an error message and a stack traceback. Their intended use is to allow an interactive user to import a debugger module and engage in post-mortem debugging without having to re-execute the command that caused the error.  (Typical use is import pdb; pdb.pm() to enter the post-mortem debugger; see pdb module for more information.)",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.last_value"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::last_traceback}}",
+      "Body": "These three variables are not always defined; they are set when an exception is not handled and the interpreter prints an error message and a stack traceback. Their intended use is to allow an interactive user to import a debugger module and engage in post-mortem debugging without having to re-execute the command that caused the error.  (Typical use is import pdb; pdb.pm() to enter the post-mortem debugger; see pdb module for more information.)",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.last_traceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::maxsize}}",
+      "Body": "An integer giving the maximum value a variable of type Py_ssize_t can take.  It's usually 2**31 - 1 on a 32-bit platform and 2**63 - 1 on a 64-bit platform.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.maxsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::maxunicode}}",
+      "Body": "An integer giving the value of the largest Unicode code point, i.e. 1114111 (0x10FFFF in hexadecimal).",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.maxunicode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::meta_path}}",
+      "Body": "A list of meta path finder objects that have their find_spec() methods called to see if one of the objects can find the module to be imported. The find_spec() method is called with at least the absolute name of the module being imported. If the module to be imported is contained in a package, then the parent package's __path__ attribute is passed in as a second argument. The method returns a module spec, or None if the module cannot be found.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.meta_path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::modules}}",
+      "Body": "This is a dictionary that maps module names to modules which have already been loaded.  This can be manipulated to force reloading of modules and other tricks. However, replacing the dictionary will not necessarily work as expected and deleting essential items from the dictionary may cause Python to fail.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.modules"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::path}}",
+      "Body": "A list of strings that specifies the search path for modules. Initialized from the environment variable PYTHONPATH, plus an installation-dependent default.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::path_hooks}}",
+      "Body": "A list of callables that take a path argument to try to create a finder for the path. If a finder can be created, it is to be returned by the callable, else raise ImportError.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.path_hooks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::path_importer_cache}}",
+      "Body": "A dictionary acting as a cache for finder objects. The keys are paths that have been passed to sys.path_hooks and the values are the finders that are found. If a path is a valid file system path but no finder is found on sys.path_hooks then None is stored.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.path_importer_cache"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::platform}}",
+      "Body": "This string contains a platform identifier that can be used to append platform-specific components to sys.path, for instance.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.platform"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::prefix}}",
+      "Body": "A string giving the site-specific directory prefix where the platform independent Python files are installed; by default, this is the string '/usr/local'.  This can be set at build time with the --prefix argument to the configure script.  The main collection of Python library modules is installed in the directory prefix/lib/pythonX.Y while the platform independent header files (all except pyconfig.h) are stored in prefix/include/pythonX.Y, where X.Y is the version number of Python, for example 3.2.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.prefix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::ps}}1",
+      "Body": "Strings specifying the primary and secondary prompt of the interpreter.  These are only defined if the interpreter is in interactive mode.  Their initial values in this case are '>>> ' and '... '.  If a non-string object is assigned to either variable, its str() is re-evaluated each time the interpreter prepares to read a new interactive command; this can be used to implement a dynamic prompt.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.ps1"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::ps}}2",
+      "Body": "Strings specifying the primary and secondary prompt of the interpreter.  These are only defined if the interpreter is in interactive mode.  Their initial values in this case are '>>> ' and '... '.  If a non-string object is assigned to either variable, its str() is re-evaluated each time the interpreter prepares to read a new interactive command; this can be used to implement a dynamic prompt.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.ps2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::setcheckinterval}}({{c3::interval}})",
+      "Body": "Set the interpreter's check interval.  This integer value determines how often the interpreter checks for periodic things such as thread switches and signal handlers.  The default is 100, meaning the check is performed every 100 Python virtual instructions. Setting it to a larger value may increase performance for programs using threads.  Setting it to a value <= 0 checks every virtual instruction, maximizing responsiveness as well as overhead.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.setcheckinterval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::setdlopenflags}}({{c3::n}})",
+      "Body": "Set the flags used by the interpreter for dlopen() calls, such as when the interpreter loads extension modules.  Among other things, this will enable a lazy resolving of symbols when importing a module, if called as sys.setdlopenflags(0).  To share symbols across extension modules, call as sys.setdlopenflags(os.RTLD_GLOBAL).  Symbolic names for the flag values can be found in the os module (RTLD_xxx constants, e.g. os.RTLD_LAZY).",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.setdlopenflags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::setprofile}}({{c3::profilefunc}})",
+      "Body": "Set the system's profile function, which allows you to implement a Python source code profiler in Python.  See chapter The Python Profilers for more information on the Python profiler.  The system's profile function is called similarly to the system's trace function (see settrace()), but it is called with different events, for example it isn't called for each executed line of code (only on call and return, but the return event is reported even when an exception has been set). The function is thread-specific, but there is no way for the profiler to know about context switches between threads, so it does not make sense to use this in the presence of multiple threads. Also, its return value is not used, so it can simply return None.  Error in the profile function will cause itself unset.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.setprofile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::setrecursionlimit}}({{c3::limit}})",
+      "Body": "Set the maximum depth of the Python interpreter stack to limit.  This limit prevents infinite recursion from causing an overflow of the C stack and crashing Python.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.setrecursionlimit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::setswitchinterval}}({{c3::interval}})",
+      "Body": "Set the interpreter's thread switch interval (in seconds).  This floating-point value determines the ideal duration of the timeslices allocated to concurrently running Python threads.  Please note that the actual value can be higher, especially if long-running internal functions or methods are used.  Also, which thread becomes scheduled at the end of the interval is the operating system's decision.  The interpreter doesn't have its own scheduler.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.setswitchinterval"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::settrace}}({{c3::tracefunc}})",
+      "Body": "Set the system's trace function, which allows you to implement a Python source code debugger in Python.  The function is thread-specific; for a debugger to support multiple threads, it must be registered using settrace() for each thread being debugged.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.settrace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::set_asyncgen_hooks}}({{c3::firstiter}}, {{c4::finalizer}})",
+      "Body": "Accepts two optional keyword arguments which are callables that accept an asynchronous generator iterator as an argument. The firstiter callable will be called when an asynchronous generator is iterated for the first time. The finalizer will be called when an asynchronous generator is about to be garbage collected.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.set_asyncgen_hooks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::set_coroutine_origin_tracking_depth}}({{c3::depth}})",
+      "Body": "Allows enabling or disabling coroutine origin tracking. When enabled, the cr_origin attribute on coroutine objects will contain a tuple of (filename, line number, function name) tuples describing the traceback where the coroutine object was created, with the most recent call first. When disabled, cr_origin will be None.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.set_coroutine_origin_tracking_depth"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::set_coroutine_wrapper}}({{c3::wrapper}})",
+      "Body": "Allows intercepting creation of coroutine objects (only ones that are created by an async def function; generators decorated with types.coroutine() or asyncio.coroutine() will not be intercepted).",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.set_coroutine_wrapper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::_enablelegacywindowsfsencoding}}()",
+      "Body": "Changes the default filesystem encoding and errors mode to 'mbcs' and 'replace' respectively, for consistency with versions of Python prior to 3.6.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys._enablelegacywindowsfsencoding"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::stdin}}",
+      "Body": "File objects used by the interpreter for standard input, output and errors:",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.stdin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::stdout}}",
+      "Body": "File objects used by the interpreter for standard input, output and errors:",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.stdout"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::stderr}}",
+      "Body": "File objects used by the interpreter for standard input, output and errors:",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.stderr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::__stdin__}}",
+      "Body": "These objects contain the original values of stdin, stderr and stdout at the start of the program.  They are used during finalization, and could be useful to print to the actual standard stream no matter if the sys.std* object has been redirected.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.__stdin__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::__stdout__}}",
+      "Body": "These objects contain the original values of stdin, stderr and stdout at the start of the program.  They are used during finalization, and could be useful to print to the actual standard stream no matter if the sys.std* object has been redirected.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.__stdout__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::__stderr__}}",
+      "Body": "These objects contain the original values of stdin, stderr and stdout at the start of the program.  They are used during finalization, and could be useful to print to the actual standard stream no matter if the sys.std* object has been redirected.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.__stderr__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::thread_info}}",
+      "Body": "A struct sequence holding information about the thread implementation.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.thread_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::tracebacklimit}}",
+      "Body": "When this variable is set to an integer value, it determines the maximum number of levels of traceback information printed when an unhandled exception occurs. The default is 1000.  When set to 0 or less, all traceback information is suppressed and only the exception type and value are printed.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.tracebacklimit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::version}}",
+      "Body": "A string containing the version number of the Python interpreter plus additional information on the build number and compiler used.  This string is displayed when the interactive interpreter is started.  Do not extract version information out of it, rather, use version_info and the functions provided by the platform module.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::api_version}}",
+      "Body": "The C API version for this interpreter.  Programmers may find this useful when debugging version conflicts between Python and extension modules.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.api_version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::version_info}}",
+      "Body": "A tuple containing the five components of the version number: major, minor, micro, releaselevel, and serial.  All values except releaselevel are integers; the release level is 'alpha', 'beta', 'candidate', or 'final'.  The version_info value corresponding to the Python version 2.0 is (2, 0, 0, 'final', 0).  The components can also be accessed by name, so sys.version_info[0] is equivalent to sys.version_info.major and so on.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.version_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::warnoptions}}",
+      "Body": "This is an implementation detail of the warnings framework; do not modify this value.  Refer to the warnings module for more information on the warnings framework.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.warnoptions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::winver}}",
+      "Body": "The version number used to form registry keys on Windows platforms. This is stored as string resource 1000 in the Python DLL.  The value is normally the first three characters of version.  It is provided in the sys module for informational purposes; modifying this value has no effect on the registry keys used by Python.",
+      "Link": "https://docs.python.org/3/library/sys.html#sys.winver"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sys}}.{{c2::_xoptions}}",
+      "Body": "A dictionary of the various implementation-specific flags passed through the -X command-line option.  Option names are either mapped to their values, if given explicitly, or to True.  Example:",
+      "Link": "https://docs.python.org/3/library/sys.html#sys._xoptions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_config_vars}}(*args)",
+      "Body": "With no arguments, return a dictionary of all configuration variables relevant for the current platform.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_config_vars"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_config_var}}({{c3::name}})",
+      "Body": "Return the value of a single variable name. Equivalent to get_config_vars().get(name).",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_config_var"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_scheme_names}}()",
+      "Body": "Return a tuple containing all schemes currently supported in sysconfig.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_scheme_names"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_path_names}}()",
+      "Body": "Return a tuple containing all path names currently supported in sysconfig.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_path_names"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_path}}({{c3::name}}[, {{c4::scheme}}[, {{c5::vars}}[, {{c6::expand}}]]])",
+      "Body": "Return an installation path corresponding to the path name, from the install scheme named scheme.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_paths}}([{{c3::scheme}}[, {{c4::vars}}[, {{c5::expand}}]]])",
+      "Body": "Return a dictionary containing all installation paths corresponding to an installation scheme. See get_path() for more information.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_paths"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_python_version}}()",
+      "Body": "Return the MAJOR.MINOR Python version number as a string.  Similar to '%d.%d' % sys.version_info[:2].",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_python_version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_platform}}()",
+      "Body": "Return a string that identifies the current platform.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_platform"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::is_python_build}}()",
+      "Body": "Return True if the running Python interpreter was built from source and is being run from its built location, and not from a location resulting from e.g. running make install or installing via a binary installer.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.is_python_build"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::parse_config_h}}({{c3::fp}}[, {{c4::vars}}])",
+      "Body": "Parse a config.h-style file.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.parse_config_h"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_config_h_filename}}()",
+      "Body": "Return the path of pyconfig.h.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_config_h_filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::sysconfig}}.{{c2::get_makefile_filename}}()",
+      "Body": "Return the path of Makefile.",
+      "Link": "https://docs.python.org/3/library/sysconfig.html#sysconfig.get_makefile_filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::warnings}}.{{c2::warn}}({{c3::message}}, {{c4::category}}={{c5::None}}, {{c6::stacklevel}}=1, {{c7::source}}={{c8::None}})",
+      "Body": "Issue a warning, or maybe ignore it or raise an exception.  The category argument, if given, must be a warning category class (see above); it defaults to UserWarning.  Alternatively message can be a Warning instance, in which case category will be ignored and message.__class__ will be used. In this case the message text will be str(message). This function raises an exception if the particular warning issued is changed into an error by the warnings filter see above.  The stacklevel argument can be used by wrapper functions written in Python, like this:",
+      "Link": "https://docs.python.org/3/library/warnings.html#warnings.warn"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::warnings}}.{{c2::warn_explicit}}({{c3::message}}, {{c4::category}}, {{c5::filename}}, {{c6::lineno}}, {{c7::module}}={{c8::None}}, {{c9::registry}}={{c10::None}}, {{c11::module_globals}}={{c12::None}}, {{c13::source}}={{c14::None}})",
+      "Body": "This is a low-level interface to the functionality of warn(), passing in explicitly the message, category, filename and line number, and optionally the module name and the registry (which should be the __warningregistry__ dictionary of the module).  The module name defaults to the filename with .py stripped; if no registry is passed, the warning is never suppressed. message must be a string and category a subclass of Warning or message may be a Warning instance, in which case category will be ignored.",
+      "Link": "https://docs.python.org/3/library/warnings.html#warnings.warn_explicit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::warnings}}.{{c2::showwarning}}({{c3::message}}, {{c4::category}}, {{c5::filename}}, {{c6::lineno}}, {{c7::file}}={{c8::None}}, {{c9::line}}={{c10::None}})",
+      "Body": "Write a warning to a file.  The default implementation calls formatwarning(message, category, filename, lineno, line) and writes the resulting string to file, which defaults to sys.stderr.  You may replace this function with any callable by assigning to warnings.showwarning. line is a line of source code to be included in the warning message; if line is not supplied, showwarning() will try to read the line specified by filename and lineno.",
+      "Link": "https://docs.python.org/3/library/warnings.html#warnings.showwarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::warnings}}.{{c2::formatwarning}}({{c3::message}}, {{c4::category}}, {{c5::filename}}, {{c6::lineno}}, {{c7::line}}={{c8::None}})",
+      "Body": "Format a warning the standard way.  This returns a string which may contain embedded newlines and ends in a newline.  line is a line of source code to be included in the warning message; if line is not supplied, formatwarning() will try to read the line specified by filename and lineno.",
+      "Link": "https://docs.python.org/3/library/warnings.html#warnings.formatwarning"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::warnings}}.{{c2::filterwarnings}}({{c3::action}}, {{c4::message}}='', {{c5::category}}={{c6::Warning}}, {{c7::module}}='', {{c8::lineno}}=0, {{c9::append}}={{c10::False}})",
+      "Body": "Insert an entry into the list of warnings filter specifications.  The entry is inserted at the front by default; if append is true, it is inserted at the end.  This checks the types of the arguments, compiles the message and module regular expressions, and inserts them as a tuple in the list of warnings filters.  Entries closer to the front of the list override entries later in the list, if both match a particular warning.  Omitted arguments default to a value that matches everything.",
+      "Link": "https://docs.python.org/3/library/warnings.html#warnings.filterwarnings"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::warnings}}.{{c2::simplefilter}}({{c3::action}}, {{c4::category}}={{c5::Warning}}, {{c6::lineno}}=0, {{c7::append}}={{c8::False}})",
+      "Body": "Insert a simple entry into the list of warnings filter specifications.  The meaning of the function parameters is as for filterwarnings(), but regular expressions are not needed as the filter inserted always matches any message in any module as long as the category and line number match.",
+      "Link": "https://docs.python.org/3/library/warnings.html#warnings.simplefilter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::warnings}}.{{c2::resetwarnings}}()",
+      "Body": "Reset the warnings filter.  This discards the effect of all previous calls to filterwarnings(), including that of the -W command line options and calls to simplefilter().",
+      "Link": "https://docs.python.org/3/library/warnings.html#warnings.resetwarnings"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::warnings}}.{{c3::catch_warnings}}(*, {{c4::record}}={{c5::False}}, {{c6::module}}={{c7::None}})",
+      "Body": "A context manager that copies and, upon exit, restores the warnings filter and the showwarning() function. If the record argument is False (the default) the context manager returns None on entry. If record is True, a list is returned that is progressively populated with objects as seen by a custom showwarning() function (which also suppresses output to sys.stdout). Each object in the list has attributes with the same names as the arguments to showwarning().",
+      "Link": "https://docs.python.org/3/library/warnings.html#warnings.catch_warnings"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::dataclasses}}.{{c2::dataclass}}(*, {{c3::init}}={{c4::True}}, {{c5::repr}}={{c6::True}}, {{c7::eq}}={{c8::True}}, {{c9::order}}={{c10::False}}, {{c11::unsafe_hash}}={{c12::False}}, {{c13::frozen}}={{c14::False}})",
+      "Body": "This function is a decorator that is used to add generated special methods to classes, as described below.",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.dataclass"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dataclasses}}.{{c2::field}}(*, {{c3::default}}={{c4::MISSING}}, {{c5::default_factory}}={{c6::MISSING}}, {{c7::repr}}={{c8::True}}, {{c9::hash}}={{c10::None}}, {{c11::init}}={{c12::True}}, {{c13::compare}}={{c14::True}}, {{c15::metadata}}={{c16::None}})",
+      "Body": "For common and simple use cases, no other functionality is required.  There are, however, some dataclass features that require additional per-field information.  To satisfy this need for additional information, you can replace the default field value with a call to the provided field() function.  For example:",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.field"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::dataclasses}}.{{c3::Field}}",
+      "Body": "Field objects describe each defined field. These objects are created internally, and are returned by the fields() module-level method (see below).  Users should never instantiate a Field object directly.  Its documented attributes are:",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.Field"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dataclasses}}.{{c2::fields}}({{c3::class_or_instance}})",
+      "Body": "Returns a tuple of Field objects that define the fields for this dataclass.  Accepts either a dataclass, or an instance of a dataclass. Raises TypeError if not passed a dataclass or instance of one. Does not return pseudo-fields which are ClassVar or InitVar.",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.fields"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dataclasses}}.{{c2::asdict}}({{c3::instance}}, *, {{c4::dict_factory}}={{c5::dict}})",
+      "Body": "Converts the dataclass instance to a dict (by using the factory function dict_factory).  Each dataclass is converted to a dict of its fields, as name: value pairs.  dataclasses, dicts, lists, and tuples are recursed into.  For example:",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.asdict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dataclasses}}.{{c2::astuple}}({{c3::instance}}, *, {{c4::tuple_factory}}={{c5::tuple}})",
+      "Body": "Converts the dataclass instance to a tuple (by using the factory function tuple_factory).  Each dataclass is converted to a tuple of its field values.  dataclasses, dicts, lists, and tuples are recursed into.",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.astuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dataclasses}}.{{c2::make_dataclass}}({{c3::cls_name}}, {{c4::fields}}, *, {{c5::bases}}=(), {{c6::namespace}}={{c7::None}}, {{c8::init}}={{c9::True}}, {{c10::repr}}={{c11::True}}, {{c12::eq}}={{c13::True}}, {{c14::order}}={{c15::False}}, {{c16::unsafe_hash}}={{c17::False}}, {{c18::frozen}}={{c19::False}})",
+      "Body": "Creates a new dataclass with name cls_name, fields as defined in fields, base classes as given in bases, and initialized with a namespace as given in namespace.  fields is an iterable whose elements are each either name, (name, type), or (name, type, Field).  If just name is supplied, typing.Any is used for type.  The values of init, repr, eq, order, unsafe_hash, and frozen have the same meaning as they do in dataclass().",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.make_dataclass"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dataclasses}}.{{c2::replace}}({{c3::instance}}, **changes)",
+      "Body": "Creates a new object of the same type of instance, replacing fields with values from changes.  If instance is not a Data Class, raises TypeError.  If values in changes do not specify fields, raises TypeError.",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dataclasses}}.{{c2::is_dataclass}}({{c3::class_or_instance}})",
+      "Body": "Returns True if its parameter is a dataclass or an instance of one, otherwise returns False.",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.is_dataclass"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["exception", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::dataclasses}}.{{c3::FrozenInstanceError}}",
+      "Body": "Raised when an implicitly defined __setattr__() or __delattr__() is called on a dataclass which was defined with frozen=True.",
+      "Link": "https://docs.python.org/3/library/dataclasses.html#dataclasses.FrozenInstanceError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::contextlib}}.{{c3::AbstractContextManager}}",
+      "Body": "An abstract base class for classes that implement object.__enter__() and object.__exit__(). A default implementation for object.__enter__() is provided which returns self while object.__exit__() is an abstract method which by default returns None. See also the definition of Context Manager Types.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.AbstractContextManager"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::contextlib}}.{{c3::AbstractAsyncContextManager}}",
+      "Body": "An abstract base class for classes that implement object.__aenter__() and object.__aexit__(). A default implementation for object.__aenter__() is provided which returns self while object.__aexit__() is an abstract method which by default returns None. See also the definition of Asynchronous Context Managers.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.AbstractAsyncContextManager"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::contextlib}}.{{c2::contextmanager}}",
+      "Body": "This function is a decorator that can be used to define a factory function for with statement context managers, without needing to create a class or separate __enter__() and __exit__() methods.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::contextlib}}.{{c2::asynccontextmanager}}",
+      "Body": "Similar to contextmanager(), but creates an asynchronous context manager.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.asynccontextmanager"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::closing}}({{c3::thing}})",
+      "Body": "Return a context manager that closes thing upon completion of the block.  This is basically equivalent to:",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.closing"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::nullcontext}}({{c3::enter_result}}={{c4::None}})",
+      "Body": "Return a context manager that returns enter_result from __enter__, but otherwise does nothing. It is intended to be used as a stand-in for an optional context manager, for example:",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.nullcontext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::suppress}}(*exceptions)",
+      "Body": "Return a context manager that suppresses any of the specified exceptions if they occur in the body of a with statement and then resumes execution with the first statement following the end of the with statement.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.suppress"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::redirect_stdout}}({{c3::new_target}})",
+      "Body": "Context manager for temporarily redirecting sys.stdout to another file or file-like object.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.redirect_stdout"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::redirect_stderr}}({{c3::new_target}})",
+      "Body": "Similar to redirect_stdout() but redirecting sys.stderr to another file or file-like object.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.redirect_stderr"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::contextlib}}.{{c3::ContextDecorator}}",
+      "Body": "A base class that enables a context manager to also be used as a decorator.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.ContextDecorator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::contextlib}}.{{c3::ExitStack}}",
+      "Body": "A context manager that is designed to make it easy to programmatically combine other context managers and cleanup functions, especially those that are optional or otherwise driven by input data.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::ExitStack}}.{{c3::enter_context}}({{c4::cm}})",
+      "Body": "Enters a new context manager and adds its __exit__() method to the callback stack. The return value is the result of the context manager's own __enter__() method.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack.enter_context"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::ExitStack}}.{{c3::push}}({{c4::exit}})",
+      "Body": "Adds a context manager's __exit__() method to the callback stack.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack.push"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::ExitStack}}.{{c3::callback}}({{c4::callback}}, *args, **kwds)",
+      "Body": "Accepts an arbitrary callback function and arguments and adds it to the callback stack.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack.callback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::ExitStack}}.{{c3::pop_all}}()",
+      "Body": "Transfers the callback stack to a fresh ExitStack instance and returns it. No callbacks are invoked by this operation - instead, they will now be invoked when the new stack is closed (either explicitly or implicitly at the end of a with statement).",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack.pop_all"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::ExitStack}}.{{c3::close}}()",
+      "Body": "Immediately unwinds the callback stack, invoking callbacks in the reverse order of registration. For any context managers and exit callbacks registered, the arguments passed in will indicate that no exception occurred.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.ExitStack.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::contextlib}}.{{c3::AsyncExitStack}}",
+      "Body": "An asynchronous context manager, similar to ExitStack, that supports combining both synchronous and asynchronous context managers, as well as having coroutines for cleanup logic.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.AsyncExitStack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::AsyncExitStack}}.{{c3::enter_async_context}}({{c4::cm}})",
+      "Body": "Similar to enter_context() but expects an asynchronous context manager.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.AsyncExitStack.enter_async_context"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::AsyncExitStack}}.{{c3::push_async_exit}}({{c4::exit}})",
+      "Body": "Similar to push() but expects either an asynchronous context manager or a coroutine function.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.AsyncExitStack.push_async_exit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::AsyncExitStack}}.{{c3::push_async_callback}}({{c4::callback}}, *args, **kwds)",
+      "Body": "Similar to callback() but expects a coroutine function.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.AsyncExitStack.push_async_callback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextlib}}.{{c2::AsyncExitStack}}.{{c3::aclose}}()",
+      "Body": "Similar to close() but properly handles awaitables.",
+      "Link": "https://docs.python.org/3/library/contextlib.html#contextlib.AsyncExitStack.aclose"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::abc}}.{{c3::ABC}}",
+      "Body": "A helper class that has ABCMeta as its metaclass.  With this class, an abstract base class can be created by simply deriving from ABC avoiding sometimes confusing metaclass usage, for example:",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.ABC"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::abc}}.{{c3::ABCMeta}}",
+      "Body": "Metaclass for defining Abstract Base Classes (ABCs).",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.ABCMeta"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::abc}}.{{c2::ABCMeta}}.{{c3::register}}({{c4::subclass}})",
+      "Body": "Register subclass as a virtual subclass of this ABC. For example:",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.ABCMeta.register"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::abc}}.{{c2::ABCMeta}}.{{c3::__subclasshook__}}({{c4::subclass}})",
+      "Body": "(Must be defined as a class method.)",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.ABCMeta.__subclasshook__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::abc}}.{{c2::abstractmethod}}",
+      "Body": "A decorator indicating abstract methods.",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.abstractmethod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::abc}}.{{c2::abstractclassmethod}}",
+      "Body": "New in version 3.2.",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.abstractclassmethod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::abc}}.{{c2::abstractstaticmethod}}",
+      "Body": "New in version 3.2.",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.abstractstaticmethod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "@{{c1::abc}}.{{c2::abstractproperty}}",
+      "Body": "Deprecated since version 3.3: It is now possible to use property, property.getter(), property.setter() and property.deleter() with abstractmethod(), making this decorator redundant.",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.abstractproperty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::abc}}.{{c2::get_cache_token}}()",
+      "Body": "Returns the current abstract base class cache token.",
+      "Link": "https://docs.python.org/3/library/abc.html#abc.get_cache_token"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::atexit}}.{{c2::register}}({{c3::func}}, *args, **kwargs)",
+      "Body": "Register func as a function to be executed at termination.  Any optional arguments that are to be passed to func must be passed as arguments to register().  It is possible to register the same function and arguments more than once.",
+      "Link": "https://docs.python.org/3/library/atexit.html#atexit.register"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::atexit}}.{{c2::unregister}}({{c3::func}})",
+      "Body": "Remove func from the list of functions to be run at interpreter shutdown.  After calling unregister(), func is guaranteed not to be called when the interpreter shuts down, even if it was registered more than once.  unregister() silently does nothing if func was not previously registered.",
+      "Link": "https://docs.python.org/3/library/atexit.html#atexit.unregister"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::print_tb}}({{c3::tb}}, {{c4::limit}}={{c5::None}}, {{c6::file}}={{c7::None}})",
+      "Body": "Print up to limit stack trace entries from traceback object tb (starting from the caller's frame) if limit is positive.  Otherwise, print the last abs(limit) entries.  If limit is omitted or None, all entries are printed.  If file is omitted or None, the output goes to sys.stderr; otherwise it should be an open file or file-like object to receive the output.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.print_tb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::print_exception}}({{c3::etype}}, {{c4::value}}, {{c5::tb}}, {{c6::limit}}={{c7::None}}, {{c8::file}}={{c9::None}}, {{c10::chain}}={{c11::True}})",
+      "Body": "Print exception information and stack trace entries from traceback object tb to file. This differs from print_tb() in the following ways:",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.print_exception"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::print_exc}}({{c3::limit}}={{c4::None}}, {{c5::file}}={{c6::None}}, {{c7::chain}}={{c8::True}})",
+      "Body": "This is a shorthand for print_exception(*sys.exc_info(), limit, file, chain).",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.print_exc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::print_last}}({{c3::limit}}={{c4::None}}, {{c5::file}}={{c6::None}}, {{c7::chain}}={{c8::True}})",
+      "Body": "This is a shorthand for print_exception(sys.last_type, sys.last_value, sys.last_traceback, limit, file, chain).  In general it will work only after an exception has reached an interactive prompt (see sys.last_type).",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.print_last"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::print_stack}}({{c3::f}}={{c4::None}}, {{c5::limit}}={{c6::None}}, {{c7::file}}={{c8::None}})",
+      "Body": "Print up to limit stack trace entries (starting from the invocation point) if limit is positive.  Otherwise, print the last abs(limit) entries.  If limit is omitted or None, all entries are printed. The optional f argument can be used to specify an alternate stack frame to start.  The optional file argument has the same meaning as for print_tb().",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.print_stack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::extract_tb}}({{c3::tb}}, {{c4::limit}}={{c5::None}})",
+      "Body": "Return a StackSummary object representing a list of pre-processed stack trace entries extracted from the traceback object tb.  It is useful for alternate formatting of stack traces.  The optional limit argument has the same meaning as for print_tb().  A pre-processed stack trace entry is a FrameSummary object containing attributes filename, lineno, name, and line representing the information that is usually printed for a stack trace.  The line is a string with leading and trailing whitespace stripped; if the source is not available it is None.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.extract_tb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::extract_stack}}({{c3::f}}={{c4::None}}, {{c5::limit}}={{c6::None}})",
+      "Body": "Extract the raw traceback from the current stack frame.  The return value has the same format as for extract_tb().  The optional f and limit arguments have the same meaning as for print_stack().",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.extract_stack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::format_list}}({{c3::extracted_list}})",
+      "Body": "Given a list of tuples or FrameSummary objects as returned by extract_tb() or extract_stack(), return a list of strings ready for printing.  Each string in the resulting list corresponds to the item with the same index in the argument list.  Each string ends in a newline; the strings may contain internal newlines as well, for those items whose source text line is not None.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.format_list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::format_exception_only}}({{c3::etype}}, {{c4::value}})",
+      "Body": "Format the exception part of a traceback.  The arguments are the exception type and value such as given by sys.last_type and sys.last_value. The return value is a list of strings, each ending in a newline.  Normally, the list contains a single string; however, for SyntaxError exceptions, it contains several lines that (when printed) display detailed information about where the syntax error occurred.  The message indicating which exception occurred is the always last string in the list.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.format_exception_only"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::format_exception}}({{c3::etype}}, {{c4::value}}, {{c5::tb}}, {{c6::limit}}={{c7::None}}, {{c8::chain}}={{c9::True}})",
+      "Body": "Format a stack trace and the exception information.  The arguments  have the same meaning as the corresponding arguments to print_exception().  The return value is a list of strings, each ending in a newline and some containing internal newlines.  When these lines are concatenated and printed, exactly the same text is printed as does print_exception().",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.format_exception"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::format_exc}}({{c3::limit}}={{c4::None}}, {{c5::chain}}={{c6::True}})",
+      "Body": "This is like print_exc(limit) but returns a string instead of printing to a file.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.format_exc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::format_tb}}({{c3::tb}}, {{c4::limit}}={{c5::None}})",
+      "Body": "A shorthand for format_list(extract_tb(tb, limit)).",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.format_tb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::format_stack}}({{c3::f}}={{c4::None}}, {{c5::limit}}={{c6::None}})",
+      "Body": "A shorthand for format_list(extract_stack(f, limit)).",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.format_stack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::clear_frames}}({{c3::tb}})",
+      "Body": "Clears the local variables of all the stack frames in a traceback tb by calling the clear() method of each frame object.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.clear_frames"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::walk_stack}}({{c3::f}})",
+      "Body": "Walk a stack following f.f_back from the given frame, yielding the frame and line number for each frame. If f is None, the current stack is used. This helper is used with StackSummary.extract().",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.walk_stack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::walk_tb}}({{c3::tb}})",
+      "Body": "Walk a traceback following tb_next yielding the frame and line number for each frame. This helper is used with StackSummary.extract().",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.walk_tb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::traceback}}.{{c3::TracebackException}}({{c4::exc_type}}, {{c5::exc_value}}, {{c6::exc_traceback}}, *, {{c7::limit}}={{c8::None}}, {{c9::lookup_lines}}={{c10::True}}, {{c11::capture_locals}}={{c12::False}})",
+      "Body": "Capture an exception for later rendering. limit, lookup_lines and capture_locals are as for the StackSummary class.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::__cause__}}",
+      "Body": "A TracebackException of the original __cause__.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.__cause__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::__context__}}",
+      "Body": "A TracebackException of the original __context__.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.__context__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::__suppress_context__}}",
+      "Body": "The __suppress_context__ value from the original exception.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.__suppress_context__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::stack}}",
+      "Body": "A StackSummary representing the traceback.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.stack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::exc_type}}",
+      "Body": "The class of the original traceback.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.exc_type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::filename}}",
+      "Body": "For syntax errors - the file name where the error occurred.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::lineno}}",
+      "Body": "For syntax errors - the line number where the error occurred.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::text}}",
+      "Body": "For syntax errors - the text where the error occurred.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.text"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::offset}}",
+      "Body": "For syntax errors - the offset into the text where the error occurred.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.offset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::msg}}",
+      "Body": "For syntax errors - the compiler error message.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.msg"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Runtime Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::classmethod}} {{c4::from_exception}}({{c5::exc}}, *, {{c6::limit}}={{c7::None}}, {{c8::lookup_lines}}={{c9::True}}, {{c10::capture_locals}}={{c11::False}})",
+      "Body": "Capture an exception for later rendering. limit, lookup_lines and capture_locals are as for the StackSummary class.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.from_exception"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::format}}(*, {{c4::chain}}={{c5::True}})",
+      "Body": "Format the exception.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::TracebackException}}.{{c3::format_exception_only}}()",
+      "Body": "Format the exception part of the traceback.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.TracebackException.format_exception_only"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::traceback}}.{{c3::StackSummary}}",
+      "Body": "Construct a StackSummary object from a frame generator (such as is returned by walk_stack() or walk_tb()).",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.StackSummary"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Runtime Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::StackSummary}}.{{c3::classmethod}} {{c4::extract}}({{c5::frame_gen}}, *, {{c6::limit}}={{c7::None}}, {{c8::lookup_lines}}={{c9::True}}, {{c10::capture_locals}}={{c11::False}})",
+      "Body": "Construct a StackSummary object from a frame generator (such as is returned by walk_stack() or walk_tb()).",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.StackSummary.extract"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Runtime Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::StackSummary}}.{{c3::classmethod}} {{c4::from_list}}({{c5::a_list}})",
+      "Body": "Construct a StackSummary object from a supplied list of FrameSummary objects or old-style list of tuples.  Each tuple should be a 4-tuple with filename, lineno, name, line as the elements.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.StackSummary.from_list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::traceback}}.{{c2::StackSummary}}.{{c3::format}}()",
+      "Body": "Returns a list of strings ready for printing.  Each string in the resulting list corresponds to a single frame from the stack. Each string ends in a newline; the strings may contain internal newlines as well, for those items with source text lines.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.StackSummary.format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::traceback}}.{{c3::FrameSummary}}({{c4::filename}}, {{c5::lineno}}, {{c6::name}}, {{c7::lookup_line}}={{c8::True}}, {{c9::locals}}={{c10::None}}, {{c11::line}}={{c12::None}})",
+      "Body": "Represent a single frame in the traceback or stack that is being formatted or printed. It may optionally have a stringified version of the frames locals included in it. If lookup_line is False, the source code is not looked up until the FrameSummary has the line attribute accessed (which also happens when casting it to a tuple). line may be directly provided, and will prevent line lookups happening at all. locals is an optional local variable dictionary, and if supplied the variable representations are stored in the summary for later display.",
+      "Link": "https://docs.python.org/3/library/traceback.html#traceback.FrameSummary"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::enable}}()",
+      "Body": "Enable automatic garbage collection.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.enable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::disable}}()",
+      "Body": "Disable automatic garbage collection.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.disable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::isenabled}}()",
+      "Body": "Returns true if automatic collection is enabled.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.isenabled"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::collect}}({{c3::generation}}=2)",
+      "Body": "With no arguments, run a full collection.  The optional argument generation may be an integer specifying which generation to collect (from 0 to 2).  A ValueError is raised if the generation number  is invalid. The number of unreachable objects found is returned.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.collect"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::set_debug}}({{c3::flags}})",
+      "Body": "Set the garbage collection debugging flags. Debugging information will be written to sys.stderr.  See below for a list of debugging flags which can be combined using bit operations to control debugging.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.set_debug"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::get_debug}}()",
+      "Body": "Return the debugging flags currently set.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.get_debug"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::get_objects}}()",
+      "Body": "Returns a list of all objects tracked by the collector, excluding the list returned.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.get_objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::get_stats}}()",
+      "Body": "Return a list of three per-generation dictionaries containing collection statistics since interpreter start.  The number of keys may change in the future, but currently each dictionary will contain the following items:",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.get_stats"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::set_threshold}}({{c3::threshold}}0[, {{c4::threshold}}1[, {{c5::threshold}}2]])",
+      "Body": "Set the garbage collection thresholds (the collection frequency). Setting threshold0 to zero disables collection.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.set_threshold"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::get_count}}()",
+      "Body": "Return the current collection  counts as a tuple of (count0, count1, count2).",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.get_count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::get_threshold}}()",
+      "Body": "Return the current collection thresholds as a tuple of (threshold0, threshold1, threshold2).",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.get_threshold"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::get_referrers}}(*objs)",
+      "Body": "Return the list of objects that directly refer to any of objs. This function will only locate those containers which support garbage collection; extension types which do refer to other objects but do not support garbage collection will not be found.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.get_referrers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::get_referents}}(*objs)",
+      "Body": "Return a list of objects directly referred to by any of the arguments. The referents returned are those objects visited by the arguments' C-level tp_traverse methods (if any), and may not be all objects actually directly reachable.  tp_traverse methods are supported only by objects that support garbage collection, and are only required to visit objects that may be involved in a cycle.  So, for example, if an integer is directly reachable from an argument, that integer object may or may not appear in the result list.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.get_referents"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::is_tracked}}({{c3::obj}})",
+      "Body": "Returns True if the object is currently tracked by the garbage collector, False otherwise.  As a general rule, instances of atomic types aren't tracked and instances of non-atomic types (containers, user-defined objects) are.  However, some type-specific optimizations can be present in order to suppress the garbage collector footprint of simple instances (e.g. dicts containing only atomic keys and values):",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.is_tracked"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::freeze}}()",
+      "Body": "Freeze all the objects tracked by gc - move them to a permanent generation and ignore all the future collections. This can be used before a POSIX fork() call to make the gc copy-on-write friendly or to speed up collection. Also collection before a POSIX fork() call may free pages for future allocation which can cause copy-on-write too so it's advised to disable gc in master process and freeze before fork and enable gc in child process.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.freeze"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::unfreeze}}()",
+      "Body": "Unfreeze the objects in the permanent generation, put them back into the oldest generation.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.unfreeze"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::get_freeze_count}}()",
+      "Body": "Return the number of objects in the permanent generation.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.get_freeze_count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::garbage}}",
+      "Body": "A list of objects which the collector found to be unreachable but could not be freed (uncollectable objects).  Starting with Python 3.4, this list should be empty most of the time, except when using instances of C extension types with a non-NULL tp_del slot.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.garbage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::callbacks}}",
+      "Body": "A list of callbacks that will be invoked by the garbage collector before and after collection.  The callbacks will be called with two arguments, phase and info.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.callbacks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::DEBUG_STATS}}",
+      "Body": "Print statistics during collection.  This information can be useful when tuning the collection frequency.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.DEBUG_STATS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::DEBUG_COLLECTABLE}}",
+      "Body": "Print information on collectable objects found.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.DEBUG_COLLECTABLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::DEBUG_UNCOLLECTABLE}}",
+      "Body": "Print information of uncollectable objects found (objects which are not reachable but cannot be freed by the collector).  These objects will be added to the garbage list.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.DEBUG_UNCOLLECTABLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::DEBUG_SAVEALL}}",
+      "Body": "When set, all unreachable objects found will be appended to garbage rather than being freed.  This can be useful for debugging a leaking program.",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.DEBUG_SAVEALL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::gc}}.{{c2::DEBUG_LEAK}}",
+      "Body": "The debugging flags necessary for the collector to print information about a leaking program (equal to DEBUG_COLLECTABLE | DEBUG_UNCOLLECTABLE | DEBUG_SAVEALL).",
+      "Link": "https://docs.python.org/3/library/gc.html#gc.DEBUG_LEAK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getmembers}}({{c3::object}}[, {{c4::predicate}}])",
+      "Body": "Return all the members of an object in a list of (name, value) pairs sorted by name.  If the optional predicate argument is supplied, only members for which the predicate returns a true value are included.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getmembers"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getmodulename}}({{c3::path}})",
+      "Body": "Return the name of the module named by the file path, without including the names of enclosing packages. The file extension is checked against all of the entries in importlib.machinery.all_suffixes(). If it matches, the final path component is returned with the extension removed. Otherwise, None is returned.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getmodulename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::ismodule}}({{c3::object}})",
+      "Body": "Return true if the object is a module.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.ismodule"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isclass}}({{c3::object}})",
+      "Body": "Return true if the object is a class, whether built-in or created in Python code.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isclass"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::ismethod}}({{c3::object}})",
+      "Body": "Return true if the object is a bound method written in Python.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.ismethod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isfunction}}({{c3::object}})",
+      "Body": "Return true if the object is a Python function, which includes functions created by a lambda expression.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isfunction"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isgeneratorfunction}}({{c3::object}})",
+      "Body": "Return true if the object is a Python generator function.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isgeneratorfunction"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isgenerator}}({{c3::object}})",
+      "Body": "Return true if the object is a generator.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isgenerator"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::iscoroutinefunction}}({{c3::object}})",
+      "Body": "Return true if the object is a coroutine function (a function defined with an async def syntax).",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.iscoroutinefunction"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::iscoroutine}}({{c3::object}})",
+      "Body": "Return true if the object is a coroutine created by an async def function.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.iscoroutine"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isawaitable}}({{c3::object}})",
+      "Body": "Return true if the object can be used in await expression.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isawaitable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isasyncgenfunction}}({{c3::object}})",
+      "Body": "Return true if the object is an asynchronous generator function, for example:",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isasyncgenfunction"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isasyncgen}}({{c3::object}})",
+      "Body": "Return true if the object is an asynchronous generator iterator created by an asynchronous generator function.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isasyncgen"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::istraceback}}({{c3::object}})",
+      "Body": "Return true if the object is a traceback.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.istraceback"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isframe}}({{c3::object}})",
+      "Body": "Return true if the object is a frame.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isframe"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::iscode}}({{c3::object}})",
+      "Body": "Return true if the object is a code.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.iscode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isbuiltin}}({{c3::object}})",
+      "Body": "Return true if the object is a built-in function or a bound built-in method.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isbuiltin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isroutine}}({{c3::object}})",
+      "Body": "Return true if the object is a user-defined or built-in function or method.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isroutine"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isabstract}}({{c3::object}})",
+      "Body": "Return true if the object is an abstract base class.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isabstract"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::ismethoddescriptor}}({{c3::object}})",
+      "Body": "Return true if the object is a method descriptor, but not if ismethod(), isclass(), isfunction() or isbuiltin() are true.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.ismethoddescriptor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isdatadescriptor}}({{c3::object}})",
+      "Body": "Return true if the object is a data descriptor.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isdatadescriptor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::isgetsetdescriptor}}({{c3::object}})",
+      "Body": "Return true if the object is a getset descriptor.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.isgetsetdescriptor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::ismemberdescriptor}}({{c3::object}})",
+      "Body": "Return true if the object is a member descriptor.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.ismemberdescriptor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getdoc}}({{c3::object}})",
+      "Body": "Get the documentation string for an object, cleaned up with cleandoc(). If the documentation string for an object is not provided and the object is a class, a method, a property or a descriptor, retrieve the documentation string from the inheritance hierarchy.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getdoc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getcomments}}({{c3::object}})",
+      "Body": "Return in a single string any lines of comments immediately preceding the object's source code (for a class, function, or method), or at the top of the Python source file (if the object is a module).  If the object's source code is unavailable, return None.  This could happen if the object has been defined in C or the interactive shell.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getcomments"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getfile}}({{c3::object}})",
+      "Body": "Return the name of the (text or binary) file in which an object was defined. This will fail with a TypeError if the object is a built-in module, class, or function.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getmodule}}({{c3::object}})",
+      "Body": "Try to guess which module an object was defined in.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getmodule"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getsourcefile}}({{c3::object}})",
+      "Body": "Return the name of the Python source file in which an object was defined.  This will fail with a TypeError if the object is a built-in module, class, or function.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getsourcefile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getsourcelines}}({{c3::object}})",
+      "Body": "Return a list of source lines and starting line number for an object. The argument may be a module, class, method, function, traceback, frame, or code object.  The source code is returned as a list of the lines corresponding to the object and the line number indicates where in the original source file the first line of code was found.  An OSError is raised if the source code cannot be retrieved.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getsourcelines"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getsource}}({{c3::object}})",
+      "Body": "Return the text of the source code for an object. The argument may be a module, class, method, function, traceback, frame, or code object.  The source code is returned as a single string.  An OSError is raised if the source code cannot be retrieved.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getsource"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::cleandoc}}({{c3::doc}})",
+      "Body": "Clean up indentation from docstrings that are indented to line up with blocks of code.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.cleandoc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::signature}}({{c3::callable}}, *, {{c4::follow_wrapped}}={{c5::True}})",
+      "Body": "Return a Signature object for the given callable:",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.signature"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::inspect}}.{{c3::Signature}}({{c4::parameters}}={{c5::None}}, *, {{c6::return_annotation}}={{c7::Signature}}.{{c8::empty}})",
+      "Body": "A Signature object represents the call signature of a function and its return annotation.  For each parameter accepted by the function it stores a Parameter object in its parameters collection.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Signature"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Signature}}.{{c3::empty}}",
+      "Body": "A special class-level marker to specify absence of a return annotation.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Signature.empty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Signature}}.{{c3::parameters}}",
+      "Body": "An ordered mapping of parameters' names to the corresponding Parameter objects.  Parameters appear in strict definition order, including keyword-only parameters.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Signature.parameters"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Signature}}.{{c3::return_annotation}}",
+      "Body": "The return annotation for the callable.  If the callable has no return annotation, this attribute is set to Signature.empty.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Signature.return_annotation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Signature}}.{{c3::bind}}(*args, **kwargs)",
+      "Body": "Create a mapping from positional and keyword arguments to parameters. Returns BoundArguments if *args and **kwargs match the signature, or raises a TypeError.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Signature.bind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Signature}}.{{c3::bind_partial}}(*args, **kwargs)",
+      "Body": "Works the same way as Signature.bind(), but allows the omission of some required arguments (mimics functools.partial() behavior.) Returns BoundArguments, or raises a TypeError if the passed arguments do not match the signature.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Signature.bind_partial"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Signature}}.{{c3::replace}}(*[, {{c4::parameters}}][, {{c5::return_annotation}}])",
+      "Body": "Create a new Signature instance based on the instance replace was invoked on.  It is possible to pass different parameters and/or return_annotation to override the corresponding properties of the base signature.  To remove return_annotation from the copied Signature, pass in Signature.empty.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Signature.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "Runtime Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Signature}}.{{c3::classmethod}} {{c4::from_callable}}({{c5::obj}}, *, {{c6::follow_wrapped}}={{c7::True}})",
+      "Body": "Return a Signature (or its subclass) object for a given callable obj.  Pass follow_wrapped=False to get a signature of obj without unwrapping its __wrapped__ chain.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Signature.from_callable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::inspect}}.{{c3::Parameter}}({{c4::name}}, {{c5::kind}}, *, {{c6::default}}={{c7::Parameter}}.{{c8::empty}}, {{c9::annotation}}={{c10::Parameter}}.{{c11::empty}})",
+      "Body": "Parameter objects are immutable.  Instead of modifying a Parameter object, you can use Parameter.replace() to create a modified copy.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Parameter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Parameter}}.{{c3::empty}}",
+      "Body": "A special class-level marker to specify absence of default values and annotations.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Parameter.empty"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Parameter}}.{{c3::name}}",
+      "Body": "The name of the parameter as a string.  The name must be a valid Python identifier.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Parameter.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Parameter}}.{{c3::default}}",
+      "Body": "The default value for the parameter.  If the parameter has no default value, this attribute is set to Parameter.empty.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Parameter.default"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Parameter}}.{{c3::annotation}}",
+      "Body": "The annotation for the parameter.  If the parameter has no annotation, this attribute is set to Parameter.empty.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Parameter.annotation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Parameter}}.{{c3::kind}}",
+      "Body": "Describes how argument values are bound to the parameter.  Possible values (accessible via Parameter, like Parameter.KEYWORD_ONLY):",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Parameter.kind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::Parameter}}.{{c3::replace}}(*[, {{c4::name}}][, {{c5::kind}}][, {{c6::default}}][, {{c7::annotation}}])",
+      "Body": "Create a new Parameter instance based on the instance replaced was invoked on.  To override a Parameter attribute, pass the corresponding argument.  To remove a default value or/and an annotation from a Parameter, pass Parameter.empty.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.Parameter.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::inspect}}.{{c3::BoundArguments}}",
+      "Body": "Result of a Signature.bind() or Signature.bind_partial() call. Holds the mapping of arguments to the function's parameters.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.BoundArguments"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::BoundArguments}}.{{c3::arguments}}",
+      "Body": "An ordered, mutable mapping (collections.OrderedDict) of parameters' names to arguments' values.  Contains only explicitly bound arguments.  Changes in arguments will reflect in args and kwargs.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.BoundArguments.arguments"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::BoundArguments}}.{{c3::args}}",
+      "Body": "A tuple of positional arguments values.  Dynamically computed from the arguments attribute.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.BoundArguments.args"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::BoundArguments}}.{{c3::kwargs}}",
+      "Body": "A dict of keyword arguments values.  Dynamically computed from the arguments attribute.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.BoundArguments.kwargs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::BoundArguments}}.{{c3::signature}}",
+      "Body": "A reference to the parent Signature object.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.BoundArguments.signature"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::BoundArguments}}.{{c3::apply_defaults}}()",
+      "Body": "Set default values for missing arguments.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.BoundArguments.apply_defaults"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getclasstree}}({{c3::classes}}, {{c4::unique}}={{c5::False}})",
+      "Body": "Arrange the given list of classes into a hierarchy of nested lists. Where a nested list appears, it contains classes derived from the class whose entry immediately precedes the list.  Each entry is a 2-tuple containing a class and a tuple of its base classes.  If the unique argument is true, exactly one entry appears in the returned structure for each class in the given list.  Otherwise, classes using multiple inheritance and their descendants will appear multiple times.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getclasstree"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getargspec}}({{c3::func}})",
+      "Body": "Get the names and default values of a Python function's parameters. A named tuple ArgSpec(args, varargs, keywords, defaults) is returned. args is a list of the parameter names. varargs and keywords are the names of the * and ** parameters or None. defaults is a tuple of default argument values or None if there are no default arguments; if this tuple has n elements, they correspond to the last n elements listed in args.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getargspec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getfullargspec}}({{c3::func}})",
+      "Body": "Get the names and default values of a Python function's parameters.  A named tuple is returned:",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getfullargspec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getargvalues}}({{c3::frame}})",
+      "Body": "Get information about arguments passed into a particular frame.  A named tuple ArgInfo(args, varargs, keywords, locals) is returned. args is a list of the argument names.  varargs and keywords are the names of the * and ** arguments or None.  locals is the locals dictionary of the given frame.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getargvalues"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::formatargspec}}({{c3::args}}[, {{c4::varargs}}, {{c5::varkw}}, {{c6::defaults}}, {{c7::kwonlyargs}}, {{c8::kwonlydefaults}}, {{c9::annotations}}[, {{c10::formatarg}}, {{c11::formatvarargs}}, {{c12::formatvarkw}}, {{c13::formatvalue}}, {{c14::formatreturns}}, {{c15::formatannotations}}]])",
+      "Body": "Format a pretty argument spec from the values returned by getfullargspec().",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.formatargspec"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::formatargvalues}}({{c3::args}}[, {{c4::varargs}}, {{c5::varkw}}, {{c6::locals}}, {{c7::formatarg}}, {{c8::formatvarargs}}, {{c9::formatvarkw}}, {{c10::formatvalue}}])",
+      "Body": "Format a pretty argument spec from the four values returned by getargvalues().  The format* arguments are the corresponding optional formatting functions that are called to turn names and values into strings.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.formatargvalues"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getmro}}({{c3::cls}})",
+      "Body": "Return a tuple of class cls's base classes, including cls, in method resolution order.  No class appears more than once in this tuple. Note that the method resolution order depends on cls's type.  Unless a very peculiar user-defined metatype is in use, cls will be the first element of the tuple.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getmro"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getcallargs}}({{c3::func}}, *args, **kwds)",
+      "Body": "Bind the args and kwds to the argument names of the Python function or method func, as if it was called with them. For bound methods, bind also the first argument (typically named self) to the associated instance. A dict is returned, mapping the argument names (including the names of the * and ** arguments, if any) to their values from args and kwds. In case of invoking func incorrectly, i.e. whenever func(*args, **kwds) would raise an exception because of incompatible signature, an exception of the same type and the same or similar message is raised. For example:",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getcallargs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getclosurevars}}({{c3::func}})",
+      "Body": "Get the mapping of external name references in a Python function or method func to their current values. A named tuple ClosureVars(nonlocals, globals, builtins, unbound) is returned. nonlocals maps referenced names to lexical closure variables, globals to the function's module globals and builtins to the builtins visible from the function body. unbound is the set of names referenced in the function that could not be resolved at all given the current module globals and builtins.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getclosurevars"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::unwrap}}({{c3::func}}, *, {{c4::stop}}={{c5::None}})",
+      "Body": "Get the object wrapped by func. It follows the chain of __wrapped__ attributes returning the last object in the chain.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.unwrap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getframeinfo}}({{c3::frame}}, {{c4::context}}=1)",
+      "Body": "Get information about a frame or traceback object.  A named tuple Traceback(filename, lineno, function, code_context, index) is returned.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getframeinfo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getouterframes}}({{c3::frame}}, {{c4::context}}=1)",
+      "Body": "Get a list of frame records for a frame and all outer frames.  These frames represent the calls that lead to the creation of frame. The first entry in the returned list represents frame; the last entry represents the outermost call on frame's stack.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getouterframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getinnerframes}}({{c3::traceback}}, {{c4::context}}=1)",
+      "Body": "Get a list of frame records for a traceback's frame and all inner frames.  These frames represent calls made as a consequence of frame.  The first entry in the list represents traceback; the last entry represents where the exception was raised.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getinnerframes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::currentframe}}()",
+      "Body": "Return the frame object for the caller's stack frame.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.currentframe"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::stack}}({{c3::context}}=1)",
+      "Body": "Return a list of frame records for the caller's stack.  The first entry in the returned list represents the caller; the last entry represents the outermost call on the stack.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.stack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::trace}}({{c3::context}}=1)",
+      "Body": "Return a list of frame records for the stack between the current frame and the frame in which an exception currently being handled was raised in.  The first entry in the list represents the caller; the last entry represents where the exception was raised.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.trace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getattr_static}}({{c3::obj}}, {{c4::attr}}, {{c5::default}}={{c6::None}})",
+      "Body": "Retrieve attributes without triggering dynamic lookup via the descriptor protocol, __getattr__() or __getattribute__().",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getattr_static"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getgeneratorstate}}({{c3::generator}})",
+      "Body": "Get current state of a generator-iterator.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getgeneratorstate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getcoroutinestate}}({{c3::coroutine}})",
+      "Body": "Get current state of a coroutine object.  The function is intended to be used with coroutine objects created by async def functions, but will accept any coroutine-like object that has cr_running and cr_frame attributes.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getcoroutinestate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getgeneratorlocals}}({{c3::generator}})",
+      "Body": "Get the mapping of live local variables in generator to their current values.  A dictionary is returned that maps from variable names to values. This is the equivalent of calling locals() in the body of the generator, and all the same caveats apply.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getgeneratorlocals"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::getcoroutinelocals}}({{c3::coroutine}})",
+      "Body": "This function is analogous to getgeneratorlocals(), but works for coroutine objects created by async def functions.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.getcoroutinelocals"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_OPTIMIZED}}",
+      "Body": "The code object is optimized, using fast locals.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_OPTIMIZED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_NEWLOCALS}}",
+      "Body": "If set, a new dict will be created for the frame's f_locals when the code object is executed.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_NEWLOCALS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_VARARGS}}",
+      "Body": "The code object has a variable positional parameter (*args-like).",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_VARARGS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_VARKEYWORDS}}",
+      "Body": "The code object has a variable keyword parameter (**kwargs-like).",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_VARKEYWORDS"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_NESTED}}",
+      "Body": "The flag is set when the code object is a nested function.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_NESTED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_GENERATOR}}",
+      "Body": "The flag is set when the code object is a generator function, i.e. a generator object is returned when the code object is executed.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_GENERATOR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_NOFREE}}",
+      "Body": "The flag is set if there are no free or cell variables.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_NOFREE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_COROUTINE}}",
+      "Body": "The flag is set when the code object is a coroutine function. When the code object is executed it returns a coroutine object. See PEP 492 for more details.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_COROUTINE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_ITERABLE_COROUTINE}}",
+      "Body": "The flag is used to transform generators into generator-based coroutines.  Generator objects with this flag can be used in await expression, and can yield from coroutine objects. See PEP 492 for more details.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_ITERABLE_COROUTINE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::inspect}}.{{c2::CO_ASYNC_GENERATOR}}",
+      "Body": "The flag is set when the code object is an asynchronous generator function.  When the code object is executed it returns an asynchronous generator object.  See PEP 525 for more details.",
+      "Link": "https://docs.python.org/3/library/inspect.html#inspect.CO_ASYNC_GENERATOR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "--{{c1::details}}",
+      "Body": "Print information about the specified object rather than the source code",
+      "Link": "https://docs.python.org/3/library/inspect.html#cmdoption-inspect-details"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::PREFIXES}}",
+      "Body": "A list of prefixes for site-packages directories.",
+      "Link": "https://docs.python.org/3/library/site.html#site.PREFIXES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::ENABLE_USER_SITE}}",
+      "Body": "Flag showing the status of the user site-packages directory.  True means that it is enabled and was added to sys.path.  False means that it was disabled by user request (with -s or PYTHONNOUSERSITE).  None means it was disabled for security reasons (mismatch between user or group id and effective id) or by an administrator.",
+      "Link": "https://docs.python.org/3/library/site.html#site.ENABLE_USER_SITE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::USER_SITE}}",
+      "Body": "Path to the user site-packages for the running Python.  Can be None if getusersitepackages() hasn't been called yet.  Default value is ~/.local/lib/pythonX.Y/site-packages for UNIX and non-framework Mac OS X builds, ~/Library/Python/X.Y/lib/python/site-packages for Mac framework builds, and %APPDATA%\\Python\\PythonXY\\site-packages on Windows.  This directory is a site directory, which means that .pth files in it will be processed.",
+      "Link": "https://docs.python.org/3/library/site.html#site.USER_SITE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::USER_BASE}}",
+      "Body": "Path to the base directory for the user site-packages.  Can be None if getuserbase() hasn't been called yet.  Default value is ~/.local for UNIX and Mac OS X non-framework builds, ~/Library/Python/X.Y for Mac framework builds, and %APPDATA%\\Python for Windows.  This value is used by Distutils to compute the installation directories for scripts, data files, Python modules, etc. for the user installation scheme. See also PYTHONUSERBASE.",
+      "Link": "https://docs.python.org/3/library/site.html#site.USER_BASE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::main}}()",
+      "Body": "Adds all the standard site-specific directories to the module search path.  This function is called automatically when this module is imported, unless the Python interpreter was started with the -S flag.",
+      "Link": "https://docs.python.org/3/library/site.html#site.main"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::addsitedir}}({{c3::sitedir}}, {{c4::known_paths}}={{c5::None}})",
+      "Body": "Add a directory to sys.path and process its .pth files.  Typically used in sitecustomize or usercustomize (see above).",
+      "Link": "https://docs.python.org/3/library/site.html#site.addsitedir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::getsitepackages}}()",
+      "Body": "Return a list containing all global site-packages directories.",
+      "Link": "https://docs.python.org/3/library/site.html#site.getsitepackages"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::getuserbase}}()",
+      "Body": "Return the path of the user base directory, USER_BASE.  If it is not initialized yet, this function will also set it, respecting PYTHONUSERBASE.",
+      "Link": "https://docs.python.org/3/library/site.html#site.getuserbase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["function", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::site}}.{{c2::getusersitepackages}}()",
+      "Body": "Return the path of the user-specific site-packages directory, USER_SITE.  If it is not initialized yet, this function will also set it, respecting PYTHONNOUSERSITE and USER_BASE.",
+      "Link": "https://docs.python.org/3/library/site.html#site.getusersitepackages"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "--{{c1::user}}-{{c2::base}}",
+      "Body": "Print the path to the user base directory.",
+      "Link": "https://docs.python.org/3/library/site.html#cmdoption-site-user-base"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["cmdoption", "Runtime Services", "Python", "py", "native"],
+    "fields": {
+      "Signature": "--{{c1::user}}-{{c2::site}}",
+      "Body": "Print the path to the user site-packages directory.",
+      "Link": "https://docs.python.org/3/library/site.html#cmdoption-site-user-site"
+    },
+    "modelName": "ClozePy"
+  }
+]

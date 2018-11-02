@@ -1,0 +1,3797 @@
+[
+  {
+    "tags": [
+      "class",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pathlib}}.{{c3::PurePath}}(*pathsegments)",
+      "Body": "A generic class that represents the system's path flavour (instantiating it creates either a PurePosixPath or a PureWindowsPath):",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pathlib}}.{{c3::PurePosixPath}}(*pathsegments)",
+      "Body": "A subclass of PurePath, this path flavour represents non-Windows filesystem paths:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePosixPath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pathlib}}.{{c3::PureWindowsPath}}(*pathsegments)",
+      "Body": "A subclass of PurePath, this path flavour represents Windows filesystem paths:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PureWindowsPath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::parts}}",
+      "Body": "A tuple giving access to the path's various components:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.parts"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::drive}}",
+      "Body": "A string representing the drive letter or name, if any:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.drive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::root}}",
+      "Body": "A string representing the (local or global) root, if any:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.root"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::anchor}}",
+      "Body": "The concatenation of the drive and root:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.anchor"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::parents}}",
+      "Body": "An immutable sequence providing access to the logical ancestors of the path:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.parents"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::parent}}",
+      "Body": "The logical parent of the path:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.parent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::name}}",
+      "Body": "A string representing the final path component, excluding the drive and root, if any:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::suffix}}",
+      "Body": "The file extension of the final component, if any:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.suffix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::suffixes}}",
+      "Body": "A list of the path's file extensions:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.suffixes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::stem}}",
+      "Body": "The final path component, without its suffix:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.stem"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::as_posix}}()",
+      "Body": "Return a string representation of the path with forward slashes (/):",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.as_posix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::as_uri}}()",
+      "Body": "Represent the path as a file URI.  ValueError is raised if the path isn't absolute.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.as_uri"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::is_absolute}}()",
+      "Body": "Return whether the path is absolute or not.  A path is considered absolute if it has both a root and (if the flavour allows) a drive:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.is_absolute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::is_reserved}}()",
+      "Body": "With PureWindowsPath, return True if the path is considered reserved under Windows, False otherwise.  With PurePosixPath, False is always returned.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.is_reserved"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::joinpath}}(*other)",
+      "Body": "Calling this method is equivalent to combining the path with each of the other arguments in turn:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.joinpath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::match}}({{c3::pattern}})",
+      "Body": "Match this path against the provided glob-style pattern.  Return True if matching is successful, False otherwise.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.match"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::relative_to}}(*other)",
+      "Body": "Compute a version of this path relative to the path represented by other.  If it's impossible, ValueError is raised:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.relative_to"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::with_name}}({{c3::name}})",
+      "Body": "Return a new path with the name changed.  If the original path doesn't have a name, ValueError is raised:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.with_name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::PurePath}}.{{c2::with_suffix}}({{c3::suffix}})",
+      "Body": "Return a new path with the suffix changed.  If the original path doesn't have a suffix, the new suffix is appended instead.  If the suffix is an empty string, the original suffix is removed:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.with_suffix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pathlib}}.{{c3::Path}}(*pathsegments)",
+      "Body": "A subclass of PurePath, this class represents concrete paths of the system's path flavour (instantiating it creates either a PosixPath or a WindowsPath):",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pathlib}}.{{c3::PosixPath}}(*pathsegments)",
+      "Body": "A subclass of Path and PurePosixPath, this class represents concrete non-Windows filesystem paths:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.PosixPath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::pathlib}}.{{c3::WindowsPath}}(*pathsegments)",
+      "Body": "A subclass of Path and PureWindowsPath, this class represents concrete Windows filesystem paths:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.WindowsPath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::Path}}.{{c3::cwd}}()",
+      "Body": "Return a new path object representing the current directory (as returned by os.getcwd()):",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.cwd"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "classmethod",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::Path}}.{{c3::home}}()",
+      "Body": "Return a new path object representing the user's home directory (as returned by os.path.expanduser() with ~ construct):",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.home"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::stat}}()",
+      "Body": "Return information about this path (similarly to os.stat()). The result is looked up at each call to this method.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.stat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::chmod}}({{c3::mode}})",
+      "Body": "Change the file mode and permissions, like os.chmod():",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.chmod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::exists}}()",
+      "Body": "Whether the path points to an existing file or directory:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.exists"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::expanduser}}()",
+      "Body": "Return a new path with expanded ~ and ~user constructs, as returned by os.path.expanduser():",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.expanduser"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::glob}}({{c3::pattern}})",
+      "Body": "Glob the given pattern in the directory represented by this path, yielding all matching files (of any kind):",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.glob"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::group}}()",
+      "Body": "Return the name of the group owning the file.  KeyError is raised if the file's gid isn't found in the system database.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.group"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::is_dir}}()",
+      "Body": "Return True if the path points to a directory (or a symbolic link pointing to a directory), False if it points to another kind of file.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.is_dir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::is_file}}()",
+      "Body": "Return True if the path points to a regular file (or a symbolic link pointing to a regular file), False if it points to another kind of file.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.is_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::is_mount}}()",
+      "Body": "Return True if the path is a mount point: a point in a file system where a different file system has been mounted.  On POSIX, the function checks whether path's parent, path/.., is on a different device than path, or whether path/.. and path point to the same i-node on the same device  this should detect mount points for all Unix and POSIX variants.  Not implemented on Windows.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.is_mount"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::is_symlink}}()",
+      "Body": "Return True if the path points to a symbolic link, False otherwise.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.is_symlink"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::is_socket}}()",
+      "Body": "Return True if the path points to a Unix socket (or a symbolic link pointing to a Unix socket), False if it points to another kind of file.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.is_socket"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::is_fifo}}()",
+      "Body": "Return True if the path points to a FIFO (or a symbolic link pointing to a FIFO), False if it points to another kind of file.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.is_fifo"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::is_block_device}}()",
+      "Body": "Return True if the path points to a block device (or a symbolic link pointing to a block device), False if it points to another kind of file.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.is_block_device"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::is_char_device}}()",
+      "Body": "Return True if the path points to a character device (or a symbolic link pointing to a character device), False if it points to another kind of file.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.is_char_device"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::iterdir}}()",
+      "Body": "When the path points to a directory, yield path objects of the directory contents:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.iterdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::lchmod}}({{c3::mode}})",
+      "Body": "Like Path.chmod() but, if the path points to a symbolic link, the symbolic link's mode is changed rather than its target's.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.lchmod"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::lstat}}()",
+      "Body": "Like Path.stat() but, if the path points to a symbolic link, return the symbolic link's information rather than its target's.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.lstat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::mkdir}}({{c3::mode}}=0{{c4::o}}777, {{c5::parents}}={{c6::False}}, {{c7::exist_ok}}={{c8::False}})",
+      "Body": "Create a new directory at this given path.  If mode is given, it is combined with the process' umask value to determine the file mode and access flags.  If the path already exists, FileExistsError is raised.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::open}}({{c3::mode}}='{{c4::r}}', {{c5::buffering}}=-1, {{c6::encoding}}={{c7::None}}, {{c8::errors}}={{c9::None}}, {{c10::newline}}={{c11::None}})",
+      "Body": "Open the file pointed to by the path, like the built-in open() function does:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.open"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::owner}}()",
+      "Body": "Return the name of the user owning the file.  KeyError is raised if the file's uid isn't found in the system database.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.owner"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::read_bytes}}()",
+      "Body": "Return the binary contents of the pointed-to file as a bytes object:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.read_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::read_text}}({{c3::encoding}}={{c4::None}}, {{c5::errors}}={{c6::None}})",
+      "Body": "Return the decoded contents of the pointed-to file as a string:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.read_text"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::rename}}({{c3::target}})",
+      "Body": "Rename this file or directory to the given target.  On Unix, if target exists and is a file, it will be replaced silently if the user has permission.  target can be either a string or another path object:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::replace}}({{c3::target}})",
+      "Body": "Rename this file or directory to the given target.  If target points to an existing file or directory, it will be unconditionally replaced.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::resolve}}({{c3::strict}}={{c4::False}})",
+      "Body": "Make the path absolute, resolving any symlinks.  A new path object is returned:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.resolve"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::rglob}}({{c3::pattern}})",
+      "Body": "This is like calling Path.glob() with ** added in front of the given pattern:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.rglob"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::rmdir}}()",
+      "Body": "Remove this directory.  The directory must be empty.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.rmdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::samefile}}({{c3::other_path}})",
+      "Body": "Return whether this path points to the same file as other_path, which can be either a Path object, or a string.  The semantics are similar to os.path.samefile() and os.path.samestat().",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.samefile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::symlink_to}}({{c3::target}}, {{c4::target_is_directory}}={{c5::False}})",
+      "Body": "Make this path a symbolic link to target.  Under Windows, target_is_directory must be true (default False) if the link's target is a directory.  Under POSIX, target_is_directory's value is ignored.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.symlink_to"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::touch}}({{c3::mode}}=0{{c4::o}}666, {{c5::exist_ok}}={{c6::True}})",
+      "Body": "Create a file at this given path.  If mode is given, it is combined with the process' umask value to determine the file mode and access flags.  If the file already exists, the function succeeds if exist_ok is true (and its modification time is updated to the current time), otherwise FileExistsError is raised.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.touch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::unlink}}()",
+      "Body": "Remove this file or symbolic link.  If the path points to a directory, use Path.rmdir() instead.",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.unlink"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::write_bytes}}({{c3::data}})",
+      "Body": "Open the file pointed to in bytes mode, write data to it, and close the file:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.write_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Path}}.{{c2::write_text}}({{c3::data}}, {{c4::encoding}}={{c5::None}}, {{c6::errors}}={{c7::None}})",
+      "Body": "Open the file pointed to in text mode, write data to it, and close the file:",
+      "Link": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.write_text"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::abspath}}({{c4::path}})",
+      "Body": "Return a normalized absolutized version of the pathname path. On most platforms, this is equivalent to calling the function normpath() as follows: normpath(join(os.getcwd(), path)).",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.abspath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::basename}}({{c4::path}})",
+      "Body": "Return the base name of pathname path.  This is the second element of the pair returned by passing path to the function split().  Note that the result of this function is different from the Unix basename program; where basename for '/foo/bar/' returns 'bar', the basename() function returns an empty string ('').",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.basename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::commonpath}}({{c4::paths}})",
+      "Body": "Return the longest common sub-path of each pathname in the sequence paths.  Raise ValueError if paths contains both absolute and relative pathnames, or if paths is empty.  Unlike commonprefix(), this returns a valid path.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.commonpath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::commonprefix}}({{c4::list}})",
+      "Body": "Return the longest path prefix (taken character-by-character) that is a prefix of all paths in  list.  If list is empty, return the empty string ('').",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.commonprefix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::dirname}}({{c4::path}})",
+      "Body": "Return the directory name of pathname path.  This is the first element of the pair returned by passing path to the function split().",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.dirname"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::exists}}({{c4::path}})",
+      "Body": "Return True if path refers to an existing path or an open file descriptor.  Returns False for broken symbolic links.  On some platforms, this function may return False if permission is not granted to execute os.stat() on the requested file, even if the path physically exists.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.exists"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::lexists}}({{c4::path}})",
+      "Body": "Return True if path refers to an existing path. Returns True for broken symbolic links.   Equivalent to exists() on platforms lacking os.lstat().",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.lexists"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::expanduser}}({{c4::path}})",
+      "Body": "On Unix and Windows, return the argument with an initial component of ~ or ~user replaced by that user's home directory.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.expanduser"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::expandvars}}({{c4::path}})",
+      "Body": "Return the argument with environment variables expanded.  Substrings of the form $name or ${name} are replaced by the value of environment variable name.  Malformed variable names and references to non-existing variables are left unchanged.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.expandvars"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::getatime}}({{c4::path}})",
+      "Body": "Return the time of last access of path.  The return value is a floating point number giving the number of seconds since the epoch (see the  time module).  Raise OSError if the file does not exist or is inaccessible.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.getatime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::getmtime}}({{c4::path}})",
+      "Body": "Return the time of last modification of path.  The return value is a floating point number giving the number of seconds since the epoch (see the  time module). Raise OSError if the file does not exist or is inaccessible.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.getmtime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::getctime}}({{c4::path}})",
+      "Body": "Return the system's ctime which, on some systems (like Unix) is the time of the last metadata change, and, on others (like Windows), is the creation time for path. The return value is a number giving the number of seconds since the epoch (see the  time module).  Raise OSError if the file does not exist or is inaccessible.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.getctime"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::getsize}}({{c4::path}})",
+      "Body": "Return the size, in bytes, of path.  Raise OSError if the file does not exist or is inaccessible.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.getsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::isabs}}({{c4::path}})",
+      "Body": "Return True if path is an absolute pathname.  On Unix, that means it begins with a slash, on Windows that it begins with a (back)slash after chopping off a potential drive letter.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.isabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::isfile}}({{c4::path}})",
+      "Body": "Return True if path is an existing regular file. This follows symbolic links, so both islink() and isfile() can be true for the same path.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.isfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::isdir}}({{c4::path}})",
+      "Body": "Return True if path is an existing directory.  This follows symbolic links, so both islink() and isdir() can be true for the same path.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.isdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::islink}}({{c4::path}})",
+      "Body": "Return True if path refers to an existing directory entry that is a symbolic link.  Always False if symbolic links are not supported by the runtime.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.islink"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::ismount}}({{c4::path}})",
+      "Body": "Return True if pathname path is a mount point: a point in a file system where a different file system has been mounted.  On POSIX, the function checks whether path's parent, path/.., is on a different device than path, or whether path/.. and path point to the same i-node on the same device  this should detect mount points for all Unix and POSIX variants.  On Windows, a drive letter root and a share UNC are always mount points, and for any other path GetVolumePathName is called to see if it is different from the input path.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.ismount"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::join}}({{c4::path}}, *paths)",
+      "Body": "Join one or more path components intelligently.  The return value is the concatenation of path and any members of *paths with exactly one directory separator (os.sep) following each non-empty part except the last, meaning that the result will only end in a separator if the last part is empty.  If a component is an absolute path, all previous components are thrown away and joining continues from the absolute path component.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::normcase}}({{c4::path}})",
+      "Body": "Normalize the case of a pathname.  On Unix and Mac OS X, this returns the path unchanged; on case-insensitive filesystems, it converts the path to lowercase.  On Windows, it also converts forward slashes to backward slashes. Raise a TypeError if the type of path is not str or bytes (directly or indirectly through the os.PathLike interface).",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.normcase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::normpath}}({{c4::path}})",
+      "Body": "Normalize a pathname by collapsing redundant separators and up-level references so that A//B, A/B/, A/./B and A/foo/../B all become A/B.  This string manipulation may change the meaning of a path that contains symbolic links.  On Windows, it converts forward slashes to backward slashes. To normalize case, use normcase().",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.normpath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::realpath}}({{c4::path}})",
+      "Body": "Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path (if they are supported by the operating system).",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.realpath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::relpath}}({{c4::path}}, {{c5::start}}={{c6::os}}.{{c7::curdir}})",
+      "Body": "Return a relative filepath to path either from the current directory or from an optional start directory.  This is a path computation:  the filesystem is not accessed to confirm the existence or nature of path or start.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.relpath"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::samefile}}({{c4::path}}1, {{c5::path}}2)",
+      "Body": "Return True if both pathname arguments refer to the same file or directory. This is determined by the device number and i-node number and raises an exception if an os.stat() call on either pathname fails.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.samefile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::sameopenfile}}({{c4::fp}}1, {{c5::fp}}2)",
+      "Body": "Return True if the file descriptors fp1 and fp2 refer to the same file.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.sameopenfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::samestat}}({{c4::stat}}1, {{c5::stat}}2)",
+      "Body": "Return True if the stat tuples stat1 and stat2 refer to the same file. These structures may have been returned by os.fstat(), os.lstat(), or os.stat().  This function implements the underlying comparison used by samefile() and sameopenfile().",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.samestat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::split}}({{c4::path}})",
+      "Body": "Split the pathname path into a pair, (head, tail) where tail is the last pathname component and head is everything leading up to that.  The tail part will never contain a slash; if path ends in a slash, tail will be empty.  If there is no slash in path, head will be empty.  If path is empty, both head and tail are empty.  Trailing slashes are stripped from head unless it is the root (one or more slashes only).  In all cases, join(head, tail) returns a path to the same location as path (but the strings may differ).  Also see the functions dirname() and basename().",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.split"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::splitdrive}}({{c4::path}})",
+      "Body": "Split the pathname path into a pair (drive, tail) where drive is either a mount point or the empty string.  On systems which do not use drive specifications, drive will always be the empty string.  In all cases, drive + tail will be the same as path.",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.splitdrive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::splitext}}({{c4::path}})",
+      "Body": "Split the pathname path into a pair (root, ext)  such that root + ext == path, and ext is empty or begins with a period and contains at most one period. Leading periods on the basename are  ignored; splitext('.cshrc') returns  ('.cshrc', '').",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.splitext"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::os}}.{{c2::path}}.{{c3::supports_unicode_filenames}}",
+      "Body": "True if arbitrary Unicode strings can be used as file names (within limitations imposed by the file system).",
+      "Link": "https://docs.python.org/3/library/os.path.html#os.path.supports_unicode_filenames"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::input}}({{c3::files}}={{c4::None}}, {{c5::inplace}}={{c6::False}}, {{c7::backup}}='', {{c8::bufsize}}=0, {{c9::mode}}='{{c10::r}}', {{c11::openhook}}={{c12::None}})",
+      "Body": "Create an instance of the FileInput class.  The instance will be used as global state for the functions of this module, and is also returned to use during iteration.  The parameters to this function will be passed along to the constructor of the FileInput class.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.input"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::filename}}()",
+      "Body": "Return the name of the file currently being read.  Before the first line has been read, returns None.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.filename"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::fileno}}()",
+      "Body": "Return the integer file descriptor for the current file. When no file is opened (before the first line and between files), returns -1.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.fileno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::lineno}}()",
+      "Body": "Return the cumulative line number of the line that has just been read.  Before the first line has been read, returns 0.  After the last line of the last file has been read, returns the line number of that line.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::filelineno}}()",
+      "Body": "Return the line number in the current file.  Before the first line has been read, returns 0.  After the last line of the last file has been read, returns the line number of that line within the file.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.filelineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::isfirstline}}()",
+      "Body": "Returns true if the line just read is the first line of its file, otherwise returns false.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.isfirstline"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::isstdin}}()",
+      "Body": "Returns true if the last line was read from sys.stdin, otherwise returns false.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.isstdin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::nextfile}}()",
+      "Body": "Close the current file so that the next iteration will read the first line from the next file (if any); lines not read from the file will not count towards the cumulative line count.  The filename is not changed until after the first line of the next file has been read.  Before the first line has been read, this function has no effect; it cannot be used to skip the first file.  After the last line of the last file has been read, this function has no effect.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.nextfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::close}}()",
+      "Body": "Close the sequence.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::fileinput}}.{{c3::FileInput}}({{c4::files}}={{c5::None}}, {{c6::inplace}}={{c7::False}}, {{c8::backup}}='', {{c9::bufsize}}=0, {{c10::mode}}='{{c11::r}}', {{c12::openhook}}={{c13::None}})",
+      "Body": "Class FileInput is the implementation; its methods filename(), fileno(), lineno(), filelineno(), isfirstline(), isstdin(), nextfile() and close() correspond to the functions of the same name in the module. In addition it has a readline() method which returns the next input line, and a __getitem__() method which implements the sequence behavior. The sequence must be accessed in strictly sequential order; random access and readline() cannot be mixed.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.FileInput"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::hook_compressed}}({{c3::filename}}, {{c4::mode}})",
+      "Body": "Transparently opens files compressed with gzip and bzip2 (recognized by the extensions '.gz' and '.bz2') using the gzip and bz2 modules.  If the filename extension is not '.gz' or '.bz2', the file is opened normally (ie, using open() without any decompression).",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.hook_compressed"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fileinput}}.{{c2::hook_encoded}}({{c3::encoding}}, {{c4::errors}}={{c5::None}})",
+      "Body": "Returns a hook which opens each file with open(), using the given encoding and errors to read the file.",
+      "Link": "https://docs.python.org/3/library/fileinput.html#fileinput.hook_encoded"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISDIR}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a directory.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISDIR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISCHR}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a character special device file.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISCHR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISBLK}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a block special device file.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISBLK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISREG}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a regular file.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISREG"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISFIFO}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a FIFO (named pipe).",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISFIFO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISLNK}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a symbolic link.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISLNK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISSOCK}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a socket.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISSOCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISDOOR}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a door.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISDOOR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISPORT}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from an event port.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISPORT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISWHT}}({{c3::mode}})",
+      "Body": "Return non-zero if the mode is from a whiteout.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISWHT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IMODE}}({{c3::mode}})",
+      "Body": "Return the portion of the file's mode that can be set by os.chmod()that is, the file's permission bits, plus the sticky bit, set-group-id, and set-user-id bits (on systems that support them).",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IMODE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFMT}}({{c3::mode}})",
+      "Body": "Return the portion of the file's mode that describes the file type (used by the S_IS*() functions above).",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFMT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::filemode}}({{c3::mode}})",
+      "Body": "Convert a file's mode to a string of the form '-rwxrwxrwx'.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.filemode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_MODE}}",
+      "Body": "Inode protection mode.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_MODE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_INO}}",
+      "Body": "Inode number.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_INO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_DEV}}",
+      "Body": "Device inode resides on.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_DEV"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_NLINK}}",
+      "Body": "Number of links to the inode.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_NLINK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_UID}}",
+      "Body": "User id of the owner.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_UID"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_GID}}",
+      "Body": "Group id of the owner.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_GID"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_SIZE}}",
+      "Body": "Size in bytes of a plain file; amount of data waiting on some special files.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_SIZE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_ATIME}}",
+      "Body": "Time of last access.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_ATIME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_MTIME}}",
+      "Body": "Time of last modification.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_MTIME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::ST_CTIME}}",
+      "Body": "The ctime as reported by the operating system.  On some systems (like Unix) is the time of the last metadata change, and, on others (like Windows), is the creation time (see platform documentation for details).",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.ST_CTIME"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFSOCK}}",
+      "Body": "Socket.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFSOCK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFLNK}}",
+      "Body": "Symbolic link.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFLNK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFREG}}",
+      "Body": "Regular file.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFREG"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFBLK}}",
+      "Body": "Block device.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFBLK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFDIR}}",
+      "Body": "Directory.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFDIR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFCHR}}",
+      "Body": "Character device.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFCHR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFIFO}}",
+      "Body": "FIFO.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFIFO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFDOOR}}",
+      "Body": "Door.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFDOOR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFPORT}}",
+      "Body": "Event port.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFPORT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IFWHT}}",
+      "Body": "Whiteout.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IFWHT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISUID}}",
+      "Body": "Set UID bit.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISUID"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISGID}}",
+      "Body": "Set-group-ID bit.  This bit has several special uses.  For a directory it indicates that BSD semantics is to be used for that directory: files created there inherit their group ID from the directory, not from the effective group ID of the creating process, and directories created there will also get the S_ISGID bit set.  For a file that does not have the group execution bit (S_IXGRP) set, the set-group-ID bit indicates mandatory file/record locking (see also S_ENFMT).",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISGID"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ISVTX}}",
+      "Body": "Sticky bit.  When this bit is set on a directory it means that a file in that directory can be renamed or deleted only by the owner of the file, by the owner of the directory, or by a privileged process.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ISVTX"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IRWXU}}",
+      "Body": "Mask for file owner permissions.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IRWXU"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IRUSR}}",
+      "Body": "Owner has read permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IRUSR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IWUSR}}",
+      "Body": "Owner has write permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IWUSR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IXUSR}}",
+      "Body": "Owner has execute permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IXUSR"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IRWXG}}",
+      "Body": "Mask for group permissions.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IRWXG"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IRGRP}}",
+      "Body": "Group has read permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IRGRP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IWGRP}}",
+      "Body": "Group has write permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IWGRP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IXGRP}}",
+      "Body": "Group has execute permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IXGRP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IRWXO}}",
+      "Body": "Mask for permissions for others (not in group).",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IRWXO"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IROTH}}",
+      "Body": "Others have read permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IROTH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IWOTH}}",
+      "Body": "Others have write permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IWOTH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IXOTH}}",
+      "Body": "Others have execute permission.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IXOTH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_ENFMT}}",
+      "Body": "System V file locking enforcement.  This flag is shared with S_ISGID: file/record locking is enforced on files that do not have the group execution bit (S_IXGRP) set.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_ENFMT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IREAD}}",
+      "Body": "Unix V7 synonym for S_IRUSR.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IREAD"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IWRITE}}",
+      "Body": "Unix V7 synonym for S_IWUSR.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IWRITE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::S_IEXEC}}",
+      "Body": "Unix V7 synonym for S_IXUSR.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.S_IEXEC"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::UF_NODUMP}}",
+      "Body": "Do not dump the file.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.UF_NODUMP"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::UF_IMMUTABLE}}",
+      "Body": "The file may not be changed.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.UF_IMMUTABLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::UF_APPEND}}",
+      "Body": "The file may only be appended to.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.UF_APPEND"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::UF_OPAQUE}}",
+      "Body": "The directory is opaque when viewed through a union stack.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.UF_OPAQUE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::UF_NOUNLINK}}",
+      "Body": "The file may not be renamed or deleted.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.UF_NOUNLINK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::UF_COMPRESSED}}",
+      "Body": "The file is stored compressed (Mac OS X 10.6+).",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.UF_COMPRESSED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::UF_HIDDEN}}",
+      "Body": "The file should not be displayed in a GUI (Mac OS X 10.5+).",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.UF_HIDDEN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::SF_ARCHIVED}}",
+      "Body": "The file may be archived.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.SF_ARCHIVED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::SF_IMMUTABLE}}",
+      "Body": "The file may not be changed.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.SF_IMMUTABLE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::SF_APPEND}}",
+      "Body": "The file may only be appended to.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.SF_APPEND"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::SF_NOUNLINK}}",
+      "Body": "The file may not be renamed or deleted.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.SF_NOUNLINK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::SF_SNAPSHOT}}",
+      "Body": "The file is a snapshot file.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.SF_SNAPSHOT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_ARCHIVE}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_ARCHIVE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_COMPRESSED}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_COMPRESSED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_DEVICE}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_DEVICE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_DIRECTORY}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_DIRECTORY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_ENCRYPTED}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_ENCRYPTED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_HIDDEN}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_HIDDEN"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_INTEGRITY_STREAM}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_INTEGRITY_STREAM"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_NORMAL}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_NORMAL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_NOT_CONTENT_INDEXED}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_NOT_CONTENT_INDEXED"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_NO_SCRUB_DATA}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_NO_SCRUB_DATA"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_OFFLINE}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_OFFLINE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_READONLY}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_READONLY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_REPARSE_POINT}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_REPARSE_POINT"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_SPARSE_FILE}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_SPARSE_FILE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_SYSTEM}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_SYSTEM"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_TEMPORARY}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_TEMPORARY"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stat}}.{{c2::FILE_ATTRIBUTE_VIRTUAL}}",
+      "Body": "New in version 3.5.",
+      "Link": "https://docs.python.org/3/library/stat.html#stat.FILE_ATTRIBUTE_VIRTUAL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::cmp}}({{c3::f}}1, {{c4::f}}2, {{c5::shallow}}={{c6::True}})",
+      "Body": "Compare the files named f1 and f2, returning True if they seem equal, False otherwise.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.cmp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::cmpfiles}}({{c3::dir}}1, {{c4::dir}}2, {{c5::common}}, {{c6::shallow}}={{c7::True}})",
+      "Body": "Compare the files in the two directories dir1 and dir2 whose names are given by common.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.cmpfiles"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::clear_cache}}()",
+      "Body": "Clear the filecmp cache. This may be useful if a file is compared so quickly after it is modified that it is within the mtime resolution of the underlying filesystem.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.clear_cache"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::filecmp}}.{{c3::dircmp}}({{c4::a}}, {{c5::b}}, {{c6::ignore}}={{c7::None}}, {{c8::hide}}={{c9::None}})",
+      "Body": "Construct a new directory comparison object, to compare the directories a and b.  ignore is a list of names to ignore, and defaults to filecmp.DEFAULT_IGNORES.  hide is a list of names to hide, and defaults to [os.curdir, os.pardir].",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::report}}()",
+      "Body": "Print (to sys.stdout) a comparison between a and b.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.report"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::report_partial_closure}}()",
+      "Body": "Print a comparison between a and b and common immediate subdirectories.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.report_partial_closure"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::report_full_closure}}()",
+      "Body": "Print a comparison between a and b and common subdirectories (recursively).",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.report_full_closure"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::left}}",
+      "Body": "The directory a.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.left"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::right}}",
+      "Body": "The directory b.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.right"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::left_list}}",
+      "Body": "Files and subdirectories in a, filtered by hide and ignore.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.left_list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::right_list}}",
+      "Body": "Files and subdirectories in b, filtered by hide and ignore.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.right_list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::common}}",
+      "Body": "Files and subdirectories in both a and b.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.common"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::left_only}}",
+      "Body": "Files and subdirectories only in a.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.left_only"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::right_only}}",
+      "Body": "Files and subdirectories only in b.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.right_only"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::common_dirs}}",
+      "Body": "Subdirectories in both a and b.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.common_dirs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::common_files}}",
+      "Body": "Files in both a and b.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.common_files"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::common_funny}}",
+      "Body": "Names in both a and b, such that the type differs between the directories, or names for which os.stat() reports an error.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.common_funny"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::same_files}}",
+      "Body": "Files which are identical in both a and b, using the class's file comparison operator.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.same_files"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::diff_files}}",
+      "Body": "Files which are in both a and b, whose contents differ according to the class's file comparison operator.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.diff_files"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::funny_files}}",
+      "Body": "Files which are in both a and b, but could not be compared.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.funny_files"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::dircmp}}.{{c3::subdirs}}",
+      "Body": "A dictionary mapping names in common_dirs to dircmp objects.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.dircmp.subdirs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::filecmp}}.{{c2::DEFAULT_IGNORES}}",
+      "Body": "New in version 3.4.",
+      "Link": "https://docs.python.org/3/library/filecmp.html#filecmp.DEFAULT_IGNORES"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::TemporaryFile}}({{c3::mode}}='{{c4::w}}+{{c5::b}}', {{c6::buffering}}={{c7::None}}, {{c8::encoding}}={{c9::None}}, {{c10::newline}}={{c11::None}}, {{c12::suffix}}={{c13::None}}, {{c14::prefix}}={{c15::None}}, {{c16::dir}}={{c17::None}})",
+      "Body": "Return a file-like object that can be used as a temporary storage area. The file is created securely, using the same rules as mkstemp(). It will be destroyed as soon as it is closed (including an implicit close when the object is garbage collected).  Under Unix, the directory entry for the file is either not created at all or is removed immediately after the file is created.  Other platforms do not support this; your code should not rely on a temporary file created using this function having or not having a visible name in the file system.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::NamedTemporaryFile}}({{c3::mode}}='{{c4::w}}+{{c5::b}}', {{c6::buffering}}={{c7::None}}, {{c8::encoding}}={{c9::None}}, {{c10::newline}}={{c11::None}}, {{c12::suffix}}={{c13::None}}, {{c14::prefix}}={{c15::None}}, {{c16::dir}}={{c17::None}}, {{c18::delete}}={{c19::True}})",
+      "Body": "This function operates exactly as TemporaryFile() does, except that the file is guaranteed to have a visible name in the file system (on Unix, the directory entry is not unlinked).  That name can be retrieved from the name attribute of the returned file-like object.  Whether the name can be used to open the file a second time, while the named temporary file is still open, varies across platforms (it can be so used on Unix; it cannot on Windows NT or later).  If delete is true (the default), the file is deleted as soon as it is closed. The returned object is always a file-like object whose file attribute is the underlying true file object. This file-like object can be used in a with statement, just like a normal file.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::SpooledTemporaryFile}}({{c3::max_size}}=0, {{c4::mode}}='{{c5::w}}+{{c6::b}}', {{c7::buffering}}={{c8::None}}, {{c9::encoding}}={{c10::None}}, {{c11::newline}}={{c12::None}}, {{c13::suffix}}={{c14::None}}, {{c15::prefix}}={{c16::None}}, {{c17::dir}}={{c18::None}})",
+      "Body": "This function operates exactly as TemporaryFile() does, except that data is spooled in memory until the file size exceeds max_size, or until the file's fileno() method is called, at which point the contents are written to disk and operation proceeds as with TemporaryFile().",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.SpooledTemporaryFile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::TemporaryDirectory}}({{c3::suffix}}={{c4::None}}, {{c5::prefix}}={{c6::None}}, {{c7::dir}}={{c8::None}})",
+      "Body": "This function securely creates a temporary directory using the same rules as mkdtemp(). The resulting object can be used as a context manager (see Examples).  On completion of the context or destruction of the temporary directory object the newly created temporary directory and all its contents are removed from the filesystem.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryDirectory"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::mkstemp}}({{c3::suffix}}={{c4::None}}, {{c5::prefix}}={{c6::None}}, {{c7::dir}}={{c8::None}}, {{c9::text}}={{c10::False}})",
+      "Body": "Creates a temporary file in the most secure manner possible.  There are no race conditions in the file's creation, assuming that the platform properly implements the os.O_EXCL flag for os.open().  The file is readable and writable only by the creating user ID.  If the platform uses permission bits to indicate whether a file is executable, the file is executable by no one.  The file descriptor is not inherited by child processes.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.mkstemp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::mkdtemp}}({{c3::suffix}}={{c4::None}}, {{c5::prefix}}={{c6::None}}, {{c7::dir}}={{c8::None}})",
+      "Body": "Creates a temporary directory in the most secure manner possible. There are no race conditions in the directory's creation.  The directory is readable, writable, and searchable only by the creating user ID.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.mkdtemp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::gettempdir}}()",
+      "Body": "Return the name of the directory used for temporary files. This defines the default value for the dir argument to all functions in this module.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.gettempdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::gettempdirb}}()",
+      "Body": "Same as gettempdir() but the return value is in bytes.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.gettempdirb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::gettempprefix}}()",
+      "Body": "Return the filename prefix used to create temporary files.  This does not contain the directory component.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.gettempprefix"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::gettempprefixb}}()",
+      "Body": "Same as gettempprefix() but the return value is in bytes.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.gettempprefixb"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::tempdir}}",
+      "Body": "When set to a value other than None, this variable defines the default value for the dir argument to the functions defined in this module.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.tempdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::tempfile}}.{{c2::mktemp}}({{c3::suffix}}='', {{c4::prefix}}='{{c5::tmp}}', {{c6::dir}}={{c7::None}})",
+      "Body": "Deprecated since version 2.3: Use mkstemp() instead.",
+      "Link": "https://docs.python.org/3/library/tempfile.html#tempfile.mktemp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::glob}}.{{c2::glob}}({{c3::pathname}}, *, {{c4::recursive}}={{c5::False}})",
+      "Body": "Return a possibly-empty list of path names that match pathname, which must be a string containing a path specification. pathname can be either absolute (like /usr/src/Python-1.5/Makefile) or relative (like ../../Tools/*/*.gif), and can contain shell-style wildcards. Broken symlinks are included in the results (as in the shell).",
+      "Link": "https://docs.python.org/3/library/glob.html#glob.glob"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::glob}}.{{c2::iglob}}({{c3::pathname}}, *, {{c4::recursive}}={{c5::False}})",
+      "Body": "Return an iterator which yields the same values as glob() without actually storing them all simultaneously.",
+      "Link": "https://docs.python.org/3/library/glob.html#glob.iglob"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::glob}}.{{c2::escape}}({{c3::pathname}})",
+      "Body": "Escape all special characters ('?', '*' and '['). This is useful if you want to match an arbitrary literal string that may have special characters in it.  Special characters in drive/UNC sharepoints are not escaped, e.g. on Windows escape('//?/c:/Quo vadis?.txt') returns '//?/c:/Quo vadis[?].txt'.",
+      "Link": "https://docs.python.org/3/library/glob.html#glob.escape"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fnmatch}}.{{c2::fnmatch}}({{c3::filename}}, {{c4::pattern}})",
+      "Body": "Test whether the filename string matches the pattern string, returning True or False.  Both parameters are case-normalized using os.path.normcase(). fnmatchcase() can be used to perform a case-sensitive comparison, regardless of whether that's standard for the operating system.",
+      "Link": "https://docs.python.org/3/library/fnmatch.html#fnmatch.fnmatch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fnmatch}}.{{c2::fnmatchcase}}({{c3::filename}}, {{c4::pattern}})",
+      "Body": "Test whether filename matches pattern, returning True or False; the comparison is case-sensitive and does not apply os.path.normcase().",
+      "Link": "https://docs.python.org/3/library/fnmatch.html#fnmatch.fnmatchcase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fnmatch}}.{{c2::filter}}({{c3::names}}, {{c4::pattern}})",
+      "Body": "Return the subset of the list of names that match pattern. It is the same as [n for n in names if fnmatch(n, pattern)], but implemented more efficiently.",
+      "Link": "https://docs.python.org/3/library/fnmatch.html#fnmatch.filter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::fnmatch}}.{{c2::translate}}({{c3::pattern}})",
+      "Body": "Return the shell-style pattern converted to a regular expression for using with re.match().",
+      "Link": "https://docs.python.org/3/library/fnmatch.html#fnmatch.translate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::linecache}}.{{c2::getline}}({{c3::filename}}, {{c4::lineno}}, {{c5::module_globals}}={{c6::None}})",
+      "Body": "Get line lineno from file named filename. This function will never raise an exception  it will return '' on errors (the terminating newline character will be included for lines that are found).",
+      "Link": "https://docs.python.org/3/library/linecache.html#linecache.getline"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::linecache}}.{{c2::clearcache}}()",
+      "Body": "Clear the cache.  Use this function if you no longer need lines from files previously read using getline().",
+      "Link": "https://docs.python.org/3/library/linecache.html#linecache.clearcache"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::linecache}}.{{c2::checkcache}}({{c3::filename}}={{c4::None}})",
+      "Body": "Check the cache for validity.  Use this function if files in the cache  may have changed on disk, and you require the updated version.  If filename is omitted, it will check all the entries in the cache.",
+      "Link": "https://docs.python.org/3/library/linecache.html#linecache.checkcache"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::linecache}}.{{c2::lazycache}}({{c3::filename}}, {{c4::module_globals}})",
+      "Body": "Capture enough detail about a non-file-based module to permit getting its lines later via getline() even if module_globals is None in the later call. This avoids doing I/O until a line is actually needed, without having to carry the module globals around indefinitely.",
+      "Link": "https://docs.python.org/3/library/linecache.html#linecache.lazycache"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::copyfileobj}}({{c3::fsrc}}, {{c4::fdst}}[, {{c5::length}}])",
+      "Body": "Copy the contents of the file-like object fsrc to the file-like object fdst. The integer length, if given, is the buffer size. In particular, a negative length value means to copy the data without looping over the source data in chunks; by default the data is read in chunks to avoid uncontrolled memory consumption. Note that if the current file position of the fsrc object is not 0, only the contents from the current file position to the end of the file will be copied.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.copyfileobj"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::copyfile}}({{c3::src}}, {{c4::dst}}, *, {{c5::follow_symlinks}}={{c6::True}})",
+      "Body": "Copy the contents (no metadata) of the file named src to a file named dst and return dst.  src and dst are path names given as strings. dst must be the complete target file name; look at shutil.copy() for a copy that accepts a target directory path.  If src and dst specify the same file, SameFileError is raised.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.copyfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::shutil}}.{{c3::SameFileError}}",
+      "Body": "This exception is raised if source and destination in copyfile() are the same file.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.SameFileError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::copymode}}({{c3::src}}, {{c4::dst}}, *, {{c5::follow_symlinks}}={{c6::True}})",
+      "Body": "Copy the permission bits from src to dst.  The file contents, owner, and group are unaffected.  src and dst are path names given as strings. If follow_symlinks is false, and both src and dst are symbolic links, copymode() will attempt to modify the mode of dst itself (rather than the file it points to).  This functionality is not available on every platform; please see copystat() for more information.  If copymode() cannot modify symbolic links on the local platform, and it is asked to do so, it will do nothing and return.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.copymode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::copystat}}({{c3::src}}, {{c4::dst}}, *, {{c5::follow_symlinks}}={{c6::True}})",
+      "Body": "Copy the permission bits, last access time, last modification time, and flags from src to dst.  On Linux, copystat() also copies the extended attributes where possible.  The file contents, owner, and group are unaffected.  src and dst are path names given as strings.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.copystat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::copy}}({{c3::src}}, {{c4::dst}}, *, {{c5::follow_symlinks}}={{c6::True}})",
+      "Body": "Copies the file src to the file or directory dst.  src and dst should be strings.  If dst specifies a directory, the file will be copied into dst using the base filename from src.  Returns the path to the newly created file.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::copy}}2({{c3::src}}, {{c4::dst}}, *, {{c5::follow_symlinks}}={{c6::True}})",
+      "Body": "Identical to copy() except that copy2() also attempts to preserve file metadata.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.copy2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::ignore_patterns}}(*patterns)",
+      "Body": "This factory function creates a function that can be used as a callable for copytree()'s ignore argument, ignoring files and directories that match one of the glob-style patterns provided.  See the example below.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.ignore_patterns"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::copytree}}({{c3::src}}, {{c4::dst}}, {{c5::symlinks}}={{c6::False}}, {{c7::ignore}}={{c8::None}}, {{c9::copy_function}}={{c10::copy}}2, {{c11::ignore_dangling_symlinks}}={{c12::False}})",
+      "Body": "Recursively copy an entire directory tree rooted at src, returning the destination directory.  The destination directory, named by dst, must not already exist; it will be created as well as missing parent directories.  Permissions and times of directories are copied with copystat(), individual files are copied using shutil.copy2().",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.copytree"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::rmtree}}({{c3::path}}, {{c4::ignore_errors}}={{c5::False}}, {{c6::onerror}}={{c7::None}})",
+      "Body": "Delete an entire directory tree; path must point to a directory (but not a symbolic link to a directory).  If ignore_errors is true, errors resulting from failed removals will be ignored; if false or omitted, such errors are handled by calling a handler specified by onerror or, if that is omitted, they raise an exception.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.rmtree"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::rmtree}}.{{c2::avoids_symlink_attacks}}",
+      "Body": "Indicates whether the current platform and implementation provides a symlink attack resistant version of rmtree().  Currently this is only true for platforms supporting fd-based directory access functions.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.rmtree.avoids_symlink_attacks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::move}}({{c3::src}}, {{c4::dst}}, {{c5::copy_function}}={{c6::copy}}2)",
+      "Body": "Recursively move a file or directory (src) to another location (dst) and return the destination.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.move"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::disk_usage}}({{c3::path}})",
+      "Body": "Return disk usage statistics about the given path as a named tuple with the attributes total, used and free, which are the amount of total, used and free space, in bytes.  On Windows, path must be a directory; on Unix, it can be a file or directory.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.disk_usage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::chown}}({{c3::path}}, {{c4::user}}={{c5::None}}, {{c6::group}}={{c7::None}})",
+      "Body": "Change owner user and/or group of the given path.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.chown"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::which}}({{c3::cmd}}, {{c4::mode}}={{c5::os}}.{{c6::F_OK}} | {{c7::os}}.{{c8::X_OK}}, {{c9::path}}={{c10::None}})",
+      "Body": "Return the path to an executable which would be run if the given cmd was called.  If no cmd would be called, return None.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.which"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::shutil}}.{{c3::Error}}",
+      "Body": "This exception collects exceptions that are raised during a multi-file operation. For copytree(), the exception argument is a list of 3-tuples (srcname, dstname, exception).",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::make_archive}}({{c3::base_name}}, {{c4::format}}[, {{c5::root_dir}}[, {{c6::base_dir}}[, {{c7::verbose}}[, {{c8::dry_run}}[, {{c9::owner}}[, {{c10::group}}[, {{c11::logger}}]]]]]]])",
+      "Body": "Create an archive file (such as zip or tar) and return its name.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.make_archive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::get_archive_formats}}()",
+      "Body": "Return a list of supported formats for archiving. Each element of the returned sequence is a tuple (name, description).",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.get_archive_formats"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::register_archive_format}}({{c3::name}}, {{c4::function}}[, {{c5::extra_args}}[, {{c6::description}}]])",
+      "Body": "Register an archiver for the format name.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.register_archive_format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::unregister_archive_format}}({{c3::name}})",
+      "Body": "Remove the archive format name from the list of supported formats.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.unregister_archive_format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::unpack_archive}}({{c3::filename}}[, {{c4::extract_dir}}[, {{c5::format}}]])",
+      "Body": "Unpack an archive. filename is the full path of the archive.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.unpack_archive"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::register_unpack_format}}({{c3::name}}, {{c4::extensions}}, {{c5::function}}[, {{c6::extra_args}}[, {{c7::description}}]])",
+      "Body": "Registers an unpack format. name is the name of the format and extensions is a list of extensions corresponding to the format, like .zip for Zip files.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.register_unpack_format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::unregister_unpack_format}}({{c3::name}})",
+      "Body": "Unregister an unpack format. name is the name of the format.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.unregister_unpack_format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::get_unpack_formats}}()",
+      "Body": "Return a list of all registered formats for unpacking. Each element of the returned sequence is a tuple (name, extensions, description).",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.get_unpack_formats"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "File and Directory Access",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::shutil}}.{{c2::get_terminal_size}}({{c3::fallback}}=({{c4::columns}}, {{c5::lines}}))",
+      "Body": "Get the size of the terminal window.",
+      "Link": "https://docs.python.org/3/library/shutil.html#shutil.get_terminal_size"
+    },
+    "modelName": "ClozePy"
+  }
+]

@@ -1,0 +1,3116 @@
+[
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::dump}}({{c3::obj}}, {{c4::fp}}, *, {{c5::skipkeys}}={{c6::False}}, {{c7::ensure_ascii}}={{c8::True}}, {{c9::check_circular}}={{c10::True}}, {{c11::allow_nan}}={{c12::True}}, {{c13::cls}}={{c14::None}}, {{c15::indent}}={{c16::None}}, {{c17::separators}}={{c18::None}}, {{c19::default}}={{c20::None}}, {{c21::sort_keys}}={{c22::False}}, **kw)",
+      "Body": "Serialize obj as a JSON formatted stream to fp (a .write()-supporting file-like object) using this conversion table.",
+      "Link": "https://docs.python.org/3/library/json.html#json.dump"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::dumps}}({{c3::obj}}, *, {{c4::skipkeys}}={{c5::False}}, {{c6::ensure_ascii}}={{c7::True}}, {{c8::check_circular}}={{c9::True}}, {{c10::allow_nan}}={{c11::True}}, {{c12::cls}}={{c13::None}}, {{c14::indent}}={{c15::None}}, {{c16::separators}}={{c17::None}}, {{c18::default}}={{c19::None}}, {{c20::sort_keys}}={{c21::False}}, **kw)",
+      "Body": "Serialize obj to a JSON formatted str using this conversion table.  The arguments have the same meaning as in dump().",
+      "Link": "https://docs.python.org/3/library/json.html#json.dumps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::load}}({{c3::fp}}, *, {{c4::cls}}={{c5::None}}, {{c6::object_hook}}={{c7::None}}, {{c8::parse_float}}={{c9::None}}, {{c10::parse_int}}={{c11::None}}, {{c12::parse_constant}}={{c13::None}}, {{c14::object_pairs_hook}}={{c15::None}}, **kw)",
+      "Body": "Deserialize fp (a .read()-supporting text file or binary file containing a JSON document) to a object using this conversion table.",
+      "Link": "https://docs.python.org/3/library/json.html#json.load"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::loads}}({{c3::s}}, *, {{c4::encoding}}={{c5::None}}, {{c6::cls}}={{c7::None}}, {{c8::object_hook}}={{c9::None}}, {{c10::parse_float}}={{c11::None}}, {{c12::parse_int}}={{c13::None}}, {{c14::parse_constant}}={{c15::None}}, {{c16::object_pairs_hook}}={{c17::None}}, **kw)",
+      "Body": "Deserialize s (a str, bytes or bytearray instance containing a JSON document) to a object using this conversion table.",
+      "Link": "https://docs.python.org/3/library/json.html#json.loads"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::json}}.{{c3::JSONDecoder}}(*, {{c4::object_hook}}={{c5::None}}, {{c6::parse_float}}={{c7::None}}, {{c8::parse_int}}={{c9::None}}, {{c10::parse_constant}}={{c11::None}}, {{c12::strict}}={{c13::True}}, {{c14::object_pairs_hook}}={{c15::None}})",
+      "Body": "Simple JSON decoder.",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONDecoder}}.{{c3::decode}}({{c4::s}})",
+      "Body": "Return the representation of s (a str instance containing a JSON document).",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecoder.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONDecoder}}.{{c3::raw_decode}}({{c4::s}})",
+      "Body": "Decode a JSON document from s (a str beginning with a JSON document) and return a 2-tuple of the representation and the index in s where the document ended.",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecoder.raw_decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::json}}.{{c3::JSONEncoder}}(*, {{c4::skipkeys}}={{c5::False}}, {{c6::ensure_ascii}}={{c7::True}}, {{c8::check_circular}}={{c9::True}}, {{c10::allow_nan}}={{c11::True}}, {{c12::sort_keys}}={{c13::False}}, {{c14::indent}}={{c15::None}}, {{c16::separators}}={{c17::None}}, {{c18::default}}={{c19::None}})",
+      "Body": "Extensible JSON encoder for data structures.",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONEncoder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONEncoder}}.{{c3::default}}({{c4::o}})",
+      "Body": "Implement this method in a subclass such that it returns a serializable object for o, or calls the base implementation (to raise a TypeError).",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONEncoder.default"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONEncoder}}.{{c3::encode}}({{c4::o}})",
+      "Body": "Return a JSON string representation of a data structure, o.  For example:",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONEncoder.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONEncoder}}.{{c3::iterencode}}({{c4::o}})",
+      "Body": "Encode the given object, o, and yield each string representation as available.  For example:",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONEncoder.iterencode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::json}}.{{c3::JSONDecodeError}}({{c4::msg}}, {{c5::doc}}, {{c6::pos}})",
+      "Body": "Subclass of ValueError with the following additional attributes:",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecodeError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONDecodeError}}.{{c3::msg}}",
+      "Body": "The unformatted error message.",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecodeError.msg"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONDecodeError}}.{{c3::doc}}",
+      "Body": "The JSON document being parsed.",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecodeError.doc"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONDecodeError}}.{{c3::pos}}",
+      "Body": "The start index of doc where parsing failed.",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecodeError.pos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONDecodeError}}.{{c3::lineno}}",
+      "Body": "The line corresponding to pos.",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecodeError.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::json}}.{{c2::JSONDecodeError}}.{{c3::colno}}",
+      "Body": "The column corresponding to pos.",
+      "Link": "https://docs.python.org/3/library/json.html#json.JSONDecodeError.colno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::infile}}",
+      "Body": "The JSON file to be validated or pretty-printed:",
+      "Link": "https://docs.python.org/3/library/json.html#cmdoption-arg-infile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::outfile}}",
+      "Body": "Write the output of the infile to the given outfile. Otherwise, write it to sys.stdout.",
+      "Link": "https://docs.python.org/3/library/json.html#cmdoption-arg-outfile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "--{{c1::sort}}-{{c2::keys}}",
+      "Body": "Sort the output of dictionaries alphabetically by key.",
+      "Link": "https://docs.python.org/3/library/json.html#cmdoption-sort-keys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "cmdoption",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "-{{c1::h}}, --{{c2::help}}",
+      "Body": "Show the help message.",
+      "Link": "https://docs.python.org/3/library/json.html#cmdoption-h"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailcap}}.{{c2::findmatch}}({{c3::caps}}, {{c4::MIMEtype}}, {{c5::key}}='{{c6::view}}', {{c7::filename}}='/{{c8::dev}}/{{c9::null}}', {{c10::plist}}=[])",
+      "Body": "Return a 2-tuple; the first element is a string containing the command line to be executed (which can be passed to os.system()), and the second element is the mailcap entry for a given MIME type.  If no matching MIME type can be found, (None, None) is returned.",
+      "Link": "https://docs.python.org/3/library/mailcap.html#mailcap.findmatch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailcap}}.{{c2::getcaps}}()",
+      "Body": "Returns a dictionary mapping MIME types to a list of mailcap file entries. This dictionary must be passed to the findmatch() function.  An entry is stored as a list of dictionaries, but it shouldn't be necessary to know the details of this representation.",
+      "Link": "https://docs.python.org/3/library/mailcap.html#mailcap.getcaps"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::Mailbox}}",
+      "Body": "A mailbox, which may be inspected and modified.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::add}}({{c4::message}})",
+      "Body": "Add message to the mailbox and return the key that has been assigned to it.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::remove}}({{c4::key}})",
+      "Body": "Delete the message corresponding to key from the mailbox.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.remove"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::__delitem__}}({{c4::key}})",
+      "Body": "Delete the message corresponding to key from the mailbox.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.__delitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::discard}}({{c4::key}})",
+      "Body": "Delete the message corresponding to key from the mailbox.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.discard"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::__setitem__}}({{c4::key}}, {{c5::message}})",
+      "Body": "Replace the message corresponding to key with message. Raise a KeyError exception if no message already corresponds to key.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.__setitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::iterkeys}}()",
+      "Body": "Return an iterator over all keys if called as iterkeys() or return a list of keys if called as keys().",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.iterkeys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::keys}}()",
+      "Body": "Return an iterator over all keys if called as iterkeys() or return a list of keys if called as keys().",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.keys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::itervalues}}()",
+      "Body": "Return an iterator over representations of all messages if called as itervalues() or __iter__() or return a list of such representations if called as values(). The messages are represented as instances of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.itervalues"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::__iter__}}()",
+      "Body": "Return an iterator over representations of all messages if called as itervalues() or __iter__() or return a list of such representations if called as values(). The messages are represented as instances of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.__iter__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::values}}()",
+      "Body": "Return an iterator over representations of all messages if called as itervalues() or __iter__() or return a list of such representations if called as values(). The messages are represented as instances of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.values"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::iteritems}}()",
+      "Body": "Return an iterator over (key, message) pairs, where key is a key and message is a message representation, if called as iteritems() or return a list of such pairs if called as items(). The messages are represented as instances of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.iteritems"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::items}}()",
+      "Body": "Return an iterator over (key, message) pairs, where key is a key and message is a message representation, if called as iteritems() or return a list of such pairs if called as items(). The messages are represented as instances of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.items"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::get}}({{c4::key}}, {{c5::default}}={{c6::None}})",
+      "Body": "Return a representation of the message corresponding to key. If no such message exists, default is returned if the method was called as get() and a KeyError exception is raised if the method was called as __getitem__(). The message is represented as an instance of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::__getitem__}}({{c4::key}})",
+      "Body": "Return a representation of the message corresponding to key. If no such message exists, default is returned if the method was called as get() and a KeyError exception is raised if the method was called as __getitem__(). The message is represented as an instance of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.__getitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::get_message}}({{c4::key}})",
+      "Body": "Return a representation of the message corresponding to key as an instance of the appropriate format-specific Message subclass, or raise a KeyError exception if no such message exists.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.get_message"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::get_bytes}}({{c4::key}})",
+      "Body": "Return a byte representation of the message corresponding to key, or raise a KeyError exception if no such message exists.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.get_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::get_string}}({{c4::key}})",
+      "Body": "Return a string representation of the message corresponding to key, or raise a KeyError exception if no such message exists.  The message is processed through email.message.Message to convert it to a 7bit clean representation.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.get_string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::get_file}}({{c4::key}})",
+      "Body": "Return a file-like representation of the message corresponding to key, or raise a KeyError exception if no such message exists.  The file-like object behaves as if open in binary mode.  This file should be closed once it is no longer needed.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.get_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::__contains__}}({{c4::key}})",
+      "Body": "Return True if key corresponds to a message, False otherwise.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.__contains__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::__len__}}()",
+      "Body": "Return a count of messages in the mailbox.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.__len__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::clear}}()",
+      "Body": "Delete all messages from the mailbox.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.clear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::pop}}({{c4::key}}, {{c5::default}}={{c6::None}})",
+      "Body": "Return a representation of the message corresponding to key and delete the message. If no such message exists, return default. The message is represented as an instance of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.pop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::popitem}}()",
+      "Body": "Return an arbitrary (key, message) pair, where key is a key and message is a message representation, and delete the corresponding message. If the mailbox is empty, raise a KeyError exception. The message is represented as an instance of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.popitem"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::update}}({{c4::arg}})",
+      "Body": "Parameter arg should be a key-to-message mapping or an iterable of (key, message) pairs. Updates the mailbox so that, for each given key and message, the message corresponding to key is set to message as if by using __setitem__(). As with __setitem__(), each key must already correspond to a message in the mailbox or else a KeyError exception will be raised, so in general it is incorrect for arg to be a Mailbox instance.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::flush}}()",
+      "Body": "Write any pending changes to the filesystem. For some Mailbox subclasses, changes are always written immediately and flush() does nothing, but you should still make a habit of calling this method.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.flush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::lock}}()",
+      "Body": "Acquire an exclusive advisory lock on the mailbox so that other processes know not to modify it. An ExternalClashError is raised if the lock is not available. The particular locking mechanisms used depend upon the mailbox format.  You should always lock the mailbox before making any modifications to its contents.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::unlock}}()",
+      "Body": "Release the lock on the mailbox, if any.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.unlock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Mailbox}}.{{c3::close}}()",
+      "Body": "Flush the mailbox, unlock it if necessary, and close any open files. For some Mailbox subclasses, this method does nothing.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Mailbox.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::Maildir}}({{c4::dirname}}, {{c5::factory}}={{c6::None}}, {{c7::create}}={{c8::True}})",
+      "Body": "A subclass of Mailbox for mailboxes in Maildir format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, MaildirMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::list_folders}}()",
+      "Body": "Return a list of the names of all folders.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.list_folders"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::get_folder}}({{c4::folder}})",
+      "Body": "Return a Maildir instance representing the folder whose name is folder. A NoSuchMailboxError exception is raised if the folder does not exist.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.get_folder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::add_folder}}({{c4::folder}})",
+      "Body": "Create a folder whose name is folder and return a Maildir instance representing it.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.add_folder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::remove_folder}}({{c4::folder}})",
+      "Body": "Delete the folder whose name is folder. If the folder contains any messages, a NotEmptyError exception will be raised and the folder will not be deleted.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.remove_folder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::clean}}()",
+      "Body": "Delete temporary files from the mailbox that have not been accessed in the last 36 hours. The Maildir specification says that mail-reading programs should do this occasionally.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.clean"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::add}}({{c4::message}})",
+      "Body": "Warning",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::__setitem__}}({{c4::key}}, {{c5::message}})",
+      "Body": "Warning",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.__setitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::update}}({{c4::arg}})",
+      "Body": "Warning",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::flush}}()",
+      "Body": "All changes to Maildir mailboxes are immediately applied, so this method does nothing.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.flush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::lock}}()",
+      "Body": "Maildir mailboxes do not support (or require) locking, so these methods do nothing.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::unlock}}()",
+      "Body": "Maildir mailboxes do not support (or require) locking, so these methods do nothing.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.unlock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::close}}()",
+      "Body": "Maildir instances do not keep any open files and the underlying mailboxes do not support locking, so this method does nothing.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Maildir}}.{{c3::get_file}}({{c4::key}})",
+      "Body": "Depending upon the host platform, it may not be possible to modify or remove the underlying message while the returned file remains open.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.get_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::mbox}}({{c4::path}}, {{c5::factory}}={{c6::None}}, {{c7::create}}={{c8::True}})",
+      "Body": "A subclass of Mailbox for mailboxes in mbox format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, mboxMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mbox"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mbox}}.{{c3::get_file}}({{c4::key}})",
+      "Body": "Using the file after calling flush() or close() on the mbox instance may yield unpredictable results or raise an exception.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mbox.get_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mbox}}.{{c3::lock}}()",
+      "Body": "Three locking mechanisms are useddot locking and, if available, the flock() and lockf() system calls.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mbox.lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mbox}}.{{c3::unlock}}()",
+      "Body": "Three locking mechanisms are useddot locking and, if available, the flock() and lockf() system calls.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mbox.unlock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::MH}}({{c4::path}}, {{c5::factory}}={{c6::None}}, {{c7::create}}={{c8::True}})",
+      "Body": "A subclass of Mailbox for mailboxes in MH format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, MHMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::list_folders}}()",
+      "Body": "Return a list of the names of all folders.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.list_folders"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::get_folder}}({{c4::folder}})",
+      "Body": "Return an MH instance representing the folder whose name is folder. A NoSuchMailboxError exception is raised if the folder does not exist.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.get_folder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::add_folder}}({{c4::folder}})",
+      "Body": "Create a folder whose name is folder and return an MH instance representing it.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.add_folder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::remove_folder}}({{c4::folder}})",
+      "Body": "Delete the folder whose name is folder. If the folder contains any messages, a NotEmptyError exception will be raised and the folder will not be deleted.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.remove_folder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::get_sequences}}()",
+      "Body": "Return a dictionary of sequence names mapped to key lists. If there are no sequences, the empty dictionary is returned.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.get_sequences"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::set_sequences}}({{c4::sequences}})",
+      "Body": "Re-define the sequences that exist in the mailbox based upon sequences, a dictionary of names mapped to key lists, like returned by get_sequences().",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.set_sequences"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::pack}}()",
+      "Body": "Rename messages in the mailbox as necessary to eliminate gaps in numbering.  Entries in the sequences list are updated correspondingly.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.pack"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::remove}}({{c4::key}})",
+      "Body": "These methods immediately delete the message. The MH convention of marking a message for deletion by prepending a comma to its name is not used.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.remove"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::__delitem__}}({{c4::key}})",
+      "Body": "These methods immediately delete the message. The MH convention of marking a message for deletion by prepending a comma to its name is not used.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.__delitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::discard}}({{c4::key}})",
+      "Body": "These methods immediately delete the message. The MH convention of marking a message for deletion by prepending a comma to its name is not used.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.discard"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::lock}}()",
+      "Body": "Three locking mechanisms are useddot locking and, if available, the flock() and lockf() system calls. For MH mailboxes, locking the mailbox means locking the .mh_sequences file and, only for the duration of any operations that affect them, locking individual message files.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::unlock}}()",
+      "Body": "Three locking mechanisms are useddot locking and, if available, the flock() and lockf() system calls. For MH mailboxes, locking the mailbox means locking the .mh_sequences file and, only for the duration of any operations that affect them, locking individual message files.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.unlock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::get_file}}({{c4::key}})",
+      "Body": "Depending upon the host platform, it may not be possible to remove the underlying message while the returned file remains open.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.get_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::flush}}()",
+      "Body": "All changes to MH mailboxes are immediately applied, so this method does nothing.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.flush"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MH}}.{{c3::close}}()",
+      "Body": "MH instances do not keep any open files, so this method is equivalent to unlock().",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MH.close"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::Babyl}}({{c4::path}}, {{c5::factory}}={{c6::None}}, {{c7::create}}={{c8::True}})",
+      "Body": "A subclass of Mailbox for mailboxes in Babyl format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, BabylMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Babyl"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Babyl}}.{{c3::get_labels}}()",
+      "Body": "Return a list of the names of all user-defined labels used in the mailbox.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Babyl.get_labels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Babyl}}.{{c3::get_file}}({{c4::key}})",
+      "Body": "In Babyl mailboxes, the headers of a message are not stored contiguously with the body of the message. To generate a file-like representation, the headers and body are copied together into an io.BytesIO instance, which has an API identical to that of a file. As a result, the file-like object is truly independent of the underlying mailbox but does not save memory compared to a string representation.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Babyl.get_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Babyl}}.{{c3::lock}}()",
+      "Body": "Three locking mechanisms are useddot locking and, if available, the flock() and lockf() system calls.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Babyl.lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::Babyl}}.{{c3::unlock}}()",
+      "Body": "Three locking mechanisms are useddot locking and, if available, the flock() and lockf() system calls.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Babyl.unlock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::MMDF}}({{c4::path}}, {{c5::factory}}={{c6::None}}, {{c7::create}}={{c8::True}})",
+      "Body": "A subclass of Mailbox for mailboxes in MMDF format. Parameter factory is a callable object that accepts a file-like message representation (which behaves as if opened in binary mode) and returns a custom representation. If factory is None, MMDFMessage is used as the default message representation. If create is True, the mailbox is created if it does not exist.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDF"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDF}}.{{c3::get_file}}({{c4::key}})",
+      "Body": "Using the file after calling flush() or close() on the MMDF instance may yield unpredictable results or raise an exception.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDF.get_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDF}}.{{c3::lock}}()",
+      "Body": "Three locking mechanisms are useddot locking and, if available, the flock() and lockf() system calls.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDF.lock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDF}}.{{c3::unlock}}()",
+      "Body": "Three locking mechanisms are useddot locking and, if available, the flock() and lockf() system calls.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDF.unlock"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::Message}}({{c4::message}}={{c5::None}})",
+      "Body": "A subclass of the email.message module's Message. Subclasses of mailbox.Message add mailbox-format-specific state and behavior.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Message"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::MaildirMessage}}({{c4::message}}={{c5::None}})",
+      "Body": "A message with Maildir-specific behaviors. Parameter message has the same meaning as with the Message constructor.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::get_subdir}}()",
+      "Body": "Return either new (if the message should be stored in the new subdirectory) or cur (if the message should be stored in the cur subdirectory).",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.get_subdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::set_subdir}}({{c4::subdir}})",
+      "Body": "Set the subdirectory the message should be stored in. Parameter subdir must be either new or cur.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.set_subdir"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::get_flags}}()",
+      "Body": "Return a string specifying the flags that are currently set. If the message complies with the standard Maildir format, the result is the concatenation in alphabetical order of zero or one occurrence of each of 'D', 'F', 'P', 'R', 'S', and 'T'. The empty string is returned if no flags are set or if info contains experimental semantics.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.get_flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::set_flags}}({{c4::flags}})",
+      "Body": "Set the flags specified by flags and unset all others.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.set_flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::add_flag}}({{c4::flag}})",
+      "Body": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character. The current info is overwritten whether or not it contains experimental information rather than flags.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.add_flag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::remove_flag}}({{c4::flag}})",
+      "Body": "Unset the flag(s) specified by flag without changing other flags. To remove more than one flag at a time, flag maybe a string of more than one character.  If info contains experimental information rather than flags, the current info is not modified.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.remove_flag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::get_date}}()",
+      "Body": "Return the delivery date of the message as a floating-point number representing seconds since the epoch.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.get_date"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::set_date}}({{c4::date}})",
+      "Body": "Set the delivery date of the message to date, a floating-point number representing seconds since the epoch.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.set_date"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::get_info}}()",
+      "Body": "Return a string containing the info for a message. This is useful for accessing and modifying info that is experimental (i.e., not a list of flags).",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.get_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MaildirMessage}}.{{c3::set_info}}({{c4::info}})",
+      "Body": "Set info to info, which should be a string.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MaildirMessage.set_info"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::mboxMessage}}({{c4::message}}={{c5::None}})",
+      "Body": "A message with mbox-specific behaviors. Parameter message has the same meaning as with the Message constructor.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mboxMessage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mboxMessage}}.{{c3::get_from}}()",
+      "Body": "Return a string representing the From  line that marks the start of the message in an mbox mailbox. The leading From  and the trailing newline are excluded.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mboxMessage.get_from"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mboxMessage}}.{{c3::set_from}}({{c4::from_}}, {{c5::time_}}={{c6::None}})",
+      "Body": "Set the From  line to from_, which should be specified without a leading From  or trailing newline. For convenience, time_ may be specified and will be formatted appropriately and appended to from_. If time_ is specified, it should be a time.struct_time instance, a tuple suitable for passing to time.strftime(), or True (to use time.gmtime()).",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mboxMessage.set_from"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mboxMessage}}.{{c3::get_flags}}()",
+      "Body": "Return a string specifying the flags that are currently set. If the message complies with the conventional format, the result is the concatenation in the following order of zero or one occurrence of each of 'R', 'O', 'D', 'F', and 'A'.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mboxMessage.get_flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mboxMessage}}.{{c3::set_flags}}({{c4::flags}})",
+      "Body": "Set the flags specified by flags and unset all others. Parameter flags should be the concatenation in any order of zero or more occurrences of each of 'R', 'O', 'D', 'F', and 'A'.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mboxMessage.set_flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mboxMessage}}.{{c3::add_flag}}({{c4::flag}})",
+      "Body": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mboxMessage.add_flag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::mboxMessage}}.{{c3::remove_flag}}({{c4::flag}})",
+      "Body": "Unset the flag(s) specified by flag without changing other flags. To remove more than one flag at a time, flag maybe a string of more than one character.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.mboxMessage.remove_flag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::MHMessage}}({{c4::message}}={{c5::None}})",
+      "Body": "A message with MH-specific behaviors. Parameter message has the same meaning as with the Message constructor.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MHMessage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MHMessage}}.{{c3::get_sequences}}()",
+      "Body": "Return a list of the names of sequences that include this message.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MHMessage.get_sequences"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MHMessage}}.{{c3::set_sequences}}({{c4::sequences}})",
+      "Body": "Set the list of sequences that include this message.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MHMessage.set_sequences"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MHMessage}}.{{c3::add_sequence}}({{c4::sequence}})",
+      "Body": "Add sequence to the list of sequences that include this message.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MHMessage.add_sequence"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MHMessage}}.{{c3::remove_sequence}}({{c4::sequence}})",
+      "Body": "Remove sequence from the list of sequences that include this message.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MHMessage.remove_sequence"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::BabylMessage}}({{c4::message}}={{c5::None}})",
+      "Body": "A message with Babyl-specific behaviors. Parameter message has the same meaning as with the Message constructor.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.BabylMessage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::BabylMessage}}.{{c3::get_labels}}()",
+      "Body": "Return a list of labels on the message.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.BabylMessage.get_labels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::BabylMessage}}.{{c3::set_labels}}({{c4::labels}})",
+      "Body": "Set the list of labels on the message to labels.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.BabylMessage.set_labels"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::BabylMessage}}.{{c3::add_label}}({{c4::label}})",
+      "Body": "Add label to the list of labels on the message.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.BabylMessage.add_label"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::BabylMessage}}.{{c3::remove_label}}({{c4::label}})",
+      "Body": "Remove label from the list of labels on the message.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.BabylMessage.remove_label"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::BabylMessage}}.{{c3::get_visible}}()",
+      "Body": "Return an Message instance whose headers are the message's visible headers and whose body is empty.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.BabylMessage.get_visible"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::BabylMessage}}.{{c3::set_visible}}({{c4::visible}})",
+      "Body": "Set the message's visible headers to be the same as the headers in message.  Parameter visible should be a Message instance, an email.message.Message instance, a string, or a file-like object (which should be open in text mode).",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.BabylMessage.set_visible"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::BabylMessage}}.{{c3::update_visible}}()",
+      "Body": "When a BabylMessage instance's original headers are modified, the visible headers are not automatically modified to correspond. This method updates the visible headers as follows: each visible header with a corresponding original header is set to the value of the original header, each visible header without a corresponding original header is removed, and any of Date, From, Reply-To, To, CC, and Subject that are present in the original headers but not the visible headers are added to the visible headers.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.BabylMessage.update_visible"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mailbox}}.{{c3::MMDFMessage}}({{c4::message}}={{c5::None}})",
+      "Body": "A message with MMDF-specific behaviors. Parameter message has the same meaning as with the Message constructor.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDFMessage"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDFMessage}}.{{c3::get_from}}()",
+      "Body": "Return a string representing the From  line that marks the start of the message in an mbox mailbox. The leading From  and the trailing newline are excluded.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDFMessage.get_from"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDFMessage}}.{{c3::set_from}}({{c4::from_}}, {{c5::time_}}={{c6::None}})",
+      "Body": "Set the From  line to from_, which should be specified without a leading From  or trailing newline. For convenience, time_ may be specified and will be formatted appropriately and appended to from_. If time_ is specified, it should be a time.struct_time instance, a tuple suitable for passing to time.strftime(), or True (to use time.gmtime()).",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDFMessage.set_from"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDFMessage}}.{{c3::get_flags}}()",
+      "Body": "Return a string specifying the flags that are currently set. If the message complies with the conventional format, the result is the concatenation in the following order of zero or one occurrence of each of 'R', 'O', 'D', 'F', and 'A'.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDFMessage.get_flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDFMessage}}.{{c3::set_flags}}({{c4::flags}})",
+      "Body": "Set the flags specified by flags and unset all others. Parameter flags should be the concatenation in any order of zero or more occurrences of each of 'R', 'O', 'D', 'F', and 'A'.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDFMessage.set_flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDFMessage}}.{{c3::add_flag}}({{c4::flag}})",
+      "Body": "Set the flag(s) specified by flag without changing other flags. To add more than one flag at a time, flag may be a string of more than one character.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDFMessage.add_flag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mailbox}}.{{c2::MMDFMessage}}.{{c3::remove_flag}}({{c4::flag}})",
+      "Body": "Unset the flag(s) specified by flag without changing other flags. To remove more than one flag at a time, flag maybe a string of more than one character.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.MMDFMessage.remove_flag"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::mailbox}}.{{c3::Error}}",
+      "Body": "The based class for all other module-specific exceptions.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::mailbox}}.{{c3::NoSuchMailboxError}}",
+      "Body": "Raised when a mailbox is expected but is not found, such as when instantiating a Mailbox subclass with a path that does not exist (and with the create parameter set to False), or when opening a folder that does not exist.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.NoSuchMailboxError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::mailbox}}.{{c3::NotEmptyError}}",
+      "Body": "Raised when a mailbox is not empty but is expected to be, such as when deleting a folder that contains messages.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.NotEmptyError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::mailbox}}.{{c3::ExternalClashError}}",
+      "Body": "Raised when some mailbox-related condition beyond the control of the program causes it to be unable to proceed, such as when failing to acquire a lock that another program already holds a lock, or when a uniquely-generated file name already exists.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.ExternalClashError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::mailbox}}.{{c3::FormatError}}",
+      "Body": "Raised when the data in a file cannot be parsed, such as when an MH instance attempts to read a corrupted .mh_sequences file.",
+      "Link": "https://docs.python.org/3/library/mailbox.html#mailbox.FormatError"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::guess_type}}({{c3::url}}, {{c4::strict}}={{c5::True}})",
+      "Body": "Guess the type of a file based on its filename or URL, given by url.  The return value is a tuple (type, encoding) where type is None if the type can't be guessed (missing or unknown suffix) or a string of the form 'type/subtype', usable for a MIME content-type header.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.guess_type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::guess_all_extensions}}({{c3::type}}, {{c4::strict}}={{c5::True}})",
+      "Body": "Guess the extensions for a file based on its MIME type, given by type. The return value is a list of strings giving all possible filename extensions, including the leading dot ('.').  The extensions are not guaranteed to have been associated with any particular data stream, but would be mapped to the MIME type type by guess_type().",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.guess_all_extensions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::guess_extension}}({{c3::type}}, {{c4::strict}}={{c5::True}})",
+      "Body": "Guess the extension for a file based on its MIME type, given by type. The return value is a string giving a filename extension, including the leading dot ('.').  The extension is not guaranteed to have been associated with any particular data stream, but would be mapped to the MIME type type by guess_type().  If no extension can be guessed for type, None is returned.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.guess_extension"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::init}}({{c3::files}}={{c4::None}})",
+      "Body": "Initialize the internal data structures.  If given, files must be a sequence of file names which should be used to augment the default type map.  If omitted, the file names to use are taken from knownfiles; on Windows, the current registry settings are loaded.  Each file named in files or knownfiles takes precedence over those named before it.  Calling init() repeatedly is allowed.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.init"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::read_mime_types}}({{c3::filename}})",
+      "Body": "Load the type map given in the file filename, if it exists.  The type map is returned as a dictionary mapping filename extensions, including the leading dot ('.'), to strings of the form 'type/subtype'.  If the file filename does not exist or cannot be read, None is returned.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.read_mime_types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::add_type}}({{c3::type}}, {{c4::ext}}, {{c5::strict}}={{c6::True}})",
+      "Body": "Add a mapping from the MIME type type to the extension ext. When the extension is already known, the new type will replace the old one. When the type is already known the extension will be added to the list of known extensions.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.add_type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internet Data Handling", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::inited}}",
+      "Body": "Flag indicating whether or not the global data structures have been initialized. This is set to True by init().",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.inited"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internet Data Handling", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::knownfiles}}",
+      "Body": "List of type map file names commonly installed.  These files are typically named mime.types and are installed in different locations by different packages.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.knownfiles"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internet Data Handling", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::suffix_map}}",
+      "Body": "Dictionary mapping suffixes to suffixes.  This is used to allow recognition of encoded files for which the encoding and the type are indicated by the same extension.  For example, the .tgz extension is mapped to .tar.gz to allow the encoding and type to be recognized separately.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.suffix_map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internet Data Handling", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::encodings_map}}",
+      "Body": "Dictionary mapping filename extensions to encoding types.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.encodings_map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internet Data Handling", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::types_map}}",
+      "Body": "Dictionary mapping filename extensions to MIME types.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.types_map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["data", "Internet Data Handling", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::common_types}}",
+      "Body": "Dictionary mapping filename extensions to non-standard, but commonly found MIME types.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.common_types"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::mimetypes}}.{{c3::MimeTypes}}({{c4::filenames}}=(), {{c5::strict}}={{c6::True}})",
+      "Body": "This class represents a MIME-types database.  By default, it provides access to the same database as the rest of this module. The initial database is a copy of that provided by the module, and may be extended by loading additional mime.types-style files into the database using the read() or readfp() methods.  The mapping dictionaries may also be cleared before loading additional data if the default data is not desired.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::suffix_map}}",
+      "Body": "Dictionary mapping suffixes to suffixes.  This is used to allow recognition of encoded files for which the encoding and the type are indicated by the same extension.  For example, the .tgz extension is mapped to .tar.gz to allow the encoding and type to be recognized separately.  This is initially a copy of the global suffix_map defined in the module.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.suffix_map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::encodings_map}}",
+      "Body": "Dictionary mapping filename extensions to encoding types.  This is initially a copy of the global encodings_map defined in the module.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.encodings_map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::types_map}}",
+      "Body": "Tuple containing two dictionaries, mapping filename extensions to MIME types: the first dictionary is for the non-standards types and the second one is for the standard types. They are initialized by common_types and types_map.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.types_map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::types_map_inv}}",
+      "Body": "Tuple containing two dictionaries, mapping MIME types to a list of filename extensions: the first dictionary is for the non-standards types and the second one is for the standard types. They are initialized by common_types and types_map.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.types_map_inv"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::guess_extension}}({{c4::type}}, {{c5::strict}}={{c6::True}})",
+      "Body": "Similar to the guess_extension() function, using the tables stored as part of the object.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.guess_extension"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::guess_type}}({{c4::url}}, {{c5::strict}}={{c6::True}})",
+      "Body": "Similar to the guess_type() function, using the tables stored as part of the object.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.guess_type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::guess_all_extensions}}({{c4::type}}, {{c5::strict}}={{c6::True}})",
+      "Body": "Similar to the guess_all_extensions() function, using the tables stored as part of the object.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.guess_all_extensions"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::read}}({{c4::filename}}, {{c5::strict}}={{c6::True}})",
+      "Body": "Load MIME information from a file named filename.  This uses readfp() to parse the file.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.read"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::readfp}}({{c4::fp}}, {{c5::strict}}={{c6::True}})",
+      "Body": "Load MIME type information from an open file fp.  The file must have the format of the standard mime.types files.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.readfp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::mimetypes}}.{{c2::MimeTypes}}.{{c3::read_windows_registry}}({{c4::strict}}={{c5::True}})",
+      "Body": "Load MIME type information from the Windows registry.",
+      "Link": "https://docs.python.org/3/library/mimetypes.html#mimetypes.MimeTypes.read_windows_registry"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::b}}64{{c3::encode}}({{c4::s}}, {{c5::altchars}}={{c6::None}})",
+      "Body": "Encode the bytes-like object s using Base64 and return the encoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.b64encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::b}}64{{c3::decode}}({{c4::s}}, {{c5::altchars}}={{c6::None}}, {{c7::validate}}={{c8::False}})",
+      "Body": "Decode the Base64 encoded bytes-like object or ASCII string s and return the decoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.b64decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::standard_b}}64{{c3::encode}}({{c4::s}})",
+      "Body": "Encode bytes-like object s using the standard Base64 alphabet and return the encoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.standard_b64encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::standard_b}}64{{c3::decode}}({{c4::s}})",
+      "Body": "Decode bytes-like object or ASCII string s using the standard Base64 alphabet and return the decoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.standard_b64decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::urlsafe_b}}64{{c3::encode}}({{c4::s}})",
+      "Body": "Encode bytes-like object s using the URL- and filesystem-safe alphabet, which substitutes - instead of + and _ instead of / in the standard Base64 alphabet, and return the encoded bytes.  The result can still contain =.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.urlsafe_b64encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::urlsafe_b}}64{{c3::decode}}({{c4::s}})",
+      "Body": "Decode bytes-like object or ASCII string s using the URL- and filesystem-safe alphabet, which substitutes - instead of + and _ instead of / in the standard Base64 alphabet, and return the decoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.urlsafe_b64decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::b}}32{{c3::encode}}({{c4::s}})",
+      "Body": "Encode the bytes-like object s using Base32 and return the encoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.b32encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::b}}32{{c3::decode}}({{c4::s}}, {{c5::casefold}}={{c6::False}}, {{c7::map}}01={{c8::None}})",
+      "Body": "Decode the Base32 encoded bytes-like object or ASCII string s and return the decoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.b32decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::b}}16{{c3::encode}}({{c4::s}})",
+      "Body": "Encode the bytes-like object s using Base16 and return the encoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.b16encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::b}}16{{c3::decode}}({{c4::s}}, {{c5::casefold}}={{c6::False}})",
+      "Body": "Decode the Base16 encoded bytes-like object or ASCII string s and return the decoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.b16decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::a}}85{{c3::encode}}({{c4::b}}, *, {{c5::foldspaces}}={{c6::False}}, {{c7::wrapcol}}=0, {{c8::pad}}={{c9::False}}, {{c10::adobe}}={{c11::False}})",
+      "Body": "Encode the bytes-like object b using Ascii85 and return the encoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.a85encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::a}}85{{c3::decode}}({{c4::b}}, *, {{c5::foldspaces}}={{c6::False}}, {{c7::adobe}}={{c8::False}}, {{c9::ignorechars}}={{c10::b}}' \\t\\n\\r\\v')",
+      "Body": "Decode the Ascii85 encoded bytes-like object or ASCII string b and return the decoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.a85decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::b}}85{{c3::encode}}({{c4::b}}, {{c5::pad}}={{c6::False}})",
+      "Body": "Encode the bytes-like object b using base85 (as used in e.g. git-style binary diffs) and return the encoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.b85encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::b}}85{{c3::decode}}({{c4::b}})",
+      "Body": "Decode the base85-encoded bytes-like object or ASCII string b and return the decoded bytes.  Padding is implicitly removed, if necessary.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.b85decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::decode}}({{c3::input}}, {{c4::output}})",
+      "Body": "Decode the contents of the binary input file and write the resulting binary data to the output file. input and output must be file objects. input will be read until input.readline() returns an empty bytes object.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::decodebytes}}({{c3::s}})",
+      "Body": "Decode the bytes-like object s, which must contain one or more lines of base64 encoded data, and return the decoded bytes.",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.decodebytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::decodestring}}({{c3::s}})",
+      "Body": "Deprecated alias of decodebytes().",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.decodestring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::encode}}({{c3::input}}, {{c4::output}})",
+      "Body": "Encode the contents of the binary input file and write the resulting base64 encoded data to the output file. input and output must be file objects. input will be read until input.read() returns an empty bytes object. encode() inserts a newline character (b'\\n') after every 76 bytes of the output, as well as ensuring that the output always ends with a newline, as per RFC 2045 (MIME).",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::encodebytes}}({{c3::s}})",
+      "Body": "Encode the bytes-like object s, which can contain arbitrary binary data, and return bytes containing the base64-encoded data, with newlines (b'\\n') inserted after every 76 bytes of output, and ensuring that there is a trailing newline, as per RFC 2045 (MIME).",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.encodebytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::base}}64.{{c2::encodestring}}({{c3::s}})",
+      "Body": "Deprecated alias of encodebytes().",
+      "Link": "https://docs.python.org/3/library/base64.html#base64.encodestring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binhex}}.{{c2::binhex}}({{c3::input}}, {{c4::output}})",
+      "Body": "Convert a binary file with filename input to binhex file output. The output parameter can either be a filename or a file-like object (any object supporting a write() and close() method).",
+      "Link": "https://docs.python.org/3/library/binhex.html#binhex.binhex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binhex}}.{{c2::hexbin}}({{c3::input}}, {{c4::output}})",
+      "Body": "Decode a binhex file input. input may be a filename or a file-like object supporting read() and close() methods. The resulting file is written to a file named output, unless the argument is None in which case the output filename is read from the binhex file.",
+      "Link": "https://docs.python.org/3/library/binhex.html#binhex.hexbin"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::binhex}}.{{c3::Error}}",
+      "Body": "Exception raised when something can't be encoded using the binhex format (for example, a filename is too long to fit in the filename field), or when input is not properly encoded binhex data.",
+      "Link": "https://docs.python.org/3/library/binhex.html#binhex.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::a}}2{{c3::b_uu}}({{c4::string}})",
+      "Body": "Convert a single line of uuencoded data back to binary and return the binary data. Lines normally contain 45 (binary) bytes, except for the last line. Line data may be followed by whitespace.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.a2b_uu"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::b}}2{{c3::a_uu}}({{c4::data}}, *, {{c5::backtick}}={{c6::False}})",
+      "Body": "Convert binary data to a line of ASCII characters, the return value is the converted line, including a newline char. The length of data should be at most 45. If backtick is true, zeros are represented by '`' instead of spaces.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.b2a_uu"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::a}}2{{c3::b_base}}64({{c4::string}})",
+      "Body": "Convert a block of base64 data back to binary and return the binary data. More than one line may be passed at a time.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.a2b_base64"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::b}}2{{c3::a_base}}64({{c4::data}}, *, {{c5::newline}}={{c6::True}})",
+      "Body": "Convert binary data to a line of ASCII characters in base64 coding. The return value is the converted line, including a newline char if newline is true.  The output of this function conforms to RFC 3548.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.b2a_base64"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::a}}2{{c3::b_qp}}({{c4::data}}, {{c5::header}}={{c6::False}})",
+      "Body": "Convert a block of quoted-printable data back to binary and return the binary data. More than one line may be passed at a time. If the optional argument header is present and true, underscores will be decoded as spaces.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.a2b_qp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::b}}2{{c3::a_qp}}({{c4::data}}, {{c5::quotetabs}}={{c6::False}}, {{c7::istext}}={{c8::True}}, {{c9::header}}={{c10::False}})",
+      "Body": "Convert binary data to a line(s) of ASCII characters in quoted-printable encoding.  The return value is the converted line(s). If the optional argument quotetabs is present and true, all tabs and spaces will be encoded.   If the optional argument istext is present and true, newlines are not encoded but trailing whitespace will be encoded. If the optional argument header is present and true, spaces will be encoded as underscores per RFC 1522. If the optional argument header is present and false, newline characters will be encoded as well; otherwise linefeed conversion might corrupt the binary data stream.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.b2a_qp"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::a}}2{{c3::b_hqx}}({{c4::string}})",
+      "Body": "Convert binhex4 formatted ASCII data to binary, without doing RLE-decompression. The string should contain a complete number of binary bytes, or (in case of the last portion of the binhex4 data) have the remaining bits zero.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.a2b_hqx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::rledecode_hqx}}({{c3::data}})",
+      "Body": "Perform RLE-decompression on the data, as per the binhex4 standard. The algorithm uses 0x90 after a byte as a repeat indicator, followed by a count. A count of 0 specifies a byte value of 0x90. The routine returns the decompressed data, unless data input data ends in an orphaned repeat indicator, in which case the Incomplete exception is raised.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.rledecode_hqx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::rlecode_hqx}}({{c3::data}})",
+      "Body": "Perform binhex4 style RLE-compression on data and return the result.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.rlecode_hqx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::b}}2{{c3::a_hqx}}({{c4::data}})",
+      "Body": "Perform hexbin4 binary-to-ASCII translation and return the resulting string. The argument should already be RLE-coded, and have a length divisible by 3 (except possibly the last fragment).",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.b2a_hqx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::crc_hqx}}({{c3::data}}, {{c4::value}})",
+      "Body": "Compute a 16-bit CRC value of data, starting with value as the initial CRC, and return the result.  This uses the CRC-CCITT polynomial x16 + x12 + x5 + 1, often represented as 0x1021.  This CRC is used in the binhex4 format.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.crc_hqx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::crc}}32({{c3::data}}[, {{c4::value}}])",
+      "Body": "Compute CRC-32, the 32-bit checksum of data, starting with an initial CRC of value.  The default initial CRC is zero.  The algorithm is consistent with the ZIP file checksum.  Since the algorithm is designed for use as a checksum algorithm, it is not suitable for use as a general hash algorithm.  Use as follows:",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.crc32"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::b}}2{{c3::a_hex}}({{c4::data}})",
+      "Body": "Return the hexadecimal representation of the binary data.  Every byte of data is converted into the corresponding 2-digit hex representation.  The returned bytes object is therefore twice as long as the length of data.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.b2a_hex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::hexlify}}({{c3::data}})",
+      "Body": "Return the hexadecimal representation of the binary data.  Every byte of data is converted into the corresponding 2-digit hex representation.  The returned bytes object is therefore twice as long as the length of data.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.hexlify"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::a}}2{{c3::b_hex}}({{c4::hexstr}})",
+      "Body": "Return the binary data represented by the hexadecimal string hexstr.  This function is the inverse of b2a_hex(). hexstr must contain an even number of hexadecimal digits (which can be upper or lower case), otherwise an Error exception is raised.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.a2b_hex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::binascii}}.{{c2::unhexlify}}({{c3::hexstr}})",
+      "Body": "Return the binary data represented by the hexadecimal string hexstr.  This function is the inverse of b2a_hex(). hexstr must contain an even number of hexadecimal digits (which can be upper or lower case), otherwise an Error exception is raised.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.unhexlify"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::binascii}}.{{c3::Error}}",
+      "Body": "Exception raised on errors. These are usually programming errors.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.Error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::binascii}}.{{c3::Incomplete}}",
+      "Body": "Exception raised on incomplete data. These are usually not programming errors, but may be handled by reading a little more data and trying again.",
+      "Link": "https://docs.python.org/3/library/binascii.html#binascii.Incomplete"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::quopri}}.{{c2::decode}}({{c3::input}}, {{c4::output}}, {{c5::header}}={{c6::False}})",
+      "Body": "Decode the contents of the input file and write the resulting decoded binary data to the output file. input and output must be binary file objects.  If the optional argument header is present and true, underscore will be decoded as space. This is used to decode Q-encoded headers as described in RFC 1522: MIME (Multipurpose Internet Mail Extensions) Part Two: Message Header Extensions for Non-ASCII Text.",
+      "Link": "https://docs.python.org/3/library/quopri.html#quopri.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::quopri}}.{{c2::encode}}({{c3::input}}, {{c4::output}}, {{c5::quotetabs}}, {{c6::header}}={{c7::False}})",
+      "Body": "Encode the contents of the input file and write the resulting quoted-printable data to the output file. input and output must be binary file objects. quotetabs, a non-optional flag which controls whether to encode embedded spaces and tabs; when true it encodes such embedded whitespace, and when false it leaves them unencoded. Note that spaces and tabs appearing at the end of lines are always encoded, as per RFC 1521.  header is a flag which controls if spaces are encoded as underscores as per RFC 1522.",
+      "Link": "https://docs.python.org/3/library/quopri.html#quopri.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::quopri}}.{{c2::decodestring}}({{c3::s}}, {{c4::header}}={{c5::False}})",
+      "Body": "Like decode(), except that it accepts a source bytes and returns the corresponding decoded bytes.",
+      "Link": "https://docs.python.org/3/library/quopri.html#quopri.decodestring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::quopri}}.{{c2::encodestring}}({{c3::s}}, {{c4::quotetabs}}={{c5::False}}, {{c6::header}}={{c7::False}})",
+      "Body": "Like encode(), except that it accepts a source bytes and returns the corresponding encoded bytes. By default, it sends a False value to quotetabs parameter of the encode() function.",
+      "Link": "https://docs.python.org/3/library/quopri.html#quopri.encodestring"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::uu}}.{{c2::encode}}({{c3::in_file}}, {{c4::out_file}}, {{c5::name}}={{c6::None}}, {{c7::mode}}={{c8::None}}, *, {{c9::backtick}}={{c10::False}})",
+      "Body": "Uuencode file in_file into file out_file.  The uuencoded file will have the header specifying name and mode as the defaults for the results of decoding the file. The default defaults are taken from in_file, or '-' and 0o666 respectively.  If backtick is true, zeros are represented by '`' instead of spaces.",
+      "Link": "https://docs.python.org/3/library/uu.html#uu.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::uu}}.{{c2::decode}}({{c3::in_file}}, {{c4::out_file}}={{c5::None}}, {{c6::mode}}={{c7::None}}, {{c8::quiet}}={{c9::False}})",
+      "Body": "This call decodes uuencoded file in_file placing the result on file out_file. If out_file is a pathname, mode is used to set the permission bits if the file must be created. Defaults for out_file and mode are taken from the uuencode header.  However, if the file specified in the header already exists, a uu.Error is raised.",
+      "Link": "https://docs.python.org/3/library/uu.html#uu.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Internet Data Handling",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::uu}}.{{c3::Error}}",
+      "Body": "Subclass of Exception, this can be raised by uu.decode() under various situations, such as described above, but also including a badly formatted header, or truncated input file.",
+      "Link": "https://docs.python.org/3/library/uu.html#uu.Error"
+    },
+    "modelName": "ClozePy"
+  }
+]

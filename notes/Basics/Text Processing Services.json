@@ -1,0 +1,3362 @@
+[
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::ascii_letters}}",
+      "Body": "The concatenation of the ascii_lowercase and ascii_uppercase constants described below.  This value is not locale-dependent.",
+      "Link": "https://docs.python.org/3/library/string.html#string.ascii_letters"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::ascii_lowercase}}",
+      "Body": "The lowercase letters 'abcdefghijklmnopqrstuvwxyz'.  This value is not locale-dependent and will not change.",
+      "Link": "https://docs.python.org/3/library/string.html#string.ascii_lowercase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::ascii_uppercase}}",
+      "Body": "The uppercase letters 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.  This value is not locale-dependent and will not change.",
+      "Link": "https://docs.python.org/3/library/string.html#string.ascii_uppercase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::digits}}",
+      "Body": "The string '0123456789'.",
+      "Link": "https://docs.python.org/3/library/string.html#string.digits"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::hexdigits}}",
+      "Body": "The string '0123456789abcdefABCDEF'.",
+      "Link": "https://docs.python.org/3/library/string.html#string.hexdigits"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::octdigits}}",
+      "Body": "The string '01234567'.",
+      "Link": "https://docs.python.org/3/library/string.html#string.octdigits"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::punctuation}}",
+      "Body": "String of ASCII characters which are considered punctuation characters in the C locale.",
+      "Link": "https://docs.python.org/3/library/string.html#string.punctuation"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::printable}}",
+      "Body": "String of ASCII characters which are considered printable.  This is a combination of digits, ascii_letters, punctuation, and whitespace.",
+      "Link": "https://docs.python.org/3/library/string.html#string.printable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::whitespace}}",
+      "Body": "A string containing all ASCII characters that are considered whitespace. This includes the characters space, tab, linefeed, return, formfeed, and vertical tab.",
+      "Link": "https://docs.python.org/3/library/string.html#string.whitespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::string}}.{{c3::Formatter}}",
+      "Body": "The Formatter class has the following public methods:",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Formatter}}.{{c3::format}}({{c4::format_string}}, *args, **kwargs)",
+      "Body": "The primary API method.  It takes a format string and an arbitrary set of positional and keyword arguments. It is just a wrapper that calls vformat().",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter.format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Formatter}}.{{c3::vformat}}({{c4::format_string}}, {{c5::args}}, {{c6::kwargs}})",
+      "Body": "This function does the actual work of formatting.  It is exposed as a separate function for cases where you want to pass in a predefined dictionary of arguments, rather than unpacking and repacking the dictionary as individual arguments using the *args and **kwargs syntax.  vformat() does the work of breaking up the format string into character data and replacement fields.  It calls the various methods described below.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter.vformat"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Formatter}}.{{c3::parse}}({{c4::format_string}})",
+      "Body": "Loop over the format_string and return an iterable of tuples (literal_text, field_name, format_spec, conversion).  This is used by vformat() to break the string into either literal text, or replacement fields.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter.parse"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Formatter}}.{{c3::get_field}}({{c4::field_name}}, {{c5::args}}, {{c6::kwargs}})",
+      "Body": "Given field_name as returned by parse() (see above), convert it to an object to be formatted.  Returns a tuple (obj, used_key).  The default version takes strings of the form defined in PEP 3101, such as 0[name] or label.title.  args and kwargs are as passed in to vformat().  The return value used_key has the same meaning as the key parameter to get_value().",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter.get_field"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Formatter}}.{{c3::get_value}}({{c4::key}}, {{c5::args}}, {{c6::kwargs}})",
+      "Body": "Retrieve a given field value.  The key argument will be either an integer or a string.  If it is an integer, it represents the index of the positional argument in args; if it is a string, then it represents a named argument in kwargs.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter.get_value"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Formatter}}.{{c3::check_unused_args}}({{c4::used_args}}, {{c5::args}}, {{c6::kwargs}})",
+      "Body": "Implement checking for unused arguments if desired.  The arguments to this function is the set of all argument keys that were actually referred to in the format string (integers for positional arguments, and strings for named arguments), and a reference to the args and kwargs that was passed to vformat.  The set of unused args can be calculated from these parameters.  check_unused_args() is assumed to raise an exception if the check fails.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter.check_unused_args"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Formatter}}.{{c3::format_field}}({{c4::value}}, {{c5::format_spec}})",
+      "Body": "format_field() simply calls the global format() built-in.  The method is provided so that subclasses can override it.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter.format_field"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Formatter}}.{{c3::convert_field}}({{c4::value}}, {{c5::conversion}})",
+      "Body": "Converts the value (returned by get_field()) given a conversion type (as in the tuple returned by the parse() method).  The default version understands 's' (str), 'r' (repr) and 'a' (ascii) conversion types.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Formatter.convert_field"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::string}}.{{c3::Template}}({{c4::template}})",
+      "Body": "The constructor takes a single argument which is the template string.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Template"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Template}}.{{c3::substitute}}({{c4::mapping}}, **kwds)",
+      "Body": "Performs the template substitution, returning a new string.  mapping is any dictionary-like object with keys that match the placeholders in the template.  Alternatively, you can provide keyword arguments, where the keywords are the placeholders.  When both mapping and kwds are given and there are duplicates, the placeholders from kwds take precedence.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Template.substitute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Template}}.{{c3::safe_substitute}}({{c4::mapping}}, **kwds)",
+      "Body": "Like substitute(), except that if placeholders are missing from mapping and kwds, instead of raising a KeyError exception, the original placeholder will appear in the resulting string intact.  Also, unlike with substitute(), any other appearances of the $ will simply return $ instead of raising ValueError.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Template.safe_substitute"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::Template}}.{{c3::template}}",
+      "Body": "This is the object passed to the constructor's template argument.  In general, you shouldn't change it, but read-only access is not enforced.",
+      "Link": "https://docs.python.org/3/library/string.html#string.Template.template"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::string}}.{{c2::capwords}}({{c3::s}}, {{c4::sep}}={{c5::None}})",
+      "Body": "Split the argument into words using str.split(), capitalize each word using str.capitalize(), and join the capitalized words using str.join().  If the optional second argument sep is absent or None, runs of whitespace characters are replaced by a single space and leading and trailing whitespace are removed, otherwise sep is used to split and join the words.",
+      "Link": "https://docs.python.org/3/library/string.html#string.capwords"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": ".",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "^",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "$",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "*",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "+",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "?",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "*?, +?, ??",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{{c1::m}}}",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{{c1::m}},{{c2::n}}}",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{{c1::m}},{{c2::n}}}?",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "[]",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "|",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?{{c1::aiLmsux}})",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?:...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?{{c1::aiLmsux}}-{{c2::imsx}}:...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?{{c1::P}}<{{c2::name}}>...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?{{c1::P}}={{c2::name}})",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?#...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?=...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?!...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?<=...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?<!...)",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "(?({{c1::id}}/{{c2::name}}){{c3::yes}}-{{c4::pattern}}|{{c5::no}}-{{c6::pattern}})",
+      "Body": "Either escapes special characters (permitting you to match characters like '*', '?', and so forth), or signals a special sequence; special sequences are discussed below.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\number",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\A",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\b",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\B",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\d",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\D",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\s",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\S",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\w",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\W",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "docutils",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "\\Z",
+      "Body": "Matches the empty string, but only at the beginning or end of a word. A word is defined as a sequence of word characters.  Note that formally, \\b is defined as the boundary between a \\w and a \\W character (or vice versa), or between \\w and the beginning/end of the string. This means that r'\\bfoo\\b' matches 'foo', 'foo.', '(foo)', 'bar foo baz' but not 'foobar' or 'foo3'.",
+      "Link": "https://docs.python.org/3/library/re.html#regular-expression-syntax"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::compile}}({{c3::pattern}}, {{c4::flags}}=0)",
+      "Body": "Compile a regular expression pattern into a regular expression object, which can be used for matching using its match(), search() and other methods, described below.",
+      "Link": "https://docs.python.org/3/library/re.html#re.compile"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::A}}",
+      "Body": "Make \\w, \\W, \\b, \\B, \\d, \\D, \\s and \\S perform ASCII-only matching instead of full Unicode matching.  This is only meaningful for Unicode patterns, and is ignored for byte patterns. Corresponds to the inline flag (?a).",
+      "Link": "https://docs.python.org/3/library/re.html#re.A"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::ASCII}}",
+      "Body": "Make \\w, \\W, \\b, \\B, \\d, \\D, \\s and \\S perform ASCII-only matching instead of full Unicode matching.  This is only meaningful for Unicode patterns, and is ignored for byte patterns. Corresponds to the inline flag (?a).",
+      "Link": "https://docs.python.org/3/library/re.html#re.ASCII"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::DEBUG}}",
+      "Body": "Display debug information about compiled expression. No corresponding inline flag.",
+      "Link": "https://docs.python.org/3/library/re.html#re.DEBUG"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::I}}",
+      "Body": "Perform case-insensitive matching; expressions like [A-Z] will also match lowercase letters.  Full Unicode matching (such as U matching u) also works unless the re.ASCII flag is used to disable non-ASCII matches.  The current locale does not change the effect of this flag unless the re.LOCALE flag is also used. Corresponds to the inline flag (?i).",
+      "Link": "https://docs.python.org/3/library/re.html#re.I"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::IGNORECASE}}",
+      "Body": "Perform case-insensitive matching; expressions like [A-Z] will also match lowercase letters.  Full Unicode matching (such as U matching u) also works unless the re.ASCII flag is used to disable non-ASCII matches.  The current locale does not change the effect of this flag unless the re.LOCALE flag is also used. Corresponds to the inline flag (?i).",
+      "Link": "https://docs.python.org/3/library/re.html#re.IGNORECASE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::L}}",
+      "Body": "Make \\w, \\W, \\b, \\B and case-insensitive matching dependent on the current locale.  This flag can be used only with bytes patterns.  The use of this flag is discouraged as the locale mechanism is very unreliable, it only handles one culture at a time, and it only works with 8-bit locales.  Unicode matching is already enabled by default in 3 for Unicode (str) patterns, and it is able to handle different locales/languages. Corresponds to the inline flag (?L).",
+      "Link": "https://docs.python.org/3/library/re.html#re.L"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::LOCALE}}",
+      "Body": "Make \\w, \\W, \\b, \\B and case-insensitive matching dependent on the current locale.  This flag can be used only with bytes patterns.  The use of this flag is discouraged as the locale mechanism is very unreliable, it only handles one culture at a time, and it only works with 8-bit locales.  Unicode matching is already enabled by default in 3 for Unicode (str) patterns, and it is able to handle different locales/languages. Corresponds to the inline flag (?L).",
+      "Link": "https://docs.python.org/3/library/re.html#re.LOCALE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::M}}",
+      "Body": "When specified, the pattern character '^' matches at the beginning of the string and at the beginning of each line (immediately following each newline); and the pattern character '$' matches at the end of the string and at the end of each line (immediately preceding each newline).  By default, '^' matches only at the beginning of the string, and '$' only at the end of the string and immediately before the newline (if any) at the end of the string. Corresponds to the inline flag (?m).",
+      "Link": "https://docs.python.org/3/library/re.html#re.M"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::MULTILINE}}",
+      "Body": "When specified, the pattern character '^' matches at the beginning of the string and at the beginning of each line (immediately following each newline); and the pattern character '$' matches at the end of the string and at the end of each line (immediately preceding each newline).  By default, '^' matches only at the beginning of the string, and '$' only at the end of the string and immediately before the newline (if any) at the end of the string. Corresponds to the inline flag (?m).",
+      "Link": "https://docs.python.org/3/library/re.html#re.MULTILINE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::S}}",
+      "Body": "Make the '.' special character match any character at all, including a newline; without this flag, '.' will match anything except a newline. Corresponds to the inline flag (?s).",
+      "Link": "https://docs.python.org/3/library/re.html#re.S"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::DOTALL}}",
+      "Body": "Make the '.' special character match any character at all, including a newline; without this flag, '.' will match anything except a newline. Corresponds to the inline flag (?s).",
+      "Link": "https://docs.python.org/3/library/re.html#re.DOTALL"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::X}}",
+      "Body": "This flag allows you to write regular expressions that look nicer and are more readable by allowing you to visually separate logical sections of the pattern and add comments. Whitespace within the pattern is ignored, except when in a character class, or when preceded by an unescaped backslash, or within tokens like *?, (?: or (?P<...>. When a line contains a # that is not in a character class and is not preceded by an unescaped backslash, all characters from the leftmost such # through the end of the line are ignored.",
+      "Link": "https://docs.python.org/3/library/re.html#re.X"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::VERBOSE}}",
+      "Body": "This flag allows you to write regular expressions that look nicer and are more readable by allowing you to visually separate logical sections of the pattern and add comments. Whitespace within the pattern is ignored, except when in a character class, or when preceded by an unescaped backslash, or within tokens like *?, (?: or (?P<...>. When a line contains a # that is not in a character class and is not preceded by an unescaped backslash, all characters from the leftmost such # through the end of the line are ignored.",
+      "Link": "https://docs.python.org/3/library/re.html#re.VERBOSE"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::search}}({{c3::pattern}}, {{c4::string}}, {{c5::flags}}=0)",
+      "Body": "Scan through string looking for the first location where the regular expression pattern produces a match, and return a corresponding match object.  Return None if no position in the string matches the pattern; note that this is different from finding a zero-length match at some point in the string.",
+      "Link": "https://docs.python.org/3/library/re.html#re.search"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::match}}({{c3::pattern}}, {{c4::string}}, {{c5::flags}}=0)",
+      "Body": "If zero or more characters at the beginning of string match the regular expression pattern, return a corresponding match object.  Return None if the string does not match the pattern; note that this is different from a zero-length match.",
+      "Link": "https://docs.python.org/3/library/re.html#re.match"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::fullmatch}}({{c3::pattern}}, {{c4::string}}, {{c5::flags}}=0)",
+      "Body": "If the whole string matches the regular expression pattern, return a corresponding match object.  Return None if the string does not match the pattern; note that this is different from a zero-length match.",
+      "Link": "https://docs.python.org/3/library/re.html#re.fullmatch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::split}}({{c3::pattern}}, {{c4::string}}, {{c5::maxsplit}}=0, {{c6::flags}}=0)",
+      "Body": "Split string by the occurrences of pattern.  If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list.",
+      "Link": "https://docs.python.org/3/library/re.html#re.split"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::findall}}({{c3::pattern}}, {{c4::string}}, {{c5::flags}}=0)",
+      "Body": "Return all non-overlapping matches of pattern in string, as a list of strings.  The string is scanned left-to-right, and matches are returned in the order found.  If one or more groups are present in the pattern, return a list of groups; this will be a list of tuples if the pattern has more than one group.  Empty matches are included in the result.",
+      "Link": "https://docs.python.org/3/library/re.html#re.findall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::finditer}}({{c3::pattern}}, {{c4::string}}, {{c5::flags}}=0)",
+      "Body": "Return an iterator yielding match objects over all non-overlapping matches for the RE pattern in string.  The string is scanned left-to-right, and matches are returned in the order found.  Empty matches are included in the result.",
+      "Link": "https://docs.python.org/3/library/re.html#re.finditer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::sub}}({{c3::pattern}}, {{c4::repl}}, {{c5::string}}, {{c6::count}}=0, {{c7::flags}}=0)",
+      "Body": "Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement repl.  If the pattern isn't found, string is returned unchanged.  repl can be a string or a function; if it is a string, any backslash escapes in it are processed.  That is, \\n is converted to a single newline character, \\r is converted to a carriage return, and so forth.  Unknown escapes such as \\& are left alone.  Backreferences, such as \\6, are replaced with the substring matched by group 6 in the pattern. For example:",
+      "Link": "https://docs.python.org/3/library/re.html#re.sub"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::subn}}({{c3::pattern}}, {{c4::repl}}, {{c5::string}}, {{c6::count}}=0, {{c7::flags}}=0)",
+      "Body": "Perform the same operation as sub(), but return a tuple (new_string, number_of_subs_made).",
+      "Link": "https://docs.python.org/3/library/re.html#re.subn"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::escape}}({{c3::pattern}})",
+      "Body": "Escape special characters in pattern. This is useful if you want to match an arbitrary literal string that may have regular expression metacharacters in it.  For example:",
+      "Link": "https://docs.python.org/3/library/re.html#re.escape"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::purge}}()",
+      "Body": "Clear the regular expression cache.",
+      "Link": "https://docs.python.org/3/library/re.html#re.purge"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "exception",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::exception}} {{c2::re}}.{{c3::error}}({{c4::msg}}, {{c5::pattern}}={{c6::None}}, {{c7::pos}}={{c8::None}})",
+      "Body": "Exception raised when a string passed to one of the functions here is not a valid regular expression (for example, it might contain unmatched parentheses) or when some other error occurs during compilation or matching.  It is never an error if a string contains no match for a pattern.  The error instance has the following additional attributes:",
+      "Link": "https://docs.python.org/3/library/re.html#re.error"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::error}}.{{c3::msg}}",
+      "Body": "The unformatted error message.",
+      "Link": "https://docs.python.org/3/library/re.html#re.error.msg"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::error}}.{{c3::pattern}}",
+      "Body": "The regular expression pattern.",
+      "Link": "https://docs.python.org/3/library/re.html#re.error.pattern"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::error}}.{{c3::pos}}",
+      "Body": "The index in pattern where compilation failed (may be None).",
+      "Link": "https://docs.python.org/3/library/re.html#re.error.pos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::error}}.{{c3::lineno}}",
+      "Body": "The line corresponding to pos (may be None).",
+      "Link": "https://docs.python.org/3/library/re.html#re.error.lineno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::re}}.{{c2::error}}.{{c3::colno}}",
+      "Body": "The column corresponding to pos (may be None).",
+      "Link": "https://docs.python.org/3/library/re.html#re.error.colno"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::search}}({{c3::string}}[, {{c4::pos}}[, {{c5::endpos}}]])",
+      "Body": "Scan through string looking for the first location where this regular expression produces a match, and return a corresponding match object.  Return None if no position in the string matches the pattern; note that this is different from finding a zero-length match at some point in the string.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.search"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::match}}({{c3::string}}[, {{c4::pos}}[, {{c5::endpos}}]])",
+      "Body": "If zero or more characters at the beginning of string match this regular expression, return a corresponding match object. Return None if the string does not match the pattern; note that this is different from a zero-length match.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.match"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::fullmatch}}({{c3::string}}[, {{c4::pos}}[, {{c5::endpos}}]])",
+      "Body": "If the whole string matches this regular expression, return a corresponding match object.  Return None if the string does not match the pattern; note that this is different from a zero-length match.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.fullmatch"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::split}}({{c3::string}}, {{c4::maxsplit}}=0)",
+      "Body": "Identical to the split() function, using the compiled pattern.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.split"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::findall}}({{c3::string}}[, {{c4::pos}}[, {{c5::endpos}}]])",
+      "Body": "Similar to the findall() function, using the compiled pattern, but also accepts optional pos and endpos parameters that limit the search region like for search().",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.findall"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::finditer}}({{c3::string}}[, {{c4::pos}}[, {{c5::endpos}}]])",
+      "Body": "Similar to the finditer() function, using the compiled pattern, but also accepts optional pos and endpos parameters that limit the search region like for search().",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.finditer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::sub}}({{c3::repl}}, {{c4::string}}, {{c5::count}}=0)",
+      "Body": "Identical to the sub() function, using the compiled pattern.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.sub"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::subn}}({{c3::repl}}, {{c4::string}}, {{c5::count}}=0)",
+      "Body": "Identical to the subn() function, using the compiled pattern.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.subn"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::flags}}",
+      "Body": "The regex matching flags.  This is a combination of the flags given to compile(), any (?...) inline flags in the pattern, and implicit flags such as UNICODE if the pattern is a Unicode string.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.flags"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::groups}}",
+      "Body": "The number of capturing groups in the pattern.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.groups"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::groupindex}}",
+      "Body": "A dictionary mapping any symbolic group names defined by (?P<id>) to group numbers.  The dictionary is empty if no symbolic groups were used in the pattern.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.groupindex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Pattern}}.{{c2::pattern}}",
+      "Body": "The pattern string from which the pattern object was compiled.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Pattern.pattern"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::expand}}({{c3::template}})",
+      "Body": "Return the string obtained by doing backslash substitution on the template string template, as done by the sub() method. Escapes such as \\n are converted to the appropriate characters, and numeric backreferences (\\1, \\2) and named backreferences (\\g<1>, \\g<name>) are replaced by the contents of the corresponding group.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.expand"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::group}}([{{c3::group}}1, ...])",
+      "Body": "Returns one or more subgroups of the match.  If there is a single argument, the result is a single string; if there are multiple arguments, the result is a tuple with one item per argument. Without arguments, group1 defaults to zero (the whole match is returned). If a groupN argument is zero, the corresponding return value is the entire matching string; if it is in the inclusive range [1..99], it is the string matching the corresponding parenthesized group.  If a group number is negative or larger than the number of groups defined in the pattern, an IndexError exception is raised. If a group is contained in a part of the pattern that did not match, the corresponding result is None. If a group is contained in a part of the pattern that matched multiple times, the last match is returned.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.group"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::__getitem__}}({{c3::g}})",
+      "Body": "This is identical to m.group(g).  This allows easier access to an individual group from a match:",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.__getitem__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::groups}}({{c3::default}}={{c4::None}})",
+      "Body": "Return a tuple containing all the subgroups of the match, from 1 up to however many groups are in the pattern.  The default argument is used for groups that did not participate in the match; it defaults to None.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.groups"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::groupdict}}({{c3::default}}={{c4::None}})",
+      "Body": "Return a dictionary containing all the named subgroups of the match, keyed by the subgroup name.  The default argument is used for groups that did not participate in the match; it defaults to None.  For example:",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.groupdict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::start}}([{{c3::group}}])",
+      "Body": "Return the indices of the start and end of the substring matched by group; group defaults to zero (meaning the whole matched substring). Return -1 if group exists but did not contribute to the match.  For a match object m, and a group g that did contribute to the match, the substring matched by group g (equivalent to m.group(g)) is",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.start"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::end}}([{{c3::group}}])",
+      "Body": "Return the indices of the start and end of the substring matched by group; group defaults to zero (meaning the whole matched substring). Return -1 if group exists but did not contribute to the match.  For a match object m, and a group g that did contribute to the match, the substring matched by group g (equivalent to m.group(g)) is",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.end"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::span}}([{{c3::group}}])",
+      "Body": "For a match m, return the 2-tuple (m.start(group), m.end(group)). Note that if group did not contribute to the match, this is (-1, -1). group defaults to zero, the entire match.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.span"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::pos}}",
+      "Body": "The value of pos which was passed to the search() or match() method of a regex object.  This is the index into the string at which the RE engine started looking for a match.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.pos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::endpos}}",
+      "Body": "The value of endpos which was passed to the search() or match() method of a regex object.  This is the index into the string beyond which the RE engine will not go.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.endpos"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::lastindex}}",
+      "Body": "The integer index of the last matched capturing group, or None if no group was matched at all. For example, the expressions (a)b, ((a)(b)), and ((ab)) will have lastindex == 1 if applied to the string 'ab', while the expression (a)(b) will have lastindex == 2, if applied to the same string.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.lastindex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::lastgroup}}",
+      "Body": "The name of the last matched capturing group, or None if the group didn't have a name, or if no group was matched at all.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.lastgroup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::re}}",
+      "Body": "The regular expression object whose match() or search() method produced this match instance.",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.re"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Match}}.{{c2::string}}",
+      "Body": "The string passed to match() or search().",
+      "Link": "https://docs.python.org/3/library/re.html#re.Match.string"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::difflib}}.{{c3::SequenceMatcher}}",
+      "Body": "This is a flexible class for comparing pairs of sequences of any type, so long as the sequence elements are hashable.  The basic algorithm predates, and is a little fancier than, an algorithm published in the late 1980's by Ratcliff and Obershelp under the hyperbolic name gestalt pattern matching.  The idea is to find the longest contiguous matching subsequence that contains no junk elements; these junk elements are ones that are uninteresting in some sense, such as blank lines or whitespace.  (Handling junk is an extension to the Ratcliff and Obershelp algorithm.) The same idea is then applied recursively to the pieces of the sequences to the left and to the right of the matching subsequence.  This does not yield minimal edit sequences, but does tend to yield matches that look right to people.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::difflib}}.{{c3::Differ}}",
+      "Body": "This is a class for comparing sequences of lines of text, and producing human-readable differences or deltas.  Differ uses SequenceMatcher both to compare sequences of lines, and to compare sequences of characters within similar (near-matching) lines.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.Differ"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::difflib}}.{{c3::HtmlDiff}}",
+      "Body": "This class can be used to create an HTML table (or a complete HTML file containing the table) showing a side by side, line by line comparison of text with inter-line and intra-line change highlights.  The table can be generated in either full or contextual difference mode.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.HtmlDiff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::HtmlDiff}}.{{c3::__init__}}({{c4::tabsize}}=8, {{c5::wrapcolumn}}={{c6::None}}, {{c7::linejunk}}={{c8::None}}, {{c9::charjunk}}={{c10::IS_CHARACTER_JUNK}})",
+      "Body": "Initializes instance of HtmlDiff.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.HtmlDiff.__init__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::HtmlDiff}}.{{c3::make_file}}({{c4::fromlines}}, {{c5::tolines}}, {{c6::fromdesc}}='', {{c7::todesc}}='', {{c8::context}}={{c9::False}}, {{c10::numlines}}=5, *, {{c11::charset}}='{{c12::utf}}-8')",
+      "Body": "Compares fromlines and tolines (lists of strings) and returns a string which is a complete HTML file containing a table showing line by line differences with inter-line and intra-line changes highlighted.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.HtmlDiff.make_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::HtmlDiff}}.{{c3::make_table}}({{c4::fromlines}}, {{c5::tolines}}, {{c6::fromdesc}}='', {{c7::todesc}}='', {{c8::context}}={{c9::False}}, {{c10::numlines}}=5)",
+      "Body": "Compares fromlines and tolines (lists of strings) and returns a string which is a complete HTML table showing line by line differences with inter-line and intra-line changes highlighted.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.HtmlDiff.make_table"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::context_diff}}({{c3::a}}, {{c4::b}}, {{c5::fromfile}}='', {{c6::tofile}}='', {{c7::fromfiledate}}='', {{c8::tofiledate}}='', {{c9::n}}=3, {{c10::lineterm}}='\\n')",
+      "Body": "Compare a and b (lists of strings); return a delta (a generator generating the delta lines) in context diff format.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.context_diff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::get_close_matches}}({{c3::word}}, {{c4::possibilities}}, {{c5::n}}=3, {{c6::cutoff}}=0.6)",
+      "Body": "Return a list of the best good enough matches.  word is a sequence for which close matches are desired (typically a string), and possibilities is a list of sequences against which to match word (typically a list of strings).",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.get_close_matches"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::ndiff}}({{c3::a}}, {{c4::b}}, {{c5::linejunk}}={{c6::None}}, {{c7::charjunk}}={{c8::IS_CHARACTER_JUNK}})",
+      "Body": "Compare a and b (lists of strings); return a Differ-style delta (a generator generating the delta lines).",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.ndiff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::restore}}({{c3::sequence}}, {{c4::which}})",
+      "Body": "Return one of the two sequences that generated a delta.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.restore"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::unified_diff}}({{c3::a}}, {{c4::b}}, {{c5::fromfile}}='', {{c6::tofile}}='', {{c7::fromfiledate}}='', {{c8::tofiledate}}='', {{c9::n}}=3, {{c10::lineterm}}='\\n')",
+      "Body": "Compare a and b (lists of strings); return a delta (a generator generating the delta lines) in unified diff format.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.unified_diff"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::diff_bytes}}({{c3::dfunc}}, {{c4::a}}, {{c5::b}}, {{c6::fromfile}}={{c7::b}}'', {{c8::tofile}}={{c9::b}}'', {{c10::fromfiledate}}={{c11::b}}'', {{c12::tofiledate}}={{c13::b}}'', {{c14::n}}=3, {{c15::lineterm}}={{c16::b}}'\\n')",
+      "Body": "Compare a and b (lists of bytes objects) using dfunc; yield a sequence of delta lines (also bytes) in the format returned by dfunc. dfunc must be a callable, typically either unified_diff() or context_diff().",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.diff_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::IS_LINE_JUNK}}({{c3::line}})",
+      "Body": "Return true for ignorable lines.  The line line is ignorable if line is blank or contains a single '#', otherwise it is not ignorable.  Used as a default for parameter linejunk in ndiff() in older versions.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.IS_LINE_JUNK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::IS_CHARACTER_JUNK}}({{c3::ch}})",
+      "Body": "Return true for ignorable characters.  The character ch is ignorable if ch is a space or tab, otherwise it is not ignorable.  Used as a default for parameter charjunk in ndiff().",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.IS_CHARACTER_JUNK"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::difflib}}.{{c3::SequenceMatcher}}({{c4::isjunk}}={{c5::None}}, {{c6::a}}='', {{c7::b}}='', {{c8::autojunk}}={{c9::True}})",
+      "Body": "Optional argument isjunk must be None (the default) or a one-argument function that takes a sequence element and returns true if and only if the element is junk and should be ignored. Passing None for isjunk is equivalent to passing lambda x: 0; in other words, no elements are ignored. For example, pass:",
+      "Link": "https://docs.python.org/3/library/difflib.html#sequencematcher-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::set_seqs}}({{c4::a}}, {{c5::b}})",
+      "Body": "Set the two sequences to be compared.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.set_seqs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::set_seq}}1({{c4::a}})",
+      "Body": "Set the first sequence to be compared.  The second sequence to be compared is not changed.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.set_seq1"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::set_seq}}2({{c4::b}})",
+      "Body": "Set the second sequence to be compared.  The first sequence to be compared is not changed.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.set_seq2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::find_longest_match}}({{c4::alo}}, {{c5::ahi}}, {{c6::blo}}, {{c7::bhi}})",
+      "Body": "Find longest matching block in a[alo:ahi] and b[blo:bhi].",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.find_longest_match"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::get_matching_blocks}}()",
+      "Body": "Return list of triples describing matching subsequences. Each triple is of the form (i, j, n), and means that a[i:i+n] == b[j:j+n].  The triples are monotonically increasing in i and j.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.get_matching_blocks"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::get_opcodes}}()",
+      "Body": "Return list of 5-tuples describing how to turn a into b. Each tuple is of the form (tag, i1, i2, j1, j2).  The first tuple has i1 == j1 == 0, and remaining tuples have i1 equal to the i2 from the preceding tuple, and, likewise, j1 equal to the previous j2.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.get_opcodes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::get_grouped_opcodes}}({{c4::n}}=3)",
+      "Body": "Return a generator of groups with up to n lines of context.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.get_grouped_opcodes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::ratio}}()",
+      "Body": "Return a measure of the sequences' similarity as a float in the range [0, 1].",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.ratio"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::quick_ratio}}()",
+      "Body": "Return an upper bound on ratio() relatively quickly.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.quick_ratio"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::SequenceMatcher}}.{{c3::real_quick_ratio}}()",
+      "Body": "Return an upper bound on ratio() very quickly.",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.SequenceMatcher.real_quick_ratio"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::difflib}}.{{c3::Differ}}({{c4::linejunk}}={{c5::None}}, {{c6::charjunk}}={{c7::None}})",
+      "Body": "Optional keyword parameters linejunk and charjunk are for filter functions (or None):",
+      "Link": "https://docs.python.org/3/library/difflib.html#differ-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::difflib}}.{{c2::Differ}}.{{c3::compare}}({{c4::a}}, {{c5::b}})",
+      "Body": "Compare two sequences of lines, and generate the delta (a sequence of lines).",
+      "Link": "https://docs.python.org/3/library/difflib.html#difflib.Differ.compare"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::wrap}}({{c3::text}}, {{c4::width}}=70, **kwargs)",
+      "Body": "Wraps the single paragraph in text (a string) so every line is at most width characters long.  Returns a list of output lines, without final newlines.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.wrap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::fill}}({{c3::text}}, {{c4::width}}=70, **kwargs)",
+      "Body": "Wraps the single paragraph in text, and returns a single string containing the wrapped paragraph.  fill() is shorthand for",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.fill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::shorten}}({{c3::text}}, {{c4::width}}, **kwargs)",
+      "Body": "Collapse and truncate the given text to fit in the given width.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.shorten"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::dedent}}({{c3::text}})",
+      "Body": "Remove any common leading whitespace from every line in text.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.dedent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::indent}}({{c3::text}}, {{c4::prefix}}, {{c5::predicate}}={{c6::None}})",
+      "Body": "Add prefix to the beginning of selected lines in text.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.indent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "class",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::textwrap}}.{{c3::TextWrapper}}(**kwargs)",
+      "Body": "The TextWrapper constructor accepts a number of optional keyword arguments.  Each keyword argument corresponds to an instance attribute, so for example",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::width}}",
+      "Body": "(default: 70) The maximum length of wrapped lines.  As long as there are no individual words in the input text longer than width, TextWrapper guarantees that no output line will be longer than width characters.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.width"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::expand_tabs}}",
+      "Body": "(default: True) If true, then all tab characters in text will be expanded to spaces using the expandtabs() method of text.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.expand_tabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::tabsize}}",
+      "Body": "(default: 8) If expand_tabs is true, then all tab characters in text will be expanded to zero or more spaces, depending on the current column and the given tab size.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.tabsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::replace_whitespace}}",
+      "Body": "(default: True) If true, after tab expansion but before wrapping, the wrap() method will replace each whitespace character with a single space.  The whitespace characters replaced are as follows: tab, newline, vertical tab, formfeed, and carriage return ('\\t\\n\\v\\f\\r').",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.replace_whitespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::drop_whitespace}}",
+      "Body": "(default: True) If true, whitespace at the beginning and ending of every line (after wrapping but before indenting) is dropped. Whitespace at the beginning of the paragraph, however, is not dropped if non-whitespace follows it.  If whitespace being dropped takes up an entire line, the whole line is dropped.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.drop_whitespace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::initial_indent}}",
+      "Body": "(default: '') String that will be prepended to the first line of wrapped output.  Counts towards the length of the first line.  The empty string is not indented.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.initial_indent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::subsequent_indent}}",
+      "Body": "(default: '') String that will be prepended to all lines of wrapped output except the first.  Counts towards the length of each line except the first.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.subsequent_indent"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::fix_sentence_endings}}",
+      "Body": "(default: False) If true, TextWrapper attempts to detect sentence endings and ensure that sentences are always separated by exactly two spaces.  This is generally desired for text in a monospaced font. However, the sentence detection algorithm is imperfect: it assumes that a sentence ending consists of a lowercase letter followed by one of '.', '!', or '?', possibly followed by one of '\"' or \"'\", followed by a space.  One problem with this is algorithm is that it is unable to detect the difference between Dr. in",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.fix_sentence_endings"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::break_long_words}}",
+      "Body": "(default: True) If true, then words longer than width will be broken in order to ensure that no lines are longer than width.  If it is false, long words will not be broken, and some lines may be longer than width.  (Long words will be put on a line by themselves, in order to minimize the amount by which width is exceeded.)",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.break_long_words"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::break_on_hyphens}}",
+      "Body": "(default: True) If true, wrapping will occur preferably on whitespaces and right after hyphens in compound words, as it is customary in English. If false, only whitespaces will be considered as potentially good places for line breaks, but you need to set break_long_words to false if you want truly insecable words.  Default behaviour in previous versions was to always allow breaking hyphenated words.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.break_on_hyphens"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::max_lines}}",
+      "Body": "(default: None) If not None, then the output will contain at most max_lines lines, with placeholder appearing at the end of the output.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.max_lines"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "attribute",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::placeholder}}",
+      "Body": "(default: ' [...]') String that will appear at the end of the output text if it has been truncated.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.placeholder"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::wrap}}({{c4::text}})",
+      "Body": "Wraps the single paragraph in text (a string) so every line is at most width characters long.  All wrapping options are taken from instance attributes of the TextWrapper instance.  Returns a list of output lines, without final newlines.  If the wrapped output has no content, the returned list is empty.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.wrap"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::textwrap}}.{{c2::TextWrapper}}.{{c3::fill}}({{c4::text}})",
+      "Body": "Wraps the single paragraph in text, and returns a single string containing the wrapped paragraph.",
+      "Link": "https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper.fill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::lookup}}({{c3::name}})",
+      "Body": "Look up character by name.  If a character with the given name is found, return the corresponding character.  If not found, KeyError is raised.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.lookup"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::name}}({{c3::chr}}[, {{c4::default}}])",
+      "Body": "Returns the name assigned to the character chr as a string. If no name is defined, default is returned, or, if not given, ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.name"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::decimal}}({{c3::chr}}[, {{c4::default}}])",
+      "Body": "Returns the decimal value assigned to the character chr as integer. If no such value is defined, default is returned, or, if not given, ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.decimal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::digit}}({{c3::chr}}[, {{c4::default}}])",
+      "Body": "Returns the digit value assigned to the character chr as integer. If no such value is defined, default is returned, or, if not given, ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.digit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::numeric}}({{c3::chr}}[, {{c4::default}}])",
+      "Body": "Returns the numeric value assigned to the character chr as float. If no such value is defined, default is returned, or, if not given, ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.numeric"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::category}}({{c3::chr}})",
+      "Body": "Returns the general category assigned to the character chr as string.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.category"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::bidirectional}}({{c3::chr}})",
+      "Body": "Returns the bidirectional class assigned to the character chr as string. If no such value is defined, an empty string is returned.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.bidirectional"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::combining}}({{c3::chr}})",
+      "Body": "Returns the canonical combining class assigned to the character chr as integer. Returns 0 if no combining class is defined.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.combining"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::east_asian_width}}({{c3::chr}})",
+      "Body": "Returns the east asian width assigned to the character chr as string.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.east_asian_width"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::mirrored}}({{c3::chr}})",
+      "Body": "Returns the mirrored property assigned to the character chr as integer. Returns 1 if the character has been identified as a mirrored character in bidirectional text, 0 otherwise.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.mirrored"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::decomposition}}({{c3::chr}})",
+      "Body": "Returns the character decomposition mapping assigned to the character chr as string. An empty string is returned in case no such mapping is defined.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.decomposition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::normalize}}({{c3::form}}, {{c4::unistr}})",
+      "Body": "Return the normal form form for the Unicode string unistr. Valid values for form are 'NFC', 'NFKC', 'NFD', and 'NFKD'.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.normalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::unidata_version}}",
+      "Body": "The version of the Unicode database used in this module.",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.unidata_version"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "data",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::unicodedata}}.{{c2::ucd_}}3{{c3::_}}2{{c4::_}}0",
+      "Body": "This is an object that has the same methods as the entire module, but uses the Unicode database version 3.2 instead, for applications that require this specific version of the Unicode database (such as IDNA).",
+      "Link": "https://docs.python.org/3/library/unicodedata.html#unicodedata.ucd_3_2_0"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_a}}1({{c3::code}})",
+      "Body": "Determine whether code is in tableA.1 (Unassigned code points in Unicode 3.2).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_a1"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_b}}1({{c3::code}})",
+      "Body": "Determine whether code is in tableB.1 (Commonly mapped to nothing).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_b1"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::map_table_b}}2({{c3::code}})",
+      "Body": "Return the mapped value for code according to tableB.2 (Mapping for case-folding used with NFKC).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.map_table_b2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::map_table_b}}3({{c3::code}})",
+      "Body": "Return the mapped value for code according to tableB.3 (Mapping for case-folding used with no normalization).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.map_table_b3"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}11({{c3::code}})",
+      "Body": "Determine whether code is in tableC.1.1  (ASCII space characters).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c11"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}12({{c3::code}})",
+      "Body": "Determine whether code is in tableC.1.2  (Non-ASCII space characters).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c12"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}11{{c3::_c}}12({{c4::code}})",
+      "Body": "Determine whether code is in tableC.1  (Space characters, union of C.1.1 and C.1.2).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c11_c12"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}21({{c3::code}})",
+      "Body": "Determine whether code is in tableC.2.1  (ASCII control characters).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c21"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}22({{c3::code}})",
+      "Body": "Determine whether code is in tableC.2.2  (Non-ASCII control characters).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c22"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}21{{c3::_c}}22({{c4::code}})",
+      "Body": "Determine whether code is in tableC.2  (Control characters, union of C.2.1 and C.2.2).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c21_c22"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}3({{c3::code}})",
+      "Body": "Determine whether code is in tableC.3  (Private use).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c3"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}4({{c3::code}})",
+      "Body": "Determine whether code is in tableC.4  (Non-character code points).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c4"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}5({{c3::code}})",
+      "Body": "Determine whether code is in tableC.5  (Surrogate codes).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c5"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}6({{c3::code}})",
+      "Body": "Determine whether code is in tableC.6  (Inappropriate for plain text).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c6"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}7({{c3::code}})",
+      "Body": "Determine whether code is in tableC.7  (Inappropriate for canonical representation).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c7"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}8({{c3::code}})",
+      "Body": "Determine whether code is in tableC.8  (Change display properties or are deprecated).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c8"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_c}}9({{c3::code}})",
+      "Body": "Determine whether code is in tableC.9  (Tagging characters).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_c9"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_d}}1({{c3::code}})",
+      "Body": "Determine whether code is in tableD.1  (Characters with bidirectional property R or AL).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_d1"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::stringprep}}.{{c2::in_table_d}}2({{c3::code}})",
+      "Body": "Determine whether code is in tableD.2  (Characters with bidirectional property L).",
+      "Link": "https://docs.python.org/3/library/stringprep.html#stringprep.in_table_d2"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::parse_and_bind}}({{c3::string}})",
+      "Body": "Execute the init line provided in the string argument. This calls rl_parse_and_bind() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.parse_and_bind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::read_init_file}}([{{c3::filename}}])",
+      "Body": "Execute a readline initialization file. The default filename is the last filename used. This calls rl_read_init_file() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.read_init_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_line_buffer}}()",
+      "Body": "Return the current contents of the line buffer (rl_line_buffer in the underlying library).",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_line_buffer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::insert_text}}({{c3::string}})",
+      "Body": "Insert text into the line buffer at the cursor position.  This calls rl_insert_text() in the underlying library, but ignores the return value.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.insert_text"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::redisplay}}()",
+      "Body": "Change what's displayed on the screen to reflect the current contents of the line buffer.  This calls rl_redisplay() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.redisplay"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::read_history_file}}([{{c3::filename}}])",
+      "Body": "Load a readline history file, and append it to the history list. The default filename is ~/.history.  This calls read_history() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.read_history_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::write_history_file}}([{{c3::filename}}])",
+      "Body": "Save the history list to a readline history file, overwriting any existing file.  The default filename is ~/.history.  This calls write_history() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.write_history_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::append_history_file}}({{c3::nelements}}[, {{c4::filename}}])",
+      "Body": "Append the last nelements items of history to a file.  The default filename is ~/.history.  The file must already exist.  This calls append_history() in the underlying library.  This function only exists if was compiled for a version of the library that supports it.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.append_history_file"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_history_length}}()",
+      "Body": "Set or return the desired number of lines to save in the history file. The write_history_file() function uses this value to truncate the history file, by calling history_truncate_file() in the underlying library.  Negative values imply unlimited history file size.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_history_length"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::set_history_length}}({{c3::length}})",
+      "Body": "Set or return the desired number of lines to save in the history file. The write_history_file() function uses this value to truncate the history file, by calling history_truncate_file() in the underlying library.  Negative values imply unlimited history file size.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.set_history_length"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::clear_history}}()",
+      "Body": "Clear the current history.  This calls clear_history() in the underlying library.  The function only exists if was compiled for a version of the library that supports it.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.clear_history"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_current_history_length}}()",
+      "Body": "Return the number of items currently in the history.  (This is different from get_history_length(), which returns the maximum number of lines that will be written to a history file.)",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_current_history_length"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_history_item}}({{c3::index}})",
+      "Body": "Return the current contents of history item at index.  The item index is one-based.  This calls history_get() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_history_item"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::remove_history_item}}({{c3::pos}})",
+      "Body": "Remove history item specified by its position from the history. The position is zero-based.  This calls remove_history() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.remove_history_item"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::replace_history_item}}({{c3::pos}}, {{c4::line}})",
+      "Body": "Replace history item specified by its position with line. The position is zero-based.  This calls replace_history_entry() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.replace_history_item"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::add_history}}({{c3::line}})",
+      "Body": "Append line to the history buffer, as if it was the last line typed. This calls add_history() in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.add_history"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::set_auto_history}}({{c3::enabled}})",
+      "Body": "Enable or disable automatic calls to add_history() when reading input via readline.  The enabled argument should be a Boolean value that when true, enables auto history, and that when false, disables auto history.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.set_auto_history"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::set_startup_hook}}([{{c3::function}}])",
+      "Body": "Set or remove the function invoked by the rl_startup_hook callback of the underlying library.  If function is specified, it will be used as the new hook function; if omitted or None, any function already installed is removed.  The hook is called with no arguments just before readline prints the first prompt.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.set_startup_hook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::set_pre_input_hook}}([{{c3::function}}])",
+      "Body": "Set or remove the function invoked by the rl_pre_input_hook callback of the underlying library.  If function is specified, it will be used as the new hook function; if omitted or None, any function already installed is removed.  The hook is called with no arguments after the first prompt has been printed and just before readline starts reading input characters.  This function only exists if was compiled for a version of the library that supports it.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.set_pre_input_hook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::set_completer}}([{{c3::function}}])",
+      "Body": "Set or remove the completer function.  If function is specified, it will be used as the new completer function; if omitted or None, any completer function already installed is removed.  The completer function is called as function(text, state), for state in 0, 1, 2, , until it returns a non-string value.  It should return the next possible completion starting with text.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.set_completer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_completer}}()",
+      "Body": "Get the completer function, or None if no completer function has been set.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_completer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_completion_type}}()",
+      "Body": "Get the type of completion being attempted.  This returns the rl_completion_type variable in the underlying library as an integer.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_completion_type"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_begidx}}()",
+      "Body": "Get the beginning or ending index of the completion scope. These indexes are the start and end arguments passed to the rl_attempted_completion_function callback of the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_begidx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_endidx}}()",
+      "Body": "Get the beginning or ending index of the completion scope. These indexes are the start and end arguments passed to the rl_attempted_completion_function callback of the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_endidx"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::set_completer_delims}}({{c3::string}})",
+      "Body": "Set or get the word delimiters for completion.  These determine the start of the word to be considered for completion (the completion scope). These functions access the rl_completer_word_break_characters variable in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.set_completer_delims"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::get_completer_delims}}()",
+      "Body": "Set or get the word delimiters for completion.  These determine the start of the word to be considered for completion (the completion scope). These functions access the rl_completer_word_break_characters variable in the underlying library.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.get_completer_delims"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "function",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::readline}}.{{c2::set_completion_display_matches_hook}}([{{c3::function}}])",
+      "Body": "Set or remove the completion display function.  If function is specified, it will be used as the new completion display function; if omitted or None, any completion display function already installed is removed.  This sets or clears the rl_completion_display_matches_hook callback in the underlying library.  The completion display function is called as function(substitution, [matches], longest_match_length) once each time matches need to be displayed.",
+      "Link": "https://docs.python.org/3/library/readline.html#readline.set_completion_display_matches_hook"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": [
+      "method",
+      "Text Processing Services",
+      "Python",
+      "py",
+      "native"
+    ],
+    "fields": {
+      "Signature": "{{c1::Completer}}.{{c2::complete}}({{c3::text}}, {{c4::state}})",
+      "Body": "Return the stateth completion for text.",
+      "Link": "https://docs.python.org/3/library/rlcompleter.html#rlcompleter.Completer.complete"
+    },
+    "modelName": "ClozePy"
+  }
+]

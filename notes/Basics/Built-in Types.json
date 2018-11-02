@@ -1,0 +1,2108 @@
+[
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::int}}.{{c2::bit_length}}()",
+      "Body": "Return the number of bits necessary to represent an integer in binary, excluding the sign and leading zeros:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#int.bit_length"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::int}}.{{c2::to_bytes}}({{c3::length}}, {{c4::byteorder}}, *, {{c5::signed}}={{c6::False}})",
+      "Body": "Return an array of bytes representing an integer.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#int.to_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::int}}.{{c3::from_bytes}}({{c4::bytes}}, {{c5::byteorder}}, *, {{c6::signed}}={{c7::False}})",
+      "Body": "Return the integer represented by the given array of bytes.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#int.from_bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::float}}.{{c2::as_integer_ratio}}()",
+      "Body": "Return a pair of integers whose ratio is exactly equal to the original float and with a positive denominator.  Raises OverflowError on infinities and a ValueError on NaNs.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#float.as_integer_ratio"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::float}}.{{c2::is_integer}}()",
+      "Body": "Return True if the float instance is finite with integral value, and False otherwise:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#float.is_integer"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::float}}.{{c2::hex}}()",
+      "Body": "Return a representation of a floating-point number as a hexadecimal string.  For finite floating-point numbers, this representation will always include a leading 0x and a trailing p and exponent.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#float.hex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::classmethod}} {{c2::float}}.{{c3::fromhex}}({{c4::s}})",
+      "Body": "Class method to return the float represented by a hexadecimal string s.  The string s may have leading and trailing whitespace.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#float.fromhex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::container}}.{{c2::__iter__}}()",
+      "Body": "Return an iterator object.  The object is required to support the iterator protocol described below.  If a container supports different types of iteration, additional methods can be provided to specifically request iterators for those iteration types.  (An example of an object supporting multiple forms of iteration would be a tree structure which supports both breadth-first and depth-first traversal.)  This method corresponds to the tp_iter slot of the type structure for objects in the Python/C API.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#container.__iter__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::iterator}}.{{c2::__iter__}}()",
+      "Body": "Return the iterator object itself.  This is required to allow both containers and iterators to be used with the for and in statements. This method corresponds to the tp_iter slot of the type structure for objects in the Python/C API.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#iterator.__iter__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::iterator}}.{{c2::__next__}}()",
+      "Body": "Return the next item from the container.  If there are no further items, raise the StopIteration exception.  This method corresponds to the tp_iternext slot of the type structure for objects in the Python/C API.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#iterator.__next__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::list}}([{{c3::iterable}}])",
+      "Body": "Lists may be constructed in several ways:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#list"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::list}}.{{c2::sort}}(*, {{c3::key}}={{c4::None}}, {{c5::reverse}}={{c6::False}})",
+      "Body": "This method sorts the list in place, using only < comparisons between items. Exceptions are not suppressed - if any comparison operations fail, the entire sort operation will fail (and the list will likely be left in a partially modified state).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#list.sort"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::tuple}}([{{c3::iterable}}])",
+      "Body": "Tuples may be constructed in a number of ways:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#tuple"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::range}}({{c3::stop}})",
+      "Body": "The arguments to the range constructor must be integers (either built-in int or any object that implements the __index__ special method).  If the step argument is omitted, it defaults to 1. If the start argument is omitted, it defaults to 0. If step is zero, ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#range"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::range}}({{c3::start}}, {{c4::stop}}[, {{c5::step}}])",
+      "Body": "The arguments to the range constructor must be integers (either built-in int or any object that implements the __index__ special method).  If the step argument is omitted, it defaults to 1. If the start argument is omitted, it defaults to 0. If step is zero, ValueError is raised.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#ranges"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::range}}.{{c2::start}}",
+      "Body": "The value of the start parameter (or 0 if the parameter was not supplied)",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#range.start"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::range}}.{{c2::stop}}",
+      "Body": "The value of the stop parameter",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#range.stop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::range}}.{{c2::step}}",
+      "Body": "The value of the step parameter (or 1 if the parameter was not supplied)",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#range.step"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::str}}({{c3::object}}='')",
+      "Body": "Return a string version of object.  If object is not provided, returns the empty string.  Otherwise, the behavior of str() depends on whether encoding or errors is given, as follows.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::str}}({{c3::object}}={{c4::b}}'', {{c5::encoding}}='{{c6::utf}}-8', {{c7::errors}}='{{c8::strict}}')",
+      "Body": "Return a string version of object.  If object is not provided, returns the empty string.  Otherwise, the behavior of str() depends on whether encoding or errors is given, as follows.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::capitalize}}()",
+      "Body": "Return a copy of the string with its first character capitalized and the rest lowercased.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.capitalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::casefold}}()",
+      "Body": "Return a casefolded copy of the string. Casefolded strings may be used for caseless matching.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.casefold"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::center}}({{c3::width}}[, {{c4::fillchar}}])",
+      "Body": "Return centered in a string of length width. Padding is done using the specified fillchar (default is an ASCII space). The original string is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.center"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::count}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the number of non-overlapping occurrences of substring sub in the range [start, end].  Optional arguments start and end are interpreted as in slice notation.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::encode}}({{c3::encoding}}=\"{{c4::utf}}-8\", {{c5::errors}}=\"{{c6::strict}}\")",
+      "Body": "Return an encoded version of the string as a bytes object. Default encoding is 'utf-8'. errors may be given to set a different error handling scheme. The default for errors is 'strict', meaning that encoding errors raise a UnicodeError. Other possible values are 'ignore', 'replace', 'xmlcharrefreplace', 'backslashreplace' and any other name registered via codecs.register_error(), see section Error Handlers. For a list of possible encodings, see section Standard Encodings.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.encode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::endswith}}({{c3::suffix}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return True if the string ends with the specified suffix, otherwise return False.  suffix can also be a tuple of suffixes to look for.  With optional start, test beginning at that position.  With optional end, stop comparing at that position.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.endswith"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::expandtabs}}({{c3::tabsize}}=8)",
+      "Body": "Return a copy of the string where all tab characters are replaced by one or more spaces, depending on the current column and the given tab size.  Tab positions occur every tabsize characters (default is 8, giving tab positions at columns 0, 8, 16 and so on).  To expand the string, the current column is set to zero and the string is examined character by character.  If the character is a tab (\\t), one or more space characters are inserted in the result until the current column is equal to the next tab position. (The tab character itself is not copied.)  If the character is a newline (\\n) or return (\\r), it is copied and the current column is reset to zero.  Any other character is copied unchanged and the current column is incremented by one regardless of how the character is represented when printed.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.expandtabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::find}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the lowest index in the string where substring sub is found within the slice s[start:end].  Optional arguments start and end are interpreted as in slice notation.  Return -1 if sub is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.find"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::format}}(*args, **kwargs)",
+      "Body": "Perform a string formatting operation.  The string on which this method is called can contain literal text or replacement fields delimited by braces {}.  Each replacement field contains either the numeric index of a positional argument, or the name of a keyword argument.  Returns a copy of the string where each replacement field is replaced with the string value of the corresponding argument.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::format_map}}({{c3::mapping}})",
+      "Body": "Similar to str.format(**mapping), except that mapping is used directly and not copied to a dict.  This is useful if for example mapping is a dict subclass:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.format_map"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::index}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Like find(), but raise ValueError when the substring is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.index"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isalnum}}()",
+      "Body": "Return true if all characters in the string are alphanumeric and there is at least one character, false otherwise.  A character c is alphanumeric if one of the following returns True: c.isalpha(), c.isdecimal(), c.isdigit(), or c.isnumeric().",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isalnum"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isalpha}}()",
+      "Body": "Return true if all characters in the string are alphabetic and there is at least one character, false otherwise.  Alphabetic characters are those characters defined in the Unicode character database as Letter, i.e., those with general category property being one of Lm, Lt, Lu, Ll, or Lo.  Note that this is different from the Alphabetic property defined in the Unicode Standard.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isalpha"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isascii}}()",
+      "Body": "Return true if the string is empty or all characters in the string are ASCII, false otherwise. ASCII characters have code points in the range U+0000-U+007F.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isascii"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isdecimal}}()",
+      "Body": "Return true if all characters in the string are decimal characters and there is at least one character, false otherwise. Decimal characters are those that can be used to form numbers in base 10, e.g. U+0660, ARABIC-INDIC DIGIT ZERO.  Formally a decimal character is a character in the Unicode General Category Nd.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isdecimal"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isdigit}}()",
+      "Body": "Return true if all characters in the string are digits and there is at least one character, false otherwise.  Digits include decimal characters and digits that need special handling, such as the compatibility superscript digits. This covers digits which cannot be used to form numbers in base 10, like the Kharosthi numbers.  Formally, a digit is a character that has the property value Numeric_Type=Digit or Numeric_Type=Decimal.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isdigit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isidentifier}}()",
+      "Body": "Return true if the string is a valid identifier according to the language definition, section Identifiers and keywords.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isidentifier"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::islower}}()",
+      "Body": "Return true if all cased characters [4] in the string are lowercase and there is at least one cased character, false otherwise.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.islower"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isnumeric}}()",
+      "Body": "Return true if all characters in the string are numeric characters, and there is at least one character, false otherwise. Numeric characters include digit characters, and all characters that have the Unicode numeric value property, e.g. U+2155, VULGAR FRACTION ONE FIFTH.  Formally, numeric characters are those with the property value Numeric_Type=Digit, Numeric_Type=Decimal or Numeric_Type=Numeric.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isnumeric"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isprintable}}()",
+      "Body": "Return true if all characters in the string are printable or the string is empty, false otherwise.  Nonprintable characters are those characters defined in the Unicode character database as Other or Separator, excepting the ASCII space (0x20) which is considered printable.  (Note that printable characters in this context are those which should not be escaped when repr() is invoked on a string.  It has no bearing on the handling of strings written to sys.stdout or sys.stderr.)",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isprintable"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isspace}}()",
+      "Body": "Return true if there are only whitespace characters in the string and there is at least one character, false otherwise.  Whitespace characters  are those characters defined in the Unicode character database as Other or Separator and those with bidirectional property being one of WS, B, or S.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isspace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::istitle}}()",
+      "Body": "Return true if the string is a titlecased string and there is at least one character, for example uppercase characters may only follow uncased characters and lowercase characters only cased ones.  Return false otherwise.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.istitle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::isupper}}()",
+      "Body": "Return true if all cased characters [4] in the string are uppercase and there is at least one cased character, false otherwise.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.isupper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::join}}({{c3::iterable}})",
+      "Body": "Return a string which is the concatenation of the strings in iterable. A TypeError will be raised if there are any non-string values in iterable, including bytes objects.  The separator between elements is the string providing this method.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::ljust}}({{c3::width}}[, {{c4::fillchar}}])",
+      "Body": "Return the string left justified in a string of length width. Padding is done using the specified fillchar (default is an ASCII space). The original string is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.ljust"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::lower}}()",
+      "Body": "Return a copy of the string with all the cased characters [4] converted to lowercase.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.lower"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::lstrip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the string with leading characters removed.  The chars argument is a string specifying the set of characters to be removed.  If omitted or None, the chars argument defaults to removing whitespace.  The chars argument is not a prefix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.lstrip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["staticmethod", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::static}} {{c2::str}}.{{c3::maketrans}}({{c4::x}}[, {{c5::y}}[, {{c6::z}}]])",
+      "Body": "This static method returns a translation table usable for str.translate().",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.maketrans"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::partition}}({{c3::sep}})",
+      "Body": "Split the string at the first occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator.  If the separator is not found, return a 3-tuple containing the string itself, followed by two empty strings.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.partition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::replace}}({{c3::old}}, {{c4::new}}[, {{c5::count}}])",
+      "Body": "Return a copy of the string with all occurrences of substring old replaced by new.  If the optional argument count is given, only the first count occurrences are replaced.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::rfind}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the highest index in the string where substring sub is found, such that sub is contained within s[start:end].  Optional arguments start and end are interpreted as in slice notation.  Return -1 on failure.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.rfind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::rindex}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Like rfind() but raises ValueError when the substring sub is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.rindex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::rjust}}({{c3::width}}[, {{c4::fillchar}}])",
+      "Body": "Return the string right justified in a string of length width. Padding is done using the specified fillchar (default is an ASCII space). The original string is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.rjust"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::rpartition}}({{c3::sep}})",
+      "Body": "Split the string at the last occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself, and the part after the separator.  If the separator is not found, return a 3-tuple containing two empty strings, followed by the string itself.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.rpartition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::rsplit}}({{c3::sep}}={{c4::None}}, {{c5::maxsplit}}=-1)",
+      "Body": "Return a list of the words in the string, using sep as the delimiter string. If maxsplit is given, at most maxsplit splits are done, the rightmost ones.  If sep is not specified or None, any whitespace string is a separator.  Except for splitting from the right, rsplit() behaves like split() which is described in detail below.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.rsplit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::rstrip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the string with trailing characters removed.  The chars argument is a string specifying the set of characters to be removed.  If omitted or None, the chars argument defaults to removing whitespace.  The chars argument is not a suffix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.rstrip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::split}}({{c3::sep}}={{c4::None}}, {{c5::maxsplit}}=-1)",
+      "Body": "Return a list of the words in the string, using sep as the delimiter string.  If maxsplit is given, at most maxsplit splits are done (thus, the list will have at most maxsplit+1 elements).  If maxsplit is not specified or -1, then there is no limit on the number of splits (all possible splits are made).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.split"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::splitlines}}([{{c3::keepends}}])",
+      "Body": "Return a list of the lines in the string, breaking at line boundaries.  Line breaks are not included in the resulting list unless keepends is given and true.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.splitlines"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::startswith}}({{c3::prefix}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return True if string starts with the prefix, otherwise return False. prefix can also be a tuple of prefixes to look for.  With optional start, test string beginning at that position.  With optional end, stop comparing string at that position.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.startswith"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::strip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the string with the leading and trailing characters removed. The chars argument is a string specifying the set of characters to be removed. If omitted or None, the chars argument defaults to removing whitespace. The chars argument is not a prefix or suffix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.strip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::swapcase}}()",
+      "Body": "Return a copy of the string with uppercase characters converted to lowercase and vice versa. Note that it is not necessarily true that s.swapcase().swapcase() == s.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.swapcase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::title}}()",
+      "Body": "Return a titlecased version of the string where words start with an uppercase character and the remaining characters are lowercase.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.title"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::translate}}({{c3::table}})",
+      "Body": "Return a copy of the string in which each character has been mapped through the given translation table.  The table must be an object that implements indexing via __getitem__(), typically a mapping or sequence.  When indexed by a Unicode ordinal (an integer), the table object can do any of the following: return a Unicode ordinal or a string, to map the character to one or more other characters; return None, to delete the character from the return string; or raise a LookupError exception, to map the character to itself.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.translate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::upper}}()",
+      "Body": "Return a copy of the string with all the cased characters [4] converted to uppercase.  Note that s.upper().isupper() might be False if s contains uncased characters or if the Unicode category of the resulting character(s) is not Lu (Letter, uppercase), but e.g. Lt (Letter, titlecase).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.upper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::str}}.{{c2::zfill}}({{c3::width}})",
+      "Body": "Return a copy of the string left filled with ASCII '0' digits to make a string of length width. A leading sign prefix ('+'/'-') is handled by inserting the padding after the sign character rather than before. The original string is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#str.zfill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::bytes}}([{{c3::source}}[, {{c4::encoding}}[, {{c5::errors}}]]])",
+      "Body": "Firstly, the syntax for bytes literals is largely the same as that for string literals, except that a b prefix is added:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::classmethod}} {{c3::fromhex}}({{c4::string}})",
+      "Body": "This bytes class method returns a bytes object, decoding the given string object.  The string must contain two hexadecimal digits per byte, with ASCII whitespace being ignored.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.fromhex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::hex}}()",
+      "Body": "Return a string object containing two hexadecimal digits for each byte in the instance.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.hex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::bytearray}}([{{c3::source}}[, {{c4::encoding}}[, {{c5::errors}}]]])",
+      "Body": "There is no dedicated literal syntax for bytearray objects, instead they are always created by calling the constructor:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::classmethod}} {{c3::fromhex}}({{c4::string}})",
+      "Body": "This bytearray class method returns bytearray object, decoding the given string object.  The string must contain two hexadecimal digits per byte, with ASCII whitespace being ignored.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::hex}}()",
+      "Body": "Return a string object containing two hexadecimal digits for each byte in the instance.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.hex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::count}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the number of non-overlapping occurrences of subsequence sub in the range [start, end].  Optional arguments start and end are interpreted as in slice notation.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::count}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the number of non-overlapping occurrences of subsequence sub in the range [start, end].  Optional arguments start and end are interpreted as in slice notation.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.count"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::decode}}({{c3::encoding}}=\"{{c4::utf}}-8\", {{c5::errors}}=\"{{c6::strict}}\")",
+      "Body": "Return a string decoded from the given bytes.  Default encoding is 'utf-8'. errors may be given to set a different error handling scheme.  The default for errors is 'strict', meaning that encoding errors raise a UnicodeError.  Other possible values are 'ignore', 'replace' and any other name registered via codecs.register_error(), see section Error Handlers. For a list of possible encodings, see section Standard Encodings.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::decode}}({{c3::encoding}}=\"{{c4::utf}}-8\", {{c5::errors}}=\"{{c6::strict}}\")",
+      "Body": "Return a string decoded from the given bytes.  Default encoding is 'utf-8'. errors may be given to set a different error handling scheme.  The default for errors is 'strict', meaning that encoding errors raise a UnicodeError.  Other possible values are 'ignore', 'replace' and any other name registered via codecs.register_error(), see section Error Handlers. For a list of possible encodings, see section Standard Encodings.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.decode"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::endswith}}({{c3::suffix}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return True if the binary data ends with the specified suffix, otherwise return False.  suffix can also be a tuple of suffixes to look for.  With optional start, test beginning at that position.  With optional end, stop comparing at that position.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.endswith"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::endswith}}({{c3::suffix}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return True if the binary data ends with the specified suffix, otherwise return False.  suffix can also be a tuple of suffixes to look for.  With optional start, test beginning at that position.  With optional end, stop comparing at that position.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.endswith"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::find}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the lowest index in the data where the subsequence sub is found, such that sub is contained in the slice s[start:end].  Optional arguments start and end are interpreted as in slice notation.  Return -1 if sub is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.find"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::find}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the lowest index in the data where the subsequence sub is found, such that sub is contained in the slice s[start:end].  Optional arguments start and end are interpreted as in slice notation.  Return -1 if sub is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.find"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::index}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Like find(), but raise ValueError when the subsequence is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.index"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::index}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Like find(), but raise ValueError when the subsequence is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.index"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::join}}({{c3::iterable}})",
+      "Body": "Return a bytes or bytearray object which is the concatenation of the binary data sequences in iterable.  A TypeError will be raised if there are any values in iterable that are not bytes-like objects, including str objects.  The separator between elements is the contents of the bytes or bytearray object providing this method.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::join}}({{c3::iterable}})",
+      "Body": "Return a bytes or bytearray object which is the concatenation of the binary data sequences in iterable.  A TypeError will be raised if there are any values in iterable that are not bytes-like objects, including str objects.  The separator between elements is the contents of the bytes or bytearray object providing this method.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.join"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["staticmethod", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::static}} {{c2::bytes}}.{{c3::maketrans}}({{c4::from}}, {{c5::to}})",
+      "Body": "This static method returns a translation table usable for bytes.translate() that will map each character in from into the character at the same position in to; from and to must both be bytes-like objects and have the same length.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.maketrans"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["staticmethod", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::static}} {{c2::bytearray}}.{{c3::maketrans}}({{c4::from}}, {{c5::to}})",
+      "Body": "This static method returns a translation table usable for bytes.translate() that will map each character in from into the character at the same position in to; from and to must both be bytes-like objects and have the same length.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.maketrans"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::partition}}({{c3::sep}})",
+      "Body": "Split the sequence at the first occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself or its bytearray copy, and the part after the separator. If the separator is not found, return a 3-tuple containing a copy of the original sequence, followed by two empty bytes or bytearray objects.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.partition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::partition}}({{c3::sep}})",
+      "Body": "Split the sequence at the first occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself or its bytearray copy, and the part after the separator. If the separator is not found, return a 3-tuple containing a copy of the original sequence, followed by two empty bytes or bytearray objects.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.partition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::replace}}({{c3::old}}, {{c4::new}}[, {{c5::count}}])",
+      "Body": "Return a copy of the sequence with all occurrences of subsequence old replaced by new.  If the optional argument count is given, only the first count occurrences are replaced.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::replace}}({{c3::old}}, {{c4::new}}[, {{c5::count}}])",
+      "Body": "Return a copy of the sequence with all occurrences of subsequence old replaced by new.  If the optional argument count is given, only the first count occurrences are replaced.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.replace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::rfind}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the highest index in the sequence where the subsequence sub is found, such that sub is contained within s[start:end].  Optional arguments start and end are interpreted as in slice notation. Return -1 on failure.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.rfind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::rfind}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return the highest index in the sequence where the subsequence sub is found, such that sub is contained within s[start:end].  Optional arguments start and end are interpreted as in slice notation. Return -1 on failure.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.rfind"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::rindex}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Like rfind() but raises ValueError when the subsequence sub is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.rindex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::rindex}}({{c3::sub}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Like rfind() but raises ValueError when the subsequence sub is not found.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.rindex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::rpartition}}({{c3::sep}})",
+      "Body": "Split the sequence at the last occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself or its bytearray copy, and the part after the separator. If the separator is not found, return a 3-tuple containing a copy of the original sequence, followed by two empty bytes or bytearray objects.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.rpartition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::rpartition}}({{c3::sep}})",
+      "Body": "Split the sequence at the last occurrence of sep, and return a 3-tuple containing the part before the separator, the separator itself or its bytearray copy, and the part after the separator. If the separator is not found, return a 3-tuple containing a copy of the original sequence, followed by two empty bytes or bytearray objects.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.rpartition"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::startswith}}({{c3::prefix}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return True if the binary data starts with the specified prefix, otherwise return False.  prefix can also be a tuple of prefixes to look for.  With optional start, test beginning at that position.  With optional end, stop comparing at that position.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.startswith"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::startswith}}({{c3::prefix}}[, {{c4::start}}[, {{c5::end}}]])",
+      "Body": "Return True if the binary data starts with the specified prefix, otherwise return False.  prefix can also be a tuple of prefixes to look for.  With optional start, test beginning at that position.  With optional end, stop comparing at that position.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.startswith"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::translate}}({{c3::table}}, {{c4::delete}}={{c5::b}}'')",
+      "Body": "Return a copy of the bytes or bytearray object where all bytes occurring in the optional argument delete are removed, and the remaining bytes have been mapped through the given translation table, which must be a bytes object of length 256.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.translate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::translate}}({{c3::table}}, {{c4::delete}}={{c5::b}}'')",
+      "Body": "Return a copy of the bytes or bytearray object where all bytes occurring in the optional argument delete are removed, and the remaining bytes have been mapped through the given translation table, which must be a bytes object of length 256.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.translate"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::center}}({{c3::width}}[, {{c4::fillbyte}}])",
+      "Body": "Return a copy of the object centered in a sequence of length width. Padding is done using the specified fillbyte (default is an ASCII space). For bytes objects, the original sequence is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.center"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::center}}({{c3::width}}[, {{c4::fillbyte}}])",
+      "Body": "Return a copy of the object centered in a sequence of length width. Padding is done using the specified fillbyte (default is an ASCII space). For bytes objects, the original sequence is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.center"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::ljust}}({{c3::width}}[, {{c4::fillbyte}}])",
+      "Body": "Return a copy of the object left justified in a sequence of length width. Padding is done using the specified fillbyte (default is an ASCII space). For bytes objects, the original sequence is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.ljust"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::ljust}}({{c3::width}}[, {{c4::fillbyte}}])",
+      "Body": "Return a copy of the object left justified in a sequence of length width. Padding is done using the specified fillbyte (default is an ASCII space). For bytes objects, the original sequence is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.ljust"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::lstrip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the sequence with specified leading bytes removed.  The chars argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters.  If omitted or None, the chars argument defaults to removing ASCII whitespace.  The chars argument is not a prefix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.lstrip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::lstrip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the sequence with specified leading bytes removed.  The chars argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters.  If omitted or None, the chars argument defaults to removing ASCII whitespace.  The chars argument is not a prefix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.lstrip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::rjust}}({{c3::width}}[, {{c4::fillbyte}}])",
+      "Body": "Return a copy of the object right justified in a sequence of length width. Padding is done using the specified fillbyte (default is an ASCII space). For bytes objects, the original sequence is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.rjust"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::rjust}}({{c3::width}}[, {{c4::fillbyte}}])",
+      "Body": "Return a copy of the object right justified in a sequence of length width. Padding is done using the specified fillbyte (default is an ASCII space). For bytes objects, the original sequence is returned if width is less than or equal to len(s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.rjust"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::rsplit}}({{c3::sep}}={{c4::None}}, {{c5::maxsplit}}=-1)",
+      "Body": "Split the binary sequence into subsequences of the same type, using sep as the delimiter string. If maxsplit is given, at most maxsplit splits are done, the rightmost ones.  If sep is not specified or None, any subsequence consisting solely of ASCII whitespace is a separator. Except for splitting from the right, rsplit() behaves like split() which is described in detail below.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.rsplit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::rsplit}}({{c3::sep}}={{c4::None}}, {{c5::maxsplit}}=-1)",
+      "Body": "Split the binary sequence into subsequences of the same type, using sep as the delimiter string. If maxsplit is given, at most maxsplit splits are done, the rightmost ones.  If sep is not specified or None, any subsequence consisting solely of ASCII whitespace is a separator. Except for splitting from the right, rsplit() behaves like split() which is described in detail below.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.rsplit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::rstrip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the sequence with specified trailing bytes removed.  The chars argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters.  If omitted or None, the chars argument defaults to removing ASCII whitespace.  The chars argument is not a suffix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.rstrip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::rstrip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the sequence with specified trailing bytes removed.  The chars argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters.  If omitted or None, the chars argument defaults to removing ASCII whitespace.  The chars argument is not a suffix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.rstrip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::split}}({{c3::sep}}={{c4::None}}, {{c5::maxsplit}}=-1)",
+      "Body": "Split the binary sequence into subsequences of the same type, using sep as the delimiter string. If maxsplit is given and non-negative, at most maxsplit splits are done (thus, the list will have at most maxsplit+1 elements).  If maxsplit is not specified or is -1, then there is no limit on the number of splits (all possible splits are made).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.split"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::split}}({{c3::sep}}={{c4::None}}, {{c5::maxsplit}}=-1)",
+      "Body": "Split the binary sequence into subsequences of the same type, using sep as the delimiter string. If maxsplit is given and non-negative, at most maxsplit splits are done (thus, the list will have at most maxsplit+1 elements).  If maxsplit is not specified or is -1, then there is no limit on the number of splits (all possible splits are made).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.split"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::strip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the sequence with specified leading and trailing bytes removed. The chars argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters.  If omitted or None, the chars argument defaults to removing ASCII whitespace. The chars argument is not a prefix or suffix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.strip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::strip}}([{{c3::chars}}])",
+      "Body": "Return a copy of the sequence with specified leading and trailing bytes removed. The chars argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters.  If omitted or None, the chars argument defaults to removing ASCII whitespace. The chars argument is not a prefix or suffix; rather, all combinations of its values are stripped:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.strip"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::capitalize}}()",
+      "Body": "Return a copy of the sequence with each byte interpreted as an ASCII character, and the first byte capitalized and the rest lowercased. Non-ASCII byte values are passed through unchanged.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.capitalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::capitalize}}()",
+      "Body": "Return a copy of the sequence with each byte interpreted as an ASCII character, and the first byte capitalized and the rest lowercased. Non-ASCII byte values are passed through unchanged.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.capitalize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::expandtabs}}({{c3::tabsize}}=8)",
+      "Body": "Return a copy of the sequence where all ASCII tab characters are replaced by one or more ASCII spaces, depending on the current column and the given tab size.  Tab positions occur every tabsize bytes (default is 8, giving tab positions at columns 0, 8, 16 and so on).  To expand the sequence, the current column is set to zero and the sequence is examined byte by byte.  If the byte is an ASCII tab character (b'\\t'), one or more space characters are inserted in the result until the current column is equal to the next tab position. (The tab character itself is not copied.)  If the current byte is an ASCII newline (b'\\n') or carriage return (b'\\r'), it is copied and the current column is reset to zero.  Any other byte value is copied unchanged and the current column is incremented by one regardless of how the byte value is represented when printed:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.expandtabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::expandtabs}}({{c3::tabsize}}=8)",
+      "Body": "Return a copy of the sequence where all ASCII tab characters are replaced by one or more ASCII spaces, depending on the current column and the given tab size.  Tab positions occur every tabsize bytes (default is 8, giving tab positions at columns 0, 8, 16 and so on).  To expand the sequence, the current column is set to zero and the sequence is examined byte by byte.  If the byte is an ASCII tab character (b'\\t'), one or more space characters are inserted in the result until the current column is equal to the next tab position. (The tab character itself is not copied.)  If the current byte is an ASCII newline (b'\\n') or carriage return (b'\\r'), it is copied and the current column is reset to zero.  Any other byte value is copied unchanged and the current column is incremented by one regardless of how the byte value is represented when printed:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.expandtabs"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::isalnum}}()",
+      "Body": "Return true if all bytes in the sequence are alphabetical ASCII characters or ASCII decimal digits and the sequence is not empty, false otherwise. Alphabetic ASCII characters are those byte values in the sequence b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'. ASCII decimal digits are those byte values in the sequence b'0123456789'.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.isalnum"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::isalnum}}()",
+      "Body": "Return true if all bytes in the sequence are alphabetical ASCII characters or ASCII decimal digits and the sequence is not empty, false otherwise. Alphabetic ASCII characters are those byte values in the sequence b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'. ASCII decimal digits are those byte values in the sequence b'0123456789'.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.isalnum"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::isalpha}}()",
+      "Body": "Return true if all bytes in the sequence are alphabetic ASCII characters and the sequence is not empty, false otherwise.  Alphabetic ASCII characters are those byte values in the sequence b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.isalpha"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::isalpha}}()",
+      "Body": "Return true if all bytes in the sequence are alphabetic ASCII characters and the sequence is not empty, false otherwise.  Alphabetic ASCII characters are those byte values in the sequence b'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.isalpha"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::isascii}}()",
+      "Body": "Return true if the sequence is empty or all bytes in the sequence are ASCII, false otherwise. ASCII bytes are in the range 0-0x7F.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.isascii"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::isascii}}()",
+      "Body": "Return true if the sequence is empty or all bytes in the sequence are ASCII, false otherwise. ASCII bytes are in the range 0-0x7F.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.isascii"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::isdigit}}()",
+      "Body": "Return true if all bytes in the sequence are ASCII decimal digits and the sequence is not empty, false otherwise. ASCII decimal digits are those byte values in the sequence b'0123456789'.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.isdigit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::isdigit}}()",
+      "Body": "Return true if all bytes in the sequence are ASCII decimal digits and the sequence is not empty, false otherwise. ASCII decimal digits are those byte values in the sequence b'0123456789'.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.isdigit"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::islower}}()",
+      "Body": "Return true if there is at least one lowercase ASCII character in the sequence and no uppercase ASCII characters, false otherwise.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.islower"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::islower}}()",
+      "Body": "Return true if there is at least one lowercase ASCII character in the sequence and no uppercase ASCII characters, false otherwise.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.islower"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::isspace}}()",
+      "Body": "Return true if all bytes in the sequence are ASCII whitespace and the sequence is not empty, false otherwise.  ASCII whitespace characters are those byte values in the sequence b' \\t\\n\\r\\x0b\\f' (space, tab, newline, carriage return, vertical tab, form feed).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.isspace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::isspace}}()",
+      "Body": "Return true if all bytes in the sequence are ASCII whitespace and the sequence is not empty, false otherwise.  ASCII whitespace characters are those byte values in the sequence b' \\t\\n\\r\\x0b\\f' (space, tab, newline, carriage return, vertical tab, form feed).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.isspace"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::istitle}}()",
+      "Body": "Return true if the sequence is ASCII titlecase and the sequence is not empty, false otherwise. See bytes.title() for more details on the definition of titlecase.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.istitle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::istitle}}()",
+      "Body": "Return true if the sequence is ASCII titlecase and the sequence is not empty, false otherwise. See bytes.title() for more details on the definition of titlecase.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.istitle"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::isupper}}()",
+      "Body": "Return true if there is at least one uppercase alphabetic ASCII character in the sequence and no lowercase ASCII characters, false otherwise.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.isupper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::isupper}}()",
+      "Body": "Return true if there is at least one uppercase alphabetic ASCII character in the sequence and no lowercase ASCII characters, false otherwise.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.isupper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::lower}}()",
+      "Body": "Return a copy of the sequence with all the uppercase ASCII characters converted to their corresponding lowercase counterpart.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.lower"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::lower}}()",
+      "Body": "Return a copy of the sequence with all the uppercase ASCII characters converted to their corresponding lowercase counterpart.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.lower"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::splitlines}}({{c3::keepends}}={{c4::False}})",
+      "Body": "Return a list of the lines in the binary sequence, breaking at ASCII line boundaries. This method uses the universal newlines approach to splitting lines. Line breaks are not included in the resulting list unless keepends is given and true.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.splitlines"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::splitlines}}({{c3::keepends}}={{c4::False}})",
+      "Body": "Return a list of the lines in the binary sequence, breaking at ASCII line boundaries. This method uses the universal newlines approach to splitting lines. Line breaks are not included in the resulting list unless keepends is given and true.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.splitlines"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::swapcase}}()",
+      "Body": "Return a copy of the sequence with all the lowercase ASCII characters converted to their corresponding uppercase counterpart and vice-versa.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.swapcase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::swapcase}}()",
+      "Body": "Return a copy of the sequence with all the lowercase ASCII characters converted to their corresponding uppercase counterpart and vice-versa.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.swapcase"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::title}}()",
+      "Body": "Return a titlecased version of the binary sequence where words start with an uppercase ASCII character and the remaining characters are lowercase. Uncased byte values are left unmodified.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.title"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::title}}()",
+      "Body": "Return a titlecased version of the binary sequence where words start with an uppercase ASCII character and the remaining characters are lowercase. Uncased byte values are left unmodified.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.title"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::upper}}()",
+      "Body": "Return a copy of the sequence with all the lowercase ASCII characters converted to their corresponding uppercase counterpart.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.upper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::upper}}()",
+      "Body": "Return a copy of the sequence with all the lowercase ASCII characters converted to their corresponding uppercase counterpart.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.upper"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytes}}.{{c2::zfill}}({{c3::width}})",
+      "Body": "Return a copy of the sequence left filled with ASCII b'0' digits to make a sequence of length width. A leading sign prefix (b'+'/ b'-' is handled by inserting the padding after the sign character rather than before. For bytes objects, the original sequence is returned if width is less than or equal to len(seq).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytes.zfill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::bytearray}}.{{c2::zfill}}({{c3::width}})",
+      "Body": "Return a copy of the sequence left filled with ASCII b'0' digits to make a sequence of length width. A leading sign prefix (b'+'/ b'-' is handled by inserting the padding after the sign character rather than before. For bytes objects, the original sequence is returned if width is less than or equal to len(seq).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#bytearray.zfill"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::memoryview}}({{c3::obj}})",
+      "Body": "Create a memoryview that references obj.  obj must support the buffer protocol.  Built-in objects that support the buffer protocol include bytes and bytearray.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::__eq__}}({{c3::exporter}})",
+      "Body": "A memoryview and a PEP 3118 exporter are equal if their shapes are equivalent and if all corresponding values are equal when the operands' respective format codes are interpreted using struct syntax.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.__eq__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::tobytes}}()",
+      "Body": "Return the data in the buffer as a bytestring.  This is equivalent to calling the bytes constructor on the memoryview.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.tobytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::hex}}()",
+      "Body": "Return a string object containing two hexadecimal digits for each byte in the buffer.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.hex"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::tolist}}()",
+      "Body": "Return the data in the buffer as a list of elements.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.tolist"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::release}}()",
+      "Body": "Release the underlying buffer exposed by the memoryview object.  Many objects take special actions when a view is held on them (for example, a bytearray would temporarily forbid resizing); therefore, calling release() is handy to remove these restrictions (and free any dangling resources) as soon as possible.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.release"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::cast}}({{c3::format}}[, {{c4::shape}}])",
+      "Body": "Cast a memoryview to a new format or shape. shape defaults to [byte_length//new_itemsize], which means that the result view will be one-dimensional. The return value is a new memoryview, but the buffer itself is not copied. Supported casts are 1D -> C-contiguous and C-contiguous -> 1D.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.cast"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::obj}}",
+      "Body": "The underlying object of the memoryview:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.obj"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::nbytes}}",
+      "Body": "nbytes == product(shape) * itemsize == len(m.tobytes()). This is the amount of space in bytes that the array would use in a contiguous representation. It is not necessarily equal to len(m):",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.nbytes"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::readonly}}",
+      "Body": "A bool indicating whether the memory is read only.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.readonly"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::format}}",
+      "Body": "A string containing the format (in struct module style) for each element in the view. A memoryview can be created from exporters with arbitrary format strings, but some methods (e.g. tolist()) are restricted to native single element formats.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.format"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::itemsize}}",
+      "Body": "The size in bytes of each element of the memoryview:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.itemsize"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::ndim}}",
+      "Body": "An integer indicating how many dimensions of a multi-dimensional array the memory represents.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.ndim"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::shape}}",
+      "Body": "A tuple of integers the length of ndim giving the shape of the memory as an N-dimensional array.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.shape"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::strides}}",
+      "Body": "A tuple of integers the length of ndim giving the size in bytes to access each element for each dimension of the array.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.strides"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::suboffsets}}",
+      "Body": "Used internally for PIL-style arrays. The value is informational only.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.suboffsets"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::c_contiguous}}",
+      "Body": "A bool indicating whether the memory is C-contiguous.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.c_contiguous"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::f_contiguous}}",
+      "Body": "A bool indicating whether the memory is Fortran contiguous.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.f_contiguous"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::memoryview}}.{{c2::contiguous}}",
+      "Body": "A bool indicating whether the memory is contiguous.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#memoryview.contiguous"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::set}}([{{c3::iterable}}])",
+      "Body": "Return a new set or frozenset object whose elements are taken from iterable.  The elements of a set must be hashable.  To represent sets of sets, the inner sets must be frozenset objects.  If iterable is not specified, a new empty set is returned.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::frozenset}}([{{c3::iterable}}])",
+      "Body": "Return a new set or frozenset object whose elements are taken from iterable.  The elements of a set must be hashable.  To represent sets of sets, the inner sets must be frozenset objects.  If iterable is not specified, a new empty set is returned.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::len}}({{c2::s}})",
+      "Body": "Return the number of elements in set s (cardinality of s).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::x}} {{c2::in}} {{c3::s}}",
+      "Body": "Test x for membership in s.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::x}} {{c2::not}} {{c3::in}} {{c4::s}}",
+      "Body": "Test x for non-membership in s.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::isdisjoint}}({{c3::other}})",
+      "Body": "Return True if the set has no elements in common with other.  Sets are disjoint if and only if their intersection is the empty set.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.isdisjoint"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::issubset}}({{c3::other}})",
+      "Body": "Test whether every element in the set is in other.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.issubset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} <= {{c2::other}}",
+      "Body": "Test whether every element in the set is in other.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} < {{c2::other}}",
+      "Body": "Test whether the set is a proper subset of other, that is, set <= other and set != other.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::issuperset}}({{c3::other}})",
+      "Body": "Test whether every element in other is in the set.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.issuperset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} >= {{c2::other}}",
+      "Body": "Test whether every element in other is in the set.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} > {{c2::other}}",
+      "Body": "Test whether the set is a proper superset of other, that is, set >= other and set != other.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::union}}(*others)",
+      "Body": "Return a new set with elements from the set and all others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.union"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} | {{c2::other}} | ...",
+      "Body": "Return a new set with elements from the set and all others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::intersection}}(*others)",
+      "Body": "Return a new set with elements common to the set and all others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.intersection"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} & {{c2::other}} & ...",
+      "Body": "Return a new set with elements common to the set and all others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::difference}}(*others)",
+      "Body": "Return a new set with elements in the set that are not in the others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.difference"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} - {{c2::other}} - ...",
+      "Body": "Return a new set with elements in the set that are not in the others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::symmetric_difference}}({{c3::other}})",
+      "Body": "Return a new set with elements in either the set or other but not both.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.symmetric_difference"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} ^ {{c2::other}}",
+      "Body": "Return a new set with elements in either the set or other but not both.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::copy}}()",
+      "Body": "Return a new set with a shallow copy of s.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::update}}(*others)",
+      "Body": "Update the set, adding elements from all others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} |= {{c2::other}} | ...",
+      "Body": "Update the set, adding elements from all others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::intersection_update}}(*others)",
+      "Body": "Update the set, keeping only elements found in it and all others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.intersection_update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} &= {{c2::other}} & ...",
+      "Body": "Update the set, keeping only elements found in it and all others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::difference_update}}(*others)",
+      "Body": "Update the set, removing elements found in others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.difference_update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} -= {{c2::other}} | ...",
+      "Body": "Update the set, removing elements found in others.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::symmetric_difference_update}}({{c3::other}})",
+      "Body": "Update the set, keeping only elements found in either set, but not in both.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.symmetric_difference_update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::set}} ^= {{c2::other}}",
+      "Body": "Update the set, keeping only elements found in either set, but not in both.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::add}}({{c3::elem}})",
+      "Body": "Add element elem to the set.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.add"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::remove}}({{c3::elem}})",
+      "Body": "Remove element elem from the set.  Raises KeyError if elem is not contained in the set.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.remove"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::discard}}({{c3::elem}})",
+      "Body": "Remove element elem from the set if it is present.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.discard"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::pop}}()",
+      "Body": "Remove and return an arbitrary element from the set.  Raises KeyError if the set is empty.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.pop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::frozenset}}.{{c2::clear}}()",
+      "Body": "Remove all elements from the set.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#frozenset.clear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::dict}}(**kwarg)",
+      "Body": "Return a new dictionary initialized from an optional positional argument and a possibly empty set of keyword arguments.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::dict}}({{c3::mapping}}, **kwarg)",
+      "Body": "Return a new dictionary initialized from an optional positional argument and a possibly empty set of keyword arguments.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["class", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}} {{c2::dict}}({{c3::iterable}}, **kwarg)",
+      "Body": "Return a new dictionary initialized from an optional positional argument and a possibly empty set of keyword arguments.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::len}}({{c2::d}})",
+      "Body": "Return the number of items in the dictionary d.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::d}}[{{c2::key}}]",
+      "Body": "Return the item of d with key key.  Raises a KeyError if key is not in the map.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::d}}[{{c2::key}}] = {{c3::value}}",
+      "Body": "Set d[key] to value.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::del}} {{c2::d}}[{{c3::key}}]",
+      "Body": "Remove d[key] from d.  Raises a KeyError if key is not in the map.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::key}} {{c2::in}} {{c3::d}}",
+      "Body": "Return True if d has a key key, else False.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::key}} {{c2::not}} {{c3::in}} {{c4::d}}",
+      "Body": "Equivalent to not key in d.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::iter}}({{c2::d}})",
+      "Body": "Return an iterator over the keys of the dictionary.  This is a shortcut for iter(d.keys()).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#mapping-types-dict"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::clear}}()",
+      "Body": "Remove all items from the dictionary.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.clear"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::copy}}()",
+      "Body": "Return a shallow copy of the dictionary.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.copy"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["classmethod", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::classmethod}} {{c3::fromkeys}}({{c4::seq}}[, {{c5::value}}])",
+      "Body": "Create a new dictionary with keys from seq and values set to value.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.fromkeys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::get}}({{c3::key}}[, {{c4::default}}])",
+      "Body": "Return the value for key if key is in the dictionary, else default. If default is not given, it defaults to None, so that this method never raises a KeyError.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.get"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::items}}()",
+      "Body": "Return a new view of the dictionary's items ((key, value) pairs). See the documentation of view objects.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.items"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::keys}}()",
+      "Body": "Return a new view of the dictionary's keys.  See the documentation of view objects.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.keys"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::pop}}({{c3::key}}[, {{c4::default}}])",
+      "Body": "If key is in the dictionary, remove it and return its value, else return default.  If default is not given and key is not in the dictionary, a KeyError is raised.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.pop"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::popitem}}()",
+      "Body": "Remove and return a (key, value) pair from the dictionary. Pairs are returned in LIFO order.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.popitem"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::setdefault}}({{c3::key}}[, {{c4::default}}])",
+      "Body": "If key is in the dictionary, return its value.  If not, insert key with a value of default and return default.  default defaults to None.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.setdefault"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::update}}([{{c3::other}}])",
+      "Body": "Update the dictionary with the key/value pairs from other, overwriting existing keys.  Return None.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.update"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::dict}}.{{c2::values}}()",
+      "Body": "Return a new view of the dictionary's values.  See the documentation of view objects.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dict.values"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::len}}({{c2::dictview}})",
+      "Body": "Return the number of entries in the dictionary.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::iter}}({{c2::dictview}})",
+      "Body": "Return an iterator over the keys, values or items (represented as tuples of (key, value)) in the dictionary.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["describe", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::x}} {{c2::in}} {{c3::dictview}}",
+      "Body": "Return True if x is in the underlying dictionary's keys, values or items (in the latter case, x should be a (key, value) tuple).",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextmanager}}.{{c2::__enter__}}()",
+      "Body": "Enter the runtime context and return either this object or another object related to the runtime context. The value returned by this method is bound to the identifier in the as clause of with statements using this context manager.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#contextmanager.__enter__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::contextmanager}}.{{c2::__exit__}}({{c3::exc_type}}, {{c4::exc_val}}, {{c5::exc_tb}})",
+      "Body": "Exit the runtime context and return a Boolean flag indicating if any exception that occurred should be suppressed. If an exception occurred while executing the body of the with statement, the arguments contain the exception type, value and traceback information. Otherwise, all three arguments are None.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#contextmanager.__exit__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::object}}.{{c2::__dict__}}",
+      "Body": "A dictionary or other mapping object used to store an object's (writable) attributes.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#object.__dict__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::instance}}.{{c2::__class__}}",
+      "Body": "The class to which a class instance belongs.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#instance.__class__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}}.{{c2::__bases__}}",
+      "Body": "The tuple of base classes of a class object.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#class.__bases__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::definition}}.{{c2::__name__}}",
+      "Body": "The name of the class, function, method, descriptor, or generator instance.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#definition.__name__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::definition}}.{{c2::__qualname__}}",
+      "Body": "The qualified name of the class, function, method, descriptor, or generator instance.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#definition.__qualname__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["attribute", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}}.{{c2::__mro__}}",
+      "Body": "This attribute is a tuple of classes that are considered when looking for base classes during method resolution.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#class.__mro__"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}}.{{c2::mro}}()",
+      "Body": "This method can be overridden by a metaclass to customize the method resolution order for its instances.  It is called at class instantiation, and its result is stored in __mro__.",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#class.mro"
+    },
+    "modelName": "ClozePy"
+  },
+  {
+    "tags": ["method", "Built-in Types", "Python", "py", "native"],
+    "fields": {
+      "Signature": "{{c1::class}}.{{c2::__subclasses__}}()",
+      "Body": "Each class keeps a list of weak references to its immediate subclasses.  This method returns a list of all those references still alive. Example:",
+      "Link": "https://docs.python.org/3/library/stdtypes.html#class.__subclasses__"
+    },
+    "modelName": "ClozePy"
+  }
+]
