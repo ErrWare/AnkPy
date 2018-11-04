@@ -2,9 +2,21 @@
 Adds the collected notes to the decks corresponding to the
 file hierarchy
 
+Expected hierarchy:
+
+folder_1/
+    deck_1/
+        notes_1.json
+        notes_2.json
+        ...
+    deck_2/
+        notes_k.json
+        notes_k+1.json
+        ...
+    ...
 '''
 
-from scrape_deck import *
+from ankpy import ankiAddNotes
 import os
 import json
 import textwrap
